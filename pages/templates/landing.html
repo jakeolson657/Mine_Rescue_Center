@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Rescue Center</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: #f5f5f5;
+            border-radius: 8px;
+        }
+
+        section h2 {
+            color: #1e3a8a;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        ul {
+            list-style-position: inside;
+            margin-left: 1rem;
+        }
+
+        li {
+            margin: 1rem 0;
+            padding-left: 1rem;
+        }
+
+        .calendar-link {
+            display: inline-block;
+            background: #1e3a8a;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            margin-top: 1rem;
+        }
+
+        .calendar-link:hover {
+            background-color: #1e40af;
+        }
+
+        .footer {
+            background: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mine Rescue Center</h1>
+        <p>A resource for mine rescue professionals worldwide</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>About</h2>
+            <p>
+                The Mine Rescue Center will be a resource for mine rescue professionals across the world.
+                While this is a major undertaking, it'll start small and grow into something of value to others.
+            </p>
+        </section>
+
+        <section>
+            <h2>Minimal Viable Product</h2>
+            <p>
+                Initially, we're focusing on the U.S. mine rescue scene and MSHA's rules and competitions.
+                Our goal is to create something that can be run sustainably, with high quality, and useful
+                to mine rescue professionals.
+            </p>
+            <ul>
+                <li><strong>Landing Page</strong> - attached to domain minerescuecenter.com</li>
+                <li><strong>Problem Repository</strong> - all old problems found from the wayback machine on miningquiz.com,
+                    with contact from those responsible for competitions since miningquiz.com went down</li>
+                <li><strong>Competition Calendar</strong> - all mine rescue competitions with locations.
+                    Click on an event to see its information. Upon completion, results and the problem are posted here
+                    (starting in 2026, with historical data added as time allows)</li>
+            </ul>
+            <a href="/calendar/" class="calendar-link">View Competition Calendar</a>
+        </section>
+
+        <section>
+            <h2>Coming Later</h2>
+            <ul>
+                <li>Reporting on significant events</li>
+                <li>Leaderboard for mine rescue competitions throughout the year</li>
+                <li>Training materials</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Mine Rescue Center. All rights reserved.</p>
+    </footer>
+</body>
+</html>
