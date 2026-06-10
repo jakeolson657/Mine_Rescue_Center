@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
     <title>Competition Calendar - Mine Rescue Center</title>
     <style>
+        html {
+            color-scheme: light;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -19,6 +24,7 @@
         }
 
         header {
+            position: relative;
             background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
             color: white;
             padding: 2rem 0;
@@ -147,26 +153,6 @@
             display: block;
         }
 
-        .actions {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-
-        .add-event-btn {
-            padding: 0.75rem 1.5rem;
-            background-color: #22c55e;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 1rem;
-            transition: background-color 0.3s;
-        }
-
-        .add-event-btn:hover {
-            background-color: #16a34a;
-        }
-
         .back-link {
             display: inline-block;
             margin-bottom: 1rem;
@@ -190,6 +176,7 @@
 </head>
 <body>
     <header>
+        {% include 'partials/site_menu.html' %}
         <h1>Competition Calendar</h1>
         <p>Mine Rescue Competitions Throughout the Year</p>
     </header>
@@ -203,10 +190,6 @@
                 <a href="?year={{ prev_year }}&month={{ prev_month }}">← Previous</a>
                 <a href="?year={{ next_year }}&month={{ next_month }}">Next →</a>
             </div>
-        </div>
-
-        <div class="actions">
-            <a href="{% url 'event_create' %}" class="add-event-btn">+ Add Event</a>
         </div>
 
         <div class="calendar-grid">

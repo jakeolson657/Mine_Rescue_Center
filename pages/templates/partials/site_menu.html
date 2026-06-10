@@ -1,0 +1,128 @@
+{# Site-wide hamburger menu. Include just inside each page's <header>; the header must have position: relative. #}
+<style>
+    .site-menu {
+        position: absolute;
+        top: 1.25rem;
+        right: 1.25rem;
+        z-index: 1000;
+        text-align: left;
+    }
+
+    .site-menu .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        background: transparent;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    .site-menu .menu-toggle:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .site-menu .menu-bar {
+        width: 26px;
+        height: 3px;
+        background-color: white;
+        border-radius: 2px;
+        transition: transform 0.25s, opacity 0.25s;
+    }
+
+    .site-menu.open .menu-bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .site-menu.open .menu-bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .site-menu.open .menu-bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .site-menu .menu-dropdown {
+        display: none;
+        position: absolute;
+        top: calc(100% + 0.5rem);
+        right: 0;
+        min-width: 230px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    }
+
+    .site-menu.open .menu-dropdown {
+        display: block;
+    }
+
+    .site-menu .menu-dropdown a {
+        display: block;
+        padding: 0.9rem 1.25rem;
+        color: #1e3a8a;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1rem;
+        border-bottom: 1px solid #eee;
+        transition: background-color 0.2s;
+    }
+
+    .site-menu .menu-dropdown a:last-child {
+        border-bottom: none;
+    }
+
+    .site-menu .menu-dropdown a:hover {
+        background-color: #e3f2fd;
+    }
+</style>
+
+<nav class="site-menu" id="site-menu">
+    <button type="button" class="menu-toggle" aria-label="Site menu" aria-expanded="false" aria-controls="site-menu-dropdown">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+    </button>
+    <div class="menu-dropdown" id="site-menu-dropdown">
+        <a href="{% url 'past_problems' %}">Past Problems</a>
+        <a href="{% url 'calendar' %}">Competition Calendar</a>
+        <a href="{% url 'about' %}">About</a>
+    </div>
+</nav>
+
+<script>
+    (function () {
+        var menu = document.getElementById('site-menu');
+        var toggle = menu.querySelector('.menu-toggle');
+
+        function closeMenu() {
+            menu.classList.remove('open');
+            toggle.setAttribute('aria-expanded', 'false');
+        }
+
+        toggle.addEventListener('click', function (event) {
+            event.stopPropagation();
+            var isOpen = menu.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        document.addEventListener('click', function (event) {
+            if (!menu.contains(event.target)) {
+                closeMenu();
+            }
+        });
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                closeMenu();
+            }
+        });
+    })();
+</script>

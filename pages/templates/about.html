@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light">
-    <title>Mine Rescue Center</title>
+    <title>About - Mine Rescue Center</title>
     <style>
         html {
             color-scheme: light;
@@ -32,7 +32,7 @@
         }
 
         header h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin-bottom: 0.5rem;
         }
 
@@ -47,18 +47,34 @@
             padding: 2rem;
         }
 
-        section {
-            margin: 3rem 0;
-            padding: 2rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #1e3a8a;
+            text-decoration: none;
+            font-weight: 500;
         }
 
-        section h2 {
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .card h2 {
             color: #1e3a8a;
             margin-bottom: 1.5rem;
             font-size: 1.8rem;
+        }
+
+        .card p {
+            margin-bottom: 1rem;
         }
 
         ul {
@@ -69,22 +85,6 @@
         li {
             margin: 1rem 0;
             padding-left: 1rem;
-        }
-
-        .calendar-link {
-            display: inline-block;
-            background: #1e3a8a;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 500;
-            transition: background-color 0.3s;
-            margin-top: 1rem;
-        }
-
-        .calendar-link:hover {
-            background-color: #1e40af;
         }
 
         .footer {
@@ -99,45 +99,44 @@
 <body>
     <header>
         {% include 'partials/site_menu.html' %}
-        <h1>Mine Rescue Center</h1>
-        <p>A resource for mine rescue professionals worldwide</p>
+        <h1>About</h1>
+        <p>Mine Rescue Center</p>
     </header>
 
     <div class="container">
-        <section>
-            <h2>About</h2>
+        <a href="/" class="back-link">← Back to Home</a>
+
+        <div class="card">
+            <h2>Our Mission</h2>
             <p>
                 The Mine Rescue Center will be a resource for mine rescue professionals across the world.
                 While this is a major undertaking, it'll start small and grow into something of value to others.
             </p>
-        </section>
-
-        <section>
-            <h2>Minimal Viable Product</h2>
             <p>
                 Initially, we're focusing on the U.S. mine rescue scene and MSHA's rules and competitions.
                 Our goal is to create something that can be run sustainably, with high quality, and useful
                 to mine rescue professionals.
             </p>
-            <ul>
-                <li><strong>Landing Page</strong> - attached to domain minerescuecenter.com</li>
-                <li><strong>Problem Repository</strong> - all old problems found from the wayback machine on miningquiz.com,
-                    with contact from those responsible for competitions since miningquiz.com went down</li>
-                <li><strong>Competition Calendar</strong> - all mine rescue competitions with locations.
-                    Click on an event to see its information. Upon completion, results and the problem are posted here
-                    (starting in 2026, with historical data added as time allows)</li>
-            </ul>
-            <a href="/calendar/" class="calendar-link">View Competition Calendar</a>
-        </section>
+        </div>
 
-        <section>
+        <div class="card">
+            <h2>What You'll Find Here</h2>
+            <ul>
+                <li><strong>Past Problems</strong> - a repository of old competition problems, recovered
+                    from miningquiz.com and collected from competition organizers</li>
+                <li><strong>Competition Calendar</strong> - all mine rescue competitions with locations,
+                    event details, and (starting in 2026) results and problems after each competition</li>
+            </ul>
+        </div>
+
+        <div class="card">
             <h2>Coming Later</h2>
             <ul>
                 <li>Reporting on significant events</li>
                 <li>Leaderboard for mine rescue competitions throughout the year</li>
                 <li>Training materials</li>
             </ul>
-        </section>
+        </div>
     </div>
 
     <footer class="footer">

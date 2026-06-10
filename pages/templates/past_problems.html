@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <title>Past Problems - Mine Rescue Center</title>
+    <style>
+        html {
+            color-scheme: light;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            position: relative;
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #1e3a8a;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .card h2 {
+            color: #1e3a8a;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .card p {
+            margin-bottom: 1rem;
+        }
+
+        .coming-soon {
+            background-color: #e3f2fd;
+            border-left: 4px solid #1e3a8a;
+            padding: 1rem 1.5rem;
+            border-radius: 4px;
+            color: #1e3a8a;
+            font-weight: 500;
+        }
+
+        .problem-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.25rem 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .problem-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .problem-item h3 {
+            color: #1e3a8a;
+            font-size: 1.2rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .problem-meta {
+            color: #777;
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .problem-description {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .download-btn {
+            flex-shrink: 0;
+            padding: 0.6rem 1.25rem;
+            background-color: #1e3a8a;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            white-space: nowrap;
+        }
+
+        .download-btn:hover {
+            background-color: #1e40af;
+        }
+
+        .footer {
+            background: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 600px) {
+            .problem-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        {% include 'partials/site_menu.html' %}
+        <h1>Past Problems</h1>
+        <p>Mine rescue competition problem repository</p>
+    </header>
+
+    <div class="container">
+        <a href="/" class="back-link">← Back to Home</a>
+
+        <div class="card">
+            <h2>Problem Repository</h2>
+            <p>
+                Past mine rescue competition problems — including the archive recovered from
+                miningquiz.com via the Wayback Machine, along with problems collected directly
+                from competition organizers.
+            </p>
+        </div>
+
+        {% if problems %}
+            <div class="card">
+                <h2>Problems</h2>
+                {% for problem in problems %}
+                    <div class="problem-item">
+                        <div>
+                            <h3>{{ problem.title }}</h3>
+                            {% if problem.competition or problem.year %}
+                                <p class="problem-meta">
+                                    {{ problem.competition }}{% if problem.competition and problem.year %} &bull; {% endif %}{{ problem.year|default_if_none:"" }}
+                                </p>
+                            {% endif %}
+                            {% if problem.description %}
+                                <p class="problem-description">{{ problem.description }}</p>
+                            {% endif %}
+                        </div>
+                        <a href="{{ problem.file.url }}" class="download-btn" download>Download</a>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="card">
+                <div class="coming-soon">
+                    Problems are currently being collected and organized. Check back soon.
+                </div>
+            </div>
+        {% endif %}
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Mine Rescue Center. All rights reserved.</p>
+    </footer>
+</body>
+</html>

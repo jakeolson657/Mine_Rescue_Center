@@ -1,16 +1,22 @@
-from django.shortcuts import render, get_object_or_404, redirect
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from django.urls import reverse_lazy
+from django.shortcuts import render
+from django.views.generic import ListView, DetailView
 from django.utils import timezone
 from datetime import date, timedelta
 from calendar import Calendar, month_name, monthrange
-from django.db.models import Q
-from .models import CalendarEvent
-from .forms import CalendarEventForm
+from .models import CalendarEvent, PastProblem
 
 
 def landing_page(request):
     return render(request, 'landing.html')
+
+
+def past_problems(request):
+    problems = PastProblem.objects.all()
+    return render(request, 'past_problems.html', {'problems': problems})
+
+
+def about(request):
+    return render(request, 'about.html')
 
 
 class CalendarView(ListView):
@@ -82,23 +88,3 @@ class EventDetailView(DetailView):
     model = CalendarEvent
     template_name = 'event_detail.html'
     context_object_name = 'event'
-
-
-class EventCreateView(CreateView):
-    model = CalendarEvent
-    form_class = CalendarEventForm
-    template_name = 'event_form.html'
-    success_url = reverse_lazy('calendar')
-
-
-class EventUpdateView(UpdateView):
-    model = CalendarEvent
-    form_class = CalendarEventForm
-    template_name = 'event_form.html'
-    success_url = reverse_lazy('calendar')
-
-
-class EventDeleteView(DeleteView):
-    model = CalendarEvent
-    template_name = 'event_confirm_delete.html'
-    success_url = reverse_lazy('calendar')
