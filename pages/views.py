@@ -3,7 +3,7 @@ from django.views.generic import ListView, DetailView
 from django.utils import timezone
 from datetime import date, timedelta
 from calendar import Calendar, month_name, monthrange
-from .models import CalendarEvent, PastProblem
+from .models import CalendarEvent, CompetitionProblem
 
 
 def landing_page(request):
@@ -11,7 +11,7 @@ def landing_page(request):
 
 
 def past_problems(request):
-    problems = PastProblem.objects.all()
+    problems = CompetitionProblem.objects.prefetch_related('documents').all()
     return render(request, 'past_problems.html', {'problems': problems})
 
 

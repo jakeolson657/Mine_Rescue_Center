@@ -33,32 +33,47 @@ class CalendarEvent(models.Model):
         return (self.end_date - self.start_date).days + 1
 
 
-class PastProblem(models.Model):
+class CompetitionProblem(models.Model):
     title = models.CharField(max_length=200)
     competition = models.CharField(
         max_length=200, blank=True,
-        help_text="Which competition this problem is from, e.g. 2025 Kentucky Mining Institute Contest"
+        help_text="e.g. 2024 Loveland COAL Regional"
     )
     year = models.PositiveIntegerField(null=True, blank=True)
     description = models.TextField(blank=True)
-    file = models.FileField(upload_to='problems/')
-    uploaded_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ['-year', 'title']
+        ordering = ['-year', 'competition', 'title']
 
     def __str__(self):
         if self.year:
             return f"{self.title} ({self.year})"
         return self.title
 
+    def document_count(self):
+        return self.documents.count()
+
+
+class ProblemDocument(models.Model):
+    problem = models.ForeignKey(CompetitionProblem, on_delete=models.CASCADE, related_name='documents')
+    title = models.CharField(max_length=255, help_text="Document type or name, e.g. Problem, Layout, Vent Plan 1")
+    file = models.FileField(upload_to='problems/')
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['title']
+
+    def __str__(self):
+        return f"{self.problem.title} - {self.title}"
+
     @property
     def filename(self):
         return os.path.basename(self.file.name)
 
 
-@receiver(post_delete, sender=PastProblem)
-def delete_file_on_problem_delete(sender, instance, **kwargs):
-    # FileField doesn't remove files from disk on row deletion
+@receiver(post_delete, sender=ProblemDocument)
+def delete_file_on_document_delete(sender, instance, **kwargs):
     if instance.file:
         instance.file.delete(save=False)

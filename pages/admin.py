@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import CalendarEvent, PastProblem
+from .models import CalendarEvent, CompetitionProblem, ProblemDocument
 
 admin.site.site_header = "Mine Rescue Center Administration"
 admin.site.site_title = "Mine Rescue Center Admin"
@@ -14,9 +14,16 @@ class CalendarEventAdmin(admin.ModelAdmin):
     ordering = ('-start_date',)
 
 
-@admin.register(PastProblem)
-class PastProblemAdmin(admin.ModelAdmin):
-    list_display = ('title', 'competition', 'year', 'filename', 'uploaded_at')
+class ProblemDocumentInline(admin.TabularInline):
+    model = ProblemDocument
+    extra = 1
+    fields = ('title', 'file')
+
+
+@admin.register(CompetitionProblem)
+class CompetitionProblemAdmin(admin.ModelAdmin):
+    list_display = ('title', 'competition', 'year', 'document_count')
     list_filter = ('year',)
     search_fields = ('title', 'competition', 'description')
-    ordering = ('-year', 'title')
+    ordering = ('-year', 'competition', 'title')
+    inlines = [ProblemDocumentInline]
