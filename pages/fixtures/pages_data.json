@@ -1,0 +1,4079 @@
+[
+{
+  "model": "pages.calendarevent",
+  "pk": 2,
+  "fields": {
+    "title": "7th Annual Surface Mining Emergency Response Training Competition",
+    "start_date": "2026-02-16",
+    "end_date": "2026-02-19",
+    "location": "Florida Public Safety Institute, 75 College Drive, Havana, FL 32333",
+    "description": "",
+    "contact_info": "Karen Miller: (850) 201-7689, Karen.Miller@tsc.fl.edu\nKim Allen: (850) 591-9168, ALLENK@tcc.fl.edu\nRegistration: flminesafety.com/competition/",
+    "resources": [
+      {
+        "label": "Florida Mine Safety Competition Website",
+        "url": "https://flminesafety.com/competition/"
+      },
+      {
+        "label": "Teams Results",
+        "url": "https://www.msha.gov/sites/default/files/events/2026%20Florida%20Surface%20Mine%20Rescue%20Team%20Scores-FINAL.pdf"
+      },
+      {
+        "label": "Knot Tying Results",
+        "url": "https://www.msha.gov/sites/default/files/events/2026%20Florida%20Mine%20Rescue%20KNOT%20TYING.pdf"
+      }
+    ],
+    "created_at": "2026-06-08T02:25:17.989Z",
+    "updated_at": "2026-06-08T02:25:17.989Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 3,
+  "fields": {
+    "title": "Southeast Regional Mine Rescue Competition",
+    "start_date": "2026-03-02",
+    "end_date": "2026-03-05",
+    "location": "Sevierville Convention Center, 202 Gists Creek Rd., Sevierville, TN 37876",
+    "description": "",
+    "contact_info": "Brian Millington: (865) 804-1700, tnminerescue@gmail.com",
+    "resources": [
+      {
+        "label": "Final Results",
+        "url": "https://www.msha.gov/sites/default/files/events/SERegional-Mar2-5.pdf"
+      }
+    ],
+    "created_at": "2026-06-08T02:25:17.993Z",
+    "updated_at": "2026-06-08T02:25:17.993Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 4,
+  "fields": {
+    "title": "Western Mine Rescue Association Nevada UG Mine Rescue Contest",
+    "start_date": "2026-03-09",
+    "end_date": "2026-03-12",
+    "location": "Winnemucca Convention & Visitors Authority, 50 West Winnemucca Boulevard, Winnemucca, NV 89445",
+    "description": "",
+    "contact_info": "Angie Van Drielen: (775) 623-5071 ext. 103, angie@winnemucca.com\nMike Peck: (775) 385-3139, michael.peck@nevadagoldmines.com",
+    "resources": [
+      {
+        "label": "Final Results",
+        "url": "https://www.msha.gov/sites/default/files/events/2026%20WMRA%20Results.pdf"
+      }
+    ],
+    "created_at": "2026-06-08T02:25:17.995Z",
+    "updated_at": "2026-06-08T02:25:17.995Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 5,
+  "fields": {
+    "title": "Missouri Regional Skills Contest",
+    "start_date": "2026-04-14",
+    "end_date": "2026-04-14",
+    "location": "Farmington Convention Center, Farmington, MO",
+    "description": "",
+    "contact_info": "DeWayne Phelps: (320) 979-4701, dewayne@phelpssafety.com\nJesse Gegg: (573) 702-9584, jtgegg@mlc.com",
+    "resources": [],
+    "created_at": "2026-06-08T02:25:17.999Z",
+    "updated_at": "2026-06-08T02:25:17.999Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 6,
+  "fields": {
+    "title": "53rd Annual Mine Rescue and First Aid Competition - Southern Regional",
+    "start_date": "2026-04-27",
+    "end_date": "2026-05-01",
+    "location": "New Iberia, Louisiana",
+    "description": "",
+    "contact_info": "Scott Fountain: (337) 924-3379, fountains@compassminerals.com\nScotty Segura: (337) 578-7584, seguras@compassminerals.com",
+    "resources": [],
+    "created_at": "2026-06-08T02:25:18.000Z",
+    "updated_at": "2026-06-08T02:25:18.000Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 7,
+  "fields": {
+    "title": "MCPA Governors Cup - Overmountain Mine Rescue Contest",
+    "start_date": "2026-05-04",
+    "end_date": "2026-05-07",
+    "location": "Washington County Fairgrounds, 17046 Fairground Dr., Abingdon, VA 24210",
+    "description": "",
+    "contact_info": "Sidney Crabtree: (276) 979-6339, sidney.crabtree@energy.virginia.gov\nGwendolyn Jessee: (276) 321-6613, gpjessee@comcast.net\nMailing Address: 3405 Mountain Empire Road, Big Stone Gap, VA 24219",
+    "resources": [],
+    "created_at": "2026-06-08T02:25:18.004Z",
+    "updated_at": "2026-06-08T02:25:18.004Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 8,
+  "fields": {
+    "title": "Northern Mine Rescue Association Competition",
+    "start_date": "2026-05-12",
+    "end_date": "2026-05-14",
+    "location": "ODNR Mine Safety Training Center, Cadiz, OH",
+    "description": "",
+    "contact_info": "Adam Rossbach: adam_rossbach@cargill.com\nJereme Stowell: Jereme_stowell@cargill.com\nTrey Gilliam: tgilliam@detroitsalt.com\nRussell Byers (facility): (740) 491-2725, Russell.byers@dnr.ohio.gov",
+    "resources": [],
+    "created_at": "2026-06-08T02:25:18.006Z",
+    "updated_at": "2026-06-08T02:25:18.006Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 9,
+  "fields": {
+    "title": "2026 Alabama Mine Rescue, First Aid & Benchman Competition",
+    "start_date": "2026-05-12",
+    "end_date": "2026-05-16",
+    "location": "Bevill State Community College, Sumiton, Alabama",
+    "description": "",
+    "contact_info": "Rachael Jones: rachael@alabamamining.org",
+    "resources": [
+      {
+        "label": "Registration Form",
+        "url": "https://www.msha.gov/sites/default/files/events/2026%20AL%20UG%20Contest%20Registration%20Form.pdf"
+      }
+    ],
+    "created_at": "2026-06-08T02:25:18.008Z",
+    "updated_at": "2026-06-08T02:25:18.008Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 10,
+  "fields": {
+    "title": "Western Kentucky Mine Institute Safety Days Mine Rescue Contest",
+    "start_date": "2026-05-19",
+    "end_date": "2026-05-21",
+    "location": "MCC/KCA Complex, Madisonville, KY",
+    "description": "",
+    "contact_info": "Kim Humphrey: (270) 389-6792, kim.humphrey@arlp.com\nKevin Vaughn: (270) 836-3636, kevinvaughn38@yahoo.com",
+    "resources": [],
+    "created_at": "2026-06-08T02:25:18.011Z",
+    "updated_at": "2026-06-08T02:25:18.011Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 11,
+  "fields": {
+    "title": "KMI Kentucky Mining Institute Mine Rescue Contest",
+    "start_date": "2026-05-31",
+    "end_date": "2026-06-04",
+    "location": "Central Bank Center, Lexington, KY",
+    "description": "",
+    "contact_info": "Sammy Linville (vendors): (859) 468-2914, sammylinville@yahoo.com\nPJ Amburgey: patricia.amburgey@ky.gov\nWillie Barker: willie.barker@draeger.com",
+    "resources": [],
+    "created_at": "2026-06-08T02:25:18.014Z",
+    "updated_at": "2026-06-08T02:25:18.014Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 12,
+  "fields": {
+    "title": "SWMAA Mine Rescue Contest",
+    "start_date": "2026-06-01",
+    "end_date": "2026-06-04",
+    "location": "Sweetwater County Events Complex, Rock Springs, Wyoming",
+    "description": "",
+    "contact_info": "Joe Thompson: (307) 364-2591, mjoe.thompson@solvay.com\nSandy Gunyan: (307) 922-4936, sandy.gunyan@solvay.com",
+    "resources": [
+      {
+        "label": "Download Save the Date Flyer",
+        "url": "https://www.msha.gov/sites/default/files/events/SWWyoming-StD.pdf"
+      }
+    ],
+    "created_at": "2026-06-08T02:25:18.017Z",
+    "updated_at": "2026-06-08T02:25:18.017Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 13,
+  "fields": {
+    "title": "Southwestern Regional Mine Rescue Contest",
+    "start_date": "2026-06-08",
+    "end_date": "2026-06-11",
+    "location": "Carlsbad, New Mexico",
+    "description": "",
+    "contact_info": "Michael Runner: (575) 706-2629, michael.runner@intrepidpotash.com\nMatt Ridgway: (575) 361-5029, mathew.ridgway@wipp.ws",
+    "resources": [],
+    "created_at": "2026-06-08T02:25:18.018Z",
+    "updated_at": "2026-06-08T02:25:18.018Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 14,
+  "fields": {
+    "title": "Post 6 Ohio Valley Mine Rescue Contest",
+    "start_date": "2026-06-16",
+    "end_date": "2026-06-18",
+    "location": "ODNR Mine Safety Training Center, Cadiz, OH",
+    "description": "",
+    "contact_info": "Russell Byers: (740) 491-2725, russell.byers@dnr.ohio.gov\nMichael Call: (304) 377-2305, mrc@csecorporation.com",
+    "resources": [],
+    "created_at": "2026-06-08T02:25:18.020Z",
+    "updated_at": "2026-06-08T02:25:18.020Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 15,
+  "fields": {
+    "title": "38th Annual Indiana Mine Rescue Contest",
+    "start_date": "2026-06-17",
+    "end_date": "2026-06-18",
+    "location": "Vincennes University Gibson Center, Fort Branch, IN",
+    "description": "",
+    "contact_info": "Christine Riggleman: (812) 798-2259, christineriggleman40@gmail.com",
+    "resources": [],
+    "created_at": "2026-06-08T02:25:18.023Z",
+    "updated_at": "2026-06-08T02:25:18.023Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 16,
+  "fields": {
+    "title": "50th Annual Rocky Mountain Mine Rescue Association Contest",
+    "start_date": "2026-06-22",
+    "end_date": "2026-06-25",
+    "location": "Utah State University Eastern Campus, 451 East 400 North, Price, UT 84051",
+    "description": "",
+    "contact_info": "Justin Barrington: jbarrington@utah.gov\nDenny Erickson: denny.erickson@gentrymining.com",
+    "resources": [],
+    "created_at": "2026-06-08T02:25:18.025Z",
+    "updated_at": "2026-06-08T02:25:18.025Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 17,
+  "fields": {
+    "title": "2026 Illinois State Mine Rescue and Bench Contest",
+    "start_date": "2026-06-23",
+    "end_date": "2026-06-24",
+    "location": "The Pavillion, 1602 Sioux Dr., Marion, IL 62959",
+    "description": "",
+    "contact_info": "Jacob Gyore: jacob.gyore@illinios.gov",
+    "resources": [],
+    "created_at": "2026-06-08T02:25:18.027Z",
+    "updated_at": "2026-06-08T02:25:18.027Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 18,
+  "fields": {
+    "title": "Western Mine Rescue Association Nevada Safety Olympiad (Surface)",
+    "start_date": "2026-07-08",
+    "end_date": "2026-07-10",
+    "location": "Winnemucca Events Complex, 1000 Fairgrounds Rd, Winnemucca, NV 89445",
+    "description": "",
+    "contact_info": "Travis Petersen: (775) 635-4696, travis.petersen@nevadagoldmines.com",
+    "resources": [
+      {
+        "label": "Registration Form",
+        "url": "https://www.msha.gov/sites/default/files/events/2026%20Safety%20Olympiad%20Registration.pdf"
+      }
+    ],
+    "created_at": "2026-06-08T02:25:18.030Z",
+    "updated_at": "2026-06-08T02:25:18.030Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 19,
+  "fields": {
+    "title": "Surface Mine First Responder Competition",
+    "start_date": "2026-07-13",
+    "end_date": "2026-07-16",
+    "location": "Alabama Fire College, Tuscaloosa, AL",
+    "description": "",
+    "contact_info": "Rachael Jones: rachael@alabamamining.org",
+    "resources": [],
+    "created_at": "2026-06-08T02:25:18.032Z",
+    "updated_at": "2026-06-08T02:25:18.032Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 20,
+  "fields": {
+    "title": "Harlan County Safety Days",
+    "start_date": "2026-07-14",
+    "end_date": "2026-07-16",
+    "location": "Cumberland Campus of S.K.C.T.C., 700 College Road, Cumberland, KY 40823",
+    "description": "",
+    "contact_info": "Suzie Williams: (606) 589-5812, tcchamber@blackbearmtn.org",
+    "resources": [],
+    "created_at": "2026-06-08T02:25:18.034Z",
+    "updated_at": "2026-06-08T02:25:18.034Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 21,
+  "fields": {
+    "title": "Colorado Regional Mine Rescue, Bench, Pre-shift, First-Aid and Team Technician Contest",
+    "start_date": "2026-07-27",
+    "end_date": "2026-07-31",
+    "location": "Embassy Suites - John Q. Hammons Conference Center, Loveland, CO",
+    "description": "",
+    "contact_info": "Brandon Neal: (303) 870-0431, brandon.neal@state.co.us",
+    "resources": [],
+    "created_at": "2026-06-08T02:25:18.037Z",
+    "updated_at": "2026-06-08T02:25:18.037Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 22,
+  "fields": {
+    "title": "Fallen Heroes Mine Rescue Contest",
+    "start_date": "2026-08-10",
+    "end_date": "2026-08-14",
+    "location": "Chief Logan Conference Center, Logan, WV",
+    "description": "",
+    "contact_info": "Brent Bender: (304) 784-3405, bbender@blackhawkmining.com",
+    "resources": [],
+    "created_at": "2026-06-08T02:25:18.038Z",
+    "updated_at": "2026-06-08T02:25:18.038Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 23,
+  "fields": {
+    "title": "National Mine Rescue, First Aid, Bench, Technician Team, and Pre-Shift Competition",
+    "start_date": "2026-08-24",
+    "end_date": "2026-08-27",
+    "location": "Sevierville Convention Center, 202 Gists Creek Rd., Sevierville, TN",
+    "description": "",
+    "contact_info": "Erica Warren (Registration): warren.erica@dol.gov\nDavid Grimm (Registration): dag@csecorporation.com",
+    "resources": [],
+    "created_at": "2026-06-08T02:25:18.041Z",
+    "updated_at": "2026-06-08T02:25:18.041Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 24,
+  "fields": {
+    "title": "Missouri Regional Mine Rescue Contest",
+    "start_date": "2026-09-21",
+    "end_date": "2026-09-24",
+    "location": "Experimental Mine, Rolla, MO",
+    "description": "",
+    "contact_info": "DeWayne Phelps: (320) 979-4701, dewayne@phelpssafety.com\nJesse Gegg: (573) 702-9584, jtgegg@mlc.com",
+    "resources": [],
+    "created_at": "2026-06-08T02:25:18.043Z",
+    "updated_at": "2026-06-08T02:25:18.043Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 47,
+  "fields": {
+    "title": "Annual Surface Mining Emergency Response Training Competition (National Prep and Basic Regional Competition Tracks)",
+    "start_date": "2024-03-04",
+    "end_date": "2024-03-07",
+    "location": "Florida Public Safety Institute, 75 College Drive, Havana, Florida 32333",
+    "description": "",
+    "contact_info": "Karen Miller (850) 201-7689; Kim Allen (850) 591-9168",
+    "resources": [
+      {
+        "label": "Florida Mine Safety Competition Website",
+        "url": "https://flminesafety.com/competition/"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:22.933Z",
+    "updated_at": "2026-06-11T03:13:22.933Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 48,
+  "fields": {
+    "title": "Southern Regional Mine Rescue Competition",
+    "start_date": "2024-03-05",
+    "end_date": "2024-03-07",
+    "location": "Sevierville Convention Center, Sevierville, Tennessee",
+    "description": "",
+    "contact_info": "Brian Millington (865) 804-1700",
+    "resources": [
+      {
+        "label": "TNMRA 2024 Contest Registration Form",
+        "url": "https://www.msha.gov/sites/default/files/events/TNMRA2024-ContestRegistrationForm.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:22.950Z",
+    "updated_at": "2026-06-11T03:13:22.950Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 49,
+  "fields": {
+    "title": "Western Mine Rescue Association Nevada Underground Mine Rescue Contest",
+    "start_date": "2024-03-11",
+    "end_date": "2024-03-14",
+    "location": "Winnemucca Convention and Visitors Authority, 50 West Winnemucca Boulevard, Winnemucca, NV 89445",
+    "description": "",
+    "contact_info": "Karla Fuentes (775) 623-5071 ext. 103; Mike Peck (775) 385-3139",
+    "resources": [],
+    "created_at": "2026-06-11T03:13:22.955Z",
+    "updated_at": "2026-06-11T03:13:22.955Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 50,
+  "fields": {
+    "title": "Southern Regional Mine Rescue Contest",
+    "start_date": "2024-04-29",
+    "end_date": "2024-05-02",
+    "location": "New Iberia, Louisiana",
+    "description": "",
+    "contact_info": "Scott Fountain (337) 924-3379; Landon Olivier (337) 867-2145",
+    "resources": [],
+    "created_at": "2026-06-11T03:13:22.958Z",
+    "updated_at": "2026-06-11T03:13:22.958Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 51,
+  "fields": {
+    "title": "KMI - Kentucky Mining Institute Mine Rescue Contest",
+    "start_date": "2024-05-06",
+    "end_date": "2024-05-09",
+    "location": "Central Bank Center, Lexington, KY",
+    "description": "",
+    "contact_info": "Brad Matheny (270) 836-4225; Sammy Linville (859) 468-2914",
+    "resources": [],
+    "created_at": "2026-06-11T03:13:22.963Z",
+    "updated_at": "2026-06-11T03:13:22.963Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 52,
+  "fields": {
+    "title": "Northern Mine Rescue Association Competition",
+    "start_date": "2024-05-21",
+    "end_date": "2024-05-23",
+    "location": "Ohio Department of Natural Resources Lab, Cadiz, OH",
+    "description": "",
+    "contact_info": "Adam Rossbach; Jereme Stowell; Trey Gilliam",
+    "resources": [
+      {
+        "label": "Northern Mine Rescue Association 2024 Contest Registration Form",
+        "url": "https://www.msha.gov/sites/default/files/events/NorthernMineRescueContest-20240521.xlsx"
+      },
+      {
+        "label": "Northern Mine Resue Association Competition",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/Northern%20Mine%20Rescue%20Contest%20flyer_2.0.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:22.967Z",
+    "updated_at": "2026-06-11T03:13:22.967Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 53,
+  "fields": {
+    "title": "Western Kentucky Safety Days",
+    "start_date": "2024-05-22",
+    "end_date": "2024-05-23",
+    "location": "MCC/KCA Complex, Madisonville, KY",
+    "description": "",
+    "contact_info": "Kim Humphrey (270) 389-6792; Kevin Vaughn (270) 836-3636",
+    "resources": [],
+    "created_at": "2026-06-11T03:13:22.970Z",
+    "updated_at": "2026-06-11T03:13:22.970Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 54,
+  "fields": {
+    "title": "Post 6 Ohio Valley Mine Rescue Contest",
+    "start_date": "2024-06-04",
+    "end_date": "2024-06-06",
+    "location": "ODNR Mine Safety Training Center, Cadiz, OH",
+    "description": "",
+    "contact_info": "Russell Byers (740) 491-2725; Michael Call (304) 377-2305",
+    "resources": [],
+    "created_at": "2026-06-11T03:13:22.975Z",
+    "updated_at": "2026-06-11T03:13:22.975Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 55,
+  "fields": {
+    "title": "MRAI - Mine Rescue Association of Indiana Preshift, Bench and Mine Rescue Contest",
+    "start_date": "2024-06-05",
+    "end_date": "2024-06-06",
+    "location": "Vincennes University Gibson Center, Fort Branch, IN",
+    "description": "",
+    "contact_info": "Christine Riggleman (812) 798-2259",
+    "resources": [],
+    "created_at": "2026-06-11T03:13:22.979Z",
+    "updated_at": "2026-06-11T03:13:22.979Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 56,
+  "fields": {
+    "title": "Surface Mine First Responder Competition",
+    "start_date": "2024-06-10",
+    "end_date": "2024-06-12",
+    "location": "Alabama Fire College, Tuscaloosa, AL",
+    "description": "",
+    "contact_info": "Rachael Jones",
+    "resources": [],
+    "created_at": "2026-06-11T03:13:22.983Z",
+    "updated_at": "2026-06-11T03:13:22.983Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 57,
+  "fields": {
+    "title": "Southwestern Regional Mine Rescue Contest",
+    "start_date": "2024-06-10",
+    "end_date": "2024-06-13",
+    "location": "Carlsbad, New Mexico",
+    "description": "",
+    "contact_info": "Michael Runner (575) 706-2629; Matt Ridgway (575) 361-5029",
+    "resources": [],
+    "created_at": "2026-06-11T03:13:22.988Z",
+    "updated_at": "2026-06-11T03:13:22.988Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 58,
+  "fields": {
+    "title": "Southwest Wyoming Mutual Aid Association Mine Rescue Competition",
+    "start_date": "2024-06-24",
+    "end_date": "2024-06-27",
+    "location": "Sweetwater Co. Events Complex, 3320 Yellowstone Road, Rock Springs, WY",
+    "description": "",
+    "contact_info": "Cindy Phillips (307) 209-0038; Chris Barker (307) 677-7448",
+    "resources": [
+      {
+        "label": "Southwest Wyoming Mutual Aid Association Flyer",
+        "url": "https://www.msha.gov/sites/default/files/events/SWMAA-Mine-Rescue-Contest.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:22.992Z",
+    "updated_at": "2026-06-11T03:13:22.992Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 59,
+  "fields": {
+    "title": "National Mine Rescue Association Virginia Post 7 Safety Days Training Event (Overmountain Mine Rescue Meet)",
+    "start_date": "2024-06-25",
+    "end_date": "2024-06-27",
+    "location": "Southwest Virginia Higher Ed Center, 1 Partnership Circle, Abingdon, VA 24210",
+    "description": "",
+    "contact_info": "Sidney Crabtree (276) 979-6339; Gwendolyn Jessee (276) 321-6613",
+    "resources": [
+      {
+        "label": "NCPA Post 7 2024 Registration Form",
+        "url": "https://www.msha.gov/sites/default/files/events/NCPA-Registration-Form.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:22.997Z",
+    "updated_at": "2026-06-11T03:13:22.997Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 60,
+  "fields": {
+    "title": "Western Mine Rescue Association Nevada Safety Olympiad (Surface)",
+    "start_date": "2024-07-10",
+    "end_date": "2024-07-12",
+    "location": "Winnemucca Events Complex, 1000 Fairgrounds Rd, Winnemucca, NV 89445",
+    "description": "",
+    "contact_info": "John Burton (775) 343-6411",
+    "resources": [],
+    "created_at": "2026-06-11T03:13:23.001Z",
+    "updated_at": "2026-06-11T03:13:23.001Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 61,
+  "fields": {
+    "title": "Harlan County Safety Days",
+    "start_date": "2024-07-16",
+    "end_date": "2024-07-18",
+    "location": "Cumberland Campus of S.K.C.T.C., 700 College Road, Cumberland, KY 40823",
+    "description": "",
+    "contact_info": "Suzie Williams (606) 589-5812",
+    "resources": [],
+    "created_at": "2026-06-11T03:13:23.006Z",
+    "updated_at": "2026-06-11T03:13:23.006Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 62,
+  "fields": {
+    "title": "Illinois State Mine Rescue and Bench Contest",
+    "start_date": "2024-07-23",
+    "end_date": "2024-07-24",
+    "location": "The Pavilion, 1002 Sioux Drive, Marion, IL 62959",
+    "description": "",
+    "contact_info": "Jacob Gyore",
+    "resources": [],
+    "created_at": "2026-06-11T03:13:23.010Z",
+    "updated_at": "2026-06-11T03:13:23.010Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 63,
+  "fields": {
+    "title": "Colorado Regional Mine Rescue, First Aid and Team Technician Contest",
+    "start_date": "2024-07-29",
+    "end_date": "2024-08-01",
+    "location": "Embassy Suites - John Q. Hammons Conference Center, Loveland, CO",
+    "description": "",
+    "contact_info": "Brandon Neal (303) 870-0431",
+    "resources": [
+      {
+        "label": "Save the Date Flyer",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/Mine-Rescue-2024-Save-Date-Flier.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:23.013Z",
+    "updated_at": "2026-06-11T03:13:23.013Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 64,
+  "fields": {
+    "title": "Alabama UG Mine Rescue Contest",
+    "start_date": "2024-07-30",
+    "end_date": "2024-08-01",
+    "location": "Bevill State Community College, Sumiton, Alabama",
+    "description": "",
+    "contact_info": "Rachael Jones",
+    "resources": [],
+    "created_at": "2026-06-11T03:13:23.019Z",
+    "updated_at": "2026-06-11T03:13:23.019Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 65,
+  "fields": {
+    "title": "National Mine Rescue, First Aid, Bench, Technician Team, and Pre-Shift Competition",
+    "start_date": "2024-08-12",
+    "end_date": "2024-08-15",
+    "location": "Central Bank Center, Lexington, Kentucky",
+    "description": "",
+    "contact_info": "Ray Cartwright (270) 245-3729; Brian Thompson (205) 290-7294; Kenny Murray (859) 475-3445; Brian Millington (865) 242-0015; Sammy Linville (859) 468-2914; Registration: Erica Warren (606) 595-6571, Lewis McCoy (412) 418-0612",
+    "resources": [],
+    "created_at": "2026-06-11T03:13:23.022Z",
+    "updated_at": "2026-06-11T03:13:23.022Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 66,
+  "fields": {
+    "title": "Missouri Regional Mine Rescue Contest",
+    "start_date": "2024-09-23",
+    "end_date": "2024-09-26",
+    "location": "Experimental Mine, Rolla, MO",
+    "description": "",
+    "contact_info": "DeWayne Phelps (320) 979-4701; Jesse Gregg (573) 702-9584",
+    "resources": [],
+    "created_at": "2026-06-11T03:13:23.025Z",
+    "updated_at": "2026-06-11T03:13:23.025Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 67,
+  "fields": {
+    "title": "Southeast Mine Safety & Health Conference",
+    "start_date": "2024-10-29",
+    "end_date": "2024-11-01",
+    "location": "Renaissance Ross Bridge Resort, Birmingham, Alabama",
+    "description": "",
+    "contact_info": "executivecommittee@southeastmineconf.org",
+    "resources": [],
+    "created_at": "2026-06-11T03:13:23.028Z",
+    "updated_at": "2026-06-11T03:13:23.028Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 68,
+  "fields": {
+    "title": "Annual Surface Mining Emergency Response Training Competition (National Prep and Basic Regional Competition Tracks)",
+    "start_date": "2025-02-24",
+    "end_date": "2025-02-27",
+    "location": "Florida Public Safety Institute, 75 College Drive, Havana, Florida 32333",
+    "description": "",
+    "contact_info": "Karen Miller (850) 201-7689, Karen.Miller@tcc.fl.edu; Kim Allen (850) 591-9168, ALLENK@tcc.fl.edu",
+    "resources": [
+      {
+        "label": "Florida Mine Safety Competition Website",
+        "url": "https://flminesafety.com/competition/"
+      },
+      {
+        "label": "National Prep and Basic Regional Competition Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/Florida%20Mine%20Safety%20Competition%20Final%20Results.pdf"
+      },
+      {
+        "label": "Mine Rescue and First Aid Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/2025%20Florida%20MR%20Results.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:23.031Z",
+    "updated_at": "2026-06-11T03:13:23.031Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 69,
+  "fields": {
+    "title": "Southern Regional Mine Rescue Competition",
+    "start_date": "2025-03-03",
+    "end_date": "2025-03-06",
+    "location": "Sevierville Convention Center, Sevierville, Tennessee",
+    "description": "",
+    "contact_info": "Brian Millington (865) 804-1700, tnminerescue@gmail.com",
+    "resources": [
+      {
+        "label": "TNMRA 2025 Contest Registration Form",
+        "url": "https://www.msha.gov/sites/default/files/events/TNMRA%202025%20Contest%20Registration%20Form_0.pdf"
+      },
+      {
+        "label": "Mine Rescue Contest Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/Southeast%20Competition%20Final%20Results.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:23.037Z",
+    "updated_at": "2026-06-11T03:13:23.037Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 70,
+  "fields": {
+    "title": "Western Mine Rescue Association Nevada Underground Mine Rescue Contest",
+    "start_date": "2025-03-10",
+    "end_date": "2025-03-13",
+    "location": "Winnemucca Convention and Visitors Authority, 50 West Winnemucca Boulevard, Winnemucca, NV 89445",
+    "description": "",
+    "contact_info": "Karla Fuentes (775) 623-5071 ext. 103, karla@winnemucca.com; Mike Peck (775) 385-3139, Michael.peck@nevadagoldmines.com",
+    "resources": [
+      {
+        "label": "Mine Rescue Contest Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/Western%20MR%20Final%20Results.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:23.040Z",
+    "updated_at": "2026-06-11T03:13:23.040Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 71,
+  "fields": {
+    "title": "Missouri Regional Skills Contest",
+    "start_date": "2025-04-15",
+    "end_date": "2025-04-15",
+    "location": "Farmington Convention Center, Farmington, MO",
+    "description": "",
+    "contact_info": "DeWayne Phelps (320) 979-4701, dewayne@phelpssafety.com; Jesse Gregg (573) 702-9584, jtgregg@mlc.com",
+    "resources": [
+      {
+        "label": "Mine Rescue Contest Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/Missouri%20Contest%20-%20Skills%20Scores.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:23.043Z",
+    "updated_at": "2026-06-11T03:13:23.043Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 72,
+  "fields": {
+    "title": "Southern Regional Mine Rescue Contest",
+    "start_date": "2025-04-28",
+    "end_date": "2025-05-01",
+    "location": "New Iberia, Louisiana",
+    "description": "",
+    "contact_info": "Scott Fountain (337) 924-3379, fountains@compassminerals.com; Landon Olivier (337) 867-2145, lolivier@mortonsalt.com; Scotty Segura (337) 578-7584, seguras@compassminerals.com",
+    "resources": [
+      {
+        "label": "Mine Rescue Contest Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/SRMRC%20Final%20Summary%20Sheet%202025.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:23.046Z",
+    "updated_at": "2026-06-11T03:13:23.046Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 73,
+  "fields": {
+    "title": "Alabama UG Mine Rescue Contest",
+    "start_date": "2025-05-13",
+    "end_date": "2025-05-15",
+    "location": "Bevill State Community College, Sumiton, Alabama",
+    "description": "",
+    "contact_info": "Rachel Jones, rachel@alabamamining.org",
+    "resources": [
+      {
+        "label": "Mine Rescue Contest Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/2025%20Alabama%20Mine%20Rescue%20Results%20Summary.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:23.048Z",
+    "updated_at": "2026-06-11T03:13:23.048Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 74,
+  "fields": {
+    "title": "Western Kentucky Safety Days",
+    "start_date": "2025-05-20",
+    "end_date": "2025-05-22",
+    "location": "MCC/KCA Complex, Madisonville, KY",
+    "description": "",
+    "contact_info": "Kim Humphrey (270) 389-6792, kim.humphrey@arlp.com; Kevin Vaughn (270) 836-3636, kevinvaughn38@yahoo.com",
+    "resources": [
+      {
+        "label": "Mine Rescue Contest Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/WKMI%20Final%20Results.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:23.054Z",
+    "updated_at": "2026-06-11T03:13:23.054Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 75,
+  "fields": {
+    "title": "Post 6 Ohio Valley Mine Rescue Contest",
+    "start_date": "2025-06-03",
+    "end_date": "2025-06-05",
+    "location": "ODNR Mine Safety Training Center, Cadiz, OH",
+    "description": "",
+    "contact_info": "Russell Byers (740) 491-2725, russell.byers@dnr.ohio.gov; Michael Call (304) 377-2305, mrc@csecorporation.com",
+    "resources": [
+      {
+        "label": "Mine Rescue Contest Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/Post%206%202025%20final%20results.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:23.058Z",
+    "updated_at": "2026-06-11T03:13:23.058Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 76,
+  "fields": {
+    "title": "MRAI - Mine Rescue Association of Indiana Preshift, Bench and Mine Rescue Contest",
+    "start_date": "2025-06-04",
+    "end_date": "2025-06-05",
+    "location": "Vincennes University Gibson Center, Fort Branch, IN",
+    "description": "",
+    "contact_info": "Christine Riggleman (812) 798-2259, christineriggleman40@gmail.com",
+    "resources": [
+      {
+        "label": "Mine Rescue Contest Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/INDIANA%20CONTEST.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:23.060Z",
+    "updated_at": "2026-06-11T03:13:23.060Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 77,
+  "fields": {
+    "title": "Surface Mine First Responder Competition",
+    "start_date": "2025-06-09",
+    "end_date": "2025-06-13",
+    "location": "Alabama Fire College, Tuscaloosa, AL",
+    "description": "",
+    "contact_info": "Rachael Jones, rachael@alabamamining.org",
+    "resources": [],
+    "created_at": "2026-06-11T03:13:23.062Z",
+    "updated_at": "2026-06-11T03:13:23.062Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 78,
+  "fields": {
+    "title": "National Mine Rescue Association Virginia Post 7 Safety Days Training Event (Overmountain Mine Rescue Meet)",
+    "start_date": "2025-06-10",
+    "end_date": "2025-06-12",
+    "location": "Southwest Virginia Higher Ed Center, 1 Partnership Circle, Abingdon, VA 24210",
+    "description": "",
+    "contact_info": "Sidney Crabtree (276) 979-6339, sidney.crabtree@energy.virginia.gov; Gwendolyn Jessee (276) 321-6613, gpjessee@comcast.net",
+    "resources": [
+      {
+        "label": "MCPA Post 7 2025 Registration Form",
+        "url": "https://www.msha.gov/sites/default/files/events/Post%207%20MCPA%202025%20REGISTRATION%20FORM.pdf"
+      },
+      {
+        "label": "Mine Rescue Contest Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/Post%207%20Safety%20Days%20Mine%20Rescue.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:23.066Z",
+    "updated_at": "2026-06-11T03:13:23.066Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 79,
+  "fields": {
+    "title": "Southwestern Regional Mine Rescue Contest",
+    "start_date": "2025-06-16",
+    "end_date": "2025-06-19",
+    "location": "Inn of the Mountain Gods, Ruidoso, New Mexico",
+    "description": "",
+    "contact_info": "Michael Runner (575) 706-2629, michael.runner@intrepidpotash.com; Matt Ridgway (575) 361-5029, Mathew.Ridgway@wipp.ws",
+    "resources": [
+      {
+        "label": "Mine Rescue Contest Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/2025%20Southwestern%20Regional.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:23.070Z",
+    "updated_at": "2026-06-11T03:13:23.070Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 80,
+  "fields": {
+    "title": "49th Annual Rocky Mountain Mine Rescue Association Mine Rescue Contest",
+    "start_date": "2025-06-23",
+    "end_date": "2025-06-26",
+    "location": "Utah State University, Eastern campus, 451 East 400 North, Price, UT 84501",
+    "description": "",
+    "contact_info": "Justin Barrington, jbarrington@utah.gov; Denny Erickson, denny.erickson@gentrymining.com",
+    "resources": [
+      {
+        "label": "Mine Rescue Contest Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/Price%20UT%20Rocky%20Mtn%20Mine%20Rescue%20Results.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:23.074Z",
+    "updated_at": "2026-06-11T03:13:23.074Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 81,
+  "fields": {
+    "title": "Western Mine Rescue Association Nevada Safety Olympiad (Surface)",
+    "start_date": "2025-07-09",
+    "end_date": "2025-07-11",
+    "location": "Winnemucca Events Complex, 1000 Fairgrounds Rd, Winnemucca, NV 89445",
+    "description": "",
+    "contact_info": "Travis Petersen (775) 635-4696, travis.petersen@nevadagoldmines.com",
+    "resources": [
+      {
+        "label": "Mine Rescue Contest Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/38th%20Olympiad%20Results.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:23.077Z",
+    "updated_at": "2026-06-11T03:13:23.077Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 82,
+  "fields": {
+    "title": "Harlan County Safety Days",
+    "start_date": "2025-07-15",
+    "end_date": "2025-07-17",
+    "location": "Cumberland Campus of S.K.C.T.C., 700 College Road, Cumberland, KY 40823",
+    "description": "",
+    "contact_info": "Suzie Williams (606) 589-5812, tcchamber@blackbearmtn.org",
+    "resources": [
+      {
+        "label": "Mine Rescue Contest Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/2025%20Harlan%20Co%20Safety%20Days%20FINAL.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:23.080Z",
+    "updated_at": "2026-06-11T03:13:23.080Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 83,
+  "fields": {
+    "title": "Kansas Regional Mine Rescue Competition",
+    "start_date": "2025-07-21",
+    "end_date": "2025-07-24",
+    "location": "Hutchinson Community College, Hutchinson, Kansas",
+    "description": "",
+    "contact_info": "Chrystal Dye (785) 221-0018, dyec@hutchcc.edu",
+    "resources": [
+      {
+        "label": "Mine Rescue Contest Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/Kansas%20Regional%20Competition.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:23.085Z",
+    "updated_at": "2026-06-11T03:13:23.085Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 84,
+  "fields": {
+    "title": "Colorado Regional Mine Rescue, First Aid and Team Technician Contest",
+    "start_date": "2025-07-28",
+    "end_date": "2025-07-31",
+    "location": "Embassy Suites - John Q. Hammons Conference Center, Loveland, CO",
+    "description": "",
+    "contact_info": "Brandon Neal (303) 870-0431, brandon.neal@state.co.us",
+    "resources": [
+      {
+        "label": "Become a Sponsor",
+        "url": "https://www.msha.gov/sites/default/files/events/2025%20Mine%20Rescue%20Become%20a%20sponsor.pdf"
+      },
+      {
+        "label": "Mine Rescue Contest Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/Colorado%20Regional.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:23.089Z",
+    "updated_at": "2026-06-11T03:13:23.089Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 85,
+  "fields": {
+    "title": "KMI - Kentucky Mining Institute Mine Rescue Contest",
+    "start_date": "2025-08-11",
+    "end_date": "2025-08-14",
+    "location": "Central Bank Center, Lexington, KY",
+    "description": "",
+    "contact_info": "Brad Matheny (270) 836-4225, rbm@csecorporation.com; Sammy Linville (859) 468-2914, sammylinville@yahoo.com",
+    "resources": [
+      {
+        "label": "Mine Rescue Contest Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/2025%20MR%20KMI%20Results.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:23.092Z",
+    "updated_at": "2026-06-11T03:13:23.092Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 86,
+  "fields": {
+    "title": "Missouri Regional Mine Rescue Contest",
+    "start_date": "2025-09-15",
+    "end_date": "2025-09-18",
+    "location": "Experimental Mine, Rolla, MO",
+    "description": "",
+    "contact_info": "DeWayne Phelps (320) 979-4701, dewayne@phelpssafety.com; Jesse Gregg (573) 702-9584, jtgregg@mlc.com",
+    "resources": [
+      {
+        "label": "Mine Rescue Contest Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/2025%20Missouri%20Mine%20Rescue%20Competition%20Final%20Results.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:23.094Z",
+    "updated_at": "2026-06-11T03:13:23.094Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 87,
+  "fields": {
+    "title": "Fallen Heroes Mine Rescue Contest",
+    "start_date": "2025-09-16",
+    "end_date": "2025-09-18",
+    "location": "Chief Logan Conference Center, Logan, WV",
+    "description": "",
+    "contact_info": "Brent Bender (304) 784-3405, bbender@blackhawkmining.com",
+    "resources": [
+      {
+        "label": "Mine Rescue Contest Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/2025%20SWV%20FALLEN%20HEROES%20RESULTS.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T03:13:23.098Z",
+    "updated_at": "2026-06-11T03:13:23.098Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 88,
+  "fields": {
+    "title": "Mine Rescue, First Aid, Bench and Preshift Rules Training",
+    "start_date": "2016-03-22",
+    "end_date": "2016-03-23",
+    "location": "National Mine Academy, Beaver, WV",
+    "description": "",
+    "contact_info": "Celena May (606) 432-6948 ext. 1106, May.celena@dol.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.415Z",
+    "updated_at": "2026-06-11T20:17:12.415Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 89,
+  "fields": {
+    "title": "KCA/MCC Regional Mine Rescue Skills",
+    "start_date": "2016-04-07",
+    "end_date": "2016-04-07",
+    "location": "Madisonville, KY",
+    "description": "",
+    "contact_info": "Danny Knott (270) 871-0672, dknott0001@kctcs.edu",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.444Z",
+    "updated_at": "2026-06-11T20:17:12.444Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 90,
+  "fields": {
+    "title": "MTTC Pennsylvania Regional Mine Rescue Skills Contest",
+    "start_date": "2016-04-18",
+    "end_date": "2016-04-21",
+    "location": "Ruff Creek, PA",
+    "description": "",
+    "contact_info": "Marlon Whoolery (724) 322-0169, mttcmarlon@yahoo.com; Mike Reese (724) 627-6259, mttcmr@yahoo.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.450Z",
+    "updated_at": "2026-06-11T20:17:12.451Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 91,
+  "fields": {
+    "title": "DMS 2 Day Mine Rescue Competition (DMS Teams Only)",
+    "start_date": "2016-04-27",
+    "end_date": "2016-04-28",
+    "location": "Jenny Wiley State Park, Prestonsburg, KY",
+    "description": "",
+    "contact_info": "Ricky Johnson (606) 546-5035, Ricky.Johnson@ky.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.456Z",
+    "updated_at": "2026-06-11T20:17:12.456Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 92,
+  "fields": {
+    "title": "Smokeaters Post 2 Bench (BG-4 & BioPak) Contest",
+    "start_date": "2016-05-13",
+    "end_date": "2016-05-13",
+    "location": "Lexington, KY",
+    "description": "",
+    "contact_info": "Lewis McCoy (412) 418-0612, lsm@csecorporation.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.462Z",
+    "updated_at": "2026-06-11T20:17:12.462Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 93,
+  "fields": {
+    "title": "State of Alabama Mine Rescue 2 Day Mine Rescue, Bench (BG-4 & 240R) and Preshift Contest",
+    "start_date": "2016-05-16",
+    "end_date": "2016-05-19",
+    "location": "Bevill State Community College, Sumiton, AL",
+    "description": "",
+    "contact_info": "Patty Tice (205) 871-3734, patty@alcoal.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.468Z",
+    "updated_at": "2026-06-11T20:17:12.468Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 94,
+  "fields": {
+    "title": "Welch Post 1 Mine Rescue Contest",
+    "start_date": "2016-05-21",
+    "end_date": "2016-05-21",
+    "location": "Bluefield State College, Bluefield, WV",
+    "description": "",
+    "contact_info": "Mike Plumley (304) 960-0340, michael.plumley@brickstreet.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.473Z",
+    "updated_at": "2026-06-11T20:17:12.473Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 95,
+  "fields": {
+    "title": "Western Kentucky Mining Institute Safety Days Mine Rescue, First Aid, Bench (BG-4, BioPak 240-R & S) and Preshift Contest",
+    "start_date": "2016-05-25",
+    "end_date": "2016-05-26",
+    "location": "150 School Ave., Madisonville, Kentucky",
+    "description": "",
+    "contact_info": "Kevin Vaughn (270) 389-6700 ext. 6723, Kevin.vaughn@arlp.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.479Z",
+    "updated_at": "2026-06-11T20:17:12.479Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 96,
+  "fields": {
+    "title": "Indiana State Mine Rescue, Bench (BioPak) and Preshift Contest",
+    "start_date": "2016-05-31",
+    "end_date": "2016-06-02",
+    "location": "Vincennes University Campus, Vincennes, IN",
+    "description": "",
+    "contact_info": "Ruth Messel (812) 881-9315, ruth.messel@gmail.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.485Z",
+    "updated_at": "2026-06-11T20:17:12.485Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 97,
+  "fields": {
+    "title": "Governor's Cup Mine Rescue Contest",
+    "start_date": "2016-06-01",
+    "end_date": "2016-06-02",
+    "location": "Wise, VA",
+    "description": "",
+    "contact_info": "Chris Whitt (276) 523-9693, chris.whitt@dmme.virginia.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.491Z",
+    "updated_at": "2026-06-11T20:17:12.491Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 98,
+  "fields": {
+    "title": "Rocky Mountain Association Mine Rescue, First Aid, Bench (BG-4 & BioPak) and Preshift",
+    "start_date": "2016-06-06",
+    "end_date": "2016-06-09",
+    "location": "Mont Harmon Jr. High School, Price, UT",
+    "description": "",
+    "contact_info": "Larry Olsen (435) 262-7194, lolsen@bowieresources.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.496Z",
+    "updated_at": "2026-06-11T20:17:12.496Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 99,
+  "fields": {
+    "title": "Tri-State Post #6 Ohio Valley Mine Rescue, Bench, Pre-Shift, & First Aid Contest",
+    "start_date": "2016-06-07",
+    "end_date": "2016-06-09",
+    "location": "Moundsville, WV",
+    "description": "",
+    "contact_info": "Ron Glasgow (740) 590-3763, ronglasgow32@yahoo.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.503Z",
+    "updated_at": "2026-06-11T20:17:12.503Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 100,
+  "fields": {
+    "title": "SIC-IECC Mine Rescue Skills Competition",
+    "start_date": "2016-06-07",
+    "end_date": "2016-06-08",
+    "location": "Southeastern Illinois College, Harrisburg, IL",
+    "description": "",
+    "contact_info": "Karen Weiss (618) 252-5400 ext. 2300, karen.weiss@sic.edu",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.508Z",
+    "updated_at": "2026-06-11T20:17:12.508Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 101,
+  "fields": {
+    "title": "Tennessee Cove Lake Mine Rescue Contest",
+    "start_date": "2016-06-08",
+    "end_date": "2016-06-09",
+    "location": "Cove Lake State Park, Caryville, TN",
+    "description": "",
+    "contact_info": "Oscar Frederick (423) 566-9709, oscar.frederick@tn.gov; Cindi Reynolds (423) 592-0329, cindi.reynolds@campbellcountychamber.org",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.519Z",
+    "updated_at": "2026-06-11T20:17:12.519Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 102,
+  "fields": {
+    "title": "Kentucky River Mine Rescue Contest",
+    "start_date": "2016-06-14",
+    "end_date": "2016-06-16",
+    "location": "Hazard, KY",
+    "description": "",
+    "contact_info": "Pauletta Smith (606) 436-0533, Paulette.smith@hazard.kyschools.us",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.526Z",
+    "updated_at": "2026-06-11T20:17:12.526Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 103,
+  "fields": {
+    "title": "Hatfield & McCoy Mine Safety Competition",
+    "start_date": "2016-07-12",
+    "end_date": "2016-07-14",
+    "location": "Pikeville, KY",
+    "description": "",
+    "contact_info": "City of Pikeville: Andy Linton (606) 437-5119, andy.linton@pikevilleky.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.532Z",
+    "updated_at": "2026-06-11T20:17:12.532Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 104,
+  "fields": {
+    "title": "Colorado Mine Rescue Association Mine Rescue, First Aid, Bench (BG-4 and BioPak) and Preshift Contest",
+    "start_date": "2016-07-18",
+    "end_date": "2016-07-21",
+    "location": "Delta, Colorado",
+    "description": "",
+    "contact_info": "Mark Beauchamp, mbeauchamp@peabodyenergy.com; Darrell Wynas (505) 598-2035, Dwynas@westmoreland.com; Basil Bear (970) 929-5258, basilbear@bowieresources.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.539Z",
+    "updated_at": "2026-06-11T20:17:12.539Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 105,
+  "fields": {
+    "title": "Harlan County Safety Days Mine Rescue (2 Day), Bench, First Aid and Preshift Contest",
+    "start_date": "2016-07-19",
+    "end_date": "2016-07-21",
+    "location": "Cumberland Campus, SKCTC, Cumberland, KY",
+    "description": "",
+    "contact_info": "Suzie Williams or Tracy Bailey (606) 589-5812, tricitychamber@windstream.net",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.546Z",
+    "updated_at": "2026-06-11T20:17:12.546Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 106,
+  "fields": {
+    "title": "Virginia Mining Institute's Safety Day - Mine Rescue (2 Day), First Aid, Bench (BG-4) and Preshift Contest",
+    "start_date": "2016-08-01",
+    "end_date": "2016-08-05",
+    "location": "Blacksburg, VA",
+    "description": "",
+    "contact_info": "Diane Crouse (276) 988-4537, dlcrouse1@verizon.net; Wayne Davis (276) 415-9650, wayne.davis@dmme.virginia.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.552Z",
+    "updated_at": "2026-06-11T20:17:12.552Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 107,
+  "fields": {
+    "title": "36th Annual ISMRC hosted by Powder River Basin Safety Association",
+    "start_date": "2016-08-04",
+    "end_date": "2016-08-05",
+    "location": "Gillette, WY",
+    "description": "",
+    "contact_info": "Crystal Volk (307) 660-1600, cvolk@slswestlube.com; Randy Milliron (307) 257-3800, randym@gillettewy.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.558Z",
+    "updated_at": "2026-06-11T20:17:12.558Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 108,
+  "fields": {
+    "title": "Post 5 Mine Rescue Contest - Mine Rescue (2 Days), First Aid, Bench, & Preshift",
+    "start_date": "2016-08-09",
+    "end_date": "2016-08-11",
+    "location": "Mylan Park, Morgantown, WV",
+    "description": "",
+    "contact_info": "Michael Stark (304) 225-6851, stark.michael@dol.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.566Z",
+    "updated_at": "2026-06-11T20:17:12.566Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 109,
+  "fields": {
+    "title": "PA State Mine Rescue Contest",
+    "start_date": "2016-08-23",
+    "end_date": "2016-08-24",
+    "location": "Greene County Fairgrounds, Waynesburg, PA",
+    "description": "",
+    "contact_info": "John Kingora (724) 998-0961, jekingora@gmail.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.577Z",
+    "updated_at": "2026-06-11T20:17:12.577Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 110,
+  "fields": {
+    "title": "Illinois State Mine Rescue & Bench Contest",
+    "start_date": "2016-08-24",
+    "end_date": "2016-08-24",
+    "location": "Marion, IL",
+    "description": "",
+    "contact_info": "Michael D. Rennie (618) 439-4355; John Smith (618) 439-9111, John.smith@illinois.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.587Z",
+    "updated_at": "2026-06-11T20:17:12.587Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 111,
+  "fields": {
+    "title": "Southern West Virginia Mine Rescue Association - Mine Rescue, Bench & Pre-Shift Contest",
+    "start_date": "2016-08-29",
+    "end_date": "2016-09-01",
+    "location": "National Mine Academy, Beaver, WV",
+    "description": "",
+    "contact_info": "Mike Plumley (304) 960-0340, michael.plumley@brickstreet.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.598Z",
+    "updated_at": "2026-06-11T20:17:12.598Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 112,
+  "fields": {
+    "title": "Nationwide Mine Rescue Skills Championship",
+    "start_date": "2016-10-05",
+    "end_date": "2016-10-06",
+    "location": "Madisonville, KY",
+    "description": "",
+    "contact_info": "Danny Knott (270) 871-0672, dknott0001@kctcs.edu",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.605Z",
+    "updated_at": "2026-06-11T20:17:12.605Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 113,
+  "fields": {
+    "title": "Mine Rescue, First Aid, Bench and Preshift Rules Training",
+    "start_date": "2017-04-03",
+    "end_date": "2017-04-07",
+    "location": "National Mine Academy, Beaver, WV",
+    "description": "",
+    "contact_info": "Erica Warren (606) 546-5123, Warren.erica@dol.gov; Angela Cook (304) 732-6410, Cook.angela@dol.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.614Z",
+    "updated_at": "2026-06-11T20:17:12.614Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 114,
+  "fields": {
+    "title": "KCA/MCC Regional Mine Rescue Nationwide Skills",
+    "start_date": "2017-04-12",
+    "end_date": "2017-04-12",
+    "location": "Kentucky Coal Academy, Madisonville, KY",
+    "description": "",
+    "contact_info": "Danny Knott (270) 871-0672, dknott0001@kctcs.edu",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.620Z",
+    "updated_at": "2026-06-11T20:17:12.620Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 115,
+  "fields": {
+    "title": "DMS 2 Day Mine Rescue Competition (DMS Teams Only)",
+    "start_date": "2017-04-19",
+    "end_date": "2017-04-20",
+    "location": "Jenny Wiley State Park, Prestonsburg, KY",
+    "description": "",
+    "contact_info": "Ricky Johnson (502) 782-6299 or (606) 595-3597, Ricky.Johnson@ky.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.627Z",
+    "updated_at": "2026-06-11T20:17:12.627Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 116,
+  "fields": {
+    "title": "MTTC PA Regional Mine Rescue Skills Contest",
+    "start_date": "2017-04-20",
+    "end_date": "2017-04-20",
+    "location": "Mining Technology and Training Center, Ruff Creek, PA",
+    "description": "",
+    "contact_info": "Marlon Whoolery (724) 627-6259 or (724) 322-0169, mttcmarlon@yahoo.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.633Z",
+    "updated_at": "2026-06-11T20:17:12.633Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 117,
+  "fields": {
+    "title": "West Virginia Mine Rescue Alliance Mine Rescue Skills Contest",
+    "start_date": "2017-05-01",
+    "end_date": "2017-05-04",
+    "location": "National Mine Academy, Beaver, WV",
+    "description": "",
+    "contact_info": "Darren Blankenship (304) 673-7520, darrenblankenship@suddenlink.net",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.641Z",
+    "updated_at": "2026-06-11T20:17:12.641Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 118,
+  "fields": {
+    "title": "NMRA KY Post No. 2 Bench Contest",
+    "start_date": "2017-05-12",
+    "end_date": "2017-05-12",
+    "location": "Double Tree Inn & Suites, Lexington, KY",
+    "description": "",
+    "contact_info": "Lewis McCoy (412) 418-0612, LSM@csecorporation.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.647Z",
+    "updated_at": "2026-06-11T20:17:12.647Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 119,
+  "fields": {
+    "title": "Alabama Mine Rescue Contest",
+    "start_date": "2017-05-15",
+    "end_date": "2017-05-18",
+    "location": "Bevill State Community College, Sumiton, AL",
+    "description": "",
+    "contact_info": "Patty Tice (205) 871-3734, patty@alcoal.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.654Z",
+    "updated_at": "2026-06-11T20:17:12.654Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 120,
+  "fields": {
+    "title": "Welch Post #1 Mine Rescue Contest",
+    "start_date": "2017-05-20",
+    "end_date": "2017-05-20",
+    "location": "Bluefield State College, Bluefield, WV",
+    "description": "",
+    "contact_info": "Mike Plumley (304) 960-0340, Michael.Plumley@brickstreet.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.663Z",
+    "updated_at": "2026-06-11T20:17:12.663Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 121,
+  "fields": {
+    "title": "Western Kentucky Mining Institute Safety Days Mine Rescue, Pre-Shift, First Aid, Bench (240-R)",
+    "start_date": "2017-05-24",
+    "end_date": "2017-05-25",
+    "location": "Kentucky Coal Academy, Madisonville, KY",
+    "description": "",
+    "contact_info": "Kevin Vaughn (270) 389-6700 ext. 6723, kevin.vaughn@arlp.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.671Z",
+    "updated_at": "2026-06-11T20:17:12.671Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 122,
+  "fields": {
+    "title": "Governor's Cup Mine Rescue Contest",
+    "start_date": "2017-06-01",
+    "end_date": "2017-06-01",
+    "location": "University of Virginia, Wise, VA",
+    "description": "",
+    "contact_info": "Chris Whitt (276) 523-9693, chris.whitt@dmme.virginia.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.678Z",
+    "updated_at": "2026-06-11T20:17:12.678Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 123,
+  "fields": {
+    "title": "RMMRA Mine Rescue, First Aid, Bench (BG-4 & BioPak) and Preshift",
+    "start_date": "2017-06-06",
+    "end_date": "2017-06-08",
+    "location": "Castle Heights Elementary School, Price, UT",
+    "description": "",
+    "contact_info": "Larry Olsen (435) 262-7194, lolsen@bowieresources.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.685Z",
+    "updated_at": "2026-06-11T20:17:12.685Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 124,
+  "fields": {
+    "title": "Indiana State Mine Rescue, Bench (BioPak) and Preshift Contest",
+    "start_date": "2017-06-06",
+    "end_date": "2017-06-08",
+    "location": "Vincennes University Campus, Vincennes, IN",
+    "description": "",
+    "contact_info": "Ruth Messel (812) 881-9315, ruth.messel@gmail.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.693Z",
+    "updated_at": "2026-06-11T20:17:12.693Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 125,
+  "fields": {
+    "title": "Tennessee Cove Lake Mine Rescue (2 Day), First Aid, Bench (BG-4 & BioPak) and Preshift Contest",
+    "start_date": "2017-06-06",
+    "end_date": "2017-06-08",
+    "location": "Cove Lake State Park, Cove Lake, TN",
+    "description": "",
+    "contact_info": "Cindi Reynolds (423) 566-0329, cindi.reynolds@campbellcountychamber.org",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.701Z",
+    "updated_at": "2026-06-11T20:17:12.701Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 126,
+  "fields": {
+    "title": "Tri-State Post #6 Ohio Valley Mine Rescue, Bench, Pre-Shift, & First Aid Contest",
+    "start_date": "2017-06-13",
+    "end_date": "2017-06-15",
+    "location": "Moundsville Prison, Moundsville, WV",
+    "description": "",
+    "contact_info": "Ron Glasgow (740) 590-3763, ronglasgow32@yahoo.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.709Z",
+    "updated_at": "2026-06-11T20:17:12.709Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 127,
+  "fields": {
+    "title": "SIC-IECC Mine Rescue Skills Competition",
+    "start_date": "2017-06-13",
+    "end_date": "2017-06-14",
+    "location": "Southeastern Illinois College, Harrisburg, IL",
+    "description": "",
+    "contact_info": "Brent Maguire (618) 252-5400 ext. 2312, Brent.maguire@sic.edu",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.715Z",
+    "updated_at": "2026-06-11T20:17:12.715Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 128,
+  "fields": {
+    "title": "Kentucky River Mine Rescue (2 Day), First Aid, Bench (BG-4 & BioPak) and Preshift Contest",
+    "start_date": "2017-06-13",
+    "end_date": "2017-06-15",
+    "location": "Hazard High School, Hazard, KY",
+    "description": "",
+    "contact_info": "Pauletta Smith (606) 438-4287, Psmith1@mikrotec.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.721Z",
+    "updated_at": "2026-06-11T20:17:12.721Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 129,
+  "fields": {
+    "title": "Colorado Mine Rescue Association Mine Rescue, First Aid, Bench Contest",
+    "start_date": "2017-07-10",
+    "end_date": "2017-07-13",
+    "location": "Craig Middle School, Craig, Colorado",
+    "description": "",
+    "contact_info": "Mark Beauchamp, mbeauchamp@peabodyenergy.com; Darrell Wynas (505) 598-2035, Dwynas@westmoreland.com; Ty Odle (970) 929-2260, todle@archcoal.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.728Z",
+    "updated_at": "2026-06-11T20:17:12.728Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 130,
+  "fields": {
+    "title": "Harlan County Safety Day Mine Rescue (2 Day), Bench, First Aid and Preshift Contest",
+    "start_date": "2017-07-25",
+    "end_date": "2017-07-27",
+    "location": "Cumberland Campus, SKCTC, Cumberland, KY",
+    "description": "",
+    "contact_info": "Suzanne Williams or Tracy Bailey (606) 589-5812, tricitychamber@windstream.net",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.735Z",
+    "updated_at": "2026-06-11T20:17:12.735Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 131,
+  "fields": {
+    "title": "37th Annual International Surface Mine Rescue Contest hosted by Thunder Basin Coal Company & Powder River Basin Safety Association",
+    "start_date": "2017-08-02",
+    "end_date": "2017-08-04",
+    "location": "Gillette, WY",
+    "description": "",
+    "contact_info": "Crystal Volk (307) 660-1600, cvolk@slswestlube.com; Randall Milliron, randym@gillettewy.gov or prbsafety@gmail.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.742Z",
+    "updated_at": "2026-06-11T20:17:12.742Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 132,
+  "fields": {
+    "title": "Virginia Mining Institute's Safety Day - Mine Rescue (2 Day), First Aid, Bench (BG-4) and Preshift Contest",
+    "start_date": "2017-08-08",
+    "end_date": "2017-08-10",
+    "location": "Blacksburg Parks and Recreation Department, Blacksburg, VA",
+    "description": "",
+    "contact_info": "Diane Crouse (276) 988-4537, dlcrouse1@verizon.net; Wayne Davis (276) 415-9650, wayne.davis@dmme.virginia.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.749Z",
+    "updated_at": "2026-06-11T20:17:12.749Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 133,
+  "fields": {
+    "title": "Post 5 Mine Rescue Contest",
+    "start_date": "2017-08-15",
+    "end_date": "2017-08-17",
+    "location": "Mylan Park, Morgantown, WV",
+    "description": "",
+    "contact_info": "Michael Stark (304) 225-6851, Stark.michael@dol.gov; Ron Glasgow, Ronglasgow32@yahoo.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.755Z",
+    "updated_at": "2026-06-11T20:17:12.756Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 134,
+  "fields": {
+    "title": "Kentucky Mining Institute Mine Rescue, First Aid, Bench and Preshift Contest",
+    "start_date": "2017-08-21",
+    "end_date": "2017-08-24",
+    "location": "Lexington Convention Center, Lexington, KY",
+    "description": "",
+    "contact_info": "Geaunita Caylor (859) 257-2820, g.caylor@uky.edu",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.761Z",
+    "updated_at": "2026-06-11T20:17:12.761Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 135,
+  "fields": {
+    "title": "PA State Mine Rescue Contest",
+    "start_date": "2017-08-22",
+    "end_date": "2017-08-23",
+    "location": "Greene County Fairgrounds, Waynesburg, PA",
+    "description": "",
+    "contact_info": "John Kingora (724) 998-0961, jekingora@gmail.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.769Z",
+    "updated_at": "2026-06-11T20:17:12.769Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 136,
+  "fields": {
+    "title": "Southern West Virginia Mine Rescue Association - Southern West Virginia Contest",
+    "start_date": "2017-08-28",
+    "end_date": "2017-08-31",
+    "location": "National Mine Academy, Beaver, WV",
+    "description": "",
+    "contact_info": "Mike Plumley (304) 960-0340, Michael.Plumley@brickstreet.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.776Z",
+    "updated_at": "2026-06-11T20:17:12.776Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 137,
+  "fields": {
+    "title": "Illinois State Mine Rescue (1 Day), Bench Contest",
+    "start_date": "2017-08-30",
+    "end_date": "2017-08-30",
+    "location": "Marion Pavilion/Convention Center, Marion, IL",
+    "description": "",
+    "contact_info": "John Smith (618) 439-9111, John.Smith2@Illinois.gov; Cheryl Adams, crca@reagan.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.782Z",
+    "updated_at": "2026-06-11T20:17:12.782Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 138,
+  "fields": {
+    "title": "National Mine Rescue, First Aid, Bench, Skills & Pre-shift Contest",
+    "start_date": "2017-09-11",
+    "end_date": "2017-09-14",
+    "location": "National Mine Academy, Beaver, WV",
+    "description": "",
+    "contact_info": "Erica Warren (606) 546-5123, Warren.erica@dol.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.788Z",
+    "updated_at": "2026-06-11T20:17:12.788Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 139,
+  "fields": {
+    "title": "Nevada Regional Mine Rescue Contest",
+    "start_date": "2017-03-13",
+    "end_date": "2017-03-16",
+    "location": "Winnemucca, NV",
+    "description": "",
+    "contact_info": "Michael Peck (775) 778-2286, Michael.Peck@newmont.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.794Z",
+    "updated_at": "2026-06-11T20:17:12.794Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 140,
+  "fields": {
+    "title": "Southwestern Regional Mine Rescue Contest",
+    "start_date": "2017-04-03",
+    "end_date": "2017-04-06",
+    "location": "Carlsbad, NM",
+    "description": "",
+    "contact_info": "Michael Ackman (575) 302-1052, michael.ackman@mosaicco.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.800Z",
+    "updated_at": "2026-06-11T20:17:12.800Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 141,
+  "fields": {
+    "title": "Tennessee Regional Mine Rescue Contest",
+    "start_date": "2017-04-27",
+    "end_date": "2017-04-27",
+    "location": "Caryville, Tennessee",
+    "description": "",
+    "contact_info": "Oscar Frederick (423) 566-7909, Oscar.Frederick@tn.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.807Z",
+    "updated_at": "2026-06-11T20:17:12.807Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 142,
+  "fields": {
+    "title": "Southern Regional Mine Rescue Contest",
+    "start_date": "2017-05-01",
+    "end_date": "2017-05-04",
+    "location": "New Iberia, Louisiana",
+    "description": "",
+    "contact_info": "Henry Charpentier (337) 867-2114, hcharpentier@mortonsalt.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.814Z",
+    "updated_at": "2026-06-11T20:17:12.814Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 143,
+  "fields": {
+    "title": "Central Mine Rescue Contest",
+    "start_date": "2017-05-09",
+    "end_date": "2017-05-11",
+    "location": "Kellogg, ID",
+    "description": "",
+    "contact_info": "Danny Peterson (208) 556-2225, cmrescue@cbridge.net",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.819Z",
+    "updated_at": "2026-06-11T20:17:12.819Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 144,
+  "fields": {
+    "title": "Northern Regional Mine Rescue Contest",
+    "start_date": "2017-06-05",
+    "end_date": "2017-06-09",
+    "location": "Peek 'n Peak Resort, Clymer, NY",
+    "description": "",
+    "contact_info": "David Bird (216) 357-4617 or (865) 268-6074, David_Bird@cargill.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.826Z",
+    "updated_at": "2026-06-11T20:17:12.826Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 145,
+  "fields": {
+    "title": "Southeast Regional Mine Rescue Contest",
+    "start_date": "2017-06-19",
+    "end_date": "2017-06-22",
+    "location": "Knoxville, TN",
+    "description": "",
+    "contact_info": "Anthony Payne (865) 992-6681 or (865) 201-4987, Anthony.Payne@carmeusena.com; Tiffany Freels (865) 992-1125 or (865) 992-3841 ext. 1125, Tiffany.freels@carmeusena.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.832Z",
+    "updated_at": "2026-06-11T20:17:12.832Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 146,
+  "fields": {
+    "title": "Colorado Regional Mine Rescue Contest",
+    "start_date": "2017-06-26",
+    "end_date": "2017-06-29",
+    "location": "Green Mountain High School, Lakewood, CO",
+    "description": "",
+    "contact_info": "Bill C. York-Feirn (303) 866-3567 ext. 8151, bill.york-feirn@state.co.us",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.838Z",
+    "updated_at": "2026-06-11T20:17:12.838Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 147,
+  "fields": {
+    "title": "Missouri Regional Mine Rescue Contest",
+    "start_date": "2017-09-18",
+    "end_date": "2017-09-21",
+    "location": "Rolla, MO",
+    "description": "",
+    "contact_info": "Jim Taylor (573) 341-6406, jtaylor@mst.edu; DeWayne Phelps (573) 341-6406, phelpscd@mst.edu",
+    "resources": [
+      {
+        "label": "Missouri Mine Rescue Association Information",
+        "url": "https://www.msha.gov/sites/default/files/Training_Education/missouri-mine-rescue-association-2017.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T20:17:12.845Z",
+    "updated_at": "2026-06-11T20:17:12.845Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 148,
+  "fields": {
+    "title": "Mine Rescue, First Aid, Bench and Preshift Rules Training",
+    "start_date": "2018-04-02",
+    "end_date": "2018-04-06",
+    "location": "National Mine Academy, Beaver, WV",
+    "description": "",
+    "contact_info": "Erica Warren (606) 546-5123, warren.erica@dol.gov; Angela Cook (304) 732-6410, cook.angela@dol.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.851Z",
+    "updated_at": "2026-06-11T20:17:12.851Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 149,
+  "fields": {
+    "title": "West Virginia Mine Rescue Alliance Mine Rescue Skills Contest",
+    "start_date": "2018-04-23",
+    "end_date": "2018-04-24",
+    "location": "National Mine Academy, Beaver, WV",
+    "description": "",
+    "contact_info": "Darren Blankenship (304) 673-7520, darrenblankenship@suddenlink.net",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.856Z",
+    "updated_at": "2026-06-11T20:17:12.856Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 150,
+  "fields": {
+    "title": "NMRA KY Post 2 Smoke Eaters Bench Contest",
+    "start_date": "2018-05-11",
+    "end_date": "2018-05-11",
+    "location": "Double Tree Inn & Suites, Lexington, KY",
+    "description": "",
+    "contact_info": "Lewis McCoy (412) 418-0612, lsm@csecorporation.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.863Z",
+    "updated_at": "2026-06-11T20:17:12.863Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 151,
+  "fields": {
+    "title": "Alabama Mine Rescue Contest",
+    "start_date": "2018-05-15",
+    "end_date": "2018-05-17",
+    "location": "Bevill State Community College, Sumiton, AL",
+    "description": "",
+    "contact_info": "Patty Tice (205) 871-3734, patty@alcoal.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.869Z",
+    "updated_at": "2026-06-11T20:17:12.869Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 152,
+  "fields": {
+    "title": "Welch Post #1 Mine Rescue Contest",
+    "start_date": "2018-05-19",
+    "end_date": "2018-05-19",
+    "location": "Bluefield State College, Bluefield, WV",
+    "description": "",
+    "contact_info": "Mike Plumley (304) 960-0340, Michael.plumley@brickstreet.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.874Z",
+    "updated_at": "2026-06-11T20:17:12.874Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 153,
+  "fields": {
+    "title": "Western KY Safety Days",
+    "start_date": "2018-05-23",
+    "end_date": "2018-05-24",
+    "location": "Madisonville, KY",
+    "description": "",
+    "contact_info": "Kevin Vaughn (270) 389-6700 ext. 6723, kevin.vaughn@arlp.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.881Z",
+    "updated_at": "2026-06-11T20:17:12.881Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 154,
+  "fields": {
+    "title": "Tennessee Cove Lake Mine Rescue",
+    "start_date": "2018-06-05",
+    "end_date": "2018-06-07",
+    "location": "Cove Lake State Park, Cove Lake, TN",
+    "description": "",
+    "contact_info": "Cindi Reynolds (423) 566-0329, cindi.reynolds@campbellcountychamber.org",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.886Z",
+    "updated_at": "2026-06-11T20:17:12.886Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 155,
+  "fields": {
+    "title": "Mine Rescue Association of Indiana",
+    "start_date": "2018-06-05",
+    "end_date": "2018-06-07",
+    "location": "Vincennes University, Vincennes, IN",
+    "description": "",
+    "contact_info": "Ruth Messel (812) 881-9315, ruth.messel@gmail.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.893Z",
+    "updated_at": "2026-06-11T20:17:12.893Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 156,
+  "fields": {
+    "title": "Post 6 Ohio Valley Mine Rescue Contest",
+    "start_date": "2018-06-05",
+    "end_date": "2018-06-07",
+    "location": "ODNR Facility, Cadiz, OH",
+    "description": "",
+    "contact_info": "Robbie Roberts (740) 296-9216, robertroberts@consolenergy.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.898Z",
+    "updated_at": "2026-06-11T20:17:12.898Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 157,
+  "fields": {
+    "title": "Virginia Governors Cup",
+    "start_date": "2018-06-07",
+    "end_date": "2018-06-07",
+    "location": "UVA, Wise, VA",
+    "description": "",
+    "contact_info": "Chris Whitt (276) 523-8264, chris.whitt@dmme.virginia.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.905Z",
+    "updated_at": "2026-06-11T20:17:12.905Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 158,
+  "fields": {
+    "title": "RMMRA Mine Rescue, First Aid, Bench and Preshift",
+    "start_date": "2018-06-11",
+    "end_date": "2018-06-14",
+    "location": "Carbon High School, Price, UT",
+    "description": "",
+    "contact_info": "Denny Erickson (435) 630-3476, derickson@broncoutah.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.911Z",
+    "updated_at": "2026-06-11T20:17:12.911Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 159,
+  "fields": {
+    "title": "Kentucky River Mine Rescue",
+    "start_date": "2018-06-12",
+    "end_date": "2018-06-14",
+    "location": "Hazard High School, Hazard, KY",
+    "description": "",
+    "contact_info": "Pauletta Smith (606) 438-4287, Psmith1@mikrotec.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.917Z",
+    "updated_at": "2026-06-11T20:17:12.917Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 160,
+  "fields": {
+    "title": "Colorado Mine Rescue Association Mine Rescue, First Aid, Bench Contest",
+    "start_date": "2018-07-16",
+    "end_date": "2018-07-20",
+    "location": "Delta, CO",
+    "description": "",
+    "contact_info": "Mark Beauchamp (970) 367-6407, mbeauchamp@peabodyenergy.com; Darrell Wynas (505) 598-2035, dwynas@westmoreland.com; Ty Odle (970) 929-2260, todel@archcoal.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.922Z",
+    "updated_at": "2026-06-11T20:17:12.922Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 161,
+  "fields": {
+    "title": "Harlan County Safety Day Mine Rescue",
+    "start_date": "2018-07-24",
+    "end_date": "2018-07-26",
+    "location": "Cumberland Campus, SKCTC, Cumberland, KY",
+    "description": "",
+    "contact_info": "Suzanne Williams or Tracy Bailey (606) 589-5812, tricitychamber@windstream.net",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.929Z",
+    "updated_at": "2026-06-11T20:17:12.929Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 162,
+  "fields": {
+    "title": "Virginia Mining Institute Safety Day Mine Rescue (2 Day), Bench, Preshift, First Aid Competition",
+    "start_date": "2018-08-06",
+    "end_date": "2018-08-09",
+    "location": "Blacksburg Park and Recreational Community Center, Blacksburg, VA",
+    "description": "",
+    "contact_info": "Diane Crouse (276) 988-4537, dlcrouse1@verizon.net; Wayne Davis (276) 415-9650, wayne.davis@dmme.virginia.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.936Z",
+    "updated_at": "2026-06-11T20:17:12.936Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 163,
+  "fields": {
+    "title": "Illinois Mine Rescue Contest",
+    "start_date": "2018-08-08",
+    "end_date": "2018-08-08",
+    "location": "Pavilion of Marion, IL",
+    "description": "",
+    "contact_info": "Bill Patterson (618) 439-9111 ext. 235, bill.patterson@illinois.gov; Cheryl Adams, crca@reagan.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.942Z",
+    "updated_at": "2026-06-11T20:17:12.942Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 164,
+  "fields": {
+    "title": "Post 5 Mine Rescue Contest",
+    "start_date": "2018-08-14",
+    "end_date": "2018-08-16",
+    "location": "Morgantown, WV",
+    "description": "",
+    "contact_info": "Michael Stark (304) 225-6851, Stark.Michael@dol.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.948Z",
+    "updated_at": "2026-06-11T20:17:12.948Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 165,
+  "fields": {
+    "title": "37th Biennial International Surface Mine Rescue Competition",
+    "start_date": "2018-08-15",
+    "end_date": "2018-08-17",
+    "location": "Gillette, WY",
+    "description": "",
+    "contact_info": "Crystal Volk (307) 680-1160, cvolk@slswestlube.com; Nick Brooks (307) 680-1160, nbrooks@archcoal.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.952Z",
+    "updated_at": "2026-06-11T20:17:12.952Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 166,
+  "fields": {
+    "title": "Kentucky State Contest - Kentucky Mining Institute (KMI)",
+    "start_date": "2018-08-20",
+    "end_date": "2018-08-23",
+    "location": "Lexington Convention Center, Lexington, KY",
+    "description": "",
+    "contact_info": "Geaunita Caylor (859) 257-2820, g.caylor@uky.edu",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.960Z",
+    "updated_at": "2026-06-11T20:17:12.960Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 167,
+  "fields": {
+    "title": "PA Bituminous Safety Association Mine Rescue Contest",
+    "start_date": "2018-08-21",
+    "end_date": "2018-08-22",
+    "location": "Greene County Fairgrounds, Waynesburg, PA",
+    "description": "",
+    "contact_info": "Alan Vozel (724) 963-6152, voze@atlanticbb.net",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.966Z",
+    "updated_at": "2026-06-11T20:17:12.966Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 168,
+  "fields": {
+    "title": "Southern West Virginia Mine Rescue, First Aid, Bench and Preshift",
+    "start_date": "2018-08-27",
+    "end_date": "2018-08-30",
+    "location": "National Mine Academy, Beaver, WV",
+    "description": "",
+    "contact_info": "Danny Quesenberry (276) 596-0914, dannyquesenberry50@hotmail.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.972Z",
+    "updated_at": "2026-06-11T20:17:12.972Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 169,
+  "fields": {
+    "title": "KY Coal Academy Regional Skills Contest",
+    "start_date": "2018-09-05",
+    "end_date": "2018-09-06",
+    "location": "Kentucky Coal Academy, Madisonville, KY",
+    "description": "",
+    "contact_info": "Danny Knott (270) 871-0672, dknott0001@kctcs.edu",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.978Z",
+    "updated_at": "2026-06-11T20:17:12.978Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 170,
+  "fields": {
+    "title": "National Mine Rescue Skills Contest",
+    "start_date": "2018-09-17",
+    "end_date": "2018-09-20",
+    "location": "National Mine Academy, Beaver, WV",
+    "description": "",
+    "contact_info": "Darren Blankenship (304) 673-7520, darrenblankenship@suddenlink.net",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.984Z",
+    "updated_at": "2026-06-11T20:17:12.984Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 171,
+  "fields": {
+    "title": "Inaugural Surface Mining Emergency Response Training & Competition",
+    "start_date": "2018-02-26",
+    "end_date": "2018-03-01",
+    "location": "Florida Public Safety Institute, Tallahassee, FL",
+    "description": "",
+    "contact_info": "Karen M. Miller (850) 201-7689, MILLERKA@tcc.fl.edu",
+    "resources": [
+      {
+        "label": "Florida Mine Safety Competition Website",
+        "url": "https://flminesafety.com/"
+      }
+    ],
+    "created_at": "2026-06-11T20:17:12.989Z",
+    "updated_at": "2026-06-11T20:17:12.989Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 172,
+  "fields": {
+    "title": "Nevada Regional Mine Rescue Contest",
+    "start_date": "2018-03-12",
+    "end_date": "2018-03-15",
+    "location": "Winnemucca Events Center, Winnemucca, NV",
+    "description": "",
+    "contact_info": "Mike Peck (775) 778-2286",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:12.995Z",
+    "updated_at": "2026-06-11T20:17:12.995Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 173,
+  "fields": {
+    "title": "Southwestern Regional Mine Rescue Contest",
+    "start_date": "2018-04-09",
+    "end_date": "2018-04-12",
+    "location": "Carlsbad, New Mexico",
+    "description": "",
+    "contact_info": "Michael J. Ackman (575) 628-6464, michael.ackman@mosaicco.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.000Z",
+    "updated_at": "2026-06-11T20:17:13.000Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 174,
+  "fields": {
+    "title": "Central Mine Rescue Contest",
+    "start_date": "2018-05-08",
+    "end_date": "2018-05-10",
+    "location": "Centennial Hall Convention Center",
+    "description": "",
+    "contact_info": "Danny Petersen (208) 556-2225",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.006Z",
+    "updated_at": "2026-06-11T20:17:13.006Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 175,
+  "fields": {
+    "title": "Southeast Regional Mine Rescue Contest",
+    "start_date": "2018-05-21",
+    "end_date": "2018-05-24",
+    "location": "Williamson County Ag Expo Center, Franklin, TN",
+    "description": "",
+    "contact_info": "Brandon Clemmons (615) 347-3880, clemmonsb@vmcmail.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.019Z",
+    "updated_at": "2026-06-11T20:17:13.019Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 176,
+  "fields": {
+    "title": "Northern Regional Mine Rescue Contest",
+    "start_date": "2018-06-04",
+    "end_date": "2018-06-08",
+    "location": "Peek 'n Peak Resort, Clymer, NY",
+    "description": "",
+    "contact_info": "David Bird (216) 357-4617 or (865) 268-6074, David_Bird@cargill.com; Vinnie Illaqua (440) 639-4251 or (440) 479-7109, VIlacqua@mortonsalt.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.024Z",
+    "updated_at": "2026-06-11T20:17:13.024Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 177,
+  "fields": {
+    "title": "Southwest Wyoming Mutual Aid Competition - Underground",
+    "start_date": "2018-06-11",
+    "end_date": "2018-06-15",
+    "location": "Rock Springs, WY",
+    "description": "",
+    "contact_info": "Cindy Phillips (307) 371-3258, cindy.phillips@dxpe.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.031Z",
+    "updated_at": "2026-06-11T20:17:13.031Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 178,
+  "fields": {
+    "title": "Nevada Surface Mine Rescue Contest",
+    "start_date": "2018-07-12",
+    "end_date": "2018-07-14",
+    "location": "Elko, Nevada",
+    "description": "",
+    "contact_info": "",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.035Z",
+    "updated_at": "2026-06-11T20:17:13.035Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 179,
+  "fields": {
+    "title": "Missouri Regional Mine Rescue Contest",
+    "start_date": "2018-10-01",
+    "end_date": "2018-10-04",
+    "location": "Rolla, MO",
+    "description": "",
+    "contact_info": "Jim Taylor (573) 341-6406, jtaylor@mst.edu; DeWayne Phelps (573) 341-6406, phelpscd@mst.edu",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.042Z",
+    "updated_at": "2026-06-11T20:17:13.042Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 180,
+  "fields": {
+    "title": "Mine Rescue, First Aid, Bench and Preshift Rules Training",
+    "start_date": "2019-04-02",
+    "end_date": "2019-04-03",
+    "location": "National Mine Academy, Beaver, WV",
+    "description": "",
+    "contact_info": "Erica Warren (606) 546-5123, warren.erica@dol.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.049Z",
+    "updated_at": "2026-06-11T20:17:13.049Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 181,
+  "fields": {
+    "title": "NMRA KY Post 2 Smoke Eaters Bench Contest",
+    "start_date": "2019-05-10",
+    "end_date": "2019-05-10",
+    "location": "Double Tree Inn & Suites, Lexington, KY",
+    "description": "",
+    "contact_info": "Lewis McCoy (412) 418-0612, lsm@csecorporation.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.054Z",
+    "updated_at": "2026-06-11T20:17:13.054Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 182,
+  "fields": {
+    "title": "Alabama Mine Rescue Contest",
+    "start_date": "2019-05-14",
+    "end_date": "2019-05-16",
+    "location": "Bevill State Community College, Sumiton, AL",
+    "description": "",
+    "contact_info": "Patty Tice (205) 871-3734, patty@alcoal.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.062Z",
+    "updated_at": "2026-06-11T20:17:13.062Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 183,
+  "fields": {
+    "title": "Welch Post #1 Mine Rescue Contest",
+    "start_date": "2019-05-18",
+    "end_date": "2019-05-18",
+    "location": "Bluefield State College, Bluefield, WV",
+    "description": "",
+    "contact_info": "Mike Plumley (304) 960-0340, Michael.plumley@brickstreet.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.067Z",
+    "updated_at": "2026-06-11T20:17:13.067Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 184,
+  "fields": {
+    "title": "Western KY Safety Days",
+    "start_date": "2019-05-22",
+    "end_date": "2019-05-23",
+    "location": "Kentucky Coal Academy, Madisonville, KY",
+    "description": "",
+    "contact_info": "Kevin Vaughn (270) 836-3636, kevin.vaughn@arlp.com; Kim Humphrey (270) 285-2774, kim.humphrey@arlp.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.072Z",
+    "updated_at": "2026-06-11T20:17:13.072Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 185,
+  "fields": {
+    "title": "Rocky Mountain Mine Rescue Association Price Contest",
+    "start_date": "2019-06-03",
+    "end_date": "2019-06-06",
+    "location": "Carbon County Events Center, Price, UT",
+    "description": "",
+    "contact_info": "Denny Erickson (435) 630-3476, derickson@broncoutah.com; Mark Beauchamp (970) 367-6407, mbeauchamp@peabodyenergy.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.080Z",
+    "updated_at": "2026-06-11T20:17:13.080Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 186,
+  "fields": {
+    "title": "Post 6 Ohio Valley Mine Rescue Contest",
+    "start_date": "2019-06-04",
+    "end_date": "2019-06-06",
+    "location": "ODNR Office, Cadiz, OH",
+    "description": "",
+    "contact_info": "Robbie Roberts (724) 663-7131, sigdeputy46@yahoo.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.086Z",
+    "updated_at": "2026-06-11T20:17:13.086Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 187,
+  "fields": {
+    "title": "Indiana State Mine Rescue Competition",
+    "start_date": "2019-06-05",
+    "end_date": "2019-06-06",
+    "location": "Vincennes University Gibson Center, Fort Branch, IN",
+    "description": "",
+    "contact_info": "Ruth Messel (812) 881-9315, ruth.messel@gmail.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.094Z",
+    "updated_at": "2026-06-11T20:17:13.094Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 188,
+  "fields": {
+    "title": "Virginia Governors Cup",
+    "start_date": "2019-06-05",
+    "end_date": "2019-06-06",
+    "location": "UVA, Wise, VA",
+    "description": "",
+    "contact_info": "Chris Whitt (276) 523-8264, chris.whitt@dmme.virginia.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.101Z",
+    "updated_at": "2026-06-11T20:17:13.101Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 189,
+  "fields": {
+    "title": "Southwest Wyoming Mutual Aid Competition - Surface",
+    "start_date": "2019-06-06",
+    "end_date": "2019-06-08",
+    "location": "Rock Springs, WY",
+    "description": "",
+    "contact_info": "Cindy Phillips (307) 371-3258, cindy.phillips@dxpe.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.107Z",
+    "updated_at": "2026-06-11T20:17:13.107Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 190,
+  "fields": {
+    "title": "SIC/IECC Mine Rescue Skills Competition",
+    "start_date": "2019-06-11",
+    "end_date": "2019-06-12",
+    "location": "Harrisburg, IL",
+    "description": "",
+    "contact_info": "Lori Cox (618) 252-5400 ext. 2300, lori.cox@sic.edu; Kimberly Oliver (618) 252-5400 ext. 2360, oliverk@iecc.edu",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.119Z",
+    "updated_at": "2026-06-11T20:17:13.119Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 191,
+  "fields": {
+    "title": "Kentucky River Mine Rescue",
+    "start_date": "2019-06-11",
+    "end_date": "2019-06-13",
+    "location": "Hazard High School, Hazard, KY",
+    "description": "",
+    "contact_info": "Pauletta Smith (606) 438-4287, Psmith1@mikrotec.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.125Z",
+    "updated_at": "2026-06-11T20:17:13.125Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 192,
+  "fields": {
+    "title": "West Virginia Mine Rescue Alliance Mine Rescue Skills Contest",
+    "start_date": "2019-06-18",
+    "end_date": "2019-06-19",
+    "location": "National Mine Academy, Beaver, WV",
+    "description": "",
+    "contact_info": "Darren Blankenship (304) 673-7520, darrenblankenship@suddenlink.net",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.132Z",
+    "updated_at": "2026-06-11T20:17:13.132Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 193,
+  "fields": {
+    "title": "Rocky Mountain Mine Rescue Association Colorado Contest",
+    "start_date": "2019-07-15",
+    "end_date": "2019-07-18",
+    "location": "Craig Middle School, Craig, CO",
+    "description": "",
+    "contact_info": "Denny Erickson (435) 630-3476, derickson@broncoutah.com; Mark Beauchamp (970) 367-6407, mbeauchamp@peabodyenergy.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.137Z",
+    "updated_at": "2026-06-11T20:17:13.137Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 194,
+  "fields": {
+    "title": "Harlan County Safety Day Mine Rescue",
+    "start_date": "2019-07-23",
+    "end_date": "2019-07-25",
+    "location": "Cumberland Campus, SKCTC, Cumberland, KY",
+    "description": "",
+    "contact_info": "Suzanne Williams or Tracy Bailey (606) 589-5812, tricitychamber@windstream.net",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.145Z",
+    "updated_at": "2026-06-11T20:17:13.145Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 195,
+  "fields": {
+    "title": "Post 5 Mine Rescue Contest",
+    "start_date": "2019-07-30",
+    "end_date": "2019-08-01",
+    "location": "Morgantown, WV",
+    "description": "",
+    "contact_info": "Michael Stark (304) 225-6851, Stark.Michael@dol.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.150Z",
+    "updated_at": "2026-06-11T20:17:13.150Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 196,
+  "fields": {
+    "title": "Virginia Mining Institute Safety Day Mine Rescue (2 Day), Bench, Preshift, First Aid Competition",
+    "start_date": "2019-08-05",
+    "end_date": "2019-08-08",
+    "location": "Blacksburg Park and Recreational Community Center, Blacksburg, VA",
+    "description": "",
+    "contact_info": "Diane Crouse (276) 988-4537, dlcrouse1@verizon.net; Wayne Davis (276) 415-9650, wayne.davis@dmme.virginia.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.155Z",
+    "updated_at": "2026-06-11T20:17:13.155Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 197,
+  "fields": {
+    "title": "Kentucky State Contest - Kentucky Mining Institute (KMI)",
+    "start_date": "2019-08-19",
+    "end_date": "2019-08-22",
+    "location": "Lexington Convention Center, Lexington, KY",
+    "description": "",
+    "contact_info": "Geaunita Caylor (859) 257-2820, g.caylor@uky.edu",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.161Z",
+    "updated_at": "2026-06-11T20:17:13.161Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 198,
+  "fields": {
+    "title": "PA Bituminous Safety Association Mine Rescue Contest",
+    "start_date": "2019-08-20",
+    "end_date": "2019-08-21",
+    "location": "Greene County Fairgrounds, Waynesburg, PA",
+    "description": "",
+    "contact_info": "Alan Vozel (724) 963-6152, voze@atlanticbb.net",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.167Z",
+    "updated_at": "2026-06-11T20:17:13.167Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 199,
+  "fields": {
+    "title": "Southern West Virginia Mine Rescue, First Aid, Bench and Preshift",
+    "start_date": "2019-08-26",
+    "end_date": "2019-08-29",
+    "location": "National Mine Academy, Beaver, WV",
+    "description": "",
+    "contact_info": "Danny Quesenberry (276) 596-0914, dannyquesenberry50@gmail.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.172Z",
+    "updated_at": "2026-06-11T20:17:13.172Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 200,
+  "fields": {
+    "title": "Illinois Mine Rescue Contest",
+    "start_date": "2019-08-28",
+    "end_date": "2019-08-28",
+    "location": "Pavilion of Marion, IL",
+    "description": "",
+    "contact_info": "Bill Patterson (618) 439-9111 ext. 235, bill.patterson@illinois.gov; Cheryl Adams, crca@reagan.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.178Z",
+    "updated_at": "2026-06-11T20:17:13.178Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 201,
+  "fields": {
+    "title": "National Mine Rescue, First Aid, Bench and Preshift Contest",
+    "start_date": "2019-09-23",
+    "end_date": "2019-09-26",
+    "location": "Lexington Convention Center, Lexington, KY",
+    "description": "",
+    "contact_info": "Erica Warren (606) 546-5123 ext. 124, warren.erica@dol.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.183Z",
+    "updated_at": "2026-06-11T20:17:13.183Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 202,
+  "fields": {
+    "title": "KY Coal Academy Regional Skills Contest",
+    "start_date": "2019-10-16",
+    "end_date": "2019-10-17",
+    "location": "Kentucky Coal Academy, Madisonville, KY",
+    "description": "",
+    "contact_info": "Danny Knott (270) 871-0672, dknott0001@kctcs.edu",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.189Z",
+    "updated_at": "2026-06-11T20:17:13.189Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 203,
+  "fields": {
+    "title": "Surface Mining Emergency Response Training & Competition",
+    "start_date": "2019-02-25",
+    "end_date": "2019-02-28",
+    "location": "Florida Public Safety Institute, Tallahassee, Florida",
+    "description": "",
+    "contact_info": "Karen M. Miller (850) 201-7689",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.196Z",
+    "updated_at": "2026-06-11T20:17:13.196Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 204,
+  "fields": {
+    "title": "Nevada Regional Mine Rescue Contest",
+    "start_date": "2019-03-11",
+    "end_date": "2019-03-14",
+    "location": "Winnemucca Events Center, Winnemucca, NV",
+    "description": "",
+    "contact_info": "Michael Peck (775) 778-2286, Michael.Peck@newmont.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.201Z",
+    "updated_at": "2026-06-11T20:17:13.201Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 205,
+  "fields": {
+    "title": "Southwestern Regional Mine Rescue Contest",
+    "start_date": "2019-04-08",
+    "end_date": "2019-04-11",
+    "location": "Ruidoso/Mescalero, NM",
+    "description": "",
+    "contact_info": "Michael Ackman (575) 302-1052, michael.ackman@mosaicco.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.207Z",
+    "updated_at": "2026-06-11T20:17:13.207Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 206,
+  "fields": {
+    "title": "Southern Regional Mine Rescue Contest",
+    "start_date": "2019-04-29",
+    "end_date": "2019-05-02",
+    "location": "New Iberia, Louisiana",
+    "description": "",
+    "contact_info": "Scott Fountain (337) 924-3379, fountains@compassminerals.com; Brian Blanchard (337) 373-1737, Brian_Blanchard@cargill.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.213Z",
+    "updated_at": "2026-06-11T20:17:13.213Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 207,
+  "fields": {
+    "title": "Central Mine Rescue Contest",
+    "start_date": "2019-05-07",
+    "end_date": "2019-05-09",
+    "location": "Silver Mountain Resort, Kellogg, ID",
+    "description": "",
+    "contact_info": "Danny Peterson (208) 556-2225",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.218Z",
+    "updated_at": "2026-06-11T20:17:13.218Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 208,
+  "fields": {
+    "title": "Kansas Shoot-Out",
+    "start_date": "2019-05-13",
+    "end_date": "2019-05-16",
+    "location": "Hutchinson, KS",
+    "description": "",
+    "contact_info": "Carla Gustafson (620) 665-4991, GustafsonC@hutchcc.edu",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.224Z",
+    "updated_at": "2026-06-11T20:17:13.224Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 209,
+  "fields": {
+    "title": "Southeast Regional Mine Rescue Contest",
+    "start_date": "2019-06-24",
+    "end_date": "2019-06-27",
+    "location": "Maysville, KY",
+    "description": "",
+    "contact_info": "Harriet Blythe, harriet.blythe@carmeusena.com; Sammy Linville, sammy.linville@yahoo.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.230Z",
+    "updated_at": "2026-06-11T20:17:13.230Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 210,
+  "fields": {
+    "title": "Northern Regional M/NM Mine Rescue Competition",
+    "start_date": "2019-07-15",
+    "end_date": "2019-07-18",
+    "location": "Peek 'n Peak Resort, Clymer, NY",
+    "description": "",
+    "contact_info": "Vinnie Ilacqua, vilacqua@mortonsalt.com",
+    "resources": [
+      {
+        "label": "2019 Northern Regional Flyer",
+        "url": "https://www.msha.gov/sites/default/files/events/2019%20Northern%20Regional%20Flyer%20M.pdf"
+      },
+      {
+        "label": "2019 NMRA Registration Form",
+        "url": "https://www.msha.gov/sites/default/files/events/NMRA%202019%20Reg.%20Form.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T20:17:13.236Z",
+    "updated_at": "2026-06-11T20:17:13.236Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 211,
+  "fields": {
+    "title": "Colorado Regional Mine Rescue, First Aid & Team Technician Contest",
+    "start_date": "2019-08-12",
+    "end_date": "2019-08-15",
+    "location": "The Ranch, Larimer County Events Complex, Loveland, CO",
+    "description": "",
+    "contact_info": "Bill York-Feirn (303) 866-3567 ext. 8151, bill.york-feirn@state.co.us",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.240Z",
+    "updated_at": "2026-06-11T20:17:13.241Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 212,
+  "fields": {
+    "title": "Missouri Regional Mine Rescue Contest",
+    "start_date": "2019-09-30",
+    "end_date": "2019-10-03",
+    "location": "Rolla, MO",
+    "description": "",
+    "contact_info": "Jim Taylor (573) 341-6406, jtaylor@mst.edu; DeWayne Phelps (573) 341-6406, phelpscd@mst.edu",
+    "resources": [
+      {
+        "label": "Surface Judge Packet Day 1",
+        "url": "https://www.msha.gov/sites/default/files/MNM%20Mine%20Rescue/2019%20Rolla%20Day%201%20Surface%20Judge%20Packet.pdf"
+      },
+      {
+        "label": "Surface Judge Packet Day 2",
+        "url": "https://www.msha.gov/sites/default/files/MNM%20Mine%20Rescue/2019%20Rolla%20Day%202%20Surface%20Judge%20Packet.pdf"
+      },
+      {
+        "label": "Kennedy Judge Packet Day 1",
+        "url": "https://www.msha.gov/sites/default/files/MNM%20Mine%20Rescue/2019%20Rolla%20Day%201%20Kennedy%20Judge%20Packets.pdf"
+      },
+      {
+        "label": "Kennedy Judge Packet Day 2",
+        "url": "https://www.msha.gov/sites/default/files/MNM%20Mine%20Rescue/2019%20Rolla%20Day%202%20Kennedy%20Judge%20Packets.pdf"
+      },
+      {
+        "label": "Wheeler Judge Packet Day 1",
+        "url": "https://www.msha.gov/sites/default/files/MNM%20Mine%20Rescue/2019%20Rolla%20Day%201%20Wheeler%20Judge%20Packet.pdf"
+      },
+      {
+        "label": "Wheeler Judge Packet Day 2",
+        "url": "https://www.msha.gov/sites/default/files/MNM%20Mine%20Rescue/2019%20Rolla%20Day%202%20Wheeler%20Judge%20Packet.pdf"
+      },
+      {
+        "label": "Team Tech BG4 Test & Answers",
+        "url": "https://www.msha.gov/sites/default/files/MNM%20Mine%20Rescue/2019-MOMR-TeamTechBG4-test%26answers.pdf"
+      },
+      {
+        "label": "Team Tech Bio 240R Test & Answers",
+        "url": "https://www.msha.gov/sites/default/files/MNM%20Mine%20Rescue/2019-MOMR-TeamTechBio240R-test%26answers.pdf"
+      },
+      {
+        "label": "Team Tech Bio 240S Test & Answers",
+        "url": "https://www.msha.gov/sites/default/files/MNM%20Mine%20Rescue/2019-MOMR-TeamTechBio240S-test%26answers.pdf"
+      },
+      {
+        "label": "Field Test & Answers",
+        "url": "https://www.msha.gov/sites/default/files/MNM%20Mine%20Rescue/2019-MOMR-Field-test%26answers.pdf"
+      },
+      {
+        "label": "First Aid Test & Answers",
+        "url": "https://www.msha.gov/sites/default/files/MNM%20Mine%20Rescue/2019-MOMR-First-aid-test%26answers.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T20:17:13.247Z",
+    "updated_at": "2026-06-11T20:17:13.247Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 213,
+  "fields": {
+    "title": "Surface Mining Emergency Response Training & Competition",
+    "start_date": "2020-02-24",
+    "end_date": "2020-02-27",
+    "location": "Florida Public Safety Institute, Tallahassee, Florida",
+    "description": "",
+    "contact_info": "Karen M. Miller (850) 201-7689, MILLERKA@tcc.fl.edu",
+    "resources": [
+      {
+        "label": "Florida Mine Safety Competition Website",
+        "url": "https://flminesafety.com/competition/"
+      }
+    ],
+    "created_at": "2026-06-11T20:17:13.253Z",
+    "updated_at": "2026-06-11T20:17:13.253Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 214,
+  "fields": {
+    "title": "Mine Rescue, First Aid, Bench and Preshift Rules Training",
+    "start_date": "2020-04-01",
+    "end_date": "2020-04-02",
+    "location": "National Mine Academy, Beaver, WV",
+    "description": "",
+    "contact_info": "Erica Warren (606) 546-5123, warren.erica@dol.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.259Z",
+    "updated_at": "2026-06-11T20:17:13.259Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 215,
+  "fields": {
+    "title": "Virginia Governors Cup",
+    "start_date": "2020-07-29",
+    "end_date": "2020-07-30",
+    "location": "UVA, Wise, VA",
+    "description": "",
+    "contact_info": "Chris Whitt (276) 523-8264, chris.whitt@dmme.virginia.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.265Z",
+    "updated_at": "2026-06-11T20:17:13.265Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 216,
+  "fields": {
+    "title": "State of Ohio Mine Rescue Contest",
+    "start_date": "2020-08-19",
+    "end_date": "2020-08-20",
+    "location": "Ohio Department of Natural Resources Training Center, Cadiz, OH",
+    "description": "",
+    "contact_info": "Russ Byers (740) 491-2725",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.270Z",
+    "updated_at": "2026-06-11T20:17:13.270Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 217,
+  "fields": {
+    "title": "Southern West Virginia Mine Rescue, First Aid, Bench and Preshift",
+    "start_date": "2020-08-24",
+    "end_date": "2020-08-27",
+    "location": "National Mine Academy, Beaver, WV",
+    "description": "",
+    "contact_info": "Danny Quesenberry (276) 596-0914, dannyquesenberry50@gmail.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.276Z",
+    "updated_at": "2026-06-11T20:17:13.276Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 218,
+  "fields": {
+    "title": "Rocky Mountain Mine Rescue Association Price Contest",
+    "start_date": "2020-09-14",
+    "end_date": "2020-09-17",
+    "location": "Carbon County Events Center, Price, UT",
+    "description": "",
+    "contact_info": "Denny Erickson (435) 630-3476, derickson@broncoutah.com; Mark Beauchamp (970) 367-6407, mbeauchamp@peabodyenergy.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.281Z",
+    "updated_at": "2026-06-11T20:17:13.281Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 219,
+  "fields": {
+    "title": "Post 5 Mine Rescue Contest",
+    "start_date": "2020-10-05",
+    "end_date": "2020-10-08",
+    "location": "Morgantown, WV",
+    "description": "",
+    "contact_info": "Josh Brady (304) 293-9810, Joshua.brady@mail.wvu.edu",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.287Z",
+    "updated_at": "2026-06-11T20:17:13.287Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 220,
+  "fields": {
+    "title": "Alabama Mine Rescue Contest",
+    "start_date": "2020-10-27",
+    "end_date": "2020-10-27",
+    "location": "Bevill State Community College, Sumiton, AL",
+    "description": "",
+    "contact_info": "Rachael Jones (205) 871-3734, rachael@alcoal.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.294Z",
+    "updated_at": "2026-06-11T20:17:13.294Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 221,
+  "fields": {
+    "title": "Surface Mining Emergency Response Training & Competition",
+    "start_date": "2021-03-01",
+    "end_date": "2021-03-04",
+    "location": "Florida Public Safety Institute, 75 College Drive, Havana, Florida 32333",
+    "description": "",
+    "contact_info": "Karen M. Miller (850) 201-7689, MILLERKA@tcc.fl.edu",
+    "resources": [
+      {
+        "label": "Florida Mine Safety Competition Website",
+        "url": "https://flminesafety.com/competition/"
+      }
+    ],
+    "created_at": "2026-06-11T20:17:13.300Z",
+    "updated_at": "2026-06-11T20:17:13.300Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 222,
+  "fields": {
+    "title": "Southeast Regional Mine Rescue Competition",
+    "start_date": "2021-05-18",
+    "end_date": "2021-05-20",
+    "location": "Field of Dreams Activity Center, 1145 Treadway Drive, Dandridge, TN 37725",
+    "description": "",
+    "contact_info": "Brian Millington (865) 804-1700, brian.millington@nyrstar.com or tnminerescue@gmail.com; Darren Blankenship (304) 673-7520, darrenblankenship@suddenlink.net",
+    "resources": [
+      {
+        "label": "2021 South Regional Mine Rescue Competition Flyer",
+        "url": "https://www.msha.gov/sites/default/files/events/2021%20South%20Regional%20Mine%20Rescue%20Competition.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T20:17:13.305Z",
+    "updated_at": "2026-06-11T20:17:13.305Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 223,
+  "fields": {
+    "title": "Colorado Mine Rescue Contest",
+    "start_date": "2021-06-14",
+    "end_date": "2021-06-17",
+    "location": "Craig Middle School, Craig, Colorado",
+    "description": "",
+    "contact_info": "Mark Beauchamp (970) 879-3800 ext. 22792 or (970) 367-6407, mbeauchamp@peabodyenergy.com; Denny Erickson (435) 286-2038 or (435) 630-3476, derickson@broncoutah.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.311Z",
+    "updated_at": "2026-06-11T20:17:13.311Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 224,
+  "fields": {
+    "title": "Elko Safety Olympiad (Surface Contest)",
+    "start_date": "2021-07-29",
+    "end_date": "2021-07-31",
+    "location": "Elko, NV",
+    "description": "",
+    "contact_info": "Jason Cooley (775) 397-1720, jason.cooley@kinross.com",
+    "resources": [
+      {
+        "label": "2021 Olympiad Registration Packet",
+        "url": "https://www.msha.gov/sites/default/files/MNM%20Mine%20Rescue/2021%20Olympiad%20Registration%20Packet.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T20:17:13.318Z",
+    "updated_at": "2026-06-11T20:17:13.318Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 225,
+  "fields": {
+    "title": "Virginia Mining Institute Mine Rescue Contest",
+    "start_date": "2021-08-03",
+    "end_date": "2021-08-05",
+    "location": "Blacksburg Park and Recreation Community Center, Blacksburg, VA",
+    "description": "",
+    "contact_info": "Diane Crouse (276) 988-4537 or (276) 608-0286, dlcrouse1@verizon.net; Don Riffe (276) 970-3292, don.riffe@dmme.virginia.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.324Z",
+    "updated_at": "2026-06-11T20:17:13.324Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 226,
+  "fields": {
+    "title": "Rocky Mountain Mine Rescue Association Contest",
+    "start_date": "2021-08-16",
+    "end_date": "2021-08-19",
+    "location": "Carbon County Event Center, Price, UT",
+    "description": "",
+    "contact_info": "Denny Erickson (435) 286-2038 or (435) 630-3476, derickson@broncoutah.com; Mark Beauchamp (970) 879-3800 ext. 22792 or (970) 367-6407, mbeauchamp@peabodyenergy.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.330Z",
+    "updated_at": "2026-06-11T20:17:13.330Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 227,
+  "fields": {
+    "title": "Pennsylvania Bituminous Mine Rescue Contest",
+    "start_date": "2021-08-24",
+    "end_date": "2021-08-26",
+    "location": "Greene County Fairgrounds, 411 East George Street, Carmichaels, PA 15320",
+    "description": "",
+    "contact_info": "Alan Vozel (724) 966-8993 or (724) 963-6152, voze@atlanticbb.net",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.336Z",
+    "updated_at": "2026-06-11T20:17:13.336Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 228,
+  "fields": {
+    "title": "Missouri Regional Mine Rescue Contest (Associational Only)",
+    "start_date": "2021-09-29",
+    "end_date": "2021-10-01",
+    "location": "Rolla, MO",
+    "description": "",
+    "contact_info": "DeWayne Phelps (573) 341-6406, phelpscd@mst.edu",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.342Z",
+    "updated_at": "2026-06-11T20:17:13.342Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 229,
+  "fields": {
+    "title": "Southeast Regional Mine Rescue Contest",
+    "start_date": "2022-03-29",
+    "end_date": "2022-03-31",
+    "location": "Field of Dreams Center, Dandridge, TN",
+    "description": "",
+    "contact_info": "Brian Millington (865) 804-1700, tnminerescue@gmail.com; Darren Blankenship (304) 673-7520, darrenblankenship@suddenlink.net",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.349Z",
+    "updated_at": "2026-06-11T20:17:13.349Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 230,
+  "fields": {
+    "title": "NMRA Post 2 Smoke Eaters Bench Contest",
+    "start_date": "2022-04-08",
+    "end_date": "2022-04-08",
+    "location": "Lexington DoubleTree Hotel, Lexington, KY",
+    "description": "",
+    "contact_info": "Lewis McCoy (412) 418-0612, LSM@csecorporation.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.356Z",
+    "updated_at": "2026-06-11T20:17:13.356Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 231,
+  "fields": {
+    "title": "KMI - Kentucky Mining Institute Mine Rescue Contest",
+    "start_date": "2022-05-02",
+    "end_date": "2022-05-05",
+    "location": "Central Bank Center, Lexington, KY",
+    "description": "",
+    "contact_info": "Brad Matheny (270) 836-4225, rbm@csecorporation.com; Sammy Linville (859) 468-2914",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.364Z",
+    "updated_at": "2026-06-11T20:17:13.364Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 232,
+  "fields": {
+    "title": "Western Kentucky Safety Days",
+    "start_date": "2022-05-25",
+    "end_date": "2022-05-26",
+    "location": "MCC/KCA Complex, Madisonville, KY",
+    "description": "",
+    "contact_info": "Kim Humphrey (270) 389-6792, kim.humphrey@arlp.com; Kevin Vaughn (270) 389-6723, kevin.vaughn@arlp.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.369Z",
+    "updated_at": "2026-06-11T20:17:13.369Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 233,
+  "fields": {
+    "title": "Colorado Mine Rescue Contest",
+    "start_date": "2022-06-13",
+    "end_date": "2022-06-16",
+    "location": "Craig Middle School, Craig, Colorado",
+    "description": "",
+    "contact_info": "Mark Beauchamp (970) 879-3800 ext. 22792 or (970) 367-6407, mbeauchamp@peabodyenergy.com; Denny Erickson (435) 286-2038 or (435) 630-3476, derickson@broncoutah.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.375Z",
+    "updated_at": "2026-06-11T20:17:13.375Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 234,
+  "fields": {
+    "title": "Post 6 Ohio Valley Mine Rescue Contest",
+    "start_date": "2022-06-14",
+    "end_date": "2022-06-16",
+    "location": "ODNR Mine Safety Training Center, Cadiz, OH",
+    "description": "",
+    "contact_info": "Russell Byers (740) 491-2725, russell.byers@dnr.ohio.gov; Michael Call (304) 377-2305, mrc@csecorporation.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.381Z",
+    "updated_at": "2026-06-11T20:17:13.381Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 235,
+  "fields": {
+    "title": "Utah Mine Rescue Contest",
+    "start_date": "2022-07-11",
+    "end_date": "2022-07-14",
+    "location": "Carbon County Events Center, Price, UT",
+    "description": "",
+    "contact_info": "Mark Beauchamp (970) 879-3800 ext. 22792 or (970) 367-6407, mbeauchamp@peabodyenergy.com; Denny Erickson (435) 286-2038 or (435) 630-3476, derickson@broncoutah.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.386Z",
+    "updated_at": "2026-06-11T20:17:13.386Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 236,
+  "fields": {
+    "title": "Harlan County Safety Days",
+    "start_date": "2022-07-19",
+    "end_date": "2022-07-21",
+    "location": "Cumberland Campus, S.K.C.T.C., Cumberland, KY",
+    "description": "",
+    "contact_info": "Suzanne Williams (606) 589-5812, tcchamber@blackbearmtn.org",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.392Z",
+    "updated_at": "2026-06-11T20:17:13.392Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 237,
+  "fields": {
+    "title": "NMRAA Post #5 Mine Rescue Contest",
+    "start_date": "2022-07-26",
+    "end_date": "2022-07-27",
+    "location": "Mylan Park, Morgantown, WV",
+    "description": "",
+    "contact_info": "Josh Brady (304) 293-9810, Joshua.brady@mail.wvu.edu",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.398Z",
+    "updated_at": "2026-06-11T20:17:13.398Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 238,
+  "fields": {
+    "title": "Rocky Mountain Mine Rescue Council Contest",
+    "start_date": "2022-08-01",
+    "end_date": "2022-08-04",
+    "location": "Embassy Suites Hotel & Conference Center, Loveland, CO",
+    "description": "",
+    "contact_info": "Brandon Neal (303) 870-0431, brandon.neal@state.co.us",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.403Z",
+    "updated_at": "2026-06-11T20:17:13.403Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 239,
+  "fields": {
+    "title": "Virginia Mining Institute Mine Rescue Contest",
+    "start_date": "2022-08-01",
+    "end_date": "2022-08-05",
+    "location": "Blacksburg Park and Recreation Community Center, Blacksburg, VA",
+    "description": "",
+    "contact_info": "Diane Crouse (276) 988-4537 or (276) 608-0286, dlcrouse1@verizon.net; Don Riffe (276) 970-3292, don.riffe@energy.virginia.gov",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.409Z",
+    "updated_at": "2026-06-11T20:17:13.409Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 240,
+  "fields": {
+    "title": "National Mine Rescue, First Aid, Bench, and Technician Team Contest",
+    "start_date": "2022-08-08",
+    "end_date": "2022-08-11",
+    "location": "Central Bank Center, Lexington, Kentucky",
+    "description": "",
+    "contact_info": "Mack Wright (304) 256-3262, wright.mack@dol.gov; Brian Thompson (205) 290-7294, thompson.brian@dol.gov; Kenny Murray (859) 475-3445, kenny.murray@arlp.com; Sammy Linville (859) 468-2914, sammylinville@yahoo.com; Registration: Stephanie Meade (276) 321-6612, meade.stephanie@dol.gov, Lewis McCoy (412) 418-0612, lsm@csecorporation.com (fees only)",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.415Z",
+    "updated_at": "2026-06-11T20:17:13.415Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 241,
+  "fields": {
+    "title": "Fallen Heroes Mine Rescue Contest",
+    "start_date": "2022-08-22",
+    "end_date": "2022-08-26",
+    "location": "Sylvester Park, Sylvester, WV",
+    "description": "",
+    "contact_info": "Brent Bender (304) 380-0335 or (304) 784-3405, bbender@blackhawkmining.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.420Z",
+    "updated_at": "2026-06-11T20:17:13.420Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 242,
+  "fields": {
+    "title": "International Mines Rescue Competition (IMRC 2020)",
+    "start_date": "2022-09-11",
+    "end_date": "2022-09-18",
+    "location": "National Mine Health & Safety Academy, 1301 Airport Rd, Beaver, WV",
+    "description": "",
+    "contact_info": "Jeff Kravitz, JeffKrav@msn.com; Laurie Starcher, starcher.laurie@dol.gov; Richard Pagán, pagan.richard.b@dol.gov; Mack Wright, wright.mack@dol.gov; Lewis McCoy, lsm@csecorporation.com (fees only); IMRC Office (304) 256-3223, info@imrc2020.com",
+    "resources": [
+      {
+        "label": "IMRC 2020 Competition Website",
+        "url": "http://imrc2020.com/"
+      }
+    ],
+    "created_at": "2026-06-11T20:17:13.425Z",
+    "updated_at": "2026-06-11T20:17:13.425Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 243,
+  "fields": {
+    "title": "Missouri Regional Mine Rescue Contest",
+    "start_date": "2022-09-27",
+    "end_date": "2022-09-29",
+    "location": "Rolla, MO",
+    "description": "",
+    "contact_info": "DeWayne Phelps (573) 341-6406, dewayne@phelpssafety.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.430Z",
+    "updated_at": "2026-06-11T20:17:13.430Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 244,
+  "fields": {
+    "title": "Florida's 4th Annual Surface Mining Emergency Response Training & Competition",
+    "start_date": "2023-02-27",
+    "end_date": "2023-03-02",
+    "location": "Florida Public Safety Institute, Havana, Florida",
+    "description": "",
+    "contact_info": "Karen M. Miller (850) 201-7689, millerka@tcc.fl.edu",
+    "resources": [
+      {
+        "label": "Contest Results",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/Contest%20Results%20Florida.pdf"
+      },
+      {
+        "label": "Mining Hall of Fame Inductee, Darren Conn",
+        "url": "https://www.msha.gov/sites/default/files/Mine%20Rescue/2023%20HALL%20OF%20FAME%20INDUCTEE_DARREN-CONN.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T20:17:13.435Z",
+    "updated_at": "2026-06-11T20:17:13.435Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 245,
+  "fields": {
+    "title": "Southwestern Regional Mine Rescue Contest",
+    "start_date": "2023-04-10",
+    "end_date": "2023-04-13",
+    "location": "Ruidoso/Mescalero, NM",
+    "description": "",
+    "contact_info": "Mike Runner (575) 706-2629, michael.runner@intrepidpotash.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.440Z",
+    "updated_at": "2026-06-11T20:17:13.440Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 246,
+  "fields": {
+    "title": "Southern Regional Mine Rescue Contest",
+    "start_date": "2023-05-01",
+    "end_date": "2023-05-04",
+    "location": "New Iberia, Louisiana",
+    "description": "",
+    "contact_info": "Landon Oliver (337) 967-8679, lolivier@mortonsalt.com; Scott Fountain (337) 940-0222, fountains@compassminerals.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.446Z",
+    "updated_at": "2026-06-11T20:17:13.446Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 247,
+  "fields": {
+    "title": "Post 6 Ohio Valley Mine Rescue Contest",
+    "start_date": "2023-06-06",
+    "end_date": "2023-06-08",
+    "location": "ODNR Mine Safety Training Center, Cadiz, OH",
+    "description": "",
+    "contact_info": "Russell Byers (740) 491-2725, russell.byers@dnr.ohio.gov; Michael Call (304) 377-2305, mrc@csecorporation.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.451Z",
+    "updated_at": "2026-06-11T20:17:13.451Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 248,
+  "fields": {
+    "title": "Indiana Mine Rescue Contest",
+    "start_date": "2023-06-07",
+    "end_date": "2023-06-08",
+    "location": "Vincennes University Gibson Center, Fort Branch, IN",
+    "description": "",
+    "contact_info": "Christine Riggleman (812) 798-2259",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.457Z",
+    "updated_at": "2026-06-11T20:17:13.457Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 249,
+  "fields": {
+    "title": "Craig Colorado Mine Rescue Contest",
+    "start_date": "2023-06-12",
+    "end_date": "2023-06-15",
+    "location": "Craig, Colorado",
+    "description": "",
+    "contact_info": "Mark Beauchamp (970) 367-6407, mbeauchamp@peabodyenergy.com; Denny Erickson, denny.erickson@gentrymining.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.463Z",
+    "updated_at": "2026-06-11T20:17:13.463Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 250,
+  "fields": {
+    "title": "Harlan County Safety Days Competition",
+    "start_date": "2023-07-11",
+    "end_date": "2023-07-13",
+    "location": "KCTCS Cumberland Campus, Harlan, KY",
+    "description": "",
+    "contact_info": "Suzanne Williams (606) 589-5812, Tcchamber@blackbearmtn.org",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.470Z",
+    "updated_at": "2026-06-11T20:17:13.470Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 251,
+  "fields": {
+    "title": "Kansas Regional Mine Rescue Competition",
+    "start_date": "2023-07-17",
+    "end_date": "2023-07-20",
+    "location": "Hutchinson Community College, Hutchinson, Kansas",
+    "description": "",
+    "contact_info": "Chrystal Dye (785) 221-0018, dyec@hutchcc.edu",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.477Z",
+    "updated_at": "2026-06-11T20:17:13.477Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 252,
+  "fields": {
+    "title": "Post 5 & West Virginia Mine Rescue Contest",
+    "start_date": "2023-07-25",
+    "end_date": "2023-07-27",
+    "location": "Mylan Park, Morgantown, WV",
+    "description": "",
+    "contact_info": "Joshua Brady (304) 406-4975, Joshua.brady@mail.wvu.edu; Larry Moore (304) 692-1290, larry@monitechmining.com",
+    "resources": [
+      {
+        "label": "Registration Form",
+        "url": "https://www.msha.gov/sites/default/files/MNM%20Mine%20Rescue/2023-post-5-mr-registration.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T20:17:13.482Z",
+    "updated_at": "2026-06-11T20:17:13.482Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 253,
+  "fields": {
+    "title": "Colorado Regional Mine Rescue Contest",
+    "start_date": "2023-07-31",
+    "end_date": "2023-08-03",
+    "location": "John Q. Hammons Conference Center, Loveland, CO",
+    "description": "",
+    "contact_info": "Brandon D. Neal (303) 866-3567 ext. 8151, brandon.neal@state.co.us; Kim Harvill (303) 866-3567 ext. 8123, Kim.harvill@state.co.us",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.486Z",
+    "updated_at": "2026-06-11T20:17:13.486Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 254,
+  "fields": {
+    "title": "Virginia Mining Institute Mine Rescue Contest",
+    "start_date": "2023-08-07",
+    "end_date": "2023-08-10",
+    "location": "Blacksburg Park and Recreation Community Center, Blacksburg, VA",
+    "description": "",
+    "contact_info": "Diane Crouse (276) 988-4537 or (276) 608-0286, dlcrouse1@verizon.net; Wayne Davis (276) 266-0276, wandjfarm@gmail.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.493Z",
+    "updated_at": "2026-06-11T20:17:13.493Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 255,
+  "fields": {
+    "title": "KMI - Kentucky Mining Institute Mine Rescue Contest",
+    "start_date": "2023-08-14",
+    "end_date": "2023-08-17",
+    "location": "Central Bank Center, Lexington, KY",
+    "description": "",
+    "contact_info": "Brad Matheny (270) 836-4225, rbm@csecorporation.com; Sammy Linville (859) 468-2914, sammylinville@yahoo.com (vendors)",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.499Z",
+    "updated_at": "2026-06-11T20:17:13.499Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 256,
+  "fields": {
+    "title": "Fallen Heroes Mine Rescue Contest",
+    "start_date": "2023-09-11",
+    "end_date": "2023-09-15",
+    "location": "Chief Logan Conference Center, Logan, WV",
+    "description": "",
+    "contact_info": "Brent Bender (304) 784-3405, bbender@blackhawkmining.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.506Z",
+    "updated_at": "2026-06-11T20:17:13.506Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 257,
+  "fields": {
+    "title": "Northern Regional M/NM Mine Rescue Contest",
+    "start_date": "2023-09-18",
+    "end_date": "2023-09-22",
+    "location": "Mine Safety Training Center, 43024 Industrial Park Rd, Cadiz, Ohio 43907",
+    "description": "",
+    "contact_info": "Adam Rossbach, Adam_Rossbach@cargill.com; Jereme Stowell, Jereme_Stowell@cargill.com",
+    "resources": [
+      {
+        "label": "Northern Mine Rescue Contest Flyer",
+        "url": "https://www.msha.gov/sites/default/files/MNM%20Mine%20Rescue/Northern%20Mine%20Rescue%20Contest%20flyer_0.pdf"
+      }
+    ],
+    "created_at": "2026-06-11T20:17:13.512Z",
+    "updated_at": "2026-06-11T20:17:13.512Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 258,
+  "fields": {
+    "title": "Missouri Regional Mine Rescue Contest",
+    "start_date": "2023-09-25",
+    "end_date": "2023-09-28",
+    "location": "Rolla, MO",
+    "description": "",
+    "contact_info": "DeWayne Phelps (573) 341-6406, dewayne@phelpssafety.com; Jesse Gregg (573) 702-9584, jtgregg@mlc.com",
+    "resources": [],
+    "created_at": "2026-06-11T20:17:13.518Z",
+    "updated_at": "2026-06-11T20:17:13.518Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 259,
+  "fields": {
+    "title": "17th Annual Southeast Mine Safety and Health Conference",
+    "start_date": "2023-11-01",
+    "end_date": "2023-11-03",
+    "location": "Birmingham, AL",
+    "description": "",
+    "contact_info": "executivecommittee@southeastmineconf.org",
+    "resources": [
+      {
+        "label": "Conference Website & Registration",
+        "url": "https://www.southeastmineconf.org"
+      }
+    ],
+    "created_at": "2026-06-11T20:17:13.522Z",
+    "updated_at": "2026-06-11T20:17:13.522Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 260,
+  "fields": {
+    "title": "West Virginia Mine Rescue Alliance, Mine Rescue Skills Contest",
+    "start_date": "2021-10-19",
+    "end_date": "2021-10-20",
+    "location": "National Mine Academy, Beaver, WV",
+    "description": "",
+    "contact_info": "Darren Blankenship (304) 673-7520, darrenblankenship@suddenlink.net",
+    "resources": [],
+    "created_at": "2026-06-11T20:53:39.033Z",
+    "updated_at": "2026-06-11T20:53:39.033Z"
+  }
+},
+{
+  "model": "pages.competition",
+  "pk": 1,
+  "fields": {
+    "name": "2024 Colorado Regional Mine Rescue Contest",
+    "year": 2024,
+    "calendar_event": 63,
+    "description": "",
+    "created_at": "2026-06-11T01:48:52.463Z",
+    "updated_at": "2026-06-11T03:03:16.139Z"
+  }
+},
+{
+  "model": "pages.competitionproblem",
+  "pk": 1,
+  "fields": {
+    "competition": 1,
+    "title": "2024 Loveland COAL Day 1",
+    "description": "Day 1 of the 2024 Loveland COAL mine rescue competition",
+    "sort_order": 0,
+    "created_at": "2026-06-10T02:16:11.724Z",
+    "updated_at": "2026-06-11T01:54:33.751Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1,
+  "fields": {
+    "problem": 1,
+    "title": "Problem",
+    "file": "problems/2024_Loveland_COAL_day_1_Problem_WcMWPJh.pdf",
+    "sort_order": 10,
+    "uploaded_at": "2026-06-10T02:16:11.740Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 2,
+  "fields": {
+    "problem": 1,
+    "title": "Written Problem",
+    "file": "problems/2024_Loveland_COAL_day_1_Written_Problem_Zy30gPS.pdf",
+    "sort_order": 20,
+    "uploaded_at": "2026-06-10T02:16:11.745Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 3,
+  "fields": {
+    "problem": 1,
+    "title": "Written Statement",
+    "file": "problems/2024_Loveland_COAL_day_1_Written_Statement_5IFso4i.pdf",
+    "sort_order": 30,
+    "uploaded_at": "2026-06-10T02:16:11.748Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 4,
+  "fields": {
+    "problem": 1,
+    "title": "Layout",
+    "file": "problems/2024_Loveland_COAL_day_1_Layout_4ilTV2e.pdf",
+    "sort_order": 120,
+    "uploaded_at": "2026-06-10T02:16:11.752Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 5,
+  "fields": {
+    "problem": 1,
+    "title": "Team Map",
+    "file": "problems/2024_Loveland_COAL_day_1_LARGE_TEAM_MAP_acq5JGe.pdf",
+    "sort_order": 130,
+    "uploaded_at": "2026-06-10T02:16:11.756Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 6,
+  "fields": {
+    "problem": 1,
+    "title": "Team Map Key",
+    "file": "problems/2024_Loveland_COAL_day_1_LARGE_TRANSPARENT_TEAM_MAP_KEY_n5cWFpJ.pdf",
+    "sort_order": 140,
+    "uploaded_at": "2026-06-10T02:16:11.762Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 7,
+  "fields": {
+    "problem": 1,
+    "title": "Breakdown Map",
+    "file": "problems/2024_Loveland_COAL_day_1_LARGE_BO_MAP_6btbSV8.pdf",
+    "sort_order": 150,
+    "uploaded_at": "2026-06-10T02:16:11.765Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 8,
+  "fields": {
+    "problem": 1,
+    "title": "Breakdown Map Key",
+    "file": "problems/2024_Loveland_COAL_day_1_LARGE_TRANSPARENT_BO_MAP_KEY_sNSJ0XT.pdf",
+    "sort_order": 160,
+    "uploaded_at": "2026-06-10T02:16:11.770Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 9,
+  "fields": {
+    "problem": 1,
+    "title": "Judges Instructions",
+    "file": "problems/2024_Loveland_COAL_day_1_Judges_Instructions_mu9YRq5.pdf",
+    "sort_order": 40,
+    "uploaded_at": "2026-06-10T02:16:11.773Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 10,
+  "fields": {
+    "problem": 1,
+    "title": "Judges Vent Map",
+    "file": "problems/2024_Loveland_COAL_day_1_judges_vent_map_YtfO2GK.pdf",
+    "sort_order": 60,
+    "uploaded_at": "2026-06-10T02:16:11.779Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 11,
+  "fields": {
+    "problem": 1,
+    "title": "Judges Stops/GT/DI/RR Map",
+    "file": "problems/2024_Loveland_COAL_day_1_stops-gt-di-rr-judges_map_YNCB9F8.pdf",
+    "sort_order": 50,
+    "uploaded_at": "2026-06-10T02:16:11.782Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 12,
+  "fields": {
+    "problem": 1,
+    "title": "Final Vent Plan",
+    "file": "problems/2024_Loveland_COAL_day_1_FINAL_Vent_RtiUO2M.pdf",
+    "sort_order": 70,
+    "uploaded_at": "2026-06-10T02:16:11.786Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 13,
+  "fields": {
+    "problem": 1,
+    "title": "Vent Plan 1",
+    "file": "problems/2024_Loveland_COAL_day_1_vent_1_Cd020qS.pdf",
+    "sort_order": 80,
+    "uploaded_at": "2026-06-10T02:16:11.790Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 14,
+  "fields": {
+    "problem": 1,
+    "title": "Vent Plan 2",
+    "file": "problems/2024_Loveland_COAL_day_1_vent_2_32mblSc.pdf",
+    "sort_order": 90,
+    "uploaded_at": "2026-06-10T02:16:11.796Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 15,
+  "fields": {
+    "problem": 1,
+    "title": "Vent Plan 3",
+    "file": "problems/2024_Loveland_COAL_day_1_vent_3_PHbiFqO.pdf",
+    "sort_order": 100,
+    "uploaded_at": "2026-06-10T02:16:11.799Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 16,
+  "fields": {
+    "problem": 1,
+    "title": "Vent Plan 4",
+    "file": "problems/2024_Loveland_COAL_day_1_vent_4__dP1ywfW.pdf",
+    "sort_order": 110,
+    "uploaded_at": "2026-06-10T02:16:11.802Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 17,
+  "fields": {
+    "problem": 1,
+    "title": "Gas Extents",
+    "file": "problems/2024_Loveland_COAL_day_1_gas_extents_hKBd3GP.pdf",
+    "sort_order": 170,
+    "uploaded_at": "2026-06-10T02:16:11.808Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 18,
+  "fields": {
+    "problem": 1,
+    "title": "Save Date Flyer",
+    "file": "problems/Mine-Rescue-2024-Save-Date-Flyer_1w9nXOd.pdf",
+    "sort_order": 180,
+    "uploaded_at": "2026-06-10T02:16:11.813Z"
+  }
+}
+]
