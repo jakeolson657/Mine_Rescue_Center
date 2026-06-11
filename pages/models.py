@@ -15,9 +15,9 @@ class CalendarEvent(models.Model):
     description = models.TextField(blank=True)
     contact_info = models.TextField(blank=True)
     resources = models.JSONField(
-        default=dict, blank=True,
-        help_text="Links to registration, results, rules, flyers, etc. "
-                  "Format: {'registration': 'url', 'results': 'url', ...}",
+        default=list, blank=True,
+        help_text="Links to results, registration forms, flyers, etc. "
+                  "Format: [{\"label\": \"Final Results\", \"url\": \"https://...\"}, ...]",
     )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

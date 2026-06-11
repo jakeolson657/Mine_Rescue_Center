@@ -104,6 +104,30 @@
             white-space: pre-wrap;
         }
 
+        .resource-list {
+            list-style: none;
+        }
+
+        .resource-list li {
+            margin-bottom: 0.6rem;
+        }
+
+        .resource-list a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #f0f4ff;
+            border: 1px solid #1e3a8a;
+            border-radius: 4px;
+            color: #1e3a8a;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+
+        .resource-list a:hover {
+            background: #e3f2fd;
+        }
+
         .footer {
             background: #1e3a8a;
             color: white;
@@ -152,6 +176,17 @@
                 <div class="event-description">
                     <h3>Contact Information</h3>
                     <p>{{ event.contact_info }}</p>
+                </div>
+            {% endif %}
+
+            {% if event.resources %}
+                <div class="event-description">
+                    <h3>Resources</h3>
+                    <ul class="resource-list">
+                        {% for resource in event.resources %}
+                            <li><a href="{{ resource.url }}" target="_blank" rel="noopener">{{ resource.label }}</a></li>
+                        {% endfor %}
+                    </ul>
                 </div>
             {% endif %}
         </div>
