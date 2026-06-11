@@ -3,7 +3,7 @@ from django.views.generic import ListView, DetailView
 from django.utils import timezone
 from datetime import date, timedelta
 from calendar import Calendar, month_name, monthrange
-from .models import CalendarEvent, CompetitionProblem
+from .models import CalendarEvent, Competition
 
 
 def landing_page(request):
@@ -11,8 +11,26 @@ def landing_page(request):
 
 
 def past_problems(request):
-    problems = CompetitionProblem.objects.prefetch_related('documents').all()
-    return render(request, 'past_problems.html', {'problems': problems})
+    competitions = list(
+        Competition.objects
+        .select_related('calendar_event')
+        .prefetch_related('problems__documents')
+    )
+    # Within a year: calendar order first, undated competitions last (by name).
+    competitions.sort(key=lambda c: (
+        c.start_date is None, c.start_date or date.min, c.name.lower()
+    ))
+
+    by_year = {}
+    for competition in competitions:
+        by_year.setdefault(competition.year, []).append(competition)
+
+    # Most recent year first; competitions without a year at the bottom.
+    year_groups = [
+        {'year': year, 'competitions': by_year[year]}
+        for year in sorted(by_year, key=lambda y: (y is None, -(y or 0)))
+    ]
+    return render(request, 'past_problems.html', {'year_groups': year_groups})
 
 
 def about(request):

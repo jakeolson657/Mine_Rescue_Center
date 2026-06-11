@@ -86,37 +86,155 @@
             font-weight: 500;
         }
 
-        .problem-group {
+        /* Collapsible competition cards */
+        summary {
+            cursor: pointer;
+            list-style: none;
+            user-select: none;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .chevron {
+            flex-shrink: 0;
+            font-size: 0.75rem;
+            color: #1e3a8a;
+            transition: transform 0.2s;
+        }
+
+        details[open] > summary .chevron {
+            transform: rotate(90deg);
+        }
+
+        .year-group {
             background: white;
             border-radius: 8px;
-            padding: 2rem;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
         }
 
-        .problem-group h3 {
+        .year-group > summary {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            padding: 1.25rem 1.5rem;
+        }
+
+        .year-group > summary:hover {
+            background-color: #f0f4ff;
+        }
+
+        .year-label {
+            flex-grow: 1;
             color: #1e3a8a;
             font-size: 1.5rem;
-            margin-bottom: 0.5rem;
+            font-weight: 700;
         }
 
-        .problem-meta {
-            color: #777;
-            font-size: 0.95rem;
-            margin-bottom: 1rem;
+        .year-body {
+            padding: 0 1.5rem 1.5rem;
+        }
+
+        .competition {
+            background: #fbfcff;
+            border: 1px solid #d8def0;
+            border-radius: 6px;
+            margin-bottom: 0.75rem;
+        }
+
+        .competition:last-child {
+            margin-bottom: 0;
+        }
+
+        .competition > summary {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            padding: 1rem 1.25rem;
+        }
+
+        .competition > summary:hover {
+            background-color: #f0f4ff;
+        }
+
+        .competition-name {
+            flex-grow: 1;
+            color: #1e3a8a;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .badge {
+            flex-shrink: 0;
+            background-color: #e3f2fd;
+            color: #1e3a8a;
+            padding: 0.15rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .competition-body {
+            padding: 0 1.5rem 1.5rem;
+        }
+
+        .competition-description {
+            color: #555;
+            margin-bottom: 1.25rem;
+        }
+
+        /* Collapsible problems inside a competition */
+        .problem {
+            background: #fafbff;
+            border: 1px solid #e0e4f0;
+            border-radius: 6px;
+            margin-bottom: 0.75rem;
+        }
+
+        .problem:last-child {
+            margin-bottom: 0;
+        }
+
+        .problem > summary {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.65rem;
+            padding: 0.9rem 1.25rem;
+            border-radius: 6px;
+        }
+
+        .problem > summary:hover {
+            background-color: #f0f4ff;
+        }
+
+        .problem-title {
+            flex-grow: 1;
+            color: #1e3a8a;
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+
+        .problem-body {
+            padding: 0 1.25rem 1.25rem;
         }
 
         .problem-description {
             color: #555;
-            margin-bottom: 1.5rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid #e5e5e5;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
         }
 
         .documents-list {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 0.6rem;
         }
 
         .document-item {
@@ -124,10 +242,11 @@
             justify-content: space-between;
             align-items: center;
             gap: 1.5rem;
-            padding: 1rem;
-            background: #f9f9f9;
+            padding: 0.75rem 1rem;
+            background: white;
             border-radius: 4px;
             border-left: 3px solid #1e3a8a;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
         }
 
         .document-title {
@@ -136,21 +255,142 @@
             flex-grow: 1;
         }
 
-        .download-btn {
+        .document-actions {
+            display: flex;
             flex-shrink: 0;
-            padding: 0.6rem 1.25rem;
-            background-color: #1e3a8a;
-            color: white;
-            text-decoration: none;
+            gap: 0.5rem;
+        }
+
+        .download-btn,
+        .preview-btn {
+            flex-shrink: 0;
+            padding: 0.5rem 1.1rem;
             border-radius: 4px;
+            font-size: 0.95rem;
             font-weight: 500;
-            transition: background-color 0.3s;
+            font-family: inherit;
             white-space: nowrap;
             display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .download-btn {
+            background-color: #1e3a8a;
+            color: white;
+            border: 1px solid #1e3a8a;
         }
 
         .download-btn:hover {
             background-color: #1e40af;
+        }
+
+        .preview-btn {
+            background-color: white;
+            color: #1e3a8a;
+            border: 1px solid #1e3a8a;
+        }
+
+        .preview-btn:hover {
+            background-color: #e3f2fd;
+        }
+
+        .no-documents {
+            color: #999;
+            font-style: italic;
+        }
+
+        /* Document preview modal */
+        .preview-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 2000;
+            background: rgba(15, 23, 42, 0.65);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+
+        .preview-overlay[hidden] {
+            display: none;
+        }
+
+        .preview-dialog {
+            display: flex;
+            flex-direction: column;
+            width: min(1000px, 100%);
+            height: 100%;
+            max-height: 92vh;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+        }
+
+        .preview-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem 1.25rem;
+            background: #1e3a8a;
+            color: white;
+        }
+
+        .preview-header .preview-doc-title {
+            flex-grow: 1;
+            font-weight: 600;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .preview-header .download-btn {
+            background-color: white;
+            color: #1e3a8a;
+            border-color: white;
+            padding: 0.35rem 0.9rem;
+        }
+
+        .preview-header .download-btn:hover {
+            background-color: #e3f2fd;
+        }
+
+        .preview-close {
+            flex-shrink: 0;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 1.75rem;
+            line-height: 1;
+            cursor: pointer;
+            padding: 0 0.25rem;
+        }
+
+        .preview-close:hover {
+            opacity: 0.8;
+        }
+
+        .preview-body {
+            flex-grow: 1;
+            overflow: auto;
+            background: #525659;
+            display: flex;
+        }
+
+        .preview-body iframe {
+            flex-grow: 1;
+            width: 100%;
+            border: none;
+        }
+
+        .preview-body img {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
         }
 
         .footer {
@@ -165,11 +405,21 @@
             .document-item {
                 flex-direction: column;
                 align-items: flex-start;
+                gap: 0.75rem;
             }
 
-            .download-btn {
+            .document-actions {
                 width: 100%;
+            }
+
+            .document-actions .preview-btn,
+            .document-actions .download-btn {
+                flex-grow: 1;
                 text-align: center;
+            }
+
+            .preview-overlay {
+                padding: 0.5rem;
             }
         }
     </style>
@@ -191,34 +441,86 @@
                 miningquiz.com via the Wayback Machine, along with problems collected directly
                 from competition organizers.
             </p>
+            <p>
+                Click a year to see its competitions, a competition to see its problems, and a
+                problem to see its files. Use <strong>Preview</strong> to view a document in your
+                browser before downloading it.
+            </p>
         </div>
 
-        {% if problems %}
-            {% for problem in problems %}
-                <div class="problem-group">
-                    <h3>{{ problem.title }}</h3>
-                    {% if problem.competition or problem.year %}
-                        <p class="problem-meta">
-                            {{ problem.competition }}{% if problem.competition and problem.year %} • {% endif %}{{ problem.year|default_if_none:"" }}
-                        </p>
-                    {% endif %}
-                    {% if problem.description %}
-                        <p class="problem-description">{{ problem.description }}</p>
-                    {% endif %}
+        {% if year_groups %}
+            {% for group in year_groups %}
+                <details class="year-group">
+                    <summary>
+                        <span class="chevron">▶</span>
+                        <span class="year-label">{{ group.year|default:"Year unknown" }}</span>
+                        <span class="badge">{{ group.competitions|length }} competition{{ group.competitions|length|pluralize }}</span>
+                    </summary>
+                    <div class="year-body">
+                        {% for competition in group.competitions %}
+                            {% with problems=competition.problems.all %}
+                            <details class="competition">
+                                <summary>
+                                    <span class="chevron">▶</span>
+                                    <span class="competition-name">{{ competition.name }}</span>
+                                    {% if competition.start_date %}
+                                        <span class="badge">{{ competition.start_date|date:"M j" }}{% if competition.calendar_event.end_date != competition.start_date %} – {{ competition.calendar_event.end_date|date:"M j" }}{% endif %}</span>
+                                    {% endif %}
+                                    {% if competition.location %}
+                                        <span class="badge">{{ competition.location }}</span>
+                                    {% endif %}
+                                    <span class="badge">{{ problems|length }} problem{{ problems|length|pluralize }}</span>
+                                </summary>
+                                <div class="competition-body">
+                                    {% if competition.description %}
+                                        <p class="competition-description">{{ competition.description }}</p>
+                                    {% endif %}
 
-                    {% if problem.documents.all %}
-                        <div class="documents-list">
-                            {% for doc in problem.documents.all %}
-                                <div class="document-item">
-                                    <span class="document-title">{{ doc.title }}</span>
-                                    <a href="{{ doc.file.url }}" class="download-btn" download>Download</a>
+                                    {% for problem in problems %}
+                                        {% with documents=problem.documents.all %}
+                                        <details class="problem">
+                                            <summary>
+                                                <span class="chevron">▶</span>
+                                                <span class="problem-title">{{ problem.title }}</span>
+                                                <span class="badge">{{ documents|length }} file{{ documents|length|pluralize }}</span>
+                                            </summary>
+                                            <div class="problem-body">
+                                                {% if problem.description %}
+                                                    <p class="problem-description">{{ problem.description }}</p>
+                                                {% endif %}
+
+                                                {% if documents %}
+                                                    <div class="documents-list">
+                                                        {% for doc in documents %}
+                                                            <div class="document-item">
+                                                                <span class="document-title">{{ doc.title }}</span>
+                                                                <div class="document-actions">
+                                                                    {% if doc.preview_kind %}
+                                                                        <button type="button" class="preview-btn"
+                                                                                data-url="{{ doc.file.url }}"
+                                                                                data-kind="{{ doc.preview_kind }}"
+                                                                                data-title="{{ doc.title }}">Preview</button>
+                                                                    {% endif %}
+                                                                    <a href="{{ doc.file.url }}" class="download-btn" download>Download</a>
+                                                                </div>
+                                                            </div>
+                                                        {% endfor %}
+                                                    </div>
+                                                {% else %}
+                                                    <p class="no-documents">No documents attached yet.</p>
+                                                {% endif %}
+                                            </div>
+                                        </details>
+                                        {% endwith %}
+                                    {% empty %}
+                                        <p class="no-documents">No problems added yet.</p>
+                                    {% endfor %}
                                 </div>
-                            {% endfor %}
-                        </div>
-                    {% else %}
-                        <p style="color: #999; font-style: italic;">No documents attached yet.</p>
-                    {% endif %}
-                </div>
+                            </details>
+                            {% endwith %}
+                        {% endfor %}
+                    </div>
+                </details>
             {% endfor %}
         {% else %}
             <div class="card">
@@ -229,8 +531,76 @@
         {% endif %}
     </div>
 
+    <div class="preview-overlay" id="preview-overlay" hidden>
+        <div class="preview-dialog" role="dialog" aria-modal="true" aria-labelledby="preview-doc-title">
+            <div class="preview-header">
+                <span class="preview-doc-title" id="preview-doc-title"></span>
+                <a class="download-btn" id="preview-download" href="#" download>Download</a>
+                <button type="button" class="preview-close" id="preview-close" aria-label="Close preview">&times;</button>
+            </div>
+            <div class="preview-body" id="preview-body"></div>
+        </div>
+    </div>
+
     <footer class="footer">
         <p>&copy; 2026 Mine Rescue Center. All rights reserved.</p>
     </footer>
+
+    <script>
+        (function () {
+            var overlay = document.getElementById('preview-overlay');
+            var body = document.getElementById('preview-body');
+            var titleEl = document.getElementById('preview-doc-title');
+            var downloadLink = document.getElementById('preview-download');
+            var closeBtn = document.getElementById('preview-close');
+
+            function openPreview(url, kind, title) {
+                titleEl.textContent = title;
+                downloadLink.href = url;
+                body.innerHTML = '';
+
+                if (kind === 'image') {
+                    var img = document.createElement('img');
+                    img.src = url;
+                    img.alt = title;
+                    body.appendChild(img);
+                } else {
+                    var frame = document.createElement('iframe');
+                    frame.src = url;
+                    frame.title = title;
+                    body.appendChild(frame);
+                }
+
+                overlay.hidden = false;
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closePreview() {
+                overlay.hidden = true;
+                body.innerHTML = '';
+                document.body.style.overflow = '';
+            }
+
+            document.querySelectorAll('.preview-btn').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    openPreview(btn.dataset.url, btn.dataset.kind, btn.dataset.title);
+                });
+            });
+
+            closeBtn.addEventListener('click', closePreview);
+
+            overlay.addEventListener('click', function (event) {
+                if (event.target === overlay) {
+                    closePreview();
+                }
+            });
+
+            document.addEventListener('keydown', function (event) {
+                if (event.key === 'Escape' && !overlay.hidden) {
+                    closePreview();
+                }
+            });
+        })();
+    </script>
 </body>
 </html>
