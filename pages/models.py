@@ -14,6 +14,11 @@ class CalendarEvent(models.Model):
     location = models.CharField(max_length=255)
     description = models.TextField(blank=True)
     contact_info = models.TextField(blank=True)
+    resources = models.JSONField(
+        default=dict, blank=True,
+        help_text="Links to registration, results, rules, flyers, etc. "
+                  "Format: {'registration': 'url', 'results': 'url', ...}",
+    )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
