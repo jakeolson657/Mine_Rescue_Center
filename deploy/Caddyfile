@@ -1,0 +1,19 @@
+# Caddy config for Mine Rescue Center.  ->  /etc/caddy/Caddyfile on the server.
+#
+# Replace BOTH yourdomain.com lines with your real domain. Caddy automatically
+# obtains and renews a Let's Encrypt HTTPS certificate for it.
+
+yourdomain.com, www.yourdomain.com {
+	encode zstd gzip
+
+	# Serve the problem PDFs (the large, growing media library) straight off
+	# disk -- fast, and keeps them out of the Python process.
+	handle_path /media/* {
+		root * /srv/mine-rescue/media
+		file_server
+	}
+
+	# Everything else -> Django via gunicorn. Static files (incl. the admin's
+	# CSS/JS) are served from inside the app by WhiteNoise.
+	reverse_proxy 127.0.0.1:8001
+}

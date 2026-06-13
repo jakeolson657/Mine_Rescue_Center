@@ -1,0 +1,6 @@
+# Production runtime dependencies for the Mine Rescue Center site.
+# (The .docx/.ppt -> PDF conversion tools pywin32/docx2pdf are Windows-only and
+#  used locally before deploy; they are intentionally NOT listed here.)
+Django==6.0.6
+gunicorn==23.0.0
+whitenoise==6.12.0

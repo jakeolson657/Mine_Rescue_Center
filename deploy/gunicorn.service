@@ -1,0 +1,20 @@
+# systemd unit for the Django app server.
+#   -> /etc/systemd/system/mine-rescue.service on the server.
+# Assumes the project lives at /srv/mine-rescue, owned by a user named `mine`.
+
+[Unit]
+Description=Mine Rescue Center (gunicorn)
+After=network.target
+
+[Service]
+User=mine
+Group=mine
+WorkingDirectory=/srv/mine-rescue
+EnvironmentFile=/srv/mine-rescue/.env
+ExecStart=/srv/mine-rescue/venv/bin/gunicorn config.wsgi:application \
+    --bind 127.0.0.1:8001 --workers 3 --timeout 60
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
