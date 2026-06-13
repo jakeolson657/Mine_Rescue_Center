@@ -3,3 +3,11 @@ __pycache__/
 *.pyc
 db.sqlite3
 media/
+staticfiles/
+.env
+
+# Ingestion working artifacts (regenerable scrape cache, downloaded files, logs)
+loveland_2024_fetch/
+miningquiz_ingest/cache/
+miningquiz_ingest/*.log
+miningquiz_ingest/*.err
