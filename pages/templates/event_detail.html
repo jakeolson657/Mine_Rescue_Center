@@ -1,199 +1,172 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light">
-    <title>{{ event.title }} - Mine Rescue Center</title>
-    <style>
-        html {
-            color-scheme: light;
-        }
+{% extends 'base.html' %}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+{% block title %}{{ event.title }} - Mine Rescue Center{% endblock %}
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-        }
+{% block extra_css %}
+    .ev-head { background: var(--ink); color: var(--bg); }
 
-        header {
-            position: relative;
-            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
+    .ev-head-inner { max-width: 880px; margin: 0 auto; padding: 30px 40px 48px; }
 
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
+    .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        font-family: var(--font-display);
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #9aa3ad;
+        text-decoration: none;
+        margin-bottom: 26px;
+        transition: color 0.15s;
+    }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
+    .back-link:hover { color: var(--bg); }
 
-        .back-link {
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            color: #1e3a8a;
-            text-decoration: none;
-            font-weight: 500;
-        }
+    .ev-head .eyebrow {
+        font-family: var(--font-mono);
+        font-size: 12px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--red-soft);
+        margin-bottom: 14px;
+    }
 
-        .back-link:hover {
-            text-decoration: underline;
-        }
+    .ev-head h1 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 1.06;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        margin: 0 0 20px;
+    }
 
-        .event-card {
-            background: white;
-            border-radius: 8px;
-            padding: 2rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
-        }
+    .ev-meta { display: flex; gap: 28px; flex-wrap: wrap; }
 
-        .event-card h2 {
-            color: #1e3a8a;
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-        }
+    .ev-meta .item .label {
+        font-family: var(--font-mono);
+        font-size: 11px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #8b94a0;
+        margin-bottom: 4px;
+    }
 
-        .event-info {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
+    .ev-meta .item .value { font-size: 16px; color: var(--bg); font-weight: 500; }
+    .ev-meta .item .sub { font-size: 13px; color: #9aa3ad; margin-top: 2px; }
 
-        .info-block h3 {
-            color: #1e3a8a;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            margin-bottom: 0.5rem;
-            opacity: 0.8;
-        }
+    .ev-body { max-width: 880px; margin: 0 auto; padding: 40px 40px 80px; }
 
-        .info-block p {
-            font-size: 1.1rem;
-            color: #333;
-        }
+    .ev-card {
+        background: var(--surface);
+        border: 1px solid var(--line-2);
+        border-radius: 14px;
+        box-shadow: 0 1px 2px rgba(43, 52, 64, 0.04);
+        padding: 8px 32px 32px;
+    }
 
-        .event-description {
-            margin-top: 2rem;
-            padding-top: 2rem;
-            border-top: 2px solid #e5e5e5;
-        }
+    .ev-section { padding-top: 28px; margin-top: 28px; border-top: 1px solid #efeae1; }
+    .ev-card > .ev-section:first-child { border-top: none; margin-top: 0; }
 
-        .event-description h3 {
-            color: #1e3a8a;
-            margin-bottom: 1rem;
-        }
+    .ev-section h3 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--red);
+        margin-bottom: 12px;
+    }
 
-        .event-description p {
-            line-height: 1.8;
-            color: #555;
-            white-space: pre-wrap;
-        }
+    .ev-section p { font-size: 15.5px; line-height: 1.75; color: #4a4f57; white-space: pre-wrap; }
 
-        .resource-list {
-            list-style: none;
-        }
+    .resource-list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
 
-        .resource-list li {
-            margin-bottom: 0.6rem;
-        }
+    .resource-list a {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        align-self: flex-start;
+        padding: 11px 18px;
+        background: var(--surface-3);
+        border: 1px solid var(--line-2);
+        border-radius: 8px;
+        color: var(--ink);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14.5px;
+        transition: border-color 0.15s, background-color 0.15s;
+    }
 
-        .resource-list a {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            background: #f0f4ff;
-            border: 1px solid #1e3a8a;
-            border-radius: 4px;
-            color: #1e3a8a;
-            text-decoration: none;
-            font-weight: 500;
-            transition: background-color 0.2s;
-        }
+    .resource-list a:hover { border-color: var(--red); background: var(--red-tint); color: var(--red); }
+    .resource-list a .ic { color: var(--red); flex: none; }
 
-        .resource-list a:hover {
-            background: #e3f2fd;
-        }
+    @media (max-width: 600px) {
+        .ev-head-inner { padding: 24px 20px 36px; }
+        .ev-head h1 { font-size: 30px; }
+        .ev-body { padding: 28px 20px 60px; }
+        .ev-card { padding: 8px 20px 24px; }
+    }
+{% endblock %}
 
-        .footer {
-            background: #1e3a8a;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        {% include 'partials/site_menu.html' %}
-        <h1>Event Details</h1>
-    </header>
-
-    <div class="container">
+{% block content %}
+<section class="ev-head">
+    <div class="ev-head-inner">
         <a href="{% url 'calendar' %}" class="back-link">← Back to Calendar</a>
-
-        <div class="event-card">
-            <h2>{{ event.title }}</h2>
-
-            <div class="event-info">
-                <div class="info-block">
-                    <h3>Date</h3>
-                    {% if event.start_date == event.end_date %}
-                        <p>{{ event.start_date|date:"F d, Y" }}</p>
-                    {% else %}
-                        <p>{{ event.start_date|date:"F d, Y" }} &ndash; {{ event.end_date|date:"F d, Y" }}</p>
-                        <p style="color:#888; font-size:0.9rem; margin-top:0.25rem;">{{ event.duration_days }} days</p>
-                    {% endif %}
-                </div>
-                <div class="info-block">
-                    <h3>Location</h3>
-                    <p>{{ event.location }}</p>
-                </div>
+        <div class="eyebrow">Competition Event</div>
+        <h1>{{ event.title }}</h1>
+        <div class="ev-meta">
+            <div class="item">
+                <div class="label">Date</div>
+                {% if event.start_date == event.end_date %}
+                    <div class="value">{{ event.start_date|date:"F d, Y" }}</div>
+                {% else %}
+                    <div class="value">{{ event.start_date|date:"F d, Y" }} &ndash; {{ event.end_date|date:"F d, Y" }}</div>
+                    <div class="sub">{{ event.duration_days }} days</div>
+                {% endif %}
             </div>
-
-            {% if event.description %}
-                <div class="event-description">
-                    <h3>Details</h3>
-                    <p>{{ event.description }}</p>
-                </div>
-            {% endif %}
-
-            {% if event.contact_info %}
-                <div class="event-description">
-                    <h3>Contact Information</h3>
-                    <p>{{ event.contact_info }}</p>
-                </div>
-            {% endif %}
-
-            {% if event.resources %}
-                <div class="event-description">
-                    <h3>Resources</h3>
-                    <ul class="resource-list">
-                        {% for resource in event.resources %}
-                            <li><a href="{{ resource.url }}" target="_blank" rel="noopener">{{ resource.label }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            {% endif %}
+            <div class="item">
+                <div class="label">Location</div>
+                <div class="value">{{ event.location }}</div>
+            </div>
         </div>
     </div>
+</section>
 
-    <footer class="footer">
-        <p>&copy; 2026 Mine Rescue Center. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+<div class="ev-body">
+    <div class="ev-card">
+        {% if event.description %}
+            <div class="ev-section">
+                <h3>Details</h3>
+                <p>{{ event.description }}</p>
+            </div>
+        {% endif %}
+
+        {% if event.contact_info %}
+            <div class="ev-section">
+                <h3>Contact Information</h3>
+                <p>{{ event.contact_info }}</p>
+            </div>
+        {% endif %}
+
+        {% if event.resources %}
+            <div class="ev-section">
+                <h3>Resources</h3>
+                <ul class="resource-list">
+                    {% for resource in event.resources %}
+                        <li><a href="{{ resource.url }}" target="_blank" rel="noopener"><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>{{ resource.label }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+
+        {% if not event.description and not event.contact_info and not event.resources %}
+            <div class="ev-section">
+                <p style="color:var(--muted);">More details for this event will be posted here as they become available.</p>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

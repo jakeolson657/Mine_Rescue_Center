@@ -1,606 +1,558 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light">
-    <title>Past Problems - Mine Rescue Center</title>
-    <style>
-        html {
-            color-scheme: light;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-
-        header {
-            position: relative;
-            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            color: #1e3a8a;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .back-link:hover {
-            text-decoration: underline;
-        }
-
-        .card {
-            background: white;
-            border-radius: 8px;
-            padding: 2rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
-        }
-
-        .card h2 {
-            color: #1e3a8a;
-            margin-bottom: 1.5rem;
-            font-size: 1.8rem;
-        }
-
-        .card p {
-            margin-bottom: 1rem;
-        }
-
-        .coming-soon {
-            background-color: #e3f2fd;
-            border-left: 4px solid #1e3a8a;
-            padding: 1rem 1.5rem;
-            border-radius: 4px;
-            color: #1e3a8a;
-            font-weight: 500;
-        }
-
-        /* Collapsible competition cards */
-        summary {
-            cursor: pointer;
-            list-style: none;
-            user-select: none;
-        }
-
-        summary::-webkit-details-marker {
-            display: none;
-        }
-
-        .chevron {
-            flex-shrink: 0;
-            font-size: 0.75rem;
-            color: #1e3a8a;
-            transition: transform 0.2s;
-        }
-
-        details[open] > summary .chevron {
-            transform: rotate(90deg);
-        }
-
-        .year-group {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-bottom: 1rem;
-            overflow: hidden;
-        }
-
-        .year-group > summary {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            padding: 1.25rem 1.5rem;
-        }
-
-        .year-group > summary:hover {
-            background-color: #f0f4ff;
-        }
-
-        .year-label {
-            flex-grow: 1;
-            color: #1e3a8a;
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-
-        .year-body {
-            padding: 0 1.5rem 1.5rem;
-        }
-
-        .competition {
-            background: #fbfcff;
-            border: 1px solid #d8def0;
-            border-radius: 6px;
-            margin-bottom: 0.75rem;
-        }
-
-        .competition:last-child {
-            margin-bottom: 0;
-        }
-
-        .competition > summary {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            padding: 1rem 1.25rem;
-        }
-
-        .competition > summary:hover {
-            background-color: #f0f4ff;
-        }
-
-        .competition-name {
-            flex-grow: 1;
-            color: #1e3a8a;
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-
-        .badge {
-            flex-shrink: 0;
-            background-color: #e3f2fd;
-            color: #1e3a8a;
-            padding: 0.15rem 0.75rem;
-            border-radius: 999px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            white-space: nowrap;
-        }
-
-        .competition-body {
-            padding: 0 1.5rem 1.5rem;
-        }
-
-        .competition-description {
-            color: #555;
-            margin-bottom: 1.25rem;
-        }
-
-        /* Collapsible problems inside a competition */
-        .problem {
-            background: #fafbff;
-            border: 1px solid #e0e4f0;
-            border-radius: 6px;
-            margin-bottom: 0.75rem;
-        }
-
-        .problem:last-child {
-            margin-bottom: 0;
-        }
-
-        .problem > summary {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 0.65rem;
-            padding: 0.9rem 1.25rem;
-            border-radius: 6px;
-        }
-
-        .problem > summary:hover {
-            background-color: #f0f4ff;
-        }
-
-        .problem-title {
-            flex-grow: 1;
-            color: #1e3a8a;
-            font-size: 1.05rem;
-            font-weight: 600;
-        }
-
-        .problem-body {
-            padding: 0 1.25rem 1.25rem;
-        }
-
-        .problem-description {
-            color: #555;
-            font-size: 0.95rem;
-            margin-bottom: 1rem;
-        }
-
-        .documents-list {
-            display: flex;
-            flex-direction: column;
-            gap: 0.6rem;
-        }
-
-        .document-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 1.5rem;
-            padding: 0.75rem 1rem;
-            background: white;
-            border-radius: 4px;
-            border-left: 3px solid #1e3a8a;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
-        }
-
-        .document-title {
-            color: #1e3a8a;
-            font-weight: 500;
-            flex-grow: 1;
-        }
-
-        .document-actions {
-            display: flex;
-            flex-shrink: 0;
-            gap: 0.5rem;
-        }
-
-        .download-btn,
-        .preview-btn {
-            flex-shrink: 0;
-            padding: 0.5rem 1.1rem;
-            border-radius: 4px;
-            font-size: 0.95rem;
-            font-weight: 500;
-            font-family: inherit;
-            white-space: nowrap;
-            display: inline-block;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .download-btn {
-            background-color: #1e3a8a;
-            color: white;
-            border: 1px solid #1e3a8a;
-        }
-
-        .download-btn:hover {
-            background-color: #1e40af;
-        }
-
-        .preview-btn {
-            background-color: white;
-            color: #1e3a8a;
-            border: 1px solid #1e3a8a;
-        }
-
-        .preview-btn:hover {
-            background-color: #e3f2fd;
-        }
-
-        .no-documents {
-            color: #999;
-            font-style: italic;
-        }
-
-        /* Document preview modal */
-        .preview-overlay {
-            position: fixed;
-            inset: 0;
-            z-index: 2000;
-            background: rgba(15, 23, 42, 0.65);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 1.5rem;
-        }
-
-        .preview-overlay[hidden] {
-            display: none;
-        }
-
-        .preview-dialog {
-            display: flex;
-            flex-direction: column;
-            width: min(1000px, 100%);
-            height: 100%;
-            max-height: 92vh;
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
-        }
-
-        .preview-header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 0.75rem 1.25rem;
-            background: #1e3a8a;
-            color: white;
-        }
-
-        .preview-header .preview-doc-title {
-            flex-grow: 1;
-            font-weight: 600;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-
-        .preview-header .download-btn {
-            background-color: white;
-            color: #1e3a8a;
-            border-color: white;
-            padding: 0.35rem 0.9rem;
-        }
-
-        .preview-header .download-btn:hover {
-            background-color: #e3f2fd;
-        }
-
-        .preview-close {
-            flex-shrink: 0;
-            background: transparent;
-            border: none;
-            color: white;
-            font-size: 1.75rem;
-            line-height: 1;
-            cursor: pointer;
-            padding: 0 0.25rem;
-        }
-
-        .preview-close:hover {
-            opacity: 0.8;
-        }
-
-        .preview-body {
-            flex-grow: 1;
-            overflow: auto;
-            background: #525659;
-            display: flex;
-        }
-
-        .preview-body iframe {
-            flex-grow: 1;
-            width: 100%;
-            border: none;
-        }
-
-        .preview-body img {
-            display: block;
-            margin: auto;
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-        }
-
-        .footer {
-            background: #1e3a8a;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
-
-        @media (max-width: 600px) {
-            .document-item {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.75rem;
-            }
-
-            .document-actions {
-                width: 100%;
-            }
-
-            .document-actions .preview-btn,
-            .document-actions .download-btn {
-                flex-grow: 1;
-                text-align: center;
-            }
-
-            .preview-overlay {
-                padding: 0.5rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        {% include 'partials/site_menu.html' %}
-        <h1>Past Problems</h1>
-        <p>Mine rescue competition problem repository</p>
-    </header>
-
-    <div class="container">
-        <a href="/" class="back-link">← Back to Home</a>
-
-        <div class="card">
-            <h2>Problem Repository</h2>
-            <p>
-                Past mine rescue competition problems — including the archive recovered from
-                miningquiz.com via the Wayback Machine, along with problems collected directly
-                from competition organizers.
-            </p>
-            <p>
-                Click a year to see its competitions, a competition to see its problems, and a
-                problem to see its files. Use <strong>Preview</strong> to view a document in your
-                browser before downloading it.
-            </p>
+{% extends 'base.html' %}
+
+{% block title %}Past Problems - Mine Rescue Center{% endblock %}
+
+{% block extra_css %}
+    .repo-head { background: var(--ink); color: var(--bg); }
+    .repo-head-inner { max-width: 1180px; margin: 0 auto; padding: 46px 40px 42px; }
+
+    .repo-title { display: flex; align-items: center; gap: 18px; margin-bottom: 20px; }
+
+    .repo-title .eyebrow {
+        font-family: var(--font-display);
+        font-weight: 500;
+        font-size: 11px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--red-soft);
+        margin-bottom: 3px;
+    }
+
+    .repo-title h1 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 1.06;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .repo-head p { margin: 6px 0 0; font-size: 16px; line-height: 1.6; color: #c2c6cc; max-width: 600px; }
+
+    .repo-wrap { max-width: 1180px; margin: 0 auto; padding: 32px 40px 70px; }
+
+    .intro-note {
+        background: var(--surface);
+        border: 1px solid var(--line-2);
+        border-radius: 12px;
+        padding: 20px 24px;
+        margin-bottom: 24px;
+        font-size: 14.5px;
+        line-height: 1.6;
+        color: var(--steel);
+    }
+
+    .intro-note strong { color: var(--ink); }
+
+    /* details reset */
+    details summary { cursor: pointer; list-style: none; user-select: none; }
+    details summary::-webkit-details-marker { display: none; }
+
+    .chev { flex-shrink: 0; display: inline-flex; color: var(--red); transition: transform 0.2s; }
+    details[open] > summary .chev { transform: rotate(90deg); }
+
+    .badge {
+        flex-shrink: 0;
+        font-family: var(--font-mono);
+        font-size: 11.5px;
+        color: var(--steel);
+        background: var(--surface-2);
+        border: 1px solid var(--line);
+        padding: 4px 11px;
+        border-radius: 20px;
+        white-space: nowrap;
+    }
+
+    .badge.count {
+        font-family: var(--font-display);
+        font-weight: 500;
+        font-size: 10.5px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: var(--red);
+        background: var(--red-tint);
+        border-color: #f0c9c5;
+    }
+
+    /* Year group */
+    .year-group {
+        background: var(--surface);
+        border: 1px solid var(--line-2);
+        border-radius: 12px;
+        box-shadow: 0 1px 2px rgba(43, 52, 64, 0.04);
+        margin-bottom: 14px;
+        overflow: hidden;
+    }
+
+    .year-group > summary {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 18px 22px;
+        transition: background-color 0.15s;
+    }
+
+    .year-group > summary:hover { background-color: #faf8f3; }
+
+    .year-label {
+        flex-grow: 1;
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--ink);
+    }
+
+    .year-body { padding: 4px 18px 18px; }
+
+    /* Competition */
+    .competition {
+        background: var(--surface);
+        border: 1px solid var(--line-2);
+        border-left: 4px solid var(--red);
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .competition:last-child { margin-bottom: 0; }
+
+    .competition > summary {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 11px;
+        padding: 15px 20px;
+        border-radius: 10px;
+        transition: background-color 0.15s;
+    }
+
+    .competition > summary:hover { background-color: #faf8f3; }
+
+    .competition-name {
+        flex-grow: 1;
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 19px;
+        letter-spacing: 0.01em;
+        color: var(--ink);
+    }
+
+    .competition-body { padding: 4px 20px 18px; }
+
+    .competition-description { color: var(--steel); margin-bottom: 16px; font-size: 14.5px; line-height: 1.6; }
+
+    /* Problem */
+    .problem {
+        background: var(--surface-3);
+        border: 1px solid var(--line-2);
+        border-left: 4px solid var(--steel);
+        border-radius: 8px;
+        margin-bottom: 9px;
+    }
+
+    .problem:last-child { margin-bottom: 0; }
+
+    .problem > summary {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 13px 18px;
+        border-radius: 8px;
+    }
+
+    .problem > summary:hover { background-color: #f1ece2; }
+
+    .problem-title {
+        flex-grow: 1;
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: var(--ink);
+    }
+
+    .problem-body { padding: 2px 18px 16px; }
+    .problem-description { color: var(--steel); font-size: 14px; line-height: 1.6; margin-bottom: 14px; }
+
+    .documents-list { display: flex; flex-direction: column; gap: 0.55rem; }
+
+    .document-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.25rem;
+        padding: 11px 14px;
+        background: var(--surface);
+        border: 1px solid var(--line-2);
+        border-radius: 8px;
+    }
+
+    .document-title {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        flex-grow: 1;
+        font-weight: 500;
+        color: var(--ink);
+        font-size: 14.5px;
+    }
+
+    .doc-chip {
+        flex: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 36px;
+        border-radius: 4px;
+        background: var(--surface-3);
+        border: 1px solid var(--line);
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: 8px;
+        letter-spacing: 0.04em;
+        color: var(--red);
+    }
+
+    .document-actions { display: flex; flex-shrink: 0; gap: 0.5rem; }
+
+    .download-btn, .preview-btn {
+        flex-shrink: 0;
+        font-family: var(--font-display);
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding: 9px 16px;
+        border-radius: 7px;
+        white-space: nowrap;
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+    }
+
+    .download-btn { background-color: var(--red); color: var(--bg); border: 1px solid var(--red); }
+    .download-btn:hover { background-color: var(--red-dark); border-color: var(--red-dark); }
+
+    .preview-btn { background-color: var(--surface); color: var(--steel); border: 1px solid #d8d2c8; }
+    .preview-btn:hover { border-color: var(--ink); color: var(--ink); }
+
+    .no-documents { color: var(--muted); font-style: italic; font-size: 14px; }
+
+    /* Empty repository state */
+    .repo-empty {
+        background: var(--surface);
+        border: 1px solid var(--line-2);
+        border-radius: 12px;
+        padding: 24px;
+    }
+
+    .coming-soon {
+        background-color: var(--red-tint);
+        border-left: 4px solid var(--red);
+        padding: 16px 20px;
+        border-radius: 8px;
+        color: var(--ink);
+        font-weight: 500;
+    }
+
+    /* Contribute strip */
+    .contribute {
+        margin-top: 24px;
+        background: var(--surface-2);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 26px 28px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .contribute h3 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        color: var(--ink);
+        margin-bottom: 6px;
+    }
+
+    .contribute p { margin: 0; font-size: 14.5px; line-height: 1.55; color: var(--steel); max-width: 560px; }
+
+    /* Preview modal */
+    .preview-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 2000;
+        background: rgba(34, 42, 51, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+    }
+
+    .preview-overlay[hidden] { display: none; }
+
+    .preview-dialog {
+        display: flex;
+        flex-direction: column;
+        width: min(1000px, 100%);
+        height: 100%;
+        max-height: 92vh;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 30px 70px -20px rgba(20, 17, 13, 0.6);
+    }
+
+    .preview-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.85rem 1.25rem;
+        background: var(--ink);
+        color: var(--bg);
+    }
+
+    .preview-header .preview-doc-title {
+        flex-grow: 1;
+        font-family: var(--font-display);
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .preview-header .download-btn {
+        background-color: var(--red);
+        color: var(--bg);
+        border-color: var(--red);
+    }
+
+    .preview-header .download-btn:hover { background-color: var(--red-dark); }
+
+    .preview-close {
+        flex-shrink: 0;
+        background: transparent;
+        border: none;
+        color: var(--bg);
+        font-size: 1.75rem;
+        line-height: 1;
+        cursor: pointer;
+        padding: 0 0.25rem;
+    }
+
+    .preview-close:hover { opacity: 0.8; }
+
+    .preview-body { flex-grow: 1; overflow: auto; background: #525659; display: flex; }
+    .preview-body iframe { flex-grow: 1; width: 100%; border: none; }
+    .preview-body img { display: block; margin: auto; max-width: 100%; max-height: 100%; object-fit: contain; }
+
+    @media (max-width: 680px) {
+        .repo-head-inner { padding: 36px 20px 32px; }
+        .repo-title h1 { font-size: 32px; }
+        .repo-wrap { padding: 24px 16px 60px; }
+        .document-item { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+        .document-actions { width: 100%; }
+        .document-actions .preview-btn, .document-actions .download-btn { flex-grow: 1; justify-content: center; }
+        .preview-overlay { padding: 0.5rem; }
+    }
+{% endblock %}
+
+{% block content %}
+<section class="repo-head">
+    <div class="repo-head-inner">
+        <div class="repo-title">
+            <svg width="56" height="56" viewBox="0 0 100 100" fill="none">
+                <rect x="16" y="16" width="68" height="68" rx="9" fill="#222a33" stroke="#f4f1ec" stroke-width="4"/>
+                <rect x="16" y="16" width="68" height="20" rx="9" fill="#c0362c"/><rect x="16" y="28" width="68" height="8" fill="#c0362c"/>
+                <line x1="42" y1="26" x2="58" y2="26" stroke="#f4f1ec" stroke-width="3.4" stroke-linecap="round"/>
+                <line x1="42" y1="50" x2="58" y2="50" stroke="#f4f1ec" stroke-width="3.4" stroke-linecap="round"/>
+                <line x1="42" y1="70" x2="58" y2="70" stroke="#f4f1ec" stroke-width="3.4" stroke-linecap="round"/>
+                <line x1="16" y1="60" x2="84" y2="60" stroke="#f4f1ec" stroke-width="2"/>
+            </svg>
+            <div>
+                <div class="eyebrow">MRC · The Repository</div>
+                <h1>Problem Archive</h1>
+            </div>
         </div>
+        <p>Past mine rescue competition problems — including the archive recovered from miningquiz.com via the Wayback Machine, along with problems collected directly from competition organizers. Indexed by year, contest, and discipline.</p>
+    </div>
+</section>
 
-        {% if year_groups %}
-            {% for group in year_groups %}
-                <details class="year-group">
-                    <summary>
-                        <span class="chevron">▶</span>
-                        <span class="year-label">{{ group.year|default:"Year unknown" }}</span>
-                        <span class="badge">{{ group.competitions|length }} competition{{ group.competitions|length|pluralize }}</span>
-                    </summary>
-                    <div class="year-body">
-                        {% for competition in group.competitions %}
-                            {% with problems=competition.problems.all %}
-                            <details class="competition">
-                                <summary>
-                                    <span class="chevron">▶</span>
-                                    <span class="competition-name">{{ competition.name }}</span>
-                                    {% if competition.start_date %}
-                                        <span class="badge">{{ competition.start_date|date:"M j" }}{% if competition.calendar_event.end_date != competition.start_date %} – {{ competition.calendar_event.end_date|date:"M j" }}{% endif %}</span>
-                                    {% endif %}
-                                    {% if competition.location %}
-                                        <span class="badge">{{ competition.location }}</span>
-                                    {% endif %}
-                                    <span class="badge">{{ problems|length }} problem{{ problems|length|pluralize }}</span>
-                                </summary>
-                                <div class="competition-body">
-                                    {% if competition.description %}
-                                        <p class="competition-description">{{ competition.description }}</p>
-                                    {% endif %}
+<div class="repo-wrap">
+    <div class="intro-note">
+        Click a <strong>year</strong> to see its competitions, a <strong>competition</strong> to see its problems, and a <strong>problem</strong> to see its files. Use <strong>Preview</strong> to view a document in your browser before downloading it.
+    </div>
 
-                                    {% for problem in problems %}
-                                        {% with documents=problem.documents.all %}
-                                        <details class="problem">
-                                            <summary>
-                                                <span class="chevron">▶</span>
-                                                <span class="problem-title">{{ problem.title }}</span>
-                                                <span class="badge">{{ documents|length }} file{{ documents|length|pluralize }}</span>
-                                            </summary>
-                                            <div class="problem-body">
-                                                {% if problem.description %}
-                                                    <p class="problem-description">{{ problem.description }}</p>
-                                                {% endif %}
+    {% if year_groups %}
+        {% for group in year_groups %}
+            <details class="year-group">
+                <summary>
+                    <span class="chev"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg></span>
+                    <span class="year-label">{{ group.year|default:"Year unknown" }}</span>
+                    <span class="badge count">{{ group.competitions|length }} competition{{ group.competitions|length|pluralize }}</span>
+                </summary>
+                <div class="year-body">
+                    {% for competition in group.competitions %}
+                        {% with problems=competition.problems.all %}
+                        <details class="competition">
+                            <summary>
+                                <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg></span>
+                                <span class="competition-name">{{ competition.name }}</span>
+                                {% if competition.start_date %}
+                                    <span class="badge">{{ competition.start_date|date:"M j" }}{% if competition.calendar_event.end_date != competition.start_date %} – {{ competition.calendar_event.end_date|date:"M j" }}{% endif %}</span>
+                                {% endif %}
+                                {% if competition.location %}
+                                    <span class="badge">{{ competition.location }}</span>
+                                {% endif %}
+                                <span class="badge count">{{ problems|length }} problem{{ problems|length|pluralize }}</span>
+                            </summary>
+                            <div class="competition-body">
+                                {% if competition.description %}
+                                    <p class="competition-description">{{ competition.description }}</p>
+                                {% endif %}
 
-                                                {% if documents %}
-                                                    <div class="documents-list">
-                                                        {% for doc in documents %}
-                                                            <div class="document-item">
-                                                                <span class="document-title">{{ doc.title }}</span>
-                                                                <div class="document-actions">
-                                                                    {% if doc.preview_kind %}
-                                                                        <button type="button" class="preview-btn"
-                                                                                data-url="{{ doc.file.url }}"
-                                                                                data-kind="{{ doc.preview_kind }}"
-                                                                                data-title="{{ doc.title }}">Preview</button>
-                                                                    {% endif %}
-                                                                    <a href="{{ doc.file.url }}" class="download-btn" download>Download</a>
-                                                                </div>
+                                {% for problem in problems %}
+                                    {% with documents=problem.documents.all %}
+                                    <details class="problem">
+                                        <summary>
+                                            <span class="chev"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg></span>
+                                            <span class="problem-title">{{ problem.title }}</span>
+                                            <span class="badge count">{{ documents|length }} file{{ documents|length|pluralize }}</span>
+                                        </summary>
+                                        <div class="problem-body">
+                                            {% if problem.description %}
+                                                <p class="problem-description">{{ problem.description }}</p>
+                                            {% endif %}
+
+                                            {% if documents %}
+                                                <div class="documents-list">
+                                                    {% for doc in documents %}
+                                                        <div class="document-item">
+                                                            <span class="document-title"><span class="doc-chip">PDF</span>{{ doc.title }}</span>
+                                                            <div class="document-actions">
+                                                                {% if doc.preview_kind %}
+                                                                    <button type="button" class="preview-btn"
+                                                                            data-url="{{ doc.file.url }}"
+                                                                            data-kind="{{ doc.preview_kind }}"
+                                                                            data-title="{{ doc.title }}">Preview</button>
+                                                                {% endif %}
+                                                                <a href="{{ doc.file.url }}" class="download-btn" download><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M5 21h14"/></svg>Download</a>
                                                             </div>
-                                                        {% endfor %}
-                                                    </div>
-                                                {% else %}
-                                                    <p class="no-documents">No documents attached yet.</p>
-                                                {% endif %}
-                                            </div>
-                                        </details>
-                                        {% endwith %}
-                                    {% empty %}
-                                        <p class="no-documents">No problems added yet.</p>
-                                    {% endfor %}
-                                </div>
-                            </details>
-                            {% endwith %}
-                        {% endfor %}
-                    </div>
-                </details>
-            {% endfor %}
-        {% else %}
-            <div class="card">
-                <div class="coming-soon">
-                    Problems are currently being collected and organized. Check back soon.
+                                                        </div>
+                                                    {% endfor %}
+                                                </div>
+                                            {% else %}
+                                                <p class="no-documents">No documents attached yet.</p>
+                                            {% endif %}
+                                        </div>
+                                    </details>
+                                    {% endwith %}
+                                {% empty %}
+                                    <p class="no-documents">No problems added yet.</p>
+                                {% endfor %}
+                            </div>
+                        </details>
+                        {% endwith %}
+                    {% endfor %}
                 </div>
+            </details>
+        {% endfor %}
+    {% else %}
+        <div class="repo-empty">
+            <div class="coming-soon">
+                Problems are currently being collected and organized. Check back soon.
             </div>
-        {% endif %}
-    </div>
+        </div>
+    {% endif %}
 
-    <div class="preview-overlay" id="preview-overlay" hidden>
-        <div class="preview-dialog" role="dialog" aria-modal="true" aria-labelledby="preview-doc-title">
-            <div class="preview-header">
-                <span class="preview-doc-title" id="preview-doc-title"></span>
-                <a class="download-btn" id="preview-download" href="#" download>Download</a>
-                <button type="button" class="preview-close" id="preview-close" aria-label="Close preview">&times;</button>
-            </div>
-            <div class="preview-body" id="preview-body"></div>
+    <div class="contribute">
+        <div>
+            <h3>Have a problem to add?</h3>
+            <p>If your team has a contest problem that isn't here, send it in — we'll index it with the right contest and discipline so every crew can train on it.</p>
         </div>
     </div>
+</div>
 
-    <footer class="footer">
-        <p>&copy; 2026 Mine Rescue Center. All rights reserved.</p>
-    </footer>
+<div class="preview-overlay" id="preview-overlay" hidden>
+    <div class="preview-dialog" role="dialog" aria-modal="true" aria-labelledby="preview-doc-title">
+        <div class="preview-header">
+            <span class="preview-doc-title" id="preview-doc-title"></span>
+            <a class="download-btn" id="preview-download" href="#" download>Download</a>
+            <button type="button" class="preview-close" id="preview-close" aria-label="Close preview">&times;</button>
+        </div>
+        <div class="preview-body" id="preview-body"></div>
+    </div>
+</div>
+{% endblock %}
 
-    <script>
-        (function () {
-            var overlay = document.getElementById('preview-overlay');
-            var body = document.getElementById('preview-body');
-            var titleEl = document.getElementById('preview-doc-title');
-            var downloadLink = document.getElementById('preview-download');
-            var closeBtn = document.getElementById('preview-close');
+{% block scripts %}
+<script>
+    (function () {
+        var overlay = document.getElementById('preview-overlay');
+        var body = document.getElementById('preview-body');
+        var titleEl = document.getElementById('preview-doc-title');
+        var downloadLink = document.getElementById('preview-download');
+        var closeBtn = document.getElementById('preview-close');
 
-            function openPreview(url, kind, title) {
-                titleEl.textContent = title;
-                downloadLink.href = url;
-                body.innerHTML = '';
+        function openPreview(url, kind, title) {
+            titleEl.textContent = title;
+            downloadLink.href = url;
+            body.innerHTML = '';
 
-                if (kind === 'image') {
-                    var img = document.createElement('img');
-                    img.src = url;
-                    img.alt = title;
-                    body.appendChild(img);
-                } else {
-                    var frame = document.createElement('iframe');
-                    frame.src = url;
-                    frame.title = title;
-                    body.appendChild(frame);
-                }
-
-                overlay.hidden = false;
-                document.body.style.overflow = 'hidden';
+            if (kind === 'image') {
+                var img = document.createElement('img');
+                img.src = url;
+                img.alt = title;
+                body.appendChild(img);
+            } else {
+                var frame = document.createElement('iframe');
+                frame.src = url;
+                frame.title = title;
+                body.appendChild(frame);
             }
 
-            function closePreview() {
-                overlay.hidden = true;
-                body.innerHTML = '';
-                document.body.style.overflow = '';
+            overlay.hidden = false;
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePreview() {
+            overlay.hidden = true;
+            body.innerHTML = '';
+            document.body.style.overflow = '';
+        }
+
+        document.querySelectorAll('.preview-btn').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                openPreview(btn.dataset.url, btn.dataset.kind, btn.dataset.title);
+            });
+        });
+
+        closeBtn.addEventListener('click', closePreview);
+
+        overlay.addEventListener('click', function (event) {
+            if (event.target === overlay) {
+                closePreview();
             }
+        });
 
-            document.querySelectorAll('.preview-btn').forEach(function (btn) {
-                btn.addEventListener('click', function () {
-                    openPreview(btn.dataset.url, btn.dataset.kind, btn.dataset.title);
-                });
-            });
-
-            closeBtn.addEventListener('click', closePreview);
-
-            overlay.addEventListener('click', function (event) {
-                if (event.target === overlay) {
-                    closePreview();
-                }
-            });
-
-            document.addEventListener('keydown', function (event) {
-                if (event.key === 'Escape' && !overlay.hidden) {
-                    closePreview();
-                }
-            });
-        })();
-    </script>
-</body>
-</html>
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape' && !overlay.hidden) {
+                closePreview();
+            }
+        });
+    })();
+</script>
+{% endblock %}

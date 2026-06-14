@@ -1,147 +1,301 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light">
-    <title>Mine Rescue Center</title>
-    <style>
-        html {
-            color-scheme: light;
-        }
+{% extends 'base.html' %}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+{% block title %}Mine Rescue Center{% endblock %}
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background-color: #f5f5f5;
-            color: #333;
-        }
+{% block extra_css %}
+    .hero {
+        position: relative;
+        background: var(--ink);
+        color: var(--bg);
+        overflow: hidden;
+    }
 
-        header {
-            position: relative;
-            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
+    .hero-contours {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.16;
+    }
 
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-        }
+    .hero-inner {
+        position: relative;
+        max-width: 1180px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.18fr 0.82fr;
+        gap: 30px;
+        padding: 84px 40px 78px;
+    }
 
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
+    .hero-copy { display: flex; flex-direction: column; justify-content: center; }
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
+    .hero-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        font-family: var(--font-mono);
+        font-size: 12px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--red-soft);
+        margin-bottom: 22px;
+    }
 
-        section {
-            margin: 3rem 0;
-            padding: 2rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+    .hero-eyebrow .dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--red);
+        box-shadow: 0 0 0 4px rgba(192, 54, 44, 0.22);
+    }
 
-        section h2 {
-            color: #1e3a8a;
-            margin-bottom: 1.5rem;
-            font-size: 1.8rem;
-        }
+    .hero h1 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 54px;
+        line-height: 1.08;
+        letter-spacing: 0.005em;
+        margin: 0 0 26px;
+        text-transform: uppercase;
+        text-wrap: balance;
+    }
 
-        ul {
-            list-style-position: inside;
-            margin-left: 1rem;
-        }
+    .hero p.lead {
+        margin: 0 0 34px;
+        font-size: 18px;
+        line-height: 1.6;
+        color: #c2c6cc;
+        max-width: 480px;
+    }
 
-        li {
-            margin: 1rem 0;
-            padding-left: 1rem;
-        }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .hero-actions .btn-red { box-shadow: 0 12px 26px -12px rgba(192, 54, 44, 0.8); }
 
-        .calendar-link {
-            display: inline-block;
-            background: #1e3a8a;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 500;
-            transition: background-color 0.3s;
-            margin-top: 1rem;
-        }
+    .hero-crest {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-        .calendar-link:hover {
-            background-color: #1e40af;
-        }
+    .hero-crest .frame {
+        position: relative;
+        width: 230px;
+        height: 248px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-        .footer {
-            background: #1e3a8a;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        {% include 'partials/site_menu.html' %}
-        <h1>Mine Rescue Center</h1>
-        <p>A resource for mine rescue professionals worldwide</p>
-    </header>
+    .hero-crest .frame .mat {
+        position: absolute;
+        inset: 0;
+        border: 1px solid #3c4651;
+        border-radius: 20px;
+        background: repeating-linear-gradient(135deg, #313b46 0 16px, #2b3440 16px 32px);
+    }
 
-    <div class="container">
-        <section>
-            <h2>About</h2>
-            <p>
-                The Mine Rescue Center will be a resource for mine rescue professionals across the world.
-                While this is a major undertaking, it'll start small and grow into something of value to others.
-            </p>
-        </section>
+    .hero-crest .frame svg {
+        position: relative;
+        filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.4));
+    }
 
-        <section>
-            <h2>Minimal Viable Product</h2>
-            <p>
-                Initially, we're focusing on the U.S. mine rescue scene and MSHA's rules and competitions.
-                Our goal is to create something that can be run sustainably, with high quality, and useful
-                to mine rescue professionals.
-            </p>
-            <ul>
-                <li><strong>Landing Page</strong> - attached to domain minerescuecenter.com</li>
-                <li><strong>Problem Repository</strong> - all old problems found from the wayback machine on miningquiz.com,
-                    with contact from those responsible for competitions since miningquiz.com went down</li>
-                <li><strong>Competition Calendar</strong> - all mine rescue competitions with locations.
-                    Click on an event to see its information. Upon completion, results and the problem are posted here
-                    (starting in 2026, with historical data added as time allows)</li>
-            </ul>
-            <a href="/calendar/" class="calendar-link">View Competition Calendar</a>
-        </section>
+    /* About band */
+    .about-band { background: var(--ink); color: var(--bg); }
 
-        <section>
-            <h2>Coming Later</h2>
-            <ul>
-                <li>Reporting on significant events</li>
-                <li>Leaderboard for mine rescue competitions throughout the year</li>
-                <li>Training materials</li>
-            </ul>
-        </section>
+    .about-inner {
+        max-width: 1180px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 0.95fr 1.05fr;
+        gap: 50px;
+        padding: 84px 40px;
+        align-items: center;
+    }
+
+    .about-inner .eyebrow { color: var(--red-soft); }
+
+    .about-inner h2 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 1.08;
+        letter-spacing: 0.01em;
+        margin: 16px 0 20px;
+        text-transform: uppercase;
+    }
+
+    .about-inner p { margin: 0 0 16px; font-size: 16px; line-height: 1.65; color: #c2c6cc; }
+
+    .pillar-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+    .pillar {
+        background: #313b46;
+        border: 1px solid #3c4651;
+        border-radius: 12px;
+        padding: 22px;
+    }
+
+    .pillar .icon {
+        width: 34px;
+        height: 34px;
+        border-radius: 8px;
+        border: 2px solid var(--red);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 14px;
+        font-family: var(--font-display);
+        font-weight: 600;
+        color: var(--red-soft);
+        font-size: 14px;
+    }
+
+    .pillar h3 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 17px;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        margin-bottom: 6px;
+    }
+
+    .pillar p { margin: 0; font-size: 13.5px; line-height: 1.55; color: #9aa3ad; }
+
+    /* CTA */
+    .cta-band { max-width: 1180px; margin: 0 auto; padding: 80px 40px; }
+
+    .cta-box {
+        position: relative;
+        overflow: hidden;
+        background: var(--red);
+        border-radius: 20px;
+        padding: 60px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .cta-box h2 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1.06;
+        letter-spacing: 0.01em;
+        margin: 0 0 12px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .cta-box p { margin: 0; font-size: 16px; line-height: 1.6; color: #fadfdc; max-width: 440px; }
+
+    .cta-box .btn {
+        position: relative;
+        background: var(--bg);
+        color: var(--ink);
+        font-weight: 600;
+        font-size: 15px;
+        padding: 16px 32px;
+        border-radius: 9px;
+        white-space: nowrap;
+    }
+
+    .cta-box .btn:hover { background: #fff; }
+
+    @media (max-width: 900px) {
+        .hero-inner { grid-template-columns: 1fr; }
+        .hero-crest { display: none; }
+        .about-inner { grid-template-columns: 1fr; gap: 32px; }
+    }
+
+    @media (max-width: 600px) {
+        .hero h1 { font-size: 38px; }
+        .hero-inner { padding: 60px 20px 54px; }
+        .about-inner, .cta-band { padding-left: 20px; padding-right: 20px; }
+        .cta-box { padding: 40px 28px; }
+    }
+{% endblock %}
+
+{% block content %}
+<!-- HERO -->
+<section class="hero" id="top">
+    <svg class="hero-contours" viewBox="0 0 1440 520" preserveAspectRatio="xMidYMid slice" fill="none">
+        <path d="M-40 420 Q 360 300 720 380 T 1480 340" stroke="#c0362c" stroke-width="2"/>
+        <path d="M-40 460 Q 360 350 720 420 T 1480 390" stroke="#9aa3ad" stroke-width="1.5"/>
+        <path d="M-40 380 Q 360 250 720 330 T 1480 290" stroke="#9aa3ad" stroke-width="1.5"/>
+        <path d="M-40 340 Q 360 210 720 290 T 1480 250" stroke="#9aa3ad" stroke-width="1"/>
+        <path d="M-40 300 Q 360 180 720 250 T 1480 210" stroke="#9aa3ad" stroke-width="1"/>
+    </svg>
+    <div class="hero-inner">
+        <div class="hero-copy">
+            <div class="hero-eyebrow"><span class="dot"></span>U.S. Mine Rescue · MSHA-aligned</div>
+            <h1>A resource for mine rescue professionals worldwide</h1>
+            <p class="lead">Historic competition problems, a live calendar, and results — preserved and maintained for the teams who train for the worst day underground. It starts small and grows into something of value to others.</p>
+            <div class="hero-actions">
+                <a href="{% url 'calendar' %}" class="btn btn-red">View Competition Calendar</a>
+                <a href="{% url 'past_problems' %}" class="btn btn-ghost">Browse Problems</a>
+            </div>
+        </div>
+        <div class="hero-crest">
+            <div class="frame">
+                <div class="mat"></div>
+                <svg width="150" height="162" viewBox="0 0 100 108" fill="none">
+                    <polygon points="16,12 84,12 84,56 50,94 16,56" fill="#c0362c" stroke="#f4f1ec" stroke-width="3" stroke-linejoin="round"/>
+                    <polygon points="22,18 78,18 78,54 50,86 22,54" fill="none" stroke="#e8b6b0" stroke-width="1.2" stroke-linejoin="round"/>
+                    <rect x="44" y="28" width="12" height="44" rx="1.5" fill="#f4f1ec"/><rect x="30" y="42" width="40" height="12" rx="1.5" fill="#f4f1ec"/>
+                </svg>
+            </div>
+        </div>
     </div>
+</section>
 
-    <footer class="footer">
-        <p>&copy; 2026 Mine Rescue Center. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+<!-- ABOUT / MISSION -->
+<section class="about-band" id="about">
+    <div class="about-inner">
+        <div>
+            <div class="eyebrow">About the Center</div>
+            <h2>Made by the community, for the community</h2>
+            <p>The Mine Rescue Center will be a resource for mine rescue professionals across the world. While this is a major undertaking, it'll start small and grow into something of value to others.</p>
+            <p>When the old repositories went offline, decades of hard-won training material was nearly lost. We rebuilt it as a free, durable home — and we're keeping it current, contest by contest.</p>
+        </div>
+        <div class="pillar-grid">
+            <div class="pillar">
+                <div class="icon" style="border:none;padding:0;">
+                    <svg width="30" height="32" viewBox="0 0 100 108" fill="none"><polygon points="16,12 84,12 84,56 50,94 16,56" fill="#c0362c" stroke="#f4f1ec" stroke-width="4" stroke-linejoin="round"/><rect x="44" y="28" width="12" height="44" rx="1.5" fill="#f4f1ec"/><rect x="30" y="42" width="40" height="12" rx="1.5" fill="#f4f1ec"/></svg>
+                </div>
+                <h3>Preserved</h3>
+                <p>Archives recovered and re-hosted so no problem is lost again.</p>
+            </div>
+            <div class="pillar">
+                <div class="icon">✓</div>
+                <h3>Maintained</h3>
+                <p>Updated every season with new contests and posted problems.</p>
+            </div>
+            <div class="pillar">
+                <div class="icon" style="border-radius:50%;">$0</div>
+                <h3>Free</h3>
+                <p>No paywall, no login. Open to every team, everywhere.</p>
+            </div>
+            <div class="pillar">
+                <div class="icon"><span style="display:block;width:18px;height:12px;border:2px solid var(--red);border-radius:3px;"></span></div>
+                <h3>Aligned</h3>
+                <p>Organized to MSHA districts and contest standards.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+    <div class="cta-box">
+        <svg viewBox="0 0 600 300" style="position:absolute;right:-40px;top:-40px;width:380px;opacity:0.13;" fill="none"><polygon points="16,12 84,12 84,56 50,94 16,56" transform="translate(180,40) scale(3)" fill="none" stroke="#fff" stroke-width="2"/></svg>
+        <div style="position:relative;">
+            <h2>Find your next contest</h2>
+            <p>Browse the full season calendar and download problems to start training today.</p>
+        </div>
+        <a href="{% url 'calendar' %}" class="btn">Open the Calendar →</a>
+    </div>
+</section>
+{% endblock %}

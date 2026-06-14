@@ -1,0 +1,53 @@
+{# Site-wide sticky header + responsive nav. Rendered by base.html. #}
+{% with active=request.resolver_match.url_name %}
+<header class="site-header" id="site-header">
+    <a class="brand" href="{% url 'landing' %}" aria-label="Mine Rescue Center home">
+        <svg width="34" height="37" viewBox="0 0 100 108" fill="none"><polygon points="16,12 84,12 84,56 50,94 16,56" fill="#c0362c" stroke="#2b3440" stroke-width="3.5" stroke-linejoin="round"/><rect x="44" y="28" width="12" height="44" rx="1.5" fill="#f4f1ec"/><rect x="30" y="42" width="40" height="12" rx="1.5" fill="#f4f1ec"/></svg>
+        <span class="word">
+            <span class="mrc">MRC</span>
+            <span class="full">Mine Rescue Center</span>
+        </span>
+    </a>
+
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Site menu" aria-expanded="false" aria-controls="site-nav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav">
+        <a href="{% url 'past_problems' %}"{% if active == 'past_problems' %} class="active"{% endif %}>Past Problems</a>
+        <a href="{% url 'calendar' %}"{% if active == 'calendar' or active == 'event_detail' %} class="active"{% endif %}>Calendar</a>
+        <a href="{% url 'about' %}"{% if active == 'about' %} class="active"{% endif %}>About</a>
+        {% if active != 'landing' %}
+            <a href="{% url 'landing' %}" class="cta cta-home">← Home</a>
+        {% endif %}
+    </nav>
+</header>
+{% endwith %}
+
+<script>
+    (function () {
+        var header = document.getElementById('site-header');
+        var toggle = document.getElementById('nav-toggle');
+
+        function close() {
+            header.classList.remove('open');
+            toggle.setAttribute('aria-expanded', 'false');
+        }
+
+        toggle.addEventListener('click', function (event) {
+            event.stopPropagation();
+            var open = header.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+
+        document.addEventListener('click', function (event) {
+            if (!header.contains(event.target)) { close(); }
+        });
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') { close(); }
+        });
+    })();
+</script>

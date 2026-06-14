@@ -1,146 +1,209 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light">
-    <title>About - Mine Rescue Center</title>
-    <style>
-        html {
-            color-scheme: light;
-        }
+{% extends 'base.html' %}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+{% block title %}About - Mine Rescue Center{% endblock %}
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background-color: #f5f5f5;
-            color: #333;
-        }
+{% block extra_css %}
+    .about-head { background: var(--ink); color: var(--bg); }
+    .about-head-inner { max-width: 900px; margin: 0 auto; padding: 54px 40px 46px; }
 
-        header {
-            position: relative;
-            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
+    .about-head .eyebrow {
+        font-family: var(--font-mono);
+        font-size: 12px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--red-soft);
+        margin-bottom: 14px;
+    }
 
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
+    .about-head h1 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 46px;
+        line-height: 1.02;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        margin: 0 0 12px;
+    }
 
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
+    .about-head p { margin: 0; font-size: 16px; line-height: 1.6; color: #c2c6cc; white-space: nowrap; }
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
+    .about-wrap { max-width: 900px; margin: 0 auto; padding: 40px 40px 80px; }
 
-        .back-link {
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            color: #1e3a8a;
-            text-decoration: none;
-            font-weight: 500;
-        }
+    .about-card {
+        background: var(--surface);
+        border: 1px solid var(--line-2);
+        border-radius: 14px;
+        box-shadow: 0 1px 2px rgba(43, 52, 64, 0.04);
+        padding: 30px 32px;
+        margin-bottom: 18px;
+    }
 
-        .back-link:hover {
-            text-decoration: underline;
-        }
+    .about-card h2 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: var(--ink);
+        margin-bottom: 16px;
+    }
 
-        .card {
-            background: white;
-            border-radius: 8px;
-            padding: 2rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
-        }
+    .about-card p { margin-bottom: 1rem; font-size: 15.5px; line-height: 1.7; color: #4a4f57; }
+    .about-card p:last-child { margin-bottom: 0; }
 
-        .card h2 {
-            color: #1e3a8a;
-            margin-bottom: 1.5rem;
-            font-size: 1.8rem;
-        }
+    .about-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
 
-        .card p {
-            margin-bottom: 1rem;
-        }
+    .about-list li {
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+        font-size: 15px;
+        line-height: 1.6;
+        color: #4a4f57;
+    }
 
-        ul {
-            list-style-position: inside;
-            margin-left: 1rem;
-        }
+    .about-list li .mark {
+        flex: none;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--red);
+        margin-top: 9px;
+    }
 
-        li {
-            margin: 1rem 0;
-            padding-left: 1rem;
-        }
+    .about-list li strong { color: var(--ink); font-weight: 600; }
 
-        .footer {
-            background: #1e3a8a;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        {% include 'partials/site_menu.html' %}
-        <h1>About</h1>
-        <p>Mine Rescue Center</p>
-    </header>
+    .about-list a { color: var(--red); font-weight: 500; text-decoration: none; }
+    .about-list a:hover { text-decoration: underline; }
 
-    <div class="container">
-        <a href="/" class="back-link">← Back to Home</a>
+    /* Contact */
+    .contact-rows { display: flex; flex-direction: column; gap: 10px; margin-top: 4px; }
 
-        <div class="card">
-            <h2>Our Mission</h2>
-            <p>
-                The Mine Rescue Center will be a resource for mine rescue professionals across the world.
-                While this is a major undertaking, it'll start small and grow into something of value to others.
-            </p>
-            <p>
-                Initially, we're focusing on the U.S. mine rescue scene and MSHA's rules and competitions.
-                Our goal is to create something that can be run sustainably, with high quality, and useful
-                to mine rescue professionals.
-            </p>
-        </div>
+    .contact-row {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 12px 18px;
+        background: var(--surface-3);
+        border: 1px solid var(--line-2);
+        border-radius: 10px;
+        text-decoration: none;
+        transition: border-color 0.15s, background-color 0.15s;
+    }
 
-        <div class="card">
-            <h2>What You'll Find Here</h2>
-            <ul>
-                <li><strong>Past Problems</strong> - a repository of old competition problems, recovered
-                    from miningquiz.com and collected from competition organizers</li>
-                <li><strong>Competition Calendar</strong> - all mine rescue competitions with locations,
-                    event details, and (starting in 2026) results and problems after each competition</li>
-            </ul>
-        </div>
+    .contact-row:hover { border-color: var(--red); background: var(--red-tint); }
 
-        <div class="card">
-            <h2>Coming Later</h2>
-            <ul>
-                <li>Reporting on significant events</li>
-                <li>Leaderboard for mine rescue competitions throughout the year</li>
-                <li>Training materials</li>
-            </ul>
-        </div>
+    .contact-row .ic {
+        flex: none;
+        width: 38px;
+        height: 38px;
+        border-radius: 8px;
+        background: #fff;
+        border: 1px solid var(--line);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--red);
+    }
+
+    .contact-row .contact-label {
+        display: block;
+        font-family: var(--font-mono);
+        font-size: 10.5px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 2px;
+    }
+
+    .contact-row .contact-value { display: block; font-weight: 600; color: var(--ink); font-size: 15.5px; }
+
+    .feedback-box {
+        margin-top: 22px;
+        background: var(--surface-3);
+        border: 1px solid var(--line-2);
+        border-radius: 12px;
+        padding: 22px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .feedback-box h3 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        color: var(--ink);
+        margin-bottom: 6px;
+    }
+
+    .feedback-box p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--steel); max-width: 430px; }
+    .feedback-box .btn { white-space: nowrap; }
+
+    @media (max-width: 600px) {
+        .about-head-inner { padding: 40px 20px 34px; }
+        .about-head h1 { font-size: 34px; }
+        .about-head p { white-space: normal; }
+        .about-wrap { padding: 28px 20px 60px; }
+        .about-card { padding: 24px 22px; }
+    }
+{% endblock %}
+
+{% block content %}
+<section class="about-head">
+    <div class="about-head-inner">
+        <div class="eyebrow">About the Center</div>
+        <h1>About Mine Rescue Center</h1>
+        <p>A free, community-maintained home for mine rescue training material and competition records.</p>
+    </div>
+</section>
+
+<div class="about-wrap">
+    <div class="about-card">
+        <h2>Our Mission</h2>
+        <p>The Mine Rescue Center will be a resource for mine rescue professionals across the world. While this is a major undertaking, it'll start small and grow into something of value to others.</p>
+        <p>Initially, we're focusing on the U.S. mine rescue scene and MSHA's rules and competitions. Our goal is to create something that can be run sustainably, with high quality, and useful to mine rescue professionals.</p>
     </div>
 
-    <footer class="footer">
-        <p>&copy; 2026 Mine Rescue Center. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+    <div class="about-card">
+        <h2>What You'll Find Here</h2>
+        <ul class="about-list">
+            <li><span class="mark"></span><span><strong><a href="{% url 'past_problems' %}">Past Problems</a></strong> — a repository of old competition problems, recovered from miningquiz.com and collected from competition organizers.</span></li>
+            <li><span class="mark"></span><span><strong><a href="{% url 'calendar' %}">Competition Calendar</a></strong> — all mine rescue competitions with locations, event details, and (starting in 2026) results and problems after each competition.</span></li>
+        </ul>
+    </div>
+
+    <div class="about-card">
+        <h2>History</h2>
+        <p>Mine Rescue Center was started in 2026 by Jacob Olson, a mining engineering student at the Colorado School of Mines and a member of the Colorado School of Mines Mine Rescue Team (CSMMRT).</p>
+        <p>It grew out of a gap the team kept running into: finding mine rescue competition problems to train on, and getting good training material in general. The Center is an effort to close that gap — for CSMMRT and for every team that needs it.</p>
+    </div>
+
+    <div class="about-card">
+        <h2>Contact</h2>
+        <p>Questions, corrections, or a problem to contribute? Reach out anytime.</p>
+        <div class="contact-rows">
+            <a class="contact-row" href="mailto:info@minerescuecenter.com">
+                <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+                <span>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">info@minerescuecenter.com</span>
+                </span>
+            </a>
+        </div>
+
+        <div class="feedback-box">
+            <div>
+                <h3>Share your feedback</h3>
+                <p>Tell us what's working, what could work better, and which features you'd like to see added to the site.</p>
+            </div>
+            {# Replace "#" below with your feedback form URL (e.g. a Google Form) once it's ready. #}
+            <a class="btn btn-red" href="#" target="_blank" rel="noopener">Open the feedback form →</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,384 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <title>{% block title %}Mine Rescue Center{% endblock %}</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 108'%3E%3Cpolygon points='16,12 84,12 84,56 50,94 16,56' fill='%23c0362c' stroke='%232b3440' stroke-width='4' stroke-linejoin='round'/%3E%3Crect x='44' y='28' width='12' height='44' rx='1.5' fill='%23f4f1ec'/%3E%3Crect x='30' y='42' width='40' height='12' rx='1.5' fill='%23f4f1ec'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Archivo:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f4f1ec;
+            --surface: #ffffff;
+            --surface-2: #eceae3;
+            --surface-3: #f7f4ee;
+            --ink: #2b3440;
+            --ink-2: #222a33;
+            --steel: #5b6470;
+            --muted: #8a857a;
+            --line: #e2ddd4;
+            --line-2: #e7e2d9;
+            --red: #c0362c;
+            --red-dark: #a52d24;
+            --red-tint: #fbeceb;
+            --red-soft: #e8908a;
+            --green: #1f8a5b;
+            --gold: #b0732c;
+            --font-display: 'Oswald', sans-serif;
+            --font-body: 'Archivo', system-ui, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        html { color-scheme: light; scroll-behavior: smooth; }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-body);
+            line-height: 1.6;
+            background-color: var(--bg);
+            color: var(--ink);
+            overflow-x: hidden;
+        }
+
+        ::selection { background: var(--red); color: var(--bg); }
+
+        a { color: inherit; }
+
+        /* ---------- Shared header / nav ---------- */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 40px;
+            background: rgba(244, 241, 236, 0.92);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            text-decoration: none;
+        }
+
+        .brand .word { display: flex; flex-direction: column; }
+
+        .brand .word .mrc {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 0.9;
+            letter-spacing: 0.04em;
+            color: var(--ink);
+        }
+
+        .brand .word .full {
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: 7px;
+            letter-spacing: 0.2em;
+            color: var(--steel);
+            text-transform: uppercase;
+        }
+
+        .site-nav {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: 13px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #3a4049;
+        }
+
+        .site-nav a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.15s;
+        }
+
+        .site-nav a:hover { color: var(--red); }
+        .site-nav a.active { color: var(--red); }
+
+        .site-nav a.cta {
+            background: var(--red);
+            color: var(--bg);
+            padding: 9px 18px;
+            border-radius: 6px;
+        }
+
+        .site-nav a.cta:hover { background: var(--red-dark); color: var(--bg); }
+
+        .site-nav a.cta-home {
+            background: transparent;
+            border: 1.5px solid #cdc7bc;
+            color: #3a4049;
+            padding: 9px 18px;
+            border-radius: 6px;
+        }
+
+        .site-nav a.cta-home:hover {
+            background: transparent;
+            border-color: var(--red);
+            color: var(--red);
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            width: 44px;
+            height: 44px;
+            background: transparent;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .nav-toggle .bar {
+            width: 24px;
+            height: 2.5px;
+            background-color: var(--ink);
+            border-radius: 2px;
+            transition: transform 0.25s, opacity 0.25s;
+        }
+
+        .site-header.open .nav-toggle .bar:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+        .site-header.open .nav-toggle .bar:nth-child(2) { opacity: 0; }
+        .site-header.open .nav-toggle .bar:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+
+        @media (max-width: 780px) {
+            .site-header { padding: 12px 20px; }
+
+            .nav-toggle { display: flex; }
+
+            .site-nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+                background: var(--bg);
+                border-bottom: 1px solid var(--line);
+                box-shadow: 0 16px 30px -18px rgba(43, 52, 64, 0.4);
+                padding: 6px 0;
+            }
+
+            .site-header.open .site-nav { display: flex; }
+
+            .site-nav a {
+                padding: 13px 24px;
+                border-bottom: 1px solid var(--line);
+            }
+
+            .site-nav a:last-child { border-bottom: none; }
+
+            .site-nav a.cta,
+            .site-nav a.cta-home {
+                background: transparent;
+                border: none;
+                color: var(--red);
+                border-radius: 0;
+            }
+        }
+
+        /* ---------- Shared footer ---------- */
+        .site-footer {
+            background: var(--ink-2);
+            color: #9aa3ad;
+            border-top: 1px solid #3a4550;
+            margin-top: 0;
+        }
+
+        .site-footer .footer-top {
+            max-width: 1180px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 36px;
+            padding: 54px 40px 32px;
+        }
+
+        .site-footer .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            margin-bottom: 16px;
+        }
+
+        .site-footer .footer-brand .mrc {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 0.9;
+            letter-spacing: 0.04em;
+            color: var(--bg);
+        }
+
+        .site-footer .footer-brand .full {
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: 7px;
+            letter-spacing: 0.2em;
+            color: #7e8794;
+            text-transform: uppercase;
+        }
+
+        .site-footer .footer-tagline {
+            margin: 0;
+            font-size: 13.5px;
+            line-height: 1.6;
+            max-width: 320px;
+        }
+
+        .site-footer .footer-col h4 {
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: 12px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--bg);
+            margin-bottom: 14px;
+        }
+
+        .site-footer .footer-col a {
+            display: block;
+            text-decoration: none;
+            color: #9aa3ad;
+            font-size: 13.5px;
+            margin-bottom: 10px;
+            transition: color 0.15s;
+        }
+
+        .site-footer .footer-col a:hover { color: var(--bg); }
+
+        .site-footer .footer-bottom {
+            border-top: 1px solid #313b46;
+        }
+
+        .site-footer .footer-bottom-inner {
+            max-width: 1180px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 20px 40px;
+            font-family: var(--font-mono);
+            font-size: 11.5px;
+            color: #6f7884;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 680px) {
+            .site-footer .footer-top { grid-template-columns: 1fr; gap: 28px; }
+        }
+
+        /* ---------- Shared building blocks ---------- */
+        .wrap { max-width: 1180px; margin: 0 auto; padding: 0 40px; }
+
+        .btn {
+            display: inline-block;
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            border: none;
+            transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+        }
+
+        .btn-red { background: var(--red); color: var(--bg); padding: 14px 26px; }
+        .btn-red:hover { background: var(--red-dark); }
+
+        .btn-ghost {
+            border: 1.5px solid #4d5763;
+            color: var(--bg);
+            padding: 14px 26px;
+        }
+        .btn-ghost:hover { border-color: var(--bg); }
+
+        .btn-dark { background: var(--ink); color: var(--bg); padding: 13px 24px; }
+        .btn-dark:hover { background: var(--ink-2); }
+
+        .eyebrow {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--red);
+        }
+
+        .section-head h2 {
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 1.05;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+            margin: 14px 0;
+        }
+
+        @media (max-width: 600px) {
+            .wrap { padding: 0 20px; }
+            .section-head h2 { font-size: 30px; }
+        }
+
+        {% block extra_css %}{% endblock %}
+    </style>
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    {% include 'partials/site_nav.html' %}
+
+    {% block content %}{% endblock %}
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div>
+                <div class="footer-brand">
+                    <svg width="32" height="35" viewBox="0 0 100 108" fill="none"><polygon points="16,12 84,12 84,56 50,94 16,56" fill="#c0362c" stroke="#f4f1ec" stroke-width="3.5" stroke-linejoin="round"/><rect x="44" y="28" width="12" height="44" rx="1.5" fill="#f4f1ec"/><rect x="30" y="42" width="40" height="12" rx="1.5" fill="#f4f1ec"/></svg>
+                    <span class="word" style="display:flex;flex-direction:column;">
+                        <span class="mrc">MRC</span>
+                        <span class="full">Mine Rescue Center</span>
+                    </span>
+                </div>
+                <p class="footer-tagline">A free, community-maintained home for mine rescue training material and competition records.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="{% url 'past_problems' %}">Past Problems</a>
+                <a href="{% url 'calendar' %}">Competition Calendar</a>
+                <a href="{% url 'about' %}">About</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-inner">
+                <span>&copy; 2026 Mine Rescue Center — a community project</span>
+                <span>Good luck and stay safe underground</span>
+            </div>
+        </div>
+    </footer>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>
