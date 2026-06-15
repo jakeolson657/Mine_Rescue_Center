@@ -162,6 +162,28 @@ MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 
+# Email — used by the feedback form (pages.views.feedback). In development the
+# console backend prints messages to the runserver console, so no SMTP account
+# is needed to try the form. In production set the EMAIL_* vars in .env to a real
+# SMTP sender and feedback is delivered to FEEDBACK_TO_EMAIL.
+FEEDBACK_TO_EMAIL = os.environ.get('FEEDBACK_TO_EMAIL', 'info@minerescuecenter.com')
+DEFAULT_FROM_EMAIL = os.environ.get(
+    'DEFAULT_FROM_EMAIL', 'Mine Rescue Center <info@minerescuecenter.com>'
+)
+EMAIL_BACKEND = os.environ.get(
+    'DJANGO_EMAIL_BACKEND',
+    'django.core.mail.backends.console.EmailBackend' if DEBUG
+    else 'django.core.mail.backends.smtp.EmailBackend',
+)
+EMAIL_HOST = os.environ.get('EMAIL_HOST', '')
+EMAIL_PORT = int(os.environ.get('EMAIL_PORT', '587'))
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', '')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', '')
+EMAIL_USE_TLS = os.environ.get('EMAIL_USE_TLS', 'True') == 'True'
+EMAIL_USE_SSL = os.environ.get('EMAIL_USE_SSL', 'False') == 'True'
+EMAIL_TIMEOUT = 20
+
+
 # Production hardening — only applied when DEBUG is off (i.e. on the server).
 # The site runs behind Caddy, which terminates TLS and forwards plain HTTP.
 if not DEBUG:

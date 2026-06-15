@@ -1,9 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.urls import reverse
+from django.conf import settings
+from django.core.mail import EmailMessage
 from django.views.generic import ListView, DetailView
 from django.utils import timezone
 from datetime import date, timedelta
 from calendar import Calendar, month_name, monthrange
 from .models import CalendarEvent, Competition
+from .forms import FeedbackForm
 
 
 def landing_page(request):
@@ -106,3 +110,44 @@ class EventDetailView(DetailView):
     model = CalendarEvent
     template_name = 'event_detail.html'
     context_object_name = 'event'
+
+
+def _send_feedback_email(data):
+    email = data.get('email') or ''
+    body = "\n".join([
+        f"Name:  {data.get('name') or '(not provided)'}",
+        f"Email: {email or '(not provided)'}",
+        "",
+        data['message'],
+    ])
+    EmailMessage(
+        subject="New website feedback (minerescuecenter.com)",
+        body=body,
+        from_email=settings.DEFAULT_FROM_EMAIL,
+        to=[settings.FEEDBACK_TO_EMAIL],
+        reply_to=[email] if email else None,
+    ).send(fail_silently=False)
+
+
+def feedback(request):
+    error = False
+    if request.method == 'POST':
+        form = FeedbackForm(request.POST)
+        if form.is_valid():
+            # Honeypot filled => treat as spam: show success, send nothing.
+            if form.cleaned_data['website']:
+                return redirect(f"{reverse('feedback')}?sent=1")
+            try:
+                _send_feedback_email(form.cleaned_data)
+            except Exception:
+                error = True
+            else:
+                return redirect(f"{reverse('feedback')}?sent=1")
+    else:
+        form = FeedbackForm()
+
+    return render(request, 'feedback.html', {
+        'form': form,
+        'sent': request.GET.get('sent') == '1',
+        'error': error,
+    })

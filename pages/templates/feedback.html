@@ -1,0 +1,210 @@
+{% extends 'base.html' %}
+
+{% block title %}Share Feedback - Mine Rescue Center{% endblock %}
+
+{% block extra_css %}
+    .fb-head { background: var(--ink); color: var(--bg); }
+    .fb-head-inner { max-width: 720px; margin: 0 auto; padding: 30px 40px 46px; }
+
+    .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        font-family: var(--font-display);
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #9aa3ad;
+        text-decoration: none;
+        margin-bottom: 26px;
+        transition: color 0.15s;
+    }
+    .back-link:hover { color: var(--bg); }
+
+    .fb-head .eyebrow {
+        font-family: var(--font-mono);
+        font-size: 12px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--red-soft);
+        margin-bottom: 14px;
+    }
+
+    .fb-head h1 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 1.04;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        margin: 0 0 12px;
+    }
+
+    .fb-head p { margin: 0; font-size: 16px; line-height: 1.6; color: #c2c6cc; max-width: 520px; }
+
+    .fb-wrap { max-width: 720px; margin: 0 auto; padding: 40px 40px 80px; }
+
+    .fb-card {
+        background: var(--surface);
+        border: 1px solid var(--line-2);
+        border-radius: 14px;
+        box-shadow: 0 1px 2px rgba(43, 52, 64, 0.04);
+        padding: 30px 32px;
+    }
+
+    .fb-form .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .fb-field { margin-bottom: 18px; }
+
+    .fb-field label {
+        display: block;
+        font-family: var(--font-display);
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--steel);
+        margin-bottom: 7px;
+    }
+
+    .fb-field label .opt { color: var(--muted); font-weight: 400; }
+
+    .fb-form input[type="text"],
+    .fb-form input[type="email"],
+    .fb-form textarea {
+        width: 100%;
+        font-family: var(--font-body);
+        font-size: 15px;
+        color: var(--ink);
+        background: var(--surface);
+        border: 1px solid #d8d2c8;
+        border-radius: 9px;
+        padding: 12px 14px;
+        outline: none;
+        transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .fb-form input::placeholder, .fb-form textarea::placeholder { color: #b6b0a4; }
+
+    .fb-form input:focus, .fb-form textarea:focus {
+        border-color: var(--red);
+        box-shadow: 0 0 0 3px rgba(192, 54, 44, 0.12);
+    }
+
+    .fb-form textarea { resize: vertical; min-height: 150px; line-height: 1.6; }
+
+    .fb-errors { color: var(--red); font-size: 13px; margin-top: 6px; }
+    .fb-errors ul { list-style: none; }
+
+    .fb-actions { display: flex; align-items: center; gap: 16px; margin-top: 4px; flex-wrap: wrap; }
+    .fb-actions .btn-red { padding: 13px 28px; }
+    .fb-actions .note { font-size: 12.5px; color: var(--muted); }
+
+    .fb-note-error {
+        background: var(--red-tint);
+        border: 1px solid #f0c9c5;
+        border-radius: 10px;
+        padding: 14px 16px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #8f2a22;
+    }
+    .fb-note-error a { color: var(--red); font-weight: 600; }
+
+    /* off-screen honeypot */
+    .hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+
+    /* success */
+    .fb-success { text-align: center; padding: 14px 8px 6px; }
+    .fb-success .check {
+        width: 58px; height: 58px; margin: 0 auto 18px;
+        border-radius: 50%;
+        background: rgba(31, 138, 91, 0.12);
+        border: 2px solid var(--green);
+        color: var(--green);
+        display: flex; align-items: center; justify-content: center;
+        font-size: 26px;
+    }
+    .fb-success h2 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 26px;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        color: var(--ink);
+        margin-bottom: 10px;
+    }
+    .fb-success p { font-size: 15px; line-height: 1.6; color: var(--steel); margin: 0 auto 22px; max-width: 420px; }
+
+    @media (max-width: 600px) {
+        .fb-head-inner { padding: 24px 20px 36px; }
+        .fb-head h1 { font-size: 30px; }
+        .fb-wrap { padding: 28px 20px 60px; }
+        .fb-card { padding: 24px 22px; }
+        .fb-form .row2 { grid-template-columns: 1fr; }
+    }
+{% endblock %}
+
+{% block content %}
+<section class="fb-head">
+    <div class="fb-head-inner">
+        <a href="{% url 'about' %}" class="back-link">← Back to About</a>
+        <div class="eyebrow">We're listening</div>
+        <h1>Share your feedback</h1>
+        <p>Tell us what's working, what could work better, and which features you'd like to see added. Short notes welcome.</p>
+    </div>
+</section>
+
+<div class="fb-wrap">
+    <div class="fb-card">
+        {% if sent %}
+            <div class="fb-success">
+                <div class="check">✓</div>
+                <h2>Thanks — message sent</h2>
+                <p>Your feedback is on its way to the team. If you left an email, we may reach out to follow up.</p>
+                <a class="btn btn-dark" href="{% url 'landing' %}">Back to home</a>
+            </div>
+        {% else %}
+            {% if error %}
+                <div class="fb-note-error">
+                    Sorry — we couldn't send that just now. Please email us directly at
+                    <a href="mailto:info@minerescuecenter.com">info@minerescuecenter.com</a>.
+                </div>
+            {% endif %}
+
+            <form class="fb-form" method="post" action="{% url 'feedback' %}" novalidate>
+                {% csrf_token %}
+
+                <div class="hp" aria-hidden="true">
+                    <label for="{{ form.website.id_for_label }}">Leave this field empty</label>
+                    {{ form.website }}
+                </div>
+
+                <div class="row2">
+                    <div class="fb-field">
+                        <label for="{{ form.name.id_for_label }}">Name <span class="opt">(optional)</span></label>
+                        {{ form.name }}
+                        {% if form.name.errors %}<div class="fb-errors">{{ form.name.errors }}</div>{% endif %}
+                    </div>
+                    <div class="fb-field">
+                        <label for="{{ form.email.id_for_label }}">Email <span class="opt">(optional, for a reply)</span></label>
+                        {{ form.email }}
+                        {% if form.email.errors %}<div class="fb-errors">{{ form.email.errors }}</div>{% endif %}
+                    </div>
+                </div>
+
+                <div class="fb-field">
+                    <label for="{{ form.message.id_for_label }}">Feedback</label>
+                    {{ form.message }}
+                    {% if form.message.errors %}<div class="fb-errors">{{ form.message.errors }}</div>{% endif %}
+                </div>
+
+                <div class="fb-actions">
+                    <button type="submit" class="btn btn-red">Send feedback →</button>
+                    <span class="note">Goes straight to info@minerescuecenter.com.</span>
+                </div>
+            </form>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
