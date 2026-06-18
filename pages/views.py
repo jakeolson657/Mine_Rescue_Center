@@ -8,7 +8,7 @@ from django.views.generic import ListView, DetailView
 from django.utils import timezone
 from datetime import date, timedelta
 from calendar import Calendar, month_name, monthrange
-from .models import CalendarEvent, Competition
+from .models import CalendarEvent, Competition, SiteConfiguration
 from .forms import FeedbackForm
 from .calendar_export import (
     build_event_ics, google_calendar_url, outlook_calendar_url,
@@ -71,6 +71,8 @@ class CalendarView(ListView):
         today = timezone.localdate()
         context['today_year'] = today.year
         context['today_month'] = today.month
+
+        context['msha_calendar_url'] = SiteConfiguration.load().msha_calendar_url
 
         cal = Calendar(firstweekday=6).monthdayscalendar(year, month)
         context['calendar'] = cal

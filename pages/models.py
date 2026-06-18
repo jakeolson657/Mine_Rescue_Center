@@ -7,6 +7,37 @@ from django.db.models.signals import post_delete, post_save
 from django.dispatch import receiver
 
 
+class SiteConfiguration(models.Model):
+    """Site-wide settings editable from the admin. A single row (pk=1); use
+    ``SiteConfiguration.load()`` to read it."""
+
+    msha_calendar_url = models.URLField(
+        "MSHA calendar link",
+        max_length=500,
+        blank=True,
+        help_text="URL for the “Official MSHA Contest Calendar” button "
+                  "on the Competition Calendar page. Update it when MSHA posts "
+                  "the next season’s contest page. Leave blank to hide the "
+                  "button.",
+    )
+
+    class Meta:
+        verbose_name = "Site configuration"
+        verbose_name_plural = "Site configuration"
+
+    def __str__(self):
+        return "Site configuration"
+
+    def save(self, *args, **kwargs):
+        self.pk = 1  # enforce a single row
+        super().save(*args, **kwargs)
+
+    @classmethod
+    def load(cls):
+        obj, _ = cls.objects.get_or_create(pk=1)
+        return obj
+
+
 class CalendarEvent(models.Model):
     title = models.CharField(max_length=200)
     start_date = models.DateField()

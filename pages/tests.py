@@ -6,7 +6,7 @@ from django.urls import reverse
 from .calendar_export import (
     build_event_ics, google_calendar_url, outlook_calendar_url,
 )
-from .models import CalendarEvent
+from .models import CalendarEvent, SiteConfiguration
 
 
 class CalendarExportTests(TestCase):
@@ -92,12 +92,39 @@ class CalendarExportTests(TestCase):
 
 
 class CalendarPageTests(TestCase):
-    def test_calendar_page_has_picker_and_msha_link(self):
+    def test_calendar_page_has_picker(self):
         response = self.client.get(reverse('calendar'))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'cal-picker-toggle')
         self.assertContains(response, 'data-today-year')
-        self.assertContains(response, 'msha.gov')
+
+    def test_msha_link_shown_when_configured(self):
+        config = SiteConfiguration.load()
+        config.msha_calendar_url = 'https://example.com/msha-2027'
+        config.save()
+        response = self.client.get(reverse('calendar'))
+        self.assertContains(response, 'https://example.com/msha-2027')
+        self.assertContains(response, 'Official MSHA Contest Calendar')
+
+    def test_msha_link_hidden_when_blank(self):
+        config = SiteConfiguration.load()
+        config.msha_calendar_url = ''
+        config.save()
+        response = self.client.get(reverse('calendar'))
+        # The <a> is gone (the .msha-link CSS rules still exist in the <style>).
+        self.assertNotContains(response, 'class="msha-link"')
+        self.assertNotContains(response, 'Official MSHA Contest Calendar')
+
+    def test_site_configuration_is_singleton(self):
+        first = SiteConfiguration.load()
+        first.msha_calendar_url = 'https://a.test'
+        first.save()
+        again = SiteConfiguration.load()
+        again.msha_calendar_url = 'https://b.test'
+        again.save()
+        self.assertEqual(SiteConfiguration.objects.count(), 1)
+        self.assertEqual(SiteConfiguration.load().pk, 1)
+        self.assertEqual(SiteConfiguration.load().msha_calendar_url, 'https://b.test')
 
     def test_event_detail_has_export_buttons(self):
         event = CalendarEvent.objects.create(

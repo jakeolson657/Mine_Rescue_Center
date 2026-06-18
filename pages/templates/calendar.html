@@ -301,10 +301,12 @@
         <div class="eyebrow">{{ year }} Season</div>
         <h1>Competition Calendar</h1>
         <p>Mine rescue competitions throughout the year. Browse by month, then open an event for its location, details, results, and posted problem.</p>
-        <a class="msha-link" href="https://www.msha.gov/training/training/mine-rescue-training/mine-rescue-contests/2026-enforcement-mine-rescue-contest" target="_blank" rel="noopener">
+        {% if msha_calendar_url %}
+        <a class="msha-link" href="{{ msha_calendar_url }}" target="_blank" rel="noopener">
             <svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             Official MSHA Contest Calendar
         </a>
+        {% endif %}
     </div>
 </section>
 

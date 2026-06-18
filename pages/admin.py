@@ -1,9 +1,22 @@
 from django.contrib import admin
-from .models import CalendarEvent, Competition, CompetitionProblem, ProblemDocument
+from .models import (
+    CalendarEvent, Competition, CompetitionProblem, ProblemDocument,
+    SiteConfiguration,
+)
 
 admin.site.site_header = "Mine Rescue Center Administration"
 admin.site.site_title = "Mine Rescue Center Admin"
 admin.site.index_title = "Site Management"
+
+
+@admin.register(SiteConfiguration)
+class SiteConfigurationAdmin(admin.ModelAdmin):
+    # Singleton: one row of site-wide settings, no add/delete.
+    def has_add_permission(self, request):
+        return not SiteConfiguration.objects.exists()
+
+    def has_delete_permission(self, request, obj=None):
+        return False
 
 
 @admin.register(CalendarEvent)
