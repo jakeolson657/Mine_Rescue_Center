@@ -8,4 +8,5 @@ urlpatterns = [
     path('feedback/', views.feedback, name='feedback'),
     path('calendar/', views.CalendarView.as_view(), name='calendar'),
     path('event/<int:pk>/', views.EventDetailView.as_view(), name='event_detail'),
+    path('event/<int:pk>/calendar.ics', views.event_ics, name='event_ics'),
 ]

@@ -1,13 +1,18 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
+from django.http import HttpResponse
 from django.urls import reverse
 from django.conf import settings
 from django.core.mail import EmailMessage
+from django.utils.text import slugify
 from django.views.generic import ListView, DetailView
 from django.utils import timezone
 from datetime import date, timedelta
 from calendar import Calendar, month_name, monthrange
 from .models import CalendarEvent, Competition
 from .forms import FeedbackForm
+from .calendar_export import (
+    build_event_ics, google_calendar_url, outlook_calendar_url,
+)
 
 
 def landing_page(request):
@@ -63,6 +68,10 @@ class CalendarView(ListView):
         context['month'] = month
         context['month_name'] = month_name[month]
 
+        today = timezone.localdate()
+        context['today_year'] = today.year
+        context['today_month'] = today.month
+
         cal = Calendar(firstweekday=6).monthdayscalendar(year, month)
         context['calendar'] = cal
 
@@ -110,6 +119,33 @@ class EventDetailView(DetailView):
     model = CalendarEvent
     template_name = 'event_detail.html'
     context_object_name = 'event'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        event = self.object
+        detail_url = self.request.build_absolute_uri(
+            reverse('event_detail', args=[event.pk])
+        )
+        context['google_url'] = google_calendar_url(event, url=detail_url)
+        context['outlook_url'] = outlook_calendar_url(event, url=detail_url)
+        context['ics_url'] = reverse('event_ics', args=[event.pk])
+        return context
+
+
+def event_ics(request, pk):
+    """Download a single event as an .ics file (Apple Calendar, Outlook
+    desktop, Google import, and any other calendar app that reads iCalendar)."""
+    event = get_object_or_404(CalendarEvent, pk=pk)
+    detail_url = request.build_absolute_uri(
+        reverse('event_detail', args=[event.pk])
+    )
+    response = HttpResponse(
+        build_event_ics(event, url=detail_url),
+        content_type='text/calendar; charset=utf-8',
+    )
+    name = slugify(event.title) or f'event-{event.pk}'
+    response['Content-Disposition'] = f'attachment; filename="{name}.ics"'
+    return response
 
 
 def _send_feedback_email(data):
