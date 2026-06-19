@@ -17,7 +17,9 @@
 
     <nav class="site-nav" id="site-nav">
         <a href="{% url 'past_problems' %}"{% if active == 'past_problems' %} class="active"{% endif %}>Past Problems</a>
+        <a href="{% url 'training_resources' %}"{% if active == 'training_resources' %} class="active"{% endif %}>Training Resources</a>
         <a href="{% url 'calendar' %}"{% if active == 'calendar' or active == 'event_detail' %} class="active"{% endif %}>Calendar</a>
+        <a href="{% url 'updates' %}"{% if active == 'updates' %} class="active"{% endif %}>Updates</a>
         <a href="{% url 'about' %}"{% if active == 'about' %} class="active"{% endif %}>About</a>
         {% if active != 'landing' %}
             <a href="{% url 'landing' %}" class="cta cta-home">← Home</a>

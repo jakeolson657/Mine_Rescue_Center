@@ -46,6 +46,24 @@ def about(request):
     return render(request, 'about.html')
 
 
+def training_resources(request):
+    return render(request, 'coming_soon.html', {
+        'meta_title': 'Training Resources',
+        'eyebrow': 'Mine Rescue Center',
+        'heading': 'Training Resources',
+        'lede': 'A growing library of mine rescue training material.',
+    })
+
+
+def updates(request):
+    return render(request, 'coming_soon.html', {
+        'meta_title': 'Updates',
+        'eyebrow': 'Mine Rescue Center',
+        'heading': 'Updates',
+        'lede': 'News and announcements from the Mine Rescue Center.',
+    })
+
+
 class CalendarView(ListView):
     model = CalendarEvent
     template_name = 'calendar.html'
