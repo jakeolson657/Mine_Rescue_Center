@@ -6,7 +6,10 @@ from django.urls import reverse
 from .calendar_export import (
     build_event_ics, google_calendar_url, outlook_calendar_url,
 )
-from .models import CalendarEvent, SiteConfiguration
+from .models import (
+    CalendarEvent, Competition, CompetitionProblem,
+    SiteConfiguration, PROBLEM_CATEGORIES, categorize_problem,
+)
 
 
 class CalendarExportTests(TestCase):
@@ -137,3 +140,81 @@ class CalendarPageTests(TestCase):
         self.assertContains(response, 'calendar.google.com')
         self.assertContains(response, 'outlook.live.com')
         self.assertContains(response, reverse('event_ics', args=[event.pk]))
+
+
+class CategorizeProblemTests(TestCase):
+    def test_event_types_match_on_title(self):
+        self.assertEqual(categorize_problem("First Aid"), ['first-aid'])
+        self.assertEqual(categorize_problem("Preshift"), ['preshift'])
+        self.assertEqual(categorize_problem("Pre-Shift"), ['preshift'])
+        self.assertEqual(categorize_problem("Bench"), ['bench'])
+        self.assertEqual(categorize_problem("Written Exams"), ['written'])
+
+    def test_mine_type_matches_title_or_competition(self):
+        self.assertEqual(categorize_problem("2024 Loveland COAL Day 1"), ['coal'])
+        self.assertEqual(categorize_problem("2024 Loveland MNM Day 1"), ['mnm'])
+        self.assertEqual(categorize_problem("Nonmetal"), ['mnm'])
+        # The generic field problem inherits coal/MNM from the contest name...
+        self.assertEqual(
+            categorize_problem("Mine Rescue", "2022 National Coal Mine Rescue Contest"),
+            ['coal'],
+        )
+        # ...but event-type words in the contest name do NOT bleed onto every
+        # problem (First Aid here is only in the competition name).
+        self.assertEqual(
+            categorize_problem("Mine Rescue", "2022 Coal Mine Rescue and First Aid Contest"),
+            ['coal'],
+        )
+
+    def test_generic_problem_has_no_category(self):
+        self.assertEqual(
+            categorize_problem("Mine Rescue", "2024 Colorado Mine Rescue Contest"), []
+        )
+
+    def test_multiple_categories_keep_display_order(self):
+        self.assertEqual(categorize_problem("Coal Written Exam"), ['coal', 'written'])
+
+
+class PastProblemsPageTests(TestCase):
+    @classmethod
+    def setUpTestData(cls):
+        # A contest with no mine type in its name: its First Aid problem is
+        # tagged purely from the title, and the field problem stays untagged.
+        cls.generic = Competition.objects.create(
+            name="2024 Colorado Mine Rescue Contest", year=2024
+        )
+        CompetitionProblem.objects.create(competition=cls.generic, title="First Aid")
+        CompetitionProblem.objects.create(competition=cls.generic, title="Mine Rescue")
+        # A coal contest: its generic field problem inherits the coal tag.
+        cls.coal = Competition.objects.create(
+            name="2022 National Coal Mine Rescue Contest", year=2022
+        )
+        CompetitionProblem.objects.create(competition=cls.coal, title="Mine Rescue")
+
+    def test_toolbar_and_chips_rendered(self):
+        response = self.client.get(reverse('past_problems'))
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, 'repo-toolbar')
+        self.assertContains(response, 'id="repo-search"')
+        for slug, label in PROBLEM_CATEGORIES:
+            self.assertContains(response, 'data-cat="%s"' % slug)
+            self.assertContains(response, label)
+
+    def test_problems_carry_category_data(self):
+        response = self.client.get(reverse('past_problems'))
+        # First Aid problem tagged from its title.
+        self.assertContains(response, 'data-categories="first-aid"')
+        # Generic "Mine Rescue" field problem tagged coal from the contest name.
+        self.assertContains(response, 'data-categories="coal"')
+
+    def test_competitions_carry_search_data(self):
+        response = self.client.get(reverse('past_problems'))
+        self.assertContains(response, 'data-search=')
+
+    def test_documents_are_deferred_to_client(self):
+        response = self.client.get(reverse('past_problems'))
+        # Document rows are built client-side, not rendered server-side.
+        self.assertNotContains(response, '<div class="document-item">')
+        # Each problem ships a lazy-load container plus a JSON data bundle.
+        self.assertContains(response, 'data-docs="docs-')
+        self.assertContains(response, 'type="application/json"')

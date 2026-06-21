@@ -45,6 +45,94 @@
 
     .intro-note strong { color: var(--ink); }
 
+    /* Filter + search toolbar */
+    .repo-toolbar {
+        position: sticky;
+        top: 56px;
+        z-index: 20;
+        background: var(--surface);
+        border: 1px solid var(--line-2);
+        border-radius: 12px;
+        box-shadow: 0 6px 18px -12px rgba(43, 52, 64, 0.28);
+        padding: 16px 18px;
+        margin-bottom: 22px;
+    }
+
+    .repo-search { position: relative; margin-bottom: 13px; }
+
+    .repo-search svg {
+        position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+        color: var(--muted); pointer-events: none;
+    }
+
+    .repo-search input {
+        width: 100%;
+        font-family: var(--font-body);
+        font-size: 15px;
+        color: var(--ink);
+        background: var(--surface);
+        border: 1px solid #d8d2c8;
+        border-radius: 9px;
+        padding: 12px 14px 12px 42px;
+        outline: none;
+        transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .repo-search input::placeholder { color: #b6b0a4; }
+    .repo-search input:focus { border-color: var(--red); box-shadow: 0 0 0 3px rgba(192, 54, 44, 0.12); }
+
+    .filter-row { display: flex; align-items: center; gap: 12px 14px; flex-wrap: wrap; }
+
+    .filter-label {
+        font-family: var(--font-display);
+        font-weight: 500; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+        color: var(--muted);
+    }
+
+    .filter-chips { display: flex; gap: 8px; flex-wrap: wrap; flex-grow: 1; }
+
+    .chip {
+        font-family: var(--font-display);
+        font-weight: 500;
+        font-size: 12.5px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--steel);
+        background: var(--surface-2);
+        border: 1px solid var(--line);
+        padding: 8px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+    }
+
+    .chip:hover { border-color: var(--ink); color: var(--ink); }
+    .chip.active { background: var(--red); border-color: var(--red); color: var(--bg); }
+
+    .repo-resultcount { font-family: var(--font-mono); font-size: 12px; color: var(--muted); white-space: nowrap; }
+
+    .repo-clear {
+        font-family: var(--font-display);
+        font-weight: 500; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase;
+        color: var(--red); background: transparent; border: none; cursor: pointer; padding: 4px 2px;
+    }
+    .repo-clear:hover { text-decoration: underline; }
+
+    .repo-noresults {
+        background: var(--surface);
+        border: 1px dashed #cfc8bb;
+        border-radius: 12px;
+        padding: 34px 24px;
+        text-align: center;
+        color: var(--steel);
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    .repo-noresults strong { color: var(--ink); }
+
+    /* Hidden by the client-side filter */
+    .year-group[hidden], .competition[hidden], .problem[hidden] { display: none; }
+
     /* details reset */
     details summary { cursor: pointer; list-style: none; user-select: none; }
     details summary::-webkit-details-marker { display: none; }
@@ -263,31 +351,167 @@
         font-weight: 500;
     }
 
-    /* Contribute strip */
-    .contribute {
-        margin-top: 24px;
-        background: var(--surface-2);
-        border: 1px solid var(--line);
+    /* Submit-a-problem panel */
+    .submit-panel {
+        margin-top: 26px;
+        background: var(--surface);
+        border: 1px solid var(--line-2);
         border-radius: 14px;
-        padding: 26px 28px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
-        flex-wrap: wrap;
+        box-shadow: 0 1px 2px rgba(43, 52, 64, 0.04);
+        overflow: hidden;
     }
 
-    .contribute h3 {
+    .submit-panel > summary {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        padding: 20px 24px;
+        transition: background-color 0.15s;
+    }
+
+    .submit-panel > summary:hover { background-color: #faf8f3; }
+
+    .submit-head { display: flex; flex-direction: column; gap: 2px; flex-grow: 1; }
+
+    .submit-eyebrow {
+        font-family: var(--font-mono);
+        font-size: 11px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--red);
+    }
+
+    .submit-title {
         font-family: var(--font-display);
         font-weight: 600;
         font-size: 20px;
-        text-transform: uppercase;
         letter-spacing: 0.02em;
+        text-transform: uppercase;
         color: var(--ink);
-        margin-bottom: 6px;
     }
 
-    .contribute p { margin: 0; font-size: 14.5px; line-height: 1.55; color: var(--steel); max-width: 560px; }
+    .submit-body { padding: 6px 24px 26px; }
+    .submit-intro { margin: 0 0 20px; font-size: 14.5px; line-height: 1.6; color: var(--steel); max-width: 640px; }
+
+    .submit-row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .submit-row3 { display: grid; grid-template-columns: 2fr 0.85fr 1.3fr; gap: 16px; }
+    .submit-field { margin-bottom: 18px; }
+
+    .submit-field label {
+        display: block;
+        font-family: var(--font-display);
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--steel);
+        margin-bottom: 7px;
+    }
+
+    .submit-field label .opt { color: var(--muted); font-weight: 400; text-transform: none; letter-spacing: 0; }
+
+    .submit-form input[type="text"],
+    .submit-form input[type="email"],
+    .submit-form input[type="number"],
+    .submit-form textarea {
+        width: 100%;
+        font-family: var(--font-body);
+        font-size: 15px;
+        color: var(--ink);
+        background: var(--surface);
+        border: 1px solid #d8d2c8;
+        border-radius: 9px;
+        padding: 12px 14px;
+        outline: none;
+        transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .submit-form input::placeholder, .submit-form textarea::placeholder { color: #b6b0a4; }
+
+    .submit-form input:focus, .submit-form textarea:focus {
+        border-color: var(--red);
+        box-shadow: 0 0 0 3px rgba(192, 54, 44, 0.12);
+    }
+
+    .submit-form textarea { resize: vertical; min-height: 130px; line-height: 1.6; }
+
+    .submit-form input[type="file"] {
+        width: 100%;
+        font-family: var(--font-body);
+        font-size: 14px;
+        color: var(--steel);
+        background: var(--surface-3);
+        border: 1px dashed #c9c2b5;
+        border-radius: 9px;
+        padding: 14px;
+        cursor: pointer;
+    }
+
+    .submit-form input[type="file"]::file-selector-button {
+        font-family: var(--font-display);
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--bg);
+        background: var(--ink);
+        border: none;
+        border-radius: 7px;
+        padding: 9px 16px;
+        margin-right: 14px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    .submit-form input[type="file"]::file-selector-button:hover { background: var(--ink-2); }
+
+    .submit-hint { margin: 7px 0 0; font-size: 12.5px; color: var(--muted); }
+
+    .submit-errors { color: var(--red); font-size: 13px; margin-top: 6px; }
+    .submit-errors ul { list-style: none; }
+
+    .submit-actions { display: flex; align-items: center; gap: 16px; margin-top: 6px; flex-wrap: wrap; }
+    .submit-actions .note { font-size: 12.5px; color: var(--muted); }
+
+    .submit-success {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        background: rgba(31, 138, 91, 0.08);
+        border: 1px solid rgba(31, 138, 91, 0.35);
+        border-radius: 10px;
+        padding: 16px 18px;
+        margin-bottom: 22px;
+    }
+
+    .submit-success .check {
+        flex-shrink: 0;
+        width: 30px; height: 30px;
+        border-radius: 50%;
+        background: rgba(31, 138, 91, 0.14);
+        border: 1.5px solid var(--green);
+        color: var(--green);
+        display: flex; align-items: center; justify-content: center;
+        font-size: 16px;
+    }
+
+    .submit-success strong { display: block; color: var(--ink); font-size: 15px; margin-bottom: 3px; }
+    .submit-success p { margin: 0; font-size: 13.5px; line-height: 1.55; color: var(--steel); }
+
+    .submit-note-error {
+        background: var(--red-tint);
+        border: 1px solid #f0c9c5;
+        border-radius: 10px;
+        padding: 14px 16px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #8f2a22;
+    }
+
+    .submit-note-error a { color: var(--red); font-weight: 600; }
+
+    /* off-screen honeypot */
+    .hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
 
     /* Preview modal */
     .preview-overlay {
@@ -367,10 +591,20 @@
         .document-actions { width: 100%; }
         .document-actions .preview-btn, .document-actions .download-btn { flex-grow: 1; justify-content: center; }
         .preview-overlay { padding: 0.5rem; }
+        .submit-row2, .submit-row3 { grid-template-columns: 1fr; }
+        .submit-panel > summary { padding: 18px 18px; }
+        .submit-body { padding: 6px 18px 22px; }
+        .repo-toolbar { top: 0; }
+        .repo-resultcount { width: 100%; }
     }
 {% endblock %}
 
 {% block content %}
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></symbol>
+    <symbol id="i-dl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M5 21h14"/></symbol>
+</svg>
+
 <section class="repo-head">
     <div class="repo-head-inner">
         <div class="repo-title">
@@ -397,19 +631,37 @@
     </div>
 
     {% if year_groups %}
+        <div class="repo-toolbar">
+            <div class="repo-search">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="search" id="repo-search" placeholder="Search by contest, location, problem, or file…" autocomplete="off" aria-label="Search the archive">
+            </div>
+            <div class="filter-row">
+                <span class="filter-label">Type</span>
+                <div class="filter-chips" role="group" aria-label="Filter by problem type">
+                    <button type="button" class="chip active" data-cat="" aria-pressed="true">All</button>
+                    {% for slug, label in categories %}
+                        <button type="button" class="chip" data-cat="{{ slug }}" aria-pressed="false">{{ label }}</button>
+                    {% endfor %}
+                </div>
+                <span class="repo-resultcount" id="repo-resultcount" aria-live="polite"></span>
+                <button type="button" class="repo-clear" id="repo-clear" hidden>Clear filters</button>
+            </div>
+        </div>
+
         {% for group in year_groups %}
-            <details class="year-group">
+            <details class="year-group" data-year="{{ group.year|default:'' }}">
                 <summary>
-                    <span class="chev"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg></span>
+                    <span class="chev"><svg width="15" height="15"><use href="#i-chev"/></svg></span>
                     <span class="year-label">{{ group.year|default:"Year unknown" }}</span>
-                    <span class="badge count">{{ group.competitions|length }} competition{{ group.competitions|length|pluralize }}</span>
+                    <span class="badge count js-year-count">{{ group.competitions|length }} competition{{ group.competitions|length|pluralize }}</span>
                 </summary>
                 <div class="year-body">
                     {% for competition in group.competitions %}
                         {% with problems=competition.problems.all %}
-                        <details class="competition">
+                        <details class="competition" data-search="{{ competition.name }} {{ competition.year|default:'' }} {{ competition.location }} {{ competition.description }}">
                             <summary>
-                                <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg></span>
+                                <span class="chev"><svg width="14" height="14"><use href="#i-chev"/></svg></span>
                                 <span class="competition-name">{{ competition.name }}</span>
                                 {% if competition.start_date %}
                                     <span class="badge">{{ competition.start_date|date:"M j" }}{% if competition.calendar_event.end_date != competition.start_date %} – {{ competition.calendar_event.end_date|date:"M j" }}{% endif %}</span>
@@ -417,7 +669,7 @@
                                 {% if competition.location %}
                                     <span class="badge">{{ competition.location }}</span>
                                 {% endif %}
-                                <span class="badge count">{{ problems|length }} problem{{ problems|length|pluralize }}</span>
+                                <span class="badge count js-comp-count">{{ problems|length }} problem{{ problems|length|pluralize }}</span>
                             </summary>
                             <div class="competition-body">
                                 {% if competition.description %}
@@ -426,9 +678,9 @@
 
                                 {% for problem in problems %}
                                     {% with documents=problem.documents.all %}
-                                    <details class="problem">
+                                    <details class="problem" data-categories="{{ problem.category_csv }}" data-search="{{ problem.title }} {{ problem.description }}{% for doc in documents %} {{ doc.title }}{% endfor %}">
                                         <summary>
-                                            <span class="chev"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg></span>
+                                            <span class="chev"><svg width="13" height="13"><use href="#i-chev"/></svg></span>
                                             <span class="problem-title">{{ problem.title }}</span>
                                             <span class="badge count">{{ documents|length }} file{{ documents|length|pluralize }}</span>
                                         </summary>
@@ -437,26 +689,9 @@
                                                 <p class="problem-description">{{ problem.description }}</p>
                                             {% endif %}
 
-                                            {% if documents %}
-                                                <div class="documents-list">
-                                                    {% for doc in documents %}
-                                                        <div class="document-item">
-                                                            <span class="document-title"><span class="doc-chip">PDF</span>{{ doc.title }}</span>
-                                                            <div class="document-actions">
-                                                                {% if doc.preview_kind %}
-                                                                    <button type="button" class="preview-btn"
-                                                                            data-url="{{ doc.file.url }}"
-                                                                            data-kind="{{ doc.preview_kind }}"
-                                                                            data-title="{{ doc.title }}">Preview</button>
-                                                                {% endif %}
-                                                                <a href="{{ doc.file.url }}" class="download-btn" download><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M5 21h14"/></svg>Download</a>
-                                                            </div>
-                                                        </div>
-                                                    {% endfor %}
-                                                </div>
-                                            {% else %}
-                                                <p class="no-documents">No documents attached yet.</p>
-                                            {% endif %}
+                                            {# Document rows are built on the client when opened (see scripts) — keeps the archive page light. #}
+                                            {{ problem.docs_data|json_script:problem.docs_script_id }}
+                                            <div class="documents-list" data-docs="{{ problem.docs_script_id }}" data-loaded="0"></div>
                                         </div>
                                     </details>
                                     {% endwith %}
@@ -470,6 +705,11 @@
                 </div>
             </details>
         {% endfor %}
+
+        <div class="repo-noresults" id="repo-noresults" hidden>
+            <strong>No problems match your search.</strong><br>
+            Try a different term or clear the filters. If a contest is missing, you can <a href="#contribute">submit it below</a>.
+        </div>
     {% else %}
         <div class="repo-empty">
             <div class="coming-soon">
@@ -478,12 +718,94 @@
         </div>
     {% endif %}
 
-    <div class="contribute">
-        <div>
-            <h3>Have a problem to add?</h3>
-            <p>If your team has a contest problem that isn't here, send it in — we'll index it with the right contest and discipline so every crew can train on it.</p>
+    <details class="submit-panel" id="contribute" {% if submitted or submit_error or form.errors %}open{% endif %}>
+        <summary>
+            <span class="chev"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg></span>
+            <span class="submit-head">
+                <span class="submit-eyebrow">Contribute</span>
+                <span class="submit-title">Submit a competition's problems</span>
+            </span>
+            <span class="badge count">Add to the archive</span>
+        </summary>
+        <div class="submit-body">
+            <p class="submit-intro">Can't find a contest here? Send us the problem files and a few details and we'll index them with the right contest and discipline so every crew can train on them.</p>
+
+            {% if submitted %}
+                <div class="submit-success">
+                    <span class="check">✓</span>
+                    <div>
+                        <strong>Thanks — your submission is on its way.</strong>
+                        <p>We'll review it and add it to the archive. If you left an email, we may reach out with any questions.</p>
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if submit_error %}
+                <div class="submit-note-error">
+                    Sorry — we couldn't send that just now. Please email your files directly to
+                    <a href="mailto:info@minerescuecenter.com">info@minerescuecenter.com</a>.
+                </div>
+            {% endif %}
+
+            <form class="submit-form" method="post" action="{% url 'past_problems' %}#contribute" enctype="multipart/form-data" novalidate>
+                {% csrf_token %}
+
+                <div class="hp" aria-hidden="true">
+                    <label for="{{ form.website.id_for_label }}">Leave this field empty</label>
+                    {{ form.website }}
+                </div>
+
+                <div class="submit-row3">
+                    <div class="submit-field">
+                        <label for="{{ form.competition_name.id_for_label }}">Competition / contest</label>
+                        {{ form.competition_name }}
+                        {% if form.competition_name.errors %}<div class="submit-errors">{{ form.competition_name.errors }}</div>{% endif %}
+                    </div>
+                    <div class="submit-field">
+                        <label for="{{ form.year.id_for_label }}">Year <span class="opt">(optional)</span></label>
+                        {{ form.year }}
+                        {% if form.year.errors %}<div class="submit-errors">{{ form.year.errors }}</div>{% endif %}
+                    </div>
+                    <div class="submit-field">
+                        <label for="{{ form.location.id_for_label }}">Location <span class="opt">(optional)</span></label>
+                        {{ form.location }}
+                        {% if form.location.errors %}<div class="submit-errors">{{ form.location.errors }}</div>{% endif %}
+                    </div>
+                </div>
+
+                <div class="submit-field">
+                    <label for="{{ form.context.id_for_label }}">Context / details</label>
+                    {{ form.context }}
+                    {% if form.context.errors %}<div class="submit-errors">{{ form.context.errors }}</div>{% endif %}
+                </div>
+
+                <div class="submit-field">
+                    <label for="{{ form.files.id_for_label }}">Files <span class="opt">(problem PDFs, maps, vent plans, photos…)</span></label>
+                    {{ form.files }}
+                    <p class="submit-hint">You can select several files at once. Up to 15 files, 25&nbsp;MB total — for anything larger, email them in.</p>
+                    {% if form.files.errors %}<div class="submit-errors">{{ form.files.errors }}</div>{% endif %}
+                </div>
+
+                <div class="submit-row2">
+                    <div class="submit-field">
+                        <label for="{{ form.name.id_for_label }}">Your name <span class="opt">(optional)</span></label>
+                        {{ form.name }}
+                        {% if form.name.errors %}<div class="submit-errors">{{ form.name.errors }}</div>{% endif %}
+                    </div>
+                    <div class="submit-field">
+                        <label for="{{ form.email.id_for_label }}">Your email <span class="opt">(optional, for a reply)</span></label>
+                        {{ form.email }}
+                        {% if form.email.errors %}<div class="submit-errors">{{ form.email.errors }}</div>{% endif %}
+                    </div>
+                </div>
+
+                <div class="submit-actions">
+                    <button type="submit" class="btn btn-red">Send submission →</button>
+                    <span class="note">Goes straight to info@minerescuecenter.com.</span>
+                </div>
+            </form>
         </div>
-    </div>
+    </details>
 </div>
 
 <div class="preview-overlay" id="preview-overlay" hidden>
@@ -534,10 +856,12 @@
             document.body.style.overflow = '';
         }
 
-        document.querySelectorAll('.preview-btn').forEach(function (btn) {
-            btn.addEventListener('click', function () {
+        // Delegated so it also catches preview buttons rendered on demand.
+        document.addEventListener('click', function (event) {
+            var btn = event.target.closest('.preview-btn');
+            if (btn) {
                 openPreview(btn.dataset.url, btn.dataset.kind, btn.dataset.title);
-            });
+            }
         });
 
         closeBtn.addEventListener('click', closePreview);
@@ -552,6 +876,197 @@
             if (event.key === 'Escape' && !overlay.hidden) {
                 closePreview();
             }
+        });
+    })();
+</script>
+
+<script>
+    // Client-side filter + search over the already-rendered archive.
+    (function () {
+        var search = document.getElementById('repo-search');
+        if (!search) return;  // nothing to filter (empty archive)
+
+        var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+        var allChip = chips.filter(function (c) { return c.dataset.cat === ''; })[0];
+        var clearBtn = document.getElementById('repo-clear');
+        var resultCount = document.getElementById('repo-resultcount');
+        var noResults = document.getElementById('repo-noresults');
+        var activeCats = {};  // slug -> true
+
+        // Index the DOM once so each keystroke just toggles visibility.
+        var years = Array.prototype.slice.call(document.querySelectorAll('.year-group')).map(function (y) {
+            var yearCount = y.querySelector('.js-year-count');
+            if (yearCount) yearCount.dataset.orig = yearCount.textContent;
+            return {
+                el: y,
+                countEl: yearCount,
+                comps: Array.prototype.slice.call(y.querySelectorAll('.competition')).map(function (c) {
+                    var compCount = c.querySelector('.js-comp-count');
+                    if (compCount) compCount.dataset.orig = compCount.textContent;
+                    return {
+                        el: c,
+                        countEl: compCount,
+                        search: (c.dataset.search || '').toLowerCase(),
+                        problems: Array.prototype.slice.call(c.querySelectorAll('.problem')).map(function (p) {
+                            return {
+                                el: p,
+                                cats: (p.dataset.categories || '').split(' ').filter(Boolean),
+                                search: (p.dataset.search || '').toLowerCase()
+                            };
+                        })
+                    };
+                })
+            };
+        });
+
+        function activeCatList() { return Object.keys(activeCats); }
+
+        function apply() {
+            var q = search.value.trim().toLowerCase();
+            var cats = activeCatList();
+            var filtering = q.length > 0 || cats.length > 0;
+            var totalProblems = 0, totalComps = 0;
+
+            years.forEach(function (y) {
+                var visComps = 0;
+                y.comps.forEach(function (c) {
+                    var compSearchMatch = !q || c.search.indexOf(q) !== -1;
+                    var visProblems = 0;
+                    c.problems.forEach(function (p) {
+                        var catOk = cats.length === 0 || p.cats.some(function (x) { return activeCats[x]; });
+                        var searchOk = !q || compSearchMatch || p.search.indexOf(q) !== -1;
+                        var vis = catOk && searchOk;
+                        p.el.hidden = !vis;
+                        if (vis) visProblems++;
+                    });
+
+                    var compVisible;
+                    if (c.problems.length === 0) {
+                        // A contest with no problems yet: only when not narrowing by type.
+                        compVisible = !filtering || (cats.length === 0 && compSearchMatch);
+                    } else {
+                        compVisible = visProblems > 0;
+                    }
+                    c.el.hidden = !compVisible;
+                    if (c.countEl) {
+                        c.countEl.textContent = filtering
+                            ? visProblems + '/' + c.problems.length
+                            : c.countEl.dataset.orig;
+                    }
+                    if (compVisible) {
+                        c.el.open = filtering;       // expand matches; collapse on reset
+                        visComps++;
+                        totalProblems += visProblems;
+                        totalComps++;
+                    }
+                });
+
+                y.el.hidden = visComps === 0;
+                if (y.countEl) {
+                    y.countEl.textContent = filtering
+                        ? visComps + '/' + y.comps.length
+                        : y.countEl.dataset.orig;
+                }
+                y.el.open = filtering && visComps > 0;
+            });
+
+            if (noResults) noResults.hidden = !(filtering && totalComps === 0);
+            if (resultCount) {
+                resultCount.textContent = filtering
+                    ? totalProblems + ' problem' + (totalProblems === 1 ? '' : 's') +
+                      ' in ' + totalComps + ' contest' + (totalComps === 1 ? '' : 's')
+                    : '';
+            }
+            if (clearBtn) clearBtn.hidden = !filtering;
+        }
+
+        function syncChips() {
+            var none = activeCatList().length === 0;
+            chips.forEach(function (c) {
+                var on = c.dataset.cat === '' ? none : !!activeCats[c.dataset.cat];
+                c.classList.toggle('active', on);
+                c.setAttribute('aria-pressed', on ? 'true' : 'false');
+            });
+        }
+
+        chips.forEach(function (chip) {
+            chip.addEventListener('click', function () {
+                var cat = chip.dataset.cat;
+                if (cat === '') {
+                    activeCats = {};
+                } else if (activeCats[cat]) {
+                    delete activeCats[cat];
+                } else {
+                    activeCats[cat] = true;
+                }
+                syncChips();
+                apply();
+            });
+        });
+
+        search.addEventListener('input', apply);
+
+        if (clearBtn) {
+            clearBtn.addEventListener('click', function () {
+                search.value = '';
+                activeCats = {};
+                syncChips();
+                apply();
+                search.focus();
+            });
+        }
+    })();
+</script>
+
+<script>
+    // Build a problem's document rows the first time it is expanded. The rows
+    // (and their icons) are kept out of the initial HTML to keep the archive
+    // page light; the data rides along in a per-problem JSON <script> tag.
+    (function () {
+        function esc(s) {
+            return String(s)
+                .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+
+        function rowHtml(doc) {
+            var actions = '';
+            if (doc.kind) {
+                actions += '<button type="button" class="preview-btn" data-url="' +
+                    esc(doc.url) + '" data-kind="' + esc(doc.kind) + '" data-title="' +
+                    esc(doc.title) + '">Preview</button>';
+            }
+            actions += '<a href="' + esc(doc.url) + '" class="download-btn" download>' +
+                '<svg width="13" height="13"><use href="#i-dl"/></svg>Download</a>';
+            return '<span class="document-title"><span class="doc-chip">PDF</span>' +
+                esc(doc.title) + '</span><div class="document-actions">' + actions + '</div>';
+        }
+
+        function render(list) {
+            var script = document.getElementById(list.dataset.docs);
+            var docs = [];
+            try { docs = JSON.parse(script.textContent); } catch (e) { docs = []; }
+            if (!docs.length) {
+                list.innerHTML = '<p class="no-documents">No documents attached yet.</p>';
+            } else {
+                var frag = document.createDocumentFragment();
+                docs.forEach(function (doc) {
+                    var item = document.createElement('div');
+                    item.className = 'document-item';
+                    item.innerHTML = rowHtml(doc);
+                    frag.appendChild(item);
+                });
+                list.appendChild(frag);
+            }
+            list.dataset.loaded = '1';
+        }
+
+        document.querySelectorAll('.problem').forEach(function (problem) {
+            problem.addEventListener('toggle', function () {
+                if (!problem.open) return;
+                var list = problem.querySelector('.documents-list');
+                if (list && list.dataset.loaded === '0') render(list);
+            });
         });
     })();
 </script>

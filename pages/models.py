@@ -178,6 +178,52 @@ class Competition(models.Model):
         super().save(*args, **kwargs)
 
 
+# Problem-type filters shown on the past-problems page, in display order.
+# (slug, label) — the slug is emitted as a data attribute for the client-side
+# filter and the label is the chip text.
+PROBLEM_CATEGORIES = [
+    ('coal', 'Coal'),
+    ('mnm', 'MNM'),
+    ('bench', 'Bench'),
+    ('first-aid', 'First Aid'),
+    ('preshift', 'Preshift'),
+    ('written', 'Written Test'),
+]
+
+# Event-type categories are named in the problem title (e.g. "First Aid",
+# "Preshift", "Bench", "Written Exams").
+_TITLE_KEYWORDS = {
+    'bench': ('bench',),
+    'first-aid': ('first aid', 'first-aid'),
+    'preshift': ('preshift', 'pre-shift'),
+    'written': ('written',),
+}
+# Coal vs. metal/nonmetal is the mine type, which applies to the whole contest:
+# the underground field problem is usually just titled "Mine Rescue", so these
+# also match the competition name.
+_TITLE_OR_COMP_KEYWORDS = {
+    'coal': ('coal',),
+    'mnm': ('mnm', 'nonmetal', 'non-metal', 'metal', 'm/nm', 'n/m'),
+}
+
+_CATEGORY_ORDER = [slug for slug, _ in PROBLEM_CATEGORIES]
+
+
+def categorize_problem(title, competition_name=''):
+    """Return the list of category slugs that apply to a problem, in display
+    order. Used to tag each problem for the client-side discipline filter."""
+    title_text = (title or '').lower()
+    comp_text = (competition_name or '').lower()
+    slugs = set()
+    for slug, keywords in _TITLE_KEYWORDS.items():
+        if any(k in title_text for k in keywords):
+            slugs.add(slug)
+    for slug, keywords in _TITLE_OR_COMP_KEYWORDS.items():
+        if any(k in title_text or k in comp_text for k in keywords):
+            slugs.add(slug)
+    return [slug for slug in _CATEGORY_ORDER if slug in slugs]
+
+
 class CompetitionProblem(models.Model):
     competition = models.ForeignKey(Competition, on_delete=models.CASCADE, related_name='problems')
     title = models.CharField(max_length=200, help_text="e.g. Coal Day 1, Nonmetal Day 2, Bench, First Aid")

@@ -8,8 +8,11 @@ from django.views.generic import ListView, DetailView
 from django.utils import timezone
 from datetime import date, timedelta
 from calendar import Calendar, month_name, monthrange
-from .models import CalendarEvent, Competition, SiteConfiguration
-from .forms import FeedbackForm
+from .models import (
+    CalendarEvent, Competition, SiteConfiguration,
+    PROBLEM_CATEGORIES, categorize_problem,
+)
+from .forms import FeedbackForm, ProblemSubmissionForm
 from .calendar_export import (
     build_event_ics, google_calendar_url, outlook_calendar_url,
 )
@@ -19,7 +22,57 @@ def landing_page(request):
     return render(request, 'landing.html')
 
 
+def _send_problem_submission_email(data):
+    """Email a visitor's problem submission to the team, with their files
+    attached. Mirrors the feedback email path (same SMTP config)."""
+    email = data.get('email') or ''
+    files = data.get('files') or []
+    body = "\n".join([
+        f"Competition: {data['competition_name']}",
+        f"Year:        {data.get('year') or '(not provided)'}",
+        f"Location:    {data.get('location') or '(not provided)'}",
+        f"Submitted by: {data.get('name') or '(not provided)'}",
+        f"Email:       {email or '(not provided)'}",
+        f"Files:       {len(files)} attached" if files else "Files:       (none)",
+        "",
+        "Context / details:",
+        data['context'],
+    ])
+    message = EmailMessage(
+        # Collapse newlines: a CharField can contain them and headers can't.
+        subject="New problem submission: " + " ".join(
+            data['competition_name'].split()
+        ),
+        body=body,
+        from_email=settings.DEFAULT_FROM_EMAIL,
+        to=[settings.FEEDBACK_TO_EMAIL],
+        reply_to=[email] if email else None,
+    )
+    for upload in files:
+        message.attach(
+            upload.name, upload.read(),
+            upload.content_type or 'application/octet-stream',
+        )
+    message.send(fail_silently=False)
+
+
 def past_problems(request):
+    form = ProblemSubmissionForm()
+    submit_error = False
+
+    if request.method == 'POST':
+        form = ProblemSubmissionForm(request.POST, request.FILES)
+        if form.is_valid():
+            # Honeypot filled => treat as spam: show success, send nothing.
+            if form.cleaned_data['website']:
+                return redirect(f"{reverse('past_problems')}?submitted=1#contribute")
+            try:
+                _send_problem_submission_email(form.cleaned_data)
+            except Exception:
+                submit_error = True
+            else:
+                return redirect(f"{reverse('past_problems')}?submitted=1#contribute")
+
     competitions = list(
         Competition.objects
         .select_related('calendar_event')
@@ -30,6 +83,20 @@ def past_problems(request):
         c.start_date is None, c.start_date or date.min, c.name.lower()
     ))
 
+    # Tag each problem with its discipline slugs for the client-side filter,
+    # and bundle its documents as data. The document rows are rendered on the
+    # client when a problem is opened, so the full archive page stays light.
+    for competition in competitions:
+        for problem in competition.problems.all():
+            problem.category_csv = ' '.join(
+                categorize_problem(problem.title, competition.name)
+            )
+            problem.docs_data = [
+                {'title': d.title, 'url': d.file.url, 'kind': d.preview_kind}
+                for d in problem.documents.all()
+            ]
+            problem.docs_script_id = f'docs-{problem.pk}'
+
     by_year = {}
     for competition in competitions:
         by_year.setdefault(competition.year, []).append(competition)
@@ -39,7 +106,13 @@ def past_problems(request):
         {'year': year, 'competitions': by_year[year]}
         for year in sorted(by_year, key=lambda y: (y is None, -(y or 0)))
     ]
-    return render(request, 'past_problems.html', {'year_groups': year_groups})
+    return render(request, 'past_problems.html', {
+        'year_groups': year_groups,
+        'categories': PROBLEM_CATEGORIES,
+        'form': form,
+        'submitted': request.GET.get('submitted') == '1',
+        'submit_error': submit_error,
+    })
 
 
 def about(request):
