@@ -1,5 +1,12 @@
 [
 {
+  "model": "pages.siteconfiguration",
+  "pk": 1,
+  "fields": {
+    "msha_calendar_url": "https://www.msha.gov/training/training/mine-rescue-training/mine-rescue-contests/2026-enforcement-mine-rescue-contest"
+  }
+},
+{
   "model": "pages.calendarevent",
   "pk": 2,
   "fields": {
@@ -7947,6 +7954,42 @@
   }
 },
 {
+  "model": "pages.competition",
+  "pk": 364,
+  "fields": {
+    "name": "2026 Southern Regional Mine Rescue Contest",
+    "year": 2026,
+    "calendar_event": 6,
+    "description": "",
+    "created_at": "2026-06-25T02:11:01.503Z",
+    "updated_at": "2026-06-25T02:11:01.503Z"
+  }
+},
+{
+  "model": "pages.competition",
+  "pk": 365,
+  "fields": {
+    "name": "2026 Post 6 Ohio Valley Mine Rescue Contest",
+    "year": 2026,
+    "calendar_event": 14,
+    "description": "",
+    "created_at": "2026-06-25T02:11:01.541Z",
+    "updated_at": "2026-06-25T02:11:01.541Z"
+  }
+},
+{
+  "model": "pages.competition",
+  "pk": 366,
+  "fields": {
+    "name": "2026 Western Mine Rescue Association Nevada Underground Mine Rescue Contest",
+    "year": 2026,
+    "calendar_event": 4,
+    "description": "",
+    "created_at": "2026-06-25T02:11:01.624Z",
+    "updated_at": "2026-06-25T02:11:01.624Z"
+  }
+},
+{
   "model": "pages.competitionproblem",
   "pk": 1,
   "fields": {
@@ -15696,6 +15739,78 @@
     "sort_order": 10,
     "created_at": "2026-06-13T05:03:46.020Z",
     "updated_at": "2026-06-13T05:03:46.020Z"
+  }
+},
+{
+  "model": "pages.competitionproblem",
+  "pk": 647,
+  "fields": {
+    "competition": 364,
+    "title": "Mine Rescue",
+    "description": "",
+    "sort_order": 10,
+    "created_at": "2026-06-25T02:11:01.517Z",
+    "updated_at": "2026-06-25T02:11:01.518Z"
+  }
+},
+{
+  "model": "pages.competitionproblem",
+  "pk": 648,
+  "fields": {
+    "competition": 365,
+    "title": "Mine Rescue",
+    "description": "",
+    "sort_order": 10,
+    "created_at": "2026-06-25T02:11:01.544Z",
+    "updated_at": "2026-06-25T02:11:01.544Z"
+  }
+},
+{
+  "model": "pages.competitionproblem",
+  "pk": 649,
+  "fields": {
+    "competition": 365,
+    "title": "Bench",
+    "description": "",
+    "sort_order": 20,
+    "created_at": "2026-06-25T02:11:01.565Z",
+    "updated_at": "2026-06-25T02:11:01.565Z"
+  }
+},
+{
+  "model": "pages.competitionproblem",
+  "pk": 650,
+  "fields": {
+    "competition": 366,
+    "title": "Day 1 Field",
+    "description": "",
+    "sort_order": 10,
+    "created_at": "2026-06-25T02:11:01.626Z",
+    "updated_at": "2026-06-25T02:11:01.626Z"
+  }
+},
+{
+  "model": "pages.competitionproblem",
+  "pk": 651,
+  "fields": {
+    "competition": 366,
+    "title": "Day 2 Field",
+    "description": "",
+    "sort_order": 20,
+    "created_at": "2026-06-25T02:11:01.651Z",
+    "updated_at": "2026-06-25T02:11:01.651Z"
+  }
+},
+{
+  "model": "pages.competitionproblem",
+  "pk": 652,
+  "fields": {
+    "competition": 366,
+    "title": "Written Tests",
+    "description": "",
+    "sort_order": 30,
+    "created_at": "2026-06-25T02:11:01.671Z",
+    "updated_at": "2026-06-25T02:11:01.671Z"
   }
 },
 {
@@ -34550,6 +34665,281 @@
     "file": "problems/2020_swva_Day_2_6_Problem_2_Team_Stops.pdf",
     "sort_order": 110,
     "uploaded_at": "2026-06-13T16:16:55.642Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1762,
+  "fields": {
+    "problem": 647,
+    "title": "Day 1 Field",
+    "file": "problems/2026_southern_Mine_Rescue_day_1_field_Broussard_April_2026.pdf",
+    "sort_order": 10,
+    "uploaded_at": "2026-06-25T02:11:01.526Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1763,
+  "fields": {
+    "problem": 647,
+    "title": "Day 1 Solution",
+    "file": "problems/2026_southern_Mine_Rescue_Day_one_solution_April_28th_2026_New_Iberia.pdf",
+    "sort_order": 20,
+    "uploaded_at": "2026-06-25T02:11:01.533Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1764,
+  "fields": {
+    "problem": 647,
+    "title": "Day 2 Field",
+    "file": "problems/2026_southern_Mine_Rescue_Day_2_field_broussard_April_2026.pdf",
+    "sort_order": 30,
+    "uploaded_at": "2026-06-25T02:11:01.539Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1765,
+  "fields": {
+    "problem": 648,
+    "title": "Day 1",
+    "file": "problems/2026_Post6_Mine_Rescue_2026_Post_6_Day_1.pdf",
+    "sort_order": 10,
+    "uploaded_at": "2026-06-25T02:11:01.552Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1766,
+  "fields": {
+    "problem": 648,
+    "title": "Day 2",
+    "file": "problems/2026_Post6_Mine_Rescue_2026_Post_6_Day_2_Rev1.pdf",
+    "sort_order": 20,
+    "uploaded_at": "2026-06-25T02:11:01.561Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1767,
+  "fields": {
+    "problem": 649,
+    "title": "BioPak 240R Judges Packet",
+    "file": "problems/2026_Post6_Bench_Final_BioPak_240R_Judges_Packet_2026_Post_6.pdf",
+    "sort_order": 10,
+    "uploaded_at": "2026-06-25T02:11:01.574Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1768,
+  "fields": {
+    "problem": 649,
+    "title": "BioPak 240R Judges Check Sheet",
+    "file": "problems/2026_Post6_Bench_2026_Post_6_BioPak240R_Judges_Check_Sheet.pdf",
+    "sort_order": 20,
+    "uploaded_at": "2026-06-25T02:11:01.579Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1769,
+  "fields": {
+    "problem": 649,
+    "title": "Bench Written Test (240R)",
+    "file": "problems/2026_Post6_Bench_26_Post_6_Bench_Written_Test_240R.pdf",
+    "sort_order": 30,
+    "uploaded_at": "2026-06-25T02:11:01.584Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1770,
+  "fields": {
+    "problem": 649,
+    "title": "Bench Written Test Answers (240R)",
+    "file": "problems/2026_Post6_Bench_26_Post_6_Bench_Written_Test_240R_Answers_Sheet.pdf",
+    "sort_order": 40,
+    "uploaded_at": "2026-06-25T02:11:01.590Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1771,
+  "fields": {
+    "problem": 649,
+    "title": "Parts Test",
+    "file": "problems/2026_Post6_Bench_26_Post_6_Parts_Test.pdf",
+    "sort_order": 50,
+    "uploaded_at": "2026-06-25T02:11:01.596Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1772,
+  "fields": {
+    "problem": 649,
+    "title": "Parts Answers Sheet",
+    "file": "problems/2026_Post6_Bench_26_Post_6_Parts_Answers_Sheet.pdf",
+    "sort_order": 60,
+    "uploaded_at": "2026-06-25T02:11:01.619Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1773,
+  "fields": {
+    "problem": 650,
+    "title": "Field",
+    "file": "problems/2026_WMRA_Day_1_Field_01_2026_WMRA_Day_1_Field.pdf",
+    "sort_order": 10,
+    "uploaded_at": "2026-06-25T02:11:01.633Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1774,
+  "fields": {
+    "problem": 650,
+    "title": "Maps",
+    "file": "problems/2026_WMRA_Day_1_Field_01_2026_WMRA_MAPS.pdf",
+    "sort_order": 20,
+    "uploaded_at": "2026-06-25T02:11:01.638Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1775,
+  "fields": {
+    "problem": 650,
+    "title": "Placards",
+    "file": "problems/2026_WMRA_Day_1_Field_01_DAY_1_PLACARDS_A.pdf",
+    "sort_order": 30,
+    "uploaded_at": "2026-06-25T02:11:01.643Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1776,
+  "fields": {
+    "problem": 650,
+    "title": "Placard List",
+    "file": "problems/2026_WMRA_Day_1_Field_01_D_1_Placard_lsit.pdf",
+    "sort_order": 40,
+    "uploaded_at": "2026-06-25T02:11:01.648Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1777,
+  "fields": {
+    "problem": 651,
+    "title": "Field",
+    "file": "problems/2026_WMRA_Day_2_Field_02_2026_WMRA_Day_2_Field.pdf",
+    "sort_order": 10,
+    "uploaded_at": "2026-06-25T02:11:01.656Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1778,
+  "fields": {
+    "problem": 651,
+    "title": "Placards",
+    "file": "problems/2026_WMRA_Day_2_Field_02_DAY_2_PLACARDS_A.pdf",
+    "sort_order": 20,
+    "uploaded_at": "2026-06-25T02:11:01.662Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1779,
+  "fields": {
+    "problem": 651,
+    "title": "Placard List",
+    "file": "problems/2026_WMRA_Day_2_Field_02_D_2_Placard_lsit.pdf",
+    "sort_order": 30,
+    "uploaded_at": "2026-06-25T02:11:01.668Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1780,
+  "fields": {
+    "problem": 652,
+    "title": "Field Written Test",
+    "file": "problems/2026_WMRA_Written_Tests_2026_WMRA_Field_Written_Test_with_Answer_Sheet.pdf",
+    "sort_order": 10,
+    "uploaded_at": "2026-06-25T02:11:01.677Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1781,
+  "fields": {
+    "problem": 652,
+    "title": "First Aid Written Test",
+    "file": "problems/2026_WMRA_Written_Tests_2026_WMRA_First_Aid_Written_Test_with_Answer_Sheet.pdf",
+    "sort_order": 20,
+    "uploaded_at": "2026-06-25T02:11:01.684Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1782,
+  "fields": {
+    "problem": 652,
+    "title": "BG4 Written Test",
+    "file": "problems/2026_WMRA_Written_Tests_2026_WMRA_BG4_Written_Test_with_Answer_Sheet.pdf",
+    "sort_order": 30,
+    "uploaded_at": "2026-06-25T02:11:01.691Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1783,
+  "fields": {
+    "problem": 652,
+    "title": "BioMarine 240R Written Test",
+    "file": "problems/2026_WMRA_Written_Tests_2026_WMRA_BioMarine_240R_With_Answer_Sheet.pdf",
+    "sort_order": 40,
+    "uploaded_at": "2026-06-25T02:11:01.697Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1784,
+  "fields": {
+    "problem": 652,
+    "title": "ProAir Written Test",
+    "file": "problems/2026_WMRA_Written_Tests_2026_WMRA_ProAir_Written_Test_with_Answer_Sheet.pdf",
+    "sort_order": 50,
+    "uploaded_at": "2026-06-25T02:11:01.703Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1785,
+  "fields": {
+    "problem": 652,
+    "title": "Team Technician Written Test",
+    "file": "problems/2026_WMRA_Written_Tests_2026_WMRA_Team_Technician_Test_with_Answer_Sheet.pdf",
+    "sort_order": 60,
+    "uploaded_at": "2026-06-25T02:11:01.710Z"
+  }
+},
+{
+  "model": "pages.problemdocument",
+  "pk": 1786,
+  "fields": {
+    "problem": 652,
+    "title": "Team Trainer Written Test",
+    "file": "problems/2026_WMRA_Written_Tests_2026_WMRA_Team_Trainer_Test_with_Answer_Sheet.pdf",
+    "sort_order": 70,
+    "uploaded_at": "2026-06-25T02:11:01.715Z"
   }
 }
 ]
