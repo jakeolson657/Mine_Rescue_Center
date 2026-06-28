@@ -108,6 +108,51 @@ def _hits(tokens, text):
     return score
 
 
+US_STATES = {
+    'alabama': 'AL', 'alaska': 'AK', 'arizona': 'AZ', 'arkansas': 'AR',
+    'california': 'CA', 'colorado': 'CO', 'connecticut': 'CT', 'delaware': 'DE',
+    'florida': 'FL', 'georgia': 'GA', 'hawaii': 'HI', 'idaho': 'ID',
+    'illinois': 'IL', 'indiana': 'IN', 'iowa': 'IA', 'kansas': 'KS',
+    'kentucky': 'KY', 'louisiana': 'LA', 'maine': 'ME', 'maryland': 'MD',
+    'massachusetts': 'MA', 'michigan': 'MI', 'minnesota': 'MN',
+    'mississippi': 'MS', 'missouri': 'MO', 'montana': 'MT', 'nebraska': 'NE',
+    'nevada': 'NV', 'new hampshire': 'NH', 'new jersey': 'NJ',
+    'new mexico': 'NM', 'new york': 'NY', 'north carolina': 'NC',
+    'north dakota': 'ND', 'ohio': 'OH', 'oklahoma': 'OK', 'oregon': 'OR',
+    'pennsylvania': 'PA', 'rhode island': 'RI', 'south carolina': 'SC',
+    'south dakota': 'SD', 'tennessee': 'TN', 'texas': 'TX', 'utah': 'UT',
+    'vermont': 'VT', 'virginia': 'VA', 'washington': 'WA',
+    'west virginia': 'WV', 'wisconsin': 'WI', 'wyoming': 'WY',
+}
+_STATE_ABBRS = set(US_STATES.values())
+
+
+def short_location(full):
+    """Collapse a full venue string to just "City, ST".
+
+    Calendar entries store the venue plus city, state, and sometimes a street
+    and ZIP (e.g. "Winnemucca Convention Center, 50 W Winnemucca Blvd,
+    Winnemucca, NV 89445"). The past-problems list only wants the city and the
+    two-letter state. The state is the last comma-separated piece (possibly a
+    spelled-out name or trailed by a ZIP) and the city is the piece before it.
+    Returns the original string unchanged when it can't be parsed."""
+    parts = [p.strip() for p in (full or '').split(',') if p.strip()]
+    if len(parts) < 2:
+        return full or ''
+    city, tail = parts[-2], parts[-1]
+    tokens = tail.split()
+    state = None
+    if tokens and len(tokens[0]) == 2 and tokens[0].upper() in _STATE_ABBRS:
+        state = tokens[0].upper()           # "NV" or "NV 89445"
+    else:
+        # Drop a trailing ZIP, then look up the spelled-out state name.
+        name = re.sub(r'\s+\d{5}(?:-\d{4})?$', '', tail).strip().lower()
+        state = US_STATES.get(name)
+    if not state:
+        return full or ''
+    return f"{city}, {state}"
+
+
 class Competition(models.Model):
     name = models.CharField(max_length=200, help_text="e.g. Loveland, Colorado")
     year = models.PositiveIntegerField(null=True, blank=True)
@@ -140,6 +185,12 @@ class Competition(models.Model):
     @property
     def location(self):
         return self.calendar_event.location if self.calendar_event else ''
+
+    @property
+    def short_location(self):
+        """City + abbreviated state for the past-problems list (no venue). The
+        full venue stays on the calendar via ``location``."""
+        return short_location(self.location)
 
     def find_calendar_event(self):
         """Match the competition NAME against calendar events in the same year.

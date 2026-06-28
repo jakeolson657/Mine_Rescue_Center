@@ -203,9 +203,18 @@
         border-left: 4px solid var(--red);
         border-radius: 10px;
         margin-bottom: 10px;
+        scroll-margin-top: 24px;
     }
 
     .competition:last-child { margin-bottom: 0; }
+
+    /* Brief highlight when arrived at via a deep link from an event page. */
+    @keyframes compFlash {
+        0%, 30% { box-shadow: 0 0 0 3px var(--red); }
+        100% { box-shadow: 0 0 0 3px rgba(192, 54, 44, 0); }
+    }
+
+    .competition.comp-flash { animation: compFlash 2.4s ease-out; }
 
     .competition > summary {
         display: flex;
@@ -659,15 +668,15 @@
                 <div class="year-body">
                     {% for competition in group.competitions %}
                         {% with problems=competition.problems.all %}
-                        <details class="competition" data-search="{{ competition.name }} {{ competition.year|default:'' }} {{ competition.location }} {{ competition.description }}">
+                        <details class="competition" id="comp-{{ competition.pk }}" data-search="{{ competition.name }} {{ competition.year|default:'' }} {{ competition.location }} {{ competition.description }}">
                             <summary>
                                 <span class="chev"><svg width="14" height="14"><use href="#i-chev"/></svg></span>
                                 <span class="competition-name">{{ competition.name }}</span>
                                 {% if competition.start_date %}
                                     <span class="badge">{{ competition.start_date|date:"M j" }}{% if competition.calendar_event.end_date != competition.start_date %} – {{ competition.calendar_event.end_date|date:"M j" }}{% endif %}</span>
                                 {% endif %}
-                                {% if competition.location %}
-                                    <span class="badge">{{ competition.location }}</span>
+                                {% if competition.short_location %}
+                                    <span class="badge">{{ competition.short_location }}</span>
                                 {% endif %}
                                 <span class="badge count js-comp-count">{{ problems|length }} problem{{ problems|length|pluralize }}</span>
                             </summary>
@@ -1068,6 +1077,28 @@
                 if (list && list.dataset.loaded === '0') render(list);
             });
         });
+    })();
+
+    // Deep link from an event page (#comp-<id>): expand the contest and its
+    // year group, scroll to it, and flash it so it's easy to spot.
+    (function () {
+        function reveal() {
+            var hash = window.location.hash;
+            if (hash.indexOf('#comp-') !== 0) return;
+            var target = document.getElementById(hash.slice(1));
+            if (!target) return;
+            for (var node = target; node; node = node.parentElement) {
+                if (node.tagName === 'DETAILS') node.open = true;
+            }
+            window.requestAnimationFrame(function () {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                target.classList.remove('comp-flash');
+                void target.offsetWidth;  // restart the animation on repeat clicks
+                target.classList.add('comp-flash');
+            });
+        }
+        reveal();
+        window.addEventListener('hashchange', reveal);
     })();
 </script>
 {% endblock %}

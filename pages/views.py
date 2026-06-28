@@ -78,9 +78,11 @@ def past_problems(request):
         .select_related('calendar_event')
         .prefetch_related('problems__documents')
     )
-    # Within a year: calendar order first, undated competitions last (by name).
+    # Within a year: most recent first, undated competitions last (by name).
     competitions.sort(key=lambda c: (
-        c.start_date is None, c.start_date or date.min, c.name.lower()
+        c.start_date is None,
+        -c.start_date.toordinal() if c.start_date else 0,
+        c.name.lower(),
     ))
 
     # Tag each problem with its discipline slugs for the client-side filter,
@@ -222,6 +224,16 @@ class EventDetailView(DetailView):
         context['google_url'] = google_calendar_url(event, url=detail_url)
         context['outlook_url'] = outlook_calendar_url(event, url=detail_url)
         context['ics_url'] = reverse('event_ics', args=[event.pk])
+
+        # Deep-link to this contest's posted problems, but only once some have
+        # been uploaded. An event can be linked from more than one competition;
+        # pick the most recent one that actually has problems.
+        competitions = (
+            event.competitions.prefetch_related('problems').order_by('-year', 'name')
+        )
+        context['problems_competition'] = next(
+            (c for c in competitions if c.problems.all()), None
+        )
         return context
 
 
