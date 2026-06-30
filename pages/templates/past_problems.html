@@ -681,10 +681,9 @@
                                 <span class="badge count js-comp-count">{{ problems|length }} problem{{ problems|length|pluralize }}</span>
                             </summary>
                             <div class="competition-body">
-                                {% if competition.description %}
-                                    <p class="competition-description">{{ competition.description }}</p>
-                                {% endif %}
-
+                                {# Competition description intentionally not shown: it just
+                                   restates the location/date already in the badges above.
+                                   It still feeds data-search on the competition row. #}
                                 {% for problem in problems %}
                                     {% with documents=problem.documents.all %}
                                     <details class="problem" data-categories="{{ problem.category_csv }}" data-search="{{ problem.title }} {{ problem.description }}{% for doc in documents %} {{ doc.title }}{% endfor %}">
