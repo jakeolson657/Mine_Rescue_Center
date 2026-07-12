@@ -607,6 +607,10 @@
       {
         "label": "NCPA Post 7 2024 Registration Form",
         "url": "https://www.msha.gov/sites/default/files/events/NCPA-Registration-Form.pdf"
+      },
+      {
+        "label": "2024 Virginia Mine Rescue Program",
+        "url": "/media/problems/2024_gov_cup_Contest_Program_2024_Virginia_Mine_Rescue_Program.pdf"
       }
     ],
     "created_at": "2026-06-11T03:13:22.997Z",
@@ -638,7 +642,12 @@
     "location": "Cumberland Campus of S.K.C.T.C., 700 College Road, Cumberland, KY 40823",
     "description": "",
     "contact_info": "Suzie Williams (606) 589-5812",
-    "resources": [],
+    "resources": [
+      {
+        "label": "2024 Mine Rescue Results",
+        "url": "/media/problems/2024_harlan_Mine_Rescue_Haraln_24_MR_Results.pdf"
+      }
+    ],
     "created_at": "2026-06-11T03:13:23.006Z",
     "updated_at": "2026-06-11T03:13:23.006Z"
   }
@@ -1193,7 +1202,12 @@
     "location": "Ruff Creek, PA",
     "description": "",
     "contact_info": "Marlon Whoolery (724) 322-0169, mttcmarlon@yahoo.com; Mike Reese (724) 627-6259, mttcmr@yahoo.com",
-    "resources": [],
+    "resources": [
+      {
+        "label": "2016 MTTC Skills Contest Results",
+        "url": "/media/problems/2016_mttc_skills_Mine_Rescue_MTTC_MR_SKILLS_APRIL_2016_SCORES.pdf"
+      }
+    ],
     "created_at": "2026-06-11T20:17:12.450Z",
     "updated_at": "2026-06-11T20:17:12.451Z"
   }
@@ -3862,6 +3876,563 @@
   }
 },
 {
+  "model": "pages.calendarevent",
+  "pk": 261,
+  "fields": {
+    "title": "Rocky Mountain Mine Rescue Contest",
+    "start_date": "2024-06-10",
+    "end_date": "2024-06-13",
+    "location": "Craig, CO",
+    "description": "",
+    "contact_info": "Mark Beauchamp\n970-367-6407\nmbeauchamo@peabodyenergy.com",
+    "resources": [],
+    "created_at": "2026-06-30T03:03:11.099Z",
+    "updated_at": "2026-06-30T03:03:11.099Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 262,
+  "fields": {
+    "title": "Southeast Regional Mine Rescue Contest",
+    "start_date": "2024-03-05",
+    "end_date": "2024-03-07",
+    "location": "Sevierville, TN",
+    "description": "",
+    "contact_info": "",
+    "resources": [],
+    "created_at": "2026-06-30T03:44:14.922Z",
+    "updated_at": "2026-06-30T03:44:14.922Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 263,
+  "fields": {
+    "title": "Fallen Heroes Mine Rescue Contest",
+    "start_date": "2024-09-17",
+    "end_date": "2024-09-19",
+    "location": "Logan Recreational Center, Logan/Chapmanville, WV",
+    "description": "",
+    "contact_info": "Brent Bender\n304-784-3405\nbbender@blackhawkmining.com",
+    "resources": [],
+    "created_at": "2026-06-30T04:00:46.679Z",
+    "updated_at": "2026-06-30T04:00:46.679Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 264,
+  "fields": {
+    "title": "Pennsylvania Mine Rescue Contest",
+    "start_date": "2024-07-15",
+    "end_date": "2024-07-17",
+    "location": "Waynesburg, PA",
+    "description": "",
+    "contact_info": "Joe Sbaffoni\n814-661-6759",
+    "resources": [],
+    "created_at": "2026-06-30T04:00:46.685Z",
+    "updated_at": "2026-06-30T04:00:46.685Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 265,
+  "fields": {
+    "title": "MTTC Pennsylvania Regional Mine Rescue Skills Contest",
+    "start_date": "2012-04-18",
+    "end_date": "2012-04-20",
+    "location": "Ruff Creek, PA",
+    "description": "",
+    "contact_info": "Marlon Whoolery\n724-627-6259 or 724-322-0169\nMike Reese\n724-627-6259",
+    "resources": [],
+    "created_at": "2026-07-02T22:55:59.924Z",
+    "updated_at": "2026-07-02T22:55:59.924Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 266,
+  "fields": {
+    "title": "Colorado Mine Rescue Association - Four Corners Mine Rescue Contest",
+    "start_date": "2012-04-24",
+    "end_date": "2012-04-26",
+    "location": "Farmington, NM",
+    "description": "",
+    "contact_info": "Loren S. Smith\n505-598-2054\nLaVon L. Turpin\n970-929-2260\nFred English\n970-929-5822",
+    "resources": [],
+    "created_at": "2026-07-02T22:55:59.944Z",
+    "updated_at": "2026-07-02T22:55:59.944Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 267,
+  "fields": {
+    "title": "WV Alliance Contest",
+    "start_date": "2012-05-08",
+    "end_date": "2012-05-11",
+    "location": "Beckley, WV",
+    "description": "",
+    "contact_info": "Don King",
+    "resources": [],
+    "created_at": "2026-07-02T22:55:59.960Z",
+    "updated_at": "2026-07-02T22:55:59.960Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 268,
+  "fields": {
+    "title": "Alabama State Mine Rescue Contest",
+    "start_date": "2012-05-15",
+    "end_date": "2012-05-17",
+    "location": "Sumiton, AL",
+    "description": "",
+    "contact_info": "Patty Tice\n205-871-3734",
+    "resources": [],
+    "created_at": "2026-07-02T22:55:59.974Z",
+    "updated_at": "2026-07-02T22:55:59.974Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 269,
+  "fields": {
+    "title": "Welch Post 1 Mine Rescue Contest",
+    "start_date": "2012-05-19",
+    "end_date": "2012-05-19",
+    "location": "Bluefield State College, Bluefield, WV",
+    "description": "",
+    "contact_info": "Mike Plumley\n304-325-8744 or 304-960-0340",
+    "resources": [],
+    "created_at": "2026-07-02T22:55:59.990Z",
+    "updated_at": "2026-07-02T22:55:59.990Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 270,
+  "fields": {
+    "title": "Western Kentucky Mining Institute Safety Days",
+    "start_date": "2012-05-23",
+    "end_date": "2012-05-24",
+    "location": "Madisonville, KY",
+    "description": "",
+    "contact_info": "Polly Wilson\n270-821-4180 ext. 1239",
+    "resources": [
+      {
+        "label": "Western Kentucky Mining Institute Safety Days Mine Rescue Contest Results",
+        "url": "/media/problems/2012_wkmi_Mine_Rescue_2012_wkmi_results.pdf"
+      }
+    ],
+    "created_at": "2026-07-02T22:56:00.003Z",
+    "updated_at": "2026-07-02T22:56:00.003Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 271,
+  "fields": {
+    "title": "Governor's Cup Mine Rescue Contest",
+    "start_date": "2012-06-01",
+    "end_date": "2012-06-01",
+    "location": "Cedar Bluff, VA",
+    "description": "",
+    "contact_info": "Chris Whitt\n276-523-9693",
+    "resources": [],
+    "created_at": "2026-07-02T22:56:00.015Z",
+    "updated_at": "2026-07-02T22:56:00.015Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 272,
+  "fields": {
+    "title": "Indiana State Mine Rescue Contest",
+    "start_date": "2012-06-05",
+    "end_date": "2012-06-07",
+    "location": "Vincennes, IN",
+    "description": "",
+    "contact_info": "Ruth Messel\n812-881-9315",
+    "resources": [],
+    "created_at": "2026-07-02T22:56:00.028Z",
+    "updated_at": "2026-07-02T22:56:00.028Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 273,
+  "fields": {
+    "title": "Rocky Mountain Association Mine Rescue Contest",
+    "start_date": "2012-06-05",
+    "end_date": "2012-06-07",
+    "location": "Price, UT",
+    "description": "",
+    "contact_info": "Larry Olsen\n435-448-2630",
+    "resources": [
+      {
+        "label": "Rocky Mt. Association Mine Rescue Contest Results",
+        "url": "/media/problems/2012_price_Mine_Rescue_2012_Price_Results.pdf"
+      }
+    ],
+    "created_at": "2026-07-02T22:56:00.041Z",
+    "updated_at": "2026-07-02T22:56:00.041Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 274,
+  "fields": {
+    "title": "Tri-State Post 6 Ohio Valley Mine Rescue Contest",
+    "start_date": "2012-06-05",
+    "end_date": "2012-06-07",
+    "location": "ODNR Training Center, Cadiz, OH",
+    "description": "",
+    "contact_info": "Joseph Facello\n740-695-2297",
+    "resources": [],
+    "created_at": "2026-07-02T22:56:00.054Z",
+    "updated_at": "2026-07-02T22:56:00.054Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 275,
+  "fields": {
+    "title": "Kentucky River Mine Rescue Contest",
+    "start_date": "2012-06-12",
+    "end_date": "2012-06-14",
+    "location": "Hazard, KY",
+    "description": "",
+    "contact_info": "Pauletta Smith\n606-436-0533\nRon Burns\n606-546-5123",
+    "resources": [],
+    "created_at": "2026-07-02T22:56:00.068Z",
+    "updated_at": "2026-07-02T22:56:00.068Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 276,
+  "fields": {
+    "title": "KEMI Mine Safety and Training Competition",
+    "start_date": "2012-07-10",
+    "end_date": "2012-07-12",
+    "location": "Pikeville, KY",
+    "description": "",
+    "contact_info": "Daven Hoskins\n606-273-7202\nBecca Cordon\n859-425-7800 ext 1159\nMarlena Hughes\n606-432-0944",
+    "resources": [
+      {
+        "label": "Kentucky Employers' Mutual Insurance Mine Rescue Contest Results",
+        "url": "/media/problems/2012_kemi_Mine_Rescue_2012_KEMI_ALL_RESULTS.pdf"
+      }
+    ],
+    "created_at": "2026-07-02T22:56:00.080Z",
+    "updated_at": "2026-07-02T22:56:00.080Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 277,
+  "fields": {
+    "title": "Colorado Coal Association Mine Rescue Contest",
+    "start_date": "2012-07-17",
+    "end_date": "2012-07-19",
+    "location": "Delta, CO",
+    "description": "",
+    "contact_info": "Lavon L. Turpin\n970-929-2260\nFred English\n970-929-5822",
+    "resources": [],
+    "created_at": "2026-07-02T22:56:00.092Z",
+    "updated_at": "2026-07-02T22:56:00.092Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 278,
+  "fields": {
+    "title": "Harlan County Safety Day Mine Rescue Contest",
+    "start_date": "2012-07-24",
+    "end_date": "2012-07-26",
+    "location": "Southeast KY Community & Technical College, Cumberland, KY",
+    "description": "",
+    "contact_info": "Suzie Williams or Tracy Bailey\n606-589-5812",
+    "resources": [
+      {
+        "label": "Harlan County Safety Days Results",
+        "url": "/media/problems/2012_harlan_Mine_Rescue_2012HarlanCountySafetyDays.pdf"
+      }
+    ],
+    "created_at": "2026-07-02T22:56:00.104Z",
+    "updated_at": "2026-07-02T22:56:00.104Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 279,
+  "fields": {
+    "title": "KCA Regional Mine Rescue Skills Contest",
+    "start_date": "2012-07-31",
+    "end_date": "2012-08-02",
+    "location": "KY Coal Academy, Madisonville, KY",
+    "description": "",
+    "contact_info": "Danny B. Knott\n270-824-1774",
+    "resources": [
+      {
+        "label": "Kentucky Coal Academy Skills Contest Results",
+        "url": "/media/problems/2012_ky_skills_Mine_Rescue_2012_KCA_mine_rescue_results_and_average_time.pdf"
+      }
+    ],
+    "created_at": "2026-07-02T22:56:00.115Z",
+    "updated_at": "2026-07-02T22:56:00.115Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 280,
+  "fields": {
+    "title": "Virginia Mining Institute's Safety Day",
+    "start_date": "2012-08-07",
+    "end_date": "2012-08-09",
+    "location": "Blacksburg, VA",
+    "description": "",
+    "contact_info": "Wayne Davis\n276-415-9650\nChristy Viers\n276-964-4333",
+    "resources": [
+      {
+        "label": "VA Mining Institute Mine Rescue Contest Results",
+        "url": "/media/problems/2012_vmi_Mine_Rescue_2012_VMI_Mine_Rescue_Results.pdf"
+      }
+    ],
+    "created_at": "2026-07-02T22:56:00.125Z",
+    "updated_at": "2026-07-02T22:56:00.125Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 281,
+  "fields": {
+    "title": "NMRA Post 5 Mine Rescue Contest",
+    "start_date": "2012-08-15",
+    "end_date": "2012-08-16",
+    "location": "Morgantown, WV",
+    "description": "",
+    "contact_info": "Larry A. Moore\n304-592-1409 or 304-376-3848\nGreg Fetty\n304-225-6851\nTina McKenzie\n301-387-8295",
+    "resources": [
+      {
+        "label": "NMRA Post No. 5 Mine Rescue Contest — Team Registration Packet",
+        "url": "/media/problems/2012_nmra5_Mine_Rescue_Post_5_Registration_Packet.pdf"
+      },
+      {
+        "label": "NMRA Post No. 5 Mine Rescue Contest — Competition Results",
+        "url": "/media/problems/2012_nmra5_Mine_Rescue_Post_5_RESULTS.pdf"
+      }
+    ],
+    "created_at": "2026-07-02T22:56:00.135Z",
+    "updated_at": "2026-07-02T22:56:00.135Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 282,
+  "fields": {
+    "title": "Southern West Virginia Mine Rescue Association Contest",
+    "start_date": "2012-08-27",
+    "end_date": "2012-08-30",
+    "location": "Beckley, WV",
+    "description": "",
+    "contact_info": "Polly Kalich\n703-722-3513 or 703-735-4110\nMike Plumley\n304-960-0340",
+    "resources": [
+      {
+        "label": "Southern WV Mine Rescue Contest WV State Championship Results",
+        "url": "/media/problems/2012_swv_Mine_Rescue_2012SWVCompetition.pdf"
+      }
+    ],
+    "created_at": "2026-07-02T22:56:00.145Z",
+    "updated_at": "2026-07-02T22:56:00.145Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 283,
+  "fields": {
+    "title": "Kentucky State Mine Rescue Contest",
+    "start_date": "2012-09-12",
+    "end_date": "2012-09-14",
+    "location": "Lexington, KY",
+    "description": "",
+    "contact_info": "Geaunita Caylor\n859-257-2820",
+    "resources": [
+      {
+        "label": "Kentucky State Mine Rescue Contest — Results: Mine Rescue",
+        "url": "/media/problems/2012_ky_state_Mine_Rescue_KMI2012Results.pdf"
+      },
+      {
+        "label": "Kentucky State Mine Rescue Contest — Results: Preshift",
+        "url": "/media/problems/2012_ky_state_Mine_Rescue_KMIpreshift2012.pdf"
+      },
+      {
+        "label": "Kentucky State Mine Rescue Contest — Results: First Aid",
+        "url": "/media/problems/2012_ky_state_Mine_Rescue_KMIMET2012.pdf"
+      }
+    ],
+    "created_at": "2026-07-02T22:56:00.154Z",
+    "updated_at": "2026-07-02T22:56:00.154Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 284,
+  "fields": {
+    "title": "State of Tennessee Mine Rescue Contest",
+    "start_date": "2012-09-25",
+    "end_date": "2012-09-27",
+    "location": "Caryville (Cove Lake), TN",
+    "description": "",
+    "contact_info": "Oscar Frederick\n423-566-9709\nRon Burns\n606-546-5123",
+    "resources": [
+      {
+        "label": "Tennessee State Mine Rescue Contest Results",
+        "url": "/media/problems/2012_tn_state_Mine_Rescue_2012TennesseeResults.pdf"
+      }
+    ],
+    "created_at": "2026-07-02T22:56:00.163Z",
+    "updated_at": "2026-07-02T22:56:00.163Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 285,
+  "fields": {
+    "title": "National Mine Rescue Skills Championship",
+    "start_date": "2012-10-02",
+    "end_date": "2012-10-05",
+    "location": "Beckley, WV",
+    "description": "",
+    "contact_info": "Don King",
+    "resources": [],
+    "created_at": "2026-07-02T22:56:00.172Z",
+    "updated_at": "2026-07-02T22:56:00.172Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 286,
+  "fields": {
+    "title": "Nevada Mine Rescue Contest",
+    "start_date": "2012-03-13",
+    "end_date": "2012-03-15",
+    "location": "Winnemucca, NV",
+    "description": "",
+    "contact_info": "Mike Peck\nMichael.Peck@Newmont.com\n775-389-0000",
+    "resources": [],
+    "created_at": "2026-07-02T22:56:00.181Z",
+    "updated_at": "2026-07-02T22:56:00.181Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 287,
+  "fields": {
+    "title": "North Central Regional Mine Rescue Contest",
+    "start_date": "2012-04-03",
+    "end_date": "2012-04-05",
+    "location": "Wilmington, IL",
+    "description": "",
+    "contact_info": "Bill Pomroy\npomroy.william@dol.gov\n218-720-5448",
+    "resources": [],
+    "created_at": "2026-07-02T22:56:00.189Z",
+    "updated_at": "2026-07-02T22:56:00.189Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 288,
+  "fields": {
+    "title": "Southwestern Regional Mine Rescue Contest",
+    "start_date": "2012-04-17",
+    "end_date": "2012-04-19",
+    "location": "Carlsbad, NM",
+    "description": "",
+    "contact_info": "David Tackett\nDavid.Tackett@mosaicco.com\n575-628-6407",
+    "resources": [],
+    "created_at": "2026-07-02T22:56:00.198Z",
+    "updated_at": "2026-07-02T22:56:00.198Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 289,
+  "fields": {
+    "title": "Southern Regional Mine Rescue Contest",
+    "start_date": "2012-05-08",
+    "end_date": "2012-05-09",
+    "location": "New Iberia, LA",
+    "description": "",
+    "contact_info": "Henry Charpentier\nhcharpentier@mortonsalt.com\n337-867-9501",
+    "resources": [],
+    "created_at": "2026-07-02T22:56:00.206Z",
+    "updated_at": "2026-07-02T22:56:00.206Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 290,
+  "fields": {
+    "title": "Central Mine Rescue Contest",
+    "start_date": "2012-05-17",
+    "end_date": "2012-05-19",
+    "location": "Kellogg, ID",
+    "description": "",
+    "contact_info": "Danny Peterson\ncmrescue@cebridge.net\n208-556-2225",
+    "resources": [],
+    "created_at": "2026-07-02T22:56:00.213Z",
+    "updated_at": "2026-07-02T22:56:00.213Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 291,
+  "fields": {
+    "title": "Southwestern Wyoming Mutual Aid Mine Rescue and First Aid Contest",
+    "start_date": "2012-06-11",
+    "end_date": "2012-06-15",
+    "location": "Rock Springs, WY",
+    "description": "",
+    "contact_info": "Gary Gomez\nggomez@ocichemical.com\n307-872-7252",
+    "resources": [],
+    "created_at": "2026-07-02T22:56:00.219Z",
+    "updated_at": "2026-07-02T22:56:00.219Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 292,
+  "fields": {
+    "title": "Northern Regional Mine Rescue Contest",
+    "start_date": "2012-06-12",
+    "end_date": "2012-06-14",
+    "location": "Rochester, NY",
+    "description": "",
+    "contact_info": "Steve Allenson\nsteve_allenson@cargill.com\n216-357-4613",
+    "resources": [],
+    "created_at": "2026-07-02T22:56:00.227Z",
+    "updated_at": "2026-07-02T22:56:00.227Z"
+  }
+},
+{
+  "model": "pages.calendarevent",
+  "pk": 293,
+  "fields": {
+    "title": "Southeast Region Mine Rescue Contest",
+    "start_date": "2012-06-19",
+    "end_date": "2012-06-21",
+    "location": "Maysville, KY",
+    "description": "",
+    "contact_info": "Sammy Linville\nsammylinville@yahoo.com\n859-468-2914\nHarriet Blythe\nharriet.blythe@carmeusena.com\n859-472-8122",
+    "resources": [],
+    "created_at": "2026-07-02T22:56:00.233Z",
+    "updated_at": "2026-07-02T22:56:00.233Z"
+  }
+},
+{
   "model": "pages.competition",
   "pk": 1,
   "fields": {
@@ -4455,7 +5026,7 @@
   "fields": {
     "name": "2024 Pennsylvania Mine Rescue Contest",
     "year": 2024,
-    "calendar_event": null,
+    "calendar_event": 264,
     "description": "Pennsylvania Bituminous Safety Association, July 15-17, 2024",
     "created_at": "2026-06-12T04:25:11.002Z",
     "updated_at": "2026-06-12T04:25:11.002Z"
@@ -4467,7 +5038,7 @@
   "fields": {
     "name": "2024 Southeast Regional Mine Rescue Contest",
     "year": 2024,
-    "calendar_event": null,
+    "calendar_event": 262,
     "description": "Sevierville, Tennessee, March 5-8, 2024",
     "created_at": "2026-06-12T04:26:07.267Z",
     "updated_at": "2026-06-12T04:26:07.267Z"
@@ -4539,7 +5110,7 @@
   "fields": {
     "name": "2024 Fallen Heroes Mine Rescue Contest",
     "year": 2024,
-    "calendar_event": null,
+    "calendar_event": 263,
     "description": "Chief Logan Conference Center, Logan, West Virginia, September 17-19, 2024",
     "created_at": "2026-06-12T05:00:09.117Z",
     "updated_at": "2026-06-12T05:00:09.117Z"
@@ -4563,7 +5134,7 @@
   "fields": {
     "name": "2012 NMRA Post No. 5 Mine Rescue Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 269,
     "description": "August 15-16, 2012, Mylan Park, Morgantown, West Virginia",
     "created_at": "2026-06-12T21:01:48.500Z",
     "updated_at": "2026-06-12T21:01:48.500Z"
@@ -4575,7 +5146,7 @@
   "fields": {
     "name": "2012 Alabama State Mine Rescue Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 268,
     "description": "May 15-17, 2012",
     "created_at": "2026-06-12T21:02:00.196Z",
     "updated_at": "2026-06-12T21:02:00.196Z"
@@ -4587,7 +5158,7 @@
   "fields": {
     "name": "2012 Pennsylvania Regional Skills Contest Prosperity, Pennsylvania April 18-20, 2012",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 265,
     "description": "",
     "created_at": "2026-06-12T21:02:29.795Z",
     "updated_at": "2026-06-12T21:02:29.795Z"
@@ -4623,7 +5194,7 @@
   "fields": {
     "name": "2012 Western Kentucky Mining Institute Safety Days Mine Rescue Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 270,
     "description": "Madisonville, Kentucky, May 23-24, 2012",
     "created_at": "2026-06-12T21:05:21.921Z",
     "updated_at": "2026-06-12T21:05:21.921Z"
@@ -4635,7 +5206,7 @@
   "fields": {
     "name": "2012 Ohio Valley Mine Rescue Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 274,
     "description": "Cadiz, Ohio, June 5-7, 2012",
     "created_at": "2026-06-12T21:05:47.160Z",
     "updated_at": "2026-06-12T21:05:47.160Z"
@@ -4647,7 +5218,7 @@
   "fields": {
     "name": "2012 Kentucky River Mine Rescue Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 275,
     "description": "Hazard, Kentucky, June 12-14, 2012",
     "created_at": "2026-06-12T21:07:49.831Z",
     "updated_at": "2026-06-12T21:07:49.831Z"
@@ -4659,7 +5230,7 @@
   "fields": {
     "name": "2012 Kentucky Coal Academy Skills Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 279,
     "description": "Madisonville, Kentucky, July 31, 2012",
     "created_at": "2026-06-12T21:08:33.787Z",
     "updated_at": "2026-06-12T21:08:33.787Z"
@@ -4671,7 +5242,7 @@
   "fields": {
     "name": "2012 Colorado Coal Association Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 266,
     "description": "Delta, Colorado, July 17-19, 2012",
     "created_at": "2026-06-12T21:08:42.114Z",
     "updated_at": "2026-06-12T21:08:42.114Z"
@@ -4683,7 +5254,7 @@
   "fields": {
     "name": "2012 MTTC Pennsylvania Mine Rescue Skills Contest Best of the Best Prosperity, Pennsylvania September 15, 2012",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 265,
     "description": "",
     "created_at": "2026-06-12T21:11:43.126Z",
     "updated_at": "2026-06-12T21:11:43.126Z"
@@ -4695,7 +5266,7 @@
   "fields": {
     "name": "2012 Nationwide Mine Rescue Skills Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 265,
     "description": "Beckley, West Virginia, October 3-4, 2012",
     "created_at": "2026-06-12T21:11:48.736Z",
     "updated_at": "2026-06-12T21:11:48.736Z"
@@ -4731,7 +5302,7 @@
   "fields": {
     "name": "2012 Four Corners Mine Rescue Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 266,
     "description": "April 24-26, 2012, Farmington, New Mexico",
     "created_at": "2026-06-12T21:15:41.449Z",
     "updated_at": "2026-06-12T21:15:41.449Z"
@@ -4743,7 +5314,7 @@
   "fields": {
     "name": "2012 WV Alliance Mine Rescue Skills Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 265,
     "description": "Beckley, West Virginia, May 8-11, 2012",
     "created_at": "2026-06-12T21:17:58.159Z",
     "updated_at": "2026-06-12T21:17:58.159Z"
@@ -4755,7 +5326,7 @@
   "fields": {
     "name": "2012 NMRA Post No. 1",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 281,
     "description": "Bluefield, West Virginia, May 19, 2012",
     "created_at": "2026-06-12T21:18:02.149Z",
     "updated_at": "2026-06-12T21:18:02.149Z"
@@ -4767,7 +5338,7 @@
   "fields": {
     "name": "2012 NMRA Post No. 11",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 281,
     "description": "May 4, 2012",
     "created_at": "2026-06-12T21:18:05.466Z",
     "updated_at": "2026-06-12T21:18:05.466Z"
@@ -4779,7 +5350,7 @@
   "fields": {
     "name": "2012 VA Governor's Cup Mine Rescue Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 271,
     "description": "Cedar Bluff, Virginia, June 1, 2012",
     "created_at": "2026-06-12T21:18:10.387Z",
     "updated_at": "2026-06-12T21:18:10.387Z"
@@ -4791,7 +5362,7 @@
   "fields": {
     "name": "2012 Indiana State Mine Rescue Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 268,
     "description": "Vincennes, Indiana, June 5-7, 2012",
     "created_at": "2026-06-12T21:18:15.027Z",
     "updated_at": "2026-06-12T21:18:15.027Z"
@@ -4803,7 +5374,7 @@
   "fields": {
     "name": "2012 Rocky Mt. Association Mine Rescue Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 266,
     "description": "Price, Utah, June 6, 2012",
     "created_at": "2026-06-12T21:18:35.309Z",
     "updated_at": "2026-06-12T21:18:35.309Z"
@@ -4827,7 +5398,7 @@
   "fields": {
     "name": "2012 Harlan County Safety Days",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 278,
     "description": "Southeast Kentucky Community & Technical College, Cumberland, Kentucky, July 24-26, 2012",
     "created_at": "2026-06-12T21:23:57.415Z",
     "updated_at": "2026-06-12T21:23:57.415Z"
@@ -4851,7 +5422,7 @@
   "fields": {
     "name": "2012 Southern WV Mine Rescue Contest WV State Championship",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 268,
     "description": "Beckley, West Virginia, August 27-30, 2012",
     "created_at": "2026-06-12T21:24:22.913Z",
     "updated_at": "2026-06-12T21:24:22.913Z"
@@ -4863,7 +5434,7 @@
   "fields": {
     "name": "2012 Kentucky State Mine Rescue Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 268,
     "description": "Lexington, Kentucky, September 12-14, 2012",
     "created_at": "2026-06-12T21:25:02.390Z",
     "updated_at": "2026-06-12T21:25:02.390Z"
@@ -4875,7 +5446,7 @@
   "fields": {
     "name": "2012 Tennessee State Mine Rescue Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 268,
     "description": "Caryville, Tennessee, September 25-27, 2012",
     "created_at": "2026-06-12T21:25:32.057Z",
     "updated_at": "2026-06-12T21:25:32.057Z"
@@ -4887,7 +5458,7 @@
   "fields": {
     "name": "2012 Alliance Coal Mine Rescue Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 277,
     "description": "November 2, 2012",
     "created_at": "2026-06-12T21:27:30.318Z",
     "updated_at": "2026-06-12T21:27:30.318Z"
@@ -4899,7 +5470,7 @@
   "fields": {
     "name": "2012 Nevada Mine Rescue Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 286,
     "description": "Winnemucca, Nevada, March 14-15, 2012",
     "created_at": "2026-06-12T21:27:33.730Z",
     "updated_at": "2026-06-12T21:27:33.730Z"
@@ -4911,7 +5482,7 @@
   "fields": {
     "name": "2012 Southern Regional Mine Rescue Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 282,
     "description": "New Iberia, Louisiana, May 8-9, 2012",
     "created_at": "2026-06-12T21:27:48.845Z",
     "updated_at": "2026-06-12T21:27:48.846Z"
@@ -4947,7 +5518,7 @@
   "fields": {
     "name": "2012 Central Idaho Mine Rescue Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 287,
     "description": "Kellogg, Idaho, May 18-19, 2012",
     "created_at": "2026-06-12T21:29:56.392Z",
     "updated_at": "2026-06-12T21:29:56.392Z"
@@ -4959,7 +5530,7 @@
   "fields": {
     "name": "2012 Southwestern Regional Mine Rescue Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 288,
     "description": "Carlsbad, New Mexico, April 17-19, 2012",
     "created_at": "2026-06-12T21:30:00.388Z",
     "updated_at": "2026-06-12T21:30:00.388Z"
@@ -4971,7 +5542,7 @@
   "fields": {
     "name": "2012 North Central Regional Mine Rescue Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 287,
     "description": "Wilmington, Illinois, April 3-5, 2012",
     "created_at": "2026-06-12T21:30:41.240Z",
     "updated_at": "2026-06-12T21:30:41.240Z"
@@ -4983,7 +5554,7 @@
   "fields": {
     "name": "2012 SW Wyoming Mutual Aid Mine Rescue Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 291,
     "description": "Rock Springs, Wyoming, June 11-15, 2012",
     "created_at": "2026-06-12T21:31:37.610Z",
     "updated_at": "2026-06-12T21:31:37.610Z"
@@ -4995,7 +5566,7 @@
   "fields": {
     "name": "2012 Southeast Regional Mine Rescue Contest",
     "year": 2012,
-    "calendar_event": null,
+    "calendar_event": 278,
     "description": "Maysville, Kentucky, June 19, 2012",
     "created_at": "2026-06-12T21:31:47.011Z",
     "updated_at": "2026-06-12T21:31:47.011Z"
