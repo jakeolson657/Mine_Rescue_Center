@@ -133,36 +133,6 @@
     /* Hidden by the client-side filter */
     .year-group[hidden], .competition[hidden], .problem[hidden] { display: none; }
 
-    /* details reset */
-    details summary { cursor: pointer; list-style: none; user-select: none; }
-    details summary::-webkit-details-marker { display: none; }
-
-    .chev { flex-shrink: 0; display: inline-flex; color: var(--red); transition: transform 0.2s; }
-    details[open] > summary .chev { transform: rotate(90deg); }
-
-    .badge {
-        flex-shrink: 0;
-        font-family: var(--font-mono);
-        font-size: 11.5px;
-        color: var(--steel);
-        background: var(--surface-2);
-        border: 1px solid var(--line);
-        padding: 4px 11px;
-        border-radius: 20px;
-        white-space: nowrap;
-    }
-
-    .badge.count {
-        font-family: var(--font-display);
-        font-weight: 500;
-        font-size: 10.5px;
-        letter-spacing: 0.07em;
-        text-transform: uppercase;
-        color: var(--red);
-        background: var(--red-tint);
-        border-color: #f0c9c5;
-    }
-
     /* Year group */
     .year-group {
         background: var(--surface);
@@ -242,6 +212,7 @@
     .competition-description { color: var(--steel); margin-bottom: 16px; font-size: 14.5px; line-height: 1.6; }
 
     /* Problem */
+
     .problem {
         background: var(--surface-3);
         border: 1px solid var(--line-2);
@@ -274,74 +245,6 @@
 
     .problem-body { padding: 2px 18px 16px; }
     .problem-description { color: var(--steel); font-size: 14px; line-height: 1.6; margin-bottom: 14px; }
-
-    .documents-list { display: flex; flex-direction: column; gap: 0.55rem; }
-
-    .document-item {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1.25rem;
-        padding: 11px 14px;
-        background: var(--surface);
-        border: 1px solid var(--line-2);
-        border-radius: 8px;
-    }
-
-    .document-title {
-        display: flex;
-        align-items: center;
-        gap: 11px;
-        flex-grow: 1;
-        font-weight: 500;
-        color: var(--ink);
-        font-size: 14.5px;
-    }
-
-    .doc-chip {
-        flex: none;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 30px;
-        height: 36px;
-        border-radius: 4px;
-        background: var(--surface-3);
-        border: 1px solid var(--line);
-        font-family: var(--font-display);
-        font-weight: 700;
-        font-size: 8px;
-        letter-spacing: 0.04em;
-        color: var(--red);
-    }
-
-    .document-actions { display: flex; flex-shrink: 0; gap: 0.5rem; }
-
-    .download-btn, .preview-btn {
-        flex-shrink: 0;
-        font-family: var(--font-display);
-        font-weight: 500;
-        font-size: 12px;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        padding: 9px 16px;
-        border-radius: 7px;
-        white-space: nowrap;
-        display: inline-flex;
-        align-items: center;
-        gap: 7px;
-        text-decoration: none;
-        cursor: pointer;
-        transition: background-color 0.2s, border-color 0.2s, color 0.2s;
-    }
-
-    .download-btn { background-color: var(--red); color: var(--bg); border: 1px solid var(--red); }
-    .download-btn:hover { background-color: var(--red-dark); border-color: var(--red-dark); }
-
-    .preview-btn { background-color: var(--surface); color: var(--steel); border: 1px solid #d8d2c8; }
-    .preview-btn:hover { border-color: var(--ink); color: var(--ink); }
-
-    .no-documents { color: var(--muted); font-style: italic; font-size: 14px; }
 
     /* Empty repository state */
     .repo-empty {
@@ -522,84 +425,10 @@
     /* off-screen honeypot */
     .hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
 
-    /* Preview modal */
-    .preview-overlay {
-        position: fixed;
-        inset: 0;
-        z-index: 2000;
-        background: rgba(34, 42, 51, 0.7);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1.5rem;
-    }
-
-    .preview-overlay[hidden] { display: none; }
-
-    .preview-dialog {
-        display: flex;
-        flex-direction: column;
-        width: min(1000px, 100%);
-        height: 100%;
-        max-height: 92vh;
-        background: white;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 30px 70px -20px rgba(20, 17, 13, 0.6);
-    }
-
-    .preview-header {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        padding: 0.85rem 1.25rem;
-        background: var(--ink);
-        color: var(--bg);
-    }
-
-    .preview-header .preview-doc-title {
-        flex-grow: 1;
-        font-family: var(--font-display);
-        font-weight: 500;
-        letter-spacing: 0.02em;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
-    .preview-header .download-btn {
-        background-color: var(--red);
-        color: var(--bg);
-        border-color: var(--red);
-    }
-
-    .preview-header .download-btn:hover { background-color: var(--red-dark); }
-
-    .preview-close {
-        flex-shrink: 0;
-        background: transparent;
-        border: none;
-        color: var(--bg);
-        font-size: 1.75rem;
-        line-height: 1;
-        cursor: pointer;
-        padding: 0 0.25rem;
-    }
-
-    .preview-close:hover { opacity: 0.8; }
-
-    .preview-body { flex-grow: 1; overflow: auto; background: #525659; display: flex; }
-    .preview-body iframe { flex-grow: 1; width: 100%; border: none; }
-    .preview-body img { display: block; margin: auto; max-width: 100%; max-height: 100%; object-fit: contain; }
-
     @media (max-width: 680px) {
         .repo-head-inner { padding: 36px 20px 32px; }
         .repo-title h1 { font-size: 32px; }
         .repo-wrap { padding: 24px 16px 60px; }
-        .document-item { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
-        .document-actions { width: 100%; }
-        .document-actions .preview-btn, .document-actions .download-btn { flex-grow: 1; justify-content: center; }
-        .preview-overlay { padding: 0.5rem; }
         .submit-row2, .submit-row3 { grid-template-columns: 1fr; }
         .submit-panel > summary { padding: 18px 18px; }
         .submit-body { padding: 6px 18px 22px; }
@@ -609,10 +438,7 @@
 {% endblock %}
 
 {% block content %}
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-    <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></symbol>
-    <symbol id="i-dl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M5 21h14"/></symbol>
-</svg>
+{% include 'partials/icon_symbols.html' %}
 
 <section class="repo-head">
     <div class="repo-head-inner">
@@ -813,78 +639,10 @@
     </details>
 </div>
 
-<div class="preview-overlay" id="preview-overlay" hidden>
-    <div class="preview-dialog" role="dialog" aria-modal="true" aria-labelledby="preview-doc-title">
-        <div class="preview-header">
-            <span class="preview-doc-title" id="preview-doc-title"></span>
-            <a class="download-btn" id="preview-download" href="#" download>Download</a>
-            <button type="button" class="preview-close" id="preview-close" aria-label="Close preview">&times;</button>
-        </div>
-        <div class="preview-body" id="preview-body"></div>
-    </div>
-</div>
+{% include 'partials/preview_modal.html' %}
 {% endblock %}
 
 {% block scripts %}
-<script>
-    (function () {
-        var overlay = document.getElementById('preview-overlay');
-        var body = document.getElementById('preview-body');
-        var titleEl = document.getElementById('preview-doc-title');
-        var downloadLink = document.getElementById('preview-download');
-        var closeBtn = document.getElementById('preview-close');
-
-        function openPreview(url, kind, title) {
-            titleEl.textContent = title;
-            downloadLink.href = url;
-            body.innerHTML = '';
-
-            if (kind === 'image') {
-                var img = document.createElement('img');
-                img.src = url;
-                img.alt = title;
-                body.appendChild(img);
-            } else {
-                var frame = document.createElement('iframe');
-                frame.src = url;
-                frame.title = title;
-                body.appendChild(frame);
-            }
-
-            overlay.hidden = false;
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closePreview() {
-            overlay.hidden = true;
-            body.innerHTML = '';
-            document.body.style.overflow = '';
-        }
-
-        // Delegated so it also catches preview buttons rendered on demand.
-        document.addEventListener('click', function (event) {
-            var btn = event.target.closest('.preview-btn');
-            if (btn) {
-                openPreview(btn.dataset.url, btn.dataset.kind, btn.dataset.title);
-            }
-        });
-
-        closeBtn.addEventListener('click', closePreview);
-
-        overlay.addEventListener('click', function (event) {
-            if (event.target === overlay) {
-                closePreview();
-            }
-        });
-
-        document.addEventListener('keydown', function (event) {
-            if (event.key === 'Escape' && !overlay.hidden) {
-                closePreview();
-            }
-        });
-    })();
-</script>
-
 <script>
     // Client-side filter + search over the already-rendered archive.
     (function () {

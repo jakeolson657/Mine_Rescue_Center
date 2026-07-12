@@ -343,6 +343,182 @@
             .section-head h2 { font-size: 30px; }
         }
 
+        /* ---------- Shared: collapsible details reset ---------- */
+        details summary { cursor: pointer; list-style: none; user-select: none; }
+        details summary::-webkit-details-marker { display: none; }
+
+        .chev { flex-shrink: 0; display: inline-flex; color: var(--red); transition: transform 0.2s; }
+        details[open] > summary .chev { transform: rotate(90deg); }
+
+        .badge {
+            flex-shrink: 0;
+            font-family: var(--font-mono);
+            font-size: 11.5px;
+            color: var(--steel);
+            background: var(--surface-2);
+            border: 1px solid var(--line);
+            padding: 4px 11px;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+
+        .badge.count {
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: 10.5px;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            color: var(--red);
+            background: var(--red-tint);
+            border-color: #f0c9c5;
+        }
+
+        /* ---------- Shared: document list + preview/download rows ---------- */
+        .documents-list { display: flex; flex-direction: column; gap: 0.55rem; }
+
+        .document-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.25rem;
+            padding: 11px 14px;
+            background: var(--surface);
+            border: 1px solid var(--line-2);
+            border-radius: 8px;
+        }
+
+        .document-title {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            flex-grow: 1;
+            font-weight: 500;
+            color: var(--ink);
+            font-size: 14.5px;
+        }
+
+        .doc-chip {
+            flex: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 36px;
+            border-radius: 4px;
+            background: var(--surface-3);
+            border: 1px solid var(--line);
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 8px;
+            letter-spacing: 0.04em;
+            color: var(--red);
+        }
+
+        .document-actions { display: flex; flex-shrink: 0; gap: 0.5rem; flex-wrap: wrap; }
+
+        .download-btn, .preview-btn {
+            flex-shrink: 0;
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 9px 16px;
+            border-radius: 7px;
+            white-space: nowrap;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+        }
+
+        .download-btn { background-color: var(--red); color: var(--bg); border: 1px solid var(--red); }
+        .download-btn:hover { background-color: var(--red-dark); border-color: var(--red-dark); }
+
+        .preview-btn { background-color: var(--surface); color: var(--steel); border: 1px solid #d8d2c8; }
+        .preview-btn:hover { border-color: var(--ink); color: var(--ink); }
+
+        .no-documents { color: var(--muted); font-style: italic; font-size: 14px; }
+
+        /* ---------- Shared: preview modal ---------- */
+        .preview-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 2000;
+            background: rgba(34, 42, 51, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+
+        .preview-overlay[hidden] { display: none; }
+
+        .preview-dialog {
+            display: flex;
+            flex-direction: column;
+            width: min(1000px, 100%);
+            height: 100%;
+            max-height: 92vh;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 30px 70px -20px rgba(20, 17, 13, 0.6);
+        }
+
+        .preview-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.85rem 1.25rem;
+            background: var(--ink);
+            color: var(--bg);
+        }
+
+        .preview-header .preview-doc-title {
+            flex-grow: 1;
+            font-family: var(--font-display);
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .preview-header .download-btn {
+            background-color: var(--red);
+            color: var(--bg);
+            border-color: var(--red);
+        }
+
+        .preview-header .download-btn:hover { background-color: var(--red-dark); }
+
+        .preview-close {
+            flex-shrink: 0;
+            background: transparent;
+            border: none;
+            color: var(--bg);
+            font-size: 1.75rem;
+            line-height: 1;
+            cursor: pointer;
+            padding: 0 0.25rem;
+        }
+
+        .preview-close:hover { opacity: 0.8; }
+
+        .preview-body { flex-grow: 1; overflow: auto; background: #525659; display: flex; }
+        .preview-body iframe { flex-grow: 1; width: 100%; border: none; }
+        .preview-body img { display: block; margin: auto; max-width: 100%; max-height: 100%; object-fit: contain; }
+
+        @media (max-width: 680px) {
+            .document-item { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+            .document-actions { width: 100%; }
+            .document-actions .preview-btn, .document-actions .download-btn { flex-grow: 1; justify-content: center; }
+            .preview-overlay { padding: 0.5rem; }
+        }
+
         {% block extra_css %}{% endblock %}
     </style>
     {% block extra_head %}{% endblock %}

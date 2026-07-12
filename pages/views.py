@@ -11,6 +11,7 @@ from calendar import Calendar, month_name, monthrange
 from .models import (
     CalendarEvent, Competition, SiteConfiguration,
     PROBLEM_CATEGORIES, categorize_problem,
+    InstructionGuide, CompetitionRuleDocument, Scorecard,
 )
 from .forms import FeedbackForm, ProblemSubmissionForm
 from .calendar_export import (
@@ -122,11 +123,10 @@ def about(request):
 
 
 def training_resources(request):
-    return render(request, 'coming_soon.html', {
-        'meta_title': 'Training Resources',
-        'eyebrow': 'Mine Rescue Center',
-        'heading': 'Training Resources',
-        'lede': 'A growing library of mine rescue training material.',
+    return render(request, 'training.html', {
+        'instruction_guides': InstructionGuide.objects.all(),
+        'rule_documents': CompetitionRuleDocument.objects.all(),
+        'scorecards': Scorecard.objects.all(),
     })
 
 

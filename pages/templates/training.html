@@ -1,0 +1,378 @@
+{% extends 'base.html' %}
+
+{% block title %}Training Resources - Mine Rescue Center{% endblock %}
+
+{% block extra_css %}
+    .train-head { background: var(--ink); color: var(--bg); }
+    .train-head-inner { max-width: 1180px; margin: 0 auto; padding: 46px 40px 42px; }
+
+    .train-title { display: flex; align-items: center; gap: 18px; margin-bottom: 20px; }
+
+    .train-title .eyebrow {
+        font-family: var(--font-display);
+        font-weight: 500;
+        font-size: 11px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--red-soft);
+        margin-bottom: 3px;
+    }
+
+    .train-title h1 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 1.06;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .train-head p { margin: 6px 0 0; font-size: 16px; line-height: 1.6; color: #c2c6cc; max-width: 640px; }
+
+    .train-wrap { max-width: 1180px; margin: 0 auto; padding: 32px 40px 70px; }
+
+    /* Regulation banner */
+    .reg-banner {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        background: var(--surface);
+        border: 1px solid var(--line-2);
+        border-left: 4px solid var(--red);
+        border-radius: 12px;
+        padding: 22px 26px;
+        margin-bottom: 26px;
+        box-shadow: 0 1px 2px rgba(43, 52, 64, 0.04);
+    }
+
+    .reg-banner-text { flex-grow: 1; min-width: 240px; }
+
+    .reg-banner-eyebrow {
+        font-family: var(--font-mono);
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--red);
+        margin-bottom: 6px;
+    }
+
+    .reg-banner-text h2 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 19px;
+        letter-spacing: 0.01em;
+        color: var(--ink);
+        margin-bottom: 6px;
+        text-transform: none;
+    }
+
+    .reg-banner-text p { font-size: 14px; line-height: 1.6; color: var(--steel); margin: 0; }
+
+    .ext-btn {
+        flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-family: var(--font-display);
+        font-weight: 500;
+        font-size: 13px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--bg);
+        background: var(--red);
+        border: 1px solid var(--red);
+        padding: 12px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: background-color 0.2s, border-color 0.2s;
+    }
+
+    .ext-btn:hover { background: var(--red-dark); border-color: var(--red-dark); }
+
+    .ext-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        font-family: var(--font-display);
+        font-weight: 500;
+        font-size: 12.5px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--steel);
+        background: var(--surface);
+        border: 1px solid #d8d2c8;
+        padding: 9px 16px;
+        border-radius: 7px;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: border-color 0.15s, color 0.15s;
+    }
+
+    .ext-link:hover { border-color: var(--ink); color: var(--ink); }
+
+    /* Resource section (top-level expandable tab) */
+    .resource-section {
+        background: var(--surface);
+        border: 1px solid var(--line-2);
+        border-radius: 14px;
+        box-shadow: 0 1px 2px rgba(43, 52, 64, 0.04);
+        margin-bottom: 16px;
+        overflow: hidden;
+    }
+
+    .resource-section > summary {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 20px 24px;
+        transition: background-color 0.15s;
+    }
+
+    .resource-section > summary:hover { background-color: #faf8f3; }
+
+    .resource-head-text { display: flex; flex-direction: column; gap: 2px; flex-grow: 1; }
+
+    .resource-eyebrow {
+        font-family: var(--font-mono);
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--red);
+    }
+
+    .resource-title {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 21px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: var(--ink);
+    }
+
+    .resource-body { padding: 4px 24px 26px; }
+    .resource-intro { font-size: 14.5px; line-height: 1.6; color: var(--steel); margin-bottom: 18px; max-width: 720px; }
+
+    .resource-list { display: flex; flex-direction: column; gap: 12px; }
+
+    /* Instruction guide cards (with description) */
+    .ig-card {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        background: var(--surface-3);
+        border: 1px solid var(--line-2);
+        border-left: 4px solid var(--red);
+        border-radius: 10px;
+        padding: 16px 18px;
+    }
+
+    .ig-card-main { display: flex; align-items: flex-start; gap: 13px; }
+    .ig-card-main .doc-chip { margin-top: 1px; }
+    .ig-card-text { flex-grow: 1; }
+
+    .ig-card-title {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 15.5px;
+        letter-spacing: 0.005em;
+        color: var(--ink);
+        margin-bottom: 6px;
+    }
+
+    .ig-card-desc { font-size: 13.5px; line-height: 1.6; color: var(--steel); }
+
+    /* Nested scorecards dropdown */
+    .scorecards-drop {
+        margin-top: 20px;
+        background: var(--surface-3);
+        border: 1px solid var(--line-2);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .scorecards-drop > summary {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 15px 18px;
+        transition: background-color 0.15s;
+    }
+
+    .scorecards-drop > summary:hover { background-color: #f1ece2; }
+
+    .scorecards-drop-title {
+        flex-grow: 1;
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 15px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: var(--ink);
+    }
+
+    .scorecards-drop-body { padding: 4px 18px 18px; }
+    .scorecards-drop-note { font-size: 13px; line-height: 1.6; color: var(--steel); margin-bottom: 14px; }
+
+    @media (max-width: 680px) {
+        .train-head-inner { padding: 36px 20px 32px; }
+        .train-title h1 { font-size: 32px; }
+        .train-wrap { padding: 24px 16px 60px; }
+        .reg-banner { padding: 20px; }
+        .reg-banner-text, .ext-btn { width: 100%; }
+        .ext-btn { justify-content: center; }
+        .resource-body { padding: 4px 18px 22px; }
+        .scorecards-drop-body { padding: 4px 14px 16px; }
+    }
+{% endblock %}
+
+{% block content %}
+{% include 'partials/icon_symbols.html' %}
+
+<section class="train-head">
+    <div class="train-head-inner">
+        <div class="train-title">
+            <svg width="56" height="56" viewBox="0 0 100 100" fill="none">
+                <rect x="16" y="16" width="68" height="68" rx="9" fill="#222a33" stroke="#f4f1ec" stroke-width="4"/>
+                <rect x="16" y="16" width="68" height="20" rx="9" fill="#c0362c"/><rect x="16" y="28" width="68" height="8" fill="#c0362c"/>
+                <line x1="42" y1="26" x2="58" y2="26" stroke="#f4f1ec" stroke-width="3.4" stroke-linecap="round"/>
+                <line x1="42" y1="50" x2="58" y2="50" stroke="#f4f1ec" stroke-width="3.4" stroke-linecap="round"/>
+                <line x1="42" y1="70" x2="58" y2="70" stroke="#f4f1ec" stroke-width="3.4" stroke-linecap="round"/>
+                <line x1="16" y1="60" x2="84" y2="60" stroke="#f4f1ec" stroke-width="2"/>
+            </svg>
+            <div>
+                <div class="eyebrow">MRC · Training</div>
+                <h1>Training Resources</h1>
+            </div>
+        </div>
+        <p>Regulations, instruction guides, and competition rules for mine rescue teams — official MSHA material, indexed in one place.</p>
+    </div>
+</section>
+
+<div class="train-wrap">
+    <div class="reg-banner">
+        <div class="reg-banner-text">
+            <div class="reg-banner-eyebrow">Governing Regulation</div>
+            <h2>30 CFR Part 49 — Mine Rescue Teams</h2>
+            <p>The federal regulation that sets requirements for mine rescue teams, equipment, and training. Every guide and rule on this page operates within it.</p>
+        </div>
+        <a class="ext-btn" href="https://www.ecfr.gov/current/title-30/chapter-I/subchapter-H/part-49" target="_blank" rel="noopener">
+            <svg width="14" height="14"><use href="#i-ext"/></svg>
+            View 30 CFR Part 49
+        </a>
+    </div>
+
+    <details class="resource-section">
+        <summary>
+            <span class="chev"><svg width="15" height="15"><use href="#i-chev"/></svg></span>
+            <span class="resource-head-text">
+                <span class="resource-eyebrow">MSHA</span>
+                <span class="resource-title">Instruction Guides</span>
+            </span>
+            <span class="badge count">{{ instruction_guides|length }} guide{{ instruction_guides|length|pluralize }}</span>
+        </summary>
+        <div class="resource-body">
+            <p class="resource-intro">The official MSHA training curricula (IGs) mine rescue teams train from, from initial team formation through advanced coal and metal/nonmetal skills. Preview a guide in your browser or download it.</p>
+            <div class="resource-list">
+                {% for ig in instruction_guides %}
+                    <div class="ig-card">
+                        <div class="ig-card-main">
+                            <span class="doc-chip">PDF</span>
+                            <div class="ig-card-text">
+                                <div class="ig-card-title">{{ ig.title }}</div>
+                                <p class="ig-card-desc">{{ ig.description }}</p>
+                            </div>
+                        </div>
+                        <div class="document-actions">
+                            {% if ig.preview_kind %}
+                                <button type="button" class="preview-btn" data-url="{{ ig.file.url }}" data-kind="{{ ig.preview_kind }}" data-title="{{ ig.title }}">Preview</button>
+                            {% endif %}
+                            <a href="{{ ig.file.url }}" class="download-btn" download>
+                                <svg width="13" height="13"><use href="#i-dl"/></svg>Download
+                            </a>
+                        </div>
+                    </div>
+                {% empty %}
+                    <p class="no-documents">Instruction guides are being added — check back soon.</p>
+                {% endfor %}
+            </div>
+        </div>
+    </details>
+
+    <details class="resource-section">
+        <summary>
+            <span class="chev"><svg width="15" height="15"><use href="#i-chev"/></svg></span>
+            <span class="resource-head-text">
+                <span class="resource-eyebrow">MSHA</span>
+                <span class="resource-title">Mine Rescue Competition Rules</span>
+            </span>
+            <span class="badge count">{{ rule_documents|length }} document{{ rule_documents|length|pluralize }}</span>
+        </summary>
+        <div class="resource-body">
+            <p class="resource-intro">
+                The current Unified Mine Rescue Rules governing MSHA-sanctioned competitions, by event section, plus the rules Q&amp;A.
+                <a class="ext-link" href="https://www.msha.gov/training/mine-rescue-training/mine-rescue-contests/2026-unified-mine-rescue-rules-and" target="_blank" rel="noopener" style="margin-left: 10px;">
+                    <svg width="12" height="12"><use href="#i-ext"/></svg>
+                    Official MSHA rules page
+                </a>
+            </p>
+            <div class="documents-list">
+                {% for doc in rule_documents %}
+                    <div class="document-item">
+                        <span class="document-title"><span class="doc-chip">PDF</span>{{ doc.title }}</span>
+                        <div class="document-actions">
+                            {% if doc.preview_kind %}
+                                <button type="button" class="preview-btn" data-url="{{ doc.file.url }}" data-kind="{{ doc.preview_kind }}" data-title="{{ doc.title }}">Preview</button>
+                            {% endif %}
+                            <a href="{{ doc.file.url }}" class="download-btn" download>
+                                <svg width="13" height="13"><use href="#i-dl"/></svg>Download
+                            </a>
+                        </div>
+                    </div>
+                {% empty %}
+                    <p class="no-documents">Rules documents are being added — check back soon.</p>
+                {% endfor %}
+            </div>
+
+            <details class="scorecards-drop">
+                <summary>
+                    <span class="chev"><svg width="14" height="14"><use href="#i-chev"/></svg></span>
+                    <span class="scorecards-drop-title">Scorecards</span>
+                    <span class="badge count">{{ scorecards|length }} card{{ scorecards|length|pluralize }}</span>
+                </summary>
+                <div class="scorecards-drop-body">
+                    <p class="scorecards-drop-note">Each scorecard is available as a fillable PDF (for filling out on a device) and a non-fillable PDF (for printing).</p>
+                    <div class="documents-list">
+                        {% for card in scorecards %}
+                            <div class="document-item">
+                                <span class="document-title"><span class="doc-chip">PDF</span>{{ card.title }}</span>
+                                <div class="document-actions">
+                                    {% if card.preview_kind %}
+                                        <button type="button" class="preview-btn" data-url="{{ card.preview_file.url }}" data-kind="{{ card.preview_kind }}" data-title="{{ card.title }}">Preview</button>
+                                    {% endif %}
+                                    {% if card.fillable_file %}
+                                        <a href="{{ card.fillable_file.url }}" class="download-btn" download>
+                                            <svg width="13" height="13"><use href="#i-dl"/></svg>Fillable
+                                        </a>
+                                    {% endif %}
+                                    {% if card.non_fillable_file %}
+                                        <a href="{{ card.non_fillable_file.url }}" class="download-btn" download>
+                                            <svg width="13" height="13"><use href="#i-dl"/></svg>Non-Fillable
+                                        </a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% empty %}
+                            <p class="no-documents">Scorecards are being added — check back soon.</p>
+                        {% endfor %}
+                    </div>
+                </div>
+            </details>
+        </div>
+    </details>
+</div>
+
+{% include 'partials/preview_modal.html' %}
+{% endblock %}

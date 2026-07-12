@@ -299,6 +299,17 @@ PREVIEW_IMAGE_EXTENSIONS = {'.png', '.jpg', '.jpeg', '.gif', '.webp', '.svg'}
 PREVIEW_FRAME_EXTENSIONS = {'.pdf', '.txt'}
 
 
+def preview_kind_for(filename):
+    """'image', 'frame' (PDF/text rendered in an iframe), or '' when the
+    browser can't display the file type inline."""
+    ext = os.path.splitext(filename)[1].lower()
+    if ext in PREVIEW_IMAGE_EXTENSIONS:
+        return 'image'
+    if ext in PREVIEW_FRAME_EXTENSIONS:
+        return 'frame'
+    return ''
+
+
 class ProblemDocument(models.Model):
     problem = models.ForeignKey(CompetitionProblem, on_delete=models.CASCADE, related_name='documents')
     title = models.CharField(max_length=255, help_text="Document type or name, e.g. Problem, Layout, Vent Plan 1")
@@ -318,20 +329,107 @@ class ProblemDocument(models.Model):
 
     @property
     def preview_kind(self):
-        """'image', 'frame' (PDF/text rendered in an iframe), or '' when the
-        browser can't display the file type inline."""
-        ext = os.path.splitext(self.file.name)[1].lower()
-        if ext in PREVIEW_IMAGE_EXTENSIONS:
-            return 'image'
-        if ext in PREVIEW_FRAME_EXTENSIONS:
-            return 'frame'
-        return ''
+        return preview_kind_for(self.file.name)
 
 
 @receiver(post_delete, sender=ProblemDocument)
 def delete_file_on_document_delete(sender, instance, **kwargs):
     if instance.file:
         instance.file.delete(save=False)
+
+
+class InstructionGuide(models.Model):
+    """MSHA mine rescue instruction guides (IGs) — training curricula, e.g.
+    IG 115 or MSHA 3026."""
+    title = models.CharField(max_length=255, help_text="e.g. Unified Mine Rescue Training (Advanced) — IG 115")
+    description = models.TextField(help_text="What this guide covers and who it's for")
+    file = models.FileField(upload_to='training/igs/')
+    sort_order = models.PositiveIntegerField(default=0, help_text="Guides are listed lowest number first")
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['sort_order', 'title']
+
+    def __str__(self):
+        return self.title
+
+    @property
+    def filename(self):
+        return os.path.basename(self.file.name)
+
+    @property
+    def preview_kind(self):
+        return preview_kind_for(self.file.name)
+
+
+@receiver(post_delete, sender=InstructionGuide)
+def delete_file_on_instruction_guide_delete(sender, instance, **kwargs):
+    if instance.file:
+        instance.file.delete(save=False)
+
+
+class CompetitionRuleDocument(models.Model):
+    """MSHA unified mine rescue competition rules — one row per rule section
+    or supporting document (Q&A, preshift record report, etc.)."""
+    title = models.CharField(max_length=255, help_text="e.g. Section I: Coal Mine Rescue Rules")
+    file = models.FileField(upload_to='training/rules/')
+    sort_order = models.PositiveIntegerField(default=0, help_text="Documents are listed lowest number first")
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['sort_order', 'title']
+
+    def __str__(self):
+        return self.title
+
+    @property
+    def filename(self):
+        return os.path.basename(self.file.name)
+
+    @property
+    def preview_kind(self):
+        return preview_kind_for(self.file.name)
+
+
+@receiver(post_delete, sender=CompetitionRuleDocument)
+def delete_file_on_rule_document_delete(sender, instance, **kwargs):
+    if instance.file:
+        instance.file.delete(save=False)
+
+
+class Scorecard(models.Model):
+    """A single MSHA competition scorecard, offered as a fillable PDF (for
+    filling out on a device) and/or a non-fillable PDF (for printing)."""
+    title = models.CharField(max_length=255, help_text="e.g. A Card - Map")
+    fillable_file = models.FileField(upload_to='training/scorecards/', blank=True)
+    non_fillable_file = models.FileField(upload_to='training/scorecards/', blank=True)
+    sort_order = models.PositiveIntegerField(default=0, help_text="Scorecards are listed lowest number first")
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['sort_order', 'title']
+
+    def __str__(self):
+        return self.title
+
+    @property
+    def preview_file(self):
+        """Prefer the non-fillable version for on-screen preview; fall back
+        to the fillable one if that's all there is."""
+        return self.non_fillable_file or self.fillable_file
+
+    @property
+    def preview_kind(self):
+        f = self.preview_file
+        return preview_kind_for(f.name) if f else ''
+
+
+@receiver(post_delete, sender=Scorecard)
+def delete_files_on_scorecard_delete(sender, instance, **kwargs):
+    if instance.fillable_file:
+        instance.fillable_file.delete(save=False)
+    if instance.non_fillable_file:
+        instance.non_fillable_file.delete(save=False)
 
 
 @receiver(post_save, sender=CalendarEvent)

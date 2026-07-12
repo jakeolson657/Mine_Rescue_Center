@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import (
     CalendarEvent, Competition, CompetitionProblem, ProblemDocument,
-    SiteConfiguration,
+    SiteConfiguration, InstructionGuide, CompetitionRuleDocument, Scorecard,
 )
 
 admin.site.site_header = "Mine Rescue Center Administration"
@@ -70,3 +70,24 @@ class CompetitionProblemAdmin(admin.ModelAdmin):
     search_fields = ('title', 'competition__name', 'description')
     ordering = ('competition', 'sort_order', 'title')
     inlines = [ProblemDocumentInline]
+
+
+@admin.register(InstructionGuide)
+class InstructionGuideAdmin(admin.ModelAdmin):
+    list_display = ('title', 'sort_order', 'updated_at')
+    search_fields = ('title', 'description')
+    ordering = ('sort_order', 'title')
+
+
+@admin.register(CompetitionRuleDocument)
+class CompetitionRuleDocumentAdmin(admin.ModelAdmin):
+    list_display = ('title', 'sort_order', 'updated_at')
+    search_fields = ('title',)
+    ordering = ('sort_order', 'title')
+
+
+@admin.register(Scorecard)
+class ScorecardAdmin(admin.ModelAdmin):
+    list_display = ('title', 'sort_order', 'updated_at')
+    search_fields = ('title',)
+    ordering = ('sort_order', 'title')

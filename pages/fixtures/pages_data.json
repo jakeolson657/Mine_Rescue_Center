@@ -34941,5 +34941,402 @@
     "sort_order": 70,
     "uploaded_at": "2026-06-25T02:11:01.715Z"
   }
+},
+{
+  "model": "pages.instructionguide",
+  "pk": 1,
+  "fields": {
+    "title": "Unified Mine Rescue Training (Advanced): Underground Coal and Metal/Nonmetal Mines — IG 115",
+    "description": "The primary advanced-level curriculum for underground coal and metal/nonmetal mine rescue teams. Covers team organization, exploration and recovery procedures, ventilation control, and firefighting — the core reference most active teams train from.",
+    "file": "training/igs/ig-115-unified-mine-rescue-training-advanced.pdf",
+    "sort_order": 1,
+    "updated_at": "2026-07-12T04:32:03.479Z"
+  }
+},
+{
+  "model": "pages.instructionguide",
+  "pk": 2,
+  "fields": {
+    "title": "Unified Mine Rescue Training (Advanced) Appendix — Visuals Only",
+    "description": "Companion visuals book for IG 115 — the diagrams, maps, and illustrations referenced throughout the advanced training guide, without the accompanying text.",
+    "file": "training/igs/ig-115-appendix-visuals.pdf",
+    "sort_order": 2,
+    "updated_at": "2026-07-12T04:32:03.488Z"
+  }
+},
+{
+  "model": "pages.instructionguide",
+  "pk": 3,
+  "fields": {
+    "title": "Initial Mine Rescue Team Training: Coal and Metal/Nonmetal Mines — MSHA 3026 (formerly IG 5)",
+    "description": "The starting point for a newly formed mine rescue team, coal or metal/nonmetal. Introduces basic team roles, breathing apparatus, and fundamental rescue procedures before moving on to IG 115.",
+    "file": "training/igs/msha-3026-initial-mine-rescue-team-training.pdf",
+    "sort_order": 3,
+    "updated_at": "2026-07-12T04:32:03.494Z"
+  }
+},
+{
+  "model": "pages.instructionguide",
+  "pk": 4,
+  "fields": {
+    "title": "Mine Rescue Team Training: Metal and Nonmetal Mines — MSHA 3027 (formerly IG 6)",
+    "description": "Metal/nonmetal-specific team training, covering procedures and hazards unique to MNM mines that aren't addressed in the coal-focused guides.",
+    "file": "training/igs/msha-3027-mine-rescue-team-training-mnm.pdf",
+    "sort_order": 4,
+    "updated_at": "2026-07-12T04:32:03.500Z"
+  }
+},
+{
+  "model": "pages.instructionguide",
+  "pk": 5,
+  "fields": {
+    "title": "Advanced Mine Rescue Training: Coal Mines — IG 7",
+    "description": "Advanced coal-mine-specific rescue training, building on the initial guide with more complex exploration, ventilation, and recovery scenarios found in coal mines.",
+    "file": "training/igs/ig-7-advanced-mine-rescue-training-coal.pdf",
+    "sort_order": 5,
+    "updated_at": "2026-07-12T04:32:03.505Z"
+  }
+},
+{
+  "model": "pages.instructionguide",
+  "pk": 6,
+  "fields": {
+    "title": "Advanced Skills Training (AST): Activities for Coal Mine Rescue Teams — IG 7a",
+    "description": "A set of hands-on practice activities and drills for coal mine rescue teams to sharpen the skills covered in IG 7 — useful for regular team practice sessions.",
+    "file": "training/igs/ig-7a-advanced-skills-training-coal.pdf",
+    "sort_order": 6,
+    "updated_at": "2026-07-12T04:32:03.509Z"
+  }
+},
+{
+  "model": "pages.instructionguide",
+  "pk": 7,
+  "fields": {
+    "title": "Responding to a Mine Emergency: Training Responsible Persons at Underground Coal Mines — IG 110",
+    "description": "Training aimed at the responsible persons who must recognize and respond to a mine emergency at an underground coal mine before the rescue team arrives — not the rescue team itself.",
+    "file": "training/igs/ig-110-responding-to-a-mine-emergency.pdf",
+    "sort_order": 7,
+    "updated_at": "2026-07-12T04:32:03.514Z"
+  }
+},
+{
+  "model": "pages.competitionruledocument",
+  "pk": 1,
+  "fields": {
+    "title": "Rules Questions & Answers",
+    "file": "training/rules/2026-rules-questions-and-answers.pdf",
+    "sort_order": 1,
+    "updated_at": "2026-07-12T04:32:03.522Z"
+  }
+},
+{
+  "model": "pages.competitionruledocument",
+  "pk": 2,
+  "fields": {
+    "title": "Section I: Coal Mine Rescue Rules",
+    "file": "training/rules/section-1-coal-mine-rescue-rules.pdf",
+    "sort_order": 2,
+    "updated_at": "2026-07-12T04:32:03.527Z"
+  }
+},
+{
+  "model": "pages.competitionruledocument",
+  "pk": 3,
+  "fields": {
+    "title": "Section II: Metal and Nonmetal Mine Rescue Rules",
+    "file": "training/rules/section-2-mnm-mine-rescue-rules.pdf",
+    "sort_order": 3,
+    "updated_at": "2026-07-12T04:32:03.531Z"
+  }
+},
+{
+  "model": "pages.competitionruledocument",
+  "pk": 4,
+  "fields": {
+    "title": "Section III: First Aid Rules",
+    "file": "training/rules/section-3-first-aid-rules.pdf",
+    "sort_order": 4,
+    "updated_at": "2026-07-12T04:32:03.537Z"
+  }
+},
+{
+  "model": "pages.competitionruledocument",
+  "pk": 5,
+  "fields": {
+    "title": "Section IV: Bio 240-R Bench Rules",
+    "file": "training/rules/section-4-bio-240r-bench-rules.pdf",
+    "sort_order": 5,
+    "updated_at": "2026-07-12T04:32:03.542Z"
+  }
+},
+{
+  "model": "pages.competitionruledocument",
+  "pk": 6,
+  "fields": {
+    "title": "Section V: BG-4 Bench Rules",
+    "file": "training/rules/section-5-bg-4-bench-rules.pdf",
+    "sort_order": 6,
+    "updated_at": "2026-07-12T04:32:03.546Z"
+  }
+},
+{
+  "model": "pages.competitionruledocument",
+  "pk": 7,
+  "fields": {
+    "title": "Section VI: BG ProAir Oxygen Dosage Bench Rules",
+    "file": "training/rules/section-6-bg-proair-oxygen-dosage-bench-rules.pdf",
+    "sort_order": 7,
+    "updated_at": "2026-07-12T04:32:03.552Z"
+  }
+},
+{
+  "model": "pages.competitionruledocument",
+  "pk": 8,
+  "fields": {
+    "title": "Section VII: Preshift Rules",
+    "file": "training/rules/section-7-preshift-rules.pdf",
+    "sort_order": 8,
+    "updated_at": "2026-07-12T04:32:03.558Z"
+  }
+},
+{
+  "model": "pages.competitionruledocument",
+  "pk": 9,
+  "fields": {
+    "title": "Preshift Record Report (Blank)",
+    "file": "training/rules/preshift-record-report-blank.pdf",
+    "sort_order": 9,
+    "updated_at": "2026-07-12T04:32:03.561Z"
+  }
+},
+{
+  "model": "pages.competitionruledocument",
+  "pk": 10,
+  "fields": {
+    "title": "Section VIII: Technician Team Rules",
+    "file": "training/rules/section-8-technician-team-rules.pdf",
+    "sort_order": 10,
+    "updated_at": "2026-07-12T04:32:03.567Z"
+  }
+},
+{
+  "model": "pages.scorecard",
+  "pk": 1,
+  "fields": {
+    "title": "A Card – Map",
+    "fillable_file": "training/scorecards/a-card-map-fillable.pdf",
+    "non_fillable_file": "training/scorecards/a-card-map-nonfillable.pdf",
+    "sort_order": 1,
+    "updated_at": "2026-07-12T04:32:03.573Z"
+  }
+},
+{
+  "model": "pages.scorecard",
+  "pk": 2,
+  "fields": {
+    "title": "A Card – Time",
+    "fillable_file": "training/scorecards/a-card-time-fillable.pdf",
+    "non_fillable_file": "training/scorecards/a-card-time-nonfillable.pdf",
+    "sort_order": 2,
+    "updated_at": "2026-07-12T04:32:03.577Z"
+  }
+},
+{
+  "model": "pages.scorecard",
+  "pk": 3,
+  "fields": {
+    "title": "A Card – Written Exam",
+    "fillable_file": "training/scorecards/a-card-written-exam-fillable.pdf",
+    "non_fillable_file": "training/scorecards/a-card-written-exam-nonfillable.pdf",
+    "sort_order": 3,
+    "updated_at": "2026-07-12T04:32:03.583Z"
+  }
+},
+{
+  "model": "pages.scorecard",
+  "pk": 4,
+  "fields": {
+    "title": "B Card Disc",
+    "fillable_file": "training/scorecards/b-card-disc-fillable.pdf",
+    "non_fillable_file": "training/scorecards/b-card-disc-nonfillable.pdf",
+    "sort_order": 4,
+    "updated_at": "2026-07-12T04:32:03.589Z"
+  }
+},
+{
+  "model": "pages.scorecard",
+  "pk": 5,
+  "fields": {
+    "title": "Bench 240-R Card",
+    "fillable_file": "training/scorecards/bench-240r-card-fillable.pdf",
+    "non_fillable_file": "training/scorecards/bench-240r-card-nonfillable.pdf",
+    "sort_order": 5,
+    "updated_at": "2026-07-12T04:32:03.598Z"
+  }
+},
+{
+  "model": "pages.scorecard",
+  "pk": 6,
+  "fields": {
+    "title": "Bench BG-4 Disc Card",
+    "fillable_file": "training/scorecards/bench-bg-4-disc-card-fillable.pdf",
+    "non_fillable_file": "training/scorecards/bench-bg-4-disc-card-nonfillable.pdf",
+    "sort_order": 6,
+    "updated_at": "2026-07-12T04:32:03.604Z"
+  }
+},
+{
+  "model": "pages.scorecard",
+  "pk": 7,
+  "fields": {
+    "title": "Bench BG ProAir Disc Card",
+    "fillable_file": "training/scorecards/bench-bg-proair-disc-card-fillable.pdf",
+    "non_fillable_file": "training/scorecards/bench-bg-proair-disc-card-nonfillable.pdf",
+    "sort_order": 7,
+    "updated_at": "2026-07-12T04:32:03.610Z"
+  }
+},
+{
+  "model": "pages.scorecard",
+  "pk": 8,
+  "fields": {
+    "title": "FA Card A",
+    "fillable_file": "training/scorecards/fa-card-a-fillable.pdf",
+    "non_fillable_file": "training/scorecards/fa-card-a-nonfillable.pdf",
+    "sort_order": 8,
+    "updated_at": "2026-07-12T04:32:03.615Z"
+  }
+},
+{
+  "model": "pages.scorecard",
+  "pk": 9,
+  "fields": {
+    "title": "FA Card B",
+    "fillable_file": "training/scorecards/fa-card-b-fillable.pdf",
+    "non_fillable_file": "training/scorecards/fa-card-b-nonfillable.pdf",
+    "sort_order": 9,
+    "updated_at": "2026-07-12T04:32:03.620Z"
+  }
+},
+{
+  "model": "pages.scorecard",
+  "pk": 10,
+  "fields": {
+    "title": "MR Map Disc Summary Sheet",
+    "fillable_file": "training/scorecards/mr-map-disc-summary-sheet-fillable.pdf",
+    "non_fillable_file": "training/scorecards/mr-map-disc-summary-sheet-nonfillable.pdf",
+    "sort_order": 10,
+    "updated_at": "2026-07-12T04:32:03.625Z"
+  }
+},
+{
+  "model": "pages.scorecard",
+  "pk": 11,
+  "fields": {
+    "title": "MR Surface Disc Judge 1",
+    "fillable_file": "training/scorecards/mr-surface-disc-judge-1-fillable.pdf",
+    "non_fillable_file": "training/scorecards/mr-surface-disc-judge-1-nonfillable.pdf",
+    "sort_order": 11,
+    "updated_at": "2026-07-12T04:32:03.631Z"
+  }
+},
+{
+  "model": "pages.scorecard",
+  "pk": 12,
+  "fields": {
+    "title": "MR Surface Disc Judge 2",
+    "fillable_file": "training/scorecards/mr-surface-disc-judge-2-fillable.pdf",
+    "non_fillable_file": "training/scorecards/mr-surface-disc-judge-2-nonfillable.pdf",
+    "sort_order": 12,
+    "updated_at": "2026-07-12T04:32:03.636Z"
+  }
+},
+{
+  "model": "pages.scorecard",
+  "pk": 13,
+  "fields": {
+    "title": "MR Team Disc Summary Sheet",
+    "fillable_file": "training/scorecards/mr-team-disc-summary-sheet-fillable.pdf",
+    "non_fillable_file": "training/scorecards/mr-team-disc-summary-sheet-nonfillable.pdf",
+    "sort_order": 13,
+    "updated_at": "2026-07-12T04:32:03.640Z"
+  }
+},
+{
+  "model": "pages.scorecard",
+  "pk": 14,
+  "fields": {
+    "title": "MR Time Disc Summary Sheet",
+    "fillable_file": "training/scorecards/mr-time-disc-summary-sheet-fillable.pdf",
+    "non_fillable_file": "training/scorecards/mr-time-disc-summary-sheet-nonfillable.pdf",
+    "sort_order": 14,
+    "updated_at": "2026-07-12T04:32:03.644Z"
+  }
+},
+{
+  "model": "pages.scorecard",
+  "pk": 15,
+  "fields": {
+    "title": "MR Underground Disc Judge 1",
+    "fillable_file": "training/scorecards/mr-underground-disc-judge-1-fillable.pdf",
+    "non_fillable_file": "training/scorecards/mr-underground-disc-judge-1-nonfillable.pdf",
+    "sort_order": 15,
+    "updated_at": "2026-07-12T04:32:03.650Z"
+  }
+},
+{
+  "model": "pages.scorecard",
+  "pk": 16,
+  "fields": {
+    "title": "MR Underground Disc Judge 2",
+    "fillable_file": "training/scorecards/mr-underground-disc-judge-2-fillable.pdf",
+    "non_fillable_file": "training/scorecards/mr-underground-disc-judge-2-nonfillable.pdf",
+    "sort_order": 16,
+    "updated_at": "2026-07-12T04:32:03.654Z"
+  }
+},
+{
+  "model": "pages.scorecard",
+  "pk": 17,
+  "fields": {
+    "title": "MR Written Exam Disc Summary Sheet",
+    "fillable_file": "training/scorecards/mr-written-exam-disc-summary-sheet-fillable.pdf",
+    "non_fillable_file": "training/scorecards/mr-written-exam-disc-summary-sheet-nonfillable.pdf",
+    "sort_order": 17,
+    "updated_at": "2026-07-12T04:32:03.659Z"
+  }
+},
+{
+  "model": "pages.scorecard",
+  "pk": 18,
+  "fields": {
+    "title": "Preshift A Card – Field",
+    "fillable_file": "training/scorecards/preshift-a-card-field-fillable.pdf",
+    "non_fillable_file": "training/scorecards/preshift-a-card-field-nonfillable.pdf",
+    "sort_order": 18,
+    "updated_at": "2026-07-12T04:32:03.663Z"
+  }
+},
+{
+  "model": "pages.scorecard",
+  "pk": 19,
+  "fields": {
+    "title": "Preshift B Card – Record",
+    "fillable_file": "training/scorecards/preshift-b-card-record-fillable.pdf",
+    "non_fillable_file": "training/scorecards/preshift-b-card-record-nonfillable.pdf",
+    "sort_order": 19,
+    "updated_at": "2026-07-12T04:32:03.668Z"
+  }
+},
+{
+  "model": "pages.scorecard",
+  "pk": 20,
+  "fields": {
+    "title": "Technician Team Scorecard",
+    "fillable_file": "training/scorecards/technician-team-scorecard-fillable.pdf",
+    "non_fillable_file": "training/scorecards/technician-team-scorecard-nonfillable.pdf",
+    "sort_order": 20,
+    "updated_at": "2026-07-12T04:32:03.672Z"
+  }
 }
 ]

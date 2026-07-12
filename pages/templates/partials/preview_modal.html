@@ -1,0 +1,70 @@
+{# Shared document preview modal — trigger with a button class="preview-btn" data-url/data-kind/data-title (kind is 'image' or 'frame'). #}
+<div class="preview-overlay" id="preview-overlay" hidden>
+    <div class="preview-dialog" role="dialog" aria-modal="true" aria-labelledby="preview-doc-title">
+        <div class="preview-header">
+            <span class="preview-doc-title" id="preview-doc-title"></span>
+            <a class="download-btn" id="preview-download" href="#" download>Download</a>
+            <button type="button" class="preview-close" id="preview-close" aria-label="Close preview">&times;</button>
+        </div>
+        <div class="preview-body" id="preview-body"></div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        var overlay = document.getElementById('preview-overlay');
+        var body = document.getElementById('preview-body');
+        var titleEl = document.getElementById('preview-doc-title');
+        var downloadLink = document.getElementById('preview-download');
+        var closeBtn = document.getElementById('preview-close');
+
+        function openPreview(url, kind, title) {
+            titleEl.textContent = title;
+            downloadLink.href = url;
+            body.innerHTML = '';
+
+            if (kind === 'image') {
+                var img = document.createElement('img');
+                img.src = url;
+                img.alt = title;
+                body.appendChild(img);
+            } else {
+                var frame = document.createElement('iframe');
+                frame.src = url;
+                frame.title = title;
+                body.appendChild(frame);
+            }
+
+            overlay.hidden = false;
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePreview() {
+            overlay.hidden = true;
+            body.innerHTML = '';
+            document.body.style.overflow = '';
+        }
+
+        // Delegated so it also catches preview buttons rendered on demand.
+        document.addEventListener('click', function (event) {
+            var btn = event.target.closest('.preview-btn');
+            if (btn) {
+                openPreview(btn.dataset.url, btn.dataset.kind, btn.dataset.title);
+            }
+        });
+
+        closeBtn.addEventListener('click', closePreview);
+
+        overlay.addEventListener('click', function (event) {
+            if (event.target === overlay) {
+                closePreview();
+            }
+        });
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape' && !overlay.hidden) {
+                closePreview();
+            }
+        });
+    })();
+</script>
