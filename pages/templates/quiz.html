@@ -79,6 +79,16 @@
         width: 0%;
     }
 
+    /* Question + choices sit in a fixed-height block (sized by JS to the
+       tallest question) so the nav and jumplist below never shift between
+       questions. Content is centered within the reserved space. */
+    .quiz-qblock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 28px;
+    }
+
     /* Question */
     .quiz-question {
         font-family: var(--font-display);
@@ -89,7 +99,7 @@
         margin-bottom: 22px;
     }
 
-    .quiz-choices { display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
+    .quiz-choices { display: flex; flex-direction: column; gap: 10px; }
 
     .quiz-choice {
         display: flex;
@@ -278,8 +288,10 @@
                 </div>
                 <div class="quiz-progress-track"><div class="quiz-progress-fill" id="quiz-progress-fill"></div></div>
 
-                <div class="quiz-question" id="quiz-question-text"></div>
-                <div class="quiz-choices" id="quiz-choices"></div>
+                <div class="quiz-qblock" id="quiz-qblock">
+                    <div class="quiz-question" id="quiz-question-text"></div>
+                    <div class="quiz-choices" id="quiz-choices"></div>
+                </div>
 
                 <div class="quiz-nav">
                     <button type="button" class="quiz-nav-btn prev" id="quiz-prev-btn">&larr; Previous</button>
@@ -382,9 +394,27 @@
         }
 
         function goTo(i) {
+            // Swap in place — the question block is a fixed height, so nothing
+            // below moves and the question stays put on screen. No scrolling.
             current = i;
             renderQuestion();
-            questionPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Reserve the height of the tallest question so the block never grows or
+        // shrinks between questions. Re-run on resize since wrapping changes.
+        var qblock = document.getElementById('quiz-qblock');
+        function reserveQBlockHeight() {
+            var saved = current;
+            qblock.style.minHeight = '';
+            var max = 0;
+            for (var i = 0; i < questions.length; i++) {
+                current = i;
+                renderQuestion();
+                if (qblock.offsetHeight > max) max = qblock.offsetHeight;
+            }
+            current = saved;
+            qblock.style.minHeight = max + 'px';
+            renderQuestion();
         }
 
         function showResults() {
@@ -460,7 +490,13 @@
             questionPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
 
-        renderQuestion();
+        var resizeTimer;
+        window.addEventListener('resize', function () {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(reserveQBlockHeight, 150);
+        });
+
+        reserveQBlockHeight();
     })();
 </script>
 {% endblock %}
