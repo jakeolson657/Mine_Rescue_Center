@@ -37165,5 +37165,1403 @@
     "sort_order": 20,
     "updated_at": "2026-07-12T04:32:03.672Z"
   }
+},
+{
+  "model": "pages.quiz",
+  "pk": 1,
+  "fields": {
+    "problem": 108,
+    "title": "Day 1 Mine Rescue Written Test",
+    "source_document": 456,
+    "sort_order": 0,
+    "created_at": "2026-07-12T22:25:05.237Z"
+  }
+},
+{
+  "model": "pages.quiz",
+  "pk": 2,
+  "fields": {
+    "problem": 108,
+    "title": "Day 2 Mine Rescue Written Test",
+    "source_document": 460,
+    "sort_order": 0,
+    "created_at": "2026-07-12T22:25:05.404Z"
+  }
+},
+{
+  "model": "pages.quiz",
+  "pk": 3,
+  "fields": {
+    "problem": 108,
+    "title": "First Aid Written Test",
+    "source_document": 452,
+    "sort_order": 0,
+    "created_at": "2026-07-12T22:25:05.684Z"
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 36,
+  "fields": {
+    "quiz": 1,
+    "text": "Once _________, survivors should never be left alone.",
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 37,
+  "fields": {
+    "quiz": 1,
+    "text": "________, dry air at sea level is made up of 78 percent nitrogen and 21 percent oxygen.",
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 38,
+  "fields": {
+    "quiz": 1,
+    "text": "It is generally recommended that teams not ________  __________ foam filled areas.",
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 39,
+  "fields": {
+    "quiz": 1,
+    "text": "A self-contained breathing apparatus is a completely __________ unit that supplies oxygen or air independently of the surrounding atmosphere.",
+    "sort_order": 3
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 40,
+  "fields": {
+    "quiz": 1,
+    "text": "If a team member must return to the fresh air base because of a problem, it is standard practice among teams for the entire team to go back with that _________.",
+    "sort_order": 4
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 41,
+  "fields": {
+    "quiz": 1,
+    "text": "When survivors are located, their location, ___________ and condition should be reported immediately to the command center.",
+    "sort_order": 5
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 42,
+  "fields": {
+    "quiz": 1,
+    "text": "When looking for survivors, it is ___________ to both look and listen for clues.",
+    "sort_order": 6
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 43,
+  "fields": {
+    "quiz": 1,
+    "text": "___________ time should be allowed for a fire area to cool before it is unsealed.",
+    "sort_order": 7
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 44,
+  "fields": {
+    "quiz": 1,
+    "text": "___________ is lighter than air.",
+    "sort_order": 8
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 45,
+  "fields": {
+    "quiz": 1,
+    "text": "__________ air has a specific gravity of one.",
+    "sort_order": 9
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 46,
+  "fields": {
+    "quiz": 2,
+    "text": "If the fresh air base is _______, it should be located where it’s assured a fresh air travelway to the surface.",
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 47,
+  "fields": {
+    "quiz": 2,
+    "text": "________ is a mixture of methane in air that will burn or explode when ignited.",
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 48,
+  "fields": {
+    "quiz": 2,
+    "text": "Asphyxiates are gases which cause suffocation or ________.",
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 49,
+  "fields": {
+    "quiz": 2,
+    "text": "The effects of toxic gases depend on the _________, toxicity, and exposure time.",
+    "sort_order": 3
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 50,
+  "fields": {
+    "quiz": 2,
+    "text": "If a ______ member must return to the fresh air base because of a problem, it is standard practice among teams for the entire team to go back with that person.",
+    "sort_order": 4
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 51,
+  "fields": {
+    "quiz": 2,
+    "text": "________ with specific gravities greater than 1.0 tend to seek low places.",
+    "sort_order": 5
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 52,
+  "fields": {
+    "quiz": 2,
+    "text": "__________ should be tested before use following a disaster.",
+    "sort_order": 6
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 53,
+  "fields": {
+    "quiz": 2,
+    "text": "Only detectors and chemical analysis can __________ identify a gas.",
+    "sort_order": 7
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 54,
+  "fields": {
+    "quiz": 2,
+    "text": "Sulfur dioxide and hydrogen sulfide are ________  _______ gases.",
+    "sort_order": 8
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 55,
+  "fields": {
+    "quiz": 2,
+    "text": "The basic principle of mine ventilation is that air always moves from high to low pressure _______.",
+    "sort_order": 9
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 56,
+  "fields": {
+    "quiz": 3,
+    "text": "Respiratory arrest is when a life-threatening emergency that occurs when _____ ______stops or when breathing is ineffective, if untreated, it will lead to cardiac arrest, or it can occur at the same time as cardiac arrest.",
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 57,
+  "fields": {
+    "quiz": 3,
+    "text": "_____ _____is described as when the chest re-expands and comes back up to its normal position after a chest compression.",
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 58,
+  "fields": {
+    "quiz": 3,
+    "text": "Shock is a life-threatening condition that occurs when the circulatory system can’t maintain adequate______ _____.",
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 59,
+  "fields": {
+    "quiz": 3,
+    "text": "Give each _______thrust with the intervention of relieving the obstruction, it may be necessary to repeat the thrust several times to clear the airway.",
+    "sort_order": 3
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 60,
+  "fields": {
+    "quiz": 3,
+    "text": "_____ _____may cause a range of signs from mild to severe airway obstruction.",
+    "sort_order": 4
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 61,
+  "fields": {
+    "quiz": 3,
+    "text": "______ _____is an important tool for identifying whether opioids may be involved in a life-threatening emergency.",
+    "sort_order": 5
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 62,
+  "fields": {
+    "quiz": 3,
+    "text": "Too much _____ in the body can overwhelm the brain and depress the natural drive to breathe, this respiratory depression can result in respiratory arrest and cardiac arrest.",
+    "sort_order": 6
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 63,
+  "fields": {
+    "quiz": 3,
+    "text": "Whether you are a team member or the Team Leader, there may be times when you need to point out another team member’s________ or inappropriate actions.",
+    "sort_order": 7
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 64,
+  "fields": {
+    "quiz": 3,
+    "text": "A successful resuscitation attempt depends on high-quality resuscitation skills, good communication, and effective team _____.",
+    "sort_order": 8
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 65,
+  "fields": {
+    "quiz": 3,
+    "text": "The preferred method for opening the airway when you suspect an unresponsive victim has head or neck trauma, is____ ____.",
+    "sort_order": 9
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 66,
+  "fields": {
+    "quiz": 3,
+    "text": "When more rescuers arrive on scene you should assign tasks to other rescuers and rotate compressors every ___ -minutes or more frequently if needed to avoid fatigue.",
+    "sort_order": 10
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 67,
+  "fields": {
+    "quiz": 3,
+    "text": "A rate of ____ to ____compressions per minute and a depth of at least 2 inches are the rate and depth for chest compressions on an adult.",
+    "sort_order": 11
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 68,
+  "fields": {
+    "quiz": 3,
+    "text": "In the START triage system, patients are categorized based on an assessment of respirations, _______, and mental status.",
+    "sort_order": 12
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 69,
+  "fields": {
+    "quiz": 3,
+    "text": "An incident __________system is a tool for the command, control, and coordination of resources at the scene of a large-scale emergency involving multiple agencies.",
+    "sort_order": 13
+  }
+},
+{
+  "model": "pages.quizquestion",
+  "pk": 70,
+  "fields": {
+    "quiz": 3,
+    "text": "The most appropriate care for an open _______injury is to cover the wound with a moist, sterile dressing.",
+    "sort_order": 14
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 106,
+  "fields": {
+    "question": 36,
+    "text": "located",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 107,
+  "fields": {
+    "question": 36,
+    "text": "rescued",
+    "is_correct": true,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 108,
+  "fields": {
+    "question": 36,
+    "text": "found",
+    "is_correct": false,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 109,
+  "fields": {
+    "question": 37,
+    "text": "Normal",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 110,
+  "fields": {
+    "question": 37,
+    "text": "Clean",
+    "is_correct": true,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 111,
+  "fields": {
+    "question": 37,
+    "text": "typical",
+    "is_correct": false,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 112,
+  "fields": {
+    "question": 38,
+    "text": "advance into",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 113,
+  "fields": {
+    "question": 38,
+    "text": "explore through",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 114,
+  "fields": {
+    "question": 38,
+    "text": "travel through",
+    "is_correct": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 115,
+  "fields": {
+    "question": 39,
+    "text": "contained",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 116,
+  "fields": {
+    "question": 39,
+    "text": "enclosed",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 117,
+  "fields": {
+    "question": 39,
+    "text": "portable",
+    "is_correct": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 118,
+  "fields": {
+    "question": 40,
+    "text": "member",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 119,
+  "fields": {
+    "question": 40,
+    "text": "individual",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 120,
+  "fields": {
+    "question": 40,
+    "text": "person",
+    "is_correct": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 121,
+  "fields": {
+    "question": 41,
+    "text": "identities",
+    "is_correct": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 122,
+  "fields": {
+    "question": 41,
+    "text": "name",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 123,
+  "fields": {
+    "question": 41,
+    "text": "position",
+    "is_correct": false,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 124,
+  "fields": {
+    "question": 42,
+    "text": "important",
+    "is_correct": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 125,
+  "fields": {
+    "question": 42,
+    "text": "crucial",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 126,
+  "fields": {
+    "question": 42,
+    "text": "required",
+    "is_correct": false,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 127,
+  "fields": {
+    "question": 43,
+    "text": "Adequate",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 128,
+  "fields": {
+    "question": 43,
+    "text": "Sufficient",
+    "is_correct": true,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 129,
+  "fields": {
+    "question": 43,
+    "text": "Enough",
+    "is_correct": false,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 130,
+  "fields": {
+    "question": 44,
+    "text": "Hydrogen",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 131,
+  "fields": {
+    "question": 44,
+    "text": "Nitrogen",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 132,
+  "fields": {
+    "question": 44,
+    "text": "Methane",
+    "is_correct": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 133,
+  "fields": {
+    "question": 45,
+    "text": "Normal",
+    "is_correct": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 134,
+  "fields": {
+    "question": 45,
+    "text": "Ordinary",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 135,
+  "fields": {
+    "question": 45,
+    "text": "Natural",
+    "is_correct": false,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 136,
+  "fields": {
+    "question": 46,
+    "text": "established",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 137,
+  "fields": {
+    "question": 46,
+    "text": "moved",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 138,
+  "fields": {
+    "question": 46,
+    "text": "underground",
+    "is_correct": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 139,
+  "fields": {
+    "question": 47,
+    "text": "Blackdamp",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 140,
+  "fields": {
+    "question": 47,
+    "text": "Afterdamp",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 141,
+  "fields": {
+    "question": 47,
+    "text": "Firedamp",
+    "is_correct": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 142,
+  "fields": {
+    "question": 48,
+    "text": "coughing",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 143,
+  "fields": {
+    "question": 48,
+    "text": "choking",
+    "is_correct": true,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 144,
+  "fields": {
+    "question": 48,
+    "text": "distress",
+    "is_correct": false,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 145,
+  "fields": {
+    "question": 49,
+    "text": "concentration",
+    "is_correct": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 146,
+  "fields": {
+    "question": 49,
+    "text": "absorption",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 147,
+  "fields": {
+    "question": 49,
+    "text": "retention",
+    "is_correct": false,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 148,
+  "fields": {
+    "question": 50,
+    "text": "rescue",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 149,
+  "fields": {
+    "question": 50,
+    "text": "individual",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 150,
+  "fields": {
+    "question": 50,
+    "text": "team",
+    "is_correct": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 151,
+  "fields": {
+    "question": 51,
+    "text": "Gases",
+    "is_correct": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 152,
+  "fields": {
+    "question": 51,
+    "text": "Vapors",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 153,
+  "fields": {
+    "question": 51,
+    "text": "Smoke",
+    "is_correct": false,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 154,
+  "fields": {
+    "question": 52,
+    "text": "Elevators",
+    "is_correct": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 155,
+  "fields": {
+    "question": 52,
+    "text": "Stretchers",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 156,
+  "fields": {
+    "question": 52,
+    "text": "Equipment",
+    "is_correct": false,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 157,
+  "fields": {
+    "question": 53,
+    "text": "properly",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 158,
+  "fields": {
+    "question": 53,
+    "text": "adequately",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 159,
+  "fields": {
+    "question": 53,
+    "text": "positively",
+    "is_correct": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 160,
+  "fields": {
+    "question": 54,
+    "text": "Highly noxious",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 161,
+  "fields": {
+    "question": 54,
+    "text": "highly toxic",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 162,
+  "fields": {
+    "question": 54,
+    "text": "water soluble",
+    "is_correct": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 163,
+  "fields": {
+    "question": 55,
+    "text": "regions",
+    "is_correct": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 164,
+  "fields": {
+    "question": 55,
+    "text": "areas",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 165,
+  "fields": {
+    "question": 55,
+    "text": "zones",
+    "is_correct": false,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 166,
+  "fields": {
+    "question": 56,
+    "text": "Shallow Breathing",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 167,
+  "fields": {
+    "question": 56,
+    "text": "Normal Breathing",
+    "is_correct": true,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 168,
+  "fields": {
+    "question": 56,
+    "text": "Abnormal breathing",
+    "is_correct": false,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 169,
+  "fields": {
+    "question": 57,
+    "text": "Rib Recoil",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 170,
+  "fields": {
+    "question": 57,
+    "text": "Chest Recoil",
+    "is_correct": true,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 171,
+  "fields": {
+    "question": 57,
+    "text": "Abdominal Recoil",
+    "is_correct": false,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 172,
+  "fields": {
+    "question": 58,
+    "text": "Air Way",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 173,
+  "fields": {
+    "question": 58,
+    "text": "Air Flow",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 174,
+  "fields": {
+    "question": 58,
+    "text": "Blood Flow",
+    "is_correct": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 175,
+  "fields": {
+    "question": 59,
+    "text": "Heimlich",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 176,
+  "fields": {
+    "question": 59,
+    "text": "Single",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 177,
+  "fields": {
+    "question": 59,
+    "text": "Individual",
+    "is_correct": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 178,
+  "fields": {
+    "question": 60,
+    "text": "Violent coughing",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 179,
+  "fields": {
+    "question": 60,
+    "text": "Breathing passages",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 180,
+  "fields": {
+    "question": 60,
+    "text": "Foreign bodies",
+    "is_correct": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 181,
+  "fields": {
+    "question": 61,
+    "text": "Patient response",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 182,
+  "fields": {
+    "question": 61,
+    "text": "Patient assessment",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 183,
+  "fields": {
+    "question": 61,
+    "text": "Scene assessment",
+    "is_correct": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 184,
+  "fields": {
+    "question": 62,
+    "text": "Drugs",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 185,
+  "fields": {
+    "question": 62,
+    "text": "Alcohol",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 186,
+  "fields": {
+    "question": 62,
+    "text": "Opioid",
+    "is_correct": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 187,
+  "fields": {
+    "question": 63,
+    "text": "Incorrect",
+    "is_correct": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 188,
+  "fields": {
+    "question": 63,
+    "text": "Attitude",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 189,
+  "fields": {
+    "question": 63,
+    "text": "Behavior",
+    "is_correct": false,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 190,
+  "fields": {
+    "question": 64,
+    "text": "Participation",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 191,
+  "fields": {
+    "question": 64,
+    "text": "Dynamic",
+    "is_correct": true,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 192,
+  "fields": {
+    "question": 64,
+    "text": "Communication",
+    "is_correct": false,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 193,
+  "fields": {
+    "question": 65,
+    "text": "Chin Lift",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 194,
+  "fields": {
+    "question": 65,
+    "text": "Head Tilt",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 195,
+  "fields": {
+    "question": 65,
+    "text": "Jaw Thrust",
+    "is_correct": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 196,
+  "fields": {
+    "question": 66,
+    "text": "5",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 197,
+  "fields": {
+    "question": 66,
+    "text": "3",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 198,
+  "fields": {
+    "question": 66,
+    "text": "2",
+    "is_correct": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 199,
+  "fields": {
+    "question": 67,
+    "text": "90-110",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 200,
+  "fields": {
+    "question": 67,
+    "text": "100-120",
+    "is_correct": true,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 201,
+  "fields": {
+    "question": 67,
+    "text": "100-125",
+    "is_correct": false,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 202,
+  "fields": {
+    "question": 68,
+    "text": "Circulation",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 203,
+  "fields": {
+    "question": 68,
+    "text": "Perfusion",
+    "is_correct": true,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 204,
+  "fields": {
+    "question": 68,
+    "text": "Response",
+    "is_correct": false,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 205,
+  "fields": {
+    "question": 69,
+    "text": "Management",
+    "is_correct": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 206,
+  "fields": {
+    "question": 69,
+    "text": "Communication",
+    "is_correct": false,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 207,
+  "fields": {
+    "question": 69,
+    "text": "Assessment",
+    "is_correct": false,
+    "sort_order": 2
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 208,
+  "fields": {
+    "question": 70,
+    "text": "Chest",
+    "is_correct": false,
+    "sort_order": 0
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 209,
+  "fields": {
+    "question": 70,
+    "text": "Abdominal",
+    "is_correct": true,
+    "sort_order": 1
+  }
+},
+{
+  "model": "pages.quizchoice",
+  "pk": 210,
+  "fields": {
+    "question": 70,
+    "text": "Head",
+    "is_correct": false,
+    "sort_order": 2
+  }
 }
 ]

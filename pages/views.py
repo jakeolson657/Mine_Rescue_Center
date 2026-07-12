@@ -12,6 +12,7 @@ from .models import (
     CalendarEvent, Competition, SiteConfiguration,
     PROBLEM_CATEGORIES, categorize_problem,
     InstructionGuide, CompetitionRuleDocument, Scorecard,
+    Quiz,
 )
 from .forms import FeedbackForm, ProblemSubmissionForm
 from .calendar_export import (
@@ -77,7 +78,7 @@ def past_problems(request):
     competitions = list(
         Competition.objects
         .select_related('calendar_event')
-        .prefetch_related('problems__documents')
+        .prefetch_related('problems__documents', 'problems__quizzes')
     )
     # Within a year: most recent first, undated competitions last (by name).
     competitions.sort(key=lambda c: (
@@ -94,8 +95,14 @@ def past_problems(request):
             problem.category_csv = ' '.join(
                 categorize_problem(problem.title, competition.name)
             )
+            quiz_by_doc_id = {
+                q.source_document_id: q.pk for q in problem.quizzes.all() if q.source_document_id
+            }
             problem.docs_data = [
-                {'title': d.title, 'url': d.file.url, 'kind': d.preview_kind}
+                {
+                    'title': d.title, 'url': d.file.url, 'kind': d.preview_kind,
+                    'quiz_url': reverse('quiz_detail', args=[quiz_by_doc_id[d.pk]]) if d.pk in quiz_by_doc_id else None,
+                }
                 for d in problem.documents.all()
             ]
             problem.docs_script_id = f'docs-{problem.pk}'
@@ -115,6 +122,23 @@ def past_problems(request):
         'form': form,
         'submitted': request.GET.get('submitted') == '1',
         'submit_error': submit_error,
+    })
+
+
+def quiz_detail(request, pk):
+    quiz = get_object_or_404(
+        Quiz.objects.select_related('problem__competition'), pk=pk
+    )
+    quiz_data = [
+        {
+            'text': q.text,
+            'choices': [{'text': c.text, 'is_correct': c.is_correct} for c in q.choices.all()],
+        }
+        for q in quiz.questions.prefetch_related('choices')
+    ]
+    return render(request, 'quiz.html', {
+        'quiz': quiz,
+        'quiz_data': quiz_data,
     })
 
 

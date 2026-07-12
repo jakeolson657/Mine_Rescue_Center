@@ -432,6 +432,54 @@ def delete_files_on_scorecard_delete(sender, instance, **kwargs):
         instance.non_fillable_file.delete(save=False)
 
 
+class Quiz(models.Model):
+    """An interactive, auto-graded version of a written test — extracted
+    from a ProblemDocument's question/answer PDF(s)."""
+    problem = models.ForeignKey(CompetitionProblem, on_delete=models.CASCADE, related_name='quizzes')
+    title = models.CharField(max_length=255, help_text="e.g. First Aid Written Test")
+    source_document = models.ForeignKey(
+        ProblemDocument, on_delete=models.SET_NULL, null=True, blank=True, related_name='+',
+        help_text="The original test PDF this quiz was extracted from (for the Take Test button).",
+    )
+    sort_order = models.PositiveIntegerField(default=0, help_text="Quizzes are listed lowest number first")
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['sort_order', 'title']
+        verbose_name_plural = 'Quizzes'
+
+    def __str__(self):
+        return f"{self.problem} - {self.title}"
+
+    def question_count(self):
+        return self.questions.count()
+
+
+class QuizQuestion(models.Model):
+    quiz = models.ForeignKey(Quiz, on_delete=models.CASCADE, related_name='questions')
+    text = models.TextField()
+    sort_order = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ['sort_order', 'pk']
+
+    def __str__(self):
+        return self.text[:60]
+
+
+class QuizChoice(models.Model):
+    question = models.ForeignKey(QuizQuestion, on_delete=models.CASCADE, related_name='choices')
+    text = models.CharField(max_length=500)
+    is_correct = models.BooleanField(default=False)
+    sort_order = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ['sort_order', 'pk']
+
+    def __str__(self):
+        return self.text[:60]
+
+
 @receiver(post_save, sender=CalendarEvent)
 def link_competitions_on_event_save(sender, instance, **kwargs):
     """When calendar history is added, link any competition from that year that

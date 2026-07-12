@@ -2,6 +2,7 @@ from django.contrib import admin
 from .models import (
     CalendarEvent, Competition, CompetitionProblem, ProblemDocument,
     SiteConfiguration, InstructionGuide, CompetitionRuleDocument, Scorecard,
+    Quiz, QuizQuestion, QuizChoice,
 )
 
 admin.site.site_header = "Mine Rescue Center Administration"
@@ -63,13 +64,45 @@ class ProblemDocumentInline(admin.TabularInline):
     ordering = ('sort_order', 'title')
 
 
+class QuizInline(admin.TabularInline):
+    model = Quiz
+    extra = 0
+    fields = ('sort_order', 'title', 'source_document', 'question_count')
+    readonly_fields = ('question_count',)
+    ordering = ('sort_order', 'title')
+    show_change_link = True
+
+
 @admin.register(CompetitionProblem)
 class CompetitionProblemAdmin(admin.ModelAdmin):
     list_display = ('title', 'competition', 'sort_order', 'document_count')
     list_filter = ('competition',)
     search_fields = ('title', 'competition__name', 'description')
     ordering = ('competition', 'sort_order', 'title')
-    inlines = [ProblemDocumentInline]
+    inlines = [ProblemDocumentInline, QuizInline]
+
+
+class QuizChoiceInline(admin.TabularInline):
+    model = QuizChoice
+    extra = 0
+    fields = ('sort_order', 'text', 'is_correct')
+    ordering = ('sort_order',)
+
+
+@admin.register(QuizQuestion)
+class QuizQuestionAdmin(admin.ModelAdmin):
+    list_display = ('__str__', 'quiz', 'sort_order')
+    list_filter = ('quiz__problem__competition',)
+    ordering = ('quiz', 'sort_order')
+    inlines = [QuizChoiceInline]
+
+
+@admin.register(Quiz)
+class QuizAdmin(admin.ModelAdmin):
+    list_display = ('title', 'problem', 'question_count', 'source_document')
+    list_filter = ('problem__competition',)
+    search_fields = ('title', 'problem__competition__name')
+    ordering = ('problem', 'sort_order', 'title')
 
 
 @admin.register(InstructionGuide)
