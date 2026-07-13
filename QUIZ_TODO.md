@@ -309,7 +309,7 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 
 ## 2. Answer key exists but needs a manual look
 
-These have an answer key, but the format could not be parsed into a reliable quiz (e.g. scanned images with no text, graphical answer choices like brattice symbols, or an unusual answer-marking style). **83 tests across 39 competitions.**
+These have an answer key, but the format could not be parsed into a reliable quiz (e.g. scanned images with no text, graphical answer choices like brattice symbols, or an unusual answer-marking style). **78 tests across 39 competitions.**
 
 
 ### 2024
@@ -360,6 +360,7 @@ These have an answer key, but the format could not be parsed into a reliable qui
   - [ ] Field Written Test  _( q8-leak,q9-leak,q26-leak )_
   - [ ] Technician Module 2-3 Written Test  _( q8-leak )_
 - **2016 Southeast Regional Mine Rescue Contest**
+  - [ ] Field Written Test  _( q23-leak )_
   - [ ] Team Trainer Written Test  _( key/textcolor:ff0000(partial) )_
 - **2016 Tennessee Regional Mine Rescue Contest**
   - [ ] Field Written Test  _( key/citation(partial) )_
@@ -374,15 +375,13 @@ These have an answer key, but the format could not be parsed into a reliable qui
 - **2015 NMRA Post 6 Contest**
   - [ ] BG4 Written Test  _( q25-leak,q30-leak )_
 - **2015 Nevada Mine Rescue Contest**
-  - [ ] Field Written Test  _( q2-leak )_
-  - [ ] Team Trainer Written Test  _( q12-leak,q16-leak )_
   - [ ] Technician 240R Written Test  _( q20-leak )_
 - **2015 Southern Regional Mine Rescue Contest**
   - [ ] First Aid Written Test  _( self/citation(partial) )_
 - **2015 Southwest Regional Mine Rescue Contest**
   - [ ] Field Written Test  _( q4-leak,q16-leak )_
 - **2015 Tennessee Regional Mine Rescue Contest**
-  - [ ] First Aid Written Test  _( q1-leak,q5-leak,q7-leak,q11-leak,q15-leak,q17-leak,q25-leak,bold-hold )_
+  - [ ] First Aid Written Test  _( bold-hold )_
 
 ### 2014
 
@@ -409,10 +408,6 @@ These have an answer key, but the format could not be parsed into a reliable qui
 - **2014 Southeast Regional Mine Rescue Contest**
   - [ ] Field Written Test  _( key/bold(partial) )_
   - [ ] First Aid Written Test  _( separate-list(partial) )_
-  - [ ] Technician Drager BG4 Written Test  _( q4-leak,q10-leak,q17-leak,q23-leak )_
-  - [ ] Technician BioPak 240 Written Test  _( q4-leak,q10-leak,q11-leak,q12-leak,q13-leak,q14-leak,q15-leak,q16-leak,q18-leak,q19-leak,q20-leak,q21-leak,q23-leak,q25-leak,q26-leak,q28-leak )_
-  - [ ] Technician iBrid MX6 Written Test  _( q4-leak,q8-leak,q9-leak,q15-leak,q27-leak )_
-  - [ ] Team Trainer Written Test  _( q4-leak,q5-leak,q6-leak,q7-leak,q8-leak,q9-leak,q10-leak,q17-leak,q18-leak,q27-leak )_
 - **2014 Southwest Regional Mine Rescue Contest**
   - [ ] First Aid Written Test  _( key/citation(partial) )_
 - **2014 Southwestern Wyoming Mutual Aid Mine Rescue Contest**
@@ -444,7 +439,7 @@ These have an answer key, but the format could not be parsed into a reliable qui
 - **2013 Southern Regional Mine Rescue Contest**
   - [ ] Field Written Test  _( self/citation(partial) )_
   - [ ] Technician Gas MX6 Written Test  _( key/citation(partial) )_
-  - [ ] Technician Gas iTX and MX6 Written Test  _( q1-leak,q2-leak,q3-leak,q4-leak,q5-leak,q6-leak,q7-leak,q8-leak,q9-leak,q10-leak,q12-leak,q16-leak,q17-leak,q18-leak,q19-leak )_
+  - [ ] Technician Gas iTX and MX6 Written Test  _( q18-leak )_
 - **2013 Southwest Regional Mine Rescue Contest**
   - [ ] Field Written Test  _( self/citation(partial) )_
   - [ ] First Aid Written Test  _( separate-list(partial) )_
