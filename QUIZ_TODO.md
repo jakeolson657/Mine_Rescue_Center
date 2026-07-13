@@ -309,7 +309,7 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 
 ## 2. Answer key exists but needs a manual look
 
-These have an answer key, but the format could not be parsed into a reliable quiz (e.g. scanned images with no text, graphical answer choices like brattice symbols, or an unusual answer-marking style). **78 tests across 39 competitions.**
+These have an answer key, but the format could not be parsed into a reliable quiz (e.g. scanned images with no text, graphical answer choices like brattice symbols, or an unusual answer-marking style). **80 tests across 40 competitions.**
 
 
 ### 2024
@@ -354,6 +354,8 @@ These have an answer key, but the format could not be parsed into a reliable qui
   - [ ] Field Written Test  _( key/textcolor:ff0000(partial) )_
   - [ ] Team Trainer Written Test  _( key/textcolor:ff0000(partial) )_
   - [ ] Technician BG4 Written Test  _( key/textcolor:ff0000(partial) )_
+- **2016 Missouri S&T; Mine Rescue Contest**
+  - [ ] Team Trainer Written Test  _( q25-leak )_
 - **2016 National Mine Rescue Contest**
   - [ ] First Aid Written Test  _( key/textcolor:ff0000(partial) )_
 - **2016 SW Wyoming Mutual Aid Contest**
@@ -377,6 +379,7 @@ These have an answer key, but the format could not be parsed into a reliable qui
 - **2015 Nevada Mine Rescue Contest**
   - [ ] Technician 240R Written Test  _( q20-leak )_
 - **2015 Southern Regional Mine Rescue Contest**
+  - [ ] Field Written Test  _( q23-dup )_
   - [ ] First Aid Written Test  _( self/citation(partial) )_
 - **2015 Southwest Regional Mine Rescue Contest**
   - [ ] Field Written Test  _( q4-leak,q16-leak )_
