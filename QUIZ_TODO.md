@@ -5,7 +5,7 @@ Auto-generated. 58 quizzes are already live on the site. This tracks the rest.
 
 ## 1. Need an answer key created
 
-These written tests have **no answer key** in the archive, so no quiz could be built. Once you add an answer key (as a document on the same Written Tests problem), the quiz can be generated. **113 tests across 64 competitions.**
+These written tests have **no answer key** in the archive, so no quiz could be built. Once you add an answer key (as a document on the same Written Tests problem), the quiz can be generated. **111 tests across 62 competitions.**
 
 
 ### 2026
@@ -191,8 +191,6 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 
 - **2013 Central Mine Rescue Contest**
   - [ ] Technician Written Test
-- **2013 Kentucky Coal Academy Preshift Contest**
-  - [ ] Written Test
 - **2013 MTTC Pennsylvania Rescue Skills Contest**
   - [ ] Written Test
 - **2013 NMRA Post 2 Mine Rescue Contest**
@@ -212,8 +210,6 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 
 ### 2012
 
-- **2012 Kentucky Coal Academy Preshift Contest**
-  - [ ] Written Test
 - **2012 North Central Regional Mine Rescue Contest**
   - [ ] Field Written Test
   - [ ] Team Trainer Written Test
