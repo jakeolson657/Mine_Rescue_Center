@@ -4,7 +4,7 @@
 
 {% block extra_css %}
     .quiz-head { background: var(--ink); color: var(--bg); }
-    .quiz-head-inner { max-width: 780px; margin: 0 auto; padding: 40px 40px 34px; }
+    .quiz-head-inner { max-width: 780px; margin: 0 auto; padding: 20px 40px 18px; }
 
     .quiz-back {
         display: inline-flex;
@@ -17,7 +17,7 @@
         text-transform: uppercase;
         color: #c2c6cc;
         text-decoration: none;
-        margin-bottom: 18px;
+        margin-bottom: 10px;
     }
     .quiz-back:hover { color: var(--bg); }
 
@@ -34,22 +34,22 @@
     .quiz-head h1 {
         font-family: var(--font-display);
         font-weight: 600;
-        font-size: 34px;
+        font-size: 26px;
         line-height: 1.1;
         letter-spacing: 0.01em;
-        margin: 0 0 6px;
+        margin: 0 0 5px;
     }
 
-    .quiz-head .comp-name { font-size: 15px; color: #c2c6cc; }
+    .quiz-head .comp-name { font-size: 14px; color: #c2c6cc; }
 
-    .quiz-wrap { max-width: 780px; margin: 0 auto; padding: 34px 40px 70px; }
+    .quiz-wrap { max-width: 780px; margin: 0 auto; padding: 22px 40px 60px; }
 
     .quiz-card {
         background: var(--surface);
         border: 1px solid var(--line-2);
         border-radius: 14px;
         box-shadow: 0 1px 2px rgba(43, 52, 64, 0.04);
-        padding: 30px 32px 32px;
+        padding: 22px 32px 24px;
     }
 
     /* Progress */
@@ -100,17 +100,18 @@
     }
 
     .quiz-figure {
-        margin: 0 0 20px;
+        margin: 0 0 14px;
         text-align: center;
         background: #fff;
         border: 1px solid var(--line-2);
         border-radius: 10px;
-        padding: 10px;
+        padding: 6px;
     }
     .quiz-figure[hidden] { display: none; }
     .quiz-figure img {
         max-width: 100%;
-        max-height: 340px;
+        /* Keep image + choices in view without scrolling: scale with viewport. */
+        max-height: min(220px, 30vh);
         object-fit: contain;
         cursor: zoom-in;
     }
@@ -430,11 +431,16 @@
         // Reserve the height of the tallest question so the block never grows or
         // shrinks between questions. Re-run on resize since wrapping changes.
         var qblock = document.getElementById('quiz-qblock');
+        // Reserve a floor equal to the tallest TEXT-only question, so those don't
+        // jump as you move between them. Questions with a diagram are naturally
+        // taller and simply grow past the floor (an image appearing is expected
+        // to add height), which keeps them from pushing the whole quiz off-screen.
         function reserveQBlockHeight() {
             var saved = current;
             qblock.style.minHeight = '';
             var max = 0;
             for (var i = 0; i < questions.length; i++) {
+                if (questions[i].image) continue;
                 current = i;
                 renderQuestion();
                 if (qblock.offsetHeight > max) max = qblock.offsetHeight;
@@ -522,21 +528,6 @@
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(reserveQBlockHeight, 150);
         });
-
-        // Preload any question images so the height reservation measures their
-        // real size, then reserve. Re-reserve as each finishes just in case.
-        var imageUrls = questions.map(function (q) { return q.image; }).filter(Boolean);
-        if (imageUrls.length) {
-            var pending = imageUrls.length;
-            imageUrls.forEach(function (url) {
-                var im = new Image();
-                im.onload = im.onerror = function () {
-                    pending--;
-                    if (pending === 0) reserveQBlockHeight();
-                };
-                im.src = url;
-            });
-        }
 
         reserveQBlockHeight();
     })();
