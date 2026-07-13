@@ -5,7 +5,7 @@ Auto-generated. 58 quizzes are already live on the site. This tracks the rest.
 
 ## 1. Need an answer key created
 
-These written tests have **no answer key** in the archive, so no quiz could be built. Once you add an answer key (as a document on the same Written Tests problem), the quiz can be generated. **177 tests across 82 competitions.**
+These written tests have **no answer key** in the archive, so no quiz could be built. Once you add an answer key (as a document on the same Written Tests problem), the quiz can be generated. **167 tests across 79 competitions.**
 
 
 ### 2026
@@ -210,7 +210,6 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 - **2015 Kentucky Mining Institute Kentucky State Mine Rescue Contest**
   - [ ] Day 1 Written Test
   - [ ] Day 2 Written Test
-  - [ ] Day 1 & 2 Written Test
   - [ ] First Aid Written Test
 - **2015 NMRA Post 6 Contest**
   - [ ] BioPak Written Test
@@ -254,7 +253,6 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 ### 2013
 
 - **2013 Central Mine Rescue Contest**
-  - [ ] Field Written Test
   - [ ] Technician Written Test
   - [ ] Team Trainer Written Test
 - **2013 Colorado Coal Association Mine Rescue Contest**
@@ -265,9 +263,6 @@ These written tests have **no answer key** in the archive, so no quiz could be b
   - [ ] Written Test
 - **2013 NMRA Post 2 Mine Rescue Contest**
   - [ ] Bench Written Test
-- **2013 Nevada Mine Rescue Contest**
-  - [ ] Technician BioPak Written Test
-  - [ ] Technician Drager Written Test
 - **2013 North Central Regional Mine Rescue Contest**
   - [ ] Technician BioPak 240R Written Test
   - [ ] Technician BioPak 240S Written Test
@@ -283,18 +278,10 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 
 ### 2012
 
-- **2012 Harlan County Safety Days**
-  - [ ] First Aid Written Test (Part 1)
-  - [ ] First Aid Written Test (Part 2)
 - **2012 Kentucky Coal Academy Preshift Contest**
   - [ ] Written Test
-- **2012 Nevada Mine Rescue Contest**
-  - [ ] Team Trainer Written Test
-  - [ ] Technician BG4 Written Test
 - **2012 North Central Regional Mine Rescue Contest**
   - [ ] Field Written Test
-  - [ ] Technician BioPak Written Test
-  - [ ] Technician BG4 Written Test
   - [ ] Team Trainer Written Test
 - **2012 SW Wyoming Mutual Aid Mine Rescue Contest**
   - [ ] First Aid Written Test
@@ -309,15 +296,13 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 
 ## 2. Answer key exists but needs a manual look
 
-These have an answer key, but the format could not be parsed into a reliable quiz (e.g. scanned images with no text, graphical answer choices like brattice symbols, or an unusual answer-marking style). **80 tests across 40 competitions.**
+These have an answer key, but the format could not be parsed into a reliable quiz (e.g. scanned images with no text, graphical answer choices like brattice symbols, or an unusual answer-marking style). **47 tests across 30 competitions.**
 
 
 ### 2024
 
 - **2024 Colorado Regional Mine Rescue Contest**
   - [ ] BIO Test  _( no-parse )_
-- **2024 Nevada Underground Mine Rescue Contest**
-  - [ ] Technician Written Test  _( key/textcolor:ff0000(partial) )_
 
 ### 2023
 
@@ -337,52 +322,33 @@ These have an answer key, but the format could not be parsed into a reliable qui
 
 - **2022 Rocky Mountain Mine Rescue Council Contest**
   - [ ] MNM Day 1 Written Test  _( q30-empty )_
-- **2022 Southeast Regional Mine Rescue Contest**
-  - [ ] MNM Trainer Written Test  _( key/highlight:ffff00(partial) )_
 
 ### 2021
 
 - **2021 Rocky Mountain Mine Rescue Contest (Price, Utah)**
-  - [ ] Day 2 Written Test  _( key/highlight:00ff00(partial) )_
+  - [ ] Day 2 Written Test  _( q6-empty,q6-dup )_
 - **2021 Southwest Wyoming Mutual Aid Mine Rescue Contest**
-  - [ ] Day 1 Written Test  _( separate-list(partial) )_
-  - [ ] Day 2 Written Test  _( separate-list(partial) )_
+  - [ ] Day 1 Written Test  _( separate-list/number(partial) )_
+  - [ ] Day 2 Written Test  _( separate-list/number(partial) )_
 
 ### 2016
 
 - **2016 Central Mine Rescue Contest**
-  - [ ] Field Written Test  _( key/textcolor:ff0000(partial) )_
-  - [ ] Team Trainer Written Test  _( key/textcolor:ff0000(partial) )_
   - [ ] Technician BG4 Written Test  _( key/textcolor:ff0000(partial) )_
-- **2016 Missouri S&T; Mine Rescue Contest**
-  - [ ] Team Trainer Written Test  _( q25-leak )_
-- **2016 National Mine Rescue Contest**
-  - [ ] First Aid Written Test  _( key/textcolor:ff0000(partial) )_
-- **2016 SW Wyoming Mutual Aid Contest**
-  - [ ] Field Written Test  _( q8-leak,q9-leak,q26-leak )_
-  - [ ] Technician Module 2-3 Written Test  _( q8-leak )_
 - **2016 Southeast Regional Mine Rescue Contest**
   - [ ] Field Written Test  _( q23-leak )_
-  - [ ] Team Trainer Written Test  _( key/textcolor:ff0000(partial) )_
 - **2016 Tennessee Regional Mine Rescue Contest**
   - [ ] Field Written Test  _( key/citation(partial) )_
-  - [ ] First Aid Written Test  _( separate-list(partial) )_
 
 ### 2015
 
 - **2015 Colorado Regional Mine Rescue Contest**
-  - [ ] Mine Rescue Written Test  _( key/textcolor:ff0000(partial) )_
-- **2015 Missouri Mine Rescue Contest**
-  - [ ] First Aid Written Test  _( key/textcolor:ff0000(partial) )_
-- **2015 NMRA Post 6 Contest**
-  - [ ] BG4 Written Test  _( q25-leak,q30-leak )_
-- **2015 Nevada Mine Rescue Contest**
-  - [ ] Technician 240R Written Test  _( q20-leak )_
+  - [ ] Mine Rescue Written Test  _( q8-dup )_
 - **2015 Southern Regional Mine Rescue Contest**
   - [ ] Field Written Test  _( q23-dup )_
-  - [ ] First Aid Written Test  _( self/citation(partial) )_
+  - [ ] First Aid Written Test  _( self/bold(partial) )_
 - **2015 Southwest Regional Mine Rescue Contest**
-  - [ ] Field Written Test  _( q4-leak,q16-leak )_
+  - [ ] Field Written Test  _( q4-empty )_
 - **2015 Tennessee Regional Mine Rescue Contest**
   - [ ] First Aid Written Test  _( bold-hold )_
 
@@ -391,61 +357,44 @@ These have an answer key, but the format could not be parsed into a reliable qui
 - **2014 Alabama State Mine Rescue Contest**
   - [ ] Day 2 Written Test  _( key/textcolor:ff0000(partial) )_
 - **2014 Colorado Mine Rescue Contest**
-  - [ ] Field Written Test  _( separate-list(partial) )_
-  - [ ] Technician Drager BG4 Written Test  _( separate-list(partial) )_
-  - [ ] Technician Ventis MX4 Written Test  _( separate-list(partial) )_
-  - [ ] Team Trainer Written Test  _( separate-list(partial) )_
+  - [ ] Technician Drager BG4 Written Test  _( separate-list/number(partial) )_
 - **2014 Midwest Regional Mine Rescue Contest**
-  - [ ] Field Written Test  _( separate-list(partial) )_
-  - [ ] First Aid Written Test  _( separate-list(partial) )_
+  - [ ] Field Written Test  _( separate-list/number(partial) )_
   - [ ] Technician BioPak 240R Written Test  _( self/anycolor(partial) )_
   - [ ] Technician BioPak 240S Written Test  _( self/anycolor(partial) )_
   - [ ] Technician Drager BG4 Written Test  _( self/textcolor:000099(partial) )_
   - [ ] Technician Drager BG4 PSS+ Written Test  _( self/textcolor:000099(partial) )_
-- **2014 National M/NM Mine Rescue Contest**
-  - [ ] Field Written Test  _( self/bold(partial) )_
-  - [ ] First Aid Written Test  _( separate-list(partial) )_
-  - [ ] Team Trainer Written Test  _( self/bold(partial) )_
 - **2014 Pennsylvania State Mine Rescue Contest**
   - [ ] First Aid Written Test  _( bold-hold )_
 - **2014 Southeast Regional Mine Rescue Contest**
-  - [ ] Field Written Test  _( key/bold(partial) )_
-  - [ ] First Aid Written Test  _( separate-list(partial) )_
+  - [ ] Field Written Test  _( bold-hold )_
 - **2014 Southwest Regional Mine Rescue Contest**
   - [ ] First Aid Written Test  _( key/citation(partial) )_
 - **2014 Southwestern Wyoming Mutual Aid Mine Rescue Contest**
-  - [ ] Field Written Test  _( separate-list(partial) )_
-  - [ ] First Aid Written Test  _( separate-list(partial) )_
+  - [ ] First Aid Written Test  _( separate-list/number(partial) )_
   - [ ] Technician BG4 Written Test  _( q4-dup )_
   - [ ] Technician iBrid MX6 Written Test  _( q4-dup )_
-  - [ ] Technician BioPak Written Test  _( separate-list(partial) )_
-  - [ ] Team Trainer Written Test  _( separate-list(partial) )_
+  - [ ] Technician BioPak Written Test  _( q4-dup )_
 
 ### 2013
 
 - **2013 Colorado School of Mines 2 nd Biennial MERD Competition**
   - [ ] First Aid Written Test  _( key/highlight:ffff00(partial) )_
 - **2013 National M/NM Mine Rescue Contest**
-  - [ ] Field Written Test  _( separate-list(partial) )_
-  - [ ] First Aid Written Test  _( separate-list(partial) )_
-  - [ ] Team Trainer Written Test  _( separate-list(partial) )_
-  - [ ] Technician BioPak 240S Written Test  _( separate-list(partial) )_
-  - [ ] Technician BioPak 240R Written Test  _( separate-list(partial) )_
-  - [ ] Technician Drager BG4 Written Test  _( separate-list(partial) )_
+  - [ ] Technician BioPak 240S Written Test  _( separate-list/number(partial) )_
+  - [ ] Technician BioPak 240R Written Test  _( separate-list/number(partial) )_
+  - [ ] Technician Drager BG4 Written Test  _( separate-list/number(partial) )_
+- **2013 Nevada Mine Rescue Contest**
+  - [ ] Team Trainer Written Test  _( q26-empty,q26-dup )_
 - **2013 North Central Regional Mine Rescue Contest**
-  - [ ] Field Written Test  _( separate-list(partial) )_
-  - [ ] Team Trainer Written Test  _( separate-list(partial) )_
+  - [ ] Team Trainer Written Test  _( q1-empty,q1-dup )_
 - **2013 Northeast Regional Mine Rescue Contest**
-  - [ ] First Aid Written Test  _( separate-list(partial) )_
-  - [ ] Technician Written Test  _( separate-list(partial) )_
-  - [ ] Team Trainer Written Test  _( key/citation(partial) )_
+  - [ ] Team Trainer Written Test  _( separate-list/number(partial) )_
 - **2013 Southern Regional Mine Rescue Contest**
   - [ ] Field Written Test  _( self/citation(partial) )_
   - [ ] Technician Gas MX6 Written Test  _( key/citation(partial) )_
-  - [ ] Technician Gas iTX and MX6 Written Test  _( q18-leak )_
 - **2013 Southwest Regional Mine Rescue Contest**
   - [ ] Field Written Test  _( self/citation(partial) )_
-  - [ ] First Aid Written Test  _( separate-list(partial) )_
   - [ ] Team Trainer Written Test  _( key/citation(partial) )_
 
 ### 2012
@@ -453,8 +402,3 @@ These have an answer key, but the format could not be parsed into a reliable qui
 - **2012 Southeast Regional Mine Rescue Contest**
   - [ ] Field Written Test  _( self/citation(partial) )_
   - [ ] Team Trainer Written Test  _( key/citation(partial) )_
-- **2012 Southern Regional Mine Rescue Contest**
-  - [ ] Technician Written Test  _( key/anycolor(partial) )_
-- **2012 Southwestern Regional Mine Rescue Contest**
-  - [ ] Field Written Test  _( separate-list(partial) )_
-  - [ ] Technician Written Test  _( key/textcolor:ff0000(partial) )_
