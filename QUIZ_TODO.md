@@ -223,7 +223,7 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 
 ## 2. Answer key exists but needs a manual look
 
-These have an answer key, but the format could not be parsed into a reliable quiz (e.g. scanned images with no text, graphical answer choices like brattice symbols, or an unusual answer-marking style). **50 tests across 33 competitions.**
+These have an answer key, but the format could not be parsed into a reliable quiz (e.g. scanned images with no text, graphical answer choices like brattice symbols, or an unusual answer-marking style). **47 tests across 32 competitions.**
 
 
 ### 2024
@@ -327,11 +327,4 @@ These have an answer key, but the format could not be parsed into a reliable qui
   - [ ] Field Written Test  _( self/citation(partial) )_
   - [ ] Technician Gas MX6 Written Test  _( key/citation(partial) )_
 - **2013 Southwest Regional Mine Rescue Contest**
-  - [ ] Field Written Test  _( self/citation(partial) )_
-  - [ ] Team Trainer Written Test  _( key/citation(partial) )_
-
-### 2012
-
-- **2012 Southeast Regional Mine Rescue Contest**
-  - [ ] Field Written Test  _( self/citation(partial) )_
   - [ ] Team Trainer Written Test  _( key/citation(partial) )_
