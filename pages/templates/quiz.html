@@ -99,6 +99,22 @@
         margin-bottom: 22px;
     }
 
+    .quiz-figure {
+        margin: 0 0 20px;
+        text-align: center;
+        background: #fff;
+        border: 1px solid var(--line-2);
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .quiz-figure[hidden] { display: none; }
+    .quiz-figure img {
+        max-width: 100%;
+        max-height: 340px;
+        object-fit: contain;
+        cursor: zoom-in;
+    }
+
     .quiz-choices { display: flex; flex-direction: column; gap: 10px; }
 
     .quiz-choice {
@@ -290,6 +306,7 @@
 
                 <div class="quiz-qblock" id="quiz-qblock">
                     <div class="quiz-question" id="quiz-question-text"></div>
+                    <div class="quiz-figure" id="quiz-figure" hidden><img id="quiz-figure-img" alt="Question diagram"></div>
                     <div class="quiz-choices" id="quiz-choices"></div>
                 </div>
 
@@ -343,6 +360,8 @@
         var progressCount = document.getElementById('quiz-progress-count');
         var progressFill = document.getElementById('quiz-progress-fill');
         var questionText = document.getElementById('quiz-question-text');
+        var figureEl = document.getElementById('quiz-figure');
+        var figureImg = document.getElementById('quiz-figure-img');
         var choicesEl = document.getElementById('quiz-choices');
         var prevBtn = document.getElementById('quiz-prev-btn');
         var nextBtn = document.getElementById('quiz-next-btn');
@@ -373,6 +392,14 @@
             progressCount.textContent = answeredCount() + ' answered';
             progressFill.style.width = (((current + 1) / questions.length) * 100) + '%';
             questionText.textContent = q.text;
+
+            if (q.image) {
+                figureImg.src = q.image;
+                figureEl.hidden = false;
+            } else {
+                figureImg.removeAttribute('src');
+                figureEl.hidden = true;
+            }
 
             choicesEl.innerHTML = '';
             q.choices.forEach(function (choice, i) {
@@ -495,6 +522,21 @@
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(reserveQBlockHeight, 150);
         });
+
+        // Preload any question images so the height reservation measures their
+        // real size, then reserve. Re-reserve as each finishes just in case.
+        var imageUrls = questions.map(function (q) { return q.image; }).filter(Boolean);
+        if (imageUrls.length) {
+            var pending = imageUrls.length;
+            imageUrls.forEach(function (url) {
+                var im = new Image();
+                im.onload = im.onerror = function () {
+                    pending--;
+                    if (pending === 0) reserveQBlockHeight();
+                };
+                im.src = url;
+            });
+        }
 
         reserveQBlockHeight();
     })();

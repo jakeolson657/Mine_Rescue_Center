@@ -458,6 +458,11 @@ class Quiz(models.Model):
 class QuizQuestion(models.Model):
     quiz = models.ForeignKey(Quiz, on_delete=models.CASCADE, related_name='questions')
     text = models.TextField()
+    image = models.FileField(
+        upload_to='quiz_images/', blank=True,
+        help_text="Diagram/figure shown with the question (e.g. a parts "
+                  "illustration the question refers to).",
+    )
     sort_order = models.PositiveIntegerField(default=0)
 
     class Meta:
@@ -465,6 +470,12 @@ class QuizQuestion(models.Model):
 
     def __str__(self):
         return self.text[:60]
+
+
+@receiver(post_delete, sender=QuizQuestion)
+def delete_image_on_question_delete(sender, instance, **kwargs):
+    if instance.image:
+        instance.image.delete(save=False)
 
 
 class QuizChoice(models.Model):

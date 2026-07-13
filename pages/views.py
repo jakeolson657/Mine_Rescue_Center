@@ -132,6 +132,7 @@ def quiz_detail(request, pk):
     quiz_data = [
         {
             'text': q.text,
+            'image': q.image.url if q.image else None,
             'choices': [{'text': c.text, 'is_correct': c.is_correct} for c in q.choices.all()],
         }
         for q in quiz.questions.prefetch_related('choices')
