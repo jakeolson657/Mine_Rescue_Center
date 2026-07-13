@@ -5,14 +5,12 @@ Auto-generated. 58 quizzes are already live on the site. This tracks the rest.
 
 ## 1. Need an answer key created
 
-These written tests have **no answer key** in the archive, so no quiz could be built. Once you add an answer key (as a document on the same Written Tests problem), the quiz can be generated. **116 tests across 65 competitions.**
+These written tests have **no answer key** in the archive, so no quiz could be built. Once you add an answer key (as a document on the same Written Tests problem), the quiz can be generated. **113 tests across 64 competitions.**
 
 
 ### 2026
 
 - **2026 Western Mine Rescue Association Nevada Underground Mine Rescue Contest**
-  - [ ] BG4 Written Test
-  - [ ] ProAir Written Test
   - [ ] BioMarine 240R Written Test
 
 ### 2024
@@ -27,8 +25,6 @@ These written tests have **no answer key** in the archive, so no quiz could be b
   - [ ] First Aid Written Test
 - **2024 Kentucky Mining Institute Mine Rescue Contest**
   - [ ] First Aid Written Test
-- **2024 NMRA Post 7 Virginia Safety Days**
-  - [ ] BG4 Written Test
 - **2024 National Mine Rescue and First Aid Competition**
   - [ ] First Aid Written Test
 - **2024 Nevada Underground Mine Rescue Contest**
@@ -231,7 +227,7 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 
 ## 2. Answer key exists but needs a manual look
 
-These have an answer key, but the format could not be parsed into a reliable quiz (e.g. scanned images with no text, graphical answer choices like brattice symbols, or an unusual answer-marking style). **52 tests across 34 competitions.**
+These have an answer key, but the format could not be parsed into a reliable quiz (e.g. scanned images with no text, graphical answer choices like brattice symbols, or an unusual answer-marking style). **50 tests across 33 competitions.**
 
 
 ### 2024
@@ -247,7 +243,6 @@ These have an answer key, but the format could not be parsed into a reliable qui
   - [ ] First Aid Written Test  _( key/highlight:ffff00(partial) )_
 - **2023 Kansas Shootout Mine Rescue Contest**
   - [ ] Mine Rescue Written Test  _( q30-dup )_
-  - [ ] BG4 Written Test  _( key/highlight:00ff00(partial) )_
 - **2023 Missouri Regional Mine Rescue Contest**
   - [ ] Mine Rescue Written Test  _( q30-dup )_
   - [ ] Drager Written Test  _( no-parse )_
@@ -267,11 +262,6 @@ These have an answer key, but the format could not be parsed into a reliable qui
 - **2021 Southwest Wyoming Mutual Aid Mine Rescue Contest**
   - [ ] Day 1 Written Test  _( separate-list/number(partial) )_
   - [ ] Day 2 Written Test  _( separate-list/number(partial) )_
-
-### 2019
-
-- **2019 Virginia Governor's Cup Mine Rescue Contest**
-  - [ ] BG4 Written Test  _( self/citation(partial) )_
 
 ### 2016
 
