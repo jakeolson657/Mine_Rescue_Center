@@ -199,7 +199,7 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 
 ## 2. Answer key exists but needs a manual look
 
-These have an answer key, but the format could not be parsed into a reliable quiz (e.g. scanned images with no text, graphical answer choices like brattice symbols, or an unusual answer-marking style). **36 tests across 25 competitions.**
+These have an answer key, but the format could not be parsed into a reliable quiz (e.g. scanned images with no text, graphical answer choices like brattice symbols, or an unusual answer-marking style). **31 tests across 21 competitions.**
 
 
 ### 2024
@@ -240,8 +240,6 @@ These have an answer key, but the format could not be parsed into a reliable qui
 - **2016 Kentucky River Mine Rescue Contest**
   - [ ] Day 2 Written Test  _( one-position-dominant )_
   - [ ] Preshift Written Test  _( one-position-dominant )_
-- **2016 Southeast Regional Mine Rescue Contest**
-  - [ ] Field Written Test  _( q23-leak )_
 - **2016 Tennessee Regional Mine Rescue Contest**
   - [ ] Field Written Test  _( key/citation(partial) )_
 
@@ -254,9 +252,6 @@ These have an answer key, but the format could not be parsed into a reliable qui
   - [ ] First Aid Written Test  _( q27-dup )_
 - **2015 Southwest Regional Mine Rescue Contest**
   - [ ] Field Written Test  _( q4-empty )_
-- **2015 Tennessee Regional Mine Rescue Contest**
-  - [ ] Team Trainer Written Test  _( q24-leak )_
-  - [ ] First Aid Written Test  _( bold-hold )_
 
 ### 2014
 
@@ -267,10 +262,6 @@ These have an answer key, but the format could not be parsed into a reliable qui
   - [ ] Technician BioPak 240S Written Test  _( self/anycolor(partial) )_
   - [ ] Technician Drager BG4 Written Test  _( self/textcolor:000099(partial) )_
   - [ ] Technician Drager BG4 PSS+ Written Test  _( self/textcolor:000099(partial) )_
-- **2014 Northern Regional Mine Rescue Contest**
-  - [ ] Team Trainer Written Test  _( q29-leak )_
-- **2014 Pennsylvania State Mine Rescue Contest**
-  - [ ] First Aid Written Test  _( bold-hold )_
 - **2014 Southwest Regional Mine Rescue Contest**
   - [ ] First Aid Written Test  _( key/citation(partial) )_
 - **2014 Southwestern Wyoming Mutual Aid Mine Rescue Contest**
