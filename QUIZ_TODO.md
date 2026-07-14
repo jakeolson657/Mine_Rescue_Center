@@ -5,7 +5,7 @@ Auto-generated. 58 quizzes are already live on the site. This tracks the rest.
 
 ## 1. Need an answer key created
 
-These written tests have **no answer key** in the archive, so no quiz could be built. Once you add an answer key (as a document on the same Written Tests problem), the quiz can be generated. **111 tests across 62 competitions.**
+These written tests have **no answer key** in the archive, so no quiz could be built. Once you add an answer key (as a document on the same Written Tests problem), the quiz can be generated. **96 tests across 53 competitions.**
 
 
 ### 2026
@@ -29,7 +29,6 @@ These written tests have **no answer key** in the archive, so no quiz could be b
   - [ ] First Aid Written Test
 - **2024 Nevada Underground Mine Rescue Contest**
   - [ ] BG4 Written Test
-  - [ ] Team Trainer Written Test
 - **2024 Southeast Regional Mine Rescue Contest**
   - [ ] Day 2 Written Test
 
@@ -67,8 +66,6 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 
 ### 2021
 
-- **2021 Southeast Regional Mine Rescue Contest**
-  - [ ] Day 2 Written Test
 - **2021 Virginia Governor's Cup Mine Rescue Contest**
   - [ ] Written Test
 
@@ -101,8 +98,6 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 
 ### 2018
 
-- **2018 Energy Expo Mine Rescue Contest**
-  - [ ] Preshift Written Test
 - **2018 NMRA Post 6 Contest**
   - [ ] Day 1 Written Test
   - [ ] Day 2 Written Test
@@ -116,9 +111,6 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 
 - **2017 NMRA Post 6 Contest**
   - [ ] Mine Rescue Written Test
-- **2017 Northern Regional Contest**
-  - [ ] Field Written Test
-  - [ ] Team Trainer Written Test
 - **2017 Ohio State Mine Rescue Contest**
   - [ ] Written Test
 - **2017 Southern Regional Contest**
@@ -132,18 +124,12 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 
 - **2016 Alabama State Mine Rescue Contest**
   - [ ] Preshift Written Test
-- **2016 Missouri S&T; Mine Rescue Contest**
-  - [ ] Field Written Test
-  - [ ] First Aid Written Test
 - **2016 NMRA Post 6 Contest**
   - [ ] Preshift Written Test
   - [ ] Bench Written Test
 - **2016 National Mine Rescue Contest**
   - [ ] Technician BG4 Written Test
   - [ ] Technician BioPak Written Test
-- **2016 Northern Regional Mine Rescue Contest**
-  - [ ] Field Written Test
-  - [ ] Team Trainer Written Test
 - **2016 Tennessee Regional Mine Rescue Contest**
   - [ ] Technician Written Test
 - **2016 West Virginia State and NMRA Post 5 Mine Rescue Contest**
@@ -158,11 +144,6 @@ These written tests have **no answer key** in the archive, so no quiz could be b
   - [ ] First Aid Written Test
 - **2015 NMRA Post 6 Contest**
   - [ ] BioPak Written Test
-- **2015 Northern Regional Mine Rescue Contest**
-  - [ ] Field Written Test
-  - [ ] Team Trainer Written Test
-- **2015 Tennessee Regional Mine Rescue Contest**
-  - [ ] Team Trainer Written Test
 
 ### 2014
 
@@ -173,8 +154,6 @@ These written tests have **no answer key** in the archive, so no quiz could be b
   - [ ] Technician Drager BG4 Written Test
   - [ ] Technician BioPak 240R Written Test
   - [ ] Technician Multi-gas Detector Written Test
-- **2014 Northern Regional Mine Rescue Contest**
-  - [ ] Technician iBrid MX6 Written Test
 - **2014 Ohio Valley Mine Rescue Contest NMRA Post 6**
   - [ ] Bench Written Test
   - [ ] Preshift Written Test
@@ -210,9 +189,6 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 
 ### 2012
 
-- **2012 North Central Regional Mine Rescue Contest**
-  - [ ] Field Written Test
-  - [ ] Team Trainer Written Test
 - **2012 SW Wyoming Mutual Aid Mine Rescue Contest**
   - [ ] First Aid Written Test
   - [ ] Technician Written Test
@@ -223,7 +199,7 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 
 ## 2. Answer key exists but needs a manual look
 
-These have an answer key, but the format could not be parsed into a reliable quiz (e.g. scanned images with no text, graphical answer choices like brattice symbols, or an unusual answer-marking style). **47 tests across 32 competitions.**
+These have an answer key, but the format could not be parsed into a reliable quiz (e.g. scanned images with no text, graphical answer choices like brattice symbols, or an unusual answer-marking style). **36 tests across 25 competitions.**
 
 
 ### 2024
@@ -261,8 +237,6 @@ These have an answer key, but the format could not be parsed into a reliable qui
 
 ### 2016
 
-- **2016 Central Mine Rescue Contest**
-  - [ ] Technician BG4 Written Test  _( key/textcolor:ff0000(partial) )_
 - **2016 Kentucky River Mine Rescue Contest**
   - [ ] Day 2 Written Test  _( one-position-dominant )_
   - [ ] Preshift Written Test  _( one-position-dominant )_
@@ -277,20 +251,18 @@ These have an answer key, but the format could not be parsed into a reliable qui
   - [ ] Mine Rescue Written Test  _( q8-dup )_
 - **2015 Southern Regional Mine Rescue Contest**
   - [ ] Field Written Test  _( q23-dup )_
-  - [ ] First Aid Written Test  _( self/bold(partial) )_
+  - [ ] First Aid Written Test  _( q27-dup )_
 - **2015 Southwest Regional Mine Rescue Contest**
   - [ ] Field Written Test  _( q4-empty )_
 - **2015 Tennessee Regional Mine Rescue Contest**
+  - [ ] Team Trainer Written Test  _( q24-leak )_
   - [ ] First Aid Written Test  _( bold-hold )_
 
 ### 2014
 
 - **2014 Alabama State Mine Rescue Contest**
   - [ ] Day 2 Written Test  _( key/textcolor:ff0000(partial) )_
-- **2014 Colorado Mine Rescue Contest**
-  - [ ] Technician Drager BG4 Written Test  _( separate-list/number(partial) )_
 - **2014 Midwest Regional Mine Rescue Contest**
-  - [ ] Field Written Test  _( separate-list/number(partial) )_
   - [ ] Technician BioPak 240R Written Test  _( self/anycolor(partial) )_
   - [ ] Technician BioPak 240S Written Test  _( self/anycolor(partial) )_
   - [ ] Technician Drager BG4 Written Test  _( self/textcolor:000099(partial) )_
@@ -299,32 +271,18 @@ These have an answer key, but the format could not be parsed into a reliable qui
   - [ ] Team Trainer Written Test  _( q29-leak )_
 - **2014 Pennsylvania State Mine Rescue Contest**
   - [ ] First Aid Written Test  _( bold-hold )_
-- **2014 Southeast Regional Mine Rescue Contest**
-  - [ ] Field Written Test  _( bold-hold )_
 - **2014 Southwest Regional Mine Rescue Contest**
   - [ ] First Aid Written Test  _( key/citation(partial) )_
 - **2014 Southwestern Wyoming Mutual Aid Mine Rescue Contest**
-  - [ ] First Aid Written Test  _( separate-list/number(partial) )_
   - [ ] Technician BG4 Written Test  _( q4-dup )_
-  - [ ] Technician iBrid MX6 Written Test  _( q4-dup )_
+  - [ ] Technician iBrid MX6 Written Test  _( q3-dup )_
   - [ ] Technician BioPak Written Test  _( q4-dup )_
 
 ### 2013
 
-- **2013 Colorado School of Mines 2 nd Biennial MERD Competition**
-  - [ ] First Aid Written Test  _( key/highlight:ffff00(partial) )_
-- **2013 National M/NM Mine Rescue Contest**
-  - [ ] Technician BioPak 240S Written Test  _( separate-list/number(partial) )_
-  - [ ] Technician BioPak 240R Written Test  _( separate-list/number(partial) )_
-  - [ ] Technician Drager BG4 Written Test  _( separate-list/number(partial) )_
 - **2013 Nevada Mine Rescue Contest**
   - [ ] Team Trainer Written Test  _( q26-empty,q26-dup )_
 - **2013 North Central Regional Mine Rescue Contest**
   - [ ] Team Trainer Written Test  _( q1-empty,q1-dup )_
-- **2013 Northeast Regional Mine Rescue Contest**
-  - [ ] Team Trainer Written Test  _( separate-list/number(partial) )_
 - **2013 Southern Regional Mine Rescue Contest**
-  - [ ] Field Written Test  _( self/citation(partial) )_
   - [ ] Technician Gas MX6 Written Test  _( key/citation(partial) )_
-- **2013 Southwest Regional Mine Rescue Contest**
-  - [ ] Team Trainer Written Test  _( key/citation(partial) )_
