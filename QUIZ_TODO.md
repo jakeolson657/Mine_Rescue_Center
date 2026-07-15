@@ -5,7 +5,7 @@ Auto-generated. 58 quizzes are already live on the site. This tracks the rest.
 
 ## 1. Need an answer key created
 
-These written tests have **no answer key** in the archive, so no quiz could be built. Once you add an answer key (as a document on the same Written Tests problem), the quiz can be generated. **97 tests across 54 competitions.**
+These written tests have **no answer key** in the archive, so no quiz could be built. Once you add an answer key (as a document on the same Written Tests problem), the quiz can be generated. **84 tests across 48 competitions.**
 
 
 ### 2026
@@ -61,8 +61,6 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 - **2022 Harlan County Safety Days Mine Rescue Contest**
   - [ ] Day 1 Written Test
   - [ ] Day 2 Written Test
-- **2022 Virginia Governor's Cup Mine Rescue Contest**
-  - [ ] Written Test
 
 ### 2021
 
@@ -103,9 +101,6 @@ These written tests have **no answer key** in the archive, so no quiz could be b
   - [ ] Day 2 Written Test
 - **2018 National Metal and Nonmetal Mine Rescue Contest**
   - [ ] Field Written Test
-  - [ ] Technician Drager Written Test
-  - [ ] Technician BioPak 240S Written Test
-  - [ ] Technician BioPak 240R Written Test
 
 ### 2017
 
@@ -127,9 +122,6 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 - **2016 NMRA Post 6 Contest**
   - [ ] Preshift Written Test
   - [ ] Bench Written Test
-- **2016 National Mine Rescue Contest**
-  - [ ] Technician BG4 Written Test
-  - [ ] Technician BioPak Written Test
 - **2016 Tennessee Regional Mine Rescue Contest**
   - [ ] Technician Written Test
 - **2016 West Virginia State and NMRA Post 5 Mine Rescue Contest**
@@ -147,8 +139,6 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 
 ### 2014
 
-- **2014 Kentucky Coal Academy Preshift Contest**
-  - [ ] Written Test
 - **2014 Missouri Regional Mine Rescue Contest**
   - [ ] First Aid Written Test
   - [ ] Technician Drager BG4 Written Test
@@ -176,18 +166,11 @@ These written tests have **no answer key** in the archive, so no quiz could be b
   - [ ] Bench Written Test
 - **2013 Nevada Mine Rescue Contest**
   - [ ] Team Trainer Written Test
-- **2013 North Central Regional Mine Rescue Contest**
-  - [ ] Technician BioPak 240R Written Test
-  - [ ] Technician BioPak 240S Written Test
-  - [ ] Technician Drager BG4 Written Test
 - **2013 Ohio Valley Mine Rescue Contest NMRA Post 6**
   - [ ] Bench Written Test
 - **2013 Southern Regional Mine Rescue Contest**
-  - [ ] First Aid Written Test
   - [ ] Technician Apparatus Drager Written Test
   - [ ] Technician Apparatus Biomarine Written Test
-- **2013 Southwest Regional Mine Rescue Contest**
-  - [ ] Technician Written Test
 
 ### 2012
 
@@ -195,13 +178,11 @@ These written tests have **no answer key** in the archive, so no quiz could be b
   - [ ] First Aid Written Test
   - [ ] Technician Written Test
   - [ ] Team Trainer Written Test
-- **2012 Southeast Regional Mine Rescue Contest**
-  - [ ] Problem Statement
 
 
 ## 2. Answer key exists but needs a manual look
 
-These have an answer key, but the format could not be parsed into a reliable quiz (e.g. scanned images with no text, graphical answer choices like brattice symbols, or an unusual answer-marking style). **23 tests across 16 competitions.**
+These have an answer key, but the format could not be parsed into a reliable quiz (e.g. scanned images with no text, graphical answer choices like brattice symbols, or an unusual answer-marking style). **20 tests across 16 competitions.**
 
 
 ### 2024
@@ -225,6 +206,8 @@ These have an answer key, but the format could not be parsed into a reliable qui
 
 - **2022 Rocky Mountain Mine Rescue Council Contest**
   - [ ] MNM Day 1 Written Test  _( key/highlight:00ff00 )_
+- **2022 Virginia Governor's Cup Mine Rescue Contest**
+  - [ ] Written Test  _( key/citation(partial) )_
 
 ### 2021
 
@@ -252,11 +235,6 @@ These have an answer key, but the format could not be parsed into a reliable qui
 
 - **2014 Alabama State Mine Rescue Contest**
   - [ ] Day 2 Written Test  _( key/textcolor:ff0000(partial) )_
-- **2014 Midwest Regional Mine Rescue Contest**
-  - [ ] Technician BioPak 240R Written Test  _( self/anycolor(partial) )_
-  - [ ] Technician BioPak 240S Written Test  _( self/anycolor(partial) )_
-  - [ ] Technician Drager BG4 Written Test  _( self/textcolor:000099(partial) )_
-  - [ ] Technician Drager BG4 PSS+ Written Test  _( self/textcolor:000099(partial) )_
 - **2014 Southwest Regional Mine Rescue Contest**
   - [ ] First Aid Written Test  _( key/citation(partial) )_
 
