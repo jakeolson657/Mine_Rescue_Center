@@ -5,7 +5,7 @@ Auto-generated. 58 quizzes are already live on the site. This tracks the rest.
 
 ## 1. Need an answer key created
 
-These written tests have **no answer key** in the archive, so no quiz could be built. Once you add an answer key (as a document on the same Written Tests problem), the quiz can be generated. **96 tests across 53 competitions.**
+These written tests have **no answer key** in the archive, so no quiz could be built. Once you add an answer key (as a document on the same Written Tests problem), the quiz can be generated. **97 tests across 54 competitions.**
 
 
 ### 2026
@@ -174,6 +174,8 @@ These written tests have **no answer key** in the archive, so no quiz could be b
   - [ ] Written Test
 - **2013 NMRA Post 2 Mine Rescue Contest**
   - [ ] Bench Written Test
+- **2013 Nevada Mine Rescue Contest**
+  - [ ] Team Trainer Written Test
 - **2013 North Central Regional Mine Rescue Contest**
   - [ ] Technician BioPak 240R Written Test
   - [ ] Technician BioPak 240S Written Test
@@ -199,7 +201,7 @@ These written tests have **no answer key** in the archive, so no quiz could be b
 
 ## 2. Answer key exists but needs a manual look
 
-These have an answer key, but the format could not be parsed into a reliable quiz (e.g. scanned images with no text, graphical answer choices like brattice symbols, or an unusual answer-marking style). **31 tests across 21 competitions.**
+These have an answer key, but the format could not be parsed into a reliable quiz (e.g. scanned images with no text, graphical answer choices like brattice symbols, or an unusual answer-marking style). **23 tests across 16 competitions.**
 
 
 ### 2024
@@ -207,16 +209,13 @@ These have an answer key, but the format could not be parsed into a reliable qui
 - **2024 Colorado Regional Mine Rescue Contest**
   - [ ] BIO Test  _( no-parse )_
 - **2024 Nevada Underground Mine Rescue Contest**
-  - [ ] Field Written Test  _( q7-empty,q7-dup )_
+  - [ ] Field Written Test  _( q7-dupcorrect )_
 
 ### 2023
 
 - **2023 Colorado Regional Mine Rescue Contest**
   - [ ] First Aid Written Test  _( key/highlight:ffff00(partial) )_
-- **2023 Kansas Shootout Mine Rescue Contest**
-  - [ ] Mine Rescue Written Test  _( q30-dup )_
 - **2023 Missouri Regional Mine Rescue Contest**
-  - [ ] Mine Rescue Written Test  _( q30-dup )_
   - [ ] Drager Written Test  _( no-parse )_
 - **2023 West Virginia State Intra Agency Mine Rescue Contest**
   - [ ] Day 1 Written Test  _( key/highlight:ffff00(partial) )_
@@ -225,12 +224,12 @@ These have an answer key, but the format could not be parsed into a reliable qui
 ### 2022
 
 - **2022 Rocky Mountain Mine Rescue Council Contest**
-  - [ ] MNM Day 1 Written Test  _( q30-empty )_
+  - [ ] MNM Day 1 Written Test  _( key/highlight:00ff00 )_
 
 ### 2021
 
 - **2021 Rocky Mountain Mine Rescue Contest (Price, Utah)**
-  - [ ] Day 2 Written Test  _( q6-empty,q6-dup )_
+  - [ ] Day 2 Written Test  _( key/highlight:00ff00 )_
 - **2021 Southwest Wyoming Mutual Aid Mine Rescue Contest**
   - [ ] Day 1 Written Test  _( separate-list/number(partial) )_
   - [ ] Day 2 Written Test  _( separate-list/number(partial) )_
@@ -245,13 +244,9 @@ These have an answer key, but the format could not be parsed into a reliable qui
 
 ### 2015
 
-- **2015 Colorado Regional Mine Rescue Contest**
-  - [ ] Mine Rescue Written Test  _( q8-dup )_
 - **2015 Southern Regional Mine Rescue Contest**
-  - [ ] Field Written Test  _( q23-dup )_
-  - [ ] First Aid Written Test  _( q27-dup )_
-- **2015 Southwest Regional Mine Rescue Contest**
-  - [ ] Field Written Test  _( q4-empty )_
+  - [ ] Field Written Test  _( q23-dupcorrect )_
+  - [ ] First Aid Written Test  _( q27-dupcorrect )_
 
 ### 2014
 
@@ -264,16 +259,10 @@ These have an answer key, but the format could not be parsed into a reliable qui
   - [ ] Technician Drager BG4 PSS+ Written Test  _( self/textcolor:000099(partial) )_
 - **2014 Southwest Regional Mine Rescue Contest**
   - [ ] First Aid Written Test  _( key/citation(partial) )_
-- **2014 Southwestern Wyoming Mutual Aid Mine Rescue Contest**
-  - [ ] Technician BG4 Written Test  _( q4-dup )_
-  - [ ] Technician iBrid MX6 Written Test  _( q3-dup )_
-  - [ ] Technician BioPak Written Test  _( q4-dup )_
 
 ### 2013
 
-- **2013 Nevada Mine Rescue Contest**
-  - [ ] Team Trainer Written Test  _( q26-empty,q26-dup )_
 - **2013 North Central Regional Mine Rescue Contest**
-  - [ ] Team Trainer Written Test  _( q1-empty,q1-dup )_
+  - [ ] Team Trainer Written Test  _( separate-list/number )_
 - **2013 Southern Regional Mine Rescue Contest**
   - [ ] Technician Gas MX6 Written Test  _( key/citation(partial) )_
