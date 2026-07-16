@@ -383,6 +383,66 @@
         <summary>
             <span class="chev"><svg width="15" height="15"><use href="#i-chev"/></svg></span>
             <span class="resource-head-text">
+                <span class="resource-eyebrow">Medical</span>
+                <span class="resource-title">First Aid</span>
+            </span>
+        </summary>
+        <div class="resource-body">
+            <p class="resource-intro">First aid guides and reference material for mine rescue teams. Preview a document in your browser or download it.</p>
+            <div class="documents-list">
+                {% for doc in first_aid_resources %}
+                    <div class="document-item">
+                        <span class="document-title"><span class="doc-chip">PDF</span>{{ doc.title }}</span>
+                        <div class="document-actions">
+                            {% if doc.preview_kind %}
+                                <button type="button" class="preview-btn" data-url="{{ doc.file.url }}" data-kind="{{ doc.preview_kind }}" data-title="{{ doc.title }}">Preview</button>
+                            {% endif %}
+                            <a href="{{ doc.file.url }}" class="download-btn" download>
+                                <svg width="13" height="13"><use href="#i-dl"/></svg>Download
+                            </a>
+                        </div>
+                    </div>
+                {% empty %}
+                    <p class="no-documents">First aid resources are being added — check back soon.</p>
+                {% endfor %}
+            </div>
+        </div>
+    </details>
+
+    <details class="resource-section">
+        <summary>
+            <span class="chev"><svg width="15" height="15"><use href="#i-chev"/></svg></span>
+            <span class="resource-head-text">
+                <span class="resource-eyebrow">Technical</span>
+                <span class="resource-title">Rope Rescue</span>
+            </span>
+        </summary>
+        <div class="resource-body">
+            <p class="resource-intro">Rope rescue and rigging reference material for mine rescue teams. Preview a document in your browser or download it.</p>
+            <div class="documents-list">
+                {% for doc in rope_rescue_resources %}
+                    <div class="document-item">
+                        <span class="document-title"><span class="doc-chip">PDF</span>{{ doc.title }}</span>
+                        <div class="document-actions">
+                            {% if doc.preview_kind %}
+                                <button type="button" class="preview-btn" data-url="{{ doc.file.url }}" data-kind="{{ doc.preview_kind }}" data-title="{{ doc.title }}">Preview</button>
+                            {% endif %}
+                            <a href="{{ doc.file.url }}" class="download-btn" download>
+                                <svg width="13" height="13"><use href="#i-dl"/></svg>Download
+                            </a>
+                        </div>
+                    </div>
+                {% empty %}
+                    <p class="no-documents">Rope rescue resources are being added — check back soon.</p>
+                {% endfor %}
+            </div>
+        </div>
+    </details>
+
+    <details class="resource-section">
+        <summary>
+            <span class="chev"><svg width="15" height="15"><use href="#i-chev"/></svg></span>
+            <span class="resource-head-text">
                 <span class="resource-eyebrow">Apparatus</span>
                 <span class="resource-title">Benching Resources</span>
             </span>

@@ -397,6 +397,64 @@ def delete_file_on_rule_document_delete(sender, instance, **kwargs):
         instance.file.delete(save=False)
 
 
+class FirstAidResource(models.Model):
+    """A first aid training document (guides, protocols, references)."""
+    title = models.CharField(max_length=255, help_text="e.g. First Aid Field Reference")
+    description = models.TextField(blank=True, help_text="What this document covers")
+    file = models.FileField(upload_to='training/first_aid/')
+    sort_order = models.PositiveIntegerField(default=0, help_text="Documents are listed lowest number first")
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['sort_order', 'title']
+
+    def __str__(self):
+        return self.title
+
+    @property
+    def filename(self):
+        return os.path.basename(self.file.name)
+
+    @property
+    def preview_kind(self):
+        return preview_kind_for(self.file.name)
+
+
+@receiver(post_delete, sender=FirstAidResource)
+def delete_file_on_first_aid_resource_delete(sender, instance, **kwargs):
+    if instance.file:
+        instance.file.delete(save=False)
+
+
+class RopeRescueResource(models.Model):
+    """A rope rescue training document (guides, rigging references, etc.)."""
+    title = models.CharField(max_length=255, help_text="e.g. High Angle Rope Rescue Guide")
+    description = models.TextField(blank=True, help_text="What this document covers")
+    file = models.FileField(upload_to='training/rope_rescue/')
+    sort_order = models.PositiveIntegerField(default=0, help_text="Documents are listed lowest number first")
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['sort_order', 'title']
+
+    def __str__(self):
+        return self.title
+
+    @property
+    def filename(self):
+        return os.path.basename(self.file.name)
+
+    @property
+    def preview_kind(self):
+        return preview_kind_for(self.file.name)
+
+
+@receiver(post_delete, sender=RopeRescueResource)
+def delete_file_on_rope_rescue_resource_delete(sender, instance, **kwargs):
+    if instance.file:
+        instance.file.delete(save=False)
+
+
 class Scorecard(models.Model):
     """A single MSHA competition scorecard, offered as a fillable PDF (for
     filling out on a device) and/or a non-fillable PDF (for printing)."""

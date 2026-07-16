@@ -3,6 +3,7 @@ from .models import (
     CalendarEvent, Competition, CompetitionProblem, ProblemDocument,
     SiteConfiguration, InstructionGuide, CompetitionRuleDocument, Scorecard,
     Quiz, QuizQuestion, QuizChoice, BenchingApparatus, BenchingResource,
+    FirstAidResource, RopeRescueResource,
 )
 
 admin.site.site_header = "Mine Rescue Center Administration"
@@ -116,6 +117,20 @@ class InstructionGuideAdmin(admin.ModelAdmin):
 class CompetitionRuleDocumentAdmin(admin.ModelAdmin):
     list_display = ('title', 'sort_order', 'updated_at')
     search_fields = ('title',)
+    ordering = ('sort_order', 'title')
+
+
+@admin.register(FirstAidResource)
+class FirstAidResourceAdmin(admin.ModelAdmin):
+    list_display = ('title', 'sort_order', 'updated_at')
+    search_fields = ('title', 'description')
+    ordering = ('sort_order', 'title')
+
+
+@admin.register(RopeRescueResource)
+class RopeRescueResourceAdmin(admin.ModelAdmin):
+    list_display = ('title', 'sort_order', 'updated_at')
+    search_fields = ('title', 'description')
     ordering = ('sort_order', 'title')
 
 
