@@ -8,7 +8,7 @@ Auto-generated. **248 quizzes are already live** on the site. This tracks the re
 
 ## 1. No parsable answer key yet (blank papers or scanned keys pending OCR)
 
-These written tests either have no answer key in the archived PDF (answers were on a separate answer sheet that was not saved), or carry the key only as a scanned image that still needs OCR. **65 tests across 41 competitions.**
+These written tests either have no answer key in the archived PDF (answers were on a separate answer sheet that was not saved), or carry the key only as a scanned image that still needs OCR. **68 tests across 41 competitions.**
 
 
 ### 2024
@@ -143,8 +143,11 @@ These written tests either have no answer key in the archived PDF (answers were 
   - [ ] Written Test
 - **2013 NMRA Post 2 Mine Rescue Contest**
   - [ ] Bench Written Test
+  - [ ] Kentucky Post 2 Bench Written Test
 - **2013 Ohio Valley Mine Rescue Contest NMRA Post 6**
   - [ ] Bench Written Test
+  - [ ] BG-4 Bench Written Test
+  - [ ] BioPak 240-R Bench Written Test
 
 ### 2012
 
