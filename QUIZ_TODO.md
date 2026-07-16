@@ -8,13 +8,8 @@ Auto-generated. **248 quizzes are already live** on the site. This tracks the re
 
 ## 1. No parsable answer key yet (blank papers or scanned keys pending OCR)
 
-These written tests either have no answer key in the archived PDF (answers were on a separate answer sheet that was not saved), or carry the key only as a scanned image that still needs OCR. **67 tests across 43 competitions.**
+These written tests either have no answer key in the archived PDF (answers were on a separate answer sheet that was not saved), or carry the key only as a scanned image that still needs OCR. **65 tests across 41 competitions.**
 
-
-### 2026
-
-- **2026 Western Mine Rescue Association Nevada Underground Mine Rescue Contest**
-  - [ ] BioMarine 240R Written Test
 
 ### 2024
 
@@ -150,8 +145,6 @@ These written tests either have no answer key in the archived PDF (answers were 
   - [ ] Bench Written Test
 - **2013 Ohio Valley Mine Rescue Contest NMRA Post 6**
   - [ ] Bench Written Test
-- **2013 Southern Regional Mine Rescue Contest**
-  - [ ] Technician Apparatus Drager Written Test
 
 ### 2012
 
