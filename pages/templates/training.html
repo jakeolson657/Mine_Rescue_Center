@@ -171,7 +171,7 @@
 
     .ig-card-main { display: flex; align-items: flex-start; gap: 13px; }
     .ig-card-main .doc-chip { margin-top: 1px; }
-    .ig-card-text { flex-grow: 1; }
+    .ig-card-text { flex-grow: 1; min-width: 0; }
 
     .ig-card-title {
         font-family: var(--font-display);
@@ -182,7 +182,16 @@
         margin-bottom: 6px;
     }
 
-    .ig-card-desc { font-size: 13.5px; line-height: 1.6; color: var(--steel); }
+    .ig-card-desc {
+        font-size: 13.5px;
+        line-height: 1.6;
+        color: var(--steel);
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        overflow: hidden;
+    }
 
     /* Nested scorecards dropdown */
     .scorecards-drop {
@@ -281,7 +290,7 @@
                             <span class="doc-chip">PDF</span>
                             <div class="ig-card-text">
                                 <div class="ig-card-title">{{ ig.title }}</div>
-                                <p class="ig-card-desc">{{ ig.description }}</p>
+                                <p class="ig-card-desc" title="{{ ig.description }}">{{ ig.description }}</p>
                             </div>
                         </div>
                         <div class="document-actions">
@@ -398,7 +407,7 @@
                                         <div class="ig-card-text">
                                             <div class="ig-card-title">{{ res.title }}</div>
                                             {% if res.description %}
-                                                <p class="ig-card-desc">{{ res.description }}</p>
+                                                <p class="ig-card-desc" title="{{ res.description }}">{{ res.description }}</p>
                                             {% endif %}
                                         </div>
                                     </div>
