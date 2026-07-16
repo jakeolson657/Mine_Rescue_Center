@@ -12,7 +12,7 @@ from .models import (
     CalendarEvent, Competition, SiteConfiguration,
     PROBLEM_CATEGORIES, categorize_problem,
     InstructionGuide, CompetitionRuleDocument, Scorecard,
-    Quiz,
+    Quiz, BenchingApparatus,
 )
 from .forms import FeedbackForm, ProblemSubmissionForm
 from .calendar_export import (
@@ -154,6 +154,7 @@ def training_resources(request):
         'instruction_guides': InstructionGuide.objects.all(),
         'rule_documents': CompetitionRuleDocument.objects.all(),
         'scorecards': Scorecard.objects.all(),
+        'benching_apparatus': BenchingApparatus.objects.prefetch_related('resources'),
     })
 
 

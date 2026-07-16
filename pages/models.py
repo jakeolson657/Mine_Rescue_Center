@@ -432,6 +432,64 @@ def delete_files_on_scorecard_delete(sender, instance, **kwargs):
         instance.non_fillable_file.delete(save=False)
 
 
+class BenchingApparatus(models.Model):
+    """A breathing apparatus teams bench, e.g. Draeger PSS BG4 plus. Groups
+    the benching resources (manuals, IFUs, checklists) for that unit."""
+    name = models.CharField(max_length=255, help_text="e.g. Draeger PSS BG4 plus")
+    description = models.TextField(blank=True, help_text="Optional note shown above the unit's resource list")
+    sort_order = models.PositiveIntegerField(default=0, help_text="Units are listed lowest number first")
+
+    class Meta:
+        ordering = ['sort_order', 'name']
+        verbose_name_plural = 'Benching apparatus'
+
+    def __str__(self):
+        return self.name
+
+
+class BenchingResource(models.Model):
+    """A document for benching a particular apparatus."""
+    apparatus = models.ForeignKey(BenchingApparatus, on_delete=models.CASCADE, related_name='resources')
+    title = models.CharField(max_length=255, help_text="e.g. PSS BG 4 / PSS BG 4 plus - Instructions for Use")
+    description = models.TextField(blank=True, help_text="What this document covers")
+    file = models.FileField(
+        upload_to='training/benching/', blank=True,
+        help_text="The document to preview/download. Leave blank for a link-only "
+                  "resource (e.g. software hosted elsewhere) and set the source link below.",
+    )
+    source_url = models.URLField(
+        blank=True,
+        help_text="External link for this resource, e.g. the manufacturer's page or "
+                  "hosted software. Shown as a link alongside (or instead of) the file.",
+    )
+    link_label = models.CharField(
+        max_length=60, blank=True,
+        help_text="Text for the source link, e.g. 'Access software'. Defaults to 'Source'.",
+    )
+    sort_order = models.PositiveIntegerField(default=0, help_text="Resources are listed lowest number first")
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['sort_order', 'title']
+
+    def __str__(self):
+        return f"{self.apparatus} - {self.title}"
+
+    @property
+    def filename(self):
+        return os.path.basename(self.file.name)
+
+    @property
+    def preview_kind(self):
+        return preview_kind_for(self.file.name)
+
+
+@receiver(post_delete, sender=BenchingResource)
+def delete_file_on_benching_resource_delete(sender, instance, **kwargs):
+    if instance.file:
+        instance.file.delete(save=False)
+
+
 class Quiz(models.Model):
     """An interactive, auto-graded version of a written test — extracted
     from a ProblemDocument's question/answer PDF(s)."""

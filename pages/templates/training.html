@@ -372,6 +372,69 @@
             </details>
         </div>
     </details>
+
+    <details class="resource-section">
+        <summary>
+            <span class="chev"><svg width="15" height="15"><use href="#i-chev"/></svg></span>
+            <span class="resource-head-text">
+                <span class="resource-eyebrow">Apparatus</span>
+                <span class="resource-title">Benching Resources</span>
+            </span>
+            <span class="badge count">{{ benching_apparatus|length }} unit{{ benching_apparatus|length|pluralize }}</span>
+        </summary>
+        <div class="resource-body">
+            <p class="resource-intro">Manufacturer manuals and instructions for use for the breathing apparatus teams bench, grouped by unit. Preview a document in your browser or download it.</p>
+            {% for unit in benching_apparatus %}
+                <details class="scorecards-drop">
+                    <summary>
+                        <span class="chev"><svg width="14" height="14"><use href="#i-chev"/></svg></span>
+                        <span class="scorecards-drop-title">{{ unit.name }}</span>
+                        <span class="badge count">{{ unit.resources.all|length }} doc{{ unit.resources.all|length|pluralize }}</span>
+                    </summary>
+                    <div class="scorecards-drop-body">
+                        {% if unit.description %}
+                            <p class="scorecards-drop-note">{{ unit.description }}</p>
+                        {% endif %}
+                        <div class="resource-list">
+                            {% for res in unit.resources.all %}
+                                <div class="ig-card">
+                                    <div class="ig-card-main">
+                                        <span class="doc-chip">{% if res.file %}PDF{% else %}WEB{% endif %}</span>
+                                        <div class="ig-card-text">
+                                            <div class="ig-card-title">{{ res.title }}</div>
+                                            {% if res.description %}
+                                                <p class="ig-card-desc">{{ res.description }}</p>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    <div class="document-actions">
+                                        {% if res.file %}
+                                            {% if res.preview_kind %}
+                                                <button type="button" class="preview-btn" data-url="{{ res.file.url }}" data-kind="{{ res.preview_kind }}" data-title="{{ res.title }}">Preview</button>
+                                            {% endif %}
+                                            <a href="{{ res.file.url }}" class="download-btn" download>
+                                                <svg width="13" height="13"><use href="#i-dl"/></svg>Download
+                                            </a>
+                                        {% endif %}
+                                        {% if res.source_url %}
+                                            <a class="ext-link" href="{{ res.source_url }}" target="_blank" rel="noopener">
+                                                <svg width="12" height="12"><use href="#i-ext"/></svg>
+                                                {{ res.link_label|default:"Source" }}
+                                            </a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% empty %}
+                                <p class="no-documents">Resources for this unit are being added — check back soon.</p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </details>
+            {% empty %}
+                <p class="no-documents">Benching resources are being added — check back soon.</p>
+            {% endfor %}
+        </div>
+    </details>
 </div>
 
 {% include 'partials/preview_modal.html' %}

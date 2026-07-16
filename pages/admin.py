@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import (
     CalendarEvent, Competition, CompetitionProblem, ProblemDocument,
     SiteConfiguration, InstructionGuide, CompetitionRuleDocument, Scorecard,
-    Quiz, QuizQuestion, QuizChoice,
+    Quiz, QuizQuestion, QuizChoice, BenchingApparatus, BenchingResource,
 )
 
 admin.site.site_header = "Mine Rescue Center Administration"
@@ -124,3 +124,30 @@ class ScorecardAdmin(admin.ModelAdmin):
     list_display = ('title', 'sort_order', 'updated_at')
     search_fields = ('title',)
     ordering = ('sort_order', 'title')
+
+
+class BenchingResourceInline(admin.TabularInline):
+    model = BenchingResource
+    extra = 1
+    fields = ('sort_order', 'title', 'description', 'file', 'source_url')
+    ordering = ('sort_order', 'title')
+
+
+@admin.register(BenchingApparatus)
+class BenchingApparatusAdmin(admin.ModelAdmin):
+    list_display = ('name', 'sort_order', 'resource_count')
+    search_fields = ('name', 'description')
+    ordering = ('sort_order', 'name')
+    inlines = [BenchingResourceInline]
+
+    @admin.display(description="Resources")
+    def resource_count(self, obj):
+        return obj.resources.count()
+
+
+@admin.register(BenchingResource)
+class BenchingResourceAdmin(admin.ModelAdmin):
+    list_display = ('title', 'apparatus', 'sort_order', 'updated_at')
+    list_filter = ('apparatus',)
+    search_fields = ('title', 'description')
+    ordering = ('apparatus', 'sort_order', 'title')
