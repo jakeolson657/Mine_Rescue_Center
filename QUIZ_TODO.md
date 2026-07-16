@@ -8,7 +8,7 @@ Auto-generated. **248 quizzes are already live** on the site. This tracks the re
 
 ## 1. No parsable answer key yet (blank papers or scanned keys pending OCR)
 
-These written tests either have no answer key in the archived PDF (answers were on a separate answer sheet that was not saved), or carry the key only as a scanned image that still needs OCR. **66 tests across 41 competitions.**
+These written tests either have no answer key in the archived PDF (answers were on a separate answer sheet that was not saved), or carry the key only as a scanned image that still needs OCR. **65 tests across 40 competitions.**
 
 
 ### 2024
@@ -100,8 +100,6 @@ These written tests either have no answer key in the archived PDF (answers were 
 
 ### 2016
 
-- **2016 Alabama State Mine Rescue Contest**
-  - [ ] Preshift Written Test
 - **2016 NMRA Post 6 Contest**
   - [ ] Preshift Written Test
 - **2016 Tennessee Regional Mine Rescue Contest**
