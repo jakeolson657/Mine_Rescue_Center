@@ -157,7 +157,7 @@ These written tests either have no answer key in the archived PDF (answers were 
 
 ## 2. Answer key exists but needs a manual look
 
-These have an answer key, but the format could not be parsed into a reliable quiz (e.g. scanned images with no text, graphical answer choices like brattice symbols, or an unusual answer-marking style). **7 tests across 7 competitions.**
+These have an answer key, but the format could not be parsed into a reliable quiz (e.g. scanned images with no text, graphical answer choices like brattice symbols, or an unusual answer-marking style). **8 tests across 8 competitions.**
 
 
 ### 2024
@@ -186,5 +186,7 @@ These have an answer key, but the format could not be parsed into a reliable qui
 
 ### 2014
 
+- **2014 Alabama State Mine Rescue Contest**
+  - [ ] Day 1 Written Test  _( key/textcolor:ff0000(partial) )_
 - **2014 Southwest Regional Mine Rescue Contest**
   - [ ] First Aid Written Test  _( key/citation(partial) )_
