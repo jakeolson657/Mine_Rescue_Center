@@ -8,7 +8,7 @@ Auto-generated. **248 quizzes are already live** on the site. This tracks the re
 
 ## 1. No parsable answer key yet (blank papers or scanned keys pending OCR)
 
-These written tests either have no answer key in the archived PDF (answers were on a separate answer sheet that was not saved), or carry the key only as a scanned image that still needs OCR. **60 tests across 37 competitions.**
+These written tests either have no answer key in the archived PDF (answers were on a separate answer sheet that was not saved), or carry the key only as a scanned image that still needs OCR. **59 tests across 36 competitions.**
 
 
 ### 2024
@@ -89,8 +89,6 @@ These written tests either have no answer key in the archived PDF (answers were 
 
 ### 2017
 
-- **2017 Ohio State Mine Rescue Contest**
-  - [ ] Written Test
 - **2017 Southern Regional Contest**
   - [ ] Mine Rescue Written Test
   - [ ] First Aid Written Test
