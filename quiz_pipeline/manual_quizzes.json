@@ -1,0 +1,8547 @@
+[
+ {
+  "source_pk": 385,
+  "title": "BG4 Bench Written Test",
+  "questions": [
+   {
+    "text": "The maximum temperature of the air used to dry parts should not go above ___ degree C (___ degree F).",
+    "choices": [
+     {
+      "text": "20, 68",
+      "is_correct": false
+     },
+     {
+      "text": "60, 120",
+      "is_correct": false
+     },
+     {
+      "text": "60, 140",
+      "is_correct": false
+     },
+     {
+      "text": "40, 140",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Only oxygen (medical grade or better) with >___% purity is to be used to fill the BG-4 oxygen cylinders.",
+    "choices": [
+     {
+      "text": "95.9",
+      "is_correct": false
+     },
+     {
+      "text": "21",
+      "is_correct": false
+     },
+     {
+      "text": "20",
+      "is_correct": false
+     },
+     {
+      "text": "99.5",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "___ pressure in the BG-4 is between 58 psi and 64 psi.",
+    "choices": [
+     {
+      "text": "Low",
+      "is_correct": false
+     },
+     {
+      "text": "High",
+      "is_correct": false
+     },
+     {
+      "text": "Medium",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "A fully filled oxygen cylinder holds ___ ___ of medical oxygen.",
+    "choices": [
+     {
+      "text": "440 mL",
+      "is_correct": false
+     },
+     {
+      "text": "220 mL",
+      "is_correct": false
+     },
+     {
+      "text": "440 L",
+      "is_correct": true
+     },
+     {
+      "text": "220 L",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The ___ Breathing hoses use Bayonet Rings.",
+    "choices": [
+     {
+      "text": "EDM",
+      "is_correct": false
+     },
+     {
+      "text": "DMP",
+      "is_correct": false
+     },
+     {
+      "text": "EMP",
+      "is_correct": false
+     },
+     {
+      "text": "EPDM",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "During the exhalation valve test, if valve is operating properly, ___ mbar is indicated on the pressure gauge.",
+    "choices": [
+     {
+      "text": "+10",
+      "is_correct": false
+     },
+     {
+      "text": "+5",
+      "is_correct": false
+     },
+     {
+      "text": "-10",
+      "is_correct": true
+     },
+     {
+      "text": "-5",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "At the first low pressure warning approximately ___% of the oxygen has been used up.",
+    "choices": [
+     {
+      "text": "75",
+      "is_correct": true
+     },
+     {
+      "text": "95",
+      "is_correct": false
+     },
+     {
+      "text": "99.5",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Only the following batteries are approved for use in the Sentinel:",
+    "choices": [
+     {
+      "text": "Rayovac, Eveready, Panasonic, Ultra-life Lithium",
+      "is_correct": true
+     },
+     {
+      "text": "Rayovac, Eveready, Energizer, Duracell",
+      "is_correct": false
+     },
+     {
+      "text": "Energizer, Duracell, Ultra-Life Lithium",
+      "is_correct": false
+     },
+     {
+      "text": "None of the above",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The oxygen cylinder burst disc ruptures at ___ psi.",
+    "choices": [
+     {
+      "text": "4,440",
+      "is_correct": false
+     },
+     {
+      "text": "4,450",
+      "is_correct": true
+     },
+     {
+      "text": "4,250",
+      "is_correct": false
+     },
+     {
+      "text": "4,200",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The weight of a fully charged BG-4 apparatus is ___ kg.",
+    "choices": [
+     {
+      "text": "15",
+      "is_correct": true
+     },
+     {
+      "text": "33",
+      "is_correct": false
+     },
+     {
+      "text": "58",
+      "is_correct": false
+     },
+     {
+      "text": "64",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "FPS 7000 Mask \u2014 item 4 is the '___ Visor Frame'.",
+    "choices": [
+     {
+      "text": "Lower",
+      "is_correct": true
+     },
+     {
+      "text": "Medium",
+      "is_correct": false
+     },
+     {
+      "text": "Upper",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2024_nevada_bg4_fps7000_mask.png"
+   },
+   {
+    "text": "FPS 7000 Mask \u2014 item 7.",
+    "choices": [
+     {
+      "text": "Cover",
+      "is_correct": false
+     },
+     {
+      "text": "Button",
+      "is_correct": false
+     },
+     {
+      "text": "Clamp",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2024_nevada_bg4_fps7000_mask.png"
+   },
+   {
+    "text": "FPS 7000 Mask \u2014 item 9.",
+    "choices": [
+     {
+      "text": "Clamp",
+      "is_correct": false
+     },
+     {
+      "text": "Cover",
+      "is_correct": true
+     },
+     {
+      "text": "Button",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2024_nevada_bg4_fps7000_mask.png"
+   },
+   {
+    "text": "FPS 7000 Mask \u2014 item 12.",
+    "choices": [
+     {
+      "text": "Disc",
+      "is_correct": true
+     },
+     {
+      "text": "Button",
+      "is_correct": false
+     },
+     {
+      "text": "Clamp",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2024_nevada_bg4_fps7000_mask.png"
+   },
+   {
+    "text": "FPS 7000 Mask \u2014 item 14.",
+    "choices": [
+     {
+      "text": "Disc",
+      "is_correct": false
+     },
+     {
+      "text": "Button",
+      "is_correct": true
+     },
+     {
+      "text": "Clamp",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2024_nevada_bg4_fps7000_mask.png"
+   },
+   {
+    "text": "Breathing House Assembly \u2014 item 1.",
+    "choices": [
+     {
+      "text": "Tee Coupling",
+      "is_correct": false
+     },
+     {
+      "text": "Coupling",
+      "is_correct": true
+     },
+     {
+      "text": "Hose Coupling",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2024_nevada_bg4_breathing_house.png"
+   },
+   {
+    "text": "Breathing House Assembly \u2014 item 2 is the '___ Valve Seat'.",
+    "choices": [
+     {
+      "text": "Inhalation",
+      "is_correct": true
+     },
+     {
+      "text": "Exhalation",
+      "is_correct": false
+     },
+     {
+      "text": "Toroidal",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2024_nevada_bg4_breathing_house.png"
+   },
+   {
+    "text": "Breathing House Assembly \u2014 item 3 is the '___ Valve Seat'.",
+    "choices": [
+     {
+      "text": "Inhalation",
+      "is_correct": false
+     },
+     {
+      "text": "Exhalation",
+      "is_correct": true
+     },
+     {
+      "text": "Toroidal",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2024_nevada_bg4_breathing_house.png"
+   },
+   {
+    "text": "Breathing House Assembly \u2014 item 8 is the '___ Sealing Ring'.",
+    "choices": [
+     {
+      "text": "Inhalation",
+      "is_correct": false
+     },
+     {
+      "text": "Exhalation",
+      "is_correct": false
+     },
+     {
+      "text": "Toroidal",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2024_nevada_bg4_breathing_house.png"
+   },
+   {
+    "text": "Breathing House Assembly \u2014 item 9.",
+    "choices": [
+     {
+      "text": "Toroidal",
+      "is_correct": false
+     },
+     {
+      "text": "Cap",
+      "is_correct": false
+     },
+     {
+      "text": "Sealing Cap",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2024_nevada_bg4_breathing_house.png"
+   }
+  ]
+ },
+ {
+  "source_pk": 68,
+  "title": "BIO Bench Written Test",
+  "questions": [
+   {
+    "text": "Always handle oxygen cylinders with care to ___ ___.",
+    "choices": [
+     {
+      "text": "prevent accident",
+      "is_correct": false
+     },
+     {
+      "text": "prevent damage",
+      "is_correct": true
+     },
+     {
+      "text": "prevent leaks",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The battery is to be changed in ___ air only.",
+    "choices": [
+     {
+      "text": "fresh",
+      "is_correct": true
+     },
+     {
+      "text": "ambient",
+      "is_correct": false
+     },
+     {
+      "text": "zero",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "If the optional magnetic wiper is utilized soak ___ chamois surfaces of the wiper pieces with water.",
+    "choices": [
+     {
+      "text": "one",
+      "is_correct": false
+     },
+     {
+      "text": "inside",
+      "is_correct": false
+     },
+     {
+      "text": "both",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The BioPak breathing chamber has a ___ Volume greater than 6 liters.",
+    "choices": [
+     {
+      "text": "Total",
+      "is_correct": false
+     },
+     {
+      "text": "Pressure",
+      "is_correct": false
+     },
+     {
+      "text": "Tidal",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The use of an ___ will add to the workload and stress of the user.",
+    "choices": [
+     {
+      "text": "240R",
+      "is_correct": false
+     },
+     {
+      "text": "BioPak",
+      "is_correct": false
+     },
+     {
+      "text": "SCBA",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "During an alarm test the LED indication should turn to a flashing red with a horn sounding when the pressure gauge reads between ___ psi.",
+    "choices": [
+     {
+      "text": "550-1000",
+      "is_correct": false
+     },
+     {
+      "text": "650-1000",
+      "is_correct": true
+     },
+     {
+      "text": "750-1000",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Claustrophobia or ___ when wearing a SCBA could limit or prevent the use of the BioPak 240 Revolution.",
+    "choices": [
+     {
+      "text": "Hypertension",
+      "is_correct": false
+     },
+     {
+      "text": "Anxiety",
+      "is_correct": true
+     },
+     {
+      "text": "Anxiousness",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The ___ gauge is protected against sudden loss of oxygen in the event of the gauge line severing by a manual disconnect located at the gauge pass through point of the housing.",
+    "choices": [
+     {
+      "text": "pressure",
+      "is_correct": true
+     },
+     {
+      "text": "exterior",
+      "is_correct": false
+     },
+     {
+      "text": "oxygen",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A foreign gas may cause cylinder ___.",
+    "choices": [
+     {
+      "text": "corrosion",
+      "is_correct": true
+     },
+     {
+      "text": "deterioration",
+      "is_correct": false
+     },
+     {
+      "text": "failure",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Cylinders that have been hydro-static tested shall be cleaned for high-pressure oxygen service per ___ ___.",
+    "choices": [
+     {
+      "text": "manufacturer Standards",
+      "is_correct": false
+     },
+     {
+      "text": "Industry Standards",
+      "is_correct": false
+     },
+     {
+      "text": "national standards",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Pneumatic Assembly \u2014 item 3 is the '___ Feed Tube'.",
+    "choices": [
+     {
+      "text": "Bypass",
+      "is_correct": false
+     },
+     {
+      "text": "Return",
+      "is_correct": false
+     },
+     {
+      "text": "Oxygen",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2024_colorado_bio_pneumatic.png"
+   },
+   {
+    "text": "Pneumatic Assembly \u2014 item 6 is the '___ Push Button'.",
+    "choices": [
+     {
+      "text": "Relief Valve",
+      "is_correct": false
+     },
+     {
+      "text": "Bypass Valve",
+      "is_correct": true
+     },
+     {
+      "text": "Minimum Valve",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2024_colorado_bio_pneumatic.png"
+   },
+   {
+    "text": "Pneumatic Assembly \u2014 item 7 is the '___ Valve'.",
+    "choices": [
+     {
+      "text": "Relief",
+      "is_correct": false
+     },
+     {
+      "text": "Bypass",
+      "is_correct": true
+     },
+     {
+      "text": "Minimum",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2024_colorado_bio_pneumatic.png"
+   },
+   {
+    "text": "Pneumatic Assembly \u2014 item 9 is the 'Oxygen ___ Assembly'.",
+    "choices": [
+     {
+      "text": "Regulator",
+      "is_correct": true
+     },
+     {
+      "text": "Distributor",
+      "is_correct": false
+     },
+     {
+      "text": "Sensor",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2024_colorado_bio_pneumatic.png"
+   },
+   {
+    "text": "Pneumatic Assembly \u2014 item 11 is the 'Remote Gauge ___'.",
+    "choices": [
+     {
+      "text": "Unit",
+      "is_correct": false
+     },
+     {
+      "text": "Display",
+      "is_correct": false
+     },
+     {
+      "text": "Assembly",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2024_colorado_bio_pneumatic.png"
+   },
+   {
+    "text": "Lower Housing Assembly \u2014 item 2 is the '___ Springs'.",
+    "choices": [
+     {
+      "text": "Air Bag",
+      "is_correct": false
+     },
+     {
+      "text": "Housing",
+      "is_correct": false
+     },
+     {
+      "text": "Diaphragm",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2024_colorado_bio_lower_housing.png"
+   },
+   {
+    "text": "Lower Housing Assembly \u2014 item 3 is the 'External Oxygen ___'.",
+    "choices": [
+     {
+      "text": "Knob",
+      "is_correct": true
+     },
+     {
+      "text": "Cap",
+      "is_correct": false
+     },
+     {
+      "text": "Adjustment",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2024_colorado_bio_lower_housing.png"
+   },
+   {
+    "text": "Lower Housing Assembly \u2014 item 7 is the '___ Spacer'.",
+    "choices": [
+     {
+      "text": "Drain",
+      "is_correct": false
+     },
+     {
+      "text": "Shell",
+      "is_correct": false
+     },
+     {
+      "text": "Vent",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2024_colorado_bio_lower_housing.png"
+   },
+   {
+    "text": "Lower Housing Assembly \u2014 item 12 is the 'Latch ___ Pad'.",
+    "choices": [
+     {
+      "text": "Rubber",
+      "is_correct": false
+     },
+     {
+      "text": "Foam",
+      "is_correct": true
+     },
+     {
+      "text": "Cushion",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2024_colorado_bio_lower_housing.png"
+   },
+   {
+    "text": "Lower Housing Assembly \u2014 item 16 is the 'Oxygen ___ Hold-Down Strap'.",
+    "choices": [
+     {
+      "text": "Cylinder",
+      "is_correct": true
+     },
+     {
+      "text": "Bottle",
+      "is_correct": false
+     },
+     {
+      "text": "Canister",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2024_colorado_bio_lower_housing.png"
+   }
+  ]
+ },
+ {
+  "source_pk": 488,
+  "title": "First Aid Written Test",
+  "questions": [
+   {
+    "text": "Signs of opioid overdose include slow, shallow or no breathing, choking, or gurgling sounds, drowsiness or loss or consciousness, ___, constricted pupils, blue skin, lips, or nails.",
+    "choices": [
+     {
+      "text": "large",
+      "is_correct": false
+     },
+     {
+      "text": "dark",
+      "is_correct": false
+     },
+     {
+      "text": "small",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "___ the throat with the thumb and fingers, making the universal choking sign indicates the need for help when a victim is choking.",
+    "choices": [
+     {
+      "text": "Holding",
+      "is_correct": false
+     },
+     {
+      "text": "Grabbing",
+      "is_correct": true
+     },
+     {
+      "text": "Clutching",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A wound where the top layer of skin have been ___ off, commonly seen in falls, can be best described as an abrasion.",
+    "choices": [
+     {
+      "text": "scraped",
+      "is_correct": true
+     },
+     {
+      "text": "peeled",
+      "is_correct": false
+     },
+     {
+      "text": "torn",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The ___ are found in an area behind the abdominal wall.",
+    "choices": [
+     {
+      "text": "liver",
+      "is_correct": false
+     },
+     {
+      "text": "spleen",
+      "is_correct": false
+     },
+     {
+      "text": "kidneys",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Hepa mask would be the most important type of PPE to use when caring for a patient with ___.",
+    "choices": [
+     {
+      "text": "hepatitis",
+      "is_correct": false
+     },
+     {
+      "text": "tuberculosis",
+      "is_correct": true
+     },
+     {
+      "text": "herpes",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Proper body mechanics are best defined as properly using your body to ___ a lift or move.",
+    "choices": [
+     {
+      "text": "coordinate",
+      "is_correct": false
+     },
+     {
+      "text": "conduct",
+      "is_correct": false
+     },
+     {
+      "text": "facilitate",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Carotid and ___ are the two pulse points that are referred to central pulse points.",
+    "choices": [
+     {
+      "text": "branchial",
+      "is_correct": false
+     },
+     {
+      "text": "temporal",
+      "is_correct": false
+     },
+     {
+      "text": "femoral",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Your patient has been in respiratory distress for approximately ___ minutes, your assessment reveals pale skin and cyanosis of the lips, these are signs of hypoxia.",
+    "choices": [
+     {
+      "text": "30",
+      "is_correct": true
+     },
+     {
+      "text": "20",
+      "is_correct": false
+     },
+     {
+      "text": "15",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Blood spurts from the wound, the color of the blood is bright red, and blood loss is often profuse in a short period of time are typical characteristics of ___ bleeding.",
+    "choices": [
+     {
+      "text": "life threatening",
+      "is_correct": false
+     },
+     {
+      "text": "serious",
+      "is_correct": false
+     },
+     {
+      "text": "arterial",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "You are caring for a patient with an open chest wound and have covered the wound with an occlusive dressing, the patient becomes increasingly short of breath, you should partially remove the dressing to ___ air to escape.",
+    "choices": [
+     {
+      "text": "allow",
+      "is_correct": true
+     },
+     {
+      "text": "prevent",
+      "is_correct": false
+     },
+     {
+      "text": "assist",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A rate of 100 to 120 compressions per minute and a depth of at least 2 inches are the rate and depth for chest compressions on an ___.",
+    "choices": [
+     {
+      "text": "patient",
+      "is_correct": false
+     },
+     {
+      "text": "mannequin",
+      "is_correct": false
+     },
+     {
+      "text": "adult",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Opioids are medications used primarily for pain relief, common examples are ___, morphine, and fentanyl.",
+    "choices": [
+     {
+      "text": "oxycodone",
+      "is_correct": false
+     },
+     {
+      "text": "hydrocodone",
+      "is_correct": true
+     },
+     {
+      "text": "methadone",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Shock is a life-threatening condition that occurs when the circulatory system can't ___ adequate blood flow.",
+    "choices": [
+     {
+      "text": "regulate",
+      "is_correct": false
+     },
+     {
+      "text": "maintain",
+      "is_correct": true
+     },
+     {
+      "text": "control",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Head-tilt-chin lift is a maneuver used to open a victim's airway before ___ rescue breaths during CPR.",
+    "choices": [
+     {
+      "text": "providing",
+      "is_correct": true
+     },
+     {
+      "text": "delivering",
+      "is_correct": false
+     },
+     {
+      "text": "performing",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Early ___ of foreign-body airway obstruction is the key to successful outcome.",
+    "choices": [
+     {
+      "text": "recognition",
+      "is_correct": true
+     },
+     {
+      "text": "detection",
+      "is_correct": false
+     },
+     {
+      "text": "consideration",
+      "is_correct": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 495,
+  "title": "First Aid Written Test",
+  "questions": [
+   {
+    "text": "___ mask would be the most important type of PPE to use when caring for a patient with tuberculosis.",
+    "choices": [
+     {
+      "text": "Hepa",
+      "is_correct": true
+     },
+     {
+      "text": "Bag",
+      "is_correct": false
+     },
+     {
+      "text": "Pocket",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The abdominal cavity contains the liver and part of the ___ intestine.",
+    "choices": [
+     {
+      "text": "large",
+      "is_correct": true
+     },
+     {
+      "text": "small",
+      "is_correct": false
+     },
+     {
+      "text": "lower",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "When assessing circulation for a responsive adult patient you should assess the ___ pulse.",
+    "choices": [
+     {
+      "text": "femoral",
+      "is_correct": false
+     },
+     {
+      "text": "carotid",
+      "is_correct": false
+     },
+     {
+      "text": "radial",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Skin that is ___ in color is called cyanotic.",
+    "choices": [
+     {
+      "text": "red",
+      "is_correct": false
+     },
+     {
+      "text": "bluish",
+      "is_correct": true
+     },
+     {
+      "text": "pale",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A patient who presents with normal vital signs and shows no indications of life-threatening problems may be described as ___.",
+    "choices": [
+     {
+      "text": "traumatic",
+      "is_correct": false
+     },
+     {
+      "text": "normal",
+      "is_correct": false
+     },
+     {
+      "text": "stable",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Your patient has been in respiratory distress for approximately 30 minutes, your assessment reveals pale skin and cyanosis of the lips, these are signs of ___.",
+    "choices": [
+     {
+      "text": "bronchitis",
+      "is_correct": false
+     },
+     {
+      "text": "asthma",
+      "is_correct": false
+     },
+     {
+      "text": "hypoxia",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Protect the patient from injury and place him or her in the ___ following the seizure is an example of appropriate care for a seizure patient.",
+    "choices": [
+     {
+      "text": "Recovery position",
+      "is_correct": true
+     },
+     {
+      "text": "Prone position",
+      "is_correct": false
+     },
+     {
+      "text": "Supine position",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A wound where the top layers of skin have been scraped off, commonly seen in falls, can best be described as an ___.",
+    "choices": [
+     {
+      "text": "contusion",
+      "is_correct": false
+     },
+     {
+      "text": "abrasion",
+      "is_correct": true
+     },
+     {
+      "text": "laceration",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "When the ___ is absent is a situation where it would be appropriate to place an angulated extremity back into the anatomical position.",
+    "choices": [
+     {
+      "text": "Distal pulse",
+      "is_correct": true
+     },
+     {
+      "text": "Radial pulse",
+      "is_correct": false
+     },
+     {
+      "text": "Carotid pulse",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "You are caring for a patient who has one leg that is shortened with the foot rotated to one side, these are likely signs of a possible ___.",
+    "choices": [
+     {
+      "text": "Dislocated femur",
+      "is_correct": false
+     },
+     {
+      "text": "Dislocated knee",
+      "is_correct": false
+     },
+     {
+      "text": "Dislocated hip",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The most appropriate care for an open abdominal injury is to cover the wound with a ___, sterile dressing.",
+    "choices": [
+     {
+      "text": "clean",
+      "is_correct": false
+     },
+     {
+      "text": "moist",
+      "is_correct": true
+     },
+     {
+      "text": "dry",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A ratio of ___ compressions per minute and a depth of at least 2 inches are the rate and depth for chest compressions on an adult.",
+    "choices": [
+     {
+      "text": "80 to 100",
+      "is_correct": false
+     },
+     {
+      "text": "100 to 120",
+      "is_correct": true
+     },
+     {
+      "text": "30 to 2",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "When more rescuers arrive on scene you should assign tasks to other rescuers and rotate compressors every ___ or more frequently if needed to avoid fatigue.",
+    "choices": [
+     {
+      "text": "2-minutes",
+      "is_correct": true
+     },
+     {
+      "text": "5-minutes",
+      "is_correct": false
+     },
+     {
+      "text": "3-minutes",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "___ is an important tool for identifying whether opioids may be involved in a life-threatening emergency.",
+    "choices": [
+     {
+      "text": "Patient assessment",
+      "is_correct": false
+     },
+     {
+      "text": "Initial assessment",
+      "is_correct": false
+     },
+     {
+      "text": "Scene assessment",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "___ is a life-threatening condition that occurs when the circulatory system can't maintain adequate blood flow.",
+    "choices": [
+     {
+      "text": "stroke",
+      "is_correct": false
+     },
+     {
+      "text": "shock",
+      "is_correct": true
+     },
+     {
+      "text": "asthma",
+      "is_correct": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 372,
+  "title": "Drager Written Test",
+  "questions": [
+   {
+    "text": "A ___ exhalation or inhalation valve could be caused by a defective valve seat or valve disc.",
+    "choices": [
+     {
+      "text": "Malfunctioning",
+      "is_correct": false
+     },
+     {
+      "text": "Leaky",
+      "is_correct": true
+     },
+     {
+      "text": "Defective",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A ___ pressure in the breathing circuit prevents ambient air from entering the system.",
+    "choices": [
+     {
+      "text": "Constant",
+      "is_correct": false
+     },
+     {
+      "text": "Residual",
+      "is_correct": false
+     },
+     {
+      "text": "Positive",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The BG-4 constant dosage must be ___ L/min.",
+    "choices": [
+     {
+      "text": "1.5 to 1.8",
+      "is_correct": false
+     },
+     {
+      "text": "1.5 to 1.9",
+      "is_correct": true
+     },
+     {
+      "text": "1.4 to 1.6",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A fully filled steel oxygen cylinder holds ___ liters of medical oxygen.",
+    "choices": [
+     {
+      "text": "440",
+      "is_correct": true
+     },
+     {
+      "text": "500",
+      "is_correct": false
+     },
+     {
+      "text": "400",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Never replace the ___ in potentially explosive areas.",
+    "choices": [
+     {
+      "text": "Sentinel",
+      "is_correct": false
+     },
+     {
+      "text": "Display",
+      "is_correct": false
+     },
+     {
+      "text": "Battery",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Insert speech diaphragm, install ___ ring and tighten with spanner.",
+    "choices": [
+     {
+      "text": "Retainer",
+      "is_correct": true
+     },
+     {
+      "text": "Tightening",
+      "is_correct": false
+     },
+     {
+      "text": "Torque",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Sentinel \u2014 item 1.",
+    "choices": [
+     {
+      "text": "Sentinel",
+      "is_correct": true
+     },
+     {
+      "text": "Controller",
+      "is_correct": false
+     },
+     {
+      "text": "Display",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2023_missouri_drager_sentinel.png"
+   },
+   {
+    "text": "Sentinel \u2014 item 3 is the 'Angle ___'.",
+    "choices": [
+     {
+      "text": "Coupling",
+      "is_correct": false
+     },
+     {
+      "text": "Connector",
+      "is_correct": true
+     },
+     {
+      "text": "Fitting",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2023_missouri_drager_sentinel.png"
+   },
+   {
+    "text": "Sentinel \u2014 item 7 is the 'Pressure ___'.",
+    "choices": [
+     {
+      "text": "Sensor",
+      "is_correct": true
+     },
+     {
+      "text": "Switch",
+      "is_correct": false
+     },
+     {
+      "text": "Controller",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2023_missouri_drager_sentinel.png"
+   },
+   {
+    "text": "Sentinel \u2014 item 8 is the 'Copper ___'.",
+    "choices": [
+     {
+      "text": "Spacer",
+      "is_correct": false
+     },
+     {
+      "text": "Washer",
+      "is_correct": false
+     },
+     {
+      "text": "Ring",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2023_missouri_drager_sentinel.png"
+   },
+   {
+    "text": "Sentinel \u2014 item 13 is the '___ Key'.",
+    "choices": [
+     {
+      "text": "Sensor",
+      "is_correct": false
+     },
+     {
+      "text": "Talley",
+      "is_correct": true
+     },
+     {
+      "text": "Switch",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2023_missouri_drager_sentinel.png"
+   },
+   {
+    "text": "Oxygen Cylinder \u2014 item 13 is the '___ Ring'.",
+    "choices": [
+     {
+      "text": "Safety",
+      "is_correct": true
+     },
+     {
+      "text": "Sealing",
+      "is_correct": false
+     },
+     {
+      "text": "O",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2023_missouri_drager_cylinder.png"
+   },
+   {
+    "text": "Oxygen Cylinder \u2014 item 16 is the '___ Ring'.",
+    "choices": [
+     {
+      "text": "Safety",
+      "is_correct": false
+     },
+     {
+      "text": "Sealing",
+      "is_correct": true
+     },
+     {
+      "text": "O",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2023_missouri_drager_cylinder.png"
+   },
+   {
+    "text": "Oxygen Cylinder \u2014 item 18.",
+    "choices": [
+     {
+      "text": "O-Ring",
+      "is_correct": false
+     },
+     {
+      "text": "Lock Washer",
+      "is_correct": true
+     },
+     {
+      "text": "Gasket",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2023_missouri_drager_cylinder.png"
+   },
+   {
+    "text": "Oxygen Cylinder \u2014 item 20 is the 'Bursting ___'.",
+    "choices": [
+     {
+      "text": "Valve",
+      "is_correct": false
+     },
+     {
+      "text": "Cap",
+      "is_correct": false
+     },
+     {
+      "text": "Disc",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2023_missouri_drager_cylinder.png"
+   },
+   {
+    "text": "Oxygen Cylinder \u2014 item 21 is the 'Oxygen ___'.",
+    "choices": [
+     {
+      "text": "Cylinder",
+      "is_correct": true
+     },
+     {
+      "text": "Canister",
+      "is_correct": false
+     },
+     {
+      "text": "Tank",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2023_missouri_drager_cylinder.png"
+   }
+  ]
+ },
+ {
+  "source_pk": 304,
+  "title": "Day 1 Written Test",
+  "questions": [
+   {
+    "text": "When ___ a mine fire, you should be careful to ensure that there are no abrupt changes in the ventilation over the fire area.",
+    "choices": [
+     {
+      "text": "Extinguishing",
+      "is_correct": false
+     },
+     {
+      "text": "Sealing",
+      "is_correct": true
+     },
+     {
+      "text": "Fighting",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "___ sampling-pipes are inserted in temporary and permanent seals for the purpose of collecting air samples from the sealed area.",
+    "choices": [
+     {
+      "text": "Non-Metallic",
+      "is_correct": true
+     },
+     {
+      "text": "Non-sparking",
+      "is_correct": false
+     },
+     {
+      "text": "Non-Explosive",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Before going underground to ___ for a fire or to fight a fire, the team should know about any possible ignition sources that may exist in the affected area.",
+    "choices": [
+     {
+      "text": "Explore",
+      "is_correct": true
+     },
+     {
+      "text": "Look",
+      "is_correct": false
+     },
+     {
+      "text": "Prepare",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The specific gravity of ___ is 1.5291.",
+    "choices": [
+     {
+      "text": "Carbon Monoxide",
+      "is_correct": false
+     },
+     {
+      "text": "Sulfur Dioxide",
+      "is_correct": false
+     },
+     {
+      "text": "Carbon Dioxide",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "___ is a mixture of carbon dioxide, nitrogen and air which is oxygen deficient.",
+    "choices": [
+     {
+      "text": "White damp",
+      "is_correct": false
+     },
+     {
+      "text": "After damp",
+      "is_correct": false
+     },
+     {
+      "text": "Black damp",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Breathing air containing 10 percent ___ causes violent panting and can lead to death.",
+    "choices": [
+     {
+      "text": "Nitrogen dioxide",
+      "is_correct": false
+     },
+     {
+      "text": "Carbon dioxide",
+      "is_correct": true
+     },
+     {
+      "text": "Hydrogen sulfide",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "___ should be allowed for a fire area to cool before it is unsealed.",
+    "choices": [
+     {
+      "text": "Amble time",
+      "is_correct": false
+     },
+     {
+      "text": "Sufficient time",
+      "is_correct": true
+     },
+     {
+      "text": "Recommended time",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "___ should be marked to warn other teams that may enter the area after yours.",
+    "choices": [
+     {
+      "text": "Dangerous areas",
+      "is_correct": false
+     },
+     {
+      "text": "Unsafe areas",
+      "is_correct": false
+     },
+     {
+      "text": "Hazardous areas",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "All ___ should be well hitched in the floor, roof, and ribs to improve their strength.",
+    "choices": [
+     {
+      "text": "Permanent seals",
+      "is_correct": false
+     },
+     {
+      "text": "Block seals",
+      "is_correct": false
+     },
+     {
+      "text": "Temporary seals",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The main objectives of exploration work during a mine fire are locating the fire and ___ conditions in the fire area.",
+    "choices": [
+     {
+      "text": "Evaluating",
+      "is_correct": false
+     },
+     {
+      "text": "Observation",
+      "is_correct": false
+     },
+     {
+      "text": "Assessing",
+      "is_correct": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 174,
+  "title": "Written Test",
+  "questions": [
+   {
+    "text": "Clean, dry air at sea level is made up of ___ nitrogen and 21 percent oxygen.",
+    "choices": [
+     {
+      "text": "58 percent",
+      "is_correct": false
+     },
+     {
+      "text": "68 percent",
+      "is_correct": false
+     },
+     {
+      "text": "78 percent",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "A smoke tube is used to show the direction and ___ of slow moving air.",
+    "choices": [
+     {
+      "text": "quantity",
+      "is_correct": false
+     },
+     {
+      "text": "velocity",
+      "is_correct": true
+     },
+     {
+      "text": "speed",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "High volatile coal burns ___ than low or medium volatile coal.",
+    "choices": [
+     {
+      "text": "much hotter",
+      "is_correct": false
+     },
+     {
+      "text": "much faster",
+      "is_correct": true
+     },
+     {
+      "text": "more readily",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "When looking for survivors, it is important to ___ and listen for clues.",
+    "choices": [
+     {
+      "text": "both look",
+      "is_correct": true
+     },
+     {
+      "text": "look carefully",
+      "is_correct": false
+     },
+     {
+      "text": "look around",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "When survivors are ___, their location, identities, and condition should be reported immediately to the command center.",
+    "choices": [
+     {
+      "text": "rescued",
+      "is_correct": false
+     },
+     {
+      "text": "found",
+      "is_correct": false
+     },
+     {
+      "text": "located",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Oxygen is a supporter of ___.",
+    "choices": [
+     {
+      "text": "life",
+      "is_correct": false
+     },
+     {
+      "text": "explosions",
+      "is_correct": false
+     },
+     {
+      "text": "combustion",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Teams should report the lowest team member's oxygen ___ reading at each team check.",
+    "choices": [
+     {
+      "text": "bottle",
+      "is_correct": false
+     },
+     {
+      "text": "psi",
+      "is_correct": false
+     },
+     {
+      "text": "gauge",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Mines below the water table tend to have ___ methane than those above the water table.",
+    "choices": [
+     {
+      "text": "less",
+      "is_correct": false
+     },
+     {
+      "text": "more",
+      "is_correct": true
+     },
+     {
+      "text": "lighter",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "To test for methane, use a methane detector or ___.",
+    "choices": [
+     {
+      "text": "bottle sampling",
+      "is_correct": false
+     },
+     {
+      "text": "chemical analysis",
+      "is_correct": true
+     },
+     {
+      "text": "safety lamp",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "As the team advances, the map man records what the ___ by marking the information on a mine map.",
+    "choices": [
+     {
+      "text": "team encounters",
+      "is_correct": true
+     },
+     {
+      "text": "others find",
+      "is_correct": false
+     },
+     {
+      "text": "team locates",
+      "is_correct": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 295,
+  "title": "Day 2 Written Test",
+  "questions": [
+   {
+    "text": "Atmospheric pressure and temperature are important factors because they:",
+    "choices": [
+     {
+      "text": "Affect the rate of diffusion of a gas by ventilation.",
+      "is_correct": true
+     },
+     {
+      "text": "Can cause false readings on gas detection instruments.",
+      "is_correct": false
+     },
+     {
+      "text": "Lower oxygen content in the mine.",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Two gases that are highly soluble in water are:",
+    "choices": [
+     {
+      "text": "Hydrogen sulfide and hydrogen",
+      "is_correct": false
+     },
+     {
+      "text": "Nitrogen and sulfur dioxide",
+      "is_correct": false
+     },
+     {
+      "text": "Hydrogen sulfide and sulfur dioxide",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The explosive range of methane/air mixture (normally 5-15%) will change if:",
+    "choices": [
+     {
+      "text": "Certain other combustible gases are present.",
+      "is_correct": false
+     },
+     {
+      "text": "Coal dust is suspended in the atmosphere.",
+      "is_correct": false
+     },
+     {
+      "text": "There is less than 12.1% oxygen in the atmosphere.",
+      "is_correct": false
+     },
+     {
+      "text": "All of the above",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Which of the following is not true of sulfur dioxide?",
+    "choices": [
+     {
+      "text": "It is explosive.",
+      "is_correct": true
+     },
+     {
+      "text": "It is toxic.",
+      "is_correct": false
+     },
+     {
+      "text": "It can occur during mine fires.",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A gas that is normally found near the roof or in high places in the mine, is said to have a low:",
+    "choices": [
+     {
+      "text": "Level of toxicity.",
+      "is_correct": false
+     },
+     {
+      "text": "Level of solubility",
+      "is_correct": false
+     },
+     {
+      "text": "Specific gravity",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "A smoke tube is a devise used to:",
+    "choices": [
+     {
+      "text": "Determine oxygen content of the mine atmosphere.",
+      "is_correct": false
+     },
+     {
+      "text": "Determine direction and velocity of air flow.",
+      "is_correct": true
+     },
+     {
+      "text": "Detect leaks in temporary stoppings.",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Mine rescue teams erecting temporary stoppings/bulkheads in atmosphere with elevated methane readings should:",
+    "choices": [
+     {
+      "text": "Use only inflatable seals.",
+      "is_correct": false
+     },
+     {
+      "text": "Mine rescue teams should never enter such atmosphere.",
+      "is_correct": false
+     },
+     {
+      "text": "Use non-sparking tools, nails, and spads.",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Barefaced exploration should be attempted only when:",
+    "choices": [
+     {
+      "text": "No breathing apparatus is available.",
+      "is_correct": false
+     },
+     {
+      "text": "Miners are trapped in the mine.",
+      "is_correct": false
+     },
+     {
+      "text": "A backup mine rescue team with apparatus is immediately available.",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Gas readings should be taken:",
+    "choices": [
+     {
+      "text": "At all intersections.",
+      "is_correct": false
+     },
+     {
+      "text": "At any dead end or face area.",
+      "is_correct": false
+     },
+     {
+      "text": "At the furthest point of travel in any entry or heading.",
+      "is_correct": false
+     },
+     {
+      "text": "All of the above",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Debriefings are held to:",
+    "choices": [
+     {
+      "text": "Inform news reporters of developments.",
+      "is_correct": false
+     },
+     {
+      "text": "Inform family members of developments.",
+      "is_correct": false
+     },
+     {
+      "text": "Review the rescue team's findings after they have returned from underground.",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Class A fires are those that involve:",
+    "choices": [
+     {
+      "text": "Ordinary combustible materials such as wood, plastics, paper, and cloth.",
+      "is_correct": true
+     },
+     {
+      "text": "Combustible cooking media such as oils and grease commonly found in commercial kitchens.",
+      "is_correct": false
+     },
+     {
+      "text": "Flammable or combustible liquids such as gasoline, diesel, kerosene, and grease.",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A monoammonium phosphate extinguisher is effective in fighting:",
+    "choices": [
+     {
+      "text": "Class A fires",
+      "is_correct": false
+     },
+     {
+      "text": "Class B Fires",
+      "is_correct": false
+     },
+     {
+      "text": "Class C Fires",
+      "is_correct": false
+     },
+     {
+      "text": "All of the above",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Which one of the following actions is not a suggested procedure when a team locates a body?",
+    "choices": [
+     {
+      "text": "Outline the body with chalk or paint on the floor.",
+      "is_correct": false
+     },
+     {
+      "text": "Clean up the area around the body for safety and ease of recovery.",
+      "is_correct": true
+     },
+     {
+      "text": "Report the location to the command center.",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A mine rescue team could remove standing water from an unventilated area.",
+    "choices": [
+     {
+      "text": "If gas conditions permit, using non-conductive suction line and a pump set up in fresh air.",
+      "is_correct": false
+     },
+     {
+      "text": "Standing water can not be pumped from an unventilated area.",
+      "is_correct": false
+     },
+     {
+      "text": "If the line loses suction, toxic or explosive gases from the contaminated atmosphere could not be drawn out.",
+      "is_correct": false
+     },
+     {
+      "text": "Both A and C",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Probably the best material to use for sealing a mine fire is:",
+    "choices": [
+     {
+      "text": "Brattice cloth",
+      "is_correct": false
+     },
+     {
+      "text": "Cement blocks",
+      "is_correct": true
+     },
+     {
+      "text": "Tongue-and-groove lumber",
+      "is_correct": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 1652,
+  "title": "Written Test",
+  "questions": [
+   {
+    "text": "Day 1 - ___ method of indirect firefighting is flooding the sealed fire area with water.",
+    "choices": [
+     {
+      "text": "Common",
+      "is_correct": false
+     },
+     {
+      "text": "Every",
+      "is_correct": false
+     },
+     {
+      "text": "One",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Day 1 - Once an explosion has occurred, there is ___ the possibility of further explosions.",
+    "choices": [
+     {
+      "text": "sometimes",
+      "is_correct": false
+     },
+     {
+      "text": "generally",
+      "is_correct": false
+     },
+     {
+      "text": "always",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Day 1 - Mine rescue teams may find it necessary to use line brattice to sweep noxious or explosive gases from a ___ area.",
+    "choices": [
+     {
+      "text": "every",
+      "is_correct": false
+     },
+     {
+      "text": "face",
+      "is_correct": true
+     },
+     {
+      "text": "barricade",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Day 1 - Once ventilation has been re-established and fresh air advanced, non-___ crews can take over the rehabilitation and cleanup effort.",
+    "choices": [
+     {
+      "text": "rescue",
+      "is_correct": false
+     },
+     {
+      "text": "apparatus",
+      "is_correct": true
+     },
+     {
+      "text": "essential",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Day 1 - Rescue teams are responsible for assessing ___ to the ventilation system.",
+    "choices": [
+     {
+      "text": "damage",
+      "is_correct": true
+     },
+     {
+      "text": "effectiveness",
+      "is_correct": false
+     },
+     {
+      "text": "needs",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Day 1 - Information the team relays to the fresh-air base as it ___ is known as the 'progress report'.",
+    "choices": [
+     {
+      "text": "advances",
+      "is_correct": false
+     },
+     {
+      "text": "progresses",
+      "is_correct": false
+     },
+     {
+      "text": "proceeds",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Day 1 - It is the responsibility of rescue team ___ to have all the information needed to do the work.",
+    "choices": [
+     {
+      "text": "captain",
+      "is_correct": false
+     },
+     {
+      "text": "personnel",
+      "is_correct": false
+     },
+     {
+      "text": "members",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Day 1 - When a team locates a body, its location and position should be marked on a ___ and on the roof or rib close to the body.",
+    "choices": [
+     {
+      "text": "team map",
+      "is_correct": false
+     },
+     {
+      "text": "mine map",
+      "is_correct": true
+     },
+     {
+      "text": "B/O map",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Day 1 - The rescue team captain should regulate the team's pace according to conditions ___.",
+    "choices": [
+     {
+      "text": "encountered",
+      "is_correct": true
+     },
+     {
+      "text": "found",
+      "is_correct": false
+     },
+     {
+      "text": "discovered",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Day 1 - When a body is first located, every effort should be made not to disturb any possible ___ in the area.",
+    "choices": [
+     {
+      "text": "conditions",
+      "is_correct": false
+     },
+     {
+      "text": "information",
+      "is_correct": false
+     },
+     {
+      "text": "evidence",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Day 2 - Low expansion foam is very ___ and heavy and can only be used when you're close enough to a fire to force the foam directly onto the fire.",
+    "choices": [
+     {
+      "text": "hard",
+      "is_correct": false
+     },
+     {
+      "text": "dry",
+      "is_correct": false
+     },
+     {
+      "text": "wet",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Day 2 - ___ is explosive.",
+    "choices": [
+     {
+      "text": "Carbon Dioxide",
+      "is_correct": false
+     },
+     {
+      "text": "Carbon monoxide",
+      "is_correct": true
+     },
+     {
+      "text": "Sulphur dioxide",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Day 2 - Oxygen is a supporter of ___.",
+    "choices": [
+     {
+      "text": "fire",
+      "is_correct": false
+     },
+     {
+      "text": "dissolution",
+      "is_correct": false
+     },
+     {
+      "text": "combustion",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Day 2 - If smoke is so ___ as to make visibility poor, you may need to keep in constant physical contact with an object or a rib in order to feel your way along.",
+    "choices": [
+     {
+      "text": "thick",
+      "is_correct": false
+     },
+     {
+      "text": "dense",
+      "is_correct": true
+     },
+     {
+      "text": "light",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Day 2 - Two types of fire ___ be fought directly, fuel rich and spontaneous combustion.",
+    "choices": [
+     {
+      "text": "shouldn't",
+      "is_correct": false
+     },
+     {
+      "text": "cannot",
+      "is_correct": true
+     },
+     {
+      "text": "shall",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Day 2 - Team safety must not be ___.",
+    "choices": [
+     {
+      "text": "ignored",
+      "is_correct": false
+     },
+     {
+      "text": "compromised",
+      "is_correct": true
+     },
+     {
+      "text": "forgotten",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Day 2 - Monitoring ___ and gases helps determine the effectiveness of firefighting and the potential danger of an explosion.",
+    "choices": [
+     {
+      "text": "pressures",
+      "is_correct": true
+     },
+     {
+      "text": "readings",
+      "is_correct": false
+     },
+     {
+      "text": "reports",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Day 2 - Sulfur dioxide and hydrogen sulfide are water ___ gases.",
+    "choices": [
+     {
+      "text": "filled",
+      "is_correct": false
+     },
+     {
+      "text": "containing",
+      "is_correct": false
+     },
+     {
+      "text": "soluble",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Day 2 - Color, odor, and taste are physical ___ that help to identify gases during barefaced exploration.",
+    "choices": [
+     {
+      "text": "conditions",
+      "is_correct": false
+     },
+     {
+      "text": "feelings",
+      "is_correct": false
+     },
+     {
+      "text": "properties",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Day 2 - Only detectors and chemical analysis can ___ identify a gas.",
+    "choices": [
+     {
+      "text": "Always",
+      "is_correct": false
+     },
+     {
+      "text": "positively",
+      "is_correct": true
+     },
+     {
+      "text": "constantly",
+      "is_correct": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 1145,
+  "title": "BioPak Written Test",
+  "questions": [
+   {
+    "text": "Oxygen will ___ cause materials to ___ without the presence of an ignition source.",
+    "choices": [
+     {
+      "text": "always, ignite",
+      "is_correct": false
+     },
+     {
+      "text": "not, ignite",
+      "is_correct": true
+     },
+     {
+      "text": "sometimes, burn",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A ___ gas may cause cylinder corrosion.",
+    "choices": [
+     {
+      "text": "Inert",
+      "is_correct": false
+     },
+     {
+      "text": "explosive",
+      "is_correct": false
+     },
+     {
+      "text": "foreign",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Always ___ for a current ___ test date.",
+    "choices": [
+     {
+      "text": "look, manufacturers",
+      "is_correct": false
+     },
+     {
+      "text": "check, hydrostatic",
+      "is_correct": true
+     },
+     {
+      "text": "check, manufacturers",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Replace the battery when the low battery alarm has activated, after ___ ___ of use or every 6 months whichever comes first.",
+    "choices": [
+     {
+      "text": "100, hours",
+      "is_correct": false
+     },
+     {
+      "text": "200, days",
+      "is_correct": false
+     },
+     {
+      "text": "200, hours",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The usual scrubber consists of ___ and a ___ core. Do not reuse previously used CO2 absorbent cartridges or the rubber gaskets.",
+    "choices": [
+     {
+      "text": "pumice, paper",
+      "is_correct": false
+     },
+     {
+      "text": "limestone, paper",
+      "is_correct": false
+     },
+     {
+      "text": "limestone, plastic",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Allow all components to remain ___ by the cleaning solution a minimum of 10 minutes.",
+    "choices": [
+     {
+      "text": "wetted",
+      "is_correct": true
+     },
+     {
+      "text": "moist",
+      "is_correct": false
+     },
+     {
+      "text": "soaked",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Apply anti-fog solution or ___ to both halves of the ___ before every use to ensure mask lens do not scratch.",
+    "choices": [
+     {
+      "text": "water, felt",
+      "is_correct": false
+     },
+     {
+      "text": "water, chamois",
+      "is_correct": true
+     },
+     {
+      "text": "soap, chamois",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Do not expose opened CO2 scrubber cartridges to ___ air for more than 20 minutes.",
+    "choices": [
+     {
+      "text": "outside",
+      "is_correct": false
+     },
+     {
+      "text": "dry",
+      "is_correct": false
+     },
+     {
+      "text": "ambient",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Install each CO2 canister into the SCBA so that the ___ end cap is ___ on the top side of the canister.",
+    "choices": [
+     {
+      "text": "red, looking",
+      "is_correct": false
+     },
+     {
+      "text": "blue, visible",
+      "is_correct": false
+     },
+     {
+      "text": "red, visible",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "A low battery alarm is indicated by a Red, Green, Blue light sequence followed by a ___ alarm ___ any time the battery will not complete a four-hour mission.",
+    "choices": [
+     {
+      "text": "momentary, beep",
+      "is_correct": false
+     },
+     {
+      "text": "short, beep",
+      "is_correct": false
+     },
+     {
+      "text": "short, chirp",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "If a quick Turn-Around ___ has been performed, the SCBA will function and is designed to work wet.",
+    "choices": [
+     {
+      "text": "Cleaning",
+      "is_correct": false
+     },
+     {
+      "text": "Maintenance",
+      "is_correct": true
+     },
+     {
+      "text": "Testing",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The RMS will automatically ___ ___ once the system pressure has dropped below 25 psig.",
+    "choices": [
+     {
+      "text": "power, down",
+      "is_correct": true
+     },
+     {
+      "text": "turn, off",
+      "is_correct": false
+     },
+     {
+      "text": "power, up",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "___-___ and Dow-111 are the only o-ring lubricants that shall be utilized on the SCBA components.",
+    "choices": [
+     {
+      "text": "Cristo-Grease",
+      "is_correct": false
+     },
+     {
+      "text": "Silicone-Lube",
+      "is_correct": false
+     },
+     {
+      "text": "Cristo-Lube",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "There are ___ user serviceable components on the oxygen cylinder assembly.",
+    "choices": [
+     {
+      "text": "two",
+      "is_correct": false
+     },
+     {
+      "text": "no",
+      "is_correct": true
+     },
+     {
+      "text": "one",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "High breathing ___ during ___ could be caused by the facepiece exhalation valve sticking closed.",
+    "choices": [
+     {
+      "text": "rates, inhalation",
+      "is_correct": false
+     },
+     {
+      "text": "rates, exhalation",
+      "is_correct": false
+     },
+     {
+      "text": "resistance, exhalation",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "High breathing resistance during inhalation could be caused by the facepiece ___ check valve sticking closed.",
+    "choices": [
+     {
+      "text": "inhalation",
+      "is_correct": true
+     },
+     {
+      "text": "exhalation",
+      "is_correct": false
+     },
+     {
+      "text": "breathing",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "High breathing ___ during ___ could be caused by the demand valve in breathing chamber has failed.",
+    "choices": [
+     {
+      "text": "resistance, exhalation",
+      "is_correct": false
+     },
+     {
+      "text": "resistance, inhalation",
+      "is_correct": true
+     },
+     {
+      "text": "rates, breathing",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "BioPak weight, ready to use is ___ pounds.",
+    "choices": [
+     {
+      "text": "43",
+      "is_correct": false
+     },
+     {
+      "text": "34",
+      "is_correct": true
+     },
+     {
+      "text": "36",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "BioPak Carbon Dioxide Scrubber is Dual, single use ___ ___ cartridges, non-dusting, non-channeling, non-hazardous.",
+    "choices": [
+     {
+      "text": "Limestone Pellets",
+      "is_correct": false
+     },
+     {
+      "text": "Calcium Hydroxide",
+      "is_correct": true
+     },
+     {
+      "text": "Calcium Pellets",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The CO2 Scrubber should be replaced after ___ use.",
+    "choices": [
+     {
+      "text": "every",
+      "is_correct": false
+     },
+     {
+      "text": "one",
+      "is_correct": false
+     },
+     {
+      "text": "1",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Lower Housing Assembly \u2014 identify part #1.",
+    "choices": [
+     {
+      "text": "Upper Housing Shell",
+      "is_correct": false
+     },
+     {
+      "text": "Lower Housing Shell",
+      "is_correct": true
+     },
+     {
+      "text": "Lower Case Shell",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2014_ohiovalley_bench_lower_housing.png"
+   },
+   {
+    "text": "Lower Housing Assembly \u2014 identify part #7.",
+    "choices": [
+     {
+      "text": "Shell Spacer",
+      "is_correct": false
+     },
+     {
+      "text": "Aluminum Spacer",
+      "is_correct": false
+     },
+     {
+      "text": "Vent Spacer",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2014_ohiovalley_bench_lower_housing.png"
+   },
+   {
+    "text": "Lower Housing Assembly \u2014 identify part #12.",
+    "choices": [
+     {
+      "text": "Shell Foam Spacer",
+      "is_correct": false
+     },
+     {
+      "text": "Latch Foam Pad",
+      "is_correct": true
+     },
+     {
+      "text": "Moisture Pads",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2014_ohiovalley_bench_lower_housing.png"
+   },
+   {
+    "text": "Pneumatic Assembly \u2014 identify part #1.",
+    "choices": [
+     {
+      "text": "Bypass Supply Line",
+      "is_correct": false
+     },
+     {
+      "text": "Bypass Feed Tube",
+      "is_correct": true
+     },
+     {
+      "text": "Bypass Oxygen Line",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2014_ohiovalley_bench_pneumatic.png"
+   },
+   {
+    "text": "Pneumatic Assembly \u2014 identify part #3.",
+    "choices": [
+     {
+      "text": "Oxygen Feed Tube",
+      "is_correct": true
+     },
+     {
+      "text": "Oxygen Feed Line",
+      "is_correct": false
+     },
+     {
+      "text": "Oxygen Feed Branch",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2014_ohiovalley_bench_pneumatic.png"
+   },
+   {
+    "text": "Pneumatic Assembly \u2014 identify part #9.",
+    "choices": [
+     {
+      "text": "Oxygen Regulator Gage",
+      "is_correct": false
+     },
+     {
+      "text": "Air Regulator Monitor",
+      "is_correct": false
+     },
+     {
+      "text": "Oxygen Regulator Assembly",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2014_ohiovalley_bench_pneumatic.png"
+   },
+   {
+    "text": "Center Section Assembly \u2014 identify part #2.",
+    "choices": [
+     {
+      "text": "Oxygen Supply Line",
+      "is_correct": false
+     },
+     {
+      "text": "Demand Feed Tube",
+      "is_correct": true
+     },
+     {
+      "text": "Oxygen Feed Tube",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2014_ohiovalley_bench_center_section.png"
+   },
+   {
+    "text": "Center Section Assembly \u2014 identify part #9.",
+    "choices": [
+     {
+      "text": "Demand Add Line",
+      "is_correct": false
+     },
+     {
+      "text": "Demand Add Fitting",
+      "is_correct": true
+     },
+     {
+      "text": "Demand Add Fixture",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2014_ohiovalley_bench_center_section.png"
+   },
+   {
+    "text": "Center Section Assembly \u2014 identify part #14.",
+    "choices": [
+     {
+      "text": "Breathing Diaphragm",
+      "is_correct": false
+     },
+     {
+      "text": "Flexible Shell",
+      "is_correct": false
+     },
+     {
+      "text": "Flexible Diaphragm",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2014_ohiovalley_bench_center_section.png"
+   },
+   {
+    "text": "AV3500 Facemask (Complete) \u2014 identify part #9.",
+    "choices": [
+     {
+      "text": "AV 3500 Facepiece Adapter",
+      "is_correct": false
+     },
+     {
+      "text": "AV 3500 Facepiece Connector",
+      "is_correct": false
+     },
+     {
+      "text": "AV 3500 Hose Adapter",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2014_ohiovalley_bench_facemask.png"
+   }
+  ]
+ },
+ {
+  "source_pk": 1114,
+  "title": "Field Written Test",
+  "questions": [
+   {
+    "text": "During a rescue and recovery operation, one of the duties of the outside Supervisor is to:",
+    "choices": [
+     {
+      "text": "Arrange for guards and state and/or local police.",
+      "is_correct": true
+     },
+     {
+      "text": "Notify all persons on the notification plan of the emergency.",
+      "is_correct": false
+     },
+     {
+      "text": "Obtain gas samples from the main exhaust.",
+      "is_correct": false
+     },
+     {
+      "text": "None of the above",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The explosive range of Ethane in normal air is?",
+    "choices": [
+     {
+      "text": "2.12 - 9.35%",
+      "is_correct": false
+     },
+     {
+      "text": "3.0 - 12.5%",
+      "is_correct": true
+     },
+     {
+      "text": "2.5 - 9.35%",
+      "is_correct": false
+     },
+     {
+      "text": "None of the above",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Reestablishing ventilation and bringing fresh air to an area damaged by fire or explosion is the main task of mine rescue teams in a rescue operation.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The law requires that gas detectors be able to measure concentrations of methane from 0.0 to 90% of volume, oxygen from 0.0 to 20% of volume, and carbon monoxide from 0.0 to 9,999 ppm.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Air locking operations should never be undertaken until the oxygen content of the air behind the seals has been reduced to at least ___%.",
+    "choices": [
+     {
+      "text": "2.0%",
+      "is_correct": true
+     },
+     {
+      "text": ".05%",
+      "is_correct": false
+     },
+     {
+      "text": "1%",
+      "is_correct": false
+     },
+     {
+      "text": "5.0%",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Urethane foam should never be applied greater than ___ inch thick because of spontaneous combustion.",
+    "choices": [
+     {
+      "text": "1/2 inch",
+      "is_correct": false
+     },
+     {
+      "text": "2 inch",
+      "is_correct": false
+     },
+     {
+      "text": "1 inch",
+      "is_correct": true
+     },
+     {
+      "text": "1 1/2 inch",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "You can allow a rescued miner to walk out of the mine alone if the miner appears to be in good shape?",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Usually, after temporary seals are erected, a waiting period of about 48 hours is recommended before beginning construction on permanent seals?",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "When constructing a temporary bulkhead from a crosscut, the bulkhead should be ___ feet into the passageway?",
+    "choices": [
+     {
+      "text": "10 to 12",
+      "is_correct": false
+     },
+     {
+      "text": "1 to 2",
+      "is_correct": false
+     },
+     {
+      "text": "4 to 6",
+      "is_correct": true
+     },
+     {
+      "text": "None of the above.",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The smoke tube is used to determine the direction and velocity of air moving above 120 feet per minute.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "If you are exposed to high concentrations of CO, you may experience very few symptoms before losing consciousness.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": true
+     },
+     {
+      "text": "False",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Breathing air containing 5% Carbon Dioxide can increase respiration ___%.",
+    "choices": [
+     {
+      "text": "500",
+      "is_correct": false
+     },
+     {
+      "text": "300",
+      "is_correct": true
+     },
+     {
+      "text": "150",
+      "is_correct": false
+     },
+     {
+      "text": "None of the above.",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "___ is found after methane explosions in air having low oxygen content?",
+    "choices": [
+     {
+      "text": "Butane",
+      "is_correct": false
+     },
+     {
+      "text": "Ethane",
+      "is_correct": false
+     },
+     {
+      "text": "Acetylene",
+      "is_correct": true
+     },
+     {
+      "text": "Argon",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "During the debriefing session the ___ will provide the information found during exploration?",
+    "choices": [
+     {
+      "text": "Team Captain",
+      "is_correct": false
+     },
+     {
+      "text": "Co-Captain",
+      "is_correct": false
+     },
+     {
+      "text": "Fresh Air Base",
+      "is_correct": false
+     },
+     {
+      "text": "Team",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Heavier gases such as carbon dioxide and sulfur dioxide do not diffuse rapidly, so they're easier to disperse?",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The degree to which a toxic gas will affect you depends on three factors: 1) how concentrated the gas is 2) how explosive the gas is and 3) how long you're exposed to the gas?",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The formula used to find the quantity of air moving through a drift is:",
+    "choices": [
+     {
+      "text": "Quantity (ft3) = Area (ft2) x Velocity (ft/min.)",
+      "is_correct": true
+     },
+     {
+      "text": "Quantity (ft3) = Area (ft2) x Velocity (ft/sec.)",
+      "is_correct": false
+     },
+     {
+      "text": "Quantity (ft2) = Area (ft2) x Velocity (ft/min.)",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Oxides of nitrogen are highly toxic. Breathing even small amounts will cause irritable bowel syndrome.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "A line brattice is brattice cloth or plastic that is hung to channel intake air into a working area that otherwise would not have adequate ventilation.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": true
+     },
+     {
+      "text": "False",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "3rd degree burns covering less than 10% of the body (not including hands, feet, or face) is considered low or third priority.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The team briefing is normally conducted:",
+    "choices": [
+     {
+      "text": "Only at a mine rescue contest",
+      "is_correct": false
+     },
+     {
+      "text": "At the fresh air base",
+      "is_correct": false
+     },
+     {
+      "text": "Command Center",
+      "is_correct": true
+     },
+     {
+      "text": "None of the above",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Rock-Strata gases commonly called \u201crock gas\u201d is assumed to contain what two types of gasses?",
+    "choices": [
+     {
+      "text": "Hydrogen and Carbon Monoxide",
+      "is_correct": false
+     },
+     {
+      "text": "Nitrogen and Sulfur Dioxide",
+      "is_correct": false
+     },
+     {
+      "text": "Nitrogen and Carbon Dioxide",
+      "is_correct": true
+     },
+     {
+      "text": "Hydrogen Sulfide and Hydrogen",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Normally gasses do not stratify when the ventilation system in a mine is working properly.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": true
+     },
+     {
+      "text": "False",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "In a multi-level mine, a tunnel driven perpendicular to the main vein system of the mine is considered a?",
+    "choices": [
+     {
+      "text": "Drift",
+      "is_correct": false
+     },
+     {
+      "text": "Stope",
+      "is_correct": false
+     },
+     {
+      "text": "Crosscut",
+      "is_correct": true
+     },
+     {
+      "text": "None of the above",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A main cause of oxygen deficiency in a mine is:",
+    "choices": [
+     {
+      "text": "Insufficient ventilation",
+      "is_correct": false
+     },
+     {
+      "text": "Displacement by other gases",
+      "is_correct": false
+     },
+     {
+      "text": "A fire or explosion",
+      "is_correct": false
+     },
+     {
+      "text": "Consumption by workers",
+      "is_correct": false
+     },
+     {
+      "text": "All of the above.",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The advantage of progressive ventilation is it is a fast process.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Ventilation controls affect the amount of air that travel and the direction of flow.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": true
+     },
+     {
+      "text": "False",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A fresh air base is usually established at a point where conditions no longer permit barefaced exploration.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": true
+     },
+     {
+      "text": "False",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The command center for rescue and recovery operations is generally only consisting of federal and state officials?",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 1117,
+  "title": "Technician Drager BG4 Written Test",
+  "questions": [
+   {
+    "text": "Name the area/s in which the medium pressure is used?",
+    "choices": [
+     {
+      "text": "Dosage line",
+      "is_correct": false
+     },
+     {
+      "text": "Emergency bypass",
+      "is_correct": false
+     },
+     {
+      "text": "Minimum valve",
+      "is_correct": false
+     },
+     {
+      "text": "a. and c.",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "A major component group of the BG4 is the:",
+    "choices": [
+     {
+      "text": "reducer",
+      "is_correct": false
+     },
+     {
+      "text": "breathing bag",
+      "is_correct": false
+     },
+     {
+      "text": "Pneumatics",
+      "is_correct": true
+     },
+     {
+      "text": "dosage line",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The high pressure leak test (OCR/CCR) when using the Monitron or Sentinel will:",
+    "choices": [
+     {
+      "text": "check leak tightness and dosage flow",
+      "is_correct": false
+     },
+     {
+      "text": "determine cylinder pressure and minimum valve activation",
+      "is_correct": false
+     },
+     {
+      "text": "ensure cylinder pressure is < 2600 PSI",
+      "is_correct": true
+     },
+     {
+      "text": "none of the above",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Two low pressure cylinder alarm points:",
+    "choices": [
+     {
+      "text": "100 and 600 PSI",
+      "is_correct": false
+     },
+     {
+      "text": "700 and 145 PSI",
+      "is_correct": true
+     },
+     {
+      "text": "200 and 1200 PSI",
+      "is_correct": false
+     },
+     {
+      "text": "none of the above",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Only approved 9 volt DC alkaline batteries may be used in the Monitron/Sentinel?",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": true
+     },
+     {
+      "text": "False",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The drain valve must not open at 10 mbar of breathing loop pressure?",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": true
+     },
+     {
+      "text": "False",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A major component group of the BG4 is the:",
+    "choices": [
+     {
+      "text": "transducer",
+      "is_correct": false
+     },
+     {
+      "text": "minimum valve",
+      "is_correct": false
+     },
+     {
+      "text": "breathing loop",
+      "is_correct": true
+     },
+     {
+      "text": "dosage line",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The first cylinder pressure warning for the BG4?",
+    "choices": [
+     {
+      "text": "1500 PSI",
+      "is_correct": false
+     },
+     {
+      "text": "2600 PSI",
+      "is_correct": false
+     },
+     {
+      "text": "Approximately 25% of full cylinder",
+      "is_correct": true
+     },
+     {
+      "text": "\u00b1 10 percent of full cylinder pressure",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "What variables would affect the duration of the BG4 use?",
+    "choices": [
+     {
+      "text": "User's physical condition",
+      "is_correct": false
+     },
+     {
+      "text": "Stress, anxiety and excitement",
+      "is_correct": false
+     },
+     {
+      "text": "Amount of physical work performed",
+      "is_correct": false
+     },
+     {
+      "text": "All of the above apply",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The relief valve vents exhaled air from the input of the CO2 scrubber.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": true
+     },
+     {
+      "text": "False",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Both dosage and positive pressure leak tests must be timed for 1 minute?",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The mask must always be leak tested after replacing the lens?",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": true
+     },
+     {
+      "text": "False",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The Monitron/Sentinel System consists of how many components?",
+    "choices": [
+     {
+      "text": "One",
+      "is_correct": false
+     },
+     {
+      "text": "Two",
+      "is_correct": false
+     },
+     {
+      "text": "Three",
+      "is_correct": true
+     },
+     {
+      "text": "None of the above",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "What is purpose of the sintered filter?",
+    "choices": [
+     {
+      "text": "Water filter",
+      "is_correct": false
+     },
+     {
+      "text": "Filters the dosage O2",
+      "is_correct": false
+     },
+     {
+      "text": "Vents excess pressure",
+      "is_correct": true
+     },
+     {
+      "text": "Filters ambient air pressure (zero reference)",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The carbon composite or metal cylinder must be hydro-tested every:",
+    "choices": [
+     {
+      "text": "3 years",
+      "is_correct": false
+     },
+     {
+      "text": "4 years",
+      "is_correct": false
+     },
+     {
+      "text": "5 years",
+      "is_correct": true
+     },
+     {
+      "text": "15 years",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "An alarm warning the user that the oxygen cylinder has not been turned on?",
+    "choices": [
+     {
+      "text": "Low battery indicator",
+      "is_correct": false
+     },
+     {
+      "text": "Low-pressure leak test",
+      "is_correct": false
+     },
+     {
+      "text": "Low-pressure warning that activates at 700 PSI when breathing",
+      "is_correct": false
+     },
+     {
+      "text": "Low-pressure warning that activates before 1.4 mbar within the breathing loop",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Color, odor, and taste are physical properties that can help you identify a gas, especially during ___ exploration.",
+    "choices": [
+     {
+      "text": "Emergency",
+      "is_correct": false
+     },
+     {
+      "text": "Surface",
+      "is_correct": false
+     },
+     {
+      "text": "Barefaced",
+      "is_correct": true
+     },
+     {
+      "text": "None of the above",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "You can tolerate concentrations of up to 1/2 of 1 percent CO2 over a 10-hour daily period without harmful effects.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The specific gravity of Carbon Dioxide is:",
+    "choices": [
+     {
+      "text": "1.2591",
+      "is_correct": false
+     },
+     {
+      "text": "1.9125",
+      "is_correct": false
+     },
+     {
+      "text": "1.5219",
+      "is_correct": false
+     },
+     {
+      "text": "1.5291",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "After a fire, explosion, or flood in a mine, rescue teams are usually needed to go into the mine to assess and reestablish working conditions.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "When it comes to fixing the ventilation, the fresh air base will be counting on you to build controls where and how you are instructed.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "With mechanical ventilation, mine fans are used to create the pressure differential by changing the air pressure at specific points in the mine.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": true
+     },
+     {
+      "text": "False",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A blast door is designed to open and relieve pressure when there is blasting so that a bulkhead will not be blown out.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": true
+     },
+     {
+      "text": "False",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Per 30 CFR Part 49, all mine rescue team members must have completed physical examinations in the past ___ months preceding the contest and are capable of performing strenuous work under oxygen.",
+    "choices": [
+     {
+      "text": "6",
+      "is_correct": false
+     },
+     {
+      "text": "12",
+      "is_correct": true
+     },
+     {
+      "text": "24",
+      "is_correct": false
+     },
+     {
+      "text": "None of the above",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "For purposes of contest work, no barricade will be breached if Hydrogen sulfide exceeds (0.001%).",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "What is the component circled on the reducer (shown)?",
+    "choices": [
+     {
+      "text": "Relief valve",
+      "is_correct": false
+     },
+     {
+      "text": "Transducer",
+      "is_correct": true
+     },
+     {
+      "text": "Dosage line",
+      "is_correct": false
+     },
+     {
+      "text": "Minimum valve",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2014_sw_drager_reducer.png"
+   },
+   {
+    "text": "The valve shown should open/activate between what ranges?",
+    "choices": [
+     {
+      "text": "0.1 to 2.5 mbar",
+      "is_correct": true
+     },
+     {
+      "text": "1.0 to 3.0 mbar",
+      "is_correct": false
+     },
+     {
+      "text": "2.0 to 5.0 mbar",
+      "is_correct": false
+     },
+     {
+      "text": "14 mbar or greater",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2014_sw_drager_valve.png"
+   }
+  ]
+ },
+ {
+  "source_pk": 1383,
+  "title": "Technician Written Test",
+  "questions": [
+   {
+    "text": "___ is a mixture of carbon monoxide and air which results from a mine fire.",
+    "choices": [
+     {
+      "text": "Afterdamp",
+      "is_correct": false
+     },
+     {
+      "text": "Stinkdamp",
+      "is_correct": false
+     },
+     {
+      "text": "Whitedamp",
+      "is_correct": true
+     },
+     {
+      "text": "Blackdamp",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Specific gravity of Acetylene ___",
+    "choices": [
+     {
+      "text": "0.9672",
+      "is_correct": false
+     },
+     {
+      "text": "0.9677",
+      "is_correct": false
+     },
+     {
+      "text": "0.9107",
+      "is_correct": true
+     },
+     {
+      "text": "0.9117",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A partially opened mine door can be used as a regulator",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": true
+     },
+     {
+      "text": "False",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The smoke tube is used to measure medium-and high-velocity air movement and anemometer is used mainly to determine what direction very slow-moving air is moving",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Temporary bulkheads built in a passageway should be placed at least 4 to 6 feet into the passageway in order that",
+    "choices": [
+     {
+      "text": "Sufficient space is available to construct a permanent bulkhead",
+      "is_correct": true
+     },
+     {
+      "text": "It will be protected from further explosions",
+      "is_correct": false
+     },
+     {
+      "text": "It will not be affected by fire if a fire should spread to that passageway",
+      "is_correct": false
+     },
+     {
+      "text": "None of the above",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Explosive range and flammability of Propane from",
+    "choices": [
+     {
+      "text": "2.12 to 9.35 percent in normal air",
+      "is_correct": true
+     },
+     {
+      "text": "2.32 to 9.35 percent in normal air",
+      "is_correct": false
+     },
+     {
+      "text": "2.12 to 9.55 percent in normal air",
+      "is_correct": false
+     },
+     {
+      "text": "2.32 to 9.55 percent in normal air",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Specific gravity of Carbon Dioxide",
+    "choices": [
+     {
+      "text": "1.5894",
+      "is_correct": false
+     },
+     {
+      "text": "1.5299",
+      "is_correct": false
+     },
+     {
+      "text": "1.5984",
+      "is_correct": false
+     },
+     {
+      "text": "1.5291",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The traverse method is used when",
+    "choices": [
+     {
+      "text": "Erecting a temporary bulkhead",
+      "is_correct": false
+     },
+     {
+      "text": "Taking a reading with a smoke tube",
+      "is_correct": false
+     },
+     {
+      "text": "Taking a reading with an anemometer",
+      "is_correct": true
+     },
+     {
+      "text": "None of the above",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "In general, cold air displaces warm air in the mine due to the differences in elevation and in temperature of the workings",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Which of the following statements is false",
+    "choices": [
+     {
+      "text": "An increase in temperature makes a gas diffuse more rapidly",
+      "is_correct": false
+     },
+     {
+      "text": "A decrease in temperature slows down the rate of diffusion",
+      "is_correct": false
+     },
+     {
+      "text": "An increase in pressure slows down the rate of diffusion",
+      "is_correct": false
+     },
+     {
+      "text": "A decrease in pressure slows it down",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Industrial Scientific recommends a minimum procedure frequency of one week for performing a bump test on an MX6 ibrid.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "A bump test proves that installed sensors are measuring accurately.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "A configuration menu is indicated by a yellow background on the LCD screen.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": true
+     },
+     {
+      "text": "False",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The typical T90 response time for a Hydrogen (H2) sensor is 60 seconds.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "If the instrument is still reading gas while in the configuration mode, and there is an alarm, the user must manually return to the gas-monitoring screen.",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Zero air must be applied to zero which type of sensor?",
+    "choices": [
+     {
+      "text": "NO2",
+      "is_correct": false
+     },
+     {
+      "text": "NO",
+      "is_correct": false
+     },
+     {
+      "text": "H2S",
+      "is_correct": false
+     },
+     {
+      "text": "CO2",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "During calibration, the appropriate calibration gas should be applied at a flow rate of ___ lpm.",
+    "choices": [
+     {
+      "text": "0.5",
+      "is_correct": true
+     },
+     {
+      "text": "1.0",
+      "is_correct": false
+     },
+     {
+      "text": "1.5",
+      "is_correct": false
+     },
+     {
+      "text": "2",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Passwords are a minimum of ___ characters and a maximum of ___.",
+    "choices": [
+     {
+      "text": "3, 8",
+      "is_correct": false
+     },
+     {
+      "text": "4, 10",
+      "is_correct": false
+     },
+     {
+      "text": "3, 10",
+      "is_correct": true
+     },
+     {
+      "text": "4, 8",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "On the gas-monitoring display screen, the sensor types are displayed as ___ text during normal operation, and ___ text during alarm conditions.",
+    "choices": [
+     {
+      "text": "Solid black, blinking red",
+      "is_correct": false
+     },
+     {
+      "text": "Solid black, solid red",
+      "is_correct": false
+     },
+     {
+      "text": "Solid black, blinking black",
+      "is_correct": true
+     },
+     {
+      "text": "Blinking black, blinking red",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "What is the expected typical run time for a fully charged MX6 ibrid with an extended range Li-ion battery, without pump, and CO, O2, LEL (catalytic), and H2S sensors installed?",
+    "choices": [
+     {
+      "text": "36 hrs.",
+      "is_correct": true
+     },
+     {
+      "text": "24 hrs.",
+      "is_correct": false
+     },
+     {
+      "text": "20 hrs.",
+      "is_correct": false
+     },
+     {
+      "text": "12 hrs.",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "MSHA requires Periodic Maintenance should be performed at least ___ on Mine Rescue Breathing Apparatus.",
+    "choices": [
+     {
+      "text": "Weekly",
+      "is_correct": false
+     },
+     {
+      "text": "Quarterly",
+      "is_correct": false
+     },
+     {
+      "text": "Every 30 days",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Closed Circuit Breathing Apparatus Oxygen cylinders must be hydrostatically tested every ___.",
+    "choices": [
+     {
+      "text": "One Year",
+      "is_correct": false
+     },
+     {
+      "text": "Three Years",
+      "is_correct": false
+     },
+     {
+      "text": "Five Years",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "In a properly working positive pressure NIOSH/MSHA approved Closed Circuit breathing apparatus the pressure inside the breathing loop/circuit is:",
+    "choices": [
+     {
+      "text": "Lower than ambient",
+      "is_correct": false
+     },
+     {
+      "text": "The same as ambient",
+      "is_correct": false
+     },
+     {
+      "text": "Slightly higher than ambient",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "If a slight leak occurs in the breathing circuit or facemask seal, the user generally will:",
+    "choices": [
+     {
+      "text": "Hit the demand valve more often",
+      "is_correct": false
+     },
+     {
+      "text": "Reduce duration",
+      "is_correct": false
+     },
+     {
+      "text": "All of the above",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Turn-around Maintenance should be performed",
+    "choices": [
+     {
+      "text": "As soon as possible after each use",
+      "is_correct": true
+     },
+     {
+      "text": "On a monthly basis",
+      "is_correct": false
+     },
+     {
+      "text": "During periodic maintenance",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "There are various methods to eliminate or reduce mask fogging. Which method is the least likely to work:",
+    "choices": [
+     {
+      "text": "Depress the Emergency By-Pass Valve",
+      "is_correct": true
+     },
+     {
+      "text": "Use an approved wiper",
+      "is_correct": false
+     },
+     {
+      "text": "Use an approved anti-fog spray or solution",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "When completing washing/disinfection during turn-around maintenance users may use any antibacterial cleaner they choose because",
+    "choices": [
+     {
+      "text": "Bleach works on any germ so I can use it",
+      "is_correct": false
+     },
+     {
+      "text": "Alcohol is used in hospitals so I can use it",
+      "is_correct": false
+     },
+     {
+      "text": "None of the above",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "My Mine Rescue Closed Circuit Breathing Apparatus uses ___ in the cylinder because:",
+    "choices": [
+     {
+      "text": "Breathing Air",
+      "is_correct": false
+     },
+     {
+      "text": "Compressed Air",
+      "is_correct": false
+     },
+     {
+      "text": "Medical Grade Oxygen",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Under extremely heavy work conditions, if the user inhales and collapses the breathing bag or diaphragm as far as it can travel, it activates the",
+    "choices": [
+     {
+      "text": "By-Pass Valve",
+      "is_correct": false
+     },
+     {
+      "text": "Demand Valve",
+      "is_correct": true
+     },
+     {
+      "text": "Relief Valve",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "If either or both the constant add or the demand valve fails in your apparatus, the user can still manually fill the breathing chamber by activating the",
+    "choices": [
+     {
+      "text": "Emergency By-Pass Valve",
+      "is_correct": true
+     },
+     {
+      "text": "Demand/Minimum Valve",
+      "is_correct": false
+     },
+     {
+      "text": "Relief Valve",
+      "is_correct": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 917,
+  "title": "Preshift Written Test",
+  "questions": [
+   {
+    "text": "Each underground coal mine operator shall ensure that at least 2 miners in each working section on each production shift are proficient in the use of all fire ___ equipment available on such working section, and know the location of such fire ___ equipment.",
+    "choices": [
+     {
+      "text": "retardant, suppression",
+      "is_correct": false
+     },
+     {
+      "text": "combative, fighting",
+      "is_correct": false
+     },
+     {
+      "text": "suppression, suppression",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The end of permanent roof support shall be posted with a readily ___ ___, or a physical barrier shall be installed to impede travel beyond permanent support.",
+    "choices": [
+     {
+      "text": "audible, warning",
+      "is_correct": false
+     },
+     {
+      "text": "visual, warning",
+      "is_correct": true
+     },
+     {
+      "text": "reflective, devise",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Roof support materials, sequence of roof support installation and spacing, are stated in the ___ Roof Control Plan.",
+    "choices": [
+     {
+      "text": "Initial",
+      "is_correct": false
+     },
+     {
+      "text": "Written",
+      "is_correct": false
+     },
+     {
+      "text": "Approved",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Test holes, spaced at intervals specified in the roof control plan, shall be drilled to a depth at least ___ inches ___ the anchorage horizon of mechanically anchored tensioned roof bolts being used.",
+    "choices": [
+     {
+      "text": "18, below",
+      "is_correct": false
+     },
+     {
+      "text": "12, above",
+      "is_correct": true
+     },
+     {
+      "text": "24, higher",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Chemical extinguishers shall be examined every ___ ___ and the date of the examination shall be written on a permanent tag attached to the extinguisher.",
+    "choices": [
+     {
+      "text": "12, months",
+      "is_correct": false
+     },
+     {
+      "text": "24, months",
+      "is_correct": false
+     },
+     {
+      "text": "6, months",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Any area of the mine where a hazardous condition is observed shall be posted with a ___ danger sign where anyone entering the area would pass.",
+    "choices": [
+     {
+      "text": "visible",
+      "is_correct": false
+     },
+     {
+      "text": "conspicuous",
+      "is_correct": true
+     },
+     {
+      "text": "reflective",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A visual examination of the roof, face and ribs shall be made immediately before any work is started in an area and thereafter as conditions ___.",
+    "choices": [
+     {
+      "text": "warrant",
+      "is_correct": true
+     },
+     {
+      "text": "found",
+      "is_correct": false
+     },
+     {
+      "text": "examined",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The last open crosscut is the crosscut in the line of pillars containing the permanent stoppings that ___ the ___ air courses and the return air courses.",
+    "choices": [
+     {
+      "text": "isolate, intake",
+      "is_correct": false
+     },
+     {
+      "text": "prevent, intake",
+      "is_correct": false
+     },
+     {
+      "text": "separate, intake",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The mine ventilation map shall show the direction of ___ ___ in all underground areas of the mine.",
+    "choices": [
+     {
+      "text": "air, movement",
+      "is_correct": false
+     },
+     {
+      "text": "air, course",
+      "is_correct": false
+     },
+     {
+      "text": "air, flow",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Power wires and ___, except trolley wires and trolley feeder wires, and bare signal wires shall be insulated ___ and fully protected.",
+    "choices": [
+     {
+      "text": "Cables, properly",
+      "is_correct": false
+     },
+     {
+      "text": "cables, adequately",
+      "is_correct": true
+     },
+     {
+      "text": "feeds, entirely",
+      "is_correct": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 913,
+  "title": "Bench Written Test",
+  "questions": [
+   {
+    "text": "Oxygen will ___ cause materials to ___ without the presence of an ignition source.",
+    "choices": [
+     {
+      "text": "always, ignite",
+      "is_correct": false
+     },
+     {
+      "text": "not, ignite",
+      "is_correct": true
+     },
+     {
+      "text": "sometimes, burn",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The BioPak 240 Revolution is approved when the oxygen cylinder is fully charged with compressed ___ or aviation grade oxygen at ___ psi.",
+    "choices": [
+     {
+      "text": "construction, 3010",
+      "is_correct": false
+     },
+     {
+      "text": "medical, 2660",
+      "is_correct": false
+     },
+     {
+      "text": "medical, 3000",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Always ___ for a current ___ test date.",
+    "choices": [
+     {
+      "text": "look, manufacturers",
+      "is_correct": false
+     },
+     {
+      "text": "check, hydrostatic",
+      "is_correct": true
+     },
+     {
+      "text": "check, manufacturers",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Replace the battery when the low battery alarm has activated, after ___ ___ of use or every 6 months whichever comes first.",
+    "choices": [
+     {
+      "text": "100, hours",
+      "is_correct": false
+     },
+     {
+      "text": "200, days",
+      "is_correct": false
+     },
+     {
+      "text": "200, hours",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The usual scrubber consists of ___ and a ___ core. Do not reuse previously used CO2 absorbent cartridges or the rubber gaskets.",
+    "choices": [
+     {
+      "text": "pumice, paper",
+      "is_correct": false
+     },
+     {
+      "text": "limestone, paper",
+      "is_correct": false
+     },
+     {
+      "text": "limestone, plastic",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Allow all components to remain ___ by the cleaning solution a minimum of 10 minutes.",
+    "choices": [
+     {
+      "text": "wetted",
+      "is_correct": true
+     },
+     {
+      "text": "moist",
+      "is_correct": false
+     },
+     {
+      "text": "soaked",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Apply anti-fog solution or ___ to both halves of the ___ before every use to ensure mask lens do not scratch.",
+    "choices": [
+     {
+      "text": "water, felt",
+      "is_correct": false
+     },
+     {
+      "text": "water, chamois",
+      "is_correct": true
+     },
+     {
+      "text": "soap, chamois",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Do not expose opened CO2 scrubber cartridges to ___ air for more than 20 minutes.",
+    "choices": [
+     {
+      "text": "outside",
+      "is_correct": false
+     },
+     {
+      "text": "dry",
+      "is_correct": false
+     },
+     {
+      "text": "ambient",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Install each CO2 canister into the SCBA so that the ___ end cap is ___ on the top side of the canister.",
+    "choices": [
+     {
+      "text": "red, looking",
+      "is_correct": false
+     },
+     {
+      "text": "blue, visible",
+      "is_correct": false
+     },
+     {
+      "text": "red, visible",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "A low battery alarm is indicated by a Red, Green, Blue light sequence followed by a ___ alarm ___ any time the battery will not complete a four-hour mission.",
+    "choices": [
+     {
+      "text": "momentary, beep",
+      "is_correct": false
+     },
+     {
+      "text": "short, beep",
+      "is_correct": false
+     },
+     {
+      "text": "short, chirp",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "If a quick Turn-Around ___ has been performed, the SCBA will function and is designed to work wet.",
+    "choices": [
+     {
+      "text": "Cleaning",
+      "is_correct": false
+     },
+     {
+      "text": "Maintenance",
+      "is_correct": true
+     },
+     {
+      "text": "Testing",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The RMS will automatically ___ ___ once the system pressure has dropped below 25 psig.",
+    "choices": [
+     {
+      "text": "power, down",
+      "is_correct": true
+     },
+     {
+      "text": "turn, off",
+      "is_correct": false
+     },
+     {
+      "text": "power, up",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "___-___ and Dow-111 are the only o-ring lubricants that shall be utilized on the SCBA components.",
+    "choices": [
+     {
+      "text": "Cristo-Grease",
+      "is_correct": false
+     },
+     {
+      "text": "Silicone-Lube",
+      "is_correct": false
+     },
+     {
+      "text": "Cristo-Lube",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "___ Use Dow 111 on any o-ring seal that comes in contact with high-pressure oxygen.",
+    "choices": [
+     {
+      "text": "ALWAYS",
+      "is_correct": false
+     },
+     {
+      "text": "NEVER",
+      "is_correct": true
+     },
+     {
+      "text": "SOMETIMES",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "High breathing ___ during ___ could be caused by the facepiece exhalation valve sticking closed.",
+    "choices": [
+     {
+      "text": "rates, inhalation",
+      "is_correct": false
+     },
+     {
+      "text": "rates, exhalation",
+      "is_correct": false
+     },
+     {
+      "text": "resistance, exhalation",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "High breathing resistance during inhalation could be caused by the facepiece ___ check valve sticking closed.",
+    "choices": [
+     {
+      "text": "inhalation",
+      "is_correct": true
+     },
+     {
+      "text": "exhalation",
+      "is_correct": false
+     },
+     {
+      "text": "breathing",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "High breathing ___ during ___ could be caused by the demand valve in breathing chamber has failed.",
+    "choices": [
+     {
+      "text": "resistance, exhalation",
+      "is_correct": false
+     },
+     {
+      "text": "resistance, inhalation",
+      "is_correct": true
+     },
+     {
+      "text": "rates, breathing",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "BioPak weight, ready to use is 34 pounds.",
+    "choices": [
+     {
+      "text": "43",
+      "is_correct": false
+     },
+     {
+      "text": "34",
+      "is_correct": true
+     },
+     {
+      "text": "36",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "BioPak Carbon Dioxide Scrubber is Dual, single use ___ ___ cartridges, non-dusting, non-channeling, non-hazardous.",
+    "choices": [
+     {
+      "text": "Limestone Pellets",
+      "is_correct": false
+     },
+     {
+      "text": "Calcium Hydroxide",
+      "is_correct": true
+     },
+     {
+      "text": "Calcium Pellets",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The CO2 Scrubber should be replaced after ___ use.",
+    "choices": [
+     {
+      "text": "every",
+      "is_correct": false
+     },
+     {
+      "text": "multiple",
+      "is_correct": false
+     },
+     {
+      "text": "1",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Lower Housing Assembly \u2014 identify part #1.",
+    "choices": [
+     {
+      "text": "Upper Housing Shell",
+      "is_correct": false
+     },
+     {
+      "text": "Lower Housing Shell",
+      "is_correct": true
+     },
+     {
+      "text": "Lower Case Shell",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2014_ohiovalley_bench_lower_housing.png"
+   },
+   {
+    "text": "Lower Housing Assembly \u2014 identify part #7.",
+    "choices": [
+     {
+      "text": "Shell Spacer",
+      "is_correct": false
+     },
+     {
+      "text": "Aluminum Spacer",
+      "is_correct": false
+     },
+     {
+      "text": "Vent Spacer",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2014_ohiovalley_bench_lower_housing.png"
+   },
+   {
+    "text": "Lower Housing Assembly \u2014 identify part #12.",
+    "choices": [
+     {
+      "text": "Shell Foam Spacer",
+      "is_correct": false
+     },
+     {
+      "text": "Latch Foam Pad",
+      "is_correct": true
+     },
+     {
+      "text": "Moisture Pads",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2014_ohiovalley_bench_lower_housing.png"
+   },
+   {
+    "text": "Pneumatic Assembly \u2014 identify part #1.",
+    "choices": [
+     {
+      "text": "Bypass Supply Line",
+      "is_correct": false
+     },
+     {
+      "text": "Bypass Feed Tube",
+      "is_correct": true
+     },
+     {
+      "text": "Bypass Oxygen Line",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2014_ohiovalley_bench_pneumatic.png"
+   },
+   {
+    "text": "Pneumatic Assembly \u2014 identify part #3.",
+    "choices": [
+     {
+      "text": "Oxygen Feed Tube",
+      "is_correct": true
+     },
+     {
+      "text": "Oxygen Feed Line",
+      "is_correct": false
+     },
+     {
+      "text": "Oxygen Feed Branch",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2014_ohiovalley_bench_pneumatic.png"
+   },
+   {
+    "text": "Pneumatic Assembly \u2014 identify part #9.",
+    "choices": [
+     {
+      "text": "Oxygen Regulator Gage",
+      "is_correct": false
+     },
+     {
+      "text": "Air Regulator Monitor",
+      "is_correct": false
+     },
+     {
+      "text": "Oxygen Regulator Assembly",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2014_ohiovalley_bench_pneumatic.png"
+   },
+   {
+    "text": "Center Section Assembly \u2014 identify part #2.",
+    "choices": [
+     {
+      "text": "Oxygen Supply Line",
+      "is_correct": false
+     },
+     {
+      "text": "Demand Feed Tube",
+      "is_correct": true
+     },
+     {
+      "text": "Oxygen Feed Tube",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2014_ohiovalley_bench_center_section.png"
+   },
+   {
+    "text": "Center Section Assembly \u2014 identify part #9.",
+    "choices": [
+     {
+      "text": "Demand Add Line",
+      "is_correct": false
+     },
+     {
+      "text": "Demand Add Fitting",
+      "is_correct": true
+     },
+     {
+      "text": "Demand Add Fixture",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2014_ohiovalley_bench_center_section.png"
+   },
+   {
+    "text": "Center Section Assembly \u2014 identify part #14.",
+    "choices": [
+     {
+      "text": "Breathing Diaphragm",
+      "is_correct": false
+     },
+     {
+      "text": "Flexible Shell",
+      "is_correct": false
+     },
+     {
+      "text": "Flexible Diaphragm",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2014_ohiovalley_bench_center_section.png"
+   },
+   {
+    "text": "AV3500 Facemask (Complete) \u2014 identify part #9.",
+    "choices": [
+     {
+      "text": "AV 3500 Facepiece Adapter",
+      "is_correct": false
+     },
+     {
+      "text": "AV 3500 Facepiece Connector",
+      "is_correct": false
+     },
+     {
+      "text": "AV 3500 Hose Adapter",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2014_ohiovalley_bench_facemask.png"
+   }
+  ]
+ },
+ {
+  "source_pk": 72,
+  "title": "Written Test",
+  "questions": [
+   {
+    "text": "Ventilation is utilized to dilute, render ____________, and carry away flammable, explosive, noxious and harmful gases, dust, smoke and fumes.",
+    "choices": [
+     {
+      "text": "respirable",
+      "is_correct": false
+     },
+     {
+      "text": "inert",
+      "is_correct": false
+     },
+     {
+      "text": "harmless",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "At each working place examined, the person doing the preshift examination shall _____________ by initials, date, and the time that the examination was made.",
+    "choices": [
+     {
+      "text": "prove",
+      "is_correct": false
+     },
+     {
+      "text": "certify",
+      "is_correct": true
+     },
+     {
+      "text": "notarize",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "No person other than _____________ examiners may enter or remain in any underground area unless a preshift examination has been completed for the established 8-hour period.",
+    "choices": [
+     {
+      "text": "preshift",
+      "is_correct": false
+     },
+     {
+      "text": "designated",
+      "is_correct": false
+     },
+     {
+      "text": "certified",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "High spots where methane is likely to accumulate, over haulageways, where equipment will travel, must be _____________ during the preshift examination.",
+    "choices": [
+     {
+      "text": "probed",
+      "is_correct": false
+     },
+     {
+      "text": "tested",
+      "is_correct": false
+     },
+     {
+      "text": "examined",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "A sightline or other method of directional control shall be used to maintain the projected direction of _____________ in entries, rooms, crosscuts, and pillar splits.",
+    "choices": [
+     {
+      "text": "advance",
+      "is_correct": false
+     },
+     {
+      "text": "mining",
+      "is_correct": true
+     },
+     {
+      "text": "development",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A supply of first aid equipment shall be _____________ in each working section not more than 500 feet outby the active working face or faces.",
+    "choices": [
+     {
+      "text": "kept",
+      "is_correct": false
+     },
+     {
+      "text": "maintained",
+      "is_correct": true
+     },
+     {
+      "text": "stored",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Damaged rollers or other _____________ belt conveyor components which pose a fire hazard must be immediately repaired or replaced.",
+    "choices": [
+     {
+      "text": "damaged",
+      "is_correct": true
+     },
+     {
+      "text": "moving",
+      "is_correct": false
+     },
+     {
+      "text": "lubricated",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Each main mine fan shall be examined for proper operation by a _____________ person designated by the operator once each day unless a fan monitoring system is used.",
+    "choices": [
+     {
+      "text": "competent",
+      "is_correct": false
+     },
+     {
+      "text": "certified",
+      "is_correct": false
+     },
+     {
+      "text": "trained",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The mine ventilation plan shall show the quantity of air required in the last open crosscut if greater than _____________ cubic feet per minute.",
+    "choices": [
+     {
+      "text": "9,000",
+      "is_correct": true
+     },
+     {
+      "text": "10,000",
+      "is_correct": false
+     },
+     {
+      "text": "12,500",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Circuit breakers shall be _____________ for identification.",
+    "choices": [
+     {
+      "text": "marked",
+      "is_correct": true
+     },
+     {
+      "text": "spaced",
+      "is_correct": false
+     },
+     {
+      "text": "numbered",
+      "is_correct": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 191,
+  "title": "Day 1 Written Test",
+  "questions": [
+   {
+    "text": "A mixture of coal dust in ____ ______ the explosive limit of methane",
+    "choices": [
+     {
+      "text": "air reduces",
+      "is_correct": true
+     },
+     {
+      "text": "air increases",
+      "is_correct": false
+     },
+     {
+      "text": "air decreases",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Any ________ _______ can explode under certain conditions",
+    "choices": [
+     {
+      "text": "explosive gas",
+      "is_correct": false
+     },
+     {
+      "text": "flammable gas",
+      "is_correct": true
+     },
+     {
+      "text": "combustible gas",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Temporary seals are built before ____________ _______ are erected in order to seal off a fire area as quickly as possible",
+    "choices": [
+     {
+      "text": "permanent seals",
+      "is_correct": true
+     },
+     {
+      "text": "temporary seals",
+      "is_correct": false
+     },
+     {
+      "text": "air locks",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "One method of _________ __________ is flooding the sealed fire area with water",
+    "choices": [
+     {
+      "text": "direct firefighting",
+      "is_correct": false
+     },
+     {
+      "text": "undirect sealing",
+      "is_correct": false
+     },
+     {
+      "text": "indirect firefighting",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Rescue teams are responsible for ______ __________ to the ventilation system",
+    "choices": [
+     {
+      "text": "evaluating damage",
+      "is_correct": false
+     },
+     {
+      "text": "determining damage",
+      "is_correct": false
+     },
+     {
+      "text": "assessing damage",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "In situations too hazardous for teams to explore and _______ ________, teams may be instructed to seal the area",
+    "choices": [
+     {
+      "text": "ventilate safely",
+      "is_correct": false
+     },
+     {
+      "text": "reventilate safely",
+      "is_correct": true
+     },
+     {
+      "text": "build air-locks",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "It is important that the _______ ________ its work so that it can return to the fresh air base on time",
+    "choices": [
+     {
+      "text": "captain pace",
+      "is_correct": false
+     },
+     {
+      "text": "team pace",
+      "is_correct": true
+     },
+     {
+      "text": "team regulate",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "As the ____________ ___________, the map man records what the team encounters by marking the information on a mine map",
+    "choices": [
+     {
+      "text": "team explores",
+      "is_correct": false
+     },
+     {
+      "text": "captain advances",
+      "is_correct": false
+     },
+     {
+      "text": "team advances",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Low expansion foam is very wet and heavy and can only be used when you\u2019re __________ ________ to a fire to force the foam directly onto the fire",
+    "choices": [
+     {
+      "text": "far enough",
+      "is_correct": false
+     },
+     {
+      "text": "close proximity",
+      "is_correct": false
+     },
+     {
+      "text": "close enough",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "___________ ________ and gases helps determine the effectiveness of firefighting and the potential danger of an explosion",
+    "choices": [
+     {
+      "text": "Monitoring pressures",
+      "is_correct": true
+     },
+     {
+      "text": "Monitoring densities",
+      "is_correct": false
+     },
+     {
+      "text": "Examining pressures",
+      "is_correct": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 192,
+  "title": "Day 2 Written Test",
+  "questions": [
+   {
+    "text": "___, ____, and taste are physical properties that help to identify gases during barefaced exploration",
+    "choices": [
+     {
+      "text": "Color, smell",
+      "is_correct": false
+     },
+     {
+      "text": "Odor, color",
+      "is_correct": false
+     },
+     {
+      "text": "Color, odor",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "If there is a ____________ _________of hydrocarbons in smoke, the smoke may be explosive",
+    "choices": [
+     {
+      "text": "adequate concentration",
+      "is_correct": false
+     },
+     {
+      "text": "sufficient amount",
+      "is_correct": true
+     },
+     {
+      "text": "ample amount",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "In order to maintain an airlock, _______ ______ of the airlock must be kept closed while the other is opened",
+    "choices": [
+     {
+      "text": "both doors",
+      "is_correct": false
+     },
+     {
+      "text": "one door",
+      "is_correct": true
+     },
+     {
+      "text": "either door",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The fresh air base should be located where it\u2019s _______ ________ ventilation and fresh air",
+    "choices": [
+     {
+      "text": "established adequate",
+      "is_correct": false
+     },
+     {
+      "text": "confirmed good",
+      "is_correct": false
+     },
+     {
+      "text": "assured positive",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "_______ _______ should be allowed for a fire area to cool before it is unsealed",
+    "choices": [
+     {
+      "text": "Adequate time",
+      "is_correct": false
+     },
+     {
+      "text": "Ample time",
+      "is_correct": false
+     },
+     {
+      "text": "Sufficient time",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "_________ __________ should be marked to warn other teams that may enter the area after yours",
+    "choices": [
+     {
+      "text": "Unsafe roof",
+      "is_correct": false
+     },
+     {
+      "text": "Hazardous areas",
+      "is_correct": true
+     },
+     {
+      "text": "Dangerous areas",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "For a Class C fire (electrical), if power has been cut off to the _________ ________, it may be treated as a Class A or B fire",
+    "choices": [
+     {
+      "text": "burning equipment",
+      "is_correct": true
+     },
+     {
+      "text": "flaming material",
+      "is_correct": false
+     },
+     {
+      "text": "burning material",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "All __________ _______ should be well hitched in the floor, roof, and ribs to improve their strength",
+    "choices": [
+     {
+      "text": "permanent seals",
+      "is_correct": false
+     },
+     {
+      "text": "air locks",
+      "is_correct": false
+     },
+     {
+      "text": "temporary seals",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Rescue Teams may encounter many hazards while _______ ________ directly by hand",
+    "choices": [
+     {
+      "text": "extinguishing fires",
+      "is_correct": false
+     },
+     {
+      "text": "attacking fires",
+      "is_correct": false
+     },
+     {
+      "text": "fighting fires",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "If a team member must return to the fresh air base because of a problem, it is standard practice among teams for the _______ _______ to go back with that person",
+    "choices": [
+     {
+      "text": "rescue team",
+      "is_correct": false
+     },
+     {
+      "text": "whole team",
+      "is_correct": false
+     },
+     {
+      "text": "entire team",
+      "is_correct": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 1281,
+  "title": "Preshift Written Test",
+  "questions": [
+   {
+    "text": "Each main mine fan shall be examined for proper operation by a person designated by the operator once each day unless a fan monitoring system is used",
+    "choices": [
+     {
+      "text": "Qualified",
+      "is_correct": false
+     },
+     {
+      "text": "Certified",
+      "is_correct": false
+     },
+     {
+      "text": "Trained",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Tests for oxygen deficiency shall be made by a qualified person with MSHA approved oxygen detectors maintained in permissible and operating condition",
+    "choices": [
+     {
+      "text": "In Proper",
+      "is_correct": false
+     },
+     {
+      "text": "Good",
+      "is_correct": false
+     },
+     {
+      "text": "Proper",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The directional lifeline shall be with two securely attached cones, installed consecutively with the tapered section pointing inby, to signify an attached branch line",
+    "choices": [
+     {
+      "text": "Constructed",
+      "is_correct": false
+     },
+     {
+      "text": "Equipped",
+      "is_correct": true
+     },
+     {
+      "text": "Provided",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Welding, cutting and __________ with an arc or flame are prohibited within 150 feet of a seal",
+    "choices": [
+     {
+      "text": "Soldering",
+      "is_correct": true
+     },
+     {
+      "text": "Burning",
+      "is_correct": false
+     },
+     {
+      "text": "Grinding",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "All underground high-voltage transmission cables shall be guarded where_____ regularly work or pass under them unless they are 6 1/2 feet or more above the floor or rail",
+    "choices": [
+     {
+      "text": "Persons",
+      "is_correct": false
+     },
+     {
+      "text": "Men",
+      "is_correct": true
+     },
+     {
+      "text": "Miners",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Ventilation is utilized to dilute, render harmless and carry away flammable, explosive, noxious, and harmful gases, and fumes",
+    "choices": [
+     {
+      "text": "Smoke, Dusts",
+      "is_correct": false
+     },
+     {
+      "text": "Dusts, Smoke",
+      "is_correct": true
+     },
+     {
+      "text": "Dusts, Smokes",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Persons underground only permissible electric lamps approved by MSHA",
+    "choices": [
+     {
+      "text": "Use",
+      "is_correct": false
+     },
+     {
+      "text": "Shall Use",
+      "is_correct": true
+     },
+     {
+      "text": "Must Use",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Refuge alternatives shall be located within 1,000 feet from the working face and from the locations where mechanized mining equipment is being installed or removed",
+    "choices": [
+     {
+      "text": "Furthest",
+      "is_correct": false
+     },
+     {
+      "text": "Most Distant",
+      "is_correct": false
+     },
+     {
+      "text": "Nearest",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The ventilation plan and any revisions shall be posted on the mine bulletin board within 1 working day following notification of approval",
+    "choices": [
+     {
+      "text": "Mine",
+      "is_correct": false
+     },
+     {
+      "text": "Approved",
+      "is_correct": true
+     },
+     {
+      "text": "Underground",
+      "is_correct": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 1115,
+  "title": "First Aid Written Test",
+  "questions": [
+   {
+    "text": "Your patient has been in respiratory arrest for approximately 30 min. Your assessment reveals, pale skin and cyanosis of the nail beds. These are signs of:",
+    "choices": [
+     {
+      "text": "respiratory failure",
+      "is_correct": false
+     },
+     {
+      "text": "asthma",
+      "is_correct": false
+     },
+     {
+      "text": "hypoxia",
+      "is_correct": true
+     },
+     {
+      "text": "respiratory arrest",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The carina is the point at which:",
+    "choices": [
+     {
+      "text": "you swerve off the road",
+      "is_correct": false
+     },
+     {
+      "text": "indicates the juncture between the oropharynx and the larynx",
+      "is_correct": false
+     },
+     {
+      "text": "the brain receives oxygen",
+      "is_correct": true
+     },
+     {
+      "text": "the trachea splits",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A grinding noise or the sensation felt when broken bone ends grind together",
+    "choices": [
+     {
+      "text": "crepitus",
+      "is_correct": true
+     },
+     {
+      "text": "sepsis",
+      "is_correct": false
+     },
+     {
+      "text": "apnea",
+      "is_correct": false
+     },
+     {
+      "text": "osteogratus",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Which symptom is not associated with renal failure",
+    "choices": [
+     {
+      "text": "increased blood pressure",
+      "is_correct": false
+     },
+     {
+      "text": "generalized swelling",
+      "is_correct": false
+     },
+     {
+      "text": "decreased heart rate",
+      "is_correct": true
+     },
+     {
+      "text": "decreased urination",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The body looses heat by __________, conduction, convection and evaporation",
+    "choices": [
+     {
+      "text": "cold water",
+      "is_correct": false
+     },
+     {
+      "text": "radiation",
+      "is_correct": true
+     },
+     {
+      "text": "poor metabolism",
+      "is_correct": false
+     },
+     {
+      "text": "driving a Ferrari",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Asystole is:",
+    "choices": [
+     {
+      "text": "the condition of decreased elasticity of the alveoli",
+      "is_correct": false
+     },
+     {
+      "text": "asymmetrical wave form of heart activity",
+      "is_correct": false
+     },
+     {
+      "text": "a fungal infection",
+      "is_correct": false
+     },
+     {
+      "text": "AKA- flatline",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Abdominal thrusts are the recommended procedure for infants and adults",
+    "choices": [
+     {
+      "text": "True",
+      "is_correct": false
+     },
+     {
+      "text": "False",
+      "is_correct": true
+     },
+     {
+      "text": "Only if the infant is above 24 inches in length",
+      "is_correct": false
+     },
+     {
+      "text": "If advanced medical care is quickly available",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "After applying direct pressure and elevation to a bleeding wound with no success",
+    "choices": [
+     {
+      "text": "use a pressure point",
+      "is_correct": false
+     },
+     {
+      "text": "apply another bandage w/o removing the first",
+      "is_correct": false
+     },
+     {
+      "text": "use a cold pack on the proximal side of the wound",
+      "is_correct": false
+     },
+     {
+      "text": "apply a tourniquet",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Young children are more prone to head injuries",
+    "choices": [
+     {
+      "text": "because they have large heads",
+      "is_correct": true
+     },
+     {
+      "text": "False",
+      "is_correct": false
+     },
+     {
+      "text": "Due to less refined motor skills",
+      "is_correct": false
+     },
+     {
+      "text": "Until the brain becomes more fully developed",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Facial injuries are serious",
+    "choices": [
+     {
+      "text": "Due to the increased chance of shock",
+      "is_correct": false
+     },
+     {
+      "text": "When the person can not talk",
+      "is_correct": false
+     },
+     {
+      "text": "Due to the possible airway obstruction",
+      "is_correct": true
+     },
+     {
+      "text": "Always but especially if the patient is below the age of 8",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "All of the following are common causes of renal failure  EXCEPT:",
+    "choices": [
+     {
+      "text": "Blood loss",
+      "is_correct": false
+     },
+     {
+      "text": "Injury",
+      "is_correct": false
+     },
+     {
+      "text": "Diadetes",
+      "is_correct": false
+     },
+     {
+      "text": "Angina",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "sepsis  is a particular problem in ________ due to increased susceptibility to generalized infection",
+    "choices": [
+     {
+      "text": "young adults",
+      "is_correct": false
+     },
+     {
+      "text": "infants",
+      "is_correct": true
+     },
+     {
+      "text": "IV  drug users",
+      "is_correct": false
+     },
+     {
+      "text": "Long term medical patients",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "In an adult male (154 Pounds )  ____ is considered a lethal blood loss",
+    "choices": [
+     {
+      "text": "2.0 liters",
+      "is_correct": false
+     },
+     {
+      "text": "2.2 liters",
+      "is_correct": true
+     },
+     {
+      "text": "2.5 liters",
+      "is_correct": false
+     },
+     {
+      "text": "2.7 liters",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A hemostatic dressing",
+    "choices": [
+     {
+      "text": "Slows bleeding with the help of a chemical treatment",
+      "is_correct": true
+     },
+     {
+      "text": "Is another term for pressure dressing",
+      "is_correct": false
+     },
+     {
+      "text": "Is placed on a wound after major bleeding has been controlled",
+      "is_correct": false
+     },
+     {
+      "text": "I not used on children under the age of five",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A position of comfort for an abdominal injury without spinal injury is",
+    "choices": [
+     {
+      "text": "Flat on the back with legs extended",
+      "is_correct": false
+     },
+     {
+      "text": "On the back with legs raised",
+      "is_correct": false
+     },
+     {
+      "text": "On the back with knees raised",
+      "is_correct": true
+     },
+     {
+      "text": "On the side with legs extened",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "In the case of an abdominal evisceration",
+    "choices": [
+     {
+      "text": "expose all organs that have spilled out",
+      "is_correct": true
+     },
+     {
+      "text": "position the patient on their side",
+      "is_correct": false
+     },
+     {
+      "text": "provide low-flow oxygen if local protocols allow",
+      "is_correct": false
+     },
+     {
+      "text": "position the patient on their back with legs extended to allow for greater access",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "When assessing  the motor function be sure to",
+    "choices": [
+     {
+      "text": "Dress open fractures first",
+      "is_correct": false
+     },
+     {
+      "text": "Support the patient in case of a fall",
+      "is_correct": false
+     },
+     {
+      "text": "assess the coolant levels before starting",
+      "is_correct": false
+     },
+     {
+      "text": "Assess both extremities simultaneously",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "If rewarming a frost bitten extremity the water temperature should be between ____ degrees F",
+    "choices": [
+     {
+      "text": "95-100",
+      "is_correct": false
+     },
+     {
+      "text": "98.6- 102",
+      "is_correct": false
+     },
+     {
+      "text": "105-110",
+      "is_correct": false
+     },
+     {
+      "text": "100-105",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "In a case of hypothermia",
+    "choices": [
+     {
+      "text": "Give the patient hot tea hot tea",
+      "is_correct": false
+     },
+     {
+      "text": "Give the patient hot coffee",
+      "is_correct": false
+     },
+     {
+      "text": "Give the patient no more than one ounce of brandy",
+      "is_correct": false
+     },
+     {
+      "text": "Give the patient no caffeinated  beverages",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Syncope can be described as",
+    "choices": [
+     {
+      "text": "An attempt to cope with and otherwise unacceptable situation",
+      "is_correct": false
+     },
+     {
+      "text": "Collapse",
+      "is_correct": true
+     },
+     {
+      "text": "A drug used in the treatment of heroine overdose",
+      "is_correct": false
+     },
+     {
+      "text": "Instrument used to digitally view the larynx",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "When using an NPA",
+    "choices": [
+     {
+      "text": "Use the largest diameter that will fit in the nostril",
+      "is_correct": true
+     },
+     {
+      "text": "Contact the National Polo Association",
+      "is_correct": false
+     },
+     {
+      "text": "Use the shortest length that will work",
+      "is_correct": false
+     },
+     {
+      "text": "Use a water based  lubricant in the nostril before inserting",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The amount of air  being moved in and out of the lungs on each breath is",
+    "choices": [
+     {
+      "text": "Lung volume",
+      "is_correct": false
+     },
+     {
+      "text": "Usually about 4 liters in an adult",
+      "is_correct": false
+     },
+     {
+      "text": "Usually about 2 liters in an infant",
+      "is_correct": false
+     },
+     {
+      "text": "Tidal volume",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "One pound is equal to",
+    "choices": [
+     {
+      "text": "2.2 pounds",
+      "is_correct": false
+     },
+     {
+      "text": ".35 pounds",
+      "is_correct": false
+     },
+     {
+      "text": ".45 pounds",
+      "is_correct": true
+     },
+     {
+      "text": "$2.10",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The chin is ______ to the mouth",
+    "choices": [
+     {
+      "text": "Superior",
+      "is_correct": false
+     },
+     {
+      "text": "Lateral",
+      "is_correct": false
+     },
+     {
+      "text": "Inferior",
+      "is_correct": true
+     },
+     {
+      "text": "Medial",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Psychogenic shock is a form of _____ shock",
+    "choices": [
+     {
+      "text": "Respiratory",
+      "is_correct": false
+     },
+     {
+      "text": "Disruptive",
+      "is_correct": false
+     },
+     {
+      "text": "Neurogenic",
+      "is_correct": false
+     },
+     {
+      "text": "Distributive",
+      "is_correct": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 1795,
+  "title": "Day 1 Written Test",
+  "questions": [
+   {
+    "text": "Rescue teams are responsible for assessing ________ to the ventilation system",
+    "choices": [
+     {
+      "text": "problems",
+      "is_correct": false
+     },
+     {
+      "text": "conditions",
+      "is_correct": false
+     },
+     {
+      "text": "damage",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Under no circumstances will the team ever _______ ventilation without orders to do so from the Command Center",
+    "choices": [
+     {
+      "text": "change",
+      "is_correct": false
+     },
+     {
+      "text": "alter",
+      "is_correct": true
+     },
+     {
+      "text": "move",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The Command Center considers several factors before it orders a change in ventilation, most importantly; it has to consider how the ________ will affect ventilation into an unexplored area",
+    "choices": [
+     {
+      "text": "changes",
+      "is_correct": false
+     },
+     {
+      "text": "alterations",
+      "is_correct": true
+     },
+     {
+      "text": "redistribution",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "If the mine has had _______________, the team may encounter a great deal of debris, damage to stoppings, and hazardous roof and rib conditions",
+    "choices": [
+     {
+      "text": "an explosion",
+      "is_correct": true
+     },
+     {
+      "text": "an ignition",
+      "is_correct": false
+     },
+     {
+      "text": "a rock bump",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "After a fire or explosion in a mine, rescue teams are usually needed to go into the mine to assess and ______________ventilation",
+    "choices": [
+     {
+      "text": "establish",
+      "is_correct": false
+     },
+     {
+      "text": "re-establish",
+      "is_correct": true
+     },
+     {
+      "text": "reconstruct",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Once an explosion has __________, there is always the possibility of further explosions",
+    "choices": [
+     {
+      "text": "happened",
+      "is_correct": false
+     },
+     {
+      "text": "started",
+      "is_correct": false
+     },
+     {
+      "text": "occurred",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "When a team __________ a body, its location and position should be marked on a mine map and on the roof or rib close to the body",
+    "choices": [
+     {
+      "text": "finds",
+      "is_correct": false
+     },
+     {
+      "text": "discovers",
+      "is_correct": false
+     },
+     {
+      "text": "locates",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "In situations too __________ for teams to explore and reventilate safely, teams may be instructed to seal the area",
+    "choices": [
+     {
+      "text": "dangerous",
+      "is_correct": false
+     },
+     {
+      "text": "unsafe",
+      "is_correct": false
+     },
+     {
+      "text": "hazardous",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "It is recommended that the first stop for a _________ check be just inby the fresh- air base",
+    "choices": [
+     {
+      "text": "team",
+      "is_correct": true
+     },
+     {
+      "text": "rescue team",
+      "is_correct": false
+     },
+     {
+      "text": "mine rescue team",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Team safety must not be compromised. Although \u201cTime is never your ________\u201d do not be in too great a hurry and do not permit others to hurry",
+    "choices": [
+     {
+      "text": "enemy",
+      "is_correct": false
+     },
+     {
+      "text": "ally",
+      "is_correct": false
+     },
+     {
+      "text": "friend",
+      "is_correct": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 1791,
+  "title": "BioMarine 240R Bench Written Test",
+  "questions": [
+   {
+    "text": "Facepiece failing positive and/or negative testing during user donning could be caused by facepiece fit",
+    "choices": [
+     {
+      "text": "Loose",
+      "is_correct": false
+     },
+     {
+      "text": "Poor",
+      "is_correct": true
+     },
+     {
+      "text": "Tight",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The Center Section Lid 0-Ring should be replaced as",
+    "choices": [
+     {
+      "text": "Required",
+      "is_correct": false
+     },
+     {
+      "text": "Recommended",
+      "is_correct": false
+     },
+     {
+      "text": "Needed",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The low oxygen alarm must activate between psig and is indicated by a flashing red light and audible alarm",
+    "choices": [
+     {
+      "text": "600-700",
+      "is_correct": false
+     },
+     {
+      "text": "650-750",
+      "is_correct": true
+     },
+     {
+      "text": "700-750",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "High breathing resistance during __ could be caused by Bent valve in breathing chamber not opening properly",
+    "choices": [
+     {
+      "text": "Exhalation",
+      "is_correct": true
+     },
+     {
+      "text": "Inhalation",
+      "is_correct": false
+     },
+     {
+      "text": "Use",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Not achieving full 4-hour duration of BioPak during use could be caused by a pressure Failure",
+    "choices": [
+     {
+      "text": "Gauge",
+      "is_correct": false
+     },
+     {
+      "text": "Regulator",
+      "is_correct": true
+     },
+     {
+      "text": "Valve",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Biopak volume is over 6 liters",
+    "choices": [
+     {
+      "text": "Tidal",
+      "is_correct": true
+     },
+     {
+      "text": "Total",
+      "is_correct": false
+     },
+     {
+      "text": "Breathing",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The R1VIS will automatically power down once the system pressure has dropped below _______ psig",
+    "choices": [
+     {
+      "text": "30",
+      "is_correct": false
+     },
+     {
+      "text": "20",
+      "is_correct": false
+     },
+     {
+      "text": "25",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "In the event the SCBA fails flow testing during Turn-Around or Long-term Maintenance the flow restrictor is most likely and will require replacement",
+    "choices": [
+     {
+      "text": "Damaged",
+      "is_correct": false
+     },
+     {
+      "text": "Clogged",
+      "is_correct": true
+     },
+     {
+      "text": "Misaligned",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The oxygen cylinder pressure gauge and the R1VIS gauge pressure readings shall match within",
+    "choices": [
+     {
+      "text": "10",
+      "is_correct": true
+     },
+     {
+      "text": "5",
+      "is_correct": false
+     },
+     {
+      "text": "15",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "To get the most accurate flow meter reading you must have a minimum of (104 bar) in the cylinder",
+    "choices": [
+     {
+      "text": "1500",
+      "is_correct": true
+     },
+     {
+      "text": "1200",
+      "is_correct": false
+     },
+     {
+      "text": "1400",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Over pressurization of the SCBA with the test keys installed beyond \" of water column could damage the vent valve and diaphragm",
+    "choices": [
+     {
+      "text": "6",
+      "is_correct": false
+     },
+     {
+      "text": "8",
+      "is_correct": true
+     },
+     {
+      "text": "10",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Failure to install the Phase Change - Canister into the center section prior to use will result in increased breathing gas temperature",
+    "choices": [
+     {
+      "text": "Chemical",
+      "is_correct": false
+     },
+     {
+      "text": "Material",
+      "is_correct": true
+     },
+     {
+      "text": "Absorbent",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Do not expose opened CO2  scrubber cartridges to ambient air for more than minutes",
+    "choices": [
+     {
+      "text": "20",
+      "is_correct": true
+     },
+     {
+      "text": "30",
+      "is_correct": false
+     },
+     {
+      "text": "60",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Freeze the ice canisters for a minimum of eight (8) hours before use at a maximum temperature of F (42 Q",
+    "choices": [
+     {
+      "text": "10",
+      "is_correct": true
+     },
+     {
+      "text": "15",
+      "is_correct": false
+     },
+     {
+      "text": "5",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "If the lower housing is being washed, always leave the cylinder securely attached to the so that the area remains clean, dry and free of contamination",
+    "choices": [
+     {
+      "text": "Apparatus",
+      "is_correct": false
+     },
+     {
+      "text": "Regulator",
+      "is_correct": true
+     },
+     {
+      "text": "Coupling",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Replace the battery when the low battery alarm has activated, after 200 hours of use or every months whichever comes first",
+    "choices": [
+     {
+      "text": "12",
+      "is_correct": false
+     },
+     {
+      "text": "3",
+      "is_correct": false
+     },
+     {
+      "text": "6",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "A foreign gas may cause cylinder",
+    "choices": [
+     {
+      "text": "Corrosion",
+      "is_correct": true
+     },
+     {
+      "text": "Malfunction",
+      "is_correct": false
+     },
+     {
+      "text": "Failure",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "DOT requires carbon fiber wrapped aluminum cylinders be tested by an approved facility on a -year cycle form the date of manufacture",
+    "choices": [
+     {
+      "text": "10",
+      "is_correct": false
+     },
+     {
+      "text": "6",
+      "is_correct": false
+     },
+     {
+      "text": "5",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Oxygen will the combustion of other materials so that materials that normally will not burn in air may burn in oxygen- rich atmospheres; and, materials that do burn in air will burn more vigorously and at a higher temperature in oxygen-rich atmospheres",
+    "choices": [
+     {
+      "text": "Enhance",
+      "is_correct": true
+     },
+     {
+      "text": "Increase",
+      "is_correct": false
+     },
+     {
+      "text": "Stimulate",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The BioPak 240 Revolution is suitable for respiratory protection during entry into and escape from oxygen deficient atmospheres with a temperature range of ___ degree F (-15C) to 110 degree F (43C).",
+    "choices": [
+     {
+      "text": "5",
+      "is_correct": true
+     },
+     {
+      "text": "10",
+      "is_correct": false
+     },
+     {
+      "text": "15",
+      "is_correct": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 1792,
+  "title": "Kentucky Post 2 Bench Written Test",
+  "questions": [
+   {
+    "text": "To prepare for testing adjust point of the RZ-25 tester",
+    "choices": [
+     {
+      "text": "Center",
+      "is_correct": false
+     },
+     {
+      "text": "Testing",
+      "is_correct": false
+     },
+     {
+      "text": "Zero",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The EPDM breathing hoses use turn connectors",
+    "choices": [
+     {
+      "text": "Complete",
+      "is_correct": false
+     },
+     {
+      "text": "Full",
+      "is_correct": false
+     },
+     {
+      "text": "Quarter",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The factory filled cartridge is good for years from the manufacture date",
+    "choices": [
+     {
+      "text": "3",
+      "is_correct": false
+     },
+     {
+      "text": "4",
+      "is_correct": true
+     },
+     {
+      "text": "6",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The BG-4 dosage must be 1.5 to 1.9 L/min",
+    "choices": [
+     {
+      "text": "Functioning",
+      "is_correct": false
+     },
+     {
+      "text": "Constant",
+      "is_correct": true
+     },
+     {
+      "text": "Operating",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The accuracy of the Sentinel pressure measurement is +or- 2% of the value",
+    "choices": [
+     {
+      "text": "Total",
+      "is_correct": false
+     },
+     {
+      "text": "Final",
+      "is_correct": true
+     },
+     {
+      "text": "Pressure",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "First stage reducer bypass output is> L/min",
+    "choices": [
+     {
+      "text": "20",
+      "is_correct": false
+     },
+     {
+      "text": "10",
+      "is_correct": false
+     },
+     {
+      "text": "50",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The minimum valve provides greater than L/ min flow",
+    "choices": [
+     {
+      "text": "80",
+      "is_correct": true
+     },
+     {
+      "text": "90",
+      "is_correct": false
+     },
+     {
+      "text": "50",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The pressure reducer must be rebuilt/ overhauled every years",
+    "choices": [
+     {
+      "text": "5",
+      "is_correct": false
+     },
+     {
+      "text": "7",
+      "is_correct": false
+     },
+     {
+      "text": "6",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "At the first low pressure warning approximately % of the oxygen has been used up",
+    "choices": [
+     {
+      "text": "75",
+      "is_correct": true
+     },
+     {
+      "text": "85",
+      "is_correct": false
+     },
+     {
+      "text": "95",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "During the low pressure warning test, the alarm should activate at approximately PSI for a 4 hour apparatus",
+    "choices": [
+     {
+      "text": "700",
+      "is_correct": true
+     },
+     {
+      "text": "800",
+      "is_correct": false
+     },
+     {
+      "text": "500",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Medium pressure in the BG-4 is between 58 psi and psi",
+    "choices": [
+     {
+      "text": "64",
+      "is_correct": true
+     },
+     {
+      "text": "65",
+      "is_correct": false
+     },
+     {
+      "text": "60",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Before washing the minimum valve, it is necessary to the minimum valve with plug",
+    "choices": [
+     {
+      "text": "Block",
+      "is_correct": false
+     },
+     {
+      "text": "Isolate",
+      "is_correct": true
+     },
+     {
+      "text": "Secure",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The maximum temperature of the air used to dry parts should not go above degree C (140 degree F)",
+    "choices": [
+     {
+      "text": "90",
+      "is_correct": false
+     },
+     {
+      "text": "60",
+      "is_correct": true
+     },
+     {
+      "text": "70",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The inhalation valve should be replaced every years for units which are in constant use",
+    "choices": [
+     {
+      "text": "3 years",
+      "is_correct": true
+     },
+     {
+      "text": "5 years",
+      "is_correct": false
+     },
+     {
+      "text": "2 years",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The pressure reducer should be returned agent for complete overhaul after at least",
+    "choices": [
+     {
+      "text": "6years",
+      "is_correct": true
+     },
+     {
+      "text": "3 years",
+      "is_correct": false
+     },
+     {
+      "text": "4 years to the manufacturer or their years usage",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Only oxygen (medical grade or better) with to fill the BG-4 oxygen cylinders",
+    "choices": [
+     {
+      "text": "99.5%",
+      "is_correct": false
+     },
+     {
+      "text": ">99.5%",
+      "is_correct": true
+     },
+     {
+      "text": "98% purity is to be used",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "It is safe to use the PSS BG 4 for up to - hours with a battery warning 1 Icon",
+    "choices": [
+     {
+      "text": "8",
+      "is_correct": false
+     },
+     {
+      "text": "4",
+      "is_correct": true
+     },
+     {
+      "text": "12",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The LED flashes to indicate that the Sentinel is operating normally",
+    "choices": [
+     {
+      "text": "Yellow",
+      "is_correct": false
+     },
+     {
+      "text": "Red",
+      "is_correct": false
+     },
+     {
+      "text": "Green",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Relief valve activation is bar or (87 psi)",
+    "choices": [
+     {
+      "text": "10",
+      "is_correct": false
+     },
+     {
+      "text": "8",
+      "is_correct": false
+     },
+     {
+      "text": "6",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The drainage valve opens at approximately mbar and is therefore out of the RZ reading range",
+    "choices": [
+     {
+      "text": "10",
+      "is_correct": false
+     },
+     {
+      "text": "12",
+      "is_correct": false
+     },
+     {
+      "text": "15",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Cooling Canister \u2014 item 2 is the \u201c___ for Cooler\u201d. Which word completes it?",
+    "choices": [
+     {
+      "text": "Lid",
+      "is_correct": false
+     },
+     {
+      "text": "Cover",
+      "is_correct": true
+     },
+     {
+      "text": "Top",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2013_kentucky_cooling_canister.png"
+   },
+   {
+    "text": "Cooling Canister \u2014 item 4 is the \u201cAngle ___\u201d. Which word completes it?",
+    "choices": [
+     {
+      "text": "Connector",
+      "is_correct": true
+     },
+     {
+      "text": "Connection",
+      "is_correct": false
+     },
+     {
+      "text": "Line",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2013_kentucky_cooling_canister.png"
+   },
+   {
+    "text": "Cooling Canister \u2014 item 5 is the \u201c___ Ring\u201d. Which word completes it?",
+    "choices": [
+     {
+      "text": "Reactor",
+      "is_correct": false
+     },
+     {
+      "text": "Reacting",
+      "is_correct": false
+     },
+     {
+      "text": "Reaction",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2013_kentucky_cooling_canister.png"
+   },
+   {
+    "text": "Refillable Cartridge \u2014 item 1 is the \u201cRefillable ___\u201d. Which word completes it?",
+    "choices": [
+     {
+      "text": "Canister",
+      "is_correct": false
+     },
+     {
+      "text": "Container",
+      "is_correct": false
+     },
+     {
+      "text": "Cartridge",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2013_kentucky_refillable_cartridge.png"
+   },
+   {
+    "text": "Refillable Cartridge \u2014 item 5 is the \u201c___ Scrubber Screen\u201d. Which word completes it?",
+    "choices": [
+     {
+      "text": "Refillable",
+      "is_correct": true
+     },
+     {
+      "text": "Reusable",
+      "is_correct": false
+     },
+     {
+      "text": "Regenerative",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2013_kentucky_refillable_cartridge.png"
+   },
+   {
+    "text": "Refillable Cartridge \u2014 item 6 is the \u201c___ Mats\u201d. Which word completes it?",
+    "choices": [
+     {
+      "text": "Filter",
+      "is_correct": true
+     },
+     {
+      "text": "Replaceable",
+      "is_correct": false
+     },
+     {
+      "text": "Filler",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2013_kentucky_refillable_cartridge.png"
+   },
+   {
+    "text": "Drain/Relief/Minimum Valve Assembly \u2014 item 2 is the \u201c___ Case\u201d. Which word completes it?",
+    "choices": [
+     {
+      "text": "Crater",
+      "is_correct": true
+     },
+     {
+      "text": "Valve",
+      "is_correct": false
+     },
+     {
+      "text": "Clamp",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2013_kentucky_drain_valve.png"
+   },
+   {
+    "text": "Drain/Relief/Minimum Valve Assembly \u2014 identify item 9.",
+    "choices": [
+     {
+      "text": "Coupler",
+      "is_correct": false
+     },
+     {
+      "text": "Coupling",
+      "is_correct": true
+     },
+     {
+      "text": "Connecting",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2013_kentucky_drain_valve.png"
+   },
+   {
+    "text": "Drain/Relief/Minimum Valve Assembly \u2014 item 18 is the \u201cValve ___\u201d. Which word completes it?",
+    "choices": [
+     {
+      "text": "Disc",
+      "is_correct": false
+     },
+     {
+      "text": "Seat",
+      "is_correct": false
+     },
+     {
+      "text": "Plate",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2013_kentucky_drain_valve.png"
+   },
+   {
+    "text": "Drain/Relief/Minimum Valve Assembly \u2014 item 23 is the \u201cAngle ___\u201d. Which word completes it?",
+    "choices": [
+     {
+      "text": "Connector",
+      "is_correct": true
+     },
+     {
+      "text": "Coupling",
+      "is_correct": false
+     },
+     {
+      "text": "Valve",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2013_kentucky_drain_valve.png"
+   }
+  ]
+ },
+ {
+  "source_pk": 1793,
+  "title": "BG-4 Bench Written Test",
+  "questions": [
+   {
+    "text": "The drainage valve opens at approximately ___ and is therefore out of the RZ reading range.",
+    "choices": [
+     {
+      "text": "20 mbars",
+      "is_correct": false
+     },
+     {
+      "text": "15 mbars",
+      "is_correct": true
+     },
+     {
+      "text": "25 mbars",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Check the supply of oxygen gas on the display unit at intervals of approximately ___.",
+    "choices": [
+     {
+      "text": "20 minutes",
+      "is_correct": false
+     },
+     {
+      "text": "15 minutes",
+      "is_correct": true
+     },
+     {
+      "text": "60 minutes",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "All parts which come in contact with exhaled air must be thoroughly cleaned and ___ after use.",
+    "choices": [
+     {
+      "text": "dried",
+      "is_correct": false
+     },
+     {
+      "text": "rinsed",
+      "is_correct": false
+     },
+     {
+      "text": "disinfected",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The breathing bag has a ___ volume.",
+    "choices": [
+     {
+      "text": "5.5 liter",
+      "is_correct": true
+     },
+     {
+      "text": "5.2 liter",
+      "is_correct": false
+     },
+     {
+      "text": "5.8 liter",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Relief valve activation is ___ (87psi).",
+    "choices": [
+     {
+      "text": "6 bar",
+      "is_correct": true
+     },
+     {
+      "text": "10 mbar",
+      "is_correct": false
+     },
+     {
+      "text": "5 bar",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "At the last low pressure warning approximately ___ of the oxygen has been used up.",
+    "choices": [
+     {
+      "text": "75 %",
+      "is_correct": false
+     },
+     {
+      "text": "90 %",
+      "is_correct": false
+     },
+     {
+      "text": "95 %",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Only oxygen (medical grade or better) with greater than ___ purity is to be used to fill the BG-4 oxygen cylinders.",
+    "choices": [
+     {
+      "text": "95.9 %",
+      "is_correct": false
+     },
+     {
+      "text": "97.5 %",
+      "is_correct": false
+     },
+     {
+      "text": "99.5 %",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The first low pressure warning occurs when the pressure drops to approximately ___.",
+    "choices": [
+     {
+      "text": "750 psi",
+      "is_correct": false
+     },
+     {
+      "text": "700 psi",
+      "is_correct": true
+     },
+     {
+      "text": "145 psi",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "During the positive pressure leak test, the pressure change within 1 minute must be lower than ___.",
+    "choices": [
+     {
+      "text": "1 mbar",
+      "is_correct": true
+     },
+     {
+      "text": "10 mbar",
+      "is_correct": false
+     },
+     {
+      "text": ".1 mbar",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A positive pressure in the breathing circuit prevents ___ air from entering the system.",
+    "choices": [
+     {
+      "text": "contaminated",
+      "is_correct": false
+     },
+     {
+      "text": "mine",
+      "is_correct": false
+     },
+     {
+      "text": "ambient",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The oxygen cylinder safety burst disc ruptures at ___ (275 bar).",
+    "choices": [
+     {
+      "text": "3,750 psi",
+      "is_correct": false
+     },
+     {
+      "text": "4,000 psi",
+      "is_correct": true
+     },
+     {
+      "text": "3,200 psi",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Medium pressure in the BG-4 is between ___ psi and 64 psi.",
+    "choices": [
+     {
+      "text": "58",
+      "is_correct": true
+     },
+     {
+      "text": "52",
+      "is_correct": false
+     },
+     {
+      "text": "56",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The maximum temperature of the air used to dry parts should not go above 60 degrees C (___ F).",
+    "choices": [
+     {
+      "text": "120 degrees",
+      "is_correct": false
+     },
+     {
+      "text": "160 degrees",
+      "is_correct": false
+     },
+     {
+      "text": "140 degrees",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "It is safe to use the BG-4 for up to ___ with a battery warning 1 icon.",
+    "choices": [
+     {
+      "text": "8 hours",
+      "is_correct": false
+     },
+     {
+      "text": "4 hours",
+      "is_correct": true
+     },
+     {
+      "text": "6 hours",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Rubber parts must be particularly protected from direct exposure to ___.",
+    "choices": [
+     {
+      "text": "heat",
+      "is_correct": false
+     },
+     {
+      "text": "radiation",
+      "is_correct": true
+     },
+     {
+      "text": "chemicals",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "U.S. D.O.T. hydro test composite cylinders every ___ years.",
+    "choices": [
+     {
+      "text": "5",
+      "is_correct": true
+     },
+     {
+      "text": "6",
+      "is_correct": false
+     },
+     {
+      "text": "3",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The pressure reducer must be rebuilt / overhauled every ___.",
+    "choices": [
+     {
+      "text": "5 years",
+      "is_correct": false
+     },
+     {
+      "text": "3 years",
+      "is_correct": false
+     },
+     {
+      "text": "6 years",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "First stage reducer bypass output is greater than ___ / min.",
+    "choices": [
+     {
+      "text": "80 L",
+      "is_correct": false
+     },
+     {
+      "text": "60 L",
+      "is_correct": false
+     },
+     {
+      "text": "50 L",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The minimum valve provides greater than ___ / min flow.",
+    "choices": [
+     {
+      "text": "80 L",
+      "is_correct": true
+     },
+     {
+      "text": "50 L",
+      "is_correct": false
+     },
+     {
+      "text": "60 L",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The BG-4 constant dosage must be 1.5 to ___ / min.",
+    "choices": [
+     {
+      "text": "1.7 L",
+      "is_correct": false
+     },
+     {
+      "text": "1.9 L",
+      "is_correct": true
+     },
+     {
+      "text": "1.8 L",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "BG-4 \u2014 identify item No. 10.",
+    "choices": [
+     {
+      "text": "Switch Box",
+      "is_correct": true
+     },
+     {
+      "text": "Sensor Box",
+      "is_correct": false
+     },
+     {
+      "text": "Distribution Box",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2013_bg4_overview.png"
+   },
+   {
+    "text": "BG-4 \u2014 identify item No. 11.",
+    "choices": [
+     {
+      "text": "Sensor Reducer Unit",
+      "is_correct": false
+     },
+     {
+      "text": "Pressure Unit",
+      "is_correct": false
+     },
+     {
+      "text": "Sensor Unit",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2013_bg4_overview.png"
+   },
+   {
+    "text": "BG-4 \u2014 identify item No. 21.",
+    "choices": [
+     {
+      "text": "Distribution Hose",
+      "is_correct": true
+     },
+     {
+      "text": "Oxygen Supplement Hose",
+      "is_correct": false
+     },
+     {
+      "text": "Dosage Hose",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2013_bg4_overview.png"
+   },
+   {
+    "text": "Breathing Hose Assembly \u2014 identify item No. 2.",
+    "choices": [
+     {
+      "text": "Exhalation Valve Seat",
+      "is_correct": false
+     },
+     {
+      "text": "Inhalation Valve Seat",
+      "is_correct": true
+     },
+     {
+      "text": "Exhalation Valve Housing",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2013_bg4_hose.png"
+   },
+   {
+    "text": "Breathing Hose Assembly \u2014 identify item No. 3.",
+    "choices": [
+     {
+      "text": "Exhalation Valve Seat",
+      "is_correct": true
+     },
+     {
+      "text": "Inhalation Valve Seat",
+      "is_correct": false
+     },
+     {
+      "text": "Exhalation Valve Housing",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2013_bg4_hose.png"
+   },
+   {
+    "text": "Breathing Hose Assembly \u2014 identify item No. 8.",
+    "choices": [
+     {
+      "text": "Facepiece Connector O'Ring",
+      "is_correct": false
+     },
+     {
+      "text": "Coupler Sealing Ring",
+      "is_correct": false
+     },
+     {
+      "text": "Toroidal Sealing Ring",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2013_bg4_hose.png"
+   },
+   {
+    "text": "Sentinel \u2014 identify item No. 7.",
+    "choices": [
+     {
+      "text": "Pressure Sending Unit",
+      "is_correct": false
+     },
+     {
+      "text": "Pressure Sensor",
+      "is_correct": true
+     },
+     {
+      "text": "Pressure Reducer Sensor",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2013_bg4_sentinel.png"
+   },
+   {
+    "text": "Oxygen Cylinder \u2014 identify item No. 20.",
+    "choices": [
+     {
+      "text": "Bursting Disc",
+      "is_correct": true
+     },
+     {
+      "text": "Safety Disc",
+      "is_correct": false
+     },
+     {
+      "text": "Safety Cap",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2013_bg4_cylinder.png"
+   }
+  ]
+ },
+ {
+  "source_pk": 1794,
+  "title": "BioPak 240-R Bench Written Test",
+  "questions": [
+   {
+    "text": "Constant use is defined as being in use at least ___.",
+    "choices": [
+     {
+      "text": "once a week",
+      "is_correct": false
+     },
+     {
+      "text": "once a month",
+      "is_correct": true
+     },
+     {
+      "text": "every 2 weeks",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The CO2 Scrubber should be replaced after ___.",
+    "choices": [
+     {
+      "text": "4 hours",
+      "is_correct": false
+     },
+     {
+      "text": "removing lid",
+      "is_correct": false
+     },
+     {
+      "text": "1 use",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The Bio Pak 240 Revolution is approved when the oxygen cylinder is fully charged with compressed ___ grade oxygen at 3000psi.",
+    "choices": [
+     {
+      "text": "hospital, pure",
+      "is_correct": false
+     },
+     {
+      "text": "medical, aviation",
+      "is_correct": true
+     },
+     {
+      "text": "hospital, divers",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A low battery alarm is indicated by a Red, Green, Blue light sequence followed by a short alarm chirp any time the battery will not complete a ___ mission.",
+    "choices": [
+     {
+      "text": "four-hour",
+      "is_correct": true
+     },
+     {
+      "text": "mine rescue",
+      "is_correct": false
+     },
+     {
+      "text": "underground recovery",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Allow all components to remain wetted by the cleaning solution a minimum of ___.",
+    "choices": [
+     {
+      "text": "15 minutes",
+      "is_correct": false
+     },
+     {
+      "text": "5 minutes",
+      "is_correct": false
+     },
+     {
+      "text": "10 minutes",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Bio Pak tidal volume is over ___.",
+    "choices": [
+     {
+      "text": "6 liters",
+      "is_correct": true
+     },
+     {
+      "text": "5 liters",
+      "is_correct": false
+     },
+     {
+      "text": "6.5 liters",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Allow the oxygen cylinder to ___ after filling to determine the correct pressure.",
+    "choices": [
+     {
+      "text": "stabilize",
+      "is_correct": false
+     },
+     {
+      "text": "settle",
+      "is_correct": false
+     },
+     {
+      "text": "cool",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The Bio Pak 240 Revolution is suitable for respiratory protection during entry into and escape from oxygen deficient atmospheres with a temperature range of ___ F (-15C) to 110 degree F (43C).",
+    "choices": [
+     {
+      "text": "15 degree F",
+      "is_correct": false
+     },
+     {
+      "text": "5 degree F",
+      "is_correct": true
+     },
+     {
+      "text": "10 degree F",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The RMS Module IS NOT ___ with the TRIM light pipe connector or the battery door removed.",
+    "choices": [
+     {
+      "text": "watertight",
+      "is_correct": true
+     },
+     {
+      "text": "sealed",
+      "is_correct": false
+     },
+     {
+      "text": "air tight",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "DOT require carbon fiber wrapped aluminum cylinders be tested by an approved facility on a 5-year cycle from the date ___.",
+    "choices": [
+     {
+      "text": "in service",
+      "is_correct": false
+     },
+     {
+      "text": "of purchase",
+      "is_correct": false
+     },
+     {
+      "text": "of manufacture",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Freeze the ice canister for a minimum of 8 hours before use at a maximum temperature of ___ (-12C).",
+    "choices": [
+     {
+      "text": "10 degrees F",
+      "is_correct": true
+     },
+     {
+      "text": "5 degrees F",
+      "is_correct": false
+     },
+     {
+      "text": "15 degrees F",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "In addition to normal Turn-Around Maintenance, the SCBA shall be ___ and high-pressure tested on a monthly basis if the SCBA is in constant use once a month or placed into long-term storage.",
+    "choices": [
+     {
+      "text": "properly assembled",
+      "is_correct": false
+     },
+     {
+      "text": "visually inspected",
+      "is_correct": true
+     },
+     {
+      "text": "thoroughly cleaned",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Do not expose opened CO2 scrubber cartridges to ambient air for more than ___.",
+    "choices": [
+     {
+      "text": "30 minutes",
+      "is_correct": false
+     },
+     {
+      "text": "15 minutes",
+      "is_correct": false
+     },
+     {
+      "text": "20 minutes",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "If the cylinder is removed for washing you must attach the Regulator Wash Cover provided in the test kit to seal off the regulator from ___ while washing the lower housing.",
+    "choices": [
+     {
+      "text": "water",
+      "is_correct": false
+     },
+     {
+      "text": "dirt",
+      "is_correct": false
+     },
+     {
+      "text": "contamination",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "A good facepiece seal is important to achieving ___ and proper SCBA duration.",
+    "choices": [
+     {
+      "text": "full protection",
+      "is_correct": true
+     },
+     {
+      "text": "sufficient oxygen",
+      "is_correct": false
+     },
+     {
+      "text": "reduced leakage",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The hoses and facepiece adapter MUST be installed with the breathing gas directional arrows facing ___.",
+    "choices": [
+     {
+      "text": "DOWN",
+      "is_correct": false
+     },
+     {
+      "text": "UP",
+      "is_correct": true
+     },
+     {
+      "text": "SIDEWAYS",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Do not change battery in ___.",
+    "choices": [
+     {
+      "text": "hazardous area",
+      "is_correct": true
+     },
+     {
+      "text": "explosive atmospheres",
+      "is_correct": false
+     },
+     {
+      "text": "contaminated atmospheres",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "To get the most accurate flow meter reading you must have a minimum of ___ (104 bar) in the cylinder.",
+    "choices": [
+     {
+      "text": "2000 psi",
+      "is_correct": false
+     },
+     {
+      "text": "1500 psi",
+      "is_correct": true
+     },
+     {
+      "text": "1750 psi",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The RMS will automatically power down once the system pressure has dropped below ___.",
+    "choices": [
+     {
+      "text": "50 psi",
+      "is_correct": false
+     },
+     {
+      "text": "150 psi",
+      "is_correct": false
+     },
+     {
+      "text": "25 psi",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The low oxygen alarm must activate between ___ psig and is indicated by a flashing red light and audible alarm.",
+    "choices": [
+     {
+      "text": "650-750",
+      "is_correct": true
+     },
+     {
+      "text": "650-700",
+      "is_correct": false
+     },
+     {
+      "text": "600-650",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "BioPak 240 Revolution Complete \u2014 identify item No. 4.",
+    "choices": [
+     {
+      "text": "Back Cover Assembly",
+      "is_correct": false
+     },
+     {
+      "text": "Back Housing Assembly",
+      "is_correct": false
+     },
+     {
+      "text": "Upper Housing Assembly",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2013_biopak_complete.png"
+   },
+   {
+    "text": "Lower Housing Assembly \u2014 identify item No. 3.",
+    "choices": [
+     {
+      "text": "External Oxygen Knob",
+      "is_correct": true
+     },
+     {
+      "text": "Outer Oxygen Knob",
+      "is_correct": false
+     },
+     {
+      "text": "External Cylinder Knob",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2013_biopak_lower_housing.png"
+   },
+   {
+    "text": "Pneumatic Assembly \u2014 identify item No. 11.",
+    "choices": [
+     {
+      "text": "Remote Cylinder Gauge",
+      "is_correct": false
+     },
+     {
+      "text": "External Gauge Assembly",
+      "is_correct": false
+     },
+     {
+      "text": "Remote Gauge Assembly",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2013_biopak_pneumatic.png"
+   },
+   {
+    "text": "Manifold Assembly \u2014 identify item No. 2.",
+    "choices": [
+     {
+      "text": "Constant Add Flow Adjustor Assembly",
+      "is_correct": false
+     },
+     {
+      "text": "Constant Add Flow Restrictor Assembly",
+      "is_correct": true
+     },
+     {
+      "text": "High Pressure Flow Restrictor Assembly",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2013_biopak_manifold.png"
+   },
+   {
+    "text": "Center Section Assembly \u2014 identify item No. 14.",
+    "choices": [
+     {
+      "text": "External Diaphragm",
+      "is_correct": false
+     },
+     {
+      "text": "Diaphragm Disc",
+      "is_correct": false
+     },
+     {
+      "text": "Flexible Diaphragm",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2013_biopak_center_section.png"
+   },
+   {
+    "text": "Facepiece Assembly \u2014 identify item No. 3.",
+    "choices": [
+     {
+      "text": "Breathing Hose Adapter",
+      "is_correct": false
+     },
+     {
+      "text": "Facepiece Connector Assembly",
+      "is_correct": false
+     },
+     {
+      "text": "Facepiece Adaptor Assembly",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2013_biopak_facepiece.png"
+   },
+   {
+    "text": "Center Section Lid Assembly \u2014 identify item No. 3.",
+    "choices": [
+     {
+      "text": "Flow Restrictor",
+      "is_correct": false
+     },
+     {
+      "text": "Flow Baffle",
+      "is_correct": true
+     },
+     {
+      "text": "Flow Plate",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2013_biopak_lid.png"
+   },
+   {
+    "text": "Diaphragm Assembly \u2014 identify item No. 2.",
+    "choices": [
+     {
+      "text": "Vent Release",
+      "is_correct": false
+     },
+     {
+      "text": "Vent Valve",
+      "is_correct": false
+     },
+     {
+      "text": "Vent Cap",
+      "is_correct": true
+     }
+    ],
+    "image_rel": "quiz_images/2013_biopak_diaphragm.png"
+   },
+   {
+    "text": "Tool Kit \u2014 identify item No. 4.",
+    "choices": [
+     {
+      "text": "Test Key",
+      "is_correct": true
+     },
+     {
+      "text": "Test Spacers",
+      "is_correct": false
+     },
+     {
+      "text": "Tests Plugs",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2013_biopak_toolkit.png"
+   },
+   {
+    "text": "Ice Canister Freeze Form \u2014 identify item No. 2.",
+    "choices": [
+     {
+      "text": "Freeze Tube",
+      "is_correct": true
+     },
+     {
+      "text": "Ice Tube",
+      "is_correct": false
+     },
+     {
+      "text": "Ice Canister",
+      "is_correct": false
+     }
+    ],
+    "image_rel": "quiz_images/2013_biopak_ice_canister.png"
+   }
+  ]
+ }
+]

@@ -1,0 +1,6 @@
+# Generated diagnostic outputs (rewritten on every load_all/run_report run)
+needs_answers.json
+review.json
+report.json
+produced_src_pks.json
+__pycache__/

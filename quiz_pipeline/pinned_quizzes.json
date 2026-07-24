@@ -1,0 +1,1892 @@
+[
+ {
+  "source_pk": 1274,
+  "title": "Day 1 Written Test",
+  "questions": [
+   {
+    "text": "",
+    "choices": [
+     {
+      "text": "detonation range",
+      "is_correct": false
+     },
+     {
+      "text": "explosive range",
+      "is_correct": true
+     },
+     {
+      "text": "dangerous range",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "One method of ________ firefighting is flooding the _______ fire area with water",
+    "choices": [
+     {
+      "text": "Indirect/sealed",
+      "is_correct": true
+     },
+     {
+      "text": "traditional/known",
+      "is_correct": false
+     },
+     {
+      "text": "direct/mine",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The rescue team ________ should regulate the team’s pace according to conditions ____________",
+    "choices": [
+     {
+      "text": "leader/found",
+      "is_correct": false
+     },
+     {
+      "text": "speed/found",
+      "is_correct": false
+     },
+     {
+      "text": "captain/encountered",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "",
+    "choices": [
+     {
+      "text": "team check",
+      "is_correct": true
+     },
+     {
+      "text": "pack check",
+      "is_correct": false
+     },
+     {
+      "text": "apparatus check",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Smoke causes a lack of orientation which may cause a ______ member to lose his/her sense of balance",
+    "choices": [
+     {
+      "text": "rescue",
+      "is_correct": false
+     },
+     {
+      "text": "mine",
+      "is_correct": false
+     },
+     {
+      "text": "team",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "If smoke is so _______ as to make visibility poor, you may need to keep in constant physical contact with a rail, a compressed air or water line, or the rib in order to feel your way along",
+    "choices": [
+     {
+      "text": "thick",
+      "is_correct": false
+     },
+     {
+      "text": "heavy",
+      "is_correct": false
+     },
+     {
+      "text": "dense",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "",
+    "choices": [
+     {
+      "text": "less",
+      "is_correct": true
+     },
+     {
+      "text": "more",
+      "is_correct": false
+     },
+     {
+      "text": "greater",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Elevators should be tested before use following a __________",
+    "choices": [
+     {
+      "text": "fire",
+      "is_correct": false
+     },
+     {
+      "text": "explosion",
+      "is_correct": false
+     },
+     {
+      "text": "disaster",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Team captains should _______ roof and ribs before the team members advance into the area",
+    "choices": [
+     {
+      "text": "check",
+      "is_correct": false
+     },
+     {
+      "text": "observe",
+      "is_correct": false
+     },
+     {
+      "text": "inspect",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "When survivors are located, the location, time, and date should be marked on the ________ map and on the rib where they are found",
+    "choices": [
+     {
+      "text": "B/O",
+      "is_correct": false
+     },
+     {
+      "text": "team’s",
+      "is_correct": true
+     },
+     {
+      "text": "mine",
+      "is_correct": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 1275,
+  "title": "Day 2 Written Test",
+  "questions": [
+   {
+    "text": "off a fire area as quickly as possible",
+    "choices": [
+     {
+      "text": "Permanent/built",
+      "is_correct": false
+     },
+     {
+      "text": "Temporary/erected",
+      "is_correct": true
+     },
+     {
+      "text": "Permanent/erected",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "One method of indirect firefighting is flooding the sealed fire area with _______",
+    "choices": [
+     {
+      "text": "nitrogen",
+      "is_correct": false
+     },
+     {
+      "text": "silt",
+      "is_correct": false
+     },
+     {
+      "text": "water",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "For teams using a compressed oxygen breathing apparatus, the captain usually notes each team member’s gauge reading at each _____ _____ and reports the lowest reading to the fresh air base",
+    "choices": [
+     {
+      "text": "team stop",
+      "is_correct": false
+     },
+     {
+      "text": "rest stop",
+      "is_correct": true
+     },
+     {
+      "text": "pack check",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "As the team advances, the map man records what the team encounters by marking the information on a ______ ______",
+    "choices": [
+     {
+      "text": "team map",
+      "is_correct": false
+     },
+     {
+      "text": "section map",
+      "is_correct": false
+     },
+     {
+      "text": "mine map",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "without breaking down",
+    "choices": [
+     {
+      "text": "Low expansion",
+      "is_correct": false
+     },
+     {
+      "text": "High expansion",
+      "is_correct": true
+     },
+     {
+      "text": "Highly volatile",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Sulfur dioxide and hydrogen sulfide are _______ soluble gases",
+    "choices": [
+     {
+      "text": "very",
+      "is_correct": false
+     },
+     {
+      "text": "easily",
+      "is_correct": false
+     },
+     {
+      "text": "water",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Ventilation controls are used underground to properly distribute air to all _________ of the mine",
+    "choices": [
+     {
+      "text": "areas",
+      "is_correct": false
+     },
+     {
+      "text": "production",
+      "is_correct": false
+     },
+     {
+      "text": "sections",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "",
+    "choices": [
+     {
+      "text": "examined",
+      "is_correct": false
+     },
+     {
+      "text": "tested",
+      "is_correct": true
+     },
+     {
+      "text": "sounded",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "All ___________ seals should be well hitched in the floor roof, and ribs to improve their strength",
+    "choices": [
+     {
+      "text": "temporary",
+      "is_correct": true
+     },
+     {
+      "text": "permanent",
+      "is_correct": false
+     },
+     {
+      "text": "constructed",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A self-contained breathing apparatus is a completely __________ unit that supplies oxygen or air independently of the surrounding atmosphere",
+    "choices": [
+     {
+      "text": "independent",
+      "is_correct": false
+     },
+     {
+      "text": "maintained",
+      "is_correct": false
+     },
+     {
+      "text": "portable",
+      "is_correct": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 1283,
+  "title": "Bench Written Test",
+  "questions": [
+   {
+    "text": "Prior to using the BioPak 240 Revolution it must be determined that the user is _________ fit",
+    "choices": [
+     {
+      "text": "physically",
+      "is_correct": false
+     },
+     {
+      "text": "mentally",
+      "is_correct": false
+     },
+     {
+      "text": "medically",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Do not open the cylinder valve in the presence of open flame, ______ or high radiant heat",
+    "choices": [
+     {
+      "text": "sparks",
+      "is_correct": true
+     },
+     {
+      "text": "oil",
+      "is_correct": false
+     },
+     {
+      "text": "low",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The use of an SCBA will add to the workload and stress of the ______",
+    "choices": [
+     {
+      "text": "wearer",
+      "is_correct": false
+     },
+     {
+      "text": "user",
+      "is_correct": true
+     },
+     {
+      "text": "person",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "A foreign _____ may cause cylinder corrosion",
+    "choices": [
+     {
+      "text": "body",
+      "is_correct": false
+     },
+     {
+      "text": "gas",
+      "is_correct": true
+     },
+     {
+      "text": "object",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "DOT requires carbon fiber wrapped aluminum cylinders be tested by an approved facility on a __-year cycle from the date of manufacture",
+    "choices": [
+     {
+      "text": "2",
+      "is_correct": false
+     },
+     {
+      "text": "10",
+      "is_correct": false
+     },
+     {
+      "text": "5",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The fiber optic cable may only be __________ to the BioPak 240R remote gauge assembly",
+    "choices": [
+     {
+      "text": "attached",
+      "is_correct": false
+     },
+     {
+      "text": "connected",
+      "is_correct": true
+     },
+     {
+      "text": "assembled",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "___________ after completion of BioPak use, remove the used CO2 scrubber canisters",
+    "choices": [
+     {
+      "text": "soon",
+      "is_correct": false
+     },
+     {
+      "text": "shortly",
+      "is_correct": false
+     },
+     {
+      "text": "immediately",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Use only _________ and disinfectants that are approved by Bio marine",
+    "choices": [
+     {
+      "text": "cleaners",
+      "is_correct": true
+     },
+     {
+      "text": "cleansers",
+      "is_correct": false
+     },
+     {
+      "text": "soaps",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Remove the oxygen cylinder making sure the seal _______ remains in place and install the regulator cover",
+    "choices": [
+     {
+      "text": "gasket",
+      "is_correct": false
+     },
+     {
+      "text": "o-ring",
+      "is_correct": false
+     },
+     {
+      "text": "washer",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "C.O.P.D. could limit or _________ the use of the BioPak 240 Revolution",
+    "choices": [
+     {
+      "text": "prohibit",
+      "is_correct": false
+     },
+     {
+      "text": "limit",
+      "is_correct": false
+     },
+     {
+      "text": "prevent",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The manual(s) are the ________ recommended procedures for maintaining the BioPak 240R",
+    "choices": [
+     {
+      "text": "maximum",
+      "is_correct": false
+     },
+     {
+      "text": "minimum",
+      "is_correct": true
+     },
+     {
+      "text": "specific",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "To ________ mold growth remove the moisture control foam pads after each use",
+    "choices": [
+     {
+      "text": "limit",
+      "is_correct": false
+     },
+     {
+      "text": "prevent",
+      "is_correct": true
+     },
+     {
+      "text": "prohibit",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Pre-packing the BioPak 240 R with carbon dioxide scrubbers is only permitted when utilizing ________ carbon dioxide scrubber",
+    "choices": [
+     {
+      "text": "factory",
+      "is_correct": false
+     },
+     {
+      "text": "refillable",
+      "is_correct": false
+     },
+     {
+      "text": "Orbsorb",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Pre-packed carbon dioxide scrubbers may only be stored in the __________ for a maximum period of 1-year",
+    "choices": [
+     {
+      "text": "containers",
+      "is_correct": false
+     },
+     {
+      "text": "apparatus",
+      "is_correct": true
+     },
+     {
+      "text": "boxes",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Users are not permitted to mix _________ of the Orbsorb within a BioPak",
+    "choices": [
+     {
+      "text": "versions",
+      "is_correct": true
+     },
+     {
+      "text": "containers",
+      "is_correct": false
+     },
+     {
+      "text": "types",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The oxygen cylinder must be fully charged to above _____ psi to perform a high pressure leak test",
+    "choices": [
+     {
+      "text": "2600",
+      "is_correct": false
+     },
+     {
+      "text": "3000",
+      "is_correct": false
+     },
+     {
+      "text": "1500",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The Cylinder should be ________ regularly for signs of damage to the outer wrapping",
+    "choices": [
+     {
+      "text": "checked",
+      "is_correct": false
+     },
+     {
+      "text": "inspected",
+      "is_correct": true
+     },
+     {
+      "text": "tested",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Never pry an O-ring from its glands with a ___________. Remove O-rings by hand or with the pick tool provided in the service kit",
+    "choices": [
+     {
+      "text": "wrench",
+      "is_correct": false
+     },
+     {
+      "text": "screwdriver",
+      "is_correct": true
+     },
+     {
+      "text": "pry-bar",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Cristo-Lube and Dow-111 are the only __________ approved for use in the apparatus",
+    "choices": [
+     {
+      "text": "lubricants",
+      "is_correct": true
+     },
+     {
+      "text": "chemicals",
+      "is_correct": false
+     },
+     {
+      "text": "pastes",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The Alarm module will require ___________ if any damage to the housing is discovered",
+    "choices": [
+     {
+      "text": "servicing",
+      "is_correct": false
+     },
+     {
+      "text": "attention",
+      "is_correct": false
+     },
+     {
+      "text": "replacement",
+      "is_correct": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 1414,
+  "title": "Mine Rescue Written Test",
+  "questions": [
+   {
+    "text": "It is generally recommended that teams not travel through _____ filled areas",
+    "choices": [
+     {
+      "text": "a. foam",
+      "is_correct": true
+     },
+     {
+      "text": "b. water",
+      "is_correct": false
+     },
+     {
+      "text": "c. smoke",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "New mine rescue team members must have at least ____ hours of instruction on the breathing apparatus used by the team",
+    "choices": [
+     {
+      "text": "a. 32",
+      "is_correct": false
+     },
+     {
+      "text": "b. 8",
+      "is_correct": false
+     },
+     {
+      "text": "c. 20",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The team is responsible for choosing the exact sites within _________ for building seals",
+    "choices": [
+     {
+      "text": "a. headings",
+      "is_correct": true
+     },
+     {
+      "text": "b. entries",
+      "is_correct": false
+     },
+     {
+      "text": "c. airways",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Low expansion foam is very wet and heavy and can only be used when you’re close enough to a fire to ______ the foam directly onto the fire",
+    "choices": [
+     {
+      "text": "a. direct",
+      "is_correct": false
+     },
+     {
+      "text": "b. force",
+      "is_correct": true
+     },
+     {
+      "text": "c. flow",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Asphyxiates are gases which cause ____________ or choking",
+    "choices": [
+     {
+      "text": "a. gagging",
+      "is_correct": false
+     },
+     {
+      "text": "b. dizziness",
+      "is_correct": false
+     },
+     {
+      "text": "c. suffocation",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "In order to __________ an airlock, one door of the airlock must be kept closed while the other is opened",
+    "choices": [
+     {
+      "text": "a. maintain",
+      "is_correct": true
+     },
+     {
+      "text": "b. control",
+      "is_correct": false
+     },
+     {
+      "text": "c. construct",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Team captains should inspect roof and ribs before the team members ________ into the area",
+    "choices": [
+     {
+      "text": "a. move",
+      "is_correct": false
+     },
+     {
+      "text": "b. explore",
+      "is_correct": false
+     },
+     {
+      "text": "c. advance",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "For a Class C fire (electrical), if _______ has been cut off to the burning equipment, it may be treated as a Class A or B fire",
+    "choices": [
+     {
+      "text": "a. energy",
+      "is_correct": false
+     },
+     {
+      "text": "b. power",
+      "is_correct": true
+     },
+     {
+      "text": "c. current",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Hazards of direct firefighting are electric shock or electrocution, toxic and _____________ gases, oxygen deficiency, explosive gases, heat, smoke and steam",
+    "choices": [
+     {
+      "text": "a. noble",
+      "is_correct": false
+     },
+     {
+      "text": "b. electrifying",
+      "is_correct": false
+     },
+     {
+      "text": "c. asphyxiating",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "When fires are sealed in gassy or dusty mines, a thick coating of rock dust should be applied to the ribs, roof and floor for several _______ feet outby the seals, and if possible, inside the seal, to reduce the chance of propagating a coal dust explosion",
+    "choices": [
+     {
+      "text": "a. thousand",
+      "is_correct": false
+     },
+     {
+      "text": "b. consecutive",
+      "is_correct": false
+     },
+     {
+      "text": "c. hundred",
+      "is_correct": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 1417,
+  "title": "BioPak Written Test",
+  "questions": [
+   {
+    "text": "Prior to using the BioPak 240 Revolution it must be determined that the user is __________ fit",
+    "choices": [
+     {
+      "text": "mentally",
+      "is_correct": false
+     },
+     {
+      "text": "physically",
+      "is_correct": false
+     },
+     {
+      "text": "medically",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Do not open the cylinder valve in the presence of open flame, ______ or high radiant heat",
+    "choices": [
+     {
+      "text": "sparks",
+      "is_correct": true
+     },
+     {
+      "text": "oil",
+      "is_correct": false
+     },
+     {
+      "text": "low",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The use of an SCBA will add to the workload and stress of the ______",
+    "choices": [
+     {
+      "text": "wearer",
+      "is_correct": false
+     },
+     {
+      "text": "user",
+      "is_correct": true
+     },
+     {
+      "text": "person",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Allow the oxygen cylinder to cool after filling to determine the correct_______",
+    "choices": [
+     {
+      "text": "pressure",
+      "is_correct": true
+     },
+     {
+      "text": "size",
+      "is_correct": false
+     },
+     {
+      "text": "weight",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Oxygen will not cause materials to _______ without the presence of an ignition source",
+    "choices": [
+     {
+      "text": "burn",
+      "is_correct": false
+     },
+     {
+      "text": "ignite",
+      "is_correct": true
+     },
+     {
+      "text": "flare",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The fiber optic cable may only be __________ to the BioPak 240R remote gauge assembly",
+    "choices": [
+     {
+      "text": "attached",
+      "is_correct": false
+     },
+     {
+      "text": "connected",
+      "is_correct": true
+     },
+     {
+      "text": "assembled",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "___________ after completion of BioPak use, remove the used CO2 scrubber canisters",
+    "choices": [
+     {
+      "text": "soon",
+      "is_correct": false
+     },
+     {
+      "text": "shortly",
+      "is_correct": false
+     },
+     {
+      "text": "immediately",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Use only _________ and disinfectants that are approved by Bio marine",
+    "choices": [
+     {
+      "text": "cleaners",
+      "is_correct": true
+     },
+     {
+      "text": "bleach",
+      "is_correct": false
+     },
+     {
+      "text": "soaps",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Remove the oxygen cylinder making sure the seal _______ remains in place and install the regulator cover",
+    "choices": [
+     {
+      "text": "gasket",
+      "is_correct": false
+     },
+     {
+      "text": "o-ring",
+      "is_correct": false
+     },
+     {
+      "text": "washer",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "C.O.P.D. could limit or _________ the use of the BioPak 240 Revolution",
+    "choices": [
+     {
+      "text": "prohibit",
+      "is_correct": false
+     },
+     {
+      "text": "limit",
+      "is_correct": false
+     },
+     {
+      "text": "prevent",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Place freeze forms onto a level surface in a freezer for a minimum of ___ hours period at a temperature of 10 degrees F or less",
+    "choices": [
+     {
+      "text": "12",
+      "is_correct": false
+     },
+     {
+      "text": "20",
+      "is_correct": false
+     },
+     {
+      "text": "8",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "To ________ mold growth remove the moisture control foam pads after each use",
+    "choices": [
+     {
+      "text": "limit",
+      "is_correct": false
+     },
+     {
+      "text": "prevent",
+      "is_correct": true
+     },
+     {
+      "text": "prohibit",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Pre-packing the BioPak 240 R with carbon dioxide scrubbers is only permitted when utilizing ________ carbon dioxide scrubber",
+    "choices": [
+     {
+      "text": "factory",
+      "is_correct": false
+     },
+     {
+      "text": "refillable",
+      "is_correct": false
+     },
+     {
+      "text": "Orbsorb",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Moisture control sponges must be _________ dry when pre-packing the BioPak",
+    "choices": [
+     {
+      "text": "placed",
+      "is_correct": false
+     },
+     {
+      "text": "positioned",
+      "is_correct": false
+     },
+     {
+      "text": "installed",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Users are not permitted to mix _________ of the Orbsorb within a BioPak",
+    "choices": [
+     {
+      "text": "versions",
+      "is_correct": true
+     },
+     {
+      "text": "containers",
+      "is_correct": false
+     },
+     {
+      "text": "types",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The oxygen cylinder must be fully charged to above _____ psi to perform a high pressure leak test",
+    "choices": [
+     {
+      "text": "2600",
+      "is_correct": false
+     },
+     {
+      "text": "3000",
+      "is_correct": false
+     },
+     {
+      "text": "1500",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The Cylinder should be ________ regularly for signs of damage to the outer wrapping",
+    "choices": [
+     {
+      "text": "checked",
+      "is_correct": false
+     },
+     {
+      "text": "inspected",
+      "is_correct": true
+     },
+     {
+      "text": "tested",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Never pry an O-ring from its glands with a ___________. Remove O-rings by hand or with the pick tool provided in the service kit",
+    "choices": [
+     {
+      "text": "wrench",
+      "is_correct": false
+     },
+     {
+      "text": "screwdriver",
+      "is_correct": true
+     },
+     {
+      "text": "pry-bar",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Cylinders are to be retired from service ___-years after the date of manufacture",
+    "choices": [
+     {
+      "text": "15",
+      "is_correct": true
+     },
+     {
+      "text": "10",
+      "is_correct": false
+     },
+     {
+      "text": "5",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The Alarm module will require ___________ if any damage to the housing is discovered",
+    "choices": [
+     {
+      "text": "servicing",
+      "is_correct": false
+     },
+     {
+      "text": "attention",
+      "is_correct": false
+     },
+     {
+      "text": "replacement",
+      "is_correct": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 1423,
+  "title": "Mine Rescue Written Test",
+  "questions": [
+   {
+    "text": "It is generally recommended that _____ not travel through foam filled areas",
+    "choices": [
+     {
+      "text": "members",
+      "is_correct": false
+     },
+     {
+      "text": "teams",
+      "is_correct": true
+     },
+     {
+      "text": "persons",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Mine rescue teams may find it necessary to use line________ to sweep noxious or explosive gases from a face area",
+    "choices": [
+     {
+      "text": "curtain",
+      "is_correct": false
+     },
+     {
+      "text": "cloth",
+      "is_correct": false
+     },
+     {
+      "text": "brattice",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "In situations too hazardous for teams to explore and reventilate safely, teams may be ___________to seal the area",
+    "choices": [
+     {
+      "text": "instructed",
+      "is_correct": true
+     },
+     {
+      "text": "told",
+      "is_correct": false
+     },
+     {
+      "text": "directed",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "________causes a lack of orientation which may cause a team member to lose his/her sense of balance",
+    "choices": [
+     {
+      "text": "Nitrogen",
+      "is_correct": false
+     },
+     {
+      "text": "Hydrogen",
+      "is_correct": false
+     },
+     {
+      "text": "Smoke",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The effects of toxic ______depend on the concentration, toxicity, and exposure time",
+    "choices": [
+     {
+      "text": "smoke",
+      "is_correct": false
+     },
+     {
+      "text": "gases",
+      "is_correct": true
+     },
+     {
+      "text": "chemicals",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "In order to _________an airlock, one door of the airlock must be kept closed while the other is opened",
+    "choices": [
+     {
+      "text": "keep",
+      "is_correct": false
+     },
+     {
+      "text": "construct",
+      "is_correct": false
+     },
+     {
+      "text": "maintain",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Rescue teams should build an_______ so that the two stoppings are erected as close together as possible yet with enough space to allow room for the team and their equipment to fit in between",
+    "choices": [
+     {
+      "text": "airlock",
+      "is_correct": true
+     },
+     {
+      "text": "seal",
+      "is_correct": false
+     },
+     {
+      "text": "stopping",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "When_________ are found, they should be transported to safety and fresh air as quickly as possible",
+    "choices": [
+     {
+      "text": "miners",
+      "is_correct": false
+     },
+     {
+      "text": "persons",
+      "is_correct": false
+     },
+     {
+      "text": "survivors",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Thermal imaging cameras should only be used in less than___ percent of Methane",
+    "choices": [
+     {
+      "text": "1.0",
+      "is_correct": false
+     },
+     {
+      "text": "1",
+      "is_correct": true
+     },
+     {
+      "text": "one",
+      "is_correct": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 1487,
+  "title": "Written Test",
+  "questions": [
+   {
+    "text": "Firefighters force inert gases into areas where they are trying to remove the oxygen leg of the fire ________",
+    "choices": [
+     {
+      "text": "area",
+      "is_correct": false
+     },
+     {
+      "text": "location",
+      "is_correct": false
+     },
+     {
+      "text": "triangle",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "When appropriate, a fire area is not un-sealed until the oxygen content is low enough to make explosions_________ and the carbon monoxide has disappeared",
+    "choices": [
+     {
+      "text": "improbable",
+      "is_correct": false
+     },
+     {
+      "text": "possible",
+      "is_correct": false
+     },
+     {
+      "text": "impossible",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "After a fire has been sealed, the ________has been to wait 72 hours before making the initial visit to the seals",
+    "choices": [
+     {
+      "text": "standard",
+      "is_correct": false
+     },
+     {
+      "text": "rule",
+      "is_correct": false
+     },
+     {
+      "text": "practice",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "The IDLH of ________Dioxide is 20 ppm",
+    "choices": [
+     {
+      "text": "Hydrogen",
+      "is_correct": false
+     },
+     {
+      "text": "Sulphur",
+      "is_correct": false
+     },
+     {
+      "text": "Nitrogen",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Once rescued, __________should never be left alone",
+    "choices": [
+     {
+      "text": "miners",
+      "is_correct": false
+     },
+     {
+      "text": "patients",
+      "is_correct": false
+     },
+     {
+      "text": "survivors",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Thermal imaging cameras should only be used in less than 1 percent of_________",
+    "choices": [
+     {
+      "text": "Methane",
+      "is_correct": true
+     },
+     {
+      "text": "Hydrogen",
+      "is_correct": false
+     },
+     {
+      "text": "Oxygen",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Monitoring pressures and gases helps determine what is the danger of explosion, how soon firefighters have to move to safety, how ________ are the techniques being used and is the fire under control",
+    "choices": [
+     {
+      "text": "effective",
+      "is_correct": true
+     },
+     {
+      "text": "consistent",
+      "is_correct": false
+     },
+     {
+      "text": "necessary",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Team safety must not be compromised. Although “Time is never your friend” do not be in too great a _______and do not permit others to hurry",
+    "choices": [
+     {
+      "text": "hurry",
+      "is_correct": true
+     },
+     {
+      "text": "rush",
+      "is_correct": false
+     },
+     {
+      "text": "need",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "_____ types of fire cannot be fought directly, fuel rich and spon com (spontaneous combustion), these will be extinguished only by remote controls",
+    "choices": [
+     {
+      "text": "two",
+      "is_correct": true
+     },
+     {
+      "text": "one",
+      "is_correct": false
+     },
+     {
+      "text": "many",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "If smoke is so dense as to make visibility poor, you may need to keep in constant _______ contact with a rail, a compressed air or water line, or the rib in order to feel your way along",
+    "choices": [
+     {
+      "text": "physical",
+      "is_correct": true
+     },
+     {
+      "text": "verbal",
+      "is_correct": false
+     },
+     {
+      "text": "visual",
+      "is_correct": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 1525,
+  "title": "Day 1 Written Test",
+  "questions": [
+   {
+    "text": "Teams should report the _______team member’s oxygen gauge reading at each team check",
+    "choices": [
+     {
+      "text": "highest",
+      "is_correct": false
+     },
+     {
+      "text": "best",
+      "is_correct": false
+     },
+     {
+      "text": "lowest",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "As the team advances, the map man ________what the team encounters by marking the information on a mine map",
+    "choices": [
+     {
+      "text": "marks",
+      "is_correct": false
+     },
+     {
+      "text": "draws",
+      "is_correct": false
+     },
+     {
+      "text": "records",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Solubility is the ability of a gas to be dissolved in _______",
+    "choices": [
+     {
+      "text": "air",
+      "is_correct": false
+     },
+     {
+      "text": "liquid",
+      "is_correct": false
+     },
+     {
+      "text": "water",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "High expansion foam is ________and ________and can travel long distances to a fire without breaking down",
+    "choices": [
+     {
+      "text": "heavy resilient",
+      "is_correct": false
+     },
+     {
+      "text": "light wet",
+      "is_correct": false
+     },
+     {
+      "text": "light resilient",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Two types of fire cannot be fought __________, fuel rich and spon com (spontaneous combustion)",
+    "choices": [
+     {
+      "text": "constantly",
+      "is_correct": false
+     },
+     {
+      "text": "safely",
+      "is_correct": false
+     },
+     {
+      "text": "directly",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Monitoring_________ and gases helps determine the effectiveness of firefighting and the potential what is the danger of an explosion",
+    "choices": [
+     {
+      "text": "atmospheres",
+      "is_correct": false
+     },
+     {
+      "text": "pressures",
+      "is_correct": true
+     },
+     {
+      "text": "gauges",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "The effects of ________ gases depend on the concentration, toxicity, and exposure time",
+    "choices": [
+     {
+      "text": "toxic",
+      "is_correct": true
+     },
+     {
+      "text": "neutral",
+      "is_correct": false
+     },
+     {
+      "text": "explosive",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "If there is a sufficient amount of hydrocarbons in_______, the smoke may be explosive",
+    "choices": [
+     {
+      "text": "air",
+      "is_correct": false
+     },
+     {
+      "text": "fires",
+      "is_correct": false
+     },
+     {
+      "text": "smoke",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Ventilation controls are used underground to properly __________air to all sections of the mine",
+    "choices": [
+     {
+      "text": "send",
+      "is_correct": false
+     },
+     {
+      "text": "allocate",
+      "is_correct": false
+     },
+     {
+      "text": "distribute",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Gases with specific gravities less than 1.0 tend to seek _____ places",
+    "choices": [
+     {
+      "text": "low",
+      "is_correct": false
+     },
+     {
+      "text": "damp",
+      "is_correct": false
+     },
+     {
+      "text": "high",
+      "is_correct": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "source_pk": 1526,
+  "title": "Day 2 Written Test",
+  "questions": [
+   {
+    "text": "If the fresh air base is ____________, it should be located where it’s assured a fresh air travelway to the surface",
+    "choices": [
+     {
+      "text": "outside",
+      "is_correct": false
+     },
+     {
+      "text": "underground",
+      "is_correct": true
+     },
+     {
+      "text": "inside",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "As a team advances, it is important to stay in ______ ________ with the fresh air base/command center",
+    "choices": [
+     {
+      "text": "close contact",
+      "is_correct": true
+     },
+     {
+      "text": "constant contact",
+      "is_correct": false
+     },
+     {
+      "text": "continuous contact",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "__________ time should be allowed for a fire area to cool before it is unsealed",
+    "choices": [
+     {
+      "text": "sufficient",
+      "is_correct": true
+     },
+     {
+      "text": "enough",
+      "is_correct": false
+     },
+     {
+      "text": "adequate",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "When looking for __________, it is important to both look and listen for clues",
+    "choices": [
+     {
+      "text": "persons",
+      "is_correct": false
+     },
+     {
+      "text": "patients",
+      "is_correct": false
+     },
+     {
+      "text": "survivors",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "When survivors are found located, they should be ____________ to safety and fresh air as quickly as possible",
+    "choices": [
+     {
+      "text": "transported",
+      "is_correct": true
+     },
+     {
+      "text": "carried",
+      "is_correct": false
+     },
+     {
+      "text": "moved",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "Rescue Teams may encounter many hazards while fighting fires __________ by hand",
+    "choices": [
+     {
+      "text": "directly",
+      "is_correct": true
+     },
+     {
+      "text": "constantly",
+      "is_correct": false
+     },
+     {
+      "text": "often",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "When fires are sealed in gassy or dusty mines, a thick coating of rock dust should be applied to the ribs, roof and floor for several _________ feet outby the seals",
+    "choices": [
+     {
+      "text": "thousand",
+      "is_correct": false
+     },
+     {
+      "text": "linear",
+      "is_correct": false
+     },
+     {
+      "text": "hundred",
+      "is_correct": true
+     }
+    ]
+   },
+   {
+    "text": "Clean, dry air at _____ level is made up of 78 percent nitrogen and 21 percent oxygen",
+    "choices": [
+     {
+      "text": "mine",
+      "is_correct": false
+     },
+     {
+      "text": "sea",
+      "is_correct": true
+     },
+     {
+      "text": "land",
+      "is_correct": false
+     }
+    ]
+   },
+   {
+    "text": "After a fire has been sealed, the practice has been it is recommended to wait ____ hours before making the initial visit to the seals",
+    "choices": [
+     {
+      "text": "96",
+      "is_correct": false
+     },
+     {
+      "text": "32",
+      "is_correct": false
+     },
+     {
+      "text": "72",
+      "is_correct": true
+     }
+    ]
+   }
+  ]
+ }
+]
