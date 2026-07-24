@@ -510,6 +510,10 @@ class BenchingResource(models.Model):
     apparatus = models.ForeignKey(BenchingApparatus, on_delete=models.CASCADE, related_name='resources')
     title = models.CharField(max_length=255, help_text="e.g. PSS BG 4 / PSS BG 4 plus - Instructions for Use")
     description = models.TextField(blank=True, help_text="What this document covers")
+    is_sds = models.BooleanField(
+        "Safety Data Sheet", default=False,
+        help_text="Show this resource in the unit's collapsible Safety Data Sheets group instead of the main list",
+    )
     file = models.FileField(
         upload_to='training/benching/', blank=True,
         help_text="The document to preview/download. Leave blank for a link-only "

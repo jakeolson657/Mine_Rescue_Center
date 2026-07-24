@@ -144,7 +144,7 @@ class ScorecardAdmin(admin.ModelAdmin):
 class BenchingResourceInline(admin.TabularInline):
     model = BenchingResource
     extra = 1
-    fields = ('sort_order', 'title', 'description', 'file', 'source_url')
+    fields = ('sort_order', 'title', 'description', 'file', 'source_url', 'is_sds')
     ordering = ('sort_order', 'title')
 
 
@@ -162,7 +162,7 @@ class BenchingApparatusAdmin(admin.ModelAdmin):
 
 @admin.register(BenchingResource)
 class BenchingResourceAdmin(admin.ModelAdmin):
-    list_display = ('title', 'apparatus', 'sort_order', 'updated_at')
-    list_filter = ('apparatus',)
+    list_display = ('title', 'apparatus', 'is_sds', 'sort_order', 'updated_at')
+    list_filter = ('apparatus', 'is_sds')
     search_fields = ('title', 'description')
     ordering = ('apparatus', 'sort_order', 'title')

@@ -150,13 +150,18 @@ def about(request):
 
 
 def training_resources(request):
+    benching_apparatus = list(BenchingApparatus.objects.prefetch_related('resources'))
+    for unit in benching_apparatus:
+        unit.manual_resources = [r for r in unit.resources.all() if not r.is_sds]
+        unit.sds_resources = [r for r in unit.resources.all() if r.is_sds]
+
     return render(request, 'training.html', {
         'instruction_guides': InstructionGuide.objects.all(),
         'rule_documents': CompetitionRuleDocument.objects.all(),
         'scorecards': Scorecard.objects.all(),
         'first_aid_resources': FirstAidResource.objects.all(),
         'rope_rescue_resources': RopeRescueResource.objects.all(),
-        'benching_apparatus': BenchingApparatus.objects.prefetch_related('resources'),
+        'benching_apparatus': benching_apparatus,
     })
 
 

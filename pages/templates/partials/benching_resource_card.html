@@ -1,0 +1,27 @@
+<div class="ig-card">
+    <div class="ig-card-main">
+        <span class="doc-chip">{% if res.file %}PDF{% else %}WEB{% endif %}</span>
+        <div class="ig-card-text">
+            <div class="ig-card-title">{{ res.title }}</div>
+            {% if res.description %}
+                <p class="ig-card-desc" title="{{ res.description }}">{{ res.description }}</p>
+            {% endif %}
+        </div>
+    </div>
+    <div class="document-actions">
+        {% if res.file %}
+            {% if res.preview_kind %}
+                <button type="button" class="preview-btn" data-url="{{ res.file.url }}" data-kind="{{ res.preview_kind }}" data-title="{{ res.title }}">Preview</button>
+            {% endif %}
+            <a href="{{ res.file.url }}" class="download-btn" download>
+                <svg width="13" height="13"><use href="#i-dl"/></svg>Download
+            </a>
+        {% endif %}
+        {% if res.source_url %}
+            <a class="ext-link" href="{{ res.source_url }}" target="_blank" rel="noopener">
+                <svg width="12" height="12"><use href="#i-ext"/></svg>
+                {{ res.link_label|default:"Source" }}
+            </a>
+        {% endif %}
+    </div>
+</div>
