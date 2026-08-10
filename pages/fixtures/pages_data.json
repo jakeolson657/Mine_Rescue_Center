@@ -4552,7 +4552,7 @@
  "model": "pages.competition",
  "pk": 31,
  "fields": {
-  "name": "Practice Problems and Exams",
+  "name": "2021 Practice Problems and Exams",
   "year": 2021,
   "calendar_event": null,
   "description": "",
@@ -5188,7 +5188,7 @@
  "model": "pages.competition",
  "pk": 84,
  "fields": {
-  "name": "Practice Problems",
+  "name": "2012 Practice Problems",
   "year": 2012,
   "calendar_event": null,
   "description": "",
@@ -5608,7 +5608,7 @@
  "model": "pages.competition",
  "pk": 119,
  "fields": {
-  "name": "Practice Mine Rescue Problems",
+  "name": "2013 Practice Mine Rescue Problems",
   "year": 2013,
   "calendar_event": null,
   "description": "",
@@ -6256,7 +6256,7 @@
  "model": "pages.competition",
  "pk": 174,
  "fields": {
-  "name": "Practice Problems",
+  "name": "2014 Practice Problems",
   "year": 2014,
   "calendar_event": null,
   "description": "",
@@ -6712,7 +6712,7 @@
  "model": "pages.competition",
  "pk": 213,
  "fields": {
-  "name": "Practice Problems",
+  "name": "2015 Practice Problems",
   "year": 2015,
   "calendar_event": null,
   "description": "",
@@ -7168,7 +7168,7 @@
  "model": "pages.competition",
  "pk": 251,
  "fields": {
-  "name": "Practice Problems",
+  "name": "2016 Practice Problems",
   "year": 2016,
   "calendar_event": null,
   "description": "",
@@ -7948,7 +7948,7 @@
  "model": "pages.competition",
  "pk": 316,
  "fields": {
-  "name": "Mine Rescue Practice Problems",
+  "name": "2018 Mine Rescue Practice Problems",
   "year": 2018,
   "calendar_event": null,
   "description": "",
@@ -8476,7 +8476,7 @@
  "model": "pages.competition",
  "pk": 361,
  "fields": {
-  "name": "Practice Problems",
+  "name": "2020 Practice Problems",
   "year": 2020,
   "calendar_event": null,
   "description": "",
