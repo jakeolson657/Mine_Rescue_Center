@@ -98,6 +98,41 @@ SPEC = [
             ]),
         ],
     },
+    {
+        "folder": "Southeast Regional Mine Rescue Competition",
+        "name": "Southeast Regional Mine Rescue Competition",
+        "event_title": "Southeast Regional Mine Rescue Competition",
+        "anchor": "SERegional",
+        "problems": [
+            ("Coal Day 1 Field", [
+                ("Field", "TN 2026 Coal-Day 1 Judge Book.pdf"),
+                ("Team Maps", "TN 2026 Coal-Day 1 Team Maps.pdf"),
+            ]),
+            ("Coal Day 2 Field", [
+                ("Field", "TN 2026 Coal-Day 2 Judge Book.pdf"),
+                ("Team Maps", "TN 2026 Coal-Day 2 Team Maps.pdf"),
+            ]),
+            ("MNM Day 1 Field", [
+                ("Field", "Metal DAY 1 Problem.pdf"),
+            ]),
+            ("MNM Day 2 Field", [
+                ("Field", "Metal DAY 2 Problem.pdf"),
+            ]),
+            ("First Aid", [
+                ("Problem", "Mine Rescue Competition FA 2026 -  Final.docx"),
+            ]),
+            ("Written Tests", [
+                ("Coal Day 1 Written Test", "Coal - Day 1.docx"),
+                ("Coal Day 1 Written Test Answers", "Coal - Day 1 - Key.docx"),
+                ("Coal Day 2 Written Test", "Coal - Day 2.docx"),
+                ("Coal Day 2 Written Test Answers", "Coal - Day 2 - Key.docx"),
+                ("Metal Field Written Test", "Metal Field Test.docx"),
+                ("Metal Field Written Test Answers", "Metal Field Test - Key.docx"),
+                ("First Aid Written Test", "FA Test.docx"),
+                ("First Aid Written Test Answers", "FA Test - Key.docx"),
+            ]),
+        ],
+    },
 ]
 
 YEAR = 2026

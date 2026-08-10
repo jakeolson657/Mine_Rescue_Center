@@ -309719,5 +309719,254 @@
   "is_correct": false,
   "sort_order": 2
  }
+},
+{
+ "model": "pages.competition",
+ "pk": 368,
+ "fields": {
+  "name": "Southeast Regional Mine Rescue Competition",
+  "year": 2026,
+  "calendar_event": 3,
+  "description": "",
+  "created_at": "2026-08-10T20:44:00.014Z",
+  "updated_at": "2026-08-10T20:44:00.014Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 908,
+ "fields": {
+  "competition": 368,
+  "title": "Coal Day 1 Field",
+  "description": "",
+  "sort_order": 10,
+  "created_at": "2026-08-10T20:44:00.021Z",
+  "updated_at": "2026-08-10T20:44:00.021Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 909,
+ "fields": {
+  "competition": 368,
+  "title": "Coal Day 2 Field",
+  "description": "",
+  "sort_order": 20,
+  "created_at": "2026-08-10T20:44:00.048Z",
+  "updated_at": "2026-08-10T20:44:00.048Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 910,
+ "fields": {
+  "competition": 368,
+  "title": "MNM Day 1 Field",
+  "description": "",
+  "sort_order": 30,
+  "created_at": "2026-08-10T20:44:00.078Z",
+  "updated_at": "2026-08-10T20:44:00.078Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 911,
+ "fields": {
+  "competition": 368,
+  "title": "MNM Day 2 Field",
+  "description": "",
+  "sort_order": 40,
+  "created_at": "2026-08-10T20:44:00.095Z",
+  "updated_at": "2026-08-10T20:44:00.095Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 912,
+ "fields": {
+  "competition": 368,
+  "title": "First Aid",
+  "description": "",
+  "sort_order": 50,
+  "created_at": "2026-08-10T20:44:00.111Z",
+  "updated_at": "2026-08-10T20:44:00.111Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 913,
+ "fields": {
+  "competition": 368,
+  "title": "Written Tests",
+  "description": "",
+  "sort_order": 60,
+  "created_at": "2026-08-10T20:44:00.129Z",
+  "updated_at": "2026-08-10T20:44:00.129Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1814,
+ "fields": {
+  "problem": 908,
+  "title": "Field",
+  "file": "problems/2026_SERegional_Coal_Day_1_Field_TN_2026_Coal_Day_1_Judge_Book.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-10T20:44:00.033Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1815,
+ "fields": {
+  "problem": 908,
+  "title": "Team Maps",
+  "file": "problems/2026_SERegional_Coal_Day_1_Field_TN_2026_Coal_Day_1_Team_Maps.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-08-10T20:44:00.043Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1816,
+ "fields": {
+  "problem": 909,
+  "title": "Field",
+  "file": "problems/2026_SERegional_Coal_Day_2_Field_TN_2026_Coal_Day_2_Judge_Book.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-10T20:44:00.061Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1817,
+ "fields": {
+  "problem": 909,
+  "title": "Team Maps",
+  "file": "problems/2026_SERegional_Coal_Day_2_Field_TN_2026_Coal_Day_2_Team_Maps.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-08-10T20:44:00.071Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1818,
+ "fields": {
+  "problem": 910,
+  "title": "Field",
+  "file": "problems/2026_SERegional_MNM_Day_1_Field_Metal_DAY_1_Problem.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-10T20:44:00.088Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1819,
+ "fields": {
+  "problem": 911,
+  "title": "Field",
+  "file": "problems/2026_SERegional_MNM_Day_2_Field_Metal_DAY_2_Problem.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-10T20:44:00.106Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1820,
+ "fields": {
+  "problem": 912,
+  "title": "Problem",
+  "file": "problems/2026_SERegional_First_Aid_Mine_Rescue_Competition_FA_2026_Final.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-10T20:44:00.122Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1821,
+ "fields": {
+  "problem": 913,
+  "title": "Coal Day 1 Written Test",
+  "file": "problems/2026_SERegional_Written_Tests_Coal_Day_1.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-10T20:44:00.140Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1822,
+ "fields": {
+  "problem": 913,
+  "title": "Coal Day 1 Written Test Answers",
+  "file": "problems/2026_SERegional_Written_Tests_Coal_Day_1_Key.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-08-10T20:44:00.149Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1823,
+ "fields": {
+  "problem": 913,
+  "title": "Coal Day 2 Written Test",
+  "file": "problems/2026_SERegional_Written_Tests_Coal_Day_2.pdf",
+  "sort_order": 30,
+  "uploaded_at": "2026-08-10T20:44:00.160Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1824,
+ "fields": {
+  "problem": 913,
+  "title": "Coal Day 2 Written Test Answers",
+  "file": "problems/2026_SERegional_Written_Tests_Coal_Day_2_Key.pdf",
+  "sort_order": 40,
+  "uploaded_at": "2026-08-10T20:44:00.170Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1825,
+ "fields": {
+  "problem": 913,
+  "title": "Metal Field Written Test",
+  "file": "problems/2026_SERegional_Written_Tests_Metal_Field_Test.pdf",
+  "sort_order": 50,
+  "uploaded_at": "2026-08-10T20:44:00.181Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1826,
+ "fields": {
+  "problem": 913,
+  "title": "Metal Field Written Test Answers",
+  "file": "problems/2026_SERegional_Written_Tests_Metal_Field_Test_Key.pdf",
+  "sort_order": 60,
+  "uploaded_at": "2026-08-10T20:44:00.191Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1827,
+ "fields": {
+  "problem": 913,
+  "title": "First Aid Written Test",
+  "file": "problems/2026_SERegional_Written_Tests_FA_Test.pdf",
+  "sort_order": 70,
+  "uploaded_at": "2026-08-10T20:44:00.201Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1828,
+ "fields": {
+  "problem": 913,
+  "title": "First Aid Written Test Answers",
+  "file": "problems/2026_SERegional_Written_Tests_FA_Test_Key.pdf",
+  "sort_order": 80,
+  "uploaded_at": "2026-08-10T20:44:00.210Z"
+ }
 }
 ]
