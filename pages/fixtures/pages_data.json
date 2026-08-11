@@ -24859,8 +24859,19 @@
  "pk": 688,
  "fields": {
   "problem": 202,
-  "title": "Problem",
-  "file": "problems/2013_nmra6_Bench_2013_post_6_bench.pdf",
+  "title": "BG4 Contest Problem",
+  "file": "problems/2013_nmra6_Bench_2013_BG4_Post6_Contest.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-06-12T21:38:40.259Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1829,
+ "fields": {
+  "problem": 202,
+  "title": "BioPak 240R Contest Problem",
+  "file": "problems/2013_nmra6_Bench_2013_BioPac240R_Post6_contest.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-12T21:38:40.259Z"
  }
