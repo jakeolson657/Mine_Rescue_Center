@@ -4636,7 +4636,7 @@
  "model": "pages.competition",
  "pk": 38,
  "fields": {
-  "name": "67 th Southern West Virginia Mine Rescue Contest",
+  "name": "67th Southern West Virginia Mine Rescue Contest",
   "year": 2022,
   "calendar_event": 239,
   "description": "West Virginia Training and Conference Center, , , Julian, West Virginia, June 30, 2022",
@@ -5980,7 +5980,7 @@
  "model": "pages.competition",
  "pk": 150,
  "fields": {
-  "name": "Colorado School of Mines 2 nd Biennial MERD Competition",
+  "name": "Colorado School of Mines 2nd Biennial MERD Competition",
   "year": 2013,
   "calendar_event": null,
   "description": "Edgar Mine, Idaho Springs, Colorado, February 21-23, 2013",
