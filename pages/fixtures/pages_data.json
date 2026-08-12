@@ -84451,7 +84451,7 @@
 },
 {
  "model": "pages.quizquestion",
- "pk": 258370,
+ "pk": 266669,
  "fields": {
   "quiz": 5427,
   "text": "All of the following are common signs and symptoms of stress EXCEPT:",
@@ -84461,172 +84461,192 @@
 },
 {
  "model": "pages.quizquestion",
- "pk": 258371,
+ "pk": 266670,
  "fields": {
   "quiz": 5427,
-  "text": "Which one of the following would be the best choice for a stable patient with a suspected spine injury?",
+  "text": "The chin is ____ to the mouth.",
   "image": "",
   "sort_order": 1
  }
 },
 {
  "model": "pages.quizquestion",
- "pk": 258372,
+ "pk": 266671,
  "fields": {
   "quiz": 5427,
-  "text": "The ____ prevents food and other material from entering the trachea",
+  "text": "Which one of the following would be the best choice for a stable patient with a suspected spine injury?",
   "image": "",
   "sort_order": 2
  }
 },
 {
  "model": "pages.quizquestion",
- "pk": 258373,
+ "pk": 266672,
  "fields": {
   "quiz": 5427,
-  "text": "After assessing responsiveness, you must check for the presence of normal breathing. Do this by:",
+  "text": "The ____ prevents food and other material from entering the trachea.",
   "image": "",
   "sort_order": 3
  }
 },
 {
  "model": "pages.quizquestion",
- "pk": 258374,
+ "pk": 266673,
  "fields": {
   "quiz": 5427,
-  "text": "What can be assessed by watching and feeling the chest and abdomen move during breathing?",
+  "text": "After assessing responsiveness, you must check for the presence of normal breathing. Do this by:",
   "image": "",
   "sort_order": 4
  }
 },
 {
  "model": "pages.quizquestion",
- "pk": 258375,
+ "pk": 266674,
  "fields": {
   "quiz": 5427,
-  "text": "The pressure inside the arteries each time the heart contracts is referred to as the ____ pressure",
+  "text": "What can be assessed by watching and feeling the chest and abdomen move during breathing?",
   "image": "",
   "sort_order": 5
  }
 },
 {
  "model": "pages.quizquestion",
- "pk": 258376,
+ "pk": 266675,
  "fields": {
   "quiz": 5427,
-  "text": "Which medical condition listed below causes inflammation of the bronchioles and excess mucus production within the airways? It is also characterized by a productive cough",
+  "text": "The pressure inside the arteries each time the heart contracts is referred to as the ____ pressure.",
   "image": "",
   "sort_order": 6
  }
 },
 {
  "model": "pages.quizquestion",
- "pk": 258377,
+ "pk": 266676,
  "fields": {
   "quiz": 5427,
-  "text": "More serious heat-related injuries should be suspected when the patient presents with;",
+  "text": "Which medical condition listed below causes inflammation of the bronchioles and excess mucus production within the airways? It is also characterized by a productive cough.",
   "image": "",
   "sort_order": 7
  }
 },
 {
  "model": "pages.quizquestion",
- "pk": 258378,
+ "pk": 266677,
  "fields": {
   "quiz": 5427,
-  "text": "The material placed directly over a wound to help control bleeding is called a(n):",
+  "text": "More serious heat-related injuries should be suspected when the patient presents with:",
   "image": "",
   "sort_order": 8
  }
 },
 {
  "model": "pages.quizquestion",
- "pk": 258379,
+ "pk": 266678,
  "fields": {
   "quiz": 5427,
-  "text": "When caring for a patient with severe burns, you must take BSI precautions and then:",
+  "text": "The material placed directly over a wound to help control bleeding is called a(n):",
   "image": "",
   "sort_order": 9
  }
 },
 {
  "model": "pages.quizquestion",
- "pk": 258380,
+ "pk": 266679,
  "fields": {
   "quiz": 5427,
-  "text": "Which one of the following is NOT evaluated as part of the Cincinnati Prehospital Stroke Scale?",
+  "text": "When caring for a patient with severe burns, you must take BSI precautions and then:",
   "image": "",
   "sort_order": 10
  }
 },
 {
  "model": "pages.quizquestion",
- "pk": 258381,
+ "pk": 266680,
  "fields": {
   "quiz": 5427,
-  "text": "The assessment of a patient’s mental status or responsiveness includes using the ____ scale",
+  "text": "A patient who presents with warm, moist skin; weakness; and nausea is likely experiencing:",
   "image": "",
   "sort_order": 11
  }
 },
 {
  "model": "pages.quizquestion",
- "pk": 258382,
+ "pk": 266681,
  "fields": {
   "quiz": 5427,
-  "text": "Skin that is bluish in color is called:",
+  "text": "Which one of the following is NOT evaluated as part of the Cincinnati Prehospital Stroke Scale?",
   "image": "",
   "sort_order": 12
  }
 },
 {
  "model": "pages.quizquestion",
- "pk": 258383,
+ "pk": 266682,
  "fields": {
   "quiz": 5427,
-  "text": "When assessing circulation for a responsive adult patient, you should assess:",
+  "text": "The assessment of a patient’s mental status or responsiveness includes using the ____ scale.",
   "image": "",
   "sort_order": 13
  }
 },
 {
  "model": "pages.quizquestion",
- "pk": 258384,
+ "pk": 266683,
  "fields": {
   "quiz": 5427,
-  "text": "Noisy breathing is a sign of ____ airway obstruction",
+  "text": "Skin that is bluish in color is called:",
   "image": "",
   "sort_order": 14
  }
 },
 {
  "model": "pages.quizquestion",
- "pk": 258385,
+ "pk": 266684,
  "fields": {
   "quiz": 5427,
-  "text": "The recommended method for opening the airway of a patient with a possible neck or spine injury is the ____ maneuver",
+  "text": "When assessing circulation for a responsive adult patient, you should assess:",
   "image": "",
   "sort_order": 15
  }
 },
 {
  "model": "pages.quizquestion",
- "pk": 258386,
+ "pk": 266685,
  "fields": {
   "quiz": 5427,
-  "text": "The bladder is located in which body cavity?",
+  "text": "Noisy breathing is a sign of ____ airway obstruction.",
   "image": "",
   "sort_order": 16
  }
 },
 {
  "model": "pages.quizquestion",
- "pk": 258387,
+ "pk": 266686,
  "fields": {
   "quiz": 5427,
-  "text": "The spine can be felt (palpated) on the ____ aspect of the body",
+  "text": "The recommended method for opening the airway of a patient with a possible neck or spine injury is the ____ maneuver.",
   "image": "",
   "sort_order": 17
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266687,
+ "fields": {
+  "quiz": 5427,
+  "text": "The bladder is located in which body cavity?",
+  "image": "",
+  "sort_order": 18
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266688,
+ "fields": {
+  "quiz": 5427,
+  "text": "The spine can be felt (palpated) on the ____ aspect of the body.",
+  "image": "",
+  "sort_order": 19
  }
 },
 {
@@ -245541,19 +245561,19 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830227,
+ "pk": 857020,
  "fields": {
-  "question": 258370,
+  "question": 266669,
   "text": "Irritability",
-  "is_correct": true,
+  "is_correct": false,
   "sort_order": 0
  }
 },
 {
  "model": "pages.quizchoice",
- "pk": 830228,
+ "pk": 857021,
  "fields": {
-  "question": 258370,
+  "question": 266669,
   "text": "Difficulty sleeping",
   "is_correct": false,
   "sort_order": 1
@@ -245561,19 +245581,19 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830229,
+ "pk": 857022,
  "fields": {
-  "question": 258370,
+  "question": 266669,
   "text": "Increased appetite",
-  "is_correct": false,
+  "is_correct": true,
   "sort_order": 2
  }
 },
 {
  "model": "pages.quizchoice",
- "pk": 830230,
+ "pk": 857023,
  "fields": {
-  "question": 258370,
+  "question": 266669,
   "text": "Difficulty concentrating",
   "is_correct": false,
   "sort_order": 3
@@ -245581,9 +245601,49 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830231,
+ "pk": 857024,
  "fields": {
-  "question": 258371,
+  "question": 266670,
+  "text": "Superior",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857025,
+ "fields": {
+  "question": 266670,
+  "text": "Lateral",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857026,
+ "fields": {
+  "question": 266670,
+  "text": "Inferior",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857027,
+ "fields": {
+  "question": 266670,
+  "text": "Medial",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857028,
+ "fields": {
+  "question": 266671,
   "text": "One-rescuer assist",
   "is_correct": false,
   "sort_order": 0
@@ -245591,19 +245651,19 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830232,
+ "pk": 857029,
  "fields": {
-  "question": 258371,
+  "question": 266671,
   "text": "Cradle carry",
-  "is_correct": true,
+  "is_correct": false,
   "sort_order": 1
  }
 },
 {
  "model": "pages.quizchoice",
- "pk": 830233,
+ "pk": 857030,
  "fields": {
-  "question": 258371,
+  "question": 266671,
   "text": "Two-rescuer assist",
   "is_correct": false,
   "sort_order": 2
@@ -245611,29 +245671,29 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830234,
+ "pk": 857031,
  "fields": {
-  "question": 258371,
+  "question": 266671,
   "text": "Shoulder drag",
-  "is_correct": false,
+  "is_correct": true,
   "sort_order": 3
  }
 },
 {
  "model": "pages.quizchoice",
- "pk": 830235,
+ "pk": 857032,
  "fields": {
-  "question": 258372,
+  "question": 266672,
   "text": "Tongue",
-  "is_correct": true,
+  "is_correct": false,
   "sort_order": 0
  }
 },
 {
  "model": "pages.quizchoice",
- "pk": 830236,
+ "pk": 857033,
  "fields": {
-  "question": 258372,
+  "question": 266672,
   "text": "Alveoli",
   "is_correct": false,
   "sort_order": 1
@@ -245641,9 +245701,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830237,
+ "pk": 857034,
  "fields": {
-  "question": 258372,
+  "question": 266672,
   "text": "Pharynx",
   "is_correct": false,
   "sort_order": 2
@@ -245651,19 +245711,19 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830238,
+ "pk": 857035,
  "fields": {
-  "question": 258372,
+  "question": 266672,
   "text": "Epiglottis",
-  "is_correct": false,
+  "is_correct": true,
   "sort_order": 3
  }
 },
 {
  "model": "pages.quizchoice",
- "pk": 830239,
+ "pk": 857036,
  "fields": {
-  "question": 258373,
+  "question": 266673,
   "text": "Shaking the patient",
   "is_correct": false,
   "sort_order": 0
@@ -245671,39 +245731,39 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830240,
+ "pk": 857037,
  "fields": {
-  "question": 258373,
+  "question": 266673,
   "text": "Looking for chest rise",
-  "is_correct": false,
+  "is_correct": true,
   "sort_order": 1
  }
 },
 {
  "model": "pages.quizchoice",
- "pk": 830241,
+ "pk": 857038,
  "fields": {
-  "question": 258373,
+  "question": 266673,
   "text": "Observing pupil response",
-  "is_correct": true,
+  "is_correct": false,
   "sort_order": 2
  }
 },
 {
  "model": "pages.quizchoice",
- "pk": 830242,
+ "pk": 857039,
  "fields": {
-  "question": 258373,
-  "text": "Sweeping the mouth for obstructions. 1",
+  "question": 266673,
+  "text": "Sweeping the mouth for obstructions",
   "is_correct": false,
   "sort_order": 3
  }
 },
 {
  "model": "pages.quizchoice",
- "pk": 830243,
+ "pk": 857040,
  "fields": {
-  "question": 258374,
+  "question": 266674,
   "text": "Pulse rate",
   "is_correct": false,
   "sort_order": 0
@@ -245711,9 +245771,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830244,
+ "pk": 857041,
  "fields": {
-  "question": 258374,
+  "question": 266674,
   "text": "Blood pressure",
   "is_correct": false,
   "sort_order": 1
@@ -245721,29 +245781,29 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830245,
+ "pk": 857042,
  "fields": {
-  "question": 258374,
+  "question": 266674,
   "text": "Skin signs",
-  "is_correct": true,
+  "is_correct": false,
   "sort_order": 2
  }
 },
 {
  "model": "pages.quizchoice",
- "pk": 830246,
+ "pk": 857043,
  "fields": {
-  "question": 258374,
-  "text": "Repertory rate",
-  "is_correct": false,
+  "question": 266674,
+  "text": "Respiratory rate",
+  "is_correct": true,
   "sort_order": 3
  }
 },
 {
  "model": "pages.quizchoice",
- "pk": 830247,
+ "pk": 857044,
  "fields": {
-  "question": 258375,
+  "question": 266675,
   "text": "Diastolic",
   "is_correct": false,
   "sort_order": 0
@@ -245751,9 +245811,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830248,
+ "pk": 857045,
  "fields": {
-  "question": 258375,
+  "question": 266675,
   "text": "Pulse",
   "is_correct": false,
   "sort_order": 1
@@ -245761,49 +245821,49 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830249,
+ "pk": 857046,
  "fields": {
-  "question": 258375,
+  "question": 266675,
   "text": "Systolic",
-  "is_correct": false,
+  "is_correct": true,
   "sort_order": 2
  }
 },
 {
  "model": "pages.quizchoice",
- "pk": 830250,
+ "pk": 857047,
  "fields": {
-  "question": 258375,
+  "question": 266675,
   "text": "Mean",
-  "is_correct": true,
+  "is_correct": false,
   "sort_order": 3
  }
 },
 {
  "model": "pages.quizchoice",
- "pk": 830251,
+ "pk": 857048,
  "fields": {
-  "question": 258376,
+  "question": 266676,
   "text": "Asthma",
-  "is_correct": true,
+  "is_correct": false,
   "sort_order": 0
  }
 },
 {
  "model": "pages.quizchoice",
- "pk": 830252,
+ "pk": 857049,
  "fields": {
-  "question": 258376,
+  "question": 266676,
   "text": "Bronchitis",
-  "is_correct": false,
+  "is_correct": true,
   "sort_order": 1
  }
 },
 {
  "model": "pages.quizchoice",
- "pk": 830253,
+ "pk": 857050,
  "fields": {
-  "question": 258376,
+  "question": 266676,
   "text": "Emphysema",
   "is_correct": false,
   "sort_order": 2
@@ -245811,9 +245871,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830254,
+ "pk": 857051,
  "fields": {
-  "question": 258376,
+  "question": 266676,
   "text": "Hyperventilation",
   "is_correct": false,
   "sort_order": 3
@@ -245821,9 +245881,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830255,
+ "pk": 857052,
  "fields": {
-  "question": 258377,
+  "question": 266677,
   "text": "Feeling lightheaded",
   "is_correct": false,
   "sort_order": 0
@@ -245831,9 +245891,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830256,
+ "pk": 857053,
  "fields": {
-  "question": 258377,
+  "question": 266677,
   "text": "Muscle cramps",
   "is_correct": false,
   "sort_order": 1
@@ -245841,39 +245901,39 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830257,
+ "pk": 857054,
  "fields": {
-  "question": 258377,
+  "question": 266677,
   "text": "Hot, dry, skin",
-  "is_correct": false,
+  "is_correct": true,
   "sort_order": 2
  }
 },
 {
  "model": "pages.quizchoice",
- "pk": 830258,
+ "pk": 857055,
  "fields": {
-  "question": 258377,
+  "question": 266677,
   "text": "Weakness",
-  "is_correct": true,
+  "is_correct": false,
   "sort_order": 3
  }
 },
 {
  "model": "pages.quizchoice",
- "pk": 830259,
+ "pk": 857056,
  "fields": {
-  "question": 258378,
+  "question": 266678,
   "text": "Bandage",
-  "is_correct": true,
+  "is_correct": false,
   "sort_order": 0
  }
 },
 {
  "model": "pages.quizchoice",
- "pk": 830260,
+ "pk": 857057,
  "fields": {
-  "question": 258378,
+  "question": 266678,
   "text": "Elastic bandage",
   "is_correct": false,
   "sort_order": 1
@@ -245881,9 +245941,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830261,
+ "pk": 857058,
  "fields": {
-  "question": 258378,
+  "question": 266678,
   "text": "Occlusive dressing",
   "is_correct": false,
   "sort_order": 2
@@ -245891,19 +245951,19 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830262,
+ "pk": 857059,
  "fields": {
-  "question": 258378,
-  "text": "Dressing. 2 Test #2         Craig                          Name__________________    Team ___________________",
-  "is_correct": false,
+  "question": 266678,
+  "text": "Dressing",
+  "is_correct": true,
   "sort_order": 3
  }
 },
 {
  "model": "pages.quizchoice",
- "pk": 830263,
+ "pk": 857060,
  "fields": {
-  "question": 258379,
+  "question": 266679,
   "text": "Stop the burning process",
   "is_correct": true,
   "sort_order": 0
@@ -245911,9 +245971,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830264,
+ "pk": 857061,
  "fields": {
-  "question": 258379,
+  "question": 266679,
   "text": "Prevent further contamination",
   "is_correct": false,
   "sort_order": 1
@@ -245921,9 +245981,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830265,
+ "pk": 857062,
  "fields": {
-  "question": 258379,
+  "question": 266679,
   "text": "Flush only large burn areas",
   "is_correct": false,
   "sort_order": 2
@@ -245931,9 +245991,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830266,
+ "pk": 857063,
  "fields": {
-  "question": 258379,
+  "question": 266679,
   "text": "Remove jewelry",
   "is_correct": false,
   "sort_order": 3
@@ -245941,9 +246001,49 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830267,
+ "pk": 857064,
  "fields": {
-  "question": 258380,
+  "question": 266680,
+  "text": "Heat exhaustion",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857065,
+ "fields": {
+  "question": 266680,
+  "text": "Heat stroke",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857066,
+ "fields": {
+  "question": 266680,
+  "text": "Heat cramps",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857067,
+ "fields": {
+  "question": 266680,
+  "text": "Mild heat stroke",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857068,
+ "fields": {
+  "question": 266681,
   "text": "Abnormal speech",
   "is_correct": false,
   "sort_order": 0
@@ -245951,9 +246051,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830268,
+ "pk": 857069,
  "fields": {
-  "question": 258380,
+  "question": 266681,
   "text": "Equal circulation",
   "is_correct": true,
   "sort_order": 1
@@ -245961,9 +246061,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830269,
+ "pk": 857070,
  "fields": {
-  "question": 258380,
+  "question": 266681,
   "text": "Facial droop",
   "is_correct": false,
   "sort_order": 2
@@ -245971,9 +246071,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830270,
+ "pk": 857071,
  "fields": {
-  "question": 258380,
+  "question": 266681,
   "text": "Arm drift",
   "is_correct": false,
   "sort_order": 3
@@ -245981,9 +246081,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830271,
+ "pk": 857072,
  "fields": {
-  "question": 258381,
+  "question": 266682,
   "text": "AVPU",
   "is_correct": true,
   "sort_order": 0
@@ -245991,9 +246091,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830272,
+ "pk": 857073,
  "fields": {
-  "question": 258381,
+  "question": 266682,
   "text": "ABC",
   "is_correct": false,
   "sort_order": 1
@@ -246001,9 +246101,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830273,
+ "pk": 857074,
  "fields": {
-  "question": 258381,
+  "question": 266682,
   "text": "SAMPLE",
   "is_correct": false,
   "sort_order": 2
@@ -246011,9 +246111,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830274,
+ "pk": 857075,
  "fields": {
-  "question": 258381,
+  "question": 266682,
   "text": "BP-DOC",
   "is_correct": false,
   "sort_order": 3
@@ -246021,9 +246121,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830275,
+ "pk": 857076,
  "fields": {
-  "question": 258382,
+  "question": 266683,
   "text": "Pale",
   "is_correct": false,
   "sort_order": 0
@@ -246031,9 +246131,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830276,
+ "pk": 857077,
  "fields": {
-  "question": 258382,
+  "question": 266683,
   "text": "Flushed",
   "is_correct": false,
   "sort_order": 1
@@ -246041,9 +246141,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830277,
+ "pk": 857078,
  "fields": {
-  "question": 258382,
+  "question": 266683,
   "text": "Cyanotic",
   "is_correct": true,
   "sort_order": 2
@@ -246051,19 +246151,19 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830278,
+ "pk": 857079,
  "fields": {
-  "question": 258382,
-  "text": "Jaundice 3",
+  "question": 266683,
+  "text": "Jaundice",
   "is_correct": false,
   "sort_order": 3
  }
 },
 {
  "model": "pages.quizchoice",
- "pk": 830279,
+ "pk": 857080,
  "fields": {
-  "question": 258383,
+  "question": 266684,
   "text": "The carotid pulse",
   "is_correct": false,
   "sort_order": 0
@@ -246071,9 +246171,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830280,
+ "pk": 857081,
  "fields": {
-  "question": 258383,
+  "question": 266684,
   "text": "Radial pulse on both sides of the body",
   "is_correct": false,
   "sort_order": 1
@@ -246081,9 +246181,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830281,
+ "pk": 857082,
  "fields": {
-  "question": 258383,
+  "question": 266684,
   "text": "The radial pulse on one side",
   "is_correct": true,
   "sort_order": 2
@@ -246091,9 +246191,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830282,
+ "pk": 857083,
  "fields": {
-  "question": 258383,
+  "question": 266684,
   "text": "The distal pulse",
   "is_correct": false,
   "sort_order": 3
@@ -246101,9 +246201,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830283,
+ "pk": 857084,
  "fields": {
-  "question": 258384,
+  "question": 266685,
   "text": "Bilateral",
   "is_correct": false,
   "sort_order": 0
@@ -246111,9 +246211,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830284,
+ "pk": 857085,
  "fields": {
-  "question": 258384,
+  "question": 266685,
   "text": "Complete",
   "is_correct": false,
   "sort_order": 1
@@ -246121,9 +246221,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830285,
+ "pk": 857086,
  "fields": {
-  "question": 258384,
+  "question": 266685,
   "text": "Adequate",
   "is_correct": false,
   "sort_order": 2
@@ -246131,9 +246231,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830286,
+ "pk": 857087,
  "fields": {
-  "question": 258384,
+  "question": 266685,
   "text": "Partial",
   "is_correct": true,
   "sort_order": 3
@@ -246141,9 +246241,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830287,
+ "pk": 857088,
  "fields": {
-  "question": 258385,
+  "question": 266686,
   "text": "Jaw-thrust",
   "is_correct": true,
   "sort_order": 0
@@ -246151,9 +246251,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830288,
+ "pk": 857089,
  "fields": {
-  "question": 258385,
+  "question": 266686,
   "text": "Mouth-to-nose",
   "is_correct": false,
   "sort_order": 1
@@ -246161,9 +246261,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830289,
+ "pk": 857090,
  "fields": {
-  "question": 258385,
+  "question": 266686,
   "text": "Abdominal thrust",
   "is_correct": false,
   "sort_order": 2
@@ -246171,9 +246271,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830290,
+ "pk": 857091,
  "fields": {
-  "question": 258385,
+  "question": 266686,
   "text": "Head-tilt/chin-lift",
   "is_correct": false,
   "sort_order": 3
@@ -246181,9 +246281,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830291,
+ "pk": 857092,
  "fields": {
-  "question": 258386,
+  "question": 266687,
   "text": "Cranial",
   "is_correct": false,
   "sort_order": 0
@@ -246191,9 +246291,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830292,
+ "pk": 857093,
  "fields": {
-  "question": 258386,
+  "question": 266687,
   "text": "Thoracic",
   "is_correct": false,
   "sort_order": 1
@@ -246201,9 +246301,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830293,
+ "pk": 857094,
  "fields": {
-  "question": 258386,
+  "question": 266687,
   "text": "Abdominal",
   "is_correct": false,
   "sort_order": 2
@@ -246211,9 +246311,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830294,
+ "pk": 857095,
  "fields": {
-  "question": 258386,
+  "question": 266687,
   "text": "Pelvic",
   "is_correct": true,
   "sort_order": 3
@@ -246221,9 +246321,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830295,
+ "pk": 857096,
  "fields": {
-  "question": 258387,
+  "question": 266688,
   "text": "Posterior",
   "is_correct": true,
   "sort_order": 0
@@ -246231,9 +246331,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830296,
+ "pk": 857097,
  "fields": {
-  "question": 258387,
+  "question": 266688,
   "text": "Anterior",
   "is_correct": false,
   "sort_order": 1
@@ -246241,9 +246341,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830297,
+ "pk": 857098,
  "fields": {
-  "question": 258387,
+  "question": 266688,
   "text": "Inferior",
   "is_correct": false,
   "sort_order": 2
@@ -246251,9 +246351,9 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 830298,
+ "pk": 857099,
  "fields": {
-  "question": 258387,
+  "question": 266688,
   "text": "Superior",
   "is_correct": false,
   "sort_order": 3
