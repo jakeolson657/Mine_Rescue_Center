@@ -18018,7 +18018,7 @@
  "fields": {
   "problem": 1,
   "title": "Problem",
-  "file": "problems/2024_Loveland_COAL_day_1_Problem_WcMWPJh.pdf",
+  "file": "problems/2024_Loveland_COAL_day_1_Problem.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-10T02:16:11.740Z"
  }
@@ -18029,7 +18029,7 @@
  "fields": {
   "problem": 1,
   "title": "Written Problem",
-  "file": "problems/2024_Loveland_COAL_day_1_Written_Problem_Zy30gPS.pdf",
+  "file": "problems/2024_Loveland_COAL_day_1_Written_Problem.pdf",
   "sort_order": 20,
   "uploaded_at": "2026-06-10T02:16:11.745Z"
  }
@@ -18040,7 +18040,7 @@
  "fields": {
   "problem": 1,
   "title": "Written Statement",
-  "file": "problems/2024_Loveland_COAL_day_1_Written_Statement_5IFso4i.pdf",
+  "file": "problems/2024_Loveland_COAL_day_1_Written_Statement.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-10T02:16:11.748Z"
  }
@@ -18051,7 +18051,7 @@
  "fields": {
   "problem": 1,
   "title": "Layout",
-  "file": "problems/2024_Loveland_COAL_day_1_Layout_4ilTV2e.pdf",
+  "file": "problems/2024_Loveland_COAL_day_1_Layout.pdf",
   "sort_order": 120,
   "uploaded_at": "2026-06-10T02:16:11.752Z"
  }
@@ -18062,7 +18062,7 @@
  "fields": {
   "problem": 1,
   "title": "Team Map",
-  "file": "problems/2024_Loveland_COAL_day_1_LARGE_TEAM_MAP_acq5JGe.pdf",
+  "file": "problems/2024_Loveland_COAL_day_1_LARGE_TEAM_MAP.pdf",
   "sort_order": 130,
   "uploaded_at": "2026-06-10T02:16:11.756Z"
  }
@@ -18073,7 +18073,7 @@
  "fields": {
   "problem": 1,
   "title": "Team Map Key",
-  "file": "problems/2024_Loveland_COAL_day_1_LARGE_TRANSPARENT_TEAM_MAP_KEY_n5cWFpJ.pdf",
+  "file": "problems/2024_Loveland_COAL_day_1_LARGE_TRANSPARENT_TEAM_MAP_KEY.pdf",
   "sort_order": 140,
   "uploaded_at": "2026-06-10T02:16:11.762Z"
  }
@@ -18084,7 +18084,7 @@
  "fields": {
   "problem": 1,
   "title": "Breakdown Map",
-  "file": "problems/2024_Loveland_COAL_day_1_LARGE_BO_MAP_6btbSV8.pdf",
+  "file": "problems/2024_Loveland_COAL_day_1_LARGE_BO_MAP.pdf",
   "sort_order": 150,
   "uploaded_at": "2026-06-10T02:16:11.765Z"
  }
@@ -18095,7 +18095,7 @@
  "fields": {
   "problem": 1,
   "title": "Breakdown Map Key",
-  "file": "problems/2024_Loveland_COAL_day_1_LARGE_TRANSPARENT_BO_MAP_KEY_sNSJ0XT.pdf",
+  "file": "problems/2024_Loveland_COAL_day_1_LARGE_TRANSPARENT_BO_MAP_KEY.pdf",
   "sort_order": 160,
   "uploaded_at": "2026-06-10T02:16:11.770Z"
  }
@@ -18106,7 +18106,7 @@
  "fields": {
   "problem": 1,
   "title": "Judges Instructions",
-  "file": "problems/2024_Loveland_COAL_day_1_Judges_Instructions_mu9YRq5.pdf",
+  "file": "problems/2024_Loveland_COAL_day_1_Judges_Instructions.pdf",
   "sort_order": 40,
   "uploaded_at": "2026-06-10T02:16:11.773Z"
  }
@@ -18117,7 +18117,7 @@
  "fields": {
   "problem": 1,
   "title": "Judges Vent Map",
-  "file": "problems/2024_Loveland_COAL_day_1_judges_vent_map_YtfO2GK.pdf",
+  "file": "problems/2024_Loveland_COAL_day_1_judges_vent_map.pdf",
   "sort_order": 60,
   "uploaded_at": "2026-06-10T02:16:11.779Z"
  }
@@ -18128,7 +18128,7 @@
  "fields": {
   "problem": 1,
   "title": "Judges Stops/GT/DI/RR Map",
-  "file": "problems/2024_Loveland_COAL_day_1_stops-gt-di-rr-judges_map_YNCB9F8.pdf",
+  "file": "problems/2024_Loveland_COAL_day_1_stops-gt-di-rr-judges_map.pdf",
   "sort_order": 50,
   "uploaded_at": "2026-06-10T02:16:11.782Z"
  }
@@ -18139,7 +18139,7 @@
  "fields": {
   "problem": 1,
   "title": "Final Vent Plan",
-  "file": "problems/2024_Loveland_COAL_day_1_FINAL_Vent_RtiUO2M.pdf",
+  "file": "problems/2024_Loveland_COAL_day_1_FINAL_Vent.pdf",
   "sort_order": 70,
   "uploaded_at": "2026-06-10T02:16:11.786Z"
  }
@@ -18150,7 +18150,7 @@
  "fields": {
   "problem": 1,
   "title": "Vent Plan 1",
-  "file": "problems/2024_Loveland_COAL_day_1_vent_1_Cd020qS.pdf",
+  "file": "problems/2024_Loveland_COAL_day_1_vent_1.pdf",
   "sort_order": 80,
   "uploaded_at": "2026-06-10T02:16:11.790Z"
  }
@@ -18161,7 +18161,7 @@
  "fields": {
   "problem": 1,
   "title": "Vent Plan 2",
-  "file": "problems/2024_Loveland_COAL_day_1_vent_2_32mblSc.pdf",
+  "file": "problems/2024_Loveland_COAL_day_1_vent_2.pdf",
   "sort_order": 90,
   "uploaded_at": "2026-06-10T02:16:11.796Z"
  }
@@ -18172,7 +18172,7 @@
  "fields": {
   "problem": 1,
   "title": "Vent Plan 3",
-  "file": "problems/2024_Loveland_COAL_day_1_vent_3_PHbiFqO.pdf",
+  "file": "problems/2024_Loveland_COAL_day_1_vent_3.pdf",
   "sort_order": 100,
   "uploaded_at": "2026-06-10T02:16:11.799Z"
  }
@@ -18183,7 +18183,7 @@
  "fields": {
   "problem": 1,
   "title": "Vent Plan 4",
-  "file": "problems/2024_Loveland_COAL_day_1_vent_4__dP1ywfW.pdf",
+  "file": "problems/2024_Loveland_COAL_day_1_vent_4_.pdf",
   "sort_order": 110,
   "uploaded_at": "2026-06-10T02:16:11.802Z"
  }
@@ -18194,7 +18194,7 @@
  "fields": {
   "problem": 1,
   "title": "Gas Extents",
-  "file": "problems/2024_Loveland_COAL_day_1_gas_extents_hKBd3GP.pdf",
+  "file": "problems/2024_Loveland_COAL_day_1_gas_extents.pdf",
   "sort_order": 170,
   "uploaded_at": "2026-06-10T02:16:11.808Z"
  }
