@@ -209,10 +209,12 @@ class CalendarView(ListView):
         last_day = date(year, month, monthrange(year, month)[1])
 
         # All events that overlap with this month
+        # Earliest-starting event on top; among events that start the same day,
+        # the longer one (later end date) on top.
         events = CalendarEvent.objects.filter(
             start_date__lte=last_day,
             end_date__gte=first_day,
-        )
+        ).order_by('start_date', '-end_date')
 
         events_by_day = {}
         for event in events:
