@@ -4453,6 +4453,45 @@
  }
 },
 {
+ "model": "pages.calendarevent",
+ "pk": 295,
+ "fields": {
+  "title": "WVU Bench Bash",
+  "start_date": "2026-01-14",
+  "end_date": "2026-01-15",
+  "location": "Mylan Park, 500 Mylan Park Lane, Morgantown, WV 26501",
+  "description": "Two-day benching competition hosted by West Virginia University Mining Extension, testing the BG4, BG ProAir, and BIO-MARINE 240R apparatus. Held at the same facility as the NMRA Post 5 contest. Registration proceeds support WVU's Collegiate Mine Rescue Teams preparing for the International Collegiate Contest in Sudbury, Ontario.",
+  "contact_info": "John Helmick: john.helmick@mail.wvu.edu\nRegistration: $300 — bit.ly/WVUBenchBash",
+  "resources": [
+   {
+    "label": "Registration",
+    "url": "https://bit.ly/WVUBenchBash"
+   },
+   {
+    "label": "Announcement (CoalZoom)",
+    "url": "https://www.coalzoom.com/article.cfm?articleid=41629"
+   }
+  ],
+  "created_at": "2026-08-13T12:00:00Z",
+  "updated_at": "2026-08-13T12:00:00Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 296,
+ "fields": {
+  "title": "2026 National Mine Rescue Association (NMRA) Post No. 5 Contest",
+  "start_date": "2026-07-28",
+  "end_date": "2026-07-30",
+  "location": "Mylan Park, 500 Mylan Park Lane, Morgantown, WV 26501",
+  "description": "NMRA Post No. 5 mine rescue contest held at Mylan Park in Morgantown, West Virginia, organized in partnership with the West Virginia University Mining and Industrial Extension. Same facility as the WVU Bench Bash.",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-08-13T12:00:00Z",
+  "updated_at": "2026-08-13T12:00:00Z"
+ }
+},
+{
  "model": "pages.competition",
  "pk": 1,
  "fields": {
@@ -8554,6 +8593,90 @@
   "description": "Utah State University Eastern Campus, Price, Utah, June 22-25, 2026",
   "created_at": "2026-07-24T04:47:56.543Z",
   "updated_at": "2026-07-24T05:06:38.790Z"
+ }
+},
+{
+ "model": "pages.competition",
+ "pk": 368,
+ "fields": {
+  "name": "Southeast Regional Mine Rescue Competition",
+  "year": 2026,
+  "calendar_event": 3,
+  "description": "",
+  "created_at": "2026-08-10T20:44:00.014Z",
+  "updated_at": "2026-08-10T20:44:00.014Z"
+ }
+},
+{
+ "model": "pages.competition",
+ "pk": 369,
+ "fields": {
+  "name": "Colorado Regional Mine Rescue Contest",
+  "year": 2026,
+  "calendar_event": 21,
+  "description": "",
+  "created_at": "2026-08-12T20:06:24.738Z",
+  "updated_at": "2026-08-12T20:06:24.738Z"
+ }
+},
+{
+ "model": "pages.competition",
+ "pk": 370,
+ "fields": {
+  "name": "Indiana State Mine Rescue Contest",
+  "year": 2026,
+  "calendar_event": 15,
+  "description": "",
+  "created_at": "2026-08-12T20:06:25.097Z",
+  "updated_at": "2026-08-12T20:06:25.097Z"
+ }
+},
+{
+ "model": "pages.competition",
+ "pk": 371,
+ "fields": {
+  "name": "Kentucky Mining Institute Mine Rescue Contest",
+  "year": 2026,
+  "calendar_event": 11,
+  "description": "",
+  "created_at": "2026-08-14T00:01:36.088Z",
+  "updated_at": "2026-08-14T00:01:36.088Z"
+ }
+},
+{
+ "model": "pages.competition",
+ "pk": 372,
+ "fields": {
+  "name": "WVU Bench Bash",
+  "year": 2026,
+  "calendar_event": 295,
+  "description": "",
+  "created_at": "2026-08-14T15:30:00Z",
+  "updated_at": "2026-08-14T15:30:00Z"
+ }
+},
+{
+ "model": "pages.competition",
+ "pk": 373,
+ "fields": {
+  "name": "Western Kentucky Mine Institute Safety Days Mine Rescue Contest",
+  "year": 2026,
+  "calendar_event": 10,
+  "description": "",
+  "created_at": "2026-08-14T22:44:33.479Z",
+  "updated_at": "2026-08-14T22:44:33.479Z"
+ }
+},
+{
+ "model": "pages.competition",
+ "pk": 374,
+ "fields": {
+  "name": "Alabama State Mine Rescue Contest",
+  "year": 2026,
+  "calendar_event": 9,
+  "description": "",
+  "created_at": "2026-08-14T22:51:52.197Z",
+  "updated_at": "2026-08-14T22:51:52.197Z"
  }
 },
 {
@@ -18013,6 +18136,294 @@
  }
 },
 {
+ "model": "pages.competitionproblem",
+ "pk": 908,
+ "fields": {
+  "competition": 368,
+  "title": "Coal Day 1 Field",
+  "description": "",
+  "sort_order": 10,
+  "created_at": "2026-08-10T20:44:00.021Z",
+  "updated_at": "2026-08-10T20:44:00.021Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 909,
+ "fields": {
+  "competition": 368,
+  "title": "Coal Day 2 Field",
+  "description": "",
+  "sort_order": 20,
+  "created_at": "2026-08-10T20:44:00.048Z",
+  "updated_at": "2026-08-10T20:44:00.048Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 910,
+ "fields": {
+  "competition": 368,
+  "title": "MNM Day 1 Field",
+  "description": "",
+  "sort_order": 30,
+  "created_at": "2026-08-10T20:44:00.078Z",
+  "updated_at": "2026-08-10T20:44:00.078Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 911,
+ "fields": {
+  "competition": 368,
+  "title": "MNM Day 2 Field",
+  "description": "",
+  "sort_order": 40,
+  "created_at": "2026-08-10T20:44:00.095Z",
+  "updated_at": "2026-08-10T20:44:00.095Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 912,
+ "fields": {
+  "competition": 368,
+  "title": "First Aid",
+  "description": "",
+  "sort_order": 50,
+  "created_at": "2026-08-10T20:44:00.111Z",
+  "updated_at": "2026-08-10T20:44:00.111Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 913,
+ "fields": {
+  "competition": 368,
+  "title": "Written Tests",
+  "description": "",
+  "sort_order": 60,
+  "created_at": "2026-08-10T20:44:00.129Z",
+  "updated_at": "2026-08-10T20:44:00.129Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 914,
+ "fields": {
+  "competition": 369,
+  "title": "Coal Day 1 Field",
+  "description": "",
+  "sort_order": 10,
+  "created_at": "2026-08-12T20:06:24.747Z",
+  "updated_at": "2026-08-12T20:06:24.747Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 915,
+ "fields": {
+  "competition": 369,
+  "title": "Coal Day 2 Field",
+  "description": "",
+  "sort_order": 20,
+  "created_at": "2026-08-12T20:06:24.882Z",
+  "updated_at": "2026-08-12T20:06:24.882Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 916,
+ "fields": {
+  "competition": 369,
+  "title": "Preshift",
+  "description": "",
+  "sort_order": 30,
+  "created_at": "2026-08-12T20:06:25.034Z",
+  "updated_at": "2026-08-12T20:06:25.034Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 917,
+ "fields": {
+  "competition": 370,
+  "title": "Coal Field",
+  "description": "",
+  "sort_order": 10,
+  "created_at": "2026-08-12T20:06:25.101Z",
+  "updated_at": "2026-08-12T20:06:25.101Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 918,
+ "fields": {
+  "competition": 371,
+  "title": "Coal Day 1 Field",
+  "description": "",
+  "sort_order": 10,
+  "created_at": "2026-08-14T00:01:36.113Z",
+  "updated_at": "2026-08-14T00:01:36.113Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 919,
+ "fields": {
+  "competition": 371,
+  "title": "Coal Day 2 Field",
+  "description": "",
+  "sort_order": 20,
+  "created_at": "2026-08-14T00:01:36.142Z",
+  "updated_at": "2026-08-14T00:01:36.142Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 920,
+ "fields": {
+  "competition": 371,
+  "title": "First Aid",
+  "description": "",
+  "sort_order": 30,
+  "created_at": "2026-08-14T00:01:36.167Z",
+  "updated_at": "2026-08-14T00:01:36.167Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 921,
+ "fields": {
+  "competition": 371,
+  "title": "Written Tests",
+  "description": "",
+  "sort_order": 40,
+  "created_at": "2026-08-14T00:01:36.364Z",
+  "updated_at": "2026-08-14T00:01:36.364Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 922,
+ "fields": {
+  "competition": 372,
+  "title": "Bench Day 1",
+  "description": "",
+  "sort_order": 10,
+  "created_at": "2026-08-14T15:30:00Z",
+  "updated_at": "2026-08-14T15:30:00Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 923,
+ "fields": {
+  "competition": 372,
+  "title": "Bench Day 2",
+  "description": "",
+  "sort_order": 20,
+  "created_at": "2026-08-14T15:30:00Z",
+  "updated_at": "2026-08-14T15:30:00Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 924,
+ "fields": {
+  "competition": 373,
+  "title": "Coal Field",
+  "description": "",
+  "sort_order": 10,
+  "created_at": "2026-08-14T22:44:33.494Z",
+  "updated_at": "2026-08-14T22:44:33.494Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 925,
+ "fields": {
+  "competition": 373,
+  "title": "First Aid",
+  "description": "",
+  "sort_order": 20,
+  "created_at": "2026-08-14T22:44:33.517Z",
+  "updated_at": "2026-08-14T22:44:33.517Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 926,
+ "fields": {
+  "competition": 373,
+  "title": "Bench",
+  "description": "",
+  "sort_order": 30,
+  "created_at": "2026-08-14T22:44:33.602Z",
+  "updated_at": "2026-08-14T22:44:33.602Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 927,
+ "fields": {
+  "competition": 373,
+  "title": "Preshift",
+  "description": "",
+  "sort_order": 40,
+  "created_at": "2026-08-14T22:44:33.611Z",
+  "updated_at": "2026-08-14T22:44:33.611Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 928,
+ "fields": {
+  "competition": 373,
+  "title": "Written Tests",
+  "description": "",
+  "sort_order": 50,
+  "created_at": "2026-08-14T22:44:33.623Z",
+  "updated_at": "2026-08-14T22:44:33.623Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 929,
+ "fields": {
+  "competition": 374,
+  "title": "First Aid & Benchman Day 1",
+  "description": "",
+  "sort_order": 10,
+  "created_at": "2026-08-14T22:51:52.203Z",
+  "updated_at": "2026-08-14T22:51:52.203Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 930,
+ "fields": {
+  "competition": 374,
+  "title": "First Aid & Benchman Day 2",
+  "description": "",
+  "sort_order": 20,
+  "created_at": "2026-08-14T22:51:52.214Z",
+  "updated_at": "2026-08-14T22:51:52.214Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 931,
+ "fields": {
+  "competition": 374,
+  "title": "Written Tests",
+  "description": "",
+  "sort_order": 30,
+  "created_at": "2026-08-14T22:51:52.224Z",
+  "updated_at": "2026-08-14T22:51:52.224Z"
+ }
+},
+{
  "model": "pages.problemdocument",
  "pk": 1,
  "fields": {
@@ -24862,17 +25273,6 @@
   "title": "BG4 Contest Problem",
   "file": "problems/2013_nmra6_Bench_2013_BG4_Post6_Contest.pdf",
   "sort_order": 20,
-  "uploaded_at": "2026-06-12T21:38:40.259Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1829,
- "fields": {
-  "problem": 202,
-  "title": "BioPak 240R Contest Problem",
-  "file": "problems/2013_nmra6_Bench_2013_BioPac240R_Post6_contest.pdf",
-  "sort_order": 10,
   "uploaded_at": "2026-06-12T21:38:40.259Z"
  }
 },
@@ -36834,6 +37234,1326 @@
  }
 },
 {
+ "model": "pages.problemdocument",
+ "pk": 1814,
+ "fields": {
+  "problem": 908,
+  "title": "Field",
+  "file": "problems/2026_SERegional_Coal_Day_1_Field_TN_2026_Coal_Day_1_Judge_Book.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-10T20:44:00.033Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1815,
+ "fields": {
+  "problem": 908,
+  "title": "Team Maps",
+  "file": "problems/2026_SERegional_Coal_Day_1_Field_TN_2026_Coal_Day_1_Team_Maps.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-08-10T20:44:00.043Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1816,
+ "fields": {
+  "problem": 909,
+  "title": "Field",
+  "file": "problems/2026_SERegional_Coal_Day_2_Field_TN_2026_Coal_Day_2_Judge_Book.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-10T20:44:00.061Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1817,
+ "fields": {
+  "problem": 909,
+  "title": "Team Maps",
+  "file": "problems/2026_SERegional_Coal_Day_2_Field_TN_2026_Coal_Day_2_Team_Maps.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-08-10T20:44:00.071Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1818,
+ "fields": {
+  "problem": 910,
+  "title": "Field",
+  "file": "problems/2026_SERegional_MNM_Day_1_Field_Metal_DAY_1_Problem.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-10T20:44:00.088Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1819,
+ "fields": {
+  "problem": 911,
+  "title": "Field",
+  "file": "problems/2026_SERegional_MNM_Day_2_Field_Metal_DAY_2_Problem.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-10T20:44:00.106Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1820,
+ "fields": {
+  "problem": 912,
+  "title": "Problem",
+  "file": "problems/2026_SERegional_First_Aid_Mine_Rescue_Competition_FA_2026_Final.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-10T20:44:00.122Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1821,
+ "fields": {
+  "problem": 913,
+  "title": "Coal Day 1 Written Test",
+  "file": "problems/2026_SERegional_Written_Tests_Coal_Day_1.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-10T20:44:00.140Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1822,
+ "fields": {
+  "problem": 913,
+  "title": "Coal Day 1 Written Test Answers",
+  "file": "problems/2026_SERegional_Written_Tests_Coal_Day_1_Key.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-08-10T20:44:00.149Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1823,
+ "fields": {
+  "problem": 913,
+  "title": "Coal Day 2 Written Test",
+  "file": "problems/2026_SERegional_Written_Tests_Coal_Day_2.pdf",
+  "sort_order": 30,
+  "uploaded_at": "2026-08-10T20:44:00.160Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1824,
+ "fields": {
+  "problem": 913,
+  "title": "Coal Day 2 Written Test Answers",
+  "file": "problems/2026_SERegional_Written_Tests_Coal_Day_2_Key.pdf",
+  "sort_order": 40,
+  "uploaded_at": "2026-08-10T20:44:00.170Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1825,
+ "fields": {
+  "problem": 913,
+  "title": "Metal Field Written Test",
+  "file": "problems/2026_SERegional_Written_Tests_Metal_Field_Test.pdf",
+  "sort_order": 50,
+  "uploaded_at": "2026-08-10T20:44:00.181Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1826,
+ "fields": {
+  "problem": 913,
+  "title": "Metal Field Written Test Answers",
+  "file": "problems/2026_SERegional_Written_Tests_Metal_Field_Test_Key.pdf",
+  "sort_order": 60,
+  "uploaded_at": "2026-08-10T20:44:00.191Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1827,
+ "fields": {
+  "problem": 913,
+  "title": "First Aid Written Test",
+  "file": "problems/2026_SERegional_Written_Tests_FA_Test.pdf",
+  "sort_order": 70,
+  "uploaded_at": "2026-08-10T20:44:00.201Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1828,
+ "fields": {
+  "problem": 913,
+  "title": "First Aid Written Test Answers",
+  "file": "problems/2026_SERegional_Written_Tests_FA_Test_Key.pdf",
+  "sort_order": 80,
+  "uploaded_at": "2026-08-10T20:44:00.210Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1829,
+ "fields": {
+  "problem": 202,
+  "title": "BioPak 240R Contest Problem",
+  "file": "problems/2013_nmra6_Bench_2013_BioPac240R_Post6_contest.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-06-12T21:38:40.259Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1830,
+ "fields": {
+  "problem": 914,
+  "title": "Problem",
+  "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Problem.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-12T20:06:24.757Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1831,
+ "fields": {
+  "problem": 914,
+  "title": "Written Problem",
+  "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Written_Problem.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-08-12T20:06:24.766Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1832,
+ "fields": {
+  "problem": 914,
+  "title": "Written Statement",
+  "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Written_Statement.pdf",
+  "sort_order": 30,
+  "uploaded_at": "2026-08-12T20:06:24.774Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1833,
+ "fields": {
+  "problem": 914,
+  "title": "Judges Instructions",
+  "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Judges_Instructions.pdf",
+  "sort_order": 40,
+  "uploaded_at": "2026-08-12T20:06:24.783Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1834,
+ "fields": {
+  "problem": 914,
+  "title": "Judges Stops/DI/RR/GT Map",
+  "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Judges_Map_stops_di_rr_gt.pdf",
+  "sort_order": 50,
+  "uploaded_at": "2026-08-12T20:06:24.791Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1835,
+ "fields": {
+  "problem": 914,
+  "title": "Judges Vent Map",
+  "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Judges_Vent_Map.pdf",
+  "sort_order": 60,
+  "uploaded_at": "2026-08-12T20:06:24.800Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1836,
+ "fields": {
+  "problem": 914,
+  "title": "Final Vent Plan",
+  "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Final_Vent_Map.pdf",
+  "sort_order": 70,
+  "uploaded_at": "2026-08-12T20:06:24.807Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1837,
+ "fields": {
+  "problem": 914,
+  "title": "Vent Plan 1",
+  "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Vent_1.pdf",
+  "sort_order": 80,
+  "uploaded_at": "2026-08-12T20:06:24.816Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1838,
+ "fields": {
+  "problem": 914,
+  "title": "Vent Plan 1 (Alternate)",
+  "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Vent_1_ALT.pdf",
+  "sort_order": 90,
+  "uploaded_at": "2026-08-12T20:06:24.824Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1839,
+ "fields": {
+  "problem": 914,
+  "title": "Vent Plan 2",
+  "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Vent_2.pdf",
+  "sort_order": 100,
+  "uploaded_at": "2026-08-12T20:06:24.831Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1840,
+ "fields": {
+  "problem": 914,
+  "title": "Layout",
+  "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Layout.pdf",
+  "sort_order": 110,
+  "uploaded_at": "2026-08-12T20:06:24.838Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1841,
+ "fields": {
+  "problem": 914,
+  "title": "Team Map",
+  "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Large_TEAM_Map.pdf",
+  "sort_order": 120,
+  "uploaded_at": "2026-08-12T20:06:24.847Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1842,
+ "fields": {
+  "problem": 914,
+  "title": "Team Map Key",
+  "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_LARGE_TRANSPARENT_TEAM_MAP_KEY.pdf",
+  "sort_order": 130,
+  "uploaded_at": "2026-08-12T20:06:24.854Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1843,
+ "fields": {
+  "problem": 914,
+  "title": "Breakdown Map",
+  "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Large_BO_Map.pdf",
+  "sort_order": 140,
+  "uploaded_at": "2026-08-12T20:06:24.862Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1844,
+ "fields": {
+  "problem": 914,
+  "title": "Breakdown Map Key",
+  "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_LARGE_TRANSPARENT_BO_MAP_KEY.pdf",
+  "sort_order": 150,
+  "uploaded_at": "2026-08-12T20:06:24.870Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1845,
+ "fields": {
+  "problem": 914,
+  "title": "Gas Extents",
+  "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_gas_extents.pdf",
+  "sort_order": 160,
+  "uploaded_at": "2026-08-12T20:06:24.879Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1846,
+ "fields": {
+  "problem": 914,
+  "title": "Attendant Map",
+  "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Attendent_Map.pdf",
+  "sort_order": 170,
+  "uploaded_at": "2026-08-13T01:36:16.979Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1847,
+ "fields": {
+  "problem": 914,
+  "title": "Judges Master Map",
+  "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1.pdf",
+  "sort_order": 180,
+  "uploaded_at": "2026-08-13T01:36:16.991Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1848,
+ "fields": {
+  "problem": 915,
+  "title": "Problem",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Problem.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-12T20:06:24.890Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1849,
+ "fields": {
+  "problem": 915,
+  "title": "Written Problem",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Written_Problem.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-08-12T20:06:24.898Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1850,
+ "fields": {
+  "problem": 915,
+  "title": "Written Statement",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Written_Statement.pdf",
+  "sort_order": 30,
+  "uploaded_at": "2026-08-12T20:06:24.906Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1851,
+ "fields": {
+  "problem": 915,
+  "title": "Judges Instructions",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Judges_Instructions.pdf",
+  "sort_order": 40,
+  "uploaded_at": "2026-08-12T20:06:24.915Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1852,
+ "fields": {
+  "problem": 915,
+  "title": "Judges Stops/GT/DI Map",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_judges_map_stops_gt_di.pdf",
+  "sort_order": 50,
+  "uploaded_at": "2026-08-12T20:06:24.922Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1853,
+ "fields": {
+  "problem": 915,
+  "title": "Judges Extra Vent Map",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Judges_Extra_Vent_Map.pdf",
+  "sort_order": 60,
+  "uploaded_at": "2026-08-12T20:06:24.931Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1854,
+ "fields": {
+  "problem": 915,
+  "title": "Final Vent Plan",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Final_Vent.pdf",
+  "sort_order": 70,
+  "uploaded_at": "2026-08-12T20:06:24.939Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1855,
+ "fields": {
+  "problem": 915,
+  "title": "Vent Plan 1",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Vent_1.pdf",
+  "sort_order": 80,
+  "uploaded_at": "2026-08-12T20:06:24.947Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1856,
+ "fields": {
+  "problem": 915,
+  "title": "Vent Plan 1 (Alternate)",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Vent_1_ALT.pdf",
+  "sort_order": 90,
+  "uploaded_at": "2026-08-12T20:06:24.954Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1857,
+ "fields": {
+  "problem": 915,
+  "title": "Vent Plan 2",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Vent_2.pdf",
+  "sort_order": 100,
+  "uploaded_at": "2026-08-12T20:06:24.961Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1858,
+ "fields": {
+  "problem": 915,
+  "title": "Vent Plan 2 (Alternate)",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Vent_2_ALT.pdf",
+  "sort_order": 110,
+  "uploaded_at": "2026-08-12T20:06:24.968Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1859,
+ "fields": {
+  "problem": 915,
+  "title": "Vent Plan 3",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Vent_3.pdf",
+  "sort_order": 120,
+  "uploaded_at": "2026-08-12T20:06:24.976Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1860,
+ "fields": {
+  "problem": 915,
+  "title": "Vent Plan 4",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Vent_4.pdf",
+  "sort_order": 130,
+  "uploaded_at": "2026-08-12T20:06:24.983Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1861,
+ "fields": {
+  "problem": 915,
+  "title": "Layout",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Layout.pdf",
+  "sort_order": 140,
+  "uploaded_at": "2026-08-12T20:06:24.991Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1862,
+ "fields": {
+  "problem": 915,
+  "title": "Team Map",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_LARGE_TEAM_MAP.pdf",
+  "sort_order": 150,
+  "uploaded_at": "2026-08-12T20:06:24.999Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1863,
+ "fields": {
+  "problem": 915,
+  "title": "Team Map Key",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_LARGE_TRANSPARENT_TEAM_MAP_KEY.pdf",
+  "sort_order": 160,
+  "uploaded_at": "2026-08-12T20:06:25.007Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1864,
+ "fields": {
+  "problem": 915,
+  "title": "Breakdown Map",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_LARGE_BO_MAP.pdf",
+  "sort_order": 170,
+  "uploaded_at": "2026-08-12T20:06:25.015Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1865,
+ "fields": {
+  "problem": 915,
+  "title": "Breakdown Map Key",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_LARGE_TRANSPARENT_BO_MAP_KEY.pdf",
+  "sort_order": 180,
+  "uploaded_at": "2026-08-12T20:06:25.021Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1866,
+ "fields": {
+  "problem": 915,
+  "title": "Gas Extents",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_gas_extents.pdf",
+  "sort_order": 190,
+  "uploaded_at": "2026-08-12T20:06:25.029Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1867,
+ "fields": {
+  "problem": 915,
+  "title": "Attendant Map",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Attendant_Map.pdf",
+  "sort_order": 200,
+  "uploaded_at": "2026-08-13T01:36:17.004Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1868,
+ "fields": {
+  "problem": 915,
+  "title": "Judges Master Map",
+  "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2.pdf",
+  "sort_order": 210,
+  "uploaded_at": "2026-08-13T01:36:17.016Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1869,
+ "fields": {
+  "problem": 916,
+  "title": "Statement",
+  "file": "problems/2026_Loveland_Preshift_PRESHIFT_STATEMENT.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-12T20:06:25.040Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1870,
+ "fields": {
+  "problem": 916,
+  "title": "Measurements",
+  "file": "problems/2026_Loveland_Preshift_MEASUREMENTS.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-08-12T20:06:25.050Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1871,
+ "fields": {
+  "problem": 916,
+  "title": "Placards",
+  "file": "problems/2026_Loveland_Preshift_Placards_Loveland_Preshift_2026.pdf",
+  "sort_order": 30,
+  "uploaded_at": "2026-08-12T20:06:25.057Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1872,
+ "fields": {
+  "problem": 916,
+  "title": "A Card - Field",
+  "file": "problems/2026_Loveland_Preshift_2026_Preshift_A_Card_Field.pdf",
+  "sort_order": 40,
+  "uploaded_at": "2026-08-12T20:06:25.065Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1873,
+ "fields": {
+  "problem": 916,
+  "title": "B Card - Record",
+  "file": "problems/2026_Loveland_Preshift_2026_Preshift_B_Card_Record.pdf",
+  "sort_order": 50,
+  "uploaded_at": "2026-08-12T20:06:25.072Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1874,
+ "fields": {
+  "problem": 916,
+  "title": "Preshift Record Report (Blank)",
+  "file": "problems/2026_Loveland_Preshift_2026_PRESHIFT_RECORD_REPORT_BLANK.pdf",
+  "sort_order": 60,
+  "uploaded_at": "2026-08-12T20:06:25.080Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1875,
+ "fields": {
+  "problem": 916,
+  "title": "Judges Notes",
+  "file": "problems/2026_Loveland_Preshift_Judge_s_Notes.pdf",
+  "sort_order": 70,
+  "uploaded_at": "2026-08-12T20:06:25.087Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1876,
+ "fields": {
+  "problem": 916,
+  "title": "Judges Preshift Record Report",
+  "file": "problems/2026_Loveland_Preshift_JUDGE_S_PRESHIFT_RECORD_REPORT.pdf",
+  "sort_order": 80,
+  "uploaded_at": "2026-08-12T20:06:25.095Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1877,
+ "fields": {
+  "problem": 916,
+  "title": "Contestant Map",
+  "file": "problems/2026_Loveland_Preshift_Contestant_map_2016.pdf",
+  "sort_order": 90,
+  "uploaded_at": "2026-08-13T01:36:16.925Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1878,
+ "fields": {
+  "problem": 916,
+  "title": "Field Layout Map",
+  "file": "problems/2026_Loveland_Preshift_Field_layout_map_2016.pdf",
+  "sort_order": 100,
+  "uploaded_at": "2026-08-13T01:36:16.939Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1879,
+ "fields": {
+  "problem": 916,
+  "title": "Judges Map",
+  "file": "problems/2026_Loveland_Preshift_Judge_s_Map.pdf",
+  "sort_order": 110,
+  "uploaded_at": "2026-08-13T01:36:16.954Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1880,
+ "fields": {
+  "problem": 916,
+  "title": "Ventilation Plan",
+  "file": "problems/2026_Loveland_Preshift_Ventilation_Map_Plan.pdf",
+  "sort_order": 120,
+  "uploaded_at": "2026-08-13T01:36:16.965Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1881,
+ "fields": {
+  "problem": 917,
+  "title": "Field",
+  "file": "problems/2026_Indiana_Coal_Field_26_problem_binder.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-12T20:06:25.108Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1882,
+ "fields": {
+  "problem": 918,
+  "title": "Field",
+  "file": "problems/2026_KMI_Coal_Day_1_Field_Day_1.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-14T00:01:36.135Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1883,
+ "fields": {
+  "problem": 919,
+  "title": "Field",
+  "file": "problems/2026_KMI_Coal_Day_2_Field_Day_2.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-14T00:01:36.157Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1884,
+ "fields": {
+  "problem": 920,
+  "title": "Statement",
+  "file": "problems/2026_KMI_First_Aid_2026_KMI_First_Aid_Statement.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-14T00:01:36.183Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1885,
+ "fields": {
+  "problem": 920,
+  "title": "Gas Readings",
+  "file": "problems/2026_KMI_First_Aid_KMI_Gas_Readings.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-08-14T00:01:36.196Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1886,
+ "fields": {
+  "problem": 920,
+  "title": "Bentley - Injuries",
+  "file": "problems/2026_KMI_First_Aid_2026_First_aid_victim_Bentley.pdf",
+  "sort_order": 30,
+  "uploaded_at": "2026-08-14T00:01:36.207Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1887,
+ "fields": {
+  "problem": 920,
+  "title": "Bentley - Triage",
+  "file": "problems/2026_KMI_First_Aid_Bentley_Triage.pdf",
+  "sort_order": 40,
+  "uploaded_at": "2026-08-14T00:01:36.220Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1888,
+ "fields": {
+  "problem": 920,
+  "title": "Bentley - Skill Sheets",
+  "file": "problems/2026_KMI_First_Aid_Bentley_Skill_Sheets.pdf",
+  "sort_order": 50,
+  "uploaded_at": "2026-08-14T00:01:36.234Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1889,
+ "fields": {
+  "problem": 920,
+  "title": "George - Injuries",
+  "file": "problems/2026_KMI_First_Aid_2026_First_aid_victim_George.pdf",
+  "sort_order": 60,
+  "uploaded_at": "2026-08-14T00:01:36.246Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1890,
+ "fields": {
+  "problem": 920,
+  "title": "George - Triage",
+  "file": "problems/2026_KMI_First_Aid_George_Traige.pdf",
+  "sort_order": 70,
+  "uploaded_at": "2026-08-14T00:01:36.257Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1891,
+ "fields": {
+  "problem": 920,
+  "title": "George - Skill Sheets",
+  "file": "problems/2026_KMI_First_Aid_George_s_Skill_sheets.pdf",
+  "sort_order": 80,
+  "uploaded_at": "2026-08-14T00:01:36.268Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1892,
+ "fields": {
+  "problem": 920,
+  "title": "Envelope #1",
+  "file": "problems/2026_KMI_First_Aid_KMI_Envelope_1.pdf",
+  "sort_order": 90,
+  "uploaded_at": "2026-08-14T00:01:36.280Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1893,
+ "fields": {
+  "problem": 920,
+  "title": "Envelope #2",
+  "file": "problems/2026_KMI_First_Aid_KMI_Envelope_2.pdf",
+  "sort_order": 100,
+  "uploaded_at": "2026-08-14T00:01:36.291Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1894,
+ "fields": {
+  "problem": 920,
+  "title": "Envelope #3",
+  "file": "problems/2026_KMI_First_Aid_KMI_Envelope_3.pdf",
+  "sort_order": 110,
+  "uploaded_at": "2026-08-14T00:01:36.301Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1895,
+ "fields": {
+  "problem": 920,
+  "title": "Envelope #2 (Alternate)",
+  "file": "problems/2026_KMI_First_Aid_Envelope_2.pdf",
+  "sort_order": 120,
+  "uploaded_at": "2026-08-14T00:01:36.313Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1896,
+ "fields": {
+  "problem": 920,
+  "title": "Envelope #3 (Alternate)",
+  "file": "problems/2026_KMI_First_Aid_Envelope_3.pdf",
+  "sort_order": 130,
+  "uploaded_at": "2026-08-14T00:01:36.324Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1897,
+ "fields": {
+  "problem": 920,
+  "title": "Envelope #4 (Alternate)",
+  "file": "problems/2026_KMI_First_Aid_Envelope_4.pdf",
+  "sort_order": 140,
+  "uploaded_at": "2026-08-14T00:01:36.336Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1898,
+ "fields": {
+  "problem": 920,
+  "title": "A Card",
+  "file": "problems/2026_KMI_First_Aid_2026_FA_Card_A.pdf",
+  "sort_order": 150,
+  "uploaded_at": "2026-08-14T00:01:36.348Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1899,
+ "fields": {
+  "problem": 920,
+  "title": "B Card",
+  "file": "problems/2026_KMI_First_Aid_2026_FA_Card_B.pdf",
+  "sort_order": 160,
+  "uploaded_at": "2026-08-14T00:01:36.358Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1900,
+ "fields": {
+  "problem": 921,
+  "title": "Written Exams",
+  "file": "problems/2026_KMI_Written_Tests_Kmi_Written_Exams.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-14T00:01:36.374Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1901,
+ "fields": {
+  "problem": 921,
+  "title": "Pro Air Written Test",
+  "file": "problems/2026_KMI_Written_Tests_KMI_26_Pro_Air_Written.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-08-14T00:01:36.386Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1902,
+ "fields": {
+  "problem": 921,
+  "title": "First Aid Written Test",
+  "file": "problems/2026_KMI_Written_Tests_2026_KMI_First_Aid_Test.pdf",
+  "sort_order": 30,
+  "uploaded_at": "2026-08-14T00:01:36.397Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1903,
+ "fields": {
+  "problem": 921,
+  "title": "First Aid Written Test Answer Key",
+  "file": "problems/2026_KMI_Written_Tests_2026_KMI_First_Aid_Test_Answer_Key_2.pdf",
+  "sort_order": 40,
+  "uploaded_at": "2026-08-14T00:01:36.408Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1904,
+ "fields": {
+  "problem": 922,
+  "title": "BG4",
+  "file": "problems/2026_WVU_Bench_Bash_BG4_Day_1.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-14T15:30:00Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1905,
+ "fields": {
+  "problem": 922,
+  "title": "Pro Air",
+  "file": "problems/2026_WVU_Bench_Bash_Pro_Air_Day_1.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-08-14T15:30:00Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1906,
+ "fields": {
+  "problem": 923,
+  "title": "BG4",
+  "file": "problems/2026_WVU_Bench_Bash_BG4_Day_2.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-14T15:30:00Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1907,
+ "fields": {
+  "problem": 923,
+  "title": "Pro Air",
+  "file": "problems/2026_WVU_Bench_Bash_Pro_Air_Day_2.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-08-14T15:30:00Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1908,
+ "fields": {
+  "problem": 924,
+  "title": "Field",
+  "file": "problems/2026_WKMI_Coal_Field_WKMI_26.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-14T22:44:33.505Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1909,
+ "fields": {
+  "problem": 924,
+  "title": "Field (B&W scan)",
+  "file": "problems/2026_WKMI_Coal_Field_2026_KMI.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-08-14T22:44:33.513Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1910,
+ "fields": {
+  "problem": 925,
+  "title": "Statement",
+  "file": "problems/2026_WKMI_First_Aid_2026_WKMI_First_Aid_Statement.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-14T22:44:33.523Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1911,
+ "fields": {
+  "problem": 925,
+  "title": "Pokey - Injuries",
+  "file": "problems/2026_WKMI_First_Aid_2026_First_aid_victim_Pokey.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-08-14T22:44:33.530Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1912,
+ "fields": {
+  "problem": 925,
+  "title": "Pokey - Triage",
+  "file": "problems/2026_WKMI_First_Aid_POKEY_Triage.pdf",
+  "sort_order": 30,
+  "uploaded_at": "2026-08-14T22:44:33.536Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1913,
+ "fields": {
+  "problem": 925,
+  "title": "Pokey - Skill Sheets",
+  "file": "problems/2026_WKMI_First_Aid_POKEY_Skill_Sheets.pdf",
+  "sort_order": 40,
+  "uploaded_at": "2026-08-14T22:44:33.544Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1914,
+ "fields": {
+  "problem": 925,
+  "title": "Smokey - Injuries",
+  "file": "problems/2026_WKMI_First_Aid_2026_First_aid_victim_Smokey_Copy.pdf",
+  "sort_order": 50,
+  "uploaded_at": "2026-08-14T22:44:33.550Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1915,
+ "fields": {
+  "problem": 925,
+  "title": "Smokey - Triage",
+  "file": "problems/2026_WKMI_First_Aid_SMOKEY_Traige.pdf",
+  "sort_order": 60,
+  "uploaded_at": "2026-08-14T22:44:33.558Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1916,
+ "fields": {
+  "problem": 925,
+  "title": "Smokey - Skill Sheets",
+  "file": "problems/2026_WKMI_First_Aid_SMOKEY_Skill_Sheets.pdf",
+  "sort_order": 70,
+  "uploaded_at": "2026-08-14T22:44:33.565Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1917,
+ "fields": {
+  "problem": 925,
+  "title": "Envelope #2",
+  "file": "problems/2026_WKMI_First_Aid_2026_WKMI_Envelope_2.pdf",
+  "sort_order": 80,
+  "uploaded_at": "2026-08-14T22:44:33.571Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1918,
+ "fields": {
+  "problem": 925,
+  "title": "Envelope #3",
+  "file": "problems/2026_WKMI_First_Aid_2026_WKMI_Envelope_3.pdf",
+  "sort_order": 90,
+  "uploaded_at": "2026-08-14T22:44:33.578Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1919,
+ "fields": {
+  "problem": 925,
+  "title": "Labels",
+  "file": "problems/2026_WKMI_First_Aid_WKMI_Labels.pdf",
+  "sort_order": 100,
+  "uploaded_at": "2026-08-14T22:44:33.584Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1920,
+ "fields": {
+  "problem": 925,
+  "title": "A Card",
+  "file": "problems/2026_WKMI_First_Aid_2024_FA_Card_A.pdf",
+  "sort_order": 110,
+  "uploaded_at": "2026-08-14T22:44:33.591Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1921,
+ "fields": {
+  "problem": 925,
+  "title": "B Card",
+  "file": "problems/2026_WKMI_First_Aid_2024_FA_Card_B.pdf",
+  "sort_order": 120,
+  "uploaded_at": "2026-08-14T22:44:33.598Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1922,
+ "fields": {
+  "problem": 926,
+  "title": "BioPak 240-R Judge Check Sheet",
+  "file": "problems/2026_WKMI_Bench_BioPak240R_Judges_Check_Sheet.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-14T22:44:33.608Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1923,
+ "fields": {
+  "problem": 927,
+  "title": "Judge's Training",
+  "file": "problems/2026_WKMI_Preshift_Preshift_Contest_Judge_s_Training.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-14T22:44:33.619Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1924,
+ "fields": {
+  "problem": 928,
+  "title": "First Aid Written Test",
+  "file": "problems/2026_WKMI_Written_Tests_2026_WKMI_First_Aid_Test.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-14T22:44:33.629Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1925,
+ "fields": {
+  "problem": 928,
+  "title": "First Aid Written Test Answer Key",
+  "file": "problems/2026_WKMI_Written_Tests_2026_WKMI_First_Aid_Test_Answer_Key.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-08-14T22:44:33.636Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1926,
+ "fields": {
+  "problem": 928,
+  "title": "First Aid Written Test (with references)",
+  "file": "problems/2026_WKMI_Written_Tests_First_Aid_Test.pdf",
+  "sort_order": 30,
+  "uploaded_at": "2026-08-14T22:44:33.645Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1927,
+ "fields": {
+  "problem": 928,
+  "title": "Benchman Written Test (BioPak 240-R)",
+  "file": "problems/2026_WKMI_Written_Tests_Benchman_Test.pdf",
+  "sort_order": 40,
+  "uploaded_at": "2026-08-14T22:44:33.652Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1928,
+ "fields": {
+  "problem": 928,
+  "title": "Preshift Written Exam",
+  "file": "problems/2026_WKMI_Written_Tests_Written_Exam.pdf",
+  "sort_order": 50,
+  "uploaded_at": "2026-08-14T22:44:33.659Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1929,
+ "fields": {
+  "problem": 929,
+  "title": "Field",
+  "file": "problems/2026_Alabama_First_Aid_Benchman_Day_1_Field.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-14T22:51:52.209Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1930,
+ "fields": {
+  "problem": 930,
+  "title": "Field",
+  "file": "problems/2026_Alabama_First_Aid_Benchman_Day_2_Field.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-14T22:51:52.219Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1931,
+ "fields": {
+  "problem": 931,
+  "title": "Mine Rescue Written Test - Day 1",
+  "file": "problems/2026_Alabama_Written_Tests_Mine_Rescue_Written_Test_Day_1.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-14T22:51:52.231Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1932,
+ "fields": {
+  "problem": 931,
+  "title": "Mine Rescue Written Test - Day 2",
+  "file": "problems/2026_Alabama_Written_Tests_Mine_Rescue_Written_Test_Day_2.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-08-14T22:51:52.237Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 1933,
+ "fields": {
+  "problem": 931,
+  "title": "First Aid Written Test",
+  "file": "problems/2026_Alabama_Written_Tests_First_Aid_Written_Test.pdf",
+  "sort_order": 30,
+  "uploaded_at": "2026-08-14T22:51:52.242Z"
+ }
+},
+{
  "model": "pages.instructionguide",
  "pk": 1,
  "fields": {
@@ -40447,6 +42167,61 @@
   "source_document": 1796,
   "sort_order": 2,
   "created_at": "2026-07-24T04:47:56.559Z"
+ }
+},
+{
+ "model": "pages.quiz",
+ "pk": 5516,
+ "fields": {
+  "problem": 913,
+  "title": "Coal Day 1 Written Test",
+  "source_document": 1821,
+  "sort_order": 90,
+  "created_at": "2026-08-11T00:04:18.317Z"
+ }
+},
+{
+ "model": "pages.quiz",
+ "pk": 5517,
+ "fields": {
+  "problem": 913,
+  "title": "Coal Day 2 Written Test",
+  "source_document": 1823,
+  "sort_order": 90,
+  "created_at": "2026-08-11T00:04:19.763Z"
+ }
+},
+{
+ "model": "pages.quiz",
+ "pk": 5518,
+ "fields": {
+  "problem": 913,
+  "title": "Metal Field Written Test",
+  "source_document": 1825,
+  "sort_order": 90,
+  "created_at": "2026-08-11T00:04:21.209Z"
+ }
+},
+{
+ "model": "pages.quiz",
+ "pk": 5519,
+ "fields": {
+  "problem": 913,
+  "title": "First Aid Written Test",
+  "source_document": 1827,
+  "sort_order": 90,
+  "created_at": "2026-08-11T00:04:23.024Z"
+ }
+},
+{
+ "model": "pages.quiz",
+ "pk": 5520,
+ "fields": {
+  "problem": 921,
+  "title": "First Aid Written Test",
+  "source_document": 1902,
+  "sort_order": 90,
+  "created_at": "2026-08-14T22:18:13.212Z"
  }
 },
 {
@@ -84451,206 +86226,6 @@
 },
 {
  "model": "pages.quizquestion",
- "pk": 266669,
- "fields": {
-  "quiz": 5427,
-  "text": "All of the following are common signs and symptoms of stress EXCEPT:",
-  "image": "",
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266670,
- "fields": {
-  "quiz": 5427,
-  "text": "The chin is ____ to the mouth.",
-  "image": "",
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266671,
- "fields": {
-  "quiz": 5427,
-  "text": "Which one of the following would be the best choice for a stable patient with a suspected spine injury?",
-  "image": "",
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266672,
- "fields": {
-  "quiz": 5427,
-  "text": "The ____ prevents food and other material from entering the trachea.",
-  "image": "",
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266673,
- "fields": {
-  "quiz": 5427,
-  "text": "After assessing responsiveness, you must check for the presence of normal breathing. Do this by:",
-  "image": "",
-  "sort_order": 4
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266674,
- "fields": {
-  "quiz": 5427,
-  "text": "What can be assessed by watching and feeling the chest and abdomen move during breathing?",
-  "image": "",
-  "sort_order": 5
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266675,
- "fields": {
-  "quiz": 5427,
-  "text": "The pressure inside the arteries each time the heart contracts is referred to as the ____ pressure.",
-  "image": "",
-  "sort_order": 6
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266676,
- "fields": {
-  "quiz": 5427,
-  "text": "Which medical condition listed below causes inflammation of the bronchioles and excess mucus production within the airways? It is also characterized by a productive cough.",
-  "image": "",
-  "sort_order": 7
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266677,
- "fields": {
-  "quiz": 5427,
-  "text": "More serious heat-related injuries should be suspected when the patient presents with:",
-  "image": "",
-  "sort_order": 8
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266678,
- "fields": {
-  "quiz": 5427,
-  "text": "The material placed directly over a wound to help control bleeding is called a(n):",
-  "image": "",
-  "sort_order": 9
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266679,
- "fields": {
-  "quiz": 5427,
-  "text": "When caring for a patient with severe burns, you must take BSI precautions and then:",
-  "image": "",
-  "sort_order": 10
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266680,
- "fields": {
-  "quiz": 5427,
-  "text": "A patient who presents with warm, moist skin; weakness; and nausea is likely experiencing:",
-  "image": "",
-  "sort_order": 11
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266681,
- "fields": {
-  "quiz": 5427,
-  "text": "Which one of the following is NOT evaluated as part of the Cincinnati Prehospital Stroke Scale?",
-  "image": "",
-  "sort_order": 12
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266682,
- "fields": {
-  "quiz": 5427,
-  "text": "The assessment of a patient’s mental status or responsiveness includes using the ____ scale.",
-  "image": "",
-  "sort_order": 13
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266683,
- "fields": {
-  "quiz": 5427,
-  "text": "Skin that is bluish in color is called:",
-  "image": "",
-  "sort_order": 14
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266684,
- "fields": {
-  "quiz": 5427,
-  "text": "When assessing circulation for a responsive adult patient, you should assess:",
-  "image": "",
-  "sort_order": 15
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266685,
- "fields": {
-  "quiz": 5427,
-  "text": "Noisy breathing is a sign of ____ airway obstruction.",
-  "image": "",
-  "sort_order": 16
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266686,
- "fields": {
-  "quiz": 5427,
-  "text": "The recommended method for opening the airway of a patient with a possible neck or spine injury is the ____ maneuver.",
-  "image": "",
-  "sort_order": 17
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266687,
- "fields": {
-  "quiz": 5427,
-  "text": "The bladder is located in which body cavity?",
-  "image": "",
-  "sort_order": 18
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266688,
- "fields": {
-  "quiz": 5427,
-  "text": "The spine can be felt (palpated) on the ____ aspect of the body.",
-  "image": "",
-  "sort_order": 19
- }
-},
-{
- "model": "pages.quizquestion",
  "pk": 258388,
  "fields": {
   "quiz": 5428,
@@ -104007,6 +105582,1006 @@
   "text": "13. Talley ______",
   "image": "quiz_images/2026_wmra_written_tests_2026_wmra_bg4_written_test_with_answ_p7.png",
   "sort_order": 19
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266604,
+ "fields": {
+  "quiz": 5516,
+  "text": "_______________ seals should be well hitched in the roof, floor, and ribs to make them as airtight as possible",
+  "image": "",
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266605,
+ "fields": {
+  "quiz": 5516,
+  "text": "Three elements must be present for an ___________ to occur: fuel, oxygen, and heat (ignition)",
+  "image": "",
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266606,
+ "fields": {
+  "quiz": 5516,
+  "text": "Electrical fires are best extinguished by nonconducting agents such as carbon _______________ and certain dry chemicals",
+  "image": "",
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266607,
+ "fields": {
+  "quiz": 5516,
+  "text": "An indication of an explosion may be a _________ in the pressure recording chart for the main fan",
+  "image": "",
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266608,
+ "fields": {
+  "quiz": 5516,
+  "text": "Seals in high volatile coalbeds are often placed _________ feet or more from the fire area",
+  "image": "",
+  "sort_order": 4
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266609,
+ "fields": {
+  "quiz": 5516,
+  "text": "Carbon monoxide is a product of _____________ combustion of any carbon material",
+  "image": "",
+  "sort_order": 5
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266610,
+ "fields": {
+  "quiz": 5516,
+  "text": "The specific gravity of carbon ____________ is 1.5291",
+  "image": "",
+  "sort_order": 6
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266611,
+ "fields": {
+  "quiz": 5516,
+  "text": "_____________ are used to permit two air currents to cross without the intake air short circuiting to the return",
+  "image": "",
+  "sort_order": 7
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266612,
+ "fields": {
+  "quiz": 5516,
+  "text": "The basic principle of mine ventilation is that air always moves from _____ to ______ pressure regions",
+  "image": "",
+  "sort_order": 8
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266613,
+ "fields": {
+  "quiz": 5516,
+  "text": "Electrical fires are “Class ___” fires",
+  "image": "",
+  "sort_order": 9
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266614,
+ "fields": {
+  "quiz": 5517,
+  "text": "___________ consists of tiny particles of solid and liquid matter suspended in the air",
+  "image": "",
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266615,
+ "fields": {
+  "quiz": 5517,
+  "text": "The recommended extinguisher for mine rescue teams is a dry chemical type that contains ______________ phosphate",
+  "image": "",
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266616,
+ "fields": {
+  "quiz": 5517,
+  "text": "Foam is useful only in fighting Class A and ___ fires",
+  "image": "",
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266617,
+ "fields": {
+  "quiz": 5517,
+  "text": "Whenever possible, it is best to enter the mine by way of the _________ intake airway",
+  "image": "",
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266618,
+ "fields": {
+  "quiz": 5517,
+  "text": "Team members cannot travel into or through water over ________ deep (water cannot contact apparatus)",
+  "image": "",
+  "sort_order": 4
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266619,
+ "fields": {
+  "quiz": 5517,
+  "text": "The STEL for Carbon Monoxide is _____ ppm",
+  "image": "",
+  "sort_order": 5
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266620,
+ "fields": {
+  "quiz": 5517,
+  "text": "The ____________ Gas Law, pressure and volume are directly related to temperature, means the hotter the fire the higher the pressures it develops",
+  "image": "",
+  "sort_order": 6
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266621,
+ "fields": {
+  "quiz": 5517,
+  "text": "The IDLH of Carbon ____________ is 40,000 ppm",
+  "image": "",
+  "sort_order": 7
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266622,
+ "fields": {
+  "quiz": 5517,
+  "text": "Hydrogen sulfide is __________ toxic",
+  "image": "",
+  "sort_order": 8
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266623,
+ "fields": {
+  "quiz": 5517,
+  "text": "The __________ of Nitrogen Dioxide is 20 ppm",
+  "image": "",
+  "sort_order": 9
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266624,
+ "fields": {
+  "quiz": 5518,
+  "text": "The mine _____________ duties may include providing suitable transportation for people and supplies as needed",
+  "image": "",
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266625,
+ "fields": {
+  "quiz": 5518,
+  "text": "A solid has a definite volume, but changes shape according to the shape of its container",
+  "image": "",
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266626,
+ "fields": {
+  "quiz": 5518,
+  "text": "An increase in temperature causes a gas to contract",
+  "image": "",
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266627,
+ "fields": {
+  "quiz": 5518,
+  "text": "The rate of diffusion is greatly decreased by higher velocities of air currents or by turbulence in the air",
+  "image": "",
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266628,
+ "fields": {
+  "quiz": 5518,
+  "text": "Color, odor, and taste are physical properties that can help you identify a gas, especially during barefaced exploration",
+  "image": "",
+  "sort_order": 4
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266629,
+ "fields": {
+  "quiz": 5518,
+  "text": "You can tolerate concentrations of up to ½ of ___ percent CO2 over an 8-hour daily period without harmful effects",
+  "image": "",
+  "sort_order": 5
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266630,
+ "fields": {
+  "quiz": 5518,
+  "text": "Oxygen is moderately soluble in water",
+  "image": "",
+  "sort_order": 6
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266631,
+ "fields": {
+  "quiz": 5518,
+  "text": "The specific gravity of Nitrogen is ____________",
+  "image": "",
+  "sort_order": 7
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266632,
+ "fields": {
+  "quiz": 5518,
+  "text": "Normal air contains about 0.03 percent carbon dioxide",
+  "image": "",
+  "sort_order": 8
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266633,
+ "fields": {
+  "quiz": 5518,
+  "text": "High SO2 readings could indicate a mine fire or a sulfide ore dust explosion",
+  "image": "",
+  "sort_order": 9
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266634,
+ "fields": {
+  "quiz": 5518,
+  "text": "Acetylene is moderately soluble in water",
+  "image": "",
+  "sort_order": 10
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266635,
+ "fields": {
+  "quiz": 5518,
+  "text": "___________ fans are used mostly in mines having little overburden",
+  "image": "",
+  "sort_order": 11
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266636,
+ "fields": {
+  "quiz": 5518,
+  "text": "The only natural energy source that can create and sustain an adequate airflow is ______________ energy due to temperature difference",
+  "image": "",
+  "sort_order": 12
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266637,
+ "fields": {
+  "quiz": 5518,
+  "text": "The greater the pressure difference the fan creates, the faster the flow of air",
+  "image": "",
+  "sort_order": 13
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266638,
+ "fields": {
+  "quiz": 5518,
+  "text": "This symbol is _____________________________",
+  "image": "",
+  "sort_order": 14
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266639,
+ "fields": {
+  "quiz": 5518,
+  "text": "Sometimes, “runners” are stationed at the fresh air base to carry messages from the fresh air base to the command center in the event of a communication breakdown",
+  "image": "",
+  "sort_order": 15
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266640,
+ "fields": {
+  "quiz": 5518,
+  "text": "In multi-level mines, the fresh air base is often set up in one place and remains there throughout an operation",
+  "image": "",
+  "sort_order": 16
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266641,
+ "fields": {
+  "quiz": 5518,
+  "text": "Fighting a fire with water removes the _________",
+  "image": "",
+  "sort_order": 17
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266642,
+ "fields": {
+  "quiz": 5518,
+  "text": "Potassium is a class ______ fire",
+  "image": "",
+  "sort_order": 18
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266643,
+ "fields": {
+  "quiz": 5518,
+  "text": "High expansion foam is used mainly to contain and control fire by removing two legs of the fire triangle—oxygen and _______",
+  "image": "",
+  "sort_order": 19
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266644,
+ "fields": {
+  "quiz": 5518,
+  "text": "Five hundred feet is a common distance, although there have been successes in the past where foam was used from more than 2,000 feet away from the fire",
+  "image": "",
+  "sort_order": 20
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266645,
+ "fields": {
+  "quiz": 5518,
+  "text": "This is a __________________________",
+  "image": "",
+  "sort_order": 21
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266646,
+ "fields": {
+  "quiz": 5518,
+  "text": "The maximum allowable PPM for ammonia is __________",
+  "image": "",
+  "sort_order": 22
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266647,
+ "fields": {
+  "quiz": 5518,
+  "text": "Multiple fractures is a ______________ priority condition",
+  "image": "",
+  "sort_order": 23
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266648,
+ "fields": {
+  "quiz": 5518,
+  "text": "Most of the time the body will remain under the water for the first ____ days and then it will float",
+  "image": "",
+  "sort_order": 24
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266649,
+ "fields": {
+  "quiz": 5518,
+  "text": "The decomposition of organic matter by bacteria, fungi, and oxidation, resulting in the formation of foul-smelling products",
+  "image": "",
+  "sort_order": 25
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266650,
+ "fields": {
+  "quiz": 5518,
+  "text": "The advantage of ___________ ventilation is that gas conditions can be carefully controlled, and the operation can be halted at any point in which conditions become hazardous",
+  "image": "",
+  "sort_order": 26
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266651,
+ "fields": {
+  "quiz": 5518,
+  "text": "During ___________ ventilation, a certain amount of air will unavoidably enter the area behind the seals",
+  "image": "",
+  "sort_order": 27
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266652,
+ "fields": {
+  "quiz": 5518,
+  "text": "Re-ventilation after an explosion in a single-level, room-and-pillar mine is usually accomplished by _____________ ventilation",
+  "image": "",
+  "sort_order": 28
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266653,
+ "fields": {
+  "quiz": 5518,
+  "text": "As long as conditions remain favorable, teams can go in and build a new air lock, put up any bulkheads needed in parallel passageways, and prepare the area being recovered for re-ventilation",
+  "image": "",
+  "sort_order": 29
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266654,
+ "fields": {
+  "quiz": 5519,
+  "text": "On the lower half of the _________ is the most appropriate hand location for chest compressions on an adult",
+  "image": "",
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266655,
+ "fields": {
+  "quiz": 5519,
+  "text": "Carotid and femoral are the two pulse points that are referred to as _____________ pulses",
+  "image": "",
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266656,
+ "fields": {
+  "quiz": 5519,
+  "text": "A patient who presents with normal vital signs and shows no indications of life- threatening problems may be described as __________",
+  "image": "",
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266657,
+ "fields": {
+  "quiz": 5519,
+  "text": "Asthma is characterized by a narrowing of the ___________ airway, often associated with exercise or allergies",
+  "image": "",
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266658,
+ "fields": {
+  "quiz": 5519,
+  "text": "Your patient has burned his hand, the skin is red and blistered and the burn is extremely painful, this burn would be classified as __________ thickness",
+  "image": "",
+  "sort_order": 4
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266659,
+ "fields": {
+  "quiz": 5519,
+  "text": "________________ shock is the type of shock when the body sustains a significant loss of blood",
+  "image": "",
+  "sort_order": 5
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266660,
+ "fields": {
+  "quiz": 5519,
+  "text": "The partial or complete tearing of the ligaments and tendons that support a joint is called a _____________",
+  "image": "",
+  "sort_order": 6
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266661,
+ "fields": {
+  "quiz": 5519,
+  "text": "It is important to maintain the hand and foot of an injured extremity in a normal and comfortable position during splinting, this position is called the position of ________",
+  "image": "",
+  "sort_order": 7
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266662,
+ "fields": {
+  "quiz": 5519,
+  "text": "Your patient is unresponsive, lying ________ on the floor after falling off a high ladder, the appropriate care for this patient would include using the log-roll maneuver to roll the patient into the ________ position",
+  "image": "",
+  "sort_order": 8
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266663,
+ "fields": {
+  "quiz": 5519,
+  "text": "Your patient has an open wound to her chest. The wound is ___________ and making “sucking” noises as she breathes you should cover the wound with an occlusive dressing",
+  "image": "",
+  "sort_order": 9
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266664,
+ "fields": {
+  "quiz": 5519,
+  "text": "You are caring for a patient with an open chest wound and have covered the wound with an occlusive dressing, the patient becomes increasingly short of breath, you should ___________ remove the dressing to allow air to escape",
+  "image": "",
+  "sort_order": 10
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266665,
+ "fields": {
+  "quiz": 5519,
+  "text": "The first stage of labor begins at the onset of contractions and end when the baby enters the __________ canal",
+  "image": "",
+  "sort_order": 11
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266666,
+ "fields": {
+  "quiz": 5519,
+  "text": "You are triaging an adult patient who presents as unresponsive and breathing at a rate of 24, the patient should be triaged as ____________",
+  "image": "",
+  "sort_order": 12
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266667,
+ "fields": {
+  "quiz": 5519,
+  "text": "When more rescuers arrive on scene you should assign tasks to other rescuers and rotate compressors every ___ minutes or more frequently if needed to avoid fatigue",
+  "image": "",
+  "sort_order": 13
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266668,
+ "fields": {
+  "quiz": 5519,
+  "text": "Too much opioid in the body can overwhelm the ________ and depress the natural drive to breathe, this respiratory depression can result in respiratory arrest and cardiac arrest",
+  "image": "",
+  "sort_order": 14
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266669,
+ "fields": {
+  "quiz": 5427,
+  "text": "All of the following are common signs and symptoms of stress EXCEPT:",
+  "image": "",
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266670,
+ "fields": {
+  "quiz": 5427,
+  "text": "The chin is ____ to the mouth.",
+  "image": "",
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266671,
+ "fields": {
+  "quiz": 5427,
+  "text": "Which one of the following would be the best choice for a stable patient with a suspected spine injury?",
+  "image": "",
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266672,
+ "fields": {
+  "quiz": 5427,
+  "text": "The ____ prevents food and other material from entering the trachea.",
+  "image": "",
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266673,
+ "fields": {
+  "quiz": 5427,
+  "text": "After assessing responsiveness, you must check for the presence of normal breathing. Do this by:",
+  "image": "",
+  "sort_order": 4
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266674,
+ "fields": {
+  "quiz": 5427,
+  "text": "What can be assessed by watching and feeling the chest and abdomen move during breathing?",
+  "image": "",
+  "sort_order": 5
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266675,
+ "fields": {
+  "quiz": 5427,
+  "text": "The pressure inside the arteries each time the heart contracts is referred to as the ____ pressure.",
+  "image": "",
+  "sort_order": 6
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266676,
+ "fields": {
+  "quiz": 5427,
+  "text": "Which medical condition listed below causes inflammation of the bronchioles and excess mucus production within the airways? It is also characterized by a productive cough.",
+  "image": "",
+  "sort_order": 7
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266677,
+ "fields": {
+  "quiz": 5427,
+  "text": "More serious heat-related injuries should be suspected when the patient presents with:",
+  "image": "",
+  "sort_order": 8
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266678,
+ "fields": {
+  "quiz": 5427,
+  "text": "The material placed directly over a wound to help control bleeding is called a(n):",
+  "image": "",
+  "sort_order": 9
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266679,
+ "fields": {
+  "quiz": 5427,
+  "text": "When caring for a patient with severe burns, you must take BSI precautions and then:",
+  "image": "",
+  "sort_order": 10
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266680,
+ "fields": {
+  "quiz": 5427,
+  "text": "A patient who presents with warm, moist skin; weakness; and nausea is likely experiencing:",
+  "image": "",
+  "sort_order": 11
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266681,
+ "fields": {
+  "quiz": 5427,
+  "text": "Which one of the following is NOT evaluated as part of the Cincinnati Prehospital Stroke Scale?",
+  "image": "",
+  "sort_order": 12
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266682,
+ "fields": {
+  "quiz": 5427,
+  "text": "The assessment of a patient’s mental status or responsiveness includes using the ____ scale.",
+  "image": "",
+  "sort_order": 13
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266683,
+ "fields": {
+  "quiz": 5427,
+  "text": "Skin that is bluish in color is called:",
+  "image": "",
+  "sort_order": 14
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266684,
+ "fields": {
+  "quiz": 5427,
+  "text": "When assessing circulation for a responsive adult patient, you should assess:",
+  "image": "",
+  "sort_order": 15
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266685,
+ "fields": {
+  "quiz": 5427,
+  "text": "Noisy breathing is a sign of ____ airway obstruction.",
+  "image": "",
+  "sort_order": 16
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266686,
+ "fields": {
+  "quiz": 5427,
+  "text": "The recommended method for opening the airway of a patient with a possible neck or spine injury is the ____ maneuver.",
+  "image": "",
+  "sort_order": 17
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266687,
+ "fields": {
+  "quiz": 5427,
+  "text": "The bladder is located in which body cavity?",
+  "image": "",
+  "sort_order": 18
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266688,
+ "fields": {
+  "quiz": 5427,
+  "text": "The spine can be felt (palpated) on the ____ aspect of the body.",
+  "image": "",
+  "sort_order": 19
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266689,
+ "fields": {
+  "quiz": 5520,
+  "text": "Covid-19, ___________, and tetanus are commonly recommended immunizations for health care providers.",
+  "image": "",
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266690,
+ "fields": {
+  "quiz": 5520,
+  "text": "Early recognition of foreign body airway obstruction is the ________ to successful outcome.",
+  "image": "",
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266691,
+ "fields": {
+  "quiz": 5520,
+  "text": "It is important to maintain the hand and foot of an injured extremity in a normal and comfortable position during _____________; this position is called the position of function.",
+  "image": "",
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266692,
+ "fields": {
+  "quiz": 5520,
+  "text": "Your patient has burned his hand, the skin is red and blistered and the burn is extremely painful; this burn would be classified as _________ thickness.",
+  "image": "",
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266693,
+ "fields": {
+  "quiz": 5520,
+  "text": "The ______ common vital signs are pulse, respirations, blood pressure, pupils, and skin signs.",
+  "image": "",
+  "sort_order": 4
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266694,
+ "fields": {
+  "quiz": 5520,
+  "text": "Before ___________ a combative patient, the Emergency Medical Responder should obtain law enforcement assistance.",
+  "image": "",
+  "sort_order": 5
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266695,
+ "fields": {
+  "quiz": 5520,
+  "text": "The _________ are found in an area behind the abdominal wall.",
+  "image": "",
+  "sort_order": 6
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266696,
+ "fields": {
+  "quiz": 5520,
+  "text": "A patient has been involved in a rollover vehicle collision; in this __________, the rollover is an example of the mechanism of injury.",
+  "image": "",
+  "sort_order": 7
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266697,
+ "fields": {
+  "quiz": 5520,
+  "text": "On the lower half of the sternum is the most appropriate hand location for chest compressions on an _______.",
+  "image": "",
+  "sort_order": 8
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266698,
+ "fields": {
+  "quiz": 5520,
+  "text": "You have responded to a call for a possible overdose; you should first _______ that the scene is safe.",
+  "image": "",
+  "sort_order": 9
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266699,
+ "fields": {
+  "quiz": 5520,
+  "text": "You have just finished applying a splint to a patient's leg; you should __________ circulation, sensation, and motor function.",
+  "image": "",
+  "sort_order": 10
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266700,
+ "fields": {
+  "quiz": 5520,
+  "text": "Hypoxia from _________ respirations is a potential complication from a patient who appears to have injured a rib without a flailed segment, and the patient is alert and oriented.",
+  "image": "",
+  "sort_order": 11
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266701,
+ "fields": {
+  "quiz": 5520,
+  "text": "The appropriate care for an amputated body part is to wrap it with ______ gauze and place it on ice.",
+  "image": "",
+  "sort_order": 12
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266702,
+ "fields": {
+  "quiz": 5520,
+  "text": "Immediate transport is the most important to the survival of a patient showing ________ of shock.",
+  "image": "",
+  "sort_order": 13
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266703,
+ "fields": {
+  "quiz": 5520,
+  "text": "When assessing a patient with a musculoskeletal injury, it is important to ________ circulation, sensation, and motor function.",
+  "image": "",
+  "sort_order": 14
  }
 },
 {
@@ -245561,806 +248136,6 @@
 },
 {
  "model": "pages.quizchoice",
- "pk": 857020,
- "fields": {
-  "question": 266669,
-  "text": "Irritability",
-  "is_correct": false,
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857021,
- "fields": {
-  "question": 266669,
-  "text": "Difficulty sleeping",
-  "is_correct": false,
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857022,
- "fields": {
-  "question": 266669,
-  "text": "Increased appetite",
-  "is_correct": true,
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857023,
- "fields": {
-  "question": 266669,
-  "text": "Difficulty concentrating",
-  "is_correct": false,
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857024,
- "fields": {
-  "question": 266670,
-  "text": "Superior",
-  "is_correct": false,
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857025,
- "fields": {
-  "question": 266670,
-  "text": "Lateral",
-  "is_correct": false,
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857026,
- "fields": {
-  "question": 266670,
-  "text": "Inferior",
-  "is_correct": true,
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857027,
- "fields": {
-  "question": 266670,
-  "text": "Medial",
-  "is_correct": false,
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857028,
- "fields": {
-  "question": 266671,
-  "text": "One-rescuer assist",
-  "is_correct": false,
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857029,
- "fields": {
-  "question": 266671,
-  "text": "Cradle carry",
-  "is_correct": false,
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857030,
- "fields": {
-  "question": 266671,
-  "text": "Two-rescuer assist",
-  "is_correct": false,
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857031,
- "fields": {
-  "question": 266671,
-  "text": "Shoulder drag",
-  "is_correct": true,
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857032,
- "fields": {
-  "question": 266672,
-  "text": "Tongue",
-  "is_correct": false,
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857033,
- "fields": {
-  "question": 266672,
-  "text": "Alveoli",
-  "is_correct": false,
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857034,
- "fields": {
-  "question": 266672,
-  "text": "Pharynx",
-  "is_correct": false,
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857035,
- "fields": {
-  "question": 266672,
-  "text": "Epiglottis",
-  "is_correct": true,
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857036,
- "fields": {
-  "question": 266673,
-  "text": "Shaking the patient",
-  "is_correct": false,
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857037,
- "fields": {
-  "question": 266673,
-  "text": "Looking for chest rise",
-  "is_correct": true,
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857038,
- "fields": {
-  "question": 266673,
-  "text": "Observing pupil response",
-  "is_correct": false,
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857039,
- "fields": {
-  "question": 266673,
-  "text": "Sweeping the mouth for obstructions",
-  "is_correct": false,
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857040,
- "fields": {
-  "question": 266674,
-  "text": "Pulse rate",
-  "is_correct": false,
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857041,
- "fields": {
-  "question": 266674,
-  "text": "Blood pressure",
-  "is_correct": false,
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857042,
- "fields": {
-  "question": 266674,
-  "text": "Skin signs",
-  "is_correct": false,
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857043,
- "fields": {
-  "question": 266674,
-  "text": "Respiratory rate",
-  "is_correct": true,
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857044,
- "fields": {
-  "question": 266675,
-  "text": "Diastolic",
-  "is_correct": false,
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857045,
- "fields": {
-  "question": 266675,
-  "text": "Pulse",
-  "is_correct": false,
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857046,
- "fields": {
-  "question": 266675,
-  "text": "Systolic",
-  "is_correct": true,
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857047,
- "fields": {
-  "question": 266675,
-  "text": "Mean",
-  "is_correct": false,
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857048,
- "fields": {
-  "question": 266676,
-  "text": "Asthma",
-  "is_correct": false,
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857049,
- "fields": {
-  "question": 266676,
-  "text": "Bronchitis",
-  "is_correct": true,
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857050,
- "fields": {
-  "question": 266676,
-  "text": "Emphysema",
-  "is_correct": false,
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857051,
- "fields": {
-  "question": 266676,
-  "text": "Hyperventilation",
-  "is_correct": false,
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857052,
- "fields": {
-  "question": 266677,
-  "text": "Feeling lightheaded",
-  "is_correct": false,
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857053,
- "fields": {
-  "question": 266677,
-  "text": "Muscle cramps",
-  "is_correct": false,
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857054,
- "fields": {
-  "question": 266677,
-  "text": "Hot, dry, skin",
-  "is_correct": true,
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857055,
- "fields": {
-  "question": 266677,
-  "text": "Weakness",
-  "is_correct": false,
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857056,
- "fields": {
-  "question": 266678,
-  "text": "Bandage",
-  "is_correct": false,
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857057,
- "fields": {
-  "question": 266678,
-  "text": "Elastic bandage",
-  "is_correct": false,
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857058,
- "fields": {
-  "question": 266678,
-  "text": "Occlusive dressing",
-  "is_correct": false,
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857059,
- "fields": {
-  "question": 266678,
-  "text": "Dressing",
-  "is_correct": true,
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857060,
- "fields": {
-  "question": 266679,
-  "text": "Stop the burning process",
-  "is_correct": true,
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857061,
- "fields": {
-  "question": 266679,
-  "text": "Prevent further contamination",
-  "is_correct": false,
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857062,
- "fields": {
-  "question": 266679,
-  "text": "Flush only large burn areas",
-  "is_correct": false,
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857063,
- "fields": {
-  "question": 266679,
-  "text": "Remove jewelry",
-  "is_correct": false,
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857064,
- "fields": {
-  "question": 266680,
-  "text": "Heat exhaustion",
-  "is_correct": true,
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857065,
- "fields": {
-  "question": 266680,
-  "text": "Heat stroke",
-  "is_correct": false,
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857066,
- "fields": {
-  "question": 266680,
-  "text": "Heat cramps",
-  "is_correct": false,
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857067,
- "fields": {
-  "question": 266680,
-  "text": "Mild heat stroke",
-  "is_correct": false,
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857068,
- "fields": {
-  "question": 266681,
-  "text": "Abnormal speech",
-  "is_correct": false,
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857069,
- "fields": {
-  "question": 266681,
-  "text": "Equal circulation",
-  "is_correct": true,
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857070,
- "fields": {
-  "question": 266681,
-  "text": "Facial droop",
-  "is_correct": false,
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857071,
- "fields": {
-  "question": 266681,
-  "text": "Arm drift",
-  "is_correct": false,
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857072,
- "fields": {
-  "question": 266682,
-  "text": "AVPU",
-  "is_correct": true,
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857073,
- "fields": {
-  "question": 266682,
-  "text": "ABC",
-  "is_correct": false,
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857074,
- "fields": {
-  "question": 266682,
-  "text": "SAMPLE",
-  "is_correct": false,
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857075,
- "fields": {
-  "question": 266682,
-  "text": "BP-DOC",
-  "is_correct": false,
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857076,
- "fields": {
-  "question": 266683,
-  "text": "Pale",
-  "is_correct": false,
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857077,
- "fields": {
-  "question": 266683,
-  "text": "Flushed",
-  "is_correct": false,
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857078,
- "fields": {
-  "question": 266683,
-  "text": "Cyanotic",
-  "is_correct": true,
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857079,
- "fields": {
-  "question": 266683,
-  "text": "Jaundice",
-  "is_correct": false,
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857080,
- "fields": {
-  "question": 266684,
-  "text": "The carotid pulse",
-  "is_correct": false,
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857081,
- "fields": {
-  "question": 266684,
-  "text": "Radial pulse on both sides of the body",
-  "is_correct": false,
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857082,
- "fields": {
-  "question": 266684,
-  "text": "The radial pulse on one side",
-  "is_correct": true,
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857083,
- "fields": {
-  "question": 266684,
-  "text": "The distal pulse",
-  "is_correct": false,
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857084,
- "fields": {
-  "question": 266685,
-  "text": "Bilateral",
-  "is_correct": false,
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857085,
- "fields": {
-  "question": 266685,
-  "text": "Complete",
-  "is_correct": false,
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857086,
- "fields": {
-  "question": 266685,
-  "text": "Adequate",
-  "is_correct": false,
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857087,
- "fields": {
-  "question": 266685,
-  "text": "Partial",
-  "is_correct": true,
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857088,
- "fields": {
-  "question": 266686,
-  "text": "Jaw-thrust",
-  "is_correct": true,
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857089,
- "fields": {
-  "question": 266686,
-  "text": "Mouth-to-nose",
-  "is_correct": false,
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857090,
- "fields": {
-  "question": 266686,
-  "text": "Abdominal thrust",
-  "is_correct": false,
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857091,
- "fields": {
-  "question": 266686,
-  "text": "Head-tilt/chin-lift",
-  "is_correct": false,
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857092,
- "fields": {
-  "question": 266687,
-  "text": "Cranial",
-  "is_correct": false,
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857093,
- "fields": {
-  "question": 266687,
-  "text": "Thoracic",
-  "is_correct": false,
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857094,
- "fields": {
-  "question": 266687,
-  "text": "Abdominal",
-  "is_correct": false,
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857095,
- "fields": {
-  "question": 266687,
-  "text": "Pelvic",
-  "is_correct": true,
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857096,
- "fields": {
-  "question": 266688,
-  "text": "Posterior",
-  "is_correct": true,
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857097,
- "fields": {
-  "question": 266688,
-  "text": "Anterior",
-  "is_correct": false,
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857098,
- "fields": {
-  "question": 266688,
-  "text": "Inferior",
-  "is_correct": false,
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizchoice",
- "pk": 857099,
- "fields": {
-  "question": 266688,
-  "text": "Superior",
-  "is_correct": false,
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizchoice",
  "pk": 830299,
  "fields": {
   "question": 258388,
@@ -309010,949 +310785,6 @@
  }
 },
 {
- "model": "pages.competition",
- "pk": 368,
- "fields": {
-  "name": "Southeast Regional Mine Rescue Competition",
-  "year": 2026,
-  "calendar_event": 3,
-  "description": "",
-  "created_at": "2026-08-10T20:44:00.014Z",
-  "updated_at": "2026-08-10T20:44:00.014Z"
- }
-},
-{
- "model": "pages.competitionproblem",
- "pk": 908,
- "fields": {
-  "competition": 368,
-  "title": "Coal Day 1 Field",
-  "description": "",
-  "sort_order": 10,
-  "created_at": "2026-08-10T20:44:00.021Z",
-  "updated_at": "2026-08-10T20:44:00.021Z"
- }
-},
-{
- "model": "pages.competitionproblem",
- "pk": 909,
- "fields": {
-  "competition": 368,
-  "title": "Coal Day 2 Field",
-  "description": "",
-  "sort_order": 20,
-  "created_at": "2026-08-10T20:44:00.048Z",
-  "updated_at": "2026-08-10T20:44:00.048Z"
- }
-},
-{
- "model": "pages.competitionproblem",
- "pk": 910,
- "fields": {
-  "competition": 368,
-  "title": "MNM Day 1 Field",
-  "description": "",
-  "sort_order": 30,
-  "created_at": "2026-08-10T20:44:00.078Z",
-  "updated_at": "2026-08-10T20:44:00.078Z"
- }
-},
-{
- "model": "pages.competitionproblem",
- "pk": 911,
- "fields": {
-  "competition": 368,
-  "title": "MNM Day 2 Field",
-  "description": "",
-  "sort_order": 40,
-  "created_at": "2026-08-10T20:44:00.095Z",
-  "updated_at": "2026-08-10T20:44:00.095Z"
- }
-},
-{
- "model": "pages.competitionproblem",
- "pk": 912,
- "fields": {
-  "competition": 368,
-  "title": "First Aid",
-  "description": "",
-  "sort_order": 50,
-  "created_at": "2026-08-10T20:44:00.111Z",
-  "updated_at": "2026-08-10T20:44:00.111Z"
- }
-},
-{
- "model": "pages.competitionproblem",
- "pk": 913,
- "fields": {
-  "competition": 368,
-  "title": "Written Tests",
-  "description": "",
-  "sort_order": 60,
-  "created_at": "2026-08-10T20:44:00.129Z",
-  "updated_at": "2026-08-10T20:44:00.129Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1814,
- "fields": {
-  "problem": 908,
-  "title": "Field",
-  "file": "problems/2026_SERegional_Coal_Day_1_Field_TN_2026_Coal_Day_1_Judge_Book.pdf",
-  "sort_order": 10,
-  "uploaded_at": "2026-08-10T20:44:00.033Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1815,
- "fields": {
-  "problem": 908,
-  "title": "Team Maps",
-  "file": "problems/2026_SERegional_Coal_Day_1_Field_TN_2026_Coal_Day_1_Team_Maps.pdf",
-  "sort_order": 20,
-  "uploaded_at": "2026-08-10T20:44:00.043Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1816,
- "fields": {
-  "problem": 909,
-  "title": "Field",
-  "file": "problems/2026_SERegional_Coal_Day_2_Field_TN_2026_Coal_Day_2_Judge_Book.pdf",
-  "sort_order": 10,
-  "uploaded_at": "2026-08-10T20:44:00.061Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1817,
- "fields": {
-  "problem": 909,
-  "title": "Team Maps",
-  "file": "problems/2026_SERegional_Coal_Day_2_Field_TN_2026_Coal_Day_2_Team_Maps.pdf",
-  "sort_order": 20,
-  "uploaded_at": "2026-08-10T20:44:00.071Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1818,
- "fields": {
-  "problem": 910,
-  "title": "Field",
-  "file": "problems/2026_SERegional_MNM_Day_1_Field_Metal_DAY_1_Problem.pdf",
-  "sort_order": 10,
-  "uploaded_at": "2026-08-10T20:44:00.088Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1819,
- "fields": {
-  "problem": 911,
-  "title": "Field",
-  "file": "problems/2026_SERegional_MNM_Day_2_Field_Metal_DAY_2_Problem.pdf",
-  "sort_order": 10,
-  "uploaded_at": "2026-08-10T20:44:00.106Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1820,
- "fields": {
-  "problem": 912,
-  "title": "Problem",
-  "file": "problems/2026_SERegional_First_Aid_Mine_Rescue_Competition_FA_2026_Final.pdf",
-  "sort_order": 10,
-  "uploaded_at": "2026-08-10T20:44:00.122Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1821,
- "fields": {
-  "problem": 913,
-  "title": "Coal Day 1 Written Test",
-  "file": "problems/2026_SERegional_Written_Tests_Coal_Day_1.pdf",
-  "sort_order": 10,
-  "uploaded_at": "2026-08-10T20:44:00.140Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1822,
- "fields": {
-  "problem": 913,
-  "title": "Coal Day 1 Written Test Answers",
-  "file": "problems/2026_SERegional_Written_Tests_Coal_Day_1_Key.pdf",
-  "sort_order": 20,
-  "uploaded_at": "2026-08-10T20:44:00.149Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1823,
- "fields": {
-  "problem": 913,
-  "title": "Coal Day 2 Written Test",
-  "file": "problems/2026_SERegional_Written_Tests_Coal_Day_2.pdf",
-  "sort_order": 30,
-  "uploaded_at": "2026-08-10T20:44:00.160Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1824,
- "fields": {
-  "problem": 913,
-  "title": "Coal Day 2 Written Test Answers",
-  "file": "problems/2026_SERegional_Written_Tests_Coal_Day_2_Key.pdf",
-  "sort_order": 40,
-  "uploaded_at": "2026-08-10T20:44:00.170Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1825,
- "fields": {
-  "problem": 913,
-  "title": "Metal Field Written Test",
-  "file": "problems/2026_SERegional_Written_Tests_Metal_Field_Test.pdf",
-  "sort_order": 50,
-  "uploaded_at": "2026-08-10T20:44:00.181Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1826,
- "fields": {
-  "problem": 913,
-  "title": "Metal Field Written Test Answers",
-  "file": "problems/2026_SERegional_Written_Tests_Metal_Field_Test_Key.pdf",
-  "sort_order": 60,
-  "uploaded_at": "2026-08-10T20:44:00.191Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1827,
- "fields": {
-  "problem": 913,
-  "title": "First Aid Written Test",
-  "file": "problems/2026_SERegional_Written_Tests_FA_Test.pdf",
-  "sort_order": 70,
-  "uploaded_at": "2026-08-10T20:44:00.201Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1828,
- "fields": {
-  "problem": 913,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2026_SERegional_Written_Tests_FA_Test_Key.pdf",
-  "sort_order": 80,
-  "uploaded_at": "2026-08-10T20:44:00.210Z"
- }
-},
-{
- "model": "pages.quiz",
- "pk": 5516,
- "fields": {
-  "problem": 913,
-  "title": "Coal Day 1 Written Test",
-  "source_document": 1821,
-  "sort_order": 90,
-  "created_at": "2026-08-11T00:04:18.317Z"
- }
-},
-{
- "model": "pages.quiz",
- "pk": 5517,
- "fields": {
-  "problem": 913,
-  "title": "Coal Day 2 Written Test",
-  "source_document": 1823,
-  "sort_order": 90,
-  "created_at": "2026-08-11T00:04:19.763Z"
- }
-},
-{
- "model": "pages.quiz",
- "pk": 5518,
- "fields": {
-  "problem": 913,
-  "title": "Metal Field Written Test",
-  "source_document": 1825,
-  "sort_order": 90,
-  "created_at": "2026-08-11T00:04:21.209Z"
- }
-},
-{
- "model": "pages.quiz",
- "pk": 5519,
- "fields": {
-  "problem": 913,
-  "title": "First Aid Written Test",
-  "source_document": 1827,
-  "sort_order": 90,
-  "created_at": "2026-08-11T00:04:23.024Z"
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266604,
- "fields": {
-  "quiz": 5516,
-  "text": "_______________ seals should be well hitched in the roof, floor, and ribs to make them as airtight as possible",
-  "image": "",
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266605,
- "fields": {
-  "quiz": 5516,
-  "text": "Three elements must be present for an ___________ to occur: fuel, oxygen, and heat (ignition)",
-  "image": "",
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266606,
- "fields": {
-  "quiz": 5516,
-  "text": "Electrical fires are best extinguished by nonconducting agents such as carbon _______________ and certain dry chemicals",
-  "image": "",
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266607,
- "fields": {
-  "quiz": 5516,
-  "text": "An indication of an explosion may be a _________ in the pressure recording chart for the main fan",
-  "image": "",
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266608,
- "fields": {
-  "quiz": 5516,
-  "text": "Seals in high volatile coalbeds are often placed _________ feet or more from the fire area",
-  "image": "",
-  "sort_order": 4
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266609,
- "fields": {
-  "quiz": 5516,
-  "text": "Carbon monoxide is a product of _____________ combustion of any carbon material",
-  "image": "",
-  "sort_order": 5
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266610,
- "fields": {
-  "quiz": 5516,
-  "text": "The specific gravity of carbon ____________ is 1.5291",
-  "image": "",
-  "sort_order": 6
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266611,
- "fields": {
-  "quiz": 5516,
-  "text": "_____________ are used to permit two air currents to cross without the intake air short circuiting to the return",
-  "image": "",
-  "sort_order": 7
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266612,
- "fields": {
-  "quiz": 5516,
-  "text": "The basic principle of mine ventilation is that air always moves from _____ to ______ pressure regions",
-  "image": "",
-  "sort_order": 8
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266613,
- "fields": {
-  "quiz": 5516,
-  "text": "Electrical fires are “Class ___” fires",
-  "image": "",
-  "sort_order": 9
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266614,
- "fields": {
-  "quiz": 5517,
-  "text": "___________ consists of tiny particles of solid and liquid matter suspended in the air",
-  "image": "",
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266615,
- "fields": {
-  "quiz": 5517,
-  "text": "The recommended extinguisher for mine rescue teams is a dry chemical type that contains ______________ phosphate",
-  "image": "",
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266616,
- "fields": {
-  "quiz": 5517,
-  "text": "Foam is useful only in fighting Class A and ___ fires",
-  "image": "",
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266617,
- "fields": {
-  "quiz": 5517,
-  "text": "Whenever possible, it is best to enter the mine by way of the _________ intake airway",
-  "image": "",
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266618,
- "fields": {
-  "quiz": 5517,
-  "text": "Team members cannot travel into or through water over ________ deep (water cannot contact apparatus)",
-  "image": "",
-  "sort_order": 4
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266619,
- "fields": {
-  "quiz": 5517,
-  "text": "The STEL for Carbon Monoxide is _____ ppm",
-  "image": "",
-  "sort_order": 5
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266620,
- "fields": {
-  "quiz": 5517,
-  "text": "The ____________ Gas Law, pressure and volume are directly related to temperature, means the hotter the fire the higher the pressures it develops",
-  "image": "",
-  "sort_order": 6
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266621,
- "fields": {
-  "quiz": 5517,
-  "text": "The IDLH of Carbon ____________ is 40,000 ppm",
-  "image": "",
-  "sort_order": 7
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266622,
- "fields": {
-  "quiz": 5517,
-  "text": "Hydrogen sulfide is __________ toxic",
-  "image": "",
-  "sort_order": 8
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266623,
- "fields": {
-  "quiz": 5517,
-  "text": "The __________ of Nitrogen Dioxide is 20 ppm",
-  "image": "",
-  "sort_order": 9
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266624,
- "fields": {
-  "quiz": 5518,
-  "text": "The mine _____________ duties may include providing suitable transportation for people and supplies as needed",
-  "image": "",
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266625,
- "fields": {
-  "quiz": 5518,
-  "text": "A solid has a definite volume, but changes shape according to the shape of its container",
-  "image": "",
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266626,
- "fields": {
-  "quiz": 5518,
-  "text": "An increase in temperature causes a gas to contract",
-  "image": "",
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266627,
- "fields": {
-  "quiz": 5518,
-  "text": "The rate of diffusion is greatly decreased by higher velocities of air currents or by turbulence in the air",
-  "image": "",
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266628,
- "fields": {
-  "quiz": 5518,
-  "text": "Color, odor, and taste are physical properties that can help you identify a gas, especially during barefaced exploration",
-  "image": "",
-  "sort_order": 4
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266629,
- "fields": {
-  "quiz": 5518,
-  "text": "You can tolerate concentrations of up to ½ of ___ percent CO2 over an 8-hour daily period without harmful effects",
-  "image": "",
-  "sort_order": 5
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266630,
- "fields": {
-  "quiz": 5518,
-  "text": "Oxygen is moderately soluble in water",
-  "image": "",
-  "sort_order": 6
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266631,
- "fields": {
-  "quiz": 5518,
-  "text": "The specific gravity of Nitrogen is ____________",
-  "image": "",
-  "sort_order": 7
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266632,
- "fields": {
-  "quiz": 5518,
-  "text": "Normal air contains about 0.03 percent carbon dioxide",
-  "image": "",
-  "sort_order": 8
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266633,
- "fields": {
-  "quiz": 5518,
-  "text": "High SO2 readings could indicate a mine fire or a sulfide ore dust explosion",
-  "image": "",
-  "sort_order": 9
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266634,
- "fields": {
-  "quiz": 5518,
-  "text": "Acetylene is moderately soluble in water",
-  "image": "",
-  "sort_order": 10
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266635,
- "fields": {
-  "quiz": 5518,
-  "text": "___________ fans are used mostly in mines having little overburden",
-  "image": "",
-  "sort_order": 11
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266636,
- "fields": {
-  "quiz": 5518,
-  "text": "The only natural energy source that can create and sustain an adequate airflow is ______________ energy due to temperature difference",
-  "image": "",
-  "sort_order": 12
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266637,
- "fields": {
-  "quiz": 5518,
-  "text": "The greater the pressure difference the fan creates, the faster the flow of air",
-  "image": "",
-  "sort_order": 13
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266638,
- "fields": {
-  "quiz": 5518,
-  "text": "This symbol is _____________________________",
-  "image": "",
-  "sort_order": 14
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266639,
- "fields": {
-  "quiz": 5518,
-  "text": "Sometimes, “runners” are stationed at the fresh air base to carry messages from the fresh air base to the command center in the event of a communication breakdown",
-  "image": "",
-  "sort_order": 15
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266640,
- "fields": {
-  "quiz": 5518,
-  "text": "In multi-level mines, the fresh air base is often set up in one place and remains there throughout an operation",
-  "image": "",
-  "sort_order": 16
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266641,
- "fields": {
-  "quiz": 5518,
-  "text": "Fighting a fire with water removes the _________",
-  "image": "",
-  "sort_order": 17
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266642,
- "fields": {
-  "quiz": 5518,
-  "text": "Potassium is a class ______ fire",
-  "image": "",
-  "sort_order": 18
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266643,
- "fields": {
-  "quiz": 5518,
-  "text": "High expansion foam is used mainly to contain and control fire by removing two legs of the fire triangle—oxygen and _______",
-  "image": "",
-  "sort_order": 19
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266644,
- "fields": {
-  "quiz": 5518,
-  "text": "Five hundred feet is a common distance, although there have been successes in the past where foam was used from more than 2,000 feet away from the fire",
-  "image": "",
-  "sort_order": 20
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266645,
- "fields": {
-  "quiz": 5518,
-  "text": "This is a __________________________",
-  "image": "",
-  "sort_order": 21
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266646,
- "fields": {
-  "quiz": 5518,
-  "text": "The maximum allowable PPM for ammonia is __________",
-  "image": "",
-  "sort_order": 22
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266647,
- "fields": {
-  "quiz": 5518,
-  "text": "Multiple fractures is a ______________ priority condition",
-  "image": "",
-  "sort_order": 23
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266648,
- "fields": {
-  "quiz": 5518,
-  "text": "Most of the time the body will remain under the water for the first ____ days and then it will float",
-  "image": "",
-  "sort_order": 24
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266649,
- "fields": {
-  "quiz": 5518,
-  "text": "The decomposition of organic matter by bacteria, fungi, and oxidation, resulting in the formation of foul-smelling products",
-  "image": "",
-  "sort_order": 25
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266650,
- "fields": {
-  "quiz": 5518,
-  "text": "The advantage of ___________ ventilation is that gas conditions can be carefully controlled, and the operation can be halted at any point in which conditions become hazardous",
-  "image": "",
-  "sort_order": 26
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266651,
- "fields": {
-  "quiz": 5518,
-  "text": "During ___________ ventilation, a certain amount of air will unavoidably enter the area behind the seals",
-  "image": "",
-  "sort_order": 27
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266652,
- "fields": {
-  "quiz": 5518,
-  "text": "Re-ventilation after an explosion in a single-level, room-and-pillar mine is usually accomplished by _____________ ventilation",
-  "image": "",
-  "sort_order": 28
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266653,
- "fields": {
-  "quiz": 5518,
-  "text": "As long as conditions remain favorable, teams can go in and build a new air lock, put up any bulkheads needed in parallel passageways, and prepare the area being recovered for re-ventilation",
-  "image": "",
-  "sort_order": 29
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266654,
- "fields": {
-  "quiz": 5519,
-  "text": "On the lower half of the _________ is the most appropriate hand location for chest compressions on an adult",
-  "image": "",
-  "sort_order": 0
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266655,
- "fields": {
-  "quiz": 5519,
-  "text": "Carotid and femoral are the two pulse points that are referred to as _____________ pulses",
-  "image": "",
-  "sort_order": 1
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266656,
- "fields": {
-  "quiz": 5519,
-  "text": "A patient who presents with normal vital signs and shows no indications of life- threatening problems may be described as __________",
-  "image": "",
-  "sort_order": 2
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266657,
- "fields": {
-  "quiz": 5519,
-  "text": "Asthma is characterized by a narrowing of the ___________ airway, often associated with exercise or allergies",
-  "image": "",
-  "sort_order": 3
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266658,
- "fields": {
-  "quiz": 5519,
-  "text": "Your patient has burned his hand, the skin is red and blistered and the burn is extremely painful, this burn would be classified as __________ thickness",
-  "image": "",
-  "sort_order": 4
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266659,
- "fields": {
-  "quiz": 5519,
-  "text": "________________ shock is the type of shock when the body sustains a significant loss of blood",
-  "image": "",
-  "sort_order": 5
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266660,
- "fields": {
-  "quiz": 5519,
-  "text": "The partial or complete tearing of the ligaments and tendons that support a joint is called a _____________",
-  "image": "",
-  "sort_order": 6
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266661,
- "fields": {
-  "quiz": 5519,
-  "text": "It is important to maintain the hand and foot of an injured extremity in a normal and comfortable position during splinting, this position is called the position of ________",
-  "image": "",
-  "sort_order": 7
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266662,
- "fields": {
-  "quiz": 5519,
-  "text": "Your patient is unresponsive, lying ________ on the floor after falling off a high ladder, the appropriate care for this patient would include using the log-roll maneuver to roll the patient into the ________ position",
-  "image": "",
-  "sort_order": 8
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266663,
- "fields": {
-  "quiz": 5519,
-  "text": "Your patient has an open wound to her chest. The wound is ___________ and making “sucking” noises as she breathes you should cover the wound with an occlusive dressing",
-  "image": "",
-  "sort_order": 9
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266664,
- "fields": {
-  "quiz": 5519,
-  "text": "You are caring for a patient with an open chest wound and have covered the wound with an occlusive dressing, the patient becomes increasingly short of breath, you should ___________ remove the dressing to allow air to escape",
-  "image": "",
-  "sort_order": 10
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266665,
- "fields": {
-  "quiz": 5519,
-  "text": "The first stage of labor begins at the onset of contractions and end when the baby enters the __________ canal",
-  "image": "",
-  "sort_order": 11
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266666,
- "fields": {
-  "quiz": 5519,
-  "text": "You are triaging an adult patient who presents as unresponsive and breathing at a rate of 24, the patient should be triaged as ____________",
-  "image": "",
-  "sort_order": 12
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266667,
- "fields": {
-  "quiz": 5519,
-  "text": "When more rescuers arrive on scene you should assign tasks to other rescuers and rotate compressors every ___ minutes or more frequently if needed to avoid fatigue",
-  "image": "",
-  "sort_order": 13
- }
-},
-{
- "model": "pages.quizquestion",
- "pk": 266668,
- "fields": {
-  "quiz": 5519,
-  "text": "Too much opioid in the body can overwhelm the ________ and depress the natural drive to breathe, this respiratory depression can result in respiratory arrest and cardiac arrest",
-  "image": "",
-  "sort_order": 14
- }
-},
-{
  "model": "pages.quizchoice",
  "pk": 856834,
  "fields": {
@@ -311812,648 +312644,1254 @@
   "sort_order": 2
  }
 },
- {
-  "model": "pages.competition",
-  "pk": 369,
-  "fields": {
-   "name": "Colorado Regional Mine Rescue Contest",
-   "year": 2026,
-   "calendar_event": 21,
-   "description": "",
-   "created_at": "2026-08-12T20:06:24.738Z",
-   "updated_at": "2026-08-12T20:06:24.738Z"
-  }
- },
- {
-  "model": "pages.competition",
-  "pk": 370,
-  "fields": {
-   "name": "Indiana State Mine Rescue Contest",
-   "year": 2026,
-   "calendar_event": 15,
-   "description": "",
-   "created_at": "2026-08-12T20:06:25.097Z",
-   "updated_at": "2026-08-12T20:06:25.097Z"
-  }
- },
- {
-  "model": "pages.competitionproblem",
-  "pk": 914,
-  "fields": {
-   "competition": 369,
-   "title": "Coal Day 1 Field",
-   "description": "",
-   "sort_order": 10,
-   "created_at": "2026-08-12T20:06:24.747Z",
-   "updated_at": "2026-08-12T20:06:24.747Z"
-  }
- },
- {
-  "model": "pages.competitionproblem",
-  "pk": 915,
-  "fields": {
-   "competition": 369,
-   "title": "Coal Day 2 Field",
-   "description": "",
-   "sort_order": 20,
-   "created_at": "2026-08-12T20:06:24.882Z",
-   "updated_at": "2026-08-12T20:06:24.882Z"
-  }
- },
- {
-  "model": "pages.competitionproblem",
-  "pk": 916,
-  "fields": {
-   "competition": 369,
-   "title": "Preshift",
-   "description": "",
-   "sort_order": 30,
-   "created_at": "2026-08-12T20:06:25.034Z",
-   "updated_at": "2026-08-12T20:06:25.034Z"
-  }
- },
- {
-  "model": "pages.competitionproblem",
-  "pk": 917,
-  "fields": {
-   "competition": 370,
-   "title": "Coal Field",
-   "description": "",
-   "sort_order": 10,
-   "created_at": "2026-08-12T20:06:25.101Z",
-   "updated_at": "2026-08-12T20:06:25.101Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1830,
-  "fields": {
-   "problem": 914,
-   "title": "Problem",
-   "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Problem.pdf",
-   "sort_order": 10,
-   "uploaded_at": "2026-08-12T20:06:24.757Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1831,
-  "fields": {
-   "problem": 914,
-   "title": "Written Problem",
-   "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Written_Problem.pdf",
-   "sort_order": 20,
-   "uploaded_at": "2026-08-12T20:06:24.766Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1832,
-  "fields": {
-   "problem": 914,
-   "title": "Written Statement",
-   "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Written_Statement.pdf",
-   "sort_order": 30,
-   "uploaded_at": "2026-08-12T20:06:24.774Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1833,
-  "fields": {
-   "problem": 914,
-   "title": "Judges Instructions",
-   "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Judges_Instructions.pdf",
-   "sort_order": 40,
-   "uploaded_at": "2026-08-12T20:06:24.783Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1834,
-  "fields": {
-   "problem": 914,
-   "title": "Judges Stops/DI/RR/GT Map",
-   "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Judges_Map_stops_di_rr_gt.pdf",
-   "sort_order": 50,
-   "uploaded_at": "2026-08-12T20:06:24.791Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1835,
-  "fields": {
-   "problem": 914,
-   "title": "Judges Vent Map",
-   "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Judges_Vent_Map.pdf",
-   "sort_order": 60,
-   "uploaded_at": "2026-08-12T20:06:24.800Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1836,
-  "fields": {
-   "problem": 914,
-   "title": "Final Vent Plan",
-   "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Final_Vent_Map.pdf",
-   "sort_order": 70,
-   "uploaded_at": "2026-08-12T20:06:24.807Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1837,
-  "fields": {
-   "problem": 914,
-   "title": "Vent Plan 1",
-   "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Vent_1.pdf",
-   "sort_order": 80,
-   "uploaded_at": "2026-08-12T20:06:24.816Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1838,
-  "fields": {
-   "problem": 914,
-   "title": "Vent Plan 1 (Alternate)",
-   "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Vent_1_ALT.pdf",
-   "sort_order": 90,
-   "uploaded_at": "2026-08-12T20:06:24.824Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1839,
-  "fields": {
-   "problem": 914,
-   "title": "Vent Plan 2",
-   "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Vent_2.pdf",
-   "sort_order": 100,
-   "uploaded_at": "2026-08-12T20:06:24.831Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1840,
-  "fields": {
-   "problem": 914,
-   "title": "Layout",
-   "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Layout.pdf",
-   "sort_order": 110,
-   "uploaded_at": "2026-08-12T20:06:24.838Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1841,
-  "fields": {
-   "problem": 914,
-   "title": "Team Map",
-   "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Large_TEAM_Map.pdf",
-   "sort_order": 120,
-   "uploaded_at": "2026-08-12T20:06:24.847Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1842,
-  "fields": {
-   "problem": 914,
-   "title": "Team Map Key",
-   "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_LARGE_TRANSPARENT_TEAM_MAP_KEY.pdf",
-   "sort_order": 130,
-   "uploaded_at": "2026-08-12T20:06:24.854Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1843,
-  "fields": {
-   "problem": 914,
-   "title": "Breakdown Map",
-   "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Large_BO_Map.pdf",
-   "sort_order": 140,
-   "uploaded_at": "2026-08-12T20:06:24.862Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1844,
-  "fields": {
-   "problem": 914,
-   "title": "Breakdown Map Key",
-   "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_LARGE_TRANSPARENT_BO_MAP_KEY.pdf",
-   "sort_order": 150,
-   "uploaded_at": "2026-08-12T20:06:24.870Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1845,
-  "fields": {
-   "problem": 914,
-   "title": "Gas Extents",
-   "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_gas_extents.pdf",
-   "sort_order": 160,
-   "uploaded_at": "2026-08-12T20:06:24.879Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1846,
-  "fields": {
-   "problem": 914,
-   "title": "Attendant Map",
-   "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1_Attendent_Map.pdf",
-   "sort_order": 170,
-   "uploaded_at": "2026-08-13T01:36:16.979Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1847,
-  "fields": {
-   "problem": 914,
-   "title": "Judges Master Map",
-   "file": "problems/2026_Loveland_Coal_Day_1_Field_2026_Loveland_COAL_day_1.pdf",
-   "sort_order": 180,
-   "uploaded_at": "2026-08-13T01:36:16.991Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1848,
-  "fields": {
-   "problem": 915,
-   "title": "Problem",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Problem.pdf",
-   "sort_order": 10,
-   "uploaded_at": "2026-08-12T20:06:24.890Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1849,
-  "fields": {
-   "problem": 915,
-   "title": "Written Problem",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Written_Problem.pdf",
-   "sort_order": 20,
-   "uploaded_at": "2026-08-12T20:06:24.898Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1850,
-  "fields": {
-   "problem": 915,
-   "title": "Written Statement",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Written_Statement.pdf",
-   "sort_order": 30,
-   "uploaded_at": "2026-08-12T20:06:24.906Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1851,
-  "fields": {
-   "problem": 915,
-   "title": "Judges Instructions",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Judges_Instructions.pdf",
-   "sort_order": 40,
-   "uploaded_at": "2026-08-12T20:06:24.915Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1852,
-  "fields": {
-   "problem": 915,
-   "title": "Judges Stops/GT/DI Map",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_judges_map_stops_gt_di.pdf",
-   "sort_order": 50,
-   "uploaded_at": "2026-08-12T20:06:24.922Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1853,
-  "fields": {
-   "problem": 915,
-   "title": "Judges Extra Vent Map",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Judges_Extra_Vent_Map.pdf",
-   "sort_order": 60,
-   "uploaded_at": "2026-08-12T20:06:24.931Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1854,
-  "fields": {
-   "problem": 915,
-   "title": "Final Vent Plan",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Final_Vent.pdf",
-   "sort_order": 70,
-   "uploaded_at": "2026-08-12T20:06:24.939Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1855,
-  "fields": {
-   "problem": 915,
-   "title": "Vent Plan 1",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Vent_1.pdf",
-   "sort_order": 80,
-   "uploaded_at": "2026-08-12T20:06:24.947Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1856,
-  "fields": {
-   "problem": 915,
-   "title": "Vent Plan 1 (Alternate)",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Vent_1_ALT.pdf",
-   "sort_order": 90,
-   "uploaded_at": "2026-08-12T20:06:24.954Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1857,
-  "fields": {
-   "problem": 915,
-   "title": "Vent Plan 2",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Vent_2.pdf",
-   "sort_order": 100,
-   "uploaded_at": "2026-08-12T20:06:24.961Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1858,
-  "fields": {
-   "problem": 915,
-   "title": "Vent Plan 2 (Alternate)",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Vent_2_ALT.pdf",
-   "sort_order": 110,
-   "uploaded_at": "2026-08-12T20:06:24.968Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1859,
-  "fields": {
-   "problem": 915,
-   "title": "Vent Plan 3",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Vent_3.pdf",
-   "sort_order": 120,
-   "uploaded_at": "2026-08-12T20:06:24.976Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1860,
-  "fields": {
-   "problem": 915,
-   "title": "Vent Plan 4",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Vent_4.pdf",
-   "sort_order": 130,
-   "uploaded_at": "2026-08-12T20:06:24.983Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1861,
-  "fields": {
-   "problem": 915,
-   "title": "Layout",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Layout.pdf",
-   "sort_order": 140,
-   "uploaded_at": "2026-08-12T20:06:24.991Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1862,
-  "fields": {
-   "problem": 915,
-   "title": "Team Map",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_LARGE_TEAM_MAP.pdf",
-   "sort_order": 150,
-   "uploaded_at": "2026-08-12T20:06:24.999Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1863,
-  "fields": {
-   "problem": 915,
-   "title": "Team Map Key",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_LARGE_TRANSPARENT_TEAM_MAP_KEY.pdf",
-   "sort_order": 160,
-   "uploaded_at": "2026-08-12T20:06:25.007Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1864,
-  "fields": {
-   "problem": 915,
-   "title": "Breakdown Map",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_LARGE_BO_MAP.pdf",
-   "sort_order": 170,
-   "uploaded_at": "2026-08-12T20:06:25.015Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1865,
-  "fields": {
-   "problem": 915,
-   "title": "Breakdown Map Key",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_LARGE_TRANSPARENT_BO_MAP_KEY.pdf",
-   "sort_order": 180,
-   "uploaded_at": "2026-08-12T20:06:25.021Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1866,
-  "fields": {
-   "problem": 915,
-   "title": "Gas Extents",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_gas_extents.pdf",
-   "sort_order": 190,
-   "uploaded_at": "2026-08-12T20:06:25.029Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1867,
-  "fields": {
-   "problem": 915,
-   "title": "Attendant Map",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2_Attendant_Map.pdf",
-   "sort_order": 200,
-   "uploaded_at": "2026-08-13T01:36:17.004Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1868,
-  "fields": {
-   "problem": 915,
-   "title": "Judges Master Map",
-   "file": "problems/2026_Loveland_Coal_Day_2_Field_2026_Loveland_COAL_day_2.pdf",
-   "sort_order": 210,
-   "uploaded_at": "2026-08-13T01:36:17.016Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1869,
-  "fields": {
-   "problem": 916,
-   "title": "Statement",
-   "file": "problems/2026_Loveland_Preshift_PRESHIFT_STATEMENT.pdf",
-   "sort_order": 10,
-   "uploaded_at": "2026-08-12T20:06:25.040Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1870,
-  "fields": {
-   "problem": 916,
-   "title": "Measurements",
-   "file": "problems/2026_Loveland_Preshift_MEASUREMENTS.pdf",
-   "sort_order": 20,
-   "uploaded_at": "2026-08-12T20:06:25.050Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1871,
-  "fields": {
-   "problem": 916,
-   "title": "Placards",
-   "file": "problems/2026_Loveland_Preshift_Placards_Loveland_Preshift_2026.pdf",
-   "sort_order": 30,
-   "uploaded_at": "2026-08-12T20:06:25.057Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1872,
-  "fields": {
-   "problem": 916,
-   "title": "A Card - Field",
-   "file": "problems/2026_Loveland_Preshift_2026_Preshift_A_Card_Field.pdf",
-   "sort_order": 40,
-   "uploaded_at": "2026-08-12T20:06:25.065Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1873,
-  "fields": {
-   "problem": 916,
-   "title": "B Card - Record",
-   "file": "problems/2026_Loveland_Preshift_2026_Preshift_B_Card_Record.pdf",
-   "sort_order": 50,
-   "uploaded_at": "2026-08-12T20:06:25.072Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1874,
-  "fields": {
-   "problem": 916,
-   "title": "Preshift Record Report (Blank)",
-   "file": "problems/2026_Loveland_Preshift_2026_PRESHIFT_RECORD_REPORT_BLANK.pdf",
-   "sort_order": 60,
-   "uploaded_at": "2026-08-12T20:06:25.080Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1875,
-  "fields": {
-   "problem": 916,
-   "title": "Judges Notes",
-   "file": "problems/2026_Loveland_Preshift_Judge_s_Notes.pdf",
-   "sort_order": 70,
-   "uploaded_at": "2026-08-12T20:06:25.087Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1876,
-  "fields": {
-   "problem": 916,
-   "title": "Judges Preshift Record Report",
-   "file": "problems/2026_Loveland_Preshift_JUDGE_S_PRESHIFT_RECORD_REPORT.pdf",
-   "sort_order": 80,
-   "uploaded_at": "2026-08-12T20:06:25.095Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1877,
-  "fields": {
-   "problem": 916,
-   "title": "Contestant Map",
-   "file": "problems/2026_Loveland_Preshift_Contestant_map_2016.pdf",
-   "sort_order": 90,
-   "uploaded_at": "2026-08-13T01:36:16.925Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1878,
-  "fields": {
-   "problem": 916,
-   "title": "Field Layout Map",
-   "file": "problems/2026_Loveland_Preshift_Field_layout_map_2016.pdf",
-   "sort_order": 100,
-   "uploaded_at": "2026-08-13T01:36:16.939Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1879,
-  "fields": {
-   "problem": 916,
-   "title": "Judges Map",
-   "file": "problems/2026_Loveland_Preshift_Judge_s_Map.pdf",
-   "sort_order": 110,
-   "uploaded_at": "2026-08-13T01:36:16.954Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1880,
-  "fields": {
-   "problem": 916,
-   "title": "Ventilation Plan",
-   "file": "problems/2026_Loveland_Preshift_Ventilation_Map_Plan.pdf",
-   "sort_order": 120,
-   "uploaded_at": "2026-08-13T01:36:16.965Z"
-  }
- },
- {
-  "model": "pages.problemdocument",
-  "pk": 1881,
-  "fields": {
-   "problem": 917,
-   "title": "Field",
-   "file": "problems/2026_Indiana_Coal_Field_26_problem_binder.pdf",
-   "sort_order": 10,
-   "uploaded_at": "2026-08-12T20:06:25.108Z"
-  }
+{
+ "model": "pages.quizchoice",
+ "pk": 857020,
+ "fields": {
+  "question": 266669,
+  "text": "Irritability",
+  "is_correct": false,
+  "sort_order": 0
  }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857021,
+ "fields": {
+  "question": 266669,
+  "text": "Difficulty sleeping",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857022,
+ "fields": {
+  "question": 266669,
+  "text": "Increased appetite",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857023,
+ "fields": {
+  "question": 266669,
+  "text": "Difficulty concentrating",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857024,
+ "fields": {
+  "question": 266670,
+  "text": "Superior",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857025,
+ "fields": {
+  "question": 266670,
+  "text": "Lateral",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857026,
+ "fields": {
+  "question": 266670,
+  "text": "Inferior",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857027,
+ "fields": {
+  "question": 266670,
+  "text": "Medial",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857028,
+ "fields": {
+  "question": 266671,
+  "text": "One-rescuer assist",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857029,
+ "fields": {
+  "question": 266671,
+  "text": "Cradle carry",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857030,
+ "fields": {
+  "question": 266671,
+  "text": "Two-rescuer assist",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857031,
+ "fields": {
+  "question": 266671,
+  "text": "Shoulder drag",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857032,
+ "fields": {
+  "question": 266672,
+  "text": "Tongue",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857033,
+ "fields": {
+  "question": 266672,
+  "text": "Alveoli",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857034,
+ "fields": {
+  "question": 266672,
+  "text": "Pharynx",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857035,
+ "fields": {
+  "question": 266672,
+  "text": "Epiglottis",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857036,
+ "fields": {
+  "question": 266673,
+  "text": "Shaking the patient",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857037,
+ "fields": {
+  "question": 266673,
+  "text": "Looking for chest rise",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857038,
+ "fields": {
+  "question": 266673,
+  "text": "Observing pupil response",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857039,
+ "fields": {
+  "question": 266673,
+  "text": "Sweeping the mouth for obstructions",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857040,
+ "fields": {
+  "question": 266674,
+  "text": "Pulse rate",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857041,
+ "fields": {
+  "question": 266674,
+  "text": "Blood pressure",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857042,
+ "fields": {
+  "question": 266674,
+  "text": "Skin signs",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857043,
+ "fields": {
+  "question": 266674,
+  "text": "Respiratory rate",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857044,
+ "fields": {
+  "question": 266675,
+  "text": "Diastolic",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857045,
+ "fields": {
+  "question": 266675,
+  "text": "Pulse",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857046,
+ "fields": {
+  "question": 266675,
+  "text": "Systolic",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857047,
+ "fields": {
+  "question": 266675,
+  "text": "Mean",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857048,
+ "fields": {
+  "question": 266676,
+  "text": "Asthma",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857049,
+ "fields": {
+  "question": 266676,
+  "text": "Bronchitis",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857050,
+ "fields": {
+  "question": 266676,
+  "text": "Emphysema",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857051,
+ "fields": {
+  "question": 266676,
+  "text": "Hyperventilation",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857052,
+ "fields": {
+  "question": 266677,
+  "text": "Feeling lightheaded",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857053,
+ "fields": {
+  "question": 266677,
+  "text": "Muscle cramps",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857054,
+ "fields": {
+  "question": 266677,
+  "text": "Hot, dry, skin",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857055,
+ "fields": {
+  "question": 266677,
+  "text": "Weakness",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857056,
+ "fields": {
+  "question": 266678,
+  "text": "Bandage",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857057,
+ "fields": {
+  "question": 266678,
+  "text": "Elastic bandage",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857058,
+ "fields": {
+  "question": 266678,
+  "text": "Occlusive dressing",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857059,
+ "fields": {
+  "question": 266678,
+  "text": "Dressing",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857060,
+ "fields": {
+  "question": 266679,
+  "text": "Stop the burning process",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857061,
+ "fields": {
+  "question": 266679,
+  "text": "Prevent further contamination",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857062,
+ "fields": {
+  "question": 266679,
+  "text": "Flush only large burn areas",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857063,
+ "fields": {
+  "question": 266679,
+  "text": "Remove jewelry",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857064,
+ "fields": {
+  "question": 266680,
+  "text": "Heat exhaustion",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857065,
+ "fields": {
+  "question": 266680,
+  "text": "Heat stroke",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857066,
+ "fields": {
+  "question": 266680,
+  "text": "Heat cramps",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857067,
+ "fields": {
+  "question": 266680,
+  "text": "Mild heat stroke",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857068,
+ "fields": {
+  "question": 266681,
+  "text": "Abnormal speech",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857069,
+ "fields": {
+  "question": 266681,
+  "text": "Equal circulation",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857070,
+ "fields": {
+  "question": 266681,
+  "text": "Facial droop",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857071,
+ "fields": {
+  "question": 266681,
+  "text": "Arm drift",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857072,
+ "fields": {
+  "question": 266682,
+  "text": "AVPU",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857073,
+ "fields": {
+  "question": 266682,
+  "text": "ABC",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857074,
+ "fields": {
+  "question": 266682,
+  "text": "SAMPLE",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857075,
+ "fields": {
+  "question": 266682,
+  "text": "BP-DOC",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857076,
+ "fields": {
+  "question": 266683,
+  "text": "Pale",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857077,
+ "fields": {
+  "question": 266683,
+  "text": "Flushed",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857078,
+ "fields": {
+  "question": 266683,
+  "text": "Cyanotic",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857079,
+ "fields": {
+  "question": 266683,
+  "text": "Jaundice",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857080,
+ "fields": {
+  "question": 266684,
+  "text": "The carotid pulse",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857081,
+ "fields": {
+  "question": 266684,
+  "text": "Radial pulse on both sides of the body",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857082,
+ "fields": {
+  "question": 266684,
+  "text": "The radial pulse on one side",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857083,
+ "fields": {
+  "question": 266684,
+  "text": "The distal pulse",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857084,
+ "fields": {
+  "question": 266685,
+  "text": "Bilateral",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857085,
+ "fields": {
+  "question": 266685,
+  "text": "Complete",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857086,
+ "fields": {
+  "question": 266685,
+  "text": "Adequate",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857087,
+ "fields": {
+  "question": 266685,
+  "text": "Partial",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857088,
+ "fields": {
+  "question": 266686,
+  "text": "Jaw-thrust",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857089,
+ "fields": {
+  "question": 266686,
+  "text": "Mouth-to-nose",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857090,
+ "fields": {
+  "question": 266686,
+  "text": "Abdominal thrust",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857091,
+ "fields": {
+  "question": 266686,
+  "text": "Head-tilt/chin-lift",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857092,
+ "fields": {
+  "question": 266687,
+  "text": "Cranial",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857093,
+ "fields": {
+  "question": 266687,
+  "text": "Thoracic",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857094,
+ "fields": {
+  "question": 266687,
+  "text": "Abdominal",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857095,
+ "fields": {
+  "question": 266687,
+  "text": "Pelvic",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857096,
+ "fields": {
+  "question": 266688,
+  "text": "Posterior",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857097,
+ "fields": {
+  "question": 266688,
+  "text": "Anterior",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857098,
+ "fields": {
+  "question": 266688,
+  "text": "Inferior",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857099,
+ "fields": {
+  "question": 266688,
+  "text": "Superior",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857100,
+ "fields": {
+  "question": 266689,
+  "text": "meningitis",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857101,
+ "fields": {
+  "question": 266689,
+  "text": "hepatitis",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857102,
+ "fields": {
+  "question": 266689,
+  "text": "pertussis",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857103,
+ "fields": {
+  "question": 266690,
+  "text": "way",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857104,
+ "fields": {
+  "question": 266690,
+  "text": "path",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857105,
+ "fields": {
+  "question": 266690,
+  "text": "key",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857106,
+ "fields": {
+  "question": 266691,
+  "text": "treatment",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857107,
+ "fields": {
+  "question": 266691,
+  "text": "splinting",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857108,
+ "fields": {
+  "question": 266691,
+  "text": "assessment",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857109,
+ "fields": {
+  "question": 266692,
+  "text": "superficial",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857110,
+ "fields": {
+  "question": 266692,
+  "text": "partial",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857111,
+ "fields": {
+  "question": 266692,
+  "text": "full",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857112,
+ "fields": {
+  "question": 266693,
+  "text": "five",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857113,
+ "fields": {
+  "question": 266693,
+  "text": "four",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857114,
+ "fields": {
+  "question": 266693,
+  "text": "most",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857115,
+ "fields": {
+  "question": 266694,
+  "text": "treating",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857116,
+ "fields": {
+  "question": 266694,
+  "text": "controlling",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857117,
+ "fields": {
+  "question": 266694,
+  "text": "restraining",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857118,
+ "fields": {
+  "question": 266695,
+  "text": "liver",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857119,
+ "fields": {
+  "question": 266695,
+  "text": "spleen",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857120,
+ "fields": {
+  "question": 266695,
+  "text": "kidneys",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857121,
+ "fields": {
+  "question": 266696,
+  "text": "event",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857122,
+ "fields": {
+  "question": 266696,
+  "text": "scenario",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857123,
+ "fields": {
+  "question": 266696,
+  "text": "situation",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857124,
+ "fields": {
+  "question": 266697,
+  "text": "adult",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857125,
+ "fields": {
+  "question": 266697,
+  "text": "victim",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857126,
+ "fields": {
+  "question": 266697,
+  "text": "patient",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857127,
+ "fields": {
+  "question": 266698,
+  "text": "make sure",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857128,
+ "fields": {
+  "question": 266698,
+  "text": "ensure",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857129,
+ "fields": {
+  "question": 266698,
+  "text": "consider",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857130,
+ "fields": {
+  "question": 266699,
+  "text": "recheck",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857131,
+ "fields": {
+  "question": 266699,
+  "text": "check",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857132,
+ "fields": {
+  "question": 266699,
+  "text": "assess",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857133,
+ "fields": {
+  "question": 266700,
+  "text": "slow",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857134,
+ "fields": {
+  "question": 266700,
+  "text": "weak",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857135,
+ "fields": {
+  "question": 266700,
+  "text": "shallow",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857136,
+ "fields": {
+  "question": 266701,
+  "text": "bulky",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857137,
+ "fields": {
+  "question": 266701,
+  "text": "sterile",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857138,
+ "fields": {
+  "question": 266701,
+  "text": "clean",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857139,
+ "fields": {
+  "question": 266702,
+  "text": "signs",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857140,
+ "fields": {
+  "question": 266702,
+  "text": "symptoms",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857141,
+ "fields": {
+  "question": 266702,
+  "text": "evidence",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857142,
+ "fields": {
+  "question": 266703,
+  "text": "check",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857143,
+ "fields": {
+  "question": 266703,
+  "text": "recheck",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857144,
+ "fields": {
+  "question": 266703,
+  "text": "assess",
+  "is_correct": false,
+  "sort_order": 2
+ }
+}
 ]

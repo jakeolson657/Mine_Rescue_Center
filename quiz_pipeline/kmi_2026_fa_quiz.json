@@ -1,0 +1,126 @@
+{
+  "source_pk": 1902,
+  "title": "First Aid Written Test",
+  "questions": [
+    {
+      "text": "Covid-19, ___________, and tetanus are commonly recommended immunizations for health care providers.",
+      "choices": [
+        {"text": "meningitis", "is_correct": true},
+        {"text": "hepatitis", "is_correct": false},
+        {"text": "pertussis", "is_correct": false}
+      ]
+    },
+    {
+      "text": "Early recognition of foreign body airway obstruction is the ________ to successful outcome.",
+      "choices": [
+        {"text": "way", "is_correct": false},
+        {"text": "path", "is_correct": false},
+        {"text": "key", "is_correct": true}
+      ]
+    },
+    {
+      "text": "It is important to maintain the hand and foot of an injured extremity in a normal and comfortable position during _____________; this position is called the position of function.",
+      "choices": [
+        {"text": "treatment", "is_correct": false},
+        {"text": "splinting", "is_correct": true},
+        {"text": "assessment", "is_correct": false}
+      ]
+    },
+    {
+      "text": "Your patient has burned his hand, the skin is red and blistered and the burn is extremely painful; this burn would be classified as _________ thickness.",
+      "choices": [
+        {"text": "superficial", "is_correct": false},
+        {"text": "partial", "is_correct": true},
+        {"text": "full", "is_correct": false}
+      ]
+    },
+    {
+      "text": "The ______ common vital signs are pulse, respirations, blood pressure, pupils, and skin signs.",
+      "choices": [
+        {"text": "five", "is_correct": true},
+        {"text": "four", "is_correct": false},
+        {"text": "most", "is_correct": false}
+      ]
+    },
+    {
+      "text": "Before ___________ a combative patient, the Emergency Medical Responder should obtain law enforcement assistance.",
+      "choices": [
+        {"text": "treating", "is_correct": false},
+        {"text": "controlling", "is_correct": false},
+        {"text": "restraining", "is_correct": true}
+      ]
+    },
+    {
+      "text": "The _________ are found in an area behind the abdominal wall.",
+      "choices": [
+        {"text": "liver", "is_correct": false},
+        {"text": "spleen", "is_correct": false},
+        {"text": "kidneys", "is_correct": true}
+      ]
+    },
+    {
+      "text": "A patient has been involved in a rollover vehicle collision; in this __________, the rollover is an example of the mechanism of injury.",
+      "choices": [
+        {"text": "event", "is_correct": false},
+        {"text": "scenario", "is_correct": true},
+        {"text": "situation", "is_correct": false}
+      ]
+    },
+    {
+      "text": "On the lower half of the sternum is the most appropriate hand location for chest compressions on an _______.",
+      "choices": [
+        {"text": "adult", "is_correct": true},
+        {"text": "victim", "is_correct": false},
+        {"text": "patient", "is_correct": false}
+      ]
+    },
+    {
+      "text": "You have responded to a call for a possible overdose; you should first _______ that the scene is safe.",
+      "choices": [
+        {"text": "make sure", "is_correct": false},
+        {"text": "ensure", "is_correct": true},
+        {"text": "consider", "is_correct": false}
+      ]
+    },
+    {
+      "text": "You have just finished applying a splint to a patient's leg; you should __________ circulation, sensation, and motor function.",
+      "choices": [
+        {"text": "recheck", "is_correct": true},
+        {"text": "check", "is_correct": false},
+        {"text": "assess", "is_correct": false}
+      ]
+    },
+    {
+      "text": "Hypoxia from _________ respirations is a potential complication from a patient who appears to have injured a rib without a flailed segment, and the patient is alert and oriented.",
+      "choices": [
+        {"text": "slow", "is_correct": false},
+        {"text": "weak", "is_correct": false},
+        {"text": "shallow", "is_correct": true}
+      ]
+    },
+    {
+      "text": "The appropriate care for an amputated body part is to wrap it with ______ gauze and place it on ice.",
+      "choices": [
+        {"text": "bulky", "is_correct": false},
+        {"text": "sterile", "is_correct": false},
+        {"text": "clean", "is_correct": true}
+      ]
+    },
+    {
+      "text": "Immediate transport is the most important to the survival of a patient showing ________ of shock.",
+      "choices": [
+        {"text": "signs", "is_correct": true},
+        {"text": "symptoms", "is_correct": false},
+        {"text": "evidence", "is_correct": false}
+      ]
+    },
+    {
+      "text": "When assessing a patient with a musculoskeletal injury, it is important to ________ circulation, sensation, and motor function.",
+      "choices": [
+        {"text": "check", "is_correct": true},
+        {"text": "recheck", "is_correct": false},
+        {"text": "assess", "is_correct": false}
+      ]
+    }
+  ]
+}
