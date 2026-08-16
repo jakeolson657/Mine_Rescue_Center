@@ -4486,7 +4486,44 @@
   "location": "Mylan Park (Hazel & J.W. Ruby Community Center), 500 Mylan Park Lane, Morgantown, WV 26501",
   "description": "NMRA Post No. 5 mine rescue contest held at Mylan Park in Morgantown, West Virginia, organized in partnership with the West Virginia University Mining and Industrial Extension. Same facility as the WVU Bench Bash.",
   "contact_info": "",
-  "resources": [],
+  "resources": [
+   {
+    "label": "Day 1 Mine Rescue Results",
+    "url": "/media/problems/2026_Post_5_Results_Day_1_MR_NMRA_Post_5_07_28_26.pdf"
+   },
+   {
+    "label": "Day 2 Mine Rescue Results",
+    "url": "/media/problems/2026_Post_5_Results_Day_2_MR_NMRA_Post_5_07_29_26.pdf"
+   },
+   {
+    "label": "Overall Mine Rescue Results",
+    "url": "/media/problems/2026_Post_5_Results_Day_2_MR_Overall_NMRA_Post_5_07_29_26.pdf"
+   },
+   {
+    "label": "First Aid Results",
+    "url": "/media/problems/2026_Post_5_Results_Day_3_First_Aid_NMRA_Post_5_07_30_26.pdf"
+   },
+   {
+    "label": "Preshift Results",
+    "url": "/media/problems/2026_Post_5_Results_Day_3_Preshift_NMRA_Post_5_07_30_26.pdf"
+   },
+   {
+    "label": "Draeger BG 4 Bench Results",
+    "url": "/media/problems/2026_Post_5_Results_Day_3_BG4_NMRA_Post_5_07_30_26.pdf"
+   },
+   {
+    "label": "Draeger BG ProAir Bench Results",
+    "url": "/media/problems/2026_Post_5_Results_Day_3_ProAir_NMRA_Post_5_07_30_26.pdf"
+   },
+   {
+    "label": "BioPak 240R Bench Results",
+    "url": "/media/problems/2026_Post_5_Results_Day_3_BioPak_240R_NMRA_Post_5_07_30_26.pdf"
+   },
+   {
+    "label": "Two-Day Combination Results",
+    "url": "/media/problems/2026_Post_5_Results_Day_3_Two_Day_Combo_Results_NMRA_Post_5_07_30_26.pdf"
+   }
+  ],
   "created_at": "2026-08-15T23:26:09.364Z",
   "updated_at": "2026-08-15T23:26:09.364Z"
  }
@@ -8677,6 +8714,30 @@
   "description": "",
   "created_at": "2026-08-16T00:00:09.831Z",
   "updated_at": "2026-08-16T00:00:09.831Z"
+ }
+},
+{
+ "model": "pages.competition",
+ "pk": 403,
+ "fields": {
+  "name": "NMRA Post 5 Mine Rescue Contest",
+  "year": 2026,
+  "calendar_event": 401,
+  "description": "",
+  "created_at": "2026-08-16T23:25:00.496Z",
+  "updated_at": "2026-08-16T23:25:00.496Z"
+ }
+},
+{
+ "model": "pages.competition",
+ "pk": 404,
+ "fields": {
+  "name": "Northern Mine Rescue Association Competition",
+  "year": 2026,
+  "calendar_event": 8,
+  "description": "",
+  "created_at": "2026-08-16T23:25:00.614Z",
+  "updated_at": "2026-08-16T23:25:00.614Z"
  }
 },
 {
@@ -18421,6 +18482,54 @@
   "sort_order": 30,
   "created_at": "2026-08-16T00:00:09.843Z",
   "updated_at": "2026-08-16T00:00:09.843Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 1010,
+ "fields": {
+  "competition": 403,
+  "title": "Coal Day 1 Field",
+  "description": "",
+  "sort_order": 10,
+  "created_at": "2026-08-16T23:25:00.526Z",
+  "updated_at": "2026-08-16T23:25:00.526Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 1011,
+ "fields": {
+  "competition": 403,
+  "title": "Coal Day 2 Field",
+  "description": "",
+  "sort_order": 20,
+  "created_at": "2026-08-16T23:25:00.553Z",
+  "updated_at": "2026-08-16T23:25:00.553Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 1012,
+ "fields": {
+  "competition": 404,
+  "title": "Coal Day 1 Field",
+  "description": "",
+  "sort_order": 10,
+  "created_at": "2026-08-16T23:25:00.618Z",
+  "updated_at": "2026-08-16T23:25:00.618Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 1013,
+ "fields": {
+  "competition": 404,
+  "title": "Coal Day 2 Field",
+  "description": "",
+  "sort_order": 20,
+  "created_at": "2026-08-16T23:25:00.637Z",
+  "updated_at": "2026-08-16T23:25:00.637Z"
  }
 },
 {
@@ -38551,6 +38660,50 @@
   "file": "problems/2026_Alabama_Written_Tests_First_Aid_Written_Test.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-08-16T00:00:09.849Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2030,
+ "fields": {
+  "problem": 1010,
+  "title": "Field",
+  "file": "problems/2026_Post_5_Coal_Day_1_Field_2026_post_5_day_1_packet.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-16T23:25:00.545Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2031,
+ "fields": {
+  "problem": 1011,
+  "title": "Field",
+  "file": "problems/2026_Post_5_Coal_Day_2_Field_2026_post_5_day_2_packet.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-16T23:25:00.568Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2032,
+ "fields": {
+  "problem": 1012,
+  "title": "Field",
+  "file": "problems/2026_Northern_Coal_Day_1_Field_Northern_Regional_Day_1_2026.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-16T23:25:00.631Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2033,
+ "fields": {
+  "problem": 1013,
+  "title": "Field",
+  "file": "problems/2026_Northern_Coal_Day_2_Field_Northern_Regional_Day_2_2026.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-16T23:25:00.650Z"
  }
 },
 {
