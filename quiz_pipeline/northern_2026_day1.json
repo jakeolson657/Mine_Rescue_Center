@@ -1,0 +1,596 @@
+{
+  "source_pk": 2034,
+  "title": "Day 1 Written Test",
+  "questions": [
+    {
+      "text": "Each mine rescue station shall be provided with at least the following equipment: _____ gas detectors appropriate for each gas which may be encountered at the mines served.",
+      "choices": [
+        {
+          "text": "Two",
+          "is_correct": false
+        },
+        {
+          "text": "Three",
+          "is_correct": false
+        },
+        {
+          "text": "Four",
+          "is_correct": true
+        },
+        {
+          "text": "Five",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Atmospheric pressure is measured on a _____.",
+      "choices": [
+        {
+          "text": "Specific Gravity",
+          "is_correct": false
+        },
+        {
+          "text": "Barometer",
+          "is_correct": true
+        },
+        {
+          "text": "Dust Pump",
+          "is_correct": false
+        },
+        {
+          "text": "Anemometer",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "During barefaced exploration, the crew uses the mines communication system to report their progress and findings to the ______.",
+      "choices": [
+        {
+          "text": "Fresh air base",
+          "is_correct": false
+        },
+        {
+          "text": "Briefing officer",
+          "is_correct": false
+        },
+        {
+          "text": "Surface",
+          "is_correct": true
+        },
+        {
+          "text": "Tail captain",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Class _____ fires involve combustible metals such Magnesium, Titanium, Zirconium, Sodium and Potassium.",
+      "choices": [
+        {
+          "text": "A",
+          "is_correct": false
+        },
+        {
+          "text": "B",
+          "is_correct": false
+        },
+        {
+          "text": "C",
+          "is_correct": false
+        },
+        {
+          "text": "D",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Radon is not toxic.",
+      "choices": [
+        {
+          "text": "True",
+          "is_correct": true
+        },
+        {
+          "text": "False",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Methane is Flammable. Its explosive range is 5 to 15 percent when there is at least ____ percent Oxygen.",
+      "choices": [
+        {
+          "text": "19.5",
+          "is_correct": false
+        },
+        {
+          "text": "17.0",
+          "is_correct": false
+        },
+        {
+          "text": "19.4",
+          "is_correct": false
+        },
+        {
+          "text": "12.1",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Methane's ____ ____ is not an absolute measure of safety.",
+      "choices": [
+        {
+          "text": "Specific Gravity",
+          "is_correct": false
+        },
+        {
+          "text": "Explosive range",
+          "is_correct": true
+        },
+        {
+          "text": "Detection Methods",
+          "is_correct": false
+        },
+        {
+          "text": "Health Hazards",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Sulfur Dioxide (SO2) Will not burn or explode.",
+      "choices": [
+        {
+          "text": "True",
+          "is_correct": true
+        },
+        {
+          "text": "False",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Sulfur Dioxide is a very toxic irritating gas that is dangerous even in small concentrations; as little as ____ to____ percent is dangerous to life.",
+      "choices": [
+        {
+          "text": "4.0 to 5.0",
+          "is_correct": false
+        },
+        {
+          "text": "0.4 to 0.5",
+          "is_correct": false
+        },
+        {
+          "text": "0.04 to 0.05",
+          "is_correct": true
+        },
+        {
+          "text": "0.004 to 0.005",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "You may recognize H2S by its distinctive \"rotten egg\" odor. However, continued exposure to the gas will dull your sense of _____, so this may not always be a reliable detection method.",
+      "choices": [
+        {
+          "text": "Eyesite",
+          "is_correct": false
+        },
+        {
+          "text": "Smell",
+          "is_correct": false
+        },
+        {
+          "text": "Taste",
+          "is_correct": true
+        },
+        {
+          "text": "Feeling",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Hydrogen Sulfide is one of the most _____ gasses known.",
+      "choices": [
+        {
+          "text": "Poisonous",
+          "is_correct": true
+        },
+        {
+          "text": "Toxic",
+          "is_correct": false
+        },
+        {
+          "text": "Explosive",
+          "is_correct": false
+        },
+        {
+          "text": "Heavy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "When mixed with the moisture from your lungs, Oxides of Nitrogen form ____ that corrode your respiratory passages and cause them to swell.",
+      "choices": [
+        {
+          "text": "Gasses",
+          "is_correct": false
+        },
+        {
+          "text": "Vapors",
+          "is_correct": false
+        },
+        {
+          "text": "Acid",
+          "is_correct": true
+        },
+        {
+          "text": "Fluid",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "It doesn't take much CO to interfere with your bloods oxygen-carrying capacity because the gas combines with hemoglobin _____ to _____ times more readily than oxygen.",
+      "choices": [
+        {
+          "text": "100 to 200",
+          "is_correct": false
+        },
+        {
+          "text": "200 to 300",
+          "is_correct": true
+        },
+        {
+          "text": "300 to 400",
+          "is_correct": false
+        },
+        {
+          "text": "400 to 500",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Carbon Monoxide poisoning is _____ over time.",
+      "choices": [
+        {
+          "text": "Acute",
+          "is_correct": false
+        },
+        {
+          "text": "Cumulative",
+          "is_correct": true
+        },
+        {
+          "text": "Systemic",
+          "is_correct": false
+        },
+        {
+          "text": "Transparent",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "In general, warm air displaces cold air in the mine due to differences in _____ and in _____ of the workings.",
+      "choices": [
+        {
+          "text": "Hight, Width",
+          "is_correct": false
+        },
+        {
+          "text": "Elevation, Temperature",
+          "is_correct": true
+        },
+        {
+          "text": "Pressure, Differential",
+          "is_correct": false
+        },
+        {
+          "text": "Temperature, Specific Gravity",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "As mine rescue team members, you should know how to read a ____ _____ that shows ventilation.",
+      "choices": [
+        {
+          "text": "Gas Chart",
+          "is_correct": false
+        },
+        {
+          "text": "Fan Chart",
+          "is_correct": false
+        },
+        {
+          "text": "Mine Map",
+          "is_correct": true
+        },
+        {
+          "text": "Escapeway Map",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "_____ ______ is especially useful for rescue teams to use when they need to flush out or ventilate a small area of the mine.",
+      "choices": [
+        {
+          "text": "Line Brattice",
+          "is_correct": true
+        },
+        {
+          "text": "Check Curtain",
+          "is_correct": false
+        },
+        {
+          "text": "Temporary Stopping",
+          "is_correct": false
+        },
+        {
+          "text": "Temporary Bulkheads",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "The smoke tube is used to determine the direction and velocity of slow moving air, below ______ feet per minute.",
+      "choices": [
+        {
+          "text": "80",
+          "is_correct": false
+        },
+        {
+          "text": "100",
+          "is_correct": false
+        },
+        {
+          "text": "120",
+          "is_correct": true
+        },
+        {
+          "text": "140",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "The medium velocity (or regular) anemometer is used to determine air velocities from _____ to _____ feet per minute.",
+      "choices": [
+        {
+          "text": "100 to 1,000",
+          "is_correct": false
+        },
+        {
+          "text": "110 to 3,000",
+          "is_correct": false
+        },
+        {
+          "text": "120 to 2,000",
+          "is_correct": true
+        },
+        {
+          "text": "130 to 3,000",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "When installing a temporary bulkhead in a passage way, particularly in a crosscut of a room and pillar, single level mine, the bulkhead should be erected a sufficient distance into the passageway (at least ____ to ____ feet) to permit enough room for a permanent bulkhead to be built later.",
+      "choices": [
+        {
+          "text": "4 to 6",
+          "is_correct": true
+        },
+        {
+          "text": "6 to 8",
+          "is_correct": false
+        },
+        {
+          "text": "8 to 10",
+          "is_correct": false
+        },
+        {
+          "text": "10 to 12",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Be sure the fresh air base is located where its assured _____ ventilation and fresh air.",
+      "choices": [
+        {
+          "text": "Monitored",
+          "is_correct": false
+        },
+        {
+          "text": "Positive",
+          "is_correct": true
+        },
+        {
+          "text": "Negative",
+          "is_correct": false
+        },
+        {
+          "text": "Bare-Faced",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "As you explore, keep in mind that your first priority is________.",
+      "choices": [
+        {
+          "text": "Rescue of survivors",
+          "is_correct": false
+        },
+        {
+          "text": "Recovery of the mine",
+          "is_correct": false
+        },
+        {
+          "text": "Team Safety",
+          "is_correct": true
+        },
+        {
+          "text": "Speed of action",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Because rescue work is strenuous and demanding, its important for team members to be well rested. It's also recommended that you don't eat within _______ of the time you'll be wearing your apparatus.",
+      "choices": [
+        {
+          "text": "30 minutes",
+          "is_correct": false
+        },
+        {
+          "text": "1 hour",
+          "is_correct": true
+        },
+        {
+          "text": "1 and a half hours",
+          "is_correct": false
+        },
+        {
+          "text": "2 hours",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Once the team arrives at the fresh air base, it's the ______responsibility to make the final preparations and arrangements before the team proceeds beyond the fresh air base.",
+      "choices": [
+        {
+          "text": "Briefing officer",
+          "is_correct": false
+        },
+        {
+          "text": "Mine Superintendent",
+          "is_correct": false
+        },
+        {
+          "text": "Fresh air Base attendant",
+          "is_correct": false
+        },
+        {
+          "text": "Captain's",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "When your team encounters water during exploration, the ______ _____ will usually decide how to deal with the problem.",
+      "choices": [
+        {
+          "text": "Briefing Officer",
+          "is_correct": false
+        },
+        {
+          "text": "Captain",
+          "is_correct": false
+        },
+        {
+          "text": "Mine Superintendent",
+          "is_correct": false
+        },
+        {
+          "text": "Command Center",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "The time a team spends underground is usually limited to ______ ______ or less.",
+      "choices": [
+        {
+          "text": "1 hour",
+          "is_correct": false
+        },
+        {
+          "text": "2 hours",
+          "is_correct": true
+        },
+        {
+          "text": "3 hours",
+          "is_correct": false
+        },
+        {
+          "text": "4 hours",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "High expansion foam is used mainly to contain and control fire by removing two legs of the fire triangle ______ and ______.",
+      "choices": [
+        {
+          "text": "Oxygen and Fuel",
+          "is_correct": false
+        },
+        {
+          "text": "Oxygen and Heat",
+          "is_correct": true
+        },
+        {
+          "text": "Fuel and Ignition source",
+          "is_correct": false
+        },
+        {
+          "text": "Fuel and Heat",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "The Main objective in recovery work is to put the mine or affected area of the mine back into operation as soon as conditions permit after a mine disaster.",
+      "choices": [
+        {
+          "text": "True",
+          "is_correct": true
+        },
+        {
+          "text": "False",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Reestablishing ventilation and bringing fresh air to an area damaged by fire or explosion is the main task of mine rescue teams in a recovery operation.",
+      "choices": [
+        {
+          "text": "True",
+          "is_correct": true
+        },
+        {
+          "text": "False",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Progressive ventilation is the re-ventilation of the entire sealed area at once.",
+      "choices": [
+        {
+          "text": "True",
+          "is_correct": false
+        },
+        {
+          "text": "False",
+          "is_correct": true
+        }
+      ]
+    }
+  ]
+}

@@ -18533,6 +18533,18 @@
  }
 },
 {
+ "model": "pages.competitionproblem",
+ "pk": 1014,
+ "fields": {
+  "competition": 404,
+  "title": "Written Tests",
+  "description": "",
+  "sort_order": 30,
+  "created_at": "2026-08-17T23:04:15.723Z",
+  "updated_at": "2026-08-17T23:04:15.723Z"
+ }
+},
+{
  "model": "pages.problemdocument",
  "pk": 1,
  "fields": {
@@ -38707,6 +38719,28 @@
  }
 },
 {
+ "model": "pages.problemdocument",
+ "pk": 2034,
+ "fields": {
+  "problem": 1014,
+  "title": "Day 1 Written Test",
+  "file": "problems/2026_Northern_Written_Tests_2026_Northern_Regional_Day_1_Written_Test.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-17T23:04:15.752Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2035,
+ "fields": {
+  "problem": 1014,
+  "title": "Day 2 Written Test",
+  "file": "problems/2026_Northern_Written_Tests_2026_Northern_Regional_Day_2_Written_Test.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-08-17T23:04:15.762Z"
+ }
+},
+{
  "model": "pages.instructionguide",
  "pk": 1,
  "fields": {
@@ -42375,6 +42409,28 @@
   "source_document": 1902,
   "sort_order": 90,
   "created_at": "2026-08-15T22:13:15.567Z"
+ }
+},
+{
+ "model": "pages.quiz",
+ "pk": 5520,
+ "fields": {
+  "problem": 1014,
+  "title": "Day 1 Written Test",
+  "source_document": 2034,
+  "sort_order": 90,
+  "created_at": "2026-08-17T23:09:08.568Z"
+ }
+},
+{
+ "model": "pages.quiz",
+ "pk": 5521,
+ "fields": {
+  "problem": 1014,
+  "title": "Day 2 Written Test",
+  "source_document": 2035,
+  "sort_order": 90,
+  "created_at": "2026-08-17T23:09:10.526Z"
  }
 },
 {
@@ -106735,6 +106791,606 @@
   "text": "When assessing a patient with a musculoskeletal injury, it is important to ________ circulation, sensation, and motor function.",
   "image": "",
   "sort_order": 14
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266704,
+ "fields": {
+  "quiz": 5520,
+  "text": "Each mine rescue station shall be provided with at least the following equipment: _____ gas detectors appropriate for each gas which may be encountered at the mines served.",
+  "image": "",
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266705,
+ "fields": {
+  "quiz": 5520,
+  "text": "Atmospheric pressure is measured on a _____.",
+  "image": "",
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266706,
+ "fields": {
+  "quiz": 5520,
+  "text": "During barefaced exploration, the crew uses the mines communication system to report their progress and findings to the ______.",
+  "image": "",
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266707,
+ "fields": {
+  "quiz": 5520,
+  "text": "Class _____ fires involve combustible metals such Magnesium, Titanium, Zirconium, Sodium and Potassium.",
+  "image": "",
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266708,
+ "fields": {
+  "quiz": 5520,
+  "text": "Radon is not toxic.",
+  "image": "",
+  "sort_order": 4
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266709,
+ "fields": {
+  "quiz": 5520,
+  "text": "Methane is Flammable. Its explosive range is 5 to 15 percent when there is at least ____ percent Oxygen.",
+  "image": "",
+  "sort_order": 5
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266710,
+ "fields": {
+  "quiz": 5520,
+  "text": "Methane's ____ ____ is not an absolute measure of safety.",
+  "image": "",
+  "sort_order": 6
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266711,
+ "fields": {
+  "quiz": 5520,
+  "text": "Sulfur Dioxide (SO2) Will not burn or explode.",
+  "image": "",
+  "sort_order": 7
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266712,
+ "fields": {
+  "quiz": 5520,
+  "text": "Sulfur Dioxide is a very toxic irritating gas that is dangerous even in small concentrations; as little as ____ to____ percent is dangerous to life.",
+  "image": "",
+  "sort_order": 8
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266713,
+ "fields": {
+  "quiz": 5520,
+  "text": "You may recognize H2S by its distinctive \"rotten egg\" odor. However, continued exposure to the gas will dull your sense of _____, so this may not always be a reliable detection method.",
+  "image": "",
+  "sort_order": 9
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266714,
+ "fields": {
+  "quiz": 5520,
+  "text": "Hydrogen Sulfide is one of the most _____ gasses known.",
+  "image": "",
+  "sort_order": 10
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266715,
+ "fields": {
+  "quiz": 5520,
+  "text": "When mixed with the moisture from your lungs, Oxides of Nitrogen form ____ that corrode your respiratory passages and cause them to swell.",
+  "image": "",
+  "sort_order": 11
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266716,
+ "fields": {
+  "quiz": 5520,
+  "text": "It doesn't take much CO to interfere with your bloods oxygen-carrying capacity because the gas combines with hemoglobin _____ to _____ times more readily than oxygen.",
+  "image": "",
+  "sort_order": 12
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266717,
+ "fields": {
+  "quiz": 5520,
+  "text": "Carbon Monoxide poisoning is _____ over time.",
+  "image": "",
+  "sort_order": 13
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266718,
+ "fields": {
+  "quiz": 5520,
+  "text": "In general, warm air displaces cold air in the mine due to differences in _____ and in _____ of the workings.",
+  "image": "",
+  "sort_order": 14
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266719,
+ "fields": {
+  "quiz": 5520,
+  "text": "As mine rescue team members, you should know how to read a ____ _____ that shows ventilation.",
+  "image": "",
+  "sort_order": 15
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266720,
+ "fields": {
+  "quiz": 5520,
+  "text": "_____ ______ is especially useful for rescue teams to use when they need to flush out or ventilate a small area of the mine.",
+  "image": "",
+  "sort_order": 16
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266721,
+ "fields": {
+  "quiz": 5520,
+  "text": "The smoke tube is used to determine the direction and velocity of slow moving air, below ______ feet per minute.",
+  "image": "",
+  "sort_order": 17
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266722,
+ "fields": {
+  "quiz": 5520,
+  "text": "The medium velocity (or regular) anemometer is used to determine air velocities from _____ to _____ feet per minute.",
+  "image": "",
+  "sort_order": 18
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266723,
+ "fields": {
+  "quiz": 5520,
+  "text": "When installing a temporary bulkhead in a passage way, particularly in a crosscut of a room and pillar, single level mine, the bulkhead should be erected a sufficient distance into the passageway (at least ____ to ____ feet) to permit enough room for a permanent bulkhead to be built later.",
+  "image": "",
+  "sort_order": 19
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266724,
+ "fields": {
+  "quiz": 5520,
+  "text": "Be sure the fresh air base is located where its assured _____ ventilation and fresh air.",
+  "image": "",
+  "sort_order": 20
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266725,
+ "fields": {
+  "quiz": 5520,
+  "text": "As you explore, keep in mind that your first priority is________.",
+  "image": "",
+  "sort_order": 21
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266726,
+ "fields": {
+  "quiz": 5520,
+  "text": "Because rescue work is strenuous and demanding, its important for team members to be well rested. It's also recommended that you don't eat within _______ of the time you'll be wearing your apparatus.",
+  "image": "",
+  "sort_order": 22
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266727,
+ "fields": {
+  "quiz": 5520,
+  "text": "Once the team arrives at the fresh air base, it's the ______responsibility to make the final preparations and arrangements before the team proceeds beyond the fresh air base.",
+  "image": "",
+  "sort_order": 23
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266728,
+ "fields": {
+  "quiz": 5520,
+  "text": "When your team encounters water during exploration, the ______ _____ will usually decide how to deal with the problem.",
+  "image": "",
+  "sort_order": 24
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266729,
+ "fields": {
+  "quiz": 5520,
+  "text": "The time a team spends underground is usually limited to ______ ______ or less.",
+  "image": "",
+  "sort_order": 25
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266730,
+ "fields": {
+  "quiz": 5520,
+  "text": "High expansion foam is used mainly to contain and control fire by removing two legs of the fire triangle ______ and ______.",
+  "image": "",
+  "sort_order": 26
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266731,
+ "fields": {
+  "quiz": 5520,
+  "text": "The Main objective in recovery work is to put the mine or affected area of the mine back into operation as soon as conditions permit after a mine disaster.",
+  "image": "",
+  "sort_order": 27
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266732,
+ "fields": {
+  "quiz": 5520,
+  "text": "Reestablishing ventilation and bringing fresh air to an area damaged by fire or explosion is the main task of mine rescue teams in a recovery operation.",
+  "image": "",
+  "sort_order": 28
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266733,
+ "fields": {
+  "quiz": 5520,
+  "text": "Progressive ventilation is the re-ventilation of the entire sealed area at once.",
+  "image": "",
+  "sort_order": 29
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266734,
+ "fields": {
+  "quiz": 5521,
+  "text": "The person that would obtain and distribute all equipment, supplies, and non-sparking tools used for the operation.",
+  "image": "",
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266735,
+ "fields": {
+  "quiz": 5521,
+  "text": "Carbon Dioxide is soluble in water.",
+  "image": "",
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266736,
+ "fields": {
+  "quiz": 5521,
+  "text": "CO explosive Range in normal air is _____ to _____%",
+  "image": "",
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266737,
+ "fields": {
+  "quiz": 5521,
+  "text": "Hydrogen will explode when there is as little as 5% oxygen.",
+  "image": "",
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266738,
+ "fields": {
+  "quiz": 5521,
+  "text": "Hydrogen Sulfide is flammable and explosive in concentrations from ________ to ______ percent in normal air.",
+  "image": "",
+  "sort_order": 4
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266739,
+ "fields": {
+  "quiz": 5521,
+  "text": "MSHA requires mine rescue stations serving underground M/NM mines to have _________ gas detectors appropriate for each gas which may be encountered at the mines served.",
+  "image": "",
+  "sort_order": 5
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266740,
+ "fields": {
+  "quiz": 5521,
+  "text": "Specific Gravity of Methane.",
+  "image": "",
+  "sort_order": 6
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266741,
+ "fields": {
+  "quiz": 5521,
+  "text": "Hydrogen is soluble in water.",
+  "image": "",
+  "sort_order": 7
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266742,
+ "fields": {
+  "quiz": 5521,
+  "text": "Specific Gravity of Sulfur Dioxide.",
+  "image": "",
+  "sort_order": 8
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266743,
+ "fields": {
+  "quiz": 5521,
+  "text": "Breathing air containing 5 percent carbon dioxide increases respiration _________ percent, causing difficult breathing.",
+  "image": "",
+  "sort_order": 9
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266744,
+ "fields": {
+  "quiz": 5521,
+  "text": "If shafts are used as Two Main airways, the intake shaft is called the _____ shaft.",
+  "image": "",
+  "sort_order": 10
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266745,
+ "fields": {
+  "quiz": 5521,
+  "text": "It is important to _____ and _____ air underground so that it reaches all areas of the mine.",
+  "image": "",
+  "sort_order": 11
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266746,
+ "fields": {
+  "quiz": 5521,
+  "text": "Porous stoppings such as concrete block stoppings are usually plastered on the ______ _____ side to reduce leakage.",
+  "image": "",
+  "sort_order": 12
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266747,
+ "fields": {
+  "quiz": 5521,
+  "text": "Each Mine Rescue station shall be provided with the following equipment. _____ permissible cap lamps with charging rack.",
+  "image": "",
+  "sort_order": 13
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266748,
+ "fields": {
+  "quiz": 5521,
+  "text": "Each Mine Rescue station shall be provided with the following equipment. _____ extra, fully charged oxygen bottles for every Six self-contained breathing apparatus.",
+  "image": "",
+  "sort_order": 14
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266749,
+ "fields": {
+  "quiz": 5521,
+  "text": "When a team takes the air direction and _____ measurements, it will report those findings to the command center.",
+  "image": "",
+  "sort_order": 15
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266750,
+ "fields": {
+  "quiz": 5521,
+  "text": "Whenever Possible Its best to enter the mine by way of_____.",
+  "image": "",
+  "sort_order": 16
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266751,
+ "fields": {
+  "quiz": 5521,
+  "text": "Class C fires are _____ fires.",
+  "image": "",
+  "sort_order": 17
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266752,
+ "fields": {
+  "quiz": 5521,
+  "text": "To operate a handheld fire extinguisher, you should grasp it firmly and approach the fire from the Intake side, holding the nozzle downward at a _____",
+  "image": "",
+  "sort_order": 18
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266753,
+ "fields": {
+  "quiz": 5521,
+  "text": "Most Small Dry Chemical extinguishers are effective _____ to ____ Feet from the fire.",
+  "image": "",
+  "sort_order": 19
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266754,
+ "fields": {
+  "quiz": 5521,
+  "text": "It's generally recommended that mine rescue teams use multi-purpose dry chemical extinguishers, which contain _____.",
+  "image": "",
+  "sort_order": 20
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266755,
+ "fields": {
+  "quiz": 5521,
+  "text": "A 30-pound extinguisher will generally last ___ to ___ seconds.",
+  "image": "",
+  "sort_order": 21
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266756,
+ "fields": {
+  "quiz": 5521,
+  "text": "Power is usually restored _____ by an electrician as the ventilation is advanced.",
+  "image": "",
+  "sort_order": 22
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266757,
+ "fields": {
+  "quiz": 5521,
+  "text": "The _____ should regulate the teams pace according to the conditions encountered.",
+  "image": "",
+  "sort_order": 23
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266758,
+ "fields": {
+  "quiz": 5521,
+  "text": "A person trained in the use and care of breathing apparatus shall inspect and test the apparatus at intervals not exceeding ___.",
+  "image": "",
+  "sort_order": 24
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266759,
+ "fields": {
+  "quiz": 5521,
+  "text": "The _____ is used to show the direction and velocity of slow moving air (below 120 feet per minute).",
+  "image": "",
+  "sort_order": 25
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266760,
+ "fields": {
+  "quiz": 5521,
+  "text": "Usually, the team that discovers the body is not the team that actually does the body recovery.",
+  "image": "",
+  "sort_order": 26
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266761,
+ "fields": {
+  "quiz": 5521,
+  "text": "Whether survivors are showing signs of Histeria or not, they should ______.",
+  "image": "",
+  "sort_order": 27
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266762,
+ "fields": {
+  "quiz": 5521,
+  "text": "If survivors are found in contaminated air or questionable air, the will need to be given ____if they are to be transported to fresh air.",
+  "image": "",
+  "sort_order": 28
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266763,
+ "fields": {
+  "quiz": 5521,
+  "text": "Examples of low or Third Priority conditions.",
+  "image": "",
+  "sort_order": 29
  }
 },
 {
@@ -314045,6 +314701,2226 @@
   "text": "assess",
   "is_correct": false,
   "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857145,
+ "fields": {
+  "question": 266704,
+  "text": "Two",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857146,
+ "fields": {
+  "question": 266704,
+  "text": "Three",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857147,
+ "fields": {
+  "question": 266704,
+  "text": "Four",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857148,
+ "fields": {
+  "question": 266704,
+  "text": "Five",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857149,
+ "fields": {
+  "question": 266705,
+  "text": "Specific Gravity",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857150,
+ "fields": {
+  "question": 266705,
+  "text": "Barometer",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857151,
+ "fields": {
+  "question": 266705,
+  "text": "Dust Pump",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857152,
+ "fields": {
+  "question": 266705,
+  "text": "Anemometer",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857153,
+ "fields": {
+  "question": 266706,
+  "text": "Fresh air base",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857154,
+ "fields": {
+  "question": 266706,
+  "text": "Briefing officer",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857155,
+ "fields": {
+  "question": 266706,
+  "text": "Surface",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857156,
+ "fields": {
+  "question": 266706,
+  "text": "Tail captain",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857157,
+ "fields": {
+  "question": 266707,
+  "text": "A",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857158,
+ "fields": {
+  "question": 266707,
+  "text": "B",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857159,
+ "fields": {
+  "question": 266707,
+  "text": "C",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857160,
+ "fields": {
+  "question": 266707,
+  "text": "D",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857161,
+ "fields": {
+  "question": 266708,
+  "text": "True",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857162,
+ "fields": {
+  "question": 266708,
+  "text": "False",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857163,
+ "fields": {
+  "question": 266709,
+  "text": "19.5",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857164,
+ "fields": {
+  "question": 266709,
+  "text": "17.0",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857165,
+ "fields": {
+  "question": 266709,
+  "text": "19.4",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857166,
+ "fields": {
+  "question": 266709,
+  "text": "12.1",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857167,
+ "fields": {
+  "question": 266710,
+  "text": "Specific Gravity",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857168,
+ "fields": {
+  "question": 266710,
+  "text": "Explosive range",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857169,
+ "fields": {
+  "question": 266710,
+  "text": "Detection Methods",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857170,
+ "fields": {
+  "question": 266710,
+  "text": "Health Hazards",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857171,
+ "fields": {
+  "question": 266711,
+  "text": "True",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857172,
+ "fields": {
+  "question": 266711,
+  "text": "False",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857173,
+ "fields": {
+  "question": 266712,
+  "text": "4.0 to 5.0",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857174,
+ "fields": {
+  "question": 266712,
+  "text": "0.4 to 0.5",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857175,
+ "fields": {
+  "question": 266712,
+  "text": "0.04 to 0.05",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857176,
+ "fields": {
+  "question": 266712,
+  "text": "0.004 to 0.005",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857177,
+ "fields": {
+  "question": 266713,
+  "text": "Eyesite",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857178,
+ "fields": {
+  "question": 266713,
+  "text": "Smell",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857179,
+ "fields": {
+  "question": 266713,
+  "text": "Taste",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857180,
+ "fields": {
+  "question": 266713,
+  "text": "Feeling",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857181,
+ "fields": {
+  "question": 266714,
+  "text": "Poisonous",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857182,
+ "fields": {
+  "question": 266714,
+  "text": "Toxic",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857183,
+ "fields": {
+  "question": 266714,
+  "text": "Explosive",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857184,
+ "fields": {
+  "question": 266714,
+  "text": "Heavy",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857185,
+ "fields": {
+  "question": 266715,
+  "text": "Gasses",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857186,
+ "fields": {
+  "question": 266715,
+  "text": "Vapors",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857187,
+ "fields": {
+  "question": 266715,
+  "text": "Acid",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857188,
+ "fields": {
+  "question": 266715,
+  "text": "Fluid",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857189,
+ "fields": {
+  "question": 266716,
+  "text": "100 to 200",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857190,
+ "fields": {
+  "question": 266716,
+  "text": "200 to 300",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857191,
+ "fields": {
+  "question": 266716,
+  "text": "300 to 400",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857192,
+ "fields": {
+  "question": 266716,
+  "text": "400 to 500",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857193,
+ "fields": {
+  "question": 266717,
+  "text": "Acute",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857194,
+ "fields": {
+  "question": 266717,
+  "text": "Cumulative",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857195,
+ "fields": {
+  "question": 266717,
+  "text": "Systemic",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857196,
+ "fields": {
+  "question": 266717,
+  "text": "Transparent",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857197,
+ "fields": {
+  "question": 266718,
+  "text": "Hight, Width",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857198,
+ "fields": {
+  "question": 266718,
+  "text": "Elevation, Temperature",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857199,
+ "fields": {
+  "question": 266718,
+  "text": "Pressure, Differential",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857200,
+ "fields": {
+  "question": 266718,
+  "text": "Temperature, Specific Gravity",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857201,
+ "fields": {
+  "question": 266719,
+  "text": "Gas Chart",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857202,
+ "fields": {
+  "question": 266719,
+  "text": "Fan Chart",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857203,
+ "fields": {
+  "question": 266719,
+  "text": "Mine Map",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857204,
+ "fields": {
+  "question": 266719,
+  "text": "Escapeway Map",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857205,
+ "fields": {
+  "question": 266720,
+  "text": "Line Brattice",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857206,
+ "fields": {
+  "question": 266720,
+  "text": "Check Curtain",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857207,
+ "fields": {
+  "question": 266720,
+  "text": "Temporary Stopping",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857208,
+ "fields": {
+  "question": 266720,
+  "text": "Temporary Bulkheads",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857209,
+ "fields": {
+  "question": 266721,
+  "text": "80",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857210,
+ "fields": {
+  "question": 266721,
+  "text": "100",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857211,
+ "fields": {
+  "question": 266721,
+  "text": "120",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857212,
+ "fields": {
+  "question": 266721,
+  "text": "140",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857213,
+ "fields": {
+  "question": 266722,
+  "text": "100 to 1,000",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857214,
+ "fields": {
+  "question": 266722,
+  "text": "110 to 3,000",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857215,
+ "fields": {
+  "question": 266722,
+  "text": "120 to 2,000",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857216,
+ "fields": {
+  "question": 266722,
+  "text": "130 to 3,000",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857217,
+ "fields": {
+  "question": 266723,
+  "text": "4 to 6",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857218,
+ "fields": {
+  "question": 266723,
+  "text": "6 to 8",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857219,
+ "fields": {
+  "question": 266723,
+  "text": "8 to 10",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857220,
+ "fields": {
+  "question": 266723,
+  "text": "10 to 12",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857221,
+ "fields": {
+  "question": 266724,
+  "text": "Monitored",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857222,
+ "fields": {
+  "question": 266724,
+  "text": "Positive",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857223,
+ "fields": {
+  "question": 266724,
+  "text": "Negative",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857224,
+ "fields": {
+  "question": 266724,
+  "text": "Bare-Faced",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857225,
+ "fields": {
+  "question": 266725,
+  "text": "Rescue of survivors",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857226,
+ "fields": {
+  "question": 266725,
+  "text": "Recovery of the mine",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857227,
+ "fields": {
+  "question": 266725,
+  "text": "Team Safety",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857228,
+ "fields": {
+  "question": 266725,
+  "text": "Speed of action",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857229,
+ "fields": {
+  "question": 266726,
+  "text": "30 minutes",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857230,
+ "fields": {
+  "question": 266726,
+  "text": "1 hour",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857231,
+ "fields": {
+  "question": 266726,
+  "text": "1 and a half hours",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857232,
+ "fields": {
+  "question": 266726,
+  "text": "2 hours",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857233,
+ "fields": {
+  "question": 266727,
+  "text": "Briefing officer",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857234,
+ "fields": {
+  "question": 266727,
+  "text": "Mine Superintendent",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857235,
+ "fields": {
+  "question": 266727,
+  "text": "Fresh air Base attendant",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857236,
+ "fields": {
+  "question": 266727,
+  "text": "Captain's",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857237,
+ "fields": {
+  "question": 266728,
+  "text": "Briefing Officer",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857238,
+ "fields": {
+  "question": 266728,
+  "text": "Captain",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857239,
+ "fields": {
+  "question": 266728,
+  "text": "Mine Superintendent",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857240,
+ "fields": {
+  "question": 266728,
+  "text": "Command Center",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857241,
+ "fields": {
+  "question": 266729,
+  "text": "1 hour",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857242,
+ "fields": {
+  "question": 266729,
+  "text": "2 hours",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857243,
+ "fields": {
+  "question": 266729,
+  "text": "3 hours",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857244,
+ "fields": {
+  "question": 266729,
+  "text": "4 hours",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857245,
+ "fields": {
+  "question": 266730,
+  "text": "Oxygen and Fuel",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857246,
+ "fields": {
+  "question": 266730,
+  "text": "Oxygen and Heat",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857247,
+ "fields": {
+  "question": 266730,
+  "text": "Fuel and Ignition source",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857248,
+ "fields": {
+  "question": 266730,
+  "text": "Fuel and Heat",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857249,
+ "fields": {
+  "question": 266731,
+  "text": "True",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857250,
+ "fields": {
+  "question": 266731,
+  "text": "False",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857251,
+ "fields": {
+  "question": 266732,
+  "text": "True",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857252,
+ "fields": {
+  "question": 266732,
+  "text": "False",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857253,
+ "fields": {
+  "question": 266733,
+  "text": "True",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857254,
+ "fields": {
+  "question": 266733,
+  "text": "False",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857255,
+ "fields": {
+  "question": 266734,
+  "text": "Mine Superintendent",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857256,
+ "fields": {
+  "question": 266734,
+  "text": "Mine Foreman",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857257,
+ "fields": {
+  "question": 266734,
+  "text": "Mine Clerk",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857258,
+ "fields": {
+  "question": 266734,
+  "text": "Supply Clerk",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857259,
+ "fields": {
+  "question": 266735,
+  "text": "True",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857260,
+ "fields": {
+  "question": 266735,
+  "text": "False",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857261,
+ "fields": {
+  "question": 266736,
+  "text": "12.0 to 74.2",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857262,
+ "fields": {
+  "question": 266736,
+  "text": "12.5 to 73.4",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857263,
+ "fields": {
+  "question": 266736,
+  "text": "5 to 15",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857264,
+ "fields": {
+  "question": 266736,
+  "text": "12.5 to 74.2",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857265,
+ "fields": {
+  "question": 266737,
+  "text": "True",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857266,
+ "fields": {
+  "question": 266737,
+  "text": "False",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857267,
+ "fields": {
+  "question": 266738,
+  "text": "5 to 15",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857268,
+ "fields": {
+  "question": 266738,
+  "text": "4 to 74.2",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857269,
+ "fields": {
+  "question": 266738,
+  "text": "4.3 to 45.5",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857270,
+ "fields": {
+  "question": 266738,
+  "text": "12.0 to 74.2",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857271,
+ "fields": {
+  "question": 266739,
+  "text": "Two",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857272,
+ "fields": {
+  "question": 266739,
+  "text": "Three",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857273,
+ "fields": {
+  "question": 266739,
+  "text": "Four",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857274,
+ "fields": {
+  "question": 266739,
+  "text": "Five",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857275,
+ "fields": {
+  "question": 266740,
+  "text": ".05545",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857276,
+ "fields": {
+  "question": 266740,
+  "text": ".06454",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857277,
+ "fields": {
+  "question": 266740,
+  "text": ".04454",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857278,
+ "fields": {
+  "question": 266740,
+  "text": ".08823",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857279,
+ "fields": {
+  "question": 266741,
+  "text": "True",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857280,
+ "fields": {
+  "question": 266741,
+  "text": "False",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857281,
+ "fields": {
+  "question": 266742,
+  "text": "1.5894",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857282,
+ "fields": {
+  "question": 266742,
+  "text": "0.9672",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857283,
+ "fields": {
+  "question": 266742,
+  "text": "2.2638",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857284,
+ "fields": {
+  "question": 266742,
+  "text": "1.9672",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857285,
+ "fields": {
+  "question": 266743,
+  "text": "100",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857286,
+ "fields": {
+  "question": 266743,
+  "text": "200",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857287,
+ "fields": {
+  "question": 266743,
+  "text": "300",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857288,
+ "fields": {
+  "question": 266743,
+  "text": "400",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857289,
+ "fields": {
+  "question": 266744,
+  "text": "Down Draft",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857290,
+ "fields": {
+  "question": 266744,
+  "text": "Up Draft",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857291,
+ "fields": {
+  "question": 266744,
+  "text": "Down Cast",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857292,
+ "fields": {
+  "question": 266744,
+  "text": "Up Cast",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857293,
+ "fields": {
+  "question": 266745,
+  "text": "Vary and Use",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857294,
+ "fields": {
+  "question": 266745,
+  "text": "Allow and Condense",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857295,
+ "fields": {
+  "question": 266745,
+  "text": "Control and Course",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857296,
+ "fields": {
+  "question": 266745,
+  "text": "Vary and Course",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857297,
+ "fields": {
+  "question": 266746,
+  "text": "High Pressure",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857298,
+ "fields": {
+  "question": 266746,
+  "text": "Low Pressure",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857299,
+ "fields": {
+  "question": 266746,
+  "text": "Right side",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857300,
+ "fields": {
+  "question": 266746,
+  "text": "Inby Side",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857301,
+ "fields": {
+  "question": 266747,
+  "text": "Six",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857302,
+ "fields": {
+  "question": 266747,
+  "text": "Eight",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857303,
+ "fields": {
+  "question": 266747,
+  "text": "Ten",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857304,
+ "fields": {
+  "question": 266747,
+  "text": "Twelve",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857305,
+ "fields": {
+  "question": 266748,
+  "text": "Six",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857306,
+ "fields": {
+  "question": 266748,
+  "text": "Four",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857307,
+ "fields": {
+  "question": 266748,
+  "text": "Two",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857308,
+ "fields": {
+  "question": 266748,
+  "text": "Three",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857309,
+ "fields": {
+  "question": 266749,
+  "text": "Quality",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857310,
+ "fields": {
+  "question": 266749,
+  "text": "Cubic Feet Per Minute",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857311,
+ "fields": {
+  "question": 266749,
+  "text": "Velocity",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857312,
+ "fields": {
+  "question": 266749,
+  "text": "Traversing",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857313,
+ "fields": {
+  "question": 266750,
+  "text": "An Exhaust airway",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857314,
+ "fields": {
+  "question": 266750,
+  "text": "The Main Haulage way",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857315,
+ "fields": {
+  "question": 266750,
+  "text": "The Safest Intake Airway",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857316,
+ "fields": {
+  "question": 266750,
+  "text": "The Belt entry",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857317,
+ "fields": {
+  "question": 266751,
+  "text": "Chemical",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857318,
+ "fields": {
+  "question": 266751,
+  "text": "Combustible Metals",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857319,
+ "fields": {
+  "question": 266751,
+  "text": "Electrical",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857320,
+ "fields": {
+  "question": 266751,
+  "text": "Wood, Plastic, Paper",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857321,
+ "fields": {
+  "question": 266752,
+  "text": "Sixty Degree angle",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857322,
+ "fields": {
+  "question": 266752,
+  "text": "Forty-five Degree angle",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857323,
+ "fields": {
+  "question": 266752,
+  "text": "Thirty Degree angle",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857324,
+ "fields": {
+  "question": 266752,
+  "text": "Fifty-five Degree angle",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857325,
+ "fields": {
+  "question": 266753,
+  "text": "2 to 5",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857326,
+ "fields": {
+  "question": 266753,
+  "text": "5 To 8",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857327,
+ "fields": {
+  "question": 266753,
+  "text": "8 to 10",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857328,
+ "fields": {
+  "question": 266753,
+  "text": "10 to 15",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857329,
+ "fields": {
+  "question": 266754,
+  "text": "Monoammonium Phosphate",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857330,
+ "fields": {
+  "question": 266754,
+  "text": "Sodium Bicarbonate",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857331,
+ "fields": {
+  "question": 266754,
+  "text": "Potassium Bicarbonate",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857332,
+ "fields": {
+  "question": 266754,
+  "text": "Halogenated Extinguishing agents",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857333,
+ "fields": {
+  "question": 266755,
+  "text": "8 to 60",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857334,
+ "fields": {
+  "question": 266755,
+  "text": "15 to 30",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857335,
+ "fields": {
+  "question": 266755,
+  "text": "18 to 25",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857336,
+ "fields": {
+  "question": 266755,
+  "text": "25 to 40",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857337,
+ "fields": {
+  "question": 266756,
+  "text": "Periodically",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857338,
+ "fields": {
+  "question": 266756,
+  "text": "Carefully",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857339,
+ "fields": {
+  "question": 266756,
+  "text": "Progressively",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857340,
+ "fields": {
+  "question": 266756,
+  "text": "Immediately",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857341,
+ "fields": {
+  "question": 266757,
+  "text": "The Briefing officer",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857342,
+ "fields": {
+  "question": 266757,
+  "text": "The Fresh Air Base",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857343,
+ "fields": {
+  "question": 266757,
+  "text": "The Captain",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857344,
+ "fields": {
+  "question": 266757,
+  "text": "The Command Center",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857345,
+ "fields": {
+  "question": 266758,
+  "text": "Monthly",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857346,
+ "fields": {
+  "question": 266758,
+  "text": "Before each use",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857347,
+ "fields": {
+  "question": 266758,
+  "text": "30 Days",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857348,
+ "fields": {
+  "question": 266758,
+  "text": "After each use",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857349,
+ "fields": {
+  "question": 266759,
+  "text": "Anemometer",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857350,
+ "fields": {
+  "question": 266759,
+  "text": "Gas Detector",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857351,
+ "fields": {
+  "question": 266759,
+  "text": "Smoke Tube",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857352,
+ "fields": {
+  "question": 266759,
+  "text": "Pitot Tube",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857353,
+ "fields": {
+  "question": 266760,
+  "text": "True",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857354,
+ "fields": {
+  "question": 266760,
+  "text": "False",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857355,
+ "fields": {
+  "question": 266761,
+  "text": "Never left out of Sight and Sound",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857356,
+ "fields": {
+  "question": 266761,
+  "text": "Be Restrained",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857357,
+ "fields": {
+  "question": 266761,
+  "text": "Never be left alone",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857358,
+ "fields": {
+  "question": 266761,
+  "text": "Placed on a stretcher",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857359,
+ "fields": {
+  "question": 266762,
+  "text": "A Stretcher",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857360,
+ "fields": {
+  "question": 266762,
+  "text": "Psychological Evaluation",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857361,
+ "fields": {
+  "question": 266762,
+  "text": "A Restraining Devise",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857362,
+ "fields": {
+  "question": 266762,
+  "text": "Breathing Protection",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857363,
+ "fields": {
+  "question": 266763,
+  "text": "Fractured arm, hand or foot",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857364,
+ "fields": {
+  "question": 266763,
+  "text": "Multiple Lacerations",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857365,
+ "fields": {
+  "question": 266763,
+  "text": "Chest Injuries",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857366,
+ "fields": {
+  "question": 266763,
+  "text": "Unconscious",
+  "is_correct": false,
+  "sort_order": 3
  }
 }
 ]

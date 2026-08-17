@@ -1,0 +1,604 @@
+{
+  "source_pk": 2035,
+  "title": "Day 2 Written Test",
+  "questions": [
+    {
+      "text": "The person that would obtain and distribute all equipment, supplies, and non-sparking tools used for the operation.",
+      "choices": [
+        {
+          "text": "Mine Superintendent",
+          "is_correct": false
+        },
+        {
+          "text": "Mine Foreman",
+          "is_correct": false
+        },
+        {
+          "text": "Mine Clerk",
+          "is_correct": false
+        },
+        {
+          "text": "Supply Clerk",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Carbon Dioxide is soluble in water.",
+      "choices": [
+        {
+          "text": "True",
+          "is_correct": true
+        },
+        {
+          "text": "False",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "CO explosive Range in normal air is _____ to _____%",
+      "choices": [
+        {
+          "text": "12.0 to 74.2",
+          "is_correct": false
+        },
+        {
+          "text": "12.5 to 73.4",
+          "is_correct": false
+        },
+        {
+          "text": "5 to 15",
+          "is_correct": false
+        },
+        {
+          "text": "12.5 to 74.2",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Hydrogen will explode when there is as little as 5% oxygen.",
+      "choices": [
+        {
+          "text": "True",
+          "is_correct": true
+        },
+        {
+          "text": "False",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Hydrogen Sulfide is flammable and explosive in concentrations from ________ to ______ percent in normal air.",
+      "choices": [
+        {
+          "text": "5 to 15",
+          "is_correct": false
+        },
+        {
+          "text": "4 to 74.2",
+          "is_correct": false
+        },
+        {
+          "text": "4.3 to 45.5",
+          "is_correct": true
+        },
+        {
+          "text": "12.0 to 74.2",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "MSHA requires mine rescue stations serving underground M/NM mines to have _________ gas detectors appropriate for each gas which may be encountered at the mines served.",
+      "choices": [
+        {
+          "text": "Two",
+          "is_correct": false
+        },
+        {
+          "text": "Three",
+          "is_correct": false
+        },
+        {
+          "text": "Four",
+          "is_correct": true
+        },
+        {
+          "text": "Five",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Specific Gravity of Methane.",
+      "choices": [
+        {
+          "text": ".05545",
+          "is_correct": true
+        },
+        {
+          "text": ".06454",
+          "is_correct": false
+        },
+        {
+          "text": ".04454",
+          "is_correct": false
+        },
+        {
+          "text": ".08823",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Hydrogen is soluble in water.",
+      "choices": [
+        {
+          "text": "True",
+          "is_correct": false
+        },
+        {
+          "text": "False",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Specific Gravity of Sulfur Dioxide.",
+      "choices": [
+        {
+          "text": "1.5894",
+          "is_correct": false
+        },
+        {
+          "text": "0.9672",
+          "is_correct": false
+        },
+        {
+          "text": "2.2638",
+          "is_correct": true
+        },
+        {
+          "text": "1.9672",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Breathing air containing 5 percent carbon dioxide increases respiration _________ percent, causing difficult breathing.",
+      "choices": [
+        {
+          "text": "100",
+          "is_correct": false
+        },
+        {
+          "text": "200",
+          "is_correct": false
+        },
+        {
+          "text": "300",
+          "is_correct": true
+        },
+        {
+          "text": "400",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "If shafts are used as Two Main airways, the intake shaft is called the _____ shaft.",
+      "choices": [
+        {
+          "text": "Down Draft",
+          "is_correct": false
+        },
+        {
+          "text": "Up Draft",
+          "is_correct": false
+        },
+        {
+          "text": "Down Cast",
+          "is_correct": true
+        },
+        {
+          "text": "Up Cast",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "It is important to _____ and _____ air underground so that it reaches all areas of the mine.",
+      "choices": [
+        {
+          "text": "Vary and Use",
+          "is_correct": false
+        },
+        {
+          "text": "Allow and Condense",
+          "is_correct": false
+        },
+        {
+          "text": "Control and Course",
+          "is_correct": true
+        },
+        {
+          "text": "Vary and Course",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Porous stoppings such as concrete block stoppings are usually plastered on the ______ _____ side to reduce leakage.",
+      "choices": [
+        {
+          "text": "High Pressure",
+          "is_correct": true
+        },
+        {
+          "text": "Low Pressure",
+          "is_correct": false
+        },
+        {
+          "text": "Right side",
+          "is_correct": false
+        },
+        {
+          "text": "Inby Side",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Each Mine Rescue station shall be provided with the following equipment. _____ permissible cap lamps with charging rack.",
+      "choices": [
+        {
+          "text": "Six",
+          "is_correct": false
+        },
+        {
+          "text": "Eight",
+          "is_correct": false
+        },
+        {
+          "text": "Ten",
+          "is_correct": false
+        },
+        {
+          "text": "Twelve",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Each Mine Rescue station shall be provided with the following equipment. _____ extra, fully charged oxygen bottles for every Six self-contained breathing apparatus.",
+      "choices": [
+        {
+          "text": "Six",
+          "is_correct": false
+        },
+        {
+          "text": "Four",
+          "is_correct": false
+        },
+        {
+          "text": "Two",
+          "is_correct": true
+        },
+        {
+          "text": "Three",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "When a team takes the air direction and _____ measurements, it will report those findings to the command center.",
+      "choices": [
+        {
+          "text": "Quality",
+          "is_correct": false
+        },
+        {
+          "text": "Cubic Feet Per Minute",
+          "is_correct": false
+        },
+        {
+          "text": "Velocity",
+          "is_correct": true
+        },
+        {
+          "text": "Traversing",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Whenever Possible Its best to enter the mine by way of_____.",
+      "choices": [
+        {
+          "text": "An Exhaust airway",
+          "is_correct": false
+        },
+        {
+          "text": "The Main Haulage way",
+          "is_correct": false
+        },
+        {
+          "text": "The Safest Intake Airway",
+          "is_correct": true
+        },
+        {
+          "text": "The Belt entry",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Class C fires are _____ fires.",
+      "choices": [
+        {
+          "text": "Chemical",
+          "is_correct": false
+        },
+        {
+          "text": "Combustible Metals",
+          "is_correct": false
+        },
+        {
+          "text": "Electrical",
+          "is_correct": true
+        },
+        {
+          "text": "Wood, Plastic, Paper",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "To operate a handheld fire extinguisher, you should grasp it firmly and approach the fire from the Intake side, holding the nozzle downward at a _____",
+      "choices": [
+        {
+          "text": "Sixty Degree angle",
+          "is_correct": false
+        },
+        {
+          "text": "Forty-five Degree angle",
+          "is_correct": true
+        },
+        {
+          "text": "Thirty Degree angle",
+          "is_correct": false
+        },
+        {
+          "text": "Fifty-five Degree angle",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Most Small Dry Chemical extinguishers are effective _____ to ____ Feet from the fire.",
+      "choices": [
+        {
+          "text": "2 to 5",
+          "is_correct": false
+        },
+        {
+          "text": "5 To 8",
+          "is_correct": true
+        },
+        {
+          "text": "8 to 10",
+          "is_correct": false
+        },
+        {
+          "text": "10 to 15",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "It's generally recommended that mine rescue teams use multi-purpose dry chemical extinguishers, which contain _____.",
+      "choices": [
+        {
+          "text": "Monoammonium Phosphate",
+          "is_correct": true
+        },
+        {
+          "text": "Sodium Bicarbonate",
+          "is_correct": false
+        },
+        {
+          "text": "Potassium Bicarbonate",
+          "is_correct": false
+        },
+        {
+          "text": "Halogenated Extinguishing agents",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "A 30-pound extinguisher will generally last ___ to ___ seconds.",
+      "choices": [
+        {
+          "text": "8 to 60",
+          "is_correct": false
+        },
+        {
+          "text": "15 to 30",
+          "is_correct": false
+        },
+        {
+          "text": "18 to 25",
+          "is_correct": true
+        },
+        {
+          "text": "25 to 40",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Power is usually restored _____ by an electrician as the ventilation is advanced.",
+      "choices": [
+        {
+          "text": "Periodically",
+          "is_correct": false
+        },
+        {
+          "text": "Carefully",
+          "is_correct": false
+        },
+        {
+          "text": "Progressively",
+          "is_correct": true
+        },
+        {
+          "text": "Immediately",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "The _____ should regulate the teams pace according to the conditions encountered.",
+      "choices": [
+        {
+          "text": "The Briefing officer",
+          "is_correct": false
+        },
+        {
+          "text": "The Fresh Air Base",
+          "is_correct": false
+        },
+        {
+          "text": "The Captain",
+          "is_correct": true
+        },
+        {
+          "text": "The Command Center",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "A person trained in the use and care of breathing apparatus shall inspect and test the apparatus at intervals not exceeding ___.",
+      "choices": [
+        {
+          "text": "Monthly",
+          "is_correct": false
+        },
+        {
+          "text": "Before each use",
+          "is_correct": false
+        },
+        {
+          "text": "30 Days",
+          "is_correct": true
+        },
+        {
+          "text": "After each use",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "The _____ is used to show the direction and velocity of slow moving air (below 120 feet per minute).",
+      "choices": [
+        {
+          "text": "Anemometer",
+          "is_correct": false
+        },
+        {
+          "text": "Gas Detector",
+          "is_correct": false
+        },
+        {
+          "text": "Smoke Tube",
+          "is_correct": true
+        },
+        {
+          "text": "Pitot Tube",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Usually, the team that discovers the body is not the team that actually does the body recovery.",
+      "choices": [
+        {
+          "text": "True",
+          "is_correct": true
+        },
+        {
+          "text": "False",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Whether survivors are showing signs of Histeria or not, they should ______.",
+      "choices": [
+        {
+          "text": "Never left out of Sight and Sound",
+          "is_correct": false
+        },
+        {
+          "text": "Be Restrained",
+          "is_correct": false
+        },
+        {
+          "text": "Never be left alone",
+          "is_correct": true
+        },
+        {
+          "text": "Placed on a stretcher",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "If survivors are found in contaminated air or questionable air, the will need to be given ____if they are to be transported to fresh air.",
+      "choices": [
+        {
+          "text": "A Stretcher",
+          "is_correct": false
+        },
+        {
+          "text": "Psychological Evaluation",
+          "is_correct": false
+        },
+        {
+          "text": "A Restraining Devise",
+          "is_correct": false
+        },
+        {
+          "text": "Breathing Protection",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Examples of low or Third Priority conditions.",
+      "choices": [
+        {
+          "text": "Fractured arm, hand or foot",
+          "is_correct": true
+        },
+        {
+          "text": "Multiple Lacerations",
+          "is_correct": false
+        },
+        {
+          "text": "Chest Injuries",
+          "is_correct": false
+        },
+        {
+          "text": "Unconscious",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}
