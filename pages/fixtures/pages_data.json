@@ -18545,6 +18545,18 @@
  }
 },
 {
+ "model": "pages.competitionproblem",
+ "pk": 1015,
+ "fields": {
+  "competition": 400,
+  "title": "Written Tests",
+  "description": "",
+  "sort_order": 10,
+  "created_at": "2026-08-18T22:29:22.586Z",
+  "updated_at": "2026-08-18T22:29:22.587Z"
+ }
+},
+{
  "model": "pages.problemdocument",
  "pk": 1,
  "fields": {
@@ -38738,6 +38750,50 @@
   "file": "problems/2026_Northern_Written_Tests_2026_Northern_Regional_Day_2_Written_Test.pdf",
   "sort_order": 20,
   "uploaded_at": "2026-08-17T23:04:15.762Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2036,
+ "fields": {
+  "problem": 1015,
+  "title": "BG4 Day 1 Written Test",
+  "file": "problems/WVU_Bench_Bash_2026_BG4_Day_1_Written.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-18T22:29:22.590Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2037,
+ "fields": {
+  "problem": 1015,
+  "title": "ProAir Day 1 Written Test",
+  "file": "problems/WVU_Bench_Bash_2026_ProAir_Day_1_Written.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-08-18T22:29:22.591Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2038,
+ "fields": {
+  "problem": 1015,
+  "title": "BG4 Day 2 Written Test",
+  "file": "problems/WVU_Bench_Bash_2026_BG4_Day_2_Written.pdf",
+  "sort_order": 30,
+  "uploaded_at": "2026-08-18T22:29:22.591Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2039,
+ "fields": {
+  "problem": 1015,
+  "title": "ProAir Day 2 Written Test",
+  "file": "problems/WVU_Bench_Bash_2026_ProAir_Day_2_Written.pdf",
+  "sort_order": 40,
+  "uploaded_at": "2026-08-18T22:29:22.592Z"
  }
 },
 {
