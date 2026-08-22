@@ -41,10 +41,14 @@ COMP_PK = 404
 
 PROBLEM_TITLE = "Written Tests"
 PROBLEM_SORT = 30  # after Coal Day 1 (10) / Coal Day 2 (20)
+# sort_order interleaves each answer key directly under its own test (the model
+# orders by sort_order, then title): Day 1 test, Day 1 key, Day 2 test, Day 2 key.
 DOCS = [
     # (doc title, source filename, sort_order)
     ("Day 1 Written Test", "2026 Northern Regional Day 1 Written Test.pdf", 10),
+    ("Day 1 Written Test Key", "2026 Northern Regional Day 1 Written Test Key.pdf", 15),
     ("Day 2 Written Test", "2026 Northern Regional Day 2 Written Test.pdf", 20),
+    ("Day 2 Written Test Key", "2026 Northern Regional Day 2 Written Test Key.pdf", 25),
 ]
 
 

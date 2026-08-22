@@ -38797,6 +38797,28 @@
  }
 },
 {
+ "model": "pages.problemdocument",
+ "pk": 2040,
+ "fields": {
+  "problem": 1014,
+  "title": "Day 1 Written Test Key",
+  "file": "problems/2026_Northern_Written_Tests_2026_Northern_Regional_Day_1_Written_Test_Key.pdf",
+  "sort_order": 15,
+  "uploaded_at": "2026-08-22T14:39:32.226Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2041,
+ "fields": {
+  "problem": 1014,
+  "title": "Day 2 Written Test Key",
+  "file": "problems/2026_Northern_Written_Tests_2026_Northern_Regional_Day_2_Written_Test_Key.pdf",
+  "sort_order": 25,
+  "uploaded_at": "2026-08-22T14:39:32.235Z"
+ }
+},
+{
  "model": "pages.instructionguide",
  "pk": 1,
  "fields": {
@@ -107424,7 +107446,7 @@
  "pk": 266761,
  "fields": {
   "quiz": 5521,
-  "text": "Whether survivors are showing signs of Histeria or not, they should ______.",
+  "text": "Whether survivors are showing signs of Hysteria or not, they should ______.",
   "image": "",
   "sort_order": 27
  }
@@ -315084,7 +315106,7 @@
  "pk": 857177,
  "fields": {
   "question": 266713,
-  "text": "Eyesite",
+  "text": "Eyesight",
   "is_correct": false,
   "sort_order": 0
  }
@@ -315284,7 +315306,7 @@
  "pk": 857197,
  "fields": {
   "question": 266718,
-  "text": "Hight, Width",
+  "text": "Height, Width",
   "is_correct": false,
   "sort_order": 0
  }
@@ -316924,7 +316946,7 @@
  "pk": 857361,
  "fields": {
   "question": 266762,
-  "text": "A Restraining Devise",
+  "text": "A Restraining Device",
   "is_correct": false,
   "sort_order": 2
  }

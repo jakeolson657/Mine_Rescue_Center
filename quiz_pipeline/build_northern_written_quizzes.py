@@ -56,6 +56,37 @@ TESTS = [
 ]
 
 
+# Verified misspellings in the source docx, corrected in the interactive quiz
+# (the archived test/key PDFs keep the contest's original wording). Each was
+# confirmed to appear verbatim in the key docx and NONE is a correct answer --
+# three are distractors, "Histeria" is in a stem -- so no answer changes.
+# Deliberately NOT "corrected": mining/technical terms a spell-checker flags but
+# which are right (escapeway, inby, Pitot, Monoammonium, MSHA, M/NM), and
+# "gasses", an accepted variant plural of gas.
+SPELLING_FIXES = [
+    ("Eyesite", "Eyesight"),          # Day 1 q10 distractor
+    ("Hight, Width", "Height, Width"),  # Day 1 q15 distractor
+    ("Histeria", "Hysteria"),         # Day 2 q28 stem
+    ("Restraining Devise", "Restraining Device"),  # Day 2 q29 distractor
+]
+
+
+def apply_spelling_fixes(questions):
+    """Apply SPELLING_FIXES across stems and choices; return a hit count per fix
+    so the caller can assert every fix still matches the source."""
+    hits = {old: 0 for old, _ in SPELLING_FIXES}
+    for q in questions:
+        for old, new in SPELLING_FIXES:
+            if old in q["text"]:
+                q["text"] = q["text"].replace(old, new)
+                hits[old] += 1
+            for c in q["choices"]:
+                if old in c["text"]:
+                    c["text"] = c["text"].replace(old, new)
+                    hits[old] += 1
+    return hits
+
+
 def norm(text):
     """ASCII-normalise smart punctuation and collapse whitespace."""
     repl = {"\u2019": "'", "\u2018": "'", "\u201c": '"', "\u201d": '"',
@@ -136,11 +167,14 @@ def main():
                     help="insert each quiz via insert_one_quiz.py after building")
     args = ap.parse_args()
 
+    total_hits = {old: 0 for old, _ in SPELLING_FIXES}
     for t in TESTS:
         paras = read_paragraphs(os.path.join(SRC_DIR, t["key"]))
         questions = build_questions(paras)
         assert len(questions) == t["expect"], \
             f"{t['title']}: parsed {len(questions)} questions, expected {t['expect']}"
+        for old, n in apply_spelling_fixes(questions).items():
+            total_hits[old] += n
         payload = {"source_pk": t["source_pk"], "title": t["title"],
                    "questions": questions}
         out_path = os.path.join(HERE, t["out"])
@@ -151,6 +185,12 @@ def main():
             subprocess.run([sys.executable,
                             os.path.join(HERE, "insert_one_quiz.py"), out_path],
                            check=True)
+
+    # Every correction must still match something, else the source changed and
+    # the fix list is stale (silently correcting nothing would go unnoticed).
+    unmatched = [old for old, n in total_hits.items() if n != 1]
+    assert not unmatched, f"spelling fixes matched != 1 time: {unmatched} ({total_hits})"
+    print("spelling fixes applied:", ", ".join(f"{o}->{n}" for o, n in SPELLING_FIXES))
 
 
 if __name__ == "__main__":
