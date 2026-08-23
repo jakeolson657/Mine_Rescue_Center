@@ -1,0 +1,636 @@
+{
+ "source_pk": 2042,
+ "title": "Regional Field Competition Test",
+ "questions": [
+  {
+   "text": "You have arrived at the scene of a vehicle collision, and there are downed power lines across the road. Which one of the following resources is most appropriate to manage this hazard?",
+   "choices": [
+    {
+     "text": "Law Enforcement",
+     "is_correct": false
+    },
+    {
+     "text": "Fire Department",
+     "is_correct": false
+    },
+    {
+     "text": "Hazmat Team",
+     "is_correct": false
+    },
+    {
+     "text": "Utility Company",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "Which of the following is NOT a function of the circulatory system?",
+   "choices": [
+    {
+     "text": "Delivering blood to vital organs",
+     "is_correct": false
+    },
+    {
+     "text": "Removing waste products from the cells",
+     "is_correct": false
+    },
+    {
+     "text": "Breaking down food into nutrients",
+     "is_correct": true
+    },
+    {
+     "text": "Carrying oxygen throughout the body",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "Proper body mechanics are best defined as:",
+   "choices": [
+    {
+     "text": "Properly using your body to facilitate a lift or move.",
+     "is_correct": true
+    },
+    {
+     "text": "Using a minimum of three people for any lift.",
+     "is_correct": false
+    },
+    {
+     "text": "Contracting the body's muscles to lift and move things.",
+     "is_correct": false
+    },
+    {
+     "text": "Lifting with your back and not your legs.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "The recommended method for opening the airway of a patient with a possible neck or spine injury is the ____________ maneuver.",
+   "choices": [
+    {
+     "text": "Jaw-thrust",
+     "is_correct": true
+    },
+    {
+     "text": "Mouth-to-nose",
+     "is_correct": false
+    },
+    {
+     "text": "Abdominal-thrust",
+     "is_correct": false
+    },
+    {
+     "text": "Head-tilt/chin-lift",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "Which of the following is an example of mechanical airway obstruction?",
+   "choices": [
+    {
+     "text": "Tongue",
+     "is_correct": false
+    },
+    {
+     "text": "Swollen trachea",
+     "is_correct": false
+    },
+    {
+     "text": "Foreign object",
+     "is_correct": true
+    },
+    {
+     "text": "Enlarged epiglottis",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "You are caring for a patient complaining of mild shortness of breath and have her on a nasal cannula at 6 liters per minute. What oxygen concentration are you delivering to the patient?",
+   "choices": [
+    {
+     "text": "25%",
+     "is_correct": true
+    },
+    {
+     "text": "29%",
+     "is_correct": false
+    },
+    {
+     "text": "33%",
+     "is_correct": false
+    },
+    {
+     "text": "45%",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "You are caring for an adult victim of sudden cardiac arrest. To give the patient the best chance for survival, you should provide immediate:",
+   "choices": [
+    {
+     "text": "CPR without defibrillation.",
+     "is_correct": false
+    },
+    {
+     "text": "Defibrillation without CPR.",
+     "is_correct": false
+    },
+    {
+     "text": "CPR with supplemental oxygen.",
+     "is_correct": false
+    },
+    {
+     "text": "CPR with defibrillation as soon as possible.",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "In a SAMPLE history, the E represents:",
+   "choices": [
+    {
+     "text": "EKG results.",
+     "is_correct": false
+    },
+    {
+     "text": "Evaluation of the neck and spine.",
+     "is_correct": false
+    },
+    {
+     "text": "Events leading to the illness or injury.",
+     "is_correct": true
+    },
+    {
+     "text": "Evidence of airway obstruction.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "As blood pressure drops, perfusion is most likely to:",
+   "choices": [
+    {
+     "text": "Increase.",
+     "is_correct": false
+    },
+    {
+     "text": "Decrease.",
+     "is_correct": true
+    },
+    {
+     "text": "Fluctuate.",
+     "is_correct": false
+    },
+    {
+     "text": "Remain the same.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "Which of the following would NOT typically happen during the primary assessment?",
+   "choices": [
+    {
+     "text": "Inserting an airway adjunct",
+     "is_correct": false
+    },
+    {
+     "text": "SAMPLE history",
+     "is_correct": true
+    },
+    {
+     "text": "Controlling bleeding",
+     "is_correct": false
+    },
+    {
+     "text": "Evaluation mental status",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "The secondary assessment is designed to:",
+   "choices": [
+    {
+     "text": "Identify life-threatening conditions.",
+     "is_correct": false
+    },
+    {
+     "text": "Collect a detailed medical history.",
+     "is_correct": false
+    },
+    {
+     "text": "Identify any allergies.",
+     "is_correct": false
+    },
+    {
+     "text": "Find and treat non-life threatening injuries or conditions.",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "Which of the following is NOT a common cause of cardiac compromise?",
+   "choices": [
+    {
+     "text": "Angina pectoris",
+     "is_correct": false
+    },
+    {
+     "text": "Myocardial infarction",
+     "is_correct": false
+    },
+    {
+     "text": "Cardiac arrest",
+     "is_correct": true
+    },
+    {
+     "text": "Heart failure",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "You are caring for a patient with difficulty breathing. She states that she has a history of Asthma. You understand asthma to be a disease of the:",
+   "choices": [
+    {
+     "text": "Upper airway.",
+     "is_correct": false
+    },
+    {
+     "text": "Lower airway.",
+     "is_correct": true
+    },
+    {
+     "text": "Alveoli.",
+     "is_correct": false
+    },
+    {
+     "text": "Trachea.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "What is the most commonly abused substance in the United States?",
+   "choices": [
+    {
+     "text": "Arsenic",
+     "is_correct": false
+    },
+    {
+     "text": "Amyl nitrate",
+     "is_correct": false
+    },
+    {
+     "text": "Butane",
+     "is_correct": false
+    },
+    {
+     "text": "Alcohol",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "A severe allergic reaction causes the air passages:",
+   "choices": [
+    {
+     "text": "And blood vessels to dilate.",
+     "is_correct": false
+    },
+    {
+     "text": "And blood vessels to constrict.",
+     "is_correct": false
+    },
+    {
+     "text": "To dilate and the blood vessels to constrict.",
+     "is_correct": false
+    },
+    {
+     "text": "To constrict and the blood vessels to dilate.",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "A patient who is experiencing an abnormally low body core temperature is said to be:",
+   "choices": [
+    {
+     "text": "Hyperthermic.",
+     "is_correct": false
+    },
+    {
+     "text": "Cyanotic.",
+     "is_correct": false
+    },
+    {
+     "text": "Hypothermic.",
+     "is_correct": true
+    },
+    {
+     "text": "Hyperglycemic.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "You are caring for a man who states that he was bitten on the foot by a snake about 20 minutes age. He is alert and oriented but is complaining of severe pain at the site. You should FIRST:",
+   "choices": [
+    {
+     "text": "Wash the wound with soap and water.",
+     "is_correct": true
+    },
+    {
+     "text": "Wrap the limb with a pressure bandage.",
+     "is_correct": false
+    },
+    {
+     "text": "Place a splint on the leg and foot.",
+     "is_correct": false
+    },
+    {
+     "text": "Wait for EMS before beginning care.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "A patient has a small wooden splinter impaled in their eye. You should:",
+   "choices": [
+    {
+     "text": "Remove the splinter.",
+     "is_correct": false
+    },
+    {
+     "text": "Instruct the patient to look down and to the left.",
+     "is_correct": false
+    },
+    {
+     "text": "Gently bandage both eyes.",
+     "is_correct": true
+    },
+    {
+     "text": "Bandage only the injured eye.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "You are caring for a burn victim who has partial-thickness burns covering his entire right arm and the front of his entire torso. What is the estimated BSA affected?",
+   "choices": [
+    {
+     "text": "18%",
+     "is_correct": false
+    },
+    {
+     "text": "25%",
+     "is_correct": false
+    },
+    {
+     "text": "27%",
+     "is_correct": true
+    },
+    {
+     "text": "36%",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "All of the following are signs of shock EXCEPT:",
+   "choices": [
+    {
+     "text": "Increased pulse rate.",
+     "is_correct": false
+    },
+    {
+     "text": "Decreasing blood pressure.",
+     "is_correct": false
+    },
+    {
+     "text": "Pink, warm, moist skin.",
+     "is_correct": true
+    },
+    {
+     "text": "Altered mental status.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "Why does a patient's pulse rate increase as shock develops?",
+   "choices": [
+    {
+     "text": "To force oxygenated blood out of the patient's body core",
+     "is_correct": false
+    },
+    {
+     "text": "To counteract the high blood pressure",
+     "is_correct": false
+    },
+    {
+     "text": "To maintain adequate perfusion",
+     "is_correct": true
+    },
+    {
+     "text": "To create more blood to compensate for fluid loss",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "The partial or complete tearing of the ligaments and tendons that support a joint is called a:",
+   "choices": [
+    {
+     "text": "Strain.",
+     "is_correct": false
+    },
+    {
+     "text": "Sprain.",
+     "is_correct": true
+    },
+    {
+     "text": "Fracture.",
+     "is_correct": false
+    },
+    {
+     "text": "Dislocation.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "You are caring for a man with a badly injured ankle. You should:",
+   "choices": [
+    {
+     "text": "Leave the shoe in place.",
+     "is_correct": false
+    },
+    {
+     "text": "Carefully remove the shoe.",
+     "is_correct": true
+    },
+    {
+     "text": "Wait for ENT's to decide what to do.",
+     "is_correct": false
+    },
+    {
+     "text": "Just loosen the shoelaces.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "You are caring for a patient with a suspected open skull injury. When attempting to control the bleeding, you should:",
+   "choices": [
+    {
+     "text": "Apply firm fingertip pressure on the open wound.",
+     "is_correct": false
+    },
+    {
+     "text": "Use only enough pressure to slow or stop the bleeding.",
+     "is_correct": true
+    },
+    {
+     "text": "Tightly wrap a pressure bandage around the skull.",
+     "is_correct": false
+    },
+    {
+     "text": "Keep the patient in a head-down position while holding pressure.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "You are caring for a patient who was struck in the lateral chest by a blunt object. You palpate a flail segment on the right lateral chest. This type of injury is most likely to affect the:",
+   "choices": [
+    {
+     "text": "Patient's ability to breathe normally.",
+     "is_correct": true
+    },
+    {
+     "text": "Heart and lungs.",
+     "is_correct": false
+    },
+    {
+     "text": "Patient's pulse rate.",
+     "is_correct": false
+    },
+    {
+     "text": "Patient's ability to cough.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "A patient has been shot in the right upper quadrant of the abdomen. You should assume which one of the following organs may have been injured?",
+   "choices": [
+    {
+     "text": "Stomach",
+     "is_correct": false
+    },
+    {
+     "text": "Spleen",
+     "is_correct": false
+    },
+    {
+     "text": "Liver",
+     "is_correct": true
+    },
+    {
+     "text": "Pancreas",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "A woman late in pregnancy called 911 after feeling dizzy and \"lightheaded\". You should:",
+   "choices": [
+    {
+     "text": "Position her on her back.",
+     "is_correct": false
+    },
+    {
+     "text": "Elevate her feet and legs.",
+     "is_correct": false
+    },
+    {
+     "text": "Position her on her left side.",
+     "is_correct": true
+    },
+    {
+     "text": "Position her on her right side.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "An incident management system is a tool for the command, control and ________ of resources at the scene of a large-scale emergency involving multiple agencies.",
+   "choices": [
+    {
+     "text": "Constant monitoring",
+     "is_correct": false
+    },
+    {
+     "text": "Care of victims",
+     "is_correct": false
+    },
+    {
+     "text": "Coordination",
+     "is_correct": true
+    },
+    {
+     "text": "Concerns of safety",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "Which of the following is NOT a common component of Incident Command System?",
+   "choices": [
+    {
+     "text": "Incident Commander",
+     "is_correct": false
+    },
+    {
+     "text": "Triage",
+     "is_correct": false
+    },
+    {
+     "text": "Treatment",
+     "is_correct": false
+    },
+    {
+     "text": "Dispatch Center",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "Which of the following is NOT evaluated as part of the Cincinnati Prehospital Stroke Scale?",
+   "choices": [
+    {
+     "text": "Abnormal Speech",
+     "is_correct": false
+    },
+    {
+     "text": "Equal circulation",
+     "is_correct": true
+    },
+    {
+     "text": "Facial droop",
+     "is_correct": false
+    },
+    {
+     "text": "Arm drift",
+     "is_correct": false
+    }
+   ]
+  }
+ ]
+}

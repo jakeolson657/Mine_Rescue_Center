@@ -8741,6 +8741,18 @@
  }
 },
 {
+ "model": "pages.competition",
+ "pk": 405,
+ "fields": {
+  "name": "Surface Mining Emergency Response Training Competition",
+  "year": 2025,
+  "calendar_event": 68,
+  "description": "",
+  "created_at": "2026-08-23T22:04:38.473Z",
+  "updated_at": "2026-08-23T22:04:38.473Z"
+ }
+},
+{
  "model": "pages.competitionproblem",
  "pk": 1,
  "fields": {
@@ -18554,6 +18566,18 @@
   "sort_order": 10,
   "created_at": "2026-08-18T22:29:22.586Z",
   "updated_at": "2026-08-18T22:29:22.587Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 1016,
+ "fields": {
+  "competition": 405,
+  "title": "Written Tests",
+  "description": "",
+  "sort_order": 10,
+  "created_at": "2026-08-23T22:04:38.492Z",
+  "updated_at": "2026-08-23T22:04:38.492Z"
  }
 },
 {
@@ -38819,6 +38843,72 @@
  }
 },
 {
+ "model": "pages.problemdocument",
+ "pk": 2042,
+ "fields": {
+  "problem": 1016,
+  "title": "Regional Field Competition Test",
+  "file": "problems/2025_Florida_Surface_Written_Tests_2025_Florida_Surface_Regional_Field_Competition_Test.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-08-23T22:04:38.508Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2043,
+ "fields": {
+  "problem": 1016,
+  "title": "Regional Field Competition Test Key",
+  "file": "problems/2025_Florida_Surface_Written_Tests_2025_Florida_Surface_Regional_Field_Competition_Test_Key.pdf",
+  "sort_order": 15,
+  "uploaded_at": "2026-08-23T22:04:38.519Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2044,
+ "fields": {
+  "problem": 1016,
+  "title": "First Aid Written Test",
+  "file": "problems/2025_Florida_Surface_Written_Tests_2025_Florida_Surface_First_Aid_Written_Test.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-08-23T22:04:38.529Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2045,
+ "fields": {
+  "problem": 1016,
+  "title": "First Aid Written Test Key",
+  "file": "problems/2025_Florida_Surface_Written_Tests_2025_Florida_Surface_First_Aid_Written_Test_Key.pdf",
+  "sort_order": 25,
+  "uploaded_at": "2026-08-23T22:04:38.538Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2046,
+ "fields": {
+  "problem": 1016,
+  "title": "Team Trainer Test",
+  "file": "problems/2025_Florida_Surface_Written_Tests_2025_Florida_Surface_Team_Trainer_Test.pdf",
+  "sort_order": 30,
+  "uploaded_at": "2026-08-23T22:04:38.547Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2047,
+ "fields": {
+  "problem": 1016,
+  "title": "Team Trainer Test Key",
+  "file": "problems/2025_Florida_Surface_Written_Tests_2025_Florida_Surface_Team_Trainer_Test_Key.pdf",
+  "sort_order": 35,
+  "uploaded_at": "2026-08-23T22:04:38.557Z"
+ }
+},
+{
  "model": "pages.instructionguide",
  "pk": 1,
  "fields": {
@@ -42509,6 +42599,39 @@
   "source_document": 2035,
   "sort_order": 90,
   "created_at": "2026-08-17T23:09:10.526Z"
+ }
+},
+{
+ "model": "pages.quiz",
+ "pk": 5522,
+ "fields": {
+  "problem": 1016,
+  "title": "Regional Field Competition Test",
+  "source_document": 2042,
+  "sort_order": 90,
+  "created_at": "2026-08-23T22:09:08.804Z"
+ }
+},
+{
+ "model": "pages.quiz",
+ "pk": 5523,
+ "fields": {
+  "problem": 1016,
+  "title": "First Aid Written Test",
+  "source_document": 2044,
+  "sort_order": 90,
+  "created_at": "2026-08-23T22:09:10.448Z"
+ }
+},
+{
+ "model": "pages.quiz",
+ "pk": 5524,
+ "fields": {
+  "problem": 1016,
+  "title": "Team Trainer Test",
+  "source_document": 2046,
+  "sort_order": 90,
+  "created_at": "2026-08-23T22:09:11.966Z"
  }
 },
 {
@@ -107467,6 +107590,886 @@
  "fields": {
   "quiz": 5521,
   "text": "Examples of low or Third Priority conditions.",
+  "image": "",
+  "sort_order": 29
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266764,
+ "fields": {
+  "quiz": 5522,
+  "text": "You have arrived at the scene of a vehicle collision, and there are downed power lines across the road. Which one of the following resources is most appropriate to manage this hazard?",
+  "image": "",
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266765,
+ "fields": {
+  "quiz": 5522,
+  "text": "Which of the following is NOT a function of the circulatory system?",
+  "image": "",
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266766,
+ "fields": {
+  "quiz": 5522,
+  "text": "Proper body mechanics are best defined as:",
+  "image": "",
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266767,
+ "fields": {
+  "quiz": 5522,
+  "text": "The recommended method for opening the airway of a patient with a possible neck or spine injury is the ____________ maneuver.",
+  "image": "",
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266768,
+ "fields": {
+  "quiz": 5522,
+  "text": "Which of the following is an example of mechanical airway obstruction?",
+  "image": "",
+  "sort_order": 4
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266769,
+ "fields": {
+  "quiz": 5522,
+  "text": "You are caring for a patient complaining of mild shortness of breath and have her on a nasal cannula at 6 liters per minute. What oxygen concentration are you delivering to the patient?",
+  "image": "",
+  "sort_order": 5
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266770,
+ "fields": {
+  "quiz": 5522,
+  "text": "You are caring for an adult victim of sudden cardiac arrest. To give the patient the best chance for survival, you should provide immediate:",
+  "image": "",
+  "sort_order": 6
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266771,
+ "fields": {
+  "quiz": 5522,
+  "text": "In a SAMPLE history, the E represents:",
+  "image": "",
+  "sort_order": 7
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266772,
+ "fields": {
+  "quiz": 5522,
+  "text": "As blood pressure drops, perfusion is most likely to:",
+  "image": "",
+  "sort_order": 8
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266773,
+ "fields": {
+  "quiz": 5522,
+  "text": "Which of the following would NOT typically happen during the primary assessment?",
+  "image": "",
+  "sort_order": 9
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266774,
+ "fields": {
+  "quiz": 5522,
+  "text": "The secondary assessment is designed to:",
+  "image": "",
+  "sort_order": 10
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266775,
+ "fields": {
+  "quiz": 5522,
+  "text": "Which of the following is NOT a common cause of cardiac compromise?",
+  "image": "",
+  "sort_order": 11
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266776,
+ "fields": {
+  "quiz": 5522,
+  "text": "You are caring for a patient with difficulty breathing. She states that she has a history of Asthma. You understand asthma to be a disease of the:",
+  "image": "",
+  "sort_order": 12
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266777,
+ "fields": {
+  "quiz": 5522,
+  "text": "What is the most commonly abused substance in the United States?",
+  "image": "",
+  "sort_order": 13
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266778,
+ "fields": {
+  "quiz": 5522,
+  "text": "A severe allergic reaction causes the air passages:",
+  "image": "",
+  "sort_order": 14
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266779,
+ "fields": {
+  "quiz": 5522,
+  "text": "A patient who is experiencing an abnormally low body core temperature is said to be:",
+  "image": "",
+  "sort_order": 15
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266780,
+ "fields": {
+  "quiz": 5522,
+  "text": "You are caring for a man who states that he was bitten on the foot by a snake about 20 minutes age. He is alert and oriented but is complaining of severe pain at the site. You should FIRST:",
+  "image": "",
+  "sort_order": 16
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266781,
+ "fields": {
+  "quiz": 5522,
+  "text": "A patient has a small wooden splinter impaled in their eye. You should:",
+  "image": "",
+  "sort_order": 17
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266782,
+ "fields": {
+  "quiz": 5522,
+  "text": "You are caring for a burn victim who has partial-thickness burns covering his entire right arm and the front of his entire torso. What is the estimated BSA affected?",
+  "image": "",
+  "sort_order": 18
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266783,
+ "fields": {
+  "quiz": 5522,
+  "text": "All of the following are signs of shock EXCEPT:",
+  "image": "",
+  "sort_order": 19
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266784,
+ "fields": {
+  "quiz": 5522,
+  "text": "Why does a patient's pulse rate increase as shock develops?",
+  "image": "",
+  "sort_order": 20
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266785,
+ "fields": {
+  "quiz": 5522,
+  "text": "The partial or complete tearing of the ligaments and tendons that support a joint is called a:",
+  "image": "",
+  "sort_order": 21
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266786,
+ "fields": {
+  "quiz": 5522,
+  "text": "You are caring for a man with a badly injured ankle. You should:",
+  "image": "",
+  "sort_order": 22
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266787,
+ "fields": {
+  "quiz": 5522,
+  "text": "You are caring for a patient with a suspected open skull injury. When attempting to control the bleeding, you should:",
+  "image": "",
+  "sort_order": 23
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266788,
+ "fields": {
+  "quiz": 5522,
+  "text": "You are caring for a patient who was struck in the lateral chest by a blunt object. You palpate a flail segment on the right lateral chest. This type of injury is most likely to affect the:",
+  "image": "",
+  "sort_order": 24
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266789,
+ "fields": {
+  "quiz": 5522,
+  "text": "A patient has been shot in the right upper quadrant of the abdomen. You should assume which one of the following organs may have been injured?",
+  "image": "",
+  "sort_order": 25
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266790,
+ "fields": {
+  "quiz": 5522,
+  "text": "A woman late in pregnancy called 911 after feeling dizzy and \"lightheaded\". You should:",
+  "image": "",
+  "sort_order": 26
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266791,
+ "fields": {
+  "quiz": 5522,
+  "text": "An incident management system is a tool for the command, control and ________ of resources at the scene of a large-scale emergency involving multiple agencies.",
+  "image": "",
+  "sort_order": 27
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266792,
+ "fields": {
+  "quiz": 5522,
+  "text": "Which of the following is NOT a common component of Incident Command System?",
+  "image": "",
+  "sort_order": 28
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266793,
+ "fields": {
+  "quiz": 5522,
+  "text": "Which of the following is NOT evaluated as part of the Cincinnati Prehospital Stroke Scale?",
+  "image": "",
+  "sort_order": 29
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266794,
+ "fields": {
+  "quiz": 5523,
+  "text": "All of the following are routes through which pathogens may enter the body except:",
+  "image": "",
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266795,
+ "fields": {
+  "quiz": 5523,
+  "text": "Which one of the following is not a commonly recommended immunization for health care provider?",
+  "image": "",
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266796,
+ "fields": {
+  "quiz": 5523,
+  "text": "The spine can be felt (palpated) on the ____ aspect of the body",
+  "image": "",
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266797,
+ "fields": {
+  "quiz": 5523,
+  "text": "The imaginary line that bisects the body into two halves (left and right) is known as the:",
+  "image": "",
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266798,
+ "fields": {
+  "quiz": 5523,
+  "text": "Which on of the following would be a predictable bodily response to hypoperfusion (shock)?",
+  "image": "",
+  "sort_order": 4
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266799,
+ "fields": {
+  "quiz": 5523,
+  "text": "A four-year-old male shock patient has dlayed capillary refill time. This is most likely caused by:",
+  "image": "",
+  "sort_order": 5
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266800,
+ "fields": {
+  "quiz": 5523,
+  "text": "if an infant becomes unresponsive before you can clear an airway obstruction, you should first:",
+  "image": "",
+  "sort_order": 6
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266801,
+ "fields": {
+  "quiz": 5523,
+  "text": "What type of move is used when there is no immediate threat to the patient's life?",
+  "image": "",
+  "sort_order": 7
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266802,
+ "fields": {
+  "quiz": 5523,
+  "text": "You are a single rescuer caring for the victim of a cardiac arrest. Your equipment bag and a supply of oxygen are within reach. Which one of the following is the most appropriate choice for beginning rescue breaths on the patient?",
+  "image": "",
+  "sort_order": 8
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266803,
+ "fields": {
+  "quiz": 5523,
+  "text": "You are alone when you discover and remove a four-year-old child from a public pool. When should you call 911?",
+  "image": "",
+  "sort_order": 9
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266804,
+ "fields": {
+  "quiz": 5523,
+  "text": "As blood pressure drops, perfusion is most likely to:",
+  "image": "",
+  "sort_order": 10
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266805,
+ "fields": {
+  "quiz": 5523,
+  "text": "Which of the following would best be described as a symptom?",
+  "image": "",
+  "sort_order": 11
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266806,
+ "fields": {
+  "quiz": 5523,
+  "text": "Which of the following would NOT typically happen during the primary assessment?",
+  "image": "",
+  "sort_order": 12
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266807,
+ "fields": {
+  "quiz": 5523,
+  "text": "You have arrived on the scene of an unresponsive female whom you find to be pulseless and apneic. You should:",
+  "image": "",
+  "sort_order": 13
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266808,
+ "fields": {
+  "quiz": 5523,
+  "text": "You are caring for a patient with difficulty breathing. She states that she has a history of asthma. You understand asthma to be a disease of the:",
+  "image": "",
+  "sort_order": 14
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266809,
+ "fields": {
+  "quiz": 5523,
+  "text": "Which medical emergency is caused by a disruption of blood flow to the brain?",
+  "image": "",
+  "sort_order": 15
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266810,
+ "fields": {
+  "quiz": 5523,
+  "text": "You are caring for an individual who fell from a rope swing, landed in the water, and is now unresponsive. She has a large laceration on the top of her head. You should:",
+  "image": "",
+  "sort_order": 16
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266811,
+ "fields": {
+  "quiz": 5523,
+  "text": "a patent has a small wooden splinter impaled in their eye. You should:",
+  "image": "",
+  "sort_order": 17
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266812,
+ "fields": {
+  "quiz": 5523,
+  "text": "Your patient has burned his hand. The skin is red and blistered, and the burn is extremely painful. You would classify this burn as:",
+  "image": "",
+  "sort_order": 18
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266813,
+ "fields": {
+  "quiz": 5523,
+  "text": "You are caring for a burn victim with both partial-and full-thickness burns over 40% of her body. You should FIRST:",
+  "image": "",
+  "sort_order": 19
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266814,
+ "fields": {
+  "quiz": 5523,
+  "text": "Most cases of external bleeding can be controlled by:",
+  "image": "",
+  "sort_order": 20
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266815,
+ "fields": {
+  "quiz": 5523,
+  "text": "The four categories of shock include:",
+  "image": "",
+  "sort_order": 21
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266816,
+ "fields": {
+  "quiz": 5523,
+  "text": "When the body sustains a significant loss of blood, which type of shock is most likely to occur?",
+  "image": "",
+  "sort_order": 22
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266817,
+ "fields": {
+  "quiz": 5523,
+  "text": "In which of the following situations would it be appropriate to place an angulated extremity back into the anatomical position?",
+  "image": "",
+  "sort_order": 23
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266818,
+ "fields": {
+  "quiz": 5523,
+  "text": "Your main priority when caring for a patient with a suspected head injury is to:",
+  "image": "",
+  "sort_order": 24
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266819,
+ "fields": {
+  "quiz": 5523,
+  "text": "You are assisting a woman in active labor. As the baby's head begins to deliver you should:",
+  "image": "",
+  "sort_order": 25
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266820,
+ "fields": {
+  "quiz": 5523,
+  "text": "The purpose of placing an occlusive dressing over an open chest wound is to:",
+  "image": "",
+  "sort_order": 26
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266821,
+ "fields": {
+  "quiz": 5523,
+  "text": "You are triaging an adult patient who presents as unresponsive and breathing at a rate of 24. She should be triaged as:",
+  "image": "",
+  "sort_order": 27
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266822,
+ "fields": {
+  "quiz": 5524,
+  "text": "A broad-based approach involving several strategies designed to help emergency personnel cope with stress is called:",
+  "image": "",
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266823,
+ "fields": {
+  "quiz": 5524,
+  "text": "The recovery position is also known as the ___________ position.",
+  "image": "",
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266824,
+ "fields": {
+  "quiz": 5524,
+  "text": "Which one of the following devices is best suited to carry a responsive patient with no suspected spinal injury down a flight of stairs?",
+  "image": "",
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266825,
+ "fields": {
+  "quiz": 5524,
+  "text": "The primary muscle of respiration is the :",
+  "image": "",
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266826,
+ "fields": {
+  "quiz": 5524,
+  "text": "The pressure gauge of a full oxygen cylinder will display approximately ___ psi.",
+  "image": "",
+  "sort_order": 4
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266827,
+ "fields": {
+  "quiz": 5524,
+  "text": "You have just delivered a shock with an automated external defibrillator. You should:",
+  "image": "",
+  "sort_order": 5
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266828,
+ "fields": {
+  "quiz": 5524,
+  "text": "A respiratory rate that is lower than ___ for an adult should be considered inadequate.",
+  "image": "",
+  "sort_order": 6
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266829,
+ "fields": {
+  "quiz": 5524,
+  "text": "A patient who presents with normal vital signs and shows no indications of a life-threatening problem may be described as:",
+  "image": "",
+  "sort_order": 7
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266830,
+ "fields": {
+  "quiz": 5524,
+  "text": "You have completed your secondary assessment for a 65-year-old woman who has a long history of cardiac problems. She is complaining of chest pain and difficulty breathing. You should:",
+  "image": "",
+  "sort_order": 8
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266831,
+ "fields": {
+  "quiz": 5524,
+  "text": "Which medical condition listed below causes inflammation of the bronchioles, excess mucus production within the airways and a chronic productive cough?",
+  "image": "",
+  "sort_order": 9
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266832,
+ "fields": {
+  "quiz": 5524,
+  "text": "A patient who is unresponsive and having generalized muscle contractions is likely experiencing a (n):",
+  "image": "",
+  "sort_order": 10
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266833,
+ "fields": {
+  "quiz": 5524,
+  "text": "You are caring for an individual who fell from a rope swing, landed in the water, and is now unresponsive. She has a large laceration on the top of her head. You should:",
+  "image": "",
+  "sort_order": 11
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266834,
+ "fields": {
+  "quiz": 5524,
+  "text": "Most cases of external bleeding can be controlled by:",
+  "image": "",
+  "sort_order": 12
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266835,
+ "fields": {
+  "quiz": 5524,
+  "text": "Your patient has been impaled through the right thigh by a long piece of metal bar. You should:",
+  "image": "",
+  "sort_order": 13
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266836,
+ "fields": {
+  "quiz": 5524,
+  "text": "Which of the following interventions is MOST important to the survival of a patient showing signs of shock?",
+  "image": "",
+  "sort_order": 14
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266837,
+ "fields": {
+  "quiz": 5524,
+  "text": "A triangular bandage used to stabilize the elbow and arm is called a:",
+  "image": "",
+  "sort_order": 15
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266838,
+ "fields": {
+  "quiz": 5524,
+  "text": "Your main priority when caring for a patient with a suspected head injury is to:",
+  "image": "",
+  "sort_order": 16
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266839,
+ "fields": {
+  "quiz": 5524,
+  "text": "The purpose of placing an occlusive dressing over an open chest wound is to:",
+  "image": "",
+  "sort_order": 17
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266840,
+ "fields": {
+  "quiz": 5524,
+  "text": "You are caring for a 38-year-old woman who states that she is 8 weeks pregnant. She is experiencing heavy vaginal bleeding and abdominal cramping. You suspect:",
+  "image": "",
+  "sort_order": 18
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266841,
+ "fields": {
+  "quiz": 5524,
+  "text": "While performing triage at a multiple casualty incident, a patient walks up to you and states \"my arm hurts; I think it is broken.\" This patient should be tagged as:",
+  "image": "",
+  "sort_order": 19
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266842,
+ "fields": {
+  "quiz": 5524,
+  "text": "To prevent accidental release of gasses from hoses and torches attached to oxygen and acetylene cylinders or to manifold systems, cylinder or manifold system valves shall be closed when:",
+  "image": "",
+  "sort_order": 20
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266843,
+ "fields": {
+  "quiz": 5524,
+  "text": "Areas surrounding storage facilities for explosive material shall be clear of rubbish, brush, dry grass, and trees for ______ in all directions, except that live trees 10 feet or taller need not be removed.",
+  "image": "",
+  "sort_order": 21
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266844,
+ "fields": {
+  "quiz": 5524,
+  "text": "To provide for the safe movement of self-propelled mobile equipment- Rules governing _________shall be established and followed at each mine.",
+  "image": "",
+  "sort_order": 22
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266845,
+ "fields": {
+  "quiz": 5524,
+  "text": "Berms or guardrails shall be at least _______ .",
+  "image": "",
+  "sort_order": 23
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266846,
+ "fields": {
+  "quiz": 5524,
+  "text": "Persons attempting to free chute hangups shall:",
+  "image": "",
+  "sort_order": 24
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266847,
+ "fields": {
+  "quiz": 5524,
+  "text": "Vertical clearance above stair steps shall be a minimum of:",
+  "image": "",
+  "sort_order": 25
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266848,
+ "fields": {
+  "quiz": 5524,
+  "text": "If equipped on self-propelled mobile equipment, parking brakes shall be capable of holding the equipment with ________ on the maximum grade it travels.",
+  "image": "",
+  "sort_order": 26
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266849,
+ "fields": {
+  "quiz": 5524,
+  "text": "Overhead powerlines shall be installed as specified by the ______.",
+  "image": "",
+  "sort_order": 27
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266850,
+ "fields": {
+  "quiz": 5524,
+  "text": "All persons shall wear safety glasses, goggles or face shields or other suitable protective devices when:",
+  "image": "",
+  "sort_order": 28
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266851,
+ "fields": {
+  "quiz": 5524,
+  "text": "No person shall be ___________ to perform work alone in any area where hazardous conditions exist that would endanger his safety unless he can communicate with others, can be heard or can be seen.",
   "image": "",
   "sort_order": 29
  }
@@ -316997,6 +318000,3526 @@
  "fields": {
   "question": 266763,
   "text": "Unconscious",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857367,
+ "fields": {
+  "question": 266764,
+  "text": "Law Enforcement",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857368,
+ "fields": {
+  "question": 266764,
+  "text": "Fire Department",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857369,
+ "fields": {
+  "question": 266764,
+  "text": "Hazmat Team",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857370,
+ "fields": {
+  "question": 266764,
+  "text": "Utility Company",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857371,
+ "fields": {
+  "question": 266765,
+  "text": "Delivering blood to vital organs",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857372,
+ "fields": {
+  "question": 266765,
+  "text": "Removing waste products from the cells",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857373,
+ "fields": {
+  "question": 266765,
+  "text": "Breaking down food into nutrients",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857374,
+ "fields": {
+  "question": 266765,
+  "text": "Carrying oxygen throughout the body",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857375,
+ "fields": {
+  "question": 266766,
+  "text": "Properly using your body to facilitate a lift or move.",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857376,
+ "fields": {
+  "question": 266766,
+  "text": "Using a minimum of three people for any lift.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857377,
+ "fields": {
+  "question": 266766,
+  "text": "Contracting the body's muscles to lift and move things.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857378,
+ "fields": {
+  "question": 266766,
+  "text": "Lifting with your back and not your legs.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857379,
+ "fields": {
+  "question": 266767,
+  "text": "Jaw-thrust",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857380,
+ "fields": {
+  "question": 266767,
+  "text": "Mouth-to-nose",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857381,
+ "fields": {
+  "question": 266767,
+  "text": "Abdominal-thrust",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857382,
+ "fields": {
+  "question": 266767,
+  "text": "Head-tilt/chin-lift",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857383,
+ "fields": {
+  "question": 266768,
+  "text": "Tongue",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857384,
+ "fields": {
+  "question": 266768,
+  "text": "Swollen trachea",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857385,
+ "fields": {
+  "question": 266768,
+  "text": "Foreign object",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857386,
+ "fields": {
+  "question": 266768,
+  "text": "Enlarged epiglottis",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857387,
+ "fields": {
+  "question": 266769,
+  "text": "25%",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857388,
+ "fields": {
+  "question": 266769,
+  "text": "29%",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857389,
+ "fields": {
+  "question": 266769,
+  "text": "33%",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857390,
+ "fields": {
+  "question": 266769,
+  "text": "45%",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857391,
+ "fields": {
+  "question": 266770,
+  "text": "CPR without defibrillation.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857392,
+ "fields": {
+  "question": 266770,
+  "text": "Defibrillation without CPR.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857393,
+ "fields": {
+  "question": 266770,
+  "text": "CPR with supplemental oxygen.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857394,
+ "fields": {
+  "question": 266770,
+  "text": "CPR with defibrillation as soon as possible.",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857395,
+ "fields": {
+  "question": 266771,
+  "text": "EKG results.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857396,
+ "fields": {
+  "question": 266771,
+  "text": "Evaluation of the neck and spine.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857397,
+ "fields": {
+  "question": 266771,
+  "text": "Events leading to the illness or injury.",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857398,
+ "fields": {
+  "question": 266771,
+  "text": "Evidence of airway obstruction.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857399,
+ "fields": {
+  "question": 266772,
+  "text": "Increase.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857400,
+ "fields": {
+  "question": 266772,
+  "text": "Decrease.",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857401,
+ "fields": {
+  "question": 266772,
+  "text": "Fluctuate.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857402,
+ "fields": {
+  "question": 266772,
+  "text": "Remain the same.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857403,
+ "fields": {
+  "question": 266773,
+  "text": "Inserting an airway adjunct",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857404,
+ "fields": {
+  "question": 266773,
+  "text": "SAMPLE history",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857405,
+ "fields": {
+  "question": 266773,
+  "text": "Controlling bleeding",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857406,
+ "fields": {
+  "question": 266773,
+  "text": "Evaluation mental status",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857407,
+ "fields": {
+  "question": 266774,
+  "text": "Identify life-threatening conditions.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857408,
+ "fields": {
+  "question": 266774,
+  "text": "Collect a detailed medical history.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857409,
+ "fields": {
+  "question": 266774,
+  "text": "Identify any allergies.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857410,
+ "fields": {
+  "question": 266774,
+  "text": "Find and treat non-life threatening injuries or conditions.",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857411,
+ "fields": {
+  "question": 266775,
+  "text": "Angina pectoris",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857412,
+ "fields": {
+  "question": 266775,
+  "text": "Myocardial infarction",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857413,
+ "fields": {
+  "question": 266775,
+  "text": "Cardiac arrest",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857414,
+ "fields": {
+  "question": 266775,
+  "text": "Heart failure",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857415,
+ "fields": {
+  "question": 266776,
+  "text": "Upper airway.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857416,
+ "fields": {
+  "question": 266776,
+  "text": "Lower airway.",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857417,
+ "fields": {
+  "question": 266776,
+  "text": "Alveoli.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857418,
+ "fields": {
+  "question": 266776,
+  "text": "Trachea.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857419,
+ "fields": {
+  "question": 266777,
+  "text": "Arsenic",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857420,
+ "fields": {
+  "question": 266777,
+  "text": "Amyl nitrate",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857421,
+ "fields": {
+  "question": 266777,
+  "text": "Butane",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857422,
+ "fields": {
+  "question": 266777,
+  "text": "Alcohol",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857423,
+ "fields": {
+  "question": 266778,
+  "text": "And blood vessels to dilate.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857424,
+ "fields": {
+  "question": 266778,
+  "text": "And blood vessels to constrict.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857425,
+ "fields": {
+  "question": 266778,
+  "text": "To dilate and the blood vessels to constrict.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857426,
+ "fields": {
+  "question": 266778,
+  "text": "To constrict and the blood vessels to dilate.",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857427,
+ "fields": {
+  "question": 266779,
+  "text": "Hyperthermic.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857428,
+ "fields": {
+  "question": 266779,
+  "text": "Cyanotic.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857429,
+ "fields": {
+  "question": 266779,
+  "text": "Hypothermic.",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857430,
+ "fields": {
+  "question": 266779,
+  "text": "Hyperglycemic.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857431,
+ "fields": {
+  "question": 266780,
+  "text": "Wash the wound with soap and water.",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857432,
+ "fields": {
+  "question": 266780,
+  "text": "Wrap the limb with a pressure bandage.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857433,
+ "fields": {
+  "question": 266780,
+  "text": "Place a splint on the leg and foot.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857434,
+ "fields": {
+  "question": 266780,
+  "text": "Wait for EMS before beginning care.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857435,
+ "fields": {
+  "question": 266781,
+  "text": "Remove the splinter.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857436,
+ "fields": {
+  "question": 266781,
+  "text": "Instruct the patient to look down and to the left.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857437,
+ "fields": {
+  "question": 266781,
+  "text": "Gently bandage both eyes.",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857438,
+ "fields": {
+  "question": 266781,
+  "text": "Bandage only the injured eye.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857439,
+ "fields": {
+  "question": 266782,
+  "text": "18%",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857440,
+ "fields": {
+  "question": 266782,
+  "text": "25%",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857441,
+ "fields": {
+  "question": 266782,
+  "text": "27%",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857442,
+ "fields": {
+  "question": 266782,
+  "text": "36%",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857443,
+ "fields": {
+  "question": 266783,
+  "text": "Increased pulse rate.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857444,
+ "fields": {
+  "question": 266783,
+  "text": "Decreasing blood pressure.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857445,
+ "fields": {
+  "question": 266783,
+  "text": "Pink, warm, moist skin.",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857446,
+ "fields": {
+  "question": 266783,
+  "text": "Altered mental status.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857447,
+ "fields": {
+  "question": 266784,
+  "text": "To force oxygenated blood out of the patient's body core",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857448,
+ "fields": {
+  "question": 266784,
+  "text": "To counteract the high blood pressure",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857449,
+ "fields": {
+  "question": 266784,
+  "text": "To maintain adequate perfusion",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857450,
+ "fields": {
+  "question": 266784,
+  "text": "To create more blood to compensate for fluid loss",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857451,
+ "fields": {
+  "question": 266785,
+  "text": "Strain.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857452,
+ "fields": {
+  "question": 266785,
+  "text": "Sprain.",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857453,
+ "fields": {
+  "question": 266785,
+  "text": "Fracture.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857454,
+ "fields": {
+  "question": 266785,
+  "text": "Dislocation.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857455,
+ "fields": {
+  "question": 266786,
+  "text": "Leave the shoe in place.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857456,
+ "fields": {
+  "question": 266786,
+  "text": "Carefully remove the shoe.",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857457,
+ "fields": {
+  "question": 266786,
+  "text": "Wait for ENT's to decide what to do.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857458,
+ "fields": {
+  "question": 266786,
+  "text": "Just loosen the shoelaces.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857459,
+ "fields": {
+  "question": 266787,
+  "text": "Apply firm fingertip pressure on the open wound.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857460,
+ "fields": {
+  "question": 266787,
+  "text": "Use only enough pressure to slow or stop the bleeding.",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857461,
+ "fields": {
+  "question": 266787,
+  "text": "Tightly wrap a pressure bandage around the skull.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857462,
+ "fields": {
+  "question": 266787,
+  "text": "Keep the patient in a head-down position while holding pressure.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857463,
+ "fields": {
+  "question": 266788,
+  "text": "Patient's ability to breathe normally.",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857464,
+ "fields": {
+  "question": 266788,
+  "text": "Heart and lungs.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857465,
+ "fields": {
+  "question": 266788,
+  "text": "Patient's pulse rate.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857466,
+ "fields": {
+  "question": 266788,
+  "text": "Patient's ability to cough.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857467,
+ "fields": {
+  "question": 266789,
+  "text": "Stomach",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857468,
+ "fields": {
+  "question": 266789,
+  "text": "Spleen",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857469,
+ "fields": {
+  "question": 266789,
+  "text": "Liver",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857470,
+ "fields": {
+  "question": 266789,
+  "text": "Pancreas",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857471,
+ "fields": {
+  "question": 266790,
+  "text": "Position her on her back.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857472,
+ "fields": {
+  "question": 266790,
+  "text": "Elevate her feet and legs.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857473,
+ "fields": {
+  "question": 266790,
+  "text": "Position her on her left side.",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857474,
+ "fields": {
+  "question": 266790,
+  "text": "Position her on her right side.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857475,
+ "fields": {
+  "question": 266791,
+  "text": "Constant monitoring",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857476,
+ "fields": {
+  "question": 266791,
+  "text": "Care of victims",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857477,
+ "fields": {
+  "question": 266791,
+  "text": "Coordination",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857478,
+ "fields": {
+  "question": 266791,
+  "text": "Concerns of safety",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857479,
+ "fields": {
+  "question": 266792,
+  "text": "Incident Commander",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857480,
+ "fields": {
+  "question": 266792,
+  "text": "Triage",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857481,
+ "fields": {
+  "question": 266792,
+  "text": "Treatment",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857482,
+ "fields": {
+  "question": 266792,
+  "text": "Dispatch Center",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857483,
+ "fields": {
+  "question": 266793,
+  "text": "Abnormal Speech",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857484,
+ "fields": {
+  "question": 266793,
+  "text": "Equal circulation",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857485,
+ "fields": {
+  "question": 266793,
+  "text": "Facial droop",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857486,
+ "fields": {
+  "question": 266793,
+  "text": "Arm drift",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857487,
+ "fields": {
+  "question": 266794,
+  "text": "Ingestion",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857488,
+ "fields": {
+  "question": 266794,
+  "text": "Mentation",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857489,
+ "fields": {
+  "question": 266794,
+  "text": "Inhalation",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857490,
+ "fields": {
+  "question": 266794,
+  "text": "Injection",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857491,
+ "fields": {
+  "question": 266795,
+  "text": "Rabies",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857492,
+ "fields": {
+  "question": 266795,
+  "text": "Pertussis",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857493,
+ "fields": {
+  "question": 266795,
+  "text": "Hepatitis",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857494,
+ "fields": {
+  "question": 266795,
+  "text": "Tetanus",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857495,
+ "fields": {
+  "question": 266796,
+  "text": "Posterior",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857496,
+ "fields": {
+  "question": 266796,
+  "text": "Anterior",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857497,
+ "fields": {
+  "question": 266796,
+  "text": "Inferior",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857498,
+ "fields": {
+  "question": 266796,
+  "text": "Superior",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857499,
+ "fields": {
+  "question": 266797,
+  "text": "Proximal break",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857500,
+ "fields": {
+  "question": 266797,
+  "text": "Inferior aspect",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857501,
+ "fields": {
+  "question": 266797,
+  "text": "Recumbent line",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857502,
+ "fields": {
+  "question": 266797,
+  "text": "Midline",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857503,
+ "fields": {
+  "question": 266798,
+  "text": "Decreased respiratory rate",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857504,
+ "fields": {
+  "question": 266798,
+  "text": "Increased heart rate",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857505,
+ "fields": {
+  "question": 266798,
+  "text": "Vasodilation",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857506,
+ "fields": {
+  "question": 266798,
+  "text": "Pupil constriction",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857507,
+ "fields": {
+  "question": 266799,
+  "text": "Vasodilation",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857508,
+ "fields": {
+  "question": 266799,
+  "text": "Cold ambient temperature",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857509,
+ "fields": {
+  "question": 266799,
+  "text": "Medicine he has been given",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857510,
+ "fields": {
+  "question": 266799,
+  "text": "vasoconstriction",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857511,
+ "fields": {
+  "question": 266800,
+  "text": "Place the infant face down and lift her chest with your hands",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857512,
+ "fields": {
+  "question": 266800,
+  "text": "Place her on a firm surface and begin chest compressions",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857513,
+ "fields": {
+  "question": 266800,
+  "text": "Hold her face up and deliver chest thrust",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857514,
+ "fields": {
+  "question": 266800,
+  "text": "Turn her face down and deliver back slaps",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857515,
+ "fields": {
+  "question": 266801,
+  "text": "Emergent",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857516,
+ "fields": {
+  "question": 266801,
+  "text": "Standard",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857517,
+ "fields": {
+  "question": 266801,
+  "text": "Rapid",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857518,
+ "fields": {
+  "question": 266801,
+  "text": "Nonrapid",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857519,
+ "fields": {
+  "question": 266802,
+  "text": "Pocket mask with supplemental oxygen",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857520,
+ "fields": {
+  "question": 266802,
+  "text": "Bag mask without supplemental oxygen",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857521,
+ "fields": {
+  "question": 266802,
+  "text": "Mouth-to-mouth",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857522,
+ "fields": {
+  "question": 266802,
+  "text": "Waiting for another rescuer before beginning rescue breaths.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857523,
+ "fields": {
+  "question": 266803,
+  "text": "After providing two minutes of CPR",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857524,
+ "fields": {
+  "question": 266803,
+  "text": "Immediately after removing him from the pool",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857525,
+ "fields": {
+  "question": 266803,
+  "text": "After 10 minutes of CPR with no response",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857526,
+ "fields": {
+  "question": 266803,
+  "text": "After rescue breaths but before compressions",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857527,
+ "fields": {
+  "question": 266804,
+  "text": "Increase",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857528,
+ "fields": {
+  "question": 266804,
+  "text": "Decrease",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857529,
+ "fields": {
+  "question": 266804,
+  "text": "Fluctuate",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857530,
+ "fields": {
+  "question": 266804,
+  "text": "Remain the same",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857531,
+ "fields": {
+  "question": 266805,
+  "text": "Bruising to the arm",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857532,
+ "fields": {
+  "question": 266805,
+  "text": "A laceration on the lip",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857533,
+ "fields": {
+  "question": 266805,
+  "text": "Headache",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857534,
+ "fields": {
+  "question": 266805,
+  "text": "Diaphoretic skin",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857535,
+ "fields": {
+  "question": 266806,
+  "text": "Inserting an airway adjunct",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857536,
+ "fields": {
+  "question": 266806,
+  "text": "SAMPLE history",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857537,
+ "fields": {
+  "question": 266806,
+  "text": "Controlling bleeding",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857538,
+ "fields": {
+  "question": 266806,
+  "text": "Evaluating mental status",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857539,
+ "fields": {
+  "question": 266807,
+  "text": "Begin chest compressions",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857540,
+ "fields": {
+  "question": 266807,
+  "text": "Administer oxygen",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857541,
+ "fields": {
+  "question": 266807,
+  "text": "Provide two breaths",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857542,
+ "fields": {
+  "question": 266807,
+  "text": "Place her in the recovery position",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857543,
+ "fields": {
+  "question": 266808,
+  "text": "Upper airway",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857544,
+ "fields": {
+  "question": 266808,
+  "text": "Lower airway",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857545,
+ "fields": {
+  "question": 266808,
+  "text": "Alveoli",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857546,
+ "fields": {
+  "question": 266808,
+  "text": "Trachea",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857547,
+ "fields": {
+  "question": 266809,
+  "text": "Diabetic coma",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857548,
+ "fields": {
+  "question": 266809,
+  "text": "Overdose",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857549,
+ "fields": {
+  "question": 266809,
+  "text": "Stroke",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857550,
+ "fields": {
+  "question": 266809,
+  "text": "Heart attack",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857551,
+ "fields": {
+  "question": 266810,
+  "text": "Suspect spine injury",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857552,
+ "fields": {
+  "question": 266810,
+  "text": "Begin CPR in the water",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857553,
+ "fields": {
+  "question": 266810,
+  "text": "Drage her by one arm to shore",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857554,
+ "fields": {
+  "question": 266810,
+  "text": "Wait for EMS before beginning care",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857555,
+ "fields": {
+  "question": 266811,
+  "text": "Remove the splinter",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857556,
+ "fields": {
+  "question": 266811,
+  "text": "Instruct the patient to look down and to the left",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857557,
+ "fields": {
+  "question": 266811,
+  "text": "Gently bandage both eyes",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857558,
+ "fields": {
+  "question": 266811,
+  "text": "Bandage only the injured eye",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857559,
+ "fields": {
+  "question": 266812,
+  "text": "Superficial",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857560,
+ "fields": {
+  "question": 266812,
+  "text": "Partial thickness",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857561,
+ "fields": {
+  "question": 266812,
+  "text": "Full thickness",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857562,
+ "fields": {
+  "question": 266812,
+  "text": "Severe",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857563,
+ "fields": {
+  "question": 266813,
+  "text": "Cover her with sterile burn sheets",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857564,
+ "fields": {
+  "question": 266813,
+  "text": "Ensure that the burning process has stopped",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857565,
+ "fields": {
+  "question": 266813,
+  "text": "Apply moist dressings over the burns",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857566,
+ "fields": {
+  "question": 266813,
+  "text": "Not cover the burns, but you should arrange transport",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857567,
+ "fields": {
+  "question": 266814,
+  "text": "Applying direct pressure",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857568,
+ "fields": {
+  "question": 266814,
+  "text": "Using a tourniquet",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857569,
+ "fields": {
+  "question": 266814,
+  "text": "Securing a pressure bandage",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857570,
+ "fields": {
+  "question": 266814,
+  "text": "Applying a clotting agent",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857571,
+ "fields": {
+  "question": 266815,
+  "text": "Psychogenic, respiratory, hypoglycemic, neurogenic",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857572,
+ "fields": {
+  "question": 266815,
+  "text": "Cardiogenic, hypovolemic, distributive, obstructive",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857573,
+ "fields": {
+  "question": 266815,
+  "text": "Obstructive anemic, hypoxic, cariogenic",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857574,
+ "fields": {
+  "question": 266815,
+  "text": "Hypoxic, ventricular diabetic, distributive",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857575,
+ "fields": {
+  "question": 266816,
+  "text": "Anaphylactic",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857576,
+ "fields": {
+  "question": 266816,
+  "text": "Cardiogenic",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857577,
+ "fields": {
+  "question": 266816,
+  "text": "Hemorrhagic",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857578,
+ "fields": {
+  "question": 266816,
+  "text": "Septic",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857579,
+ "fields": {
+  "question": 266817,
+  "text": "The distal pulse is absent",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857580,
+ "fields": {
+  "question": 266817,
+  "text": "There is an open would",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857581,
+ "fields": {
+  "question": 266817,
+  "text": "A splint is unavailable",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857582,
+ "fields": {
+  "question": 266817,
+  "text": "The patient is insignificant pain",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857583,
+ "fields": {
+  "question": 266818,
+  "text": "Completely immobilize the head and neck",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857584,
+ "fields": {
+  "question": 266818,
+  "text": "Obtain a detailed medical history",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857585,
+ "fields": {
+  "question": 266818,
+  "text": "Monitor vital signs",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857586,
+ "fields": {
+  "question": 266818,
+  "text": "Assess and manage airway, breathing, and circulation",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857587,
+ "fields": {
+  "question": 266819,
+  "text": "Apply gentle pressure and support the head during delivery",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857588,
+ "fields": {
+  "question": 266819,
+  "text": "Attempt to turn the baby face up",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857589,
+ "fields": {
+  "question": 266819,
+  "text": "Firmly press against the head and tell the mother not to push",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857590,
+ "fields": {
+  "question": 266819,
+  "text": "Prepare to administer oxygen to the baby",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857591,
+ "fields": {
+  "question": 266820,
+  "text": "Control the bleeding",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857592,
+ "fields": {
+  "question": 266820,
+  "text": "Keep chest contents from spilling out",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857593,
+ "fields": {
+  "question": 266820,
+  "text": "Keep air from entering the chest cavity",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857594,
+ "fields": {
+  "question": 266820,
+  "text": "Make it easier for the patient to breathe",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857595,
+ "fields": {
+  "question": 266821,
+  "text": "Immediate",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857596,
+ "fields": {
+  "question": 266821,
+  "text": "Delayed",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857597,
+ "fields": {
+  "question": 266821,
+  "text": "Minor",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857598,
+ "fields": {
+  "question": 266821,
+  "text": "Deceased",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857599,
+ "fields": {
+  "question": 266822,
+  "text": "Critical Incident Stress Management",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857600,
+ "fields": {
+  "question": 266822,
+  "text": "Emergency Stress Reduction Protocol",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857601,
+ "fields": {
+  "question": 266822,
+  "text": "Stress Prevention Strategy",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857602,
+ "fields": {
+  "question": 266822,
+  "text": "Incident Emotional Response Program",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857603,
+ "fields": {
+  "question": 266823,
+  "text": "Lateral recumbent",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857604,
+ "fields": {
+  "question": 266823,
+  "text": "Lateral",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857605,
+ "fields": {
+  "question": 266823,
+  "text": "Superior",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857606,
+ "fields": {
+  "question": 266823,
+  "text": "Stroke",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857607,
+ "fields": {
+  "question": 266824,
+  "text": "Flexible stretcher",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857608,
+ "fields": {
+  "question": 266824,
+  "text": "Wheeled stretcher",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857609,
+ "fields": {
+  "question": 266824,
+  "text": "Scoop stretcher",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857610,
+ "fields": {
+  "question": 266824,
+  "text": "Stair chair",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857611,
+ "fields": {
+  "question": 266825,
+  "text": "Trachea",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857612,
+ "fields": {
+  "question": 266825,
+  "text": "Esophagus",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857613,
+ "fields": {
+  "question": 266825,
+  "text": "Diaphragm",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857614,
+ "fields": {
+  "question": 266825,
+  "text": "Pharynx",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857615,
+ "fields": {
+  "question": 266826,
+  "text": "500",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857616,
+ "fields": {
+  "question": 266826,
+  "text": "1,000",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857617,
+ "fields": {
+  "question": 266826,
+  "text": "1,500",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857618,
+ "fields": {
+  "question": 266826,
+  "text": "2,000",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857619,
+ "fields": {
+  "question": 266827,
+  "text": "Check for the presence of a pulse.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857620,
+ "fields": {
+  "question": 266827,
+  "text": "Begin chest compressions.",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857621,
+ "fields": {
+  "question": 266827,
+  "text": "Check for breathing",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857622,
+ "fields": {
+  "question": 266827,
+  "text": "Press the analyze button on the AED",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857623,
+ "fields": {
+  "question": 266828,
+  "text": "4",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857624,
+ "fields": {
+  "question": 266828,
+  "text": "6",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857625,
+ "fields": {
+  "question": 266828,
+  "text": "8",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857626,
+ "fields": {
+  "question": 266828,
+  "text": "10",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857627,
+ "fields": {
+  "question": 266829,
+  "text": "Routine.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857628,
+ "fields": {
+  "question": 266829,
+  "text": "Normal.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857629,
+ "fields": {
+  "question": 266829,
+  "text": "Unstable.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857630,
+ "fields": {
+  "question": 266829,
+  "text": "Stable.",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857631,
+ "fields": {
+  "question": 266830,
+  "text": "Place her in a supine position",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857632,
+ "fields": {
+  "question": 266830,
+  "text": "Administer high-flow oxygen",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857633,
+ "fields": {
+  "question": 266830,
+  "text": "Obtain a medical history",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857634,
+ "fields": {
+  "question": 266830,
+  "text": "Obtain her vital signs.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857635,
+ "fields": {
+  "question": 266831,
+  "text": "Asthma",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857636,
+ "fields": {
+  "question": 266831,
+  "text": "Bronchitis",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857637,
+ "fields": {
+  "question": 266831,
+  "text": "Emphysema",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857638,
+ "fields": {
+  "question": 266831,
+  "text": "Hyperventilation",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857639,
+ "fields": {
+  "question": 266832,
+  "text": "Stroke.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857640,
+ "fields": {
+  "question": 266832,
+  "text": "Seizure.",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857641,
+ "fields": {
+  "question": 266832,
+  "text": "Heart attack.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857642,
+ "fields": {
+  "question": 266832,
+  "text": "Overdose.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857643,
+ "fields": {
+  "question": 266833,
+  "text": "Suspect spine injury.",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857644,
+ "fields": {
+  "question": 266833,
+  "text": "Begin CPR in the water.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857645,
+ "fields": {
+  "question": 266833,
+  "text": "Drag her by one arm to shore.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857646,
+ "fields": {
+  "question": 266833,
+  "text": "Wait for EMS before beginning care.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857647,
+ "fields": {
+  "question": 266834,
+  "text": "Applying direct pressure.",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857648,
+ "fields": {
+  "question": 266834,
+  "text": "Using a tourniquet.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857649,
+ "fields": {
+  "question": 266834,
+  "text": "Securing a pressure bandage.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857650,
+ "fields": {
+  "question": 266834,
+  "text": "Applying a clotting agent.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857651,
+ "fields": {
+  "question": 266835,
+  "text": "Carefully remove the object.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857652,
+ "fields": {
+  "question": 266835,
+  "text": "Tie both legs together.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857653,
+ "fields": {
+  "question": 266835,
+  "text": "Stabilize the object with bulky dressings.",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857654,
+ "fields": {
+  "question": 266835,
+  "text": "Cut both ends of the bar to make it shorter.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857655,
+ "fields": {
+  "question": 266836,
+  "text": "Splinting fractures",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857656,
+ "fields": {
+  "question": 266836,
+  "text": "Immediate transport",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857657,
+ "fields": {
+  "question": 266836,
+  "text": "Spinal immobilization",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857658,
+ "fields": {
+  "question": 266836,
+  "text": "Bandaging wounds",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857659,
+ "fields": {
+  "question": 266837,
+  "text": "Cravat.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857660,
+ "fields": {
+  "question": 266837,
+  "text": "Dressing.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857661,
+ "fields": {
+  "question": 266837,
+  "text": "Bandage.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857662,
+ "fields": {
+  "question": 266837,
+  "text": "Sling.",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857663,
+ "fields": {
+  "question": 266838,
+  "text": "Completely immobilize the head and neck.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857664,
+ "fields": {
+  "question": 266838,
+  "text": "Obtain a detailed medical history.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857665,
+ "fields": {
+  "question": 266838,
+  "text": "Monitor vital signs.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857666,
+ "fields": {
+  "question": 266838,
+  "text": "Assess and manage airway, breathing and circulation.",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857667,
+ "fields": {
+  "question": 266839,
+  "text": "Control the bleeding.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857668,
+ "fields": {
+  "question": 266839,
+  "text": "Keep chest contents from spilling out.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857669,
+ "fields": {
+  "question": 266839,
+  "text": "Keep air from entering the chest cavity.",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857670,
+ "fields": {
+  "question": 266839,
+  "text": "Make it easier for the patient to breathe.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857671,
+ "fields": {
+  "question": 266840,
+  "text": "Ectopic pregnancy.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857672,
+ "fields": {
+  "question": 266840,
+  "text": "Placenta previa.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857673,
+ "fields": {
+  "question": 266840,
+  "text": "Miscarriage.",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857674,
+ "fields": {
+  "question": 266840,
+  "text": "Preeclampsia.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857675,
+ "fields": {
+  "question": 266841,
+  "text": "Red.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857676,
+ "fields": {
+  "question": 266841,
+  "text": "Yellow.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857677,
+ "fields": {
+  "question": 266841,
+  "text": "Green.",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857678,
+ "fields": {
+  "question": 266841,
+  "text": "Black.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857679,
+ "fields": {
+  "question": 266842,
+  "text": "The cylinders are moved.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857680,
+ "fields": {
+  "question": 266842,
+  "text": "The torch and hoses are left unattended.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857681,
+ "fields": {
+  "question": 266842,
+  "text": "The task or series of tasks is completed.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857682,
+ "fields": {
+  "question": 266842,
+  "text": "Any of the above.",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857683,
+ "fields": {
+  "question": 266843,
+  "text": "15 feet",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857684,
+ "fields": {
+  "question": 266843,
+  "text": "20 feet",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857685,
+ "fields": {
+  "question": 266843,
+  "text": "25 feet",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857686,
+ "fields": {
+  "question": 266843,
+  "text": "30 feet",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857687,
+ "fields": {
+  "question": 266844,
+  "text": "Speed",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857688,
+ "fields": {
+  "question": 266844,
+  "text": "Right-of-way and direction of movement",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857689,
+ "fields": {
+  "question": 266844,
+  "text": "Use of headlights to assure appropriate visibility",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857690,
+ "fields": {
+  "question": 266844,
+  "text": "All of the above",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857691,
+ "fields": {
+  "question": 266845,
+  "text": "18 inches.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857692,
+ "fields": {
+  "question": 266845,
+  "text": "24 inches.",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857693,
+ "fields": {
+  "question": 266845,
+  "text": "mid-axle height of the largest self-propelled mobile equipment which usually travels the roadway.",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857694,
+ "fields": {
+  "question": 266845,
+  "text": "mid-axle height of the average self-propelled mobile equipment which usually travels the roadway.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857695,
+ "fields": {
+  "question": 266846,
+  "text": "Use the proper tools to free material.",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857696,
+ "fields": {
+  "question": 266846,
+  "text": "Be experienced and familiar with the task",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857697,
+ "fields": {
+  "question": 266846,
+  "text": "Know the hazards involved.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857698,
+ "fields": {
+  "question": 266846,
+  "text": "All of the above.",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857699,
+ "fields": {
+  "question": 266847,
+  "text": "7 feet",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857700,
+ "fields": {
+  "question": 266847,
+  "text": "8 feet",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857701,
+ "fields": {
+  "question": 266847,
+  "text": "No minimum if suitable warning signs or similar devices shall be provided to indicate an impaired clearance.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857702,
+ "fields": {
+  "question": 266847,
+  "text": "A and C",
+  "is_correct": true,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857703,
+ "fields": {
+  "question": 266848,
+  "text": "The maximum load",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857704,
+ "fields": {
+  "question": 266848,
+  "text": "Its typical load",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857705,
+ "fields": {
+  "question": 266848,
+  "text": "No load",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857706,
+ "fields": {
+  "question": 266848,
+  "text": "The minimum load",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857707,
+ "fields": {
+  "question": 266849,
+  "text": "OSHA",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857708,
+ "fields": {
+  "question": 266849,
+  "text": "MSHA",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857709,
+ "fields": {
+  "question": 266849,
+  "text": "National Electrical Code",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857710,
+ "fields": {
+  "question": 266849,
+  "text": "None of the above",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857711,
+ "fields": {
+  "question": 266850,
+  "text": "On mine property",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857712,
+ "fields": {
+  "question": 266850,
+  "text": "In or around an area of a mine or plant where a hazard exists which could cause injury to unprotected eyes.",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857713,
+ "fields": {
+  "question": 266850,
+  "text": "They feel like doing so.",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857714,
+ "fields": {
+  "question": 266850,
+  "text": "Convenient.",
+  "is_correct": false,
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857715,
+ "fields": {
+  "question": 266851,
+  "text": "B, C and D",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857716,
+ "fields": {
+  "question": 266851,
+  "text": "Required",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857717,
+ "fields": {
+  "question": 266851,
+  "text": "Allowed",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857718,
+ "fields": {
+  "question": 266851,
+  "text": "Assigned",
   "is_correct": false,
   "sort_order": 3
  }

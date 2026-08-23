@@ -1,0 +1,594 @@
+{
+ "source_pk": 2044,
+ "title": "First Aid Written Test",
+ "questions": [
+  {
+   "text": "All of the following are routes through which pathogens may enter the body except:",
+   "choices": [
+    {
+     "text": "Ingestion",
+     "is_correct": false
+    },
+    {
+     "text": "Mentation",
+     "is_correct": false
+    },
+    {
+     "text": "Inhalation",
+     "is_correct": false
+    },
+    {
+     "text": "Injection",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "Which one of the following is not a commonly recommended immunization for health care provider?",
+   "choices": [
+    {
+     "text": "Rabies",
+     "is_correct": true
+    },
+    {
+     "text": "Pertussis",
+     "is_correct": false
+    },
+    {
+     "text": "Hepatitis",
+     "is_correct": false
+    },
+    {
+     "text": "Tetanus",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "The spine can be felt (palpated) on the ____ aspect of the body",
+   "choices": [
+    {
+     "text": "Posterior",
+     "is_correct": true
+    },
+    {
+     "text": "Anterior",
+     "is_correct": false
+    },
+    {
+     "text": "Inferior",
+     "is_correct": false
+    },
+    {
+     "text": "Superior",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "The imaginary line that bisects the body into two halves (left and right) is known as the:",
+   "choices": [
+    {
+     "text": "Proximal break",
+     "is_correct": false
+    },
+    {
+     "text": "Inferior aspect",
+     "is_correct": false
+    },
+    {
+     "text": "Recumbent line",
+     "is_correct": false
+    },
+    {
+     "text": "Midline",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "Which on of the following would be a predictable bodily response to hypoperfusion (shock)?",
+   "choices": [
+    {
+     "text": "Decreased respiratory rate",
+     "is_correct": false
+    },
+    {
+     "text": "Increased heart rate",
+     "is_correct": true
+    },
+    {
+     "text": "Vasodilation",
+     "is_correct": false
+    },
+    {
+     "text": "Pupil constriction",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "A four-year-old male shock patient has dlayed capillary refill time. This is most likely caused by:",
+   "choices": [
+    {
+     "text": "Vasodilation",
+     "is_correct": false
+    },
+    {
+     "text": "Cold ambient temperature",
+     "is_correct": false
+    },
+    {
+     "text": "Medicine he has been given",
+     "is_correct": false
+    },
+    {
+     "text": "vasoconstriction",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "if an infant becomes unresponsive before you can clear an airway obstruction, you should first:",
+   "choices": [
+    {
+     "text": "Place the infant face down and lift her chest with your hands",
+     "is_correct": false
+    },
+    {
+     "text": "Place her on a firm surface and begin chest compressions",
+     "is_correct": true
+    },
+    {
+     "text": "Hold her face up and deliver chest thrust",
+     "is_correct": false
+    },
+    {
+     "text": "Turn her face down and deliver back slaps",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "What type of move is used when there is no immediate threat to the patient's life?",
+   "choices": [
+    {
+     "text": "Emergent",
+     "is_correct": false
+    },
+    {
+     "text": "Standard",
+     "is_correct": true
+    },
+    {
+     "text": "Rapid",
+     "is_correct": false
+    },
+    {
+     "text": "Nonrapid",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "You are a single rescuer caring for the victim of a cardiac arrest. Your equipment bag and a supply of oxygen are within reach. Which one of the following is the most appropriate choice for beginning rescue breaths on the patient?",
+   "choices": [
+    {
+     "text": "Pocket mask with supplemental oxygen",
+     "is_correct": true
+    },
+    {
+     "text": "Bag mask without supplemental oxygen",
+     "is_correct": false
+    },
+    {
+     "text": "Mouth-to-mouth",
+     "is_correct": false
+    },
+    {
+     "text": "Waiting for another rescuer before beginning rescue breaths.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "You are alone when you discover and remove a four-year-old child from a public pool. When should you call 911?",
+   "choices": [
+    {
+     "text": "After providing two minutes of CPR",
+     "is_correct": true
+    },
+    {
+     "text": "Immediately after removing him from the pool",
+     "is_correct": false
+    },
+    {
+     "text": "After 10 minutes of CPR with no response",
+     "is_correct": false
+    },
+    {
+     "text": "After rescue breaths but before compressions",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "As blood pressure drops, perfusion is most likely to:",
+   "choices": [
+    {
+     "text": "Increase",
+     "is_correct": false
+    },
+    {
+     "text": "Decrease",
+     "is_correct": true
+    },
+    {
+     "text": "Fluctuate",
+     "is_correct": false
+    },
+    {
+     "text": "Remain the same",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "Which of the following would best be described as a symptom?",
+   "choices": [
+    {
+     "text": "Bruising to the arm",
+     "is_correct": false
+    },
+    {
+     "text": "A laceration on the lip",
+     "is_correct": false
+    },
+    {
+     "text": "Headache",
+     "is_correct": true
+    },
+    {
+     "text": "Diaphoretic skin",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "Which of the following would NOT typically happen during the primary assessment?",
+   "choices": [
+    {
+     "text": "Inserting an airway adjunct",
+     "is_correct": false
+    },
+    {
+     "text": "SAMPLE history",
+     "is_correct": true
+    },
+    {
+     "text": "Controlling bleeding",
+     "is_correct": false
+    },
+    {
+     "text": "Evaluating mental status",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "You have arrived on the scene of an unresponsive female whom you find to be pulseless and apneic. You should:",
+   "choices": [
+    {
+     "text": "Begin chest compressions",
+     "is_correct": true
+    },
+    {
+     "text": "Administer oxygen",
+     "is_correct": false
+    },
+    {
+     "text": "Provide two breaths",
+     "is_correct": false
+    },
+    {
+     "text": "Place her in the recovery position",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "You are caring for a patient with difficulty breathing. She states that she has a history of asthma. You understand asthma to be a disease of the:",
+   "choices": [
+    {
+     "text": "Upper airway",
+     "is_correct": false
+    },
+    {
+     "text": "Lower airway",
+     "is_correct": false
+    },
+    {
+     "text": "Alveoli",
+     "is_correct": false
+    },
+    {
+     "text": "Trachea",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "Which medical emergency is caused by a disruption of blood flow to the brain?",
+   "choices": [
+    {
+     "text": "Diabetic coma",
+     "is_correct": false
+    },
+    {
+     "text": "Overdose",
+     "is_correct": false
+    },
+    {
+     "text": "Stroke",
+     "is_correct": true
+    },
+    {
+     "text": "Heart attack",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "You are caring for an individual who fell from a rope swing, landed in the water, and is now unresponsive. She has a large laceration on the top of her head. You should:",
+   "choices": [
+    {
+     "text": "Suspect spine injury",
+     "is_correct": true
+    },
+    {
+     "text": "Begin CPR in the water",
+     "is_correct": false
+    },
+    {
+     "text": "Drage her by one arm to shore",
+     "is_correct": false
+    },
+    {
+     "text": "Wait for EMS before beginning care",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "a patent has a small wooden splinter impaled in their eye. You should:",
+   "choices": [
+    {
+     "text": "Remove the splinter",
+     "is_correct": false
+    },
+    {
+     "text": "Instruct the patient to look down and to the left",
+     "is_correct": false
+    },
+    {
+     "text": "Gently bandage both eyes",
+     "is_correct": true
+    },
+    {
+     "text": "Bandage only the injured eye",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "Your patient has burned his hand. The skin is red and blistered, and the burn is extremely painful. You would classify this burn as:",
+   "choices": [
+    {
+     "text": "Superficial",
+     "is_correct": false
+    },
+    {
+     "text": "Partial thickness",
+     "is_correct": true
+    },
+    {
+     "text": "Full thickness",
+     "is_correct": false
+    },
+    {
+     "text": "Severe",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "You are caring for a burn victim with both partial-and full-thickness burns over 40% of her body. You should FIRST:",
+   "choices": [
+    {
+     "text": "Cover her with sterile burn sheets",
+     "is_correct": false
+    },
+    {
+     "text": "Ensure that the burning process has stopped",
+     "is_correct": true
+    },
+    {
+     "text": "Apply moist dressings over the burns",
+     "is_correct": false
+    },
+    {
+     "text": "Not cover the burns, but you should arrange transport",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "Most cases of external bleeding can be controlled by:",
+   "choices": [
+    {
+     "text": "Applying direct pressure",
+     "is_correct": true
+    },
+    {
+     "text": "Using a tourniquet",
+     "is_correct": false
+    },
+    {
+     "text": "Securing a pressure bandage",
+     "is_correct": false
+    },
+    {
+     "text": "Applying a clotting agent",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "The four categories of shock include:",
+   "choices": [
+    {
+     "text": "Psychogenic, respiratory, hypoglycemic, neurogenic",
+     "is_correct": false
+    },
+    {
+     "text": "Cardiogenic, hypovolemic, distributive, obstructive",
+     "is_correct": true
+    },
+    {
+     "text": "Obstructive anemic, hypoxic, cariogenic",
+     "is_correct": false
+    },
+    {
+     "text": "Hypoxic, ventricular diabetic, distributive",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "When the body sustains a significant loss of blood, which type of shock is most likely to occur?",
+   "choices": [
+    {
+     "text": "Anaphylactic",
+     "is_correct": false
+    },
+    {
+     "text": "Cardiogenic",
+     "is_correct": false
+    },
+    {
+     "text": "Hemorrhagic",
+     "is_correct": true
+    },
+    {
+     "text": "Septic",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "In which of the following situations would it be appropriate to place an angulated extremity back into the anatomical position?",
+   "choices": [
+    {
+     "text": "The distal pulse is absent",
+     "is_correct": true
+    },
+    {
+     "text": "There is an open would",
+     "is_correct": false
+    },
+    {
+     "text": "A splint is unavailable",
+     "is_correct": false
+    },
+    {
+     "text": "The patient is insignificant pain",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "Your main priority when caring for a patient with a suspected head injury is to:",
+   "choices": [
+    {
+     "text": "Completely immobilize the head and neck",
+     "is_correct": false
+    },
+    {
+     "text": "Obtain a detailed medical history",
+     "is_correct": false
+    },
+    {
+     "text": "Monitor vital signs",
+     "is_correct": false
+    },
+    {
+     "text": "Assess and manage airway, breathing, and circulation",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "You are assisting a woman in active labor. As the baby's head begins to deliver you should:",
+   "choices": [
+    {
+     "text": "Apply gentle pressure and support the head during delivery",
+     "is_correct": true
+    },
+    {
+     "text": "Attempt to turn the baby face up",
+     "is_correct": false
+    },
+    {
+     "text": "Firmly press against the head and tell the mother not to push",
+     "is_correct": false
+    },
+    {
+     "text": "Prepare to administer oxygen to the baby",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "The purpose of placing an occlusive dressing over an open chest wound is to:",
+   "choices": [
+    {
+     "text": "Control the bleeding",
+     "is_correct": false
+    },
+    {
+     "text": "Keep chest contents from spilling out",
+     "is_correct": false
+    },
+    {
+     "text": "Keep air from entering the chest cavity",
+     "is_correct": true
+    },
+    {
+     "text": "Make it easier for the patient to breathe",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "You are triaging an adult patient who presents as unresponsive and breathing at a rate of 24. She should be triaged as:",
+   "choices": [
+    {
+     "text": "Immediate",
+     "is_correct": true
+    },
+    {
+     "text": "Delayed",
+     "is_correct": false
+    },
+    {
+     "text": "Minor",
+     "is_correct": false
+    },
+    {
+     "text": "Deceased",
+     "is_correct": false
+    }
+   ]
+  }
+ ]
+}

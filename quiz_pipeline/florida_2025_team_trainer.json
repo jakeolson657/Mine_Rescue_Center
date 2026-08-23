@@ -1,0 +1,636 @@
+{
+ "source_pk": 2046,
+ "title": "Team Trainer Test",
+ "questions": [
+  {
+   "text": "A broad-based approach involving several strategies designed to help emergency personnel cope with stress is called:",
+   "choices": [
+    {
+     "text": "Critical Incident Stress Management",
+     "is_correct": true
+    },
+    {
+     "text": "Emergency Stress Reduction Protocol",
+     "is_correct": false
+    },
+    {
+     "text": "Stress Prevention Strategy",
+     "is_correct": false
+    },
+    {
+     "text": "Incident Emotional Response Program",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "The recovery position is also known as the ___________ position.",
+   "choices": [
+    {
+     "text": "Lateral recumbent",
+     "is_correct": true
+    },
+    {
+     "text": "Lateral",
+     "is_correct": false
+    },
+    {
+     "text": "Superior",
+     "is_correct": false
+    },
+    {
+     "text": "Stroke",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "Which one of the following devices is best suited to carry a responsive patient with no suspected spinal injury down a flight of stairs?",
+   "choices": [
+    {
+     "text": "Flexible stretcher",
+     "is_correct": false
+    },
+    {
+     "text": "Wheeled stretcher",
+     "is_correct": false
+    },
+    {
+     "text": "Scoop stretcher",
+     "is_correct": false
+    },
+    {
+     "text": "Stair chair",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "The primary muscle of respiration is the :",
+   "choices": [
+    {
+     "text": "Trachea",
+     "is_correct": false
+    },
+    {
+     "text": "Esophagus",
+     "is_correct": false
+    },
+    {
+     "text": "Diaphragm",
+     "is_correct": true
+    },
+    {
+     "text": "Pharynx",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "The pressure gauge of a full oxygen cylinder will display approximately ___ psi.",
+   "choices": [
+    {
+     "text": "500",
+     "is_correct": false
+    },
+    {
+     "text": "1,000",
+     "is_correct": false
+    },
+    {
+     "text": "1,500",
+     "is_correct": false
+    },
+    {
+     "text": "2,000",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "You have just delivered a shock with an automated external defibrillator. You should:",
+   "choices": [
+    {
+     "text": "Check for the presence of a pulse.",
+     "is_correct": false
+    },
+    {
+     "text": "Begin chest compressions.",
+     "is_correct": true
+    },
+    {
+     "text": "Check for breathing",
+     "is_correct": false
+    },
+    {
+     "text": "Press the analyze button on the AED",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "A respiratory rate that is lower than ___ for an adult should be considered inadequate.",
+   "choices": [
+    {
+     "text": "4",
+     "is_correct": false
+    },
+    {
+     "text": "6",
+     "is_correct": false
+    },
+    {
+     "text": "8",
+     "is_correct": false
+    },
+    {
+     "text": "10",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "A patient who presents with normal vital signs and shows no indications of a life-threatening problem may be described as:",
+   "choices": [
+    {
+     "text": "Routine.",
+     "is_correct": false
+    },
+    {
+     "text": "Normal.",
+     "is_correct": false
+    },
+    {
+     "text": "Unstable.",
+     "is_correct": false
+    },
+    {
+     "text": "Stable.",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "You have completed your secondary assessment for a 65-year-old woman who has a long history of cardiac problems. She is complaining of chest pain and difficulty breathing. You should:",
+   "choices": [
+    {
+     "text": "Place her in a supine position",
+     "is_correct": false
+    },
+    {
+     "text": "Administer high-flow oxygen",
+     "is_correct": true
+    },
+    {
+     "text": "Obtain a medical history",
+     "is_correct": false
+    },
+    {
+     "text": "Obtain her vital signs.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "Which medical condition listed below causes inflammation of the bronchioles, excess mucus production within the airways and a chronic productive cough?",
+   "choices": [
+    {
+     "text": "Asthma",
+     "is_correct": false
+    },
+    {
+     "text": "Bronchitis",
+     "is_correct": true
+    },
+    {
+     "text": "Emphysema",
+     "is_correct": false
+    },
+    {
+     "text": "Hyperventilation",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "A patient who is unresponsive and having generalized muscle contractions is likely experiencing a (n):",
+   "choices": [
+    {
+     "text": "Stroke.",
+     "is_correct": false
+    },
+    {
+     "text": "Seizure.",
+     "is_correct": true
+    },
+    {
+     "text": "Heart attack.",
+     "is_correct": false
+    },
+    {
+     "text": "Overdose.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "You are caring for an individual who fell from a rope swing, landed in the water, and is now unresponsive. She has a large laceration on the top of her head. You should:",
+   "choices": [
+    {
+     "text": "Suspect spine injury.",
+     "is_correct": true
+    },
+    {
+     "text": "Begin CPR in the water.",
+     "is_correct": false
+    },
+    {
+     "text": "Drag her by one arm to shore.",
+     "is_correct": false
+    },
+    {
+     "text": "Wait for EMS before beginning care.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "Most cases of external bleeding can be controlled by:",
+   "choices": [
+    {
+     "text": "Applying direct pressure.",
+     "is_correct": true
+    },
+    {
+     "text": "Using a tourniquet.",
+     "is_correct": false
+    },
+    {
+     "text": "Securing a pressure bandage.",
+     "is_correct": false
+    },
+    {
+     "text": "Applying a clotting agent.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "Your patient has been impaled through the right thigh by a long piece of metal bar. You should:",
+   "choices": [
+    {
+     "text": "Carefully remove the object.",
+     "is_correct": false
+    },
+    {
+     "text": "Tie both legs together.",
+     "is_correct": false
+    },
+    {
+     "text": "Stabilize the object with bulky dressings.",
+     "is_correct": true
+    },
+    {
+     "text": "Cut both ends of the bar to make it shorter.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "Which of the following interventions is MOST important to the survival of a patient showing signs of shock?",
+   "choices": [
+    {
+     "text": "Splinting fractures",
+     "is_correct": false
+    },
+    {
+     "text": "Immediate transport",
+     "is_correct": true
+    },
+    {
+     "text": "Spinal immobilization",
+     "is_correct": false
+    },
+    {
+     "text": "Bandaging wounds",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "A triangular bandage used to stabilize the elbow and arm is called a:",
+   "choices": [
+    {
+     "text": "Cravat.",
+     "is_correct": false
+    },
+    {
+     "text": "Dressing.",
+     "is_correct": false
+    },
+    {
+     "text": "Bandage.",
+     "is_correct": false
+    },
+    {
+     "text": "Sling.",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "Your main priority when caring for a patient with a suspected head injury is to:",
+   "choices": [
+    {
+     "text": "Completely immobilize the head and neck.",
+     "is_correct": false
+    },
+    {
+     "text": "Obtain a detailed medical history.",
+     "is_correct": false
+    },
+    {
+     "text": "Monitor vital signs.",
+     "is_correct": false
+    },
+    {
+     "text": "Assess and manage airway, breathing and circulation.",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "The purpose of placing an occlusive dressing over an open chest wound is to:",
+   "choices": [
+    {
+     "text": "Control the bleeding.",
+     "is_correct": false
+    },
+    {
+     "text": "Keep chest contents from spilling out.",
+     "is_correct": false
+    },
+    {
+     "text": "Keep air from entering the chest cavity.",
+     "is_correct": true
+    },
+    {
+     "text": "Make it easier for the patient to breathe.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "You are caring for a 38-year-old woman who states that she is 8 weeks pregnant. She is experiencing heavy vaginal bleeding and abdominal cramping. You suspect:",
+   "choices": [
+    {
+     "text": "Ectopic pregnancy.",
+     "is_correct": false
+    },
+    {
+     "text": "Placenta previa.",
+     "is_correct": false
+    },
+    {
+     "text": "Miscarriage.",
+     "is_correct": true
+    },
+    {
+     "text": "Preeclampsia.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "While performing triage at a multiple casualty incident, a patient walks up to you and states \"my arm hurts; I think it is broken.\" This patient should be tagged as:",
+   "choices": [
+    {
+     "text": "Red.",
+     "is_correct": false
+    },
+    {
+     "text": "Yellow.",
+     "is_correct": false
+    },
+    {
+     "text": "Green.",
+     "is_correct": true
+    },
+    {
+     "text": "Black.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "To prevent accidental release of gasses from hoses and torches attached to oxygen and acetylene cylinders or to manifold systems, cylinder or manifold system valves shall be closed when:",
+   "choices": [
+    {
+     "text": "The cylinders are moved.",
+     "is_correct": false
+    },
+    {
+     "text": "The torch and hoses are left unattended.",
+     "is_correct": false
+    },
+    {
+     "text": "The task or series of tasks is completed.",
+     "is_correct": false
+    },
+    {
+     "text": "Any of the above.",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "Areas surrounding storage facilities for explosive material shall be clear of rubbish, brush, dry grass, and trees for ______ in all directions, except that live trees 10 feet or taller need not be removed.",
+   "choices": [
+    {
+     "text": "15 feet",
+     "is_correct": false
+    },
+    {
+     "text": "20 feet",
+     "is_correct": false
+    },
+    {
+     "text": "25 feet",
+     "is_correct": true
+    },
+    {
+     "text": "30 feet",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "To provide for the safe movement of self-propelled mobile equipment- Rules governing _________shall be established and followed at each mine.",
+   "choices": [
+    {
+     "text": "Speed",
+     "is_correct": false
+    },
+    {
+     "text": "Right-of-way and direction of movement",
+     "is_correct": false
+    },
+    {
+     "text": "Use of headlights to assure appropriate visibility",
+     "is_correct": false
+    },
+    {
+     "text": "All of the above",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "Berms or guardrails shall be at least _______ .",
+   "choices": [
+    {
+     "text": "18 inches.",
+     "is_correct": false
+    },
+    {
+     "text": "24 inches.",
+     "is_correct": false
+    },
+    {
+     "text": "mid-axle height of the largest self-propelled mobile equipment which usually travels the roadway.",
+     "is_correct": true
+    },
+    {
+     "text": "mid-axle height of the average self-propelled mobile equipment which usually travels the roadway.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "Persons attempting to free chute hangups shall:",
+   "choices": [
+    {
+     "text": "Use the proper tools to free material.",
+     "is_correct": false
+    },
+    {
+     "text": "Be experienced and familiar with the task",
+     "is_correct": false
+    },
+    {
+     "text": "Know the hazards involved.",
+     "is_correct": false
+    },
+    {
+     "text": "All of the above.",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "Vertical clearance above stair steps shall be a minimum of:",
+   "choices": [
+    {
+     "text": "7 feet",
+     "is_correct": false
+    },
+    {
+     "text": "8 feet",
+     "is_correct": false
+    },
+    {
+     "text": "No minimum if suitable warning signs or similar devices shall be provided to indicate an impaired clearance.",
+     "is_correct": false
+    },
+    {
+     "text": "A and C",
+     "is_correct": true
+    }
+   ]
+  },
+  {
+   "text": "If equipped on self-propelled mobile equipment, parking brakes shall be capable of holding the equipment with ________ on the maximum grade it travels.",
+   "choices": [
+    {
+     "text": "The maximum load",
+     "is_correct": false
+    },
+    {
+     "text": "Its typical load",
+     "is_correct": true
+    },
+    {
+     "text": "No load",
+     "is_correct": false
+    },
+    {
+     "text": "The minimum load",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "Overhead powerlines shall be installed as specified by the ______.",
+   "choices": [
+    {
+     "text": "OSHA",
+     "is_correct": false
+    },
+    {
+     "text": "MSHA",
+     "is_correct": false
+    },
+    {
+     "text": "National Electrical Code",
+     "is_correct": true
+    },
+    {
+     "text": "None of the above",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "All persons shall wear safety glasses, goggles or face shields or other suitable protective devices when:",
+   "choices": [
+    {
+     "text": "On mine property",
+     "is_correct": false
+    },
+    {
+     "text": "In or around an area of a mine or plant where a hazard exists which could cause injury to unprotected eyes.",
+     "is_correct": true
+    },
+    {
+     "text": "They feel like doing so.",
+     "is_correct": false
+    },
+    {
+     "text": "Convenient.",
+     "is_correct": false
+    }
+   ]
+  },
+  {
+   "text": "No person shall be ___________ to perform work alone in any area where hazardous conditions exist that would endanger his safety unless he can communicate with others, can be heard or can be seen.",
+   "choices": [
+    {
+     "text": "B, C and D",
+     "is_correct": true
+    },
+    {
+     "text": "Required",
+     "is_correct": false
+    },
+    {
+     "text": "Allowed",
+     "is_correct": false
+    },
+    {
+     "text": "Assigned",
+     "is_correct": false
+    }
+   ]
+  }
+ ]
+}
