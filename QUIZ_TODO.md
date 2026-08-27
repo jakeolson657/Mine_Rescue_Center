@@ -1,6 +1,6 @@
 # Written-test quizzes — remaining work
 
-Auto-generated. **248 quizzes are already live** on the site. This tracks the rest.
+Auto-generated. **292 quizzes are already live** on the site. This tracks the rest.
 
 
 > Note: many entries below are **scanned image tests that DO contain an embedded answer key** (e.g. a letter list on the last page) — those are recoverable via OCR and are a pending work batch, not missing keys. A smaller set are genuinely blank ("use answer sheet") papers with no key anywhere in the archive.
