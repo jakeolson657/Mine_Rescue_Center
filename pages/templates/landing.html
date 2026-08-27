@@ -23,8 +23,7 @@
         max-width: 1180px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: 1.18fr 0.82fr;
-        gap: 30px;
+        grid-template-columns: minmax(0, 720px);
         padding: 84px 40px 78px;
     }
 
@@ -71,34 +70,6 @@
 
     .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
     .hero-actions .btn-red { box-shadow: 0 12px 26px -12px rgba(192, 54, 44, 0.8); }
-
-    .hero-crest {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .hero-crest .frame {
-        position: relative;
-        width: 230px;
-        height: 248px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .hero-crest .frame .mat {
-        position: absolute;
-        inset: 0;
-        border: 1px solid #3c4651;
-        border-radius: 20px;
-        background: repeating-linear-gradient(135deg, #313b46 0 16px, #2b3440 16px 32px);
-    }
-
-    .hero-crest .frame svg {
-        position: relative;
-        filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.4));
-    }
 
     /* About band */
     .about-band { background: var(--ink); color: var(--bg); }
@@ -205,8 +176,6 @@
     .cta-box .btn:hover { background: #fff; }
 
     @media (max-width: 900px) {
-        .hero-inner { grid-template-columns: 1fr; }
-        .hero-crest { display: none; }
         .about-inner { grid-template-columns: 1fr; gap: 32px; }
     }
 
@@ -236,16 +205,6 @@
             <div class="hero-actions">
                 <a href="{% url 'calendar' %}" class="btn btn-red">View Competition Calendar</a>
                 <a href="{% url 'past_problems' %}" class="btn btn-ghost">Browse Problems</a>
-            </div>
-        </div>
-        <div class="hero-crest">
-            <div class="frame">
-                <div class="mat"></div>
-                <svg width="150" height="162" viewBox="0 0 100 108" fill="none">
-                    <polygon points="16,12 84,12 84,56 50,94 16,56" fill="#c0362c" stroke="#f4f1ec" stroke-width="3" stroke-linejoin="round"/>
-                    <polygon points="22,18 78,18 78,54 50,86 22,54" fill="none" stroke="#e8b6b0" stroke-width="1.2" stroke-linejoin="round"/>
-                    <rect x="44" y="28" width="12" height="44" rx="1.5" fill="#f4f1ec"/><rect x="30" y="42" width="40" height="12" rx="1.5" fill="#f4f1ec"/>
-                </svg>
             </div>
         </div>
     </div>
