@@ -1,4 +1,6 @@
 from django.urls import path
+from django.views.generic import RedirectView
+
 from . import views
 
 urlpatterns = [
@@ -11,4 +13,7 @@ urlpatterns = [
     path('calendar/', views.CalendarView.as_view(), name='calendar'),
     path('event/<int:pk>/', views.EventDetailView.as_view(), name='event_detail'),
     path('event/<int:pk>/calendar.ics', views.event_ics, name='event_ics'),
+
+    # Retired section - keep old links working.
+    path('updates/', RedirectView.as_view(pattern_name='landing')),
 ]
