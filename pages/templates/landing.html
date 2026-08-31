@@ -29,26 +29,6 @@
 
     .hero-copy { display: flex; flex-direction: column; justify-content: center; }
 
-    .hero-eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 9px;
-        font-family: var(--font-mono);
-        font-size: 12px;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: var(--red-soft);
-        margin-bottom: 22px;
-    }
-
-    .hero-eyebrow .dot {
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: var(--red);
-        box-shadow: 0 0 0 4px rgba(192, 54, 44, 0.22);
-    }
-
     .hero h1 {
         font-family: var(--font-display);
         font-weight: 600;
@@ -199,9 +179,8 @@
     </svg>
     <div class="hero-inner">
         <div class="hero-copy">
-            <div class="hero-eyebrow"><span class="dot"></span>U.S. Mine Rescue · MSHA-aligned</div>
             <h1>A resource for mine rescue professionals worldwide</h1>
-            <p class="lead">Historic competition problems, a live calendar, and results — preserved and maintained for the teams who train for the worst day underground.</p>
+            <p class="lead">Historic competition problems, training resources, and a live calendar, for mine rescue teams across the U.S.</p>
             <div class="hero-actions">
                 <a href="{% url 'calendar' %}" class="btn btn-red">View Competition Calendar</a>
                 <a href="{% url 'past_problems' %}" class="btn btn-ghost">Browse Problems</a>
