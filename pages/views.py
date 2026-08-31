@@ -165,15 +165,6 @@ def training_resources(request):
     })
 
 
-def updates(request):
-    return render(request, 'coming_soon.html', {
-        'meta_title': 'Updates',
-        'eyebrow': 'Mine Rescue Center',
-        'heading': 'Updates',
-        'lede': 'News and announcements from the Mine Rescue Center.',
-    })
-
-
 class CalendarView(ListView):
     model = CalendarEvent
     template_name = 'calendar.html'
