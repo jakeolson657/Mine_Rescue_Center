@@ -11,3 +11,6 @@ loveland_2024_fetch/
 miningquiz_ingest/cache/
 miningquiz_ingest/*.log
 miningquiz_ingest/*.err
+
+# Claude Code local settings (holds the deploy target; never commit)
+.claude/settings.local.json

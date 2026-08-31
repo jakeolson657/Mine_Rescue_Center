@@ -169,7 +169,17 @@ all load, PDFs should preview, and `/admin/` should log in with your superuser.
 
 ## Updating the site later
 
-**Code/template changes:**
+**Code/template changes** — push to `main` first, then run the deploy script:
+```bash
+deploy/deploy.sh
+```
+It pulls, installs deps, migrates, collects static, runs `manage.py check`,
+restarts gunicorn, and smoke-checks the live URL. The target host, SSH key, and
+URL come from `MRC_DEPLOY_TARGET` / `MRC_DEPLOY_KEY` / `MRC_DEPLOY_URL` (set in
+the gitignored `.claude/settings.local.json`), or pass the host as an argument:
+`deploy/deploy.sh root@SERVER_IP`.
+
+The same steps by hand:
 ```bash
 ssh mine@SERVER_IP
 cd /srv/mine-rescue && git pull
