@@ -1,0 +1,176 @@
+{
+  "source_pk": 2053,
+  "title": "Pre-Shift Written Test",
+  "questions": [
+    {
+      "text": "The atmosphere in the sealed area is considered inert when the oxygen content is less than ____ percent or the methane concentration is less than 3 percent or more than 20 percent.",
+      "choices": [
+        {
+          "text": "12.1",
+          "is_correct": false
+        },
+        {
+          "text": "12.5",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Welding, cutting, and soldering with an arc or flame are prohibited within ____ feet of a seal.",
+      "choices": [
+        {
+          "text": "150",
+          "is_correct": true
+        },
+        {
+          "text": "200",
+          "is_correct": false
+        },
+        {
+          "text": "500",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "The Mine ventilation plan shall show the location of all ____________ and refuge alternatives.",
+      "choices": [
+        {
+          "text": "Roof bolters",
+          "is_correct": false
+        },
+        {
+          "text": "escapeways",
+          "is_correct": true
+        },
+        {
+          "text": "miners",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Circuit breakers shall be __________ for identification.",
+      "choices": [
+        {
+          "text": "adjusted",
+          "is_correct": false
+        },
+        {
+          "text": "marked",
+          "is_correct": true
+        },
+        {
+          "text": "de-energized",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Conveyor belts used to transport _________ during the oncoming shift must be examined during the pre-shift examination.",
+      "choices": [
+        {
+          "text": "persons",
+          "is_correct": true
+        },
+        {
+          "text": "crews",
+          "is_correct": false
+        },
+        {
+          "text": "coal",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "All underground explosive magazines shall be located at least 25 feet from ___________ and any source of electric current.",
+      "choices": [
+        {
+          "text": "roadways",
+          "is_correct": true
+        },
+        {
+          "text": "face",
+          "is_correct": false
+        },
+        {
+          "text": "sealed areas",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "The air velocity in the belt entry must be at least ____ feet per minute.",
+      "choices": [
+        {
+          "text": "50",
+          "is_correct": true
+        },
+        {
+          "text": "75",
+          "is_correct": false
+        },
+        {
+          "text": "100",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "_______ detectors shall be calibrated at the start of each shift that the detectors will be used.",
+      "choices": [
+        {
+          "text": "Multi-gas",
+          "is_correct": false
+        },
+        {
+          "text": "Nitrogen",
+          "is_correct": false
+        },
+        {
+          "text": "Oxygen",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Self contained self rescuers are used to protect the wearer from the effects of an __________ atmosphere.",
+      "choices": [
+        {
+          "text": "sealed",
+          "is_correct": false
+        },
+        {
+          "text": "flooded",
+          "is_correct": false
+        },
+        {
+          "text": "irrespirable",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "_____ barometric pressures may cause methane to migrate outward from pillared areas into active workings.",
+      "choices": [
+        {
+          "text": "High",
+          "is_correct": false
+        },
+        {
+          "text": "Low",
+          "is_correct": true
+        },
+        {
+          "text": "Medium",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}
