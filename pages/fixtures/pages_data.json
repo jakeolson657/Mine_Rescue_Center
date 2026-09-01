@@ -8753,6 +8753,30 @@
  }
 },
 {
+ "model": "pages.competition",
+ "pk": 406,
+ "fields": {
+  "name": "Fallen Heroes Mine Rescue Contest",
+  "year": 2025,
+  "calendar_event": 87,
+  "description": "",
+  "created_at": "2026-09-01T16:50:39.458Z",
+  "updated_at": "2026-09-01T16:50:39.458Z"
+ }
+},
+{
+ "model": "pages.competition",
+ "pk": 407,
+ "fields": {
+  "name": "Fallen Heroes Mine Rescue Contest",
+  "year": 2026,
+  "calendar_event": 22,
+  "description": "",
+  "created_at": "2026-09-01T16:50:39.496Z",
+  "updated_at": "2026-09-01T16:50:39.496Z"
+ }
+},
+{
  "model": "pages.competitionproblem",
  "pk": 1,
  "fields": {
@@ -18578,6 +18602,78 @@
   "sort_order": 10,
   "created_at": "2026-08-23T22:04:38.492Z",
   "updated_at": "2026-08-23T22:04:38.492Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 1017,
+ "fields": {
+  "competition": 406,
+  "title": "Coal Day 1 Field",
+  "description": "",
+  "sort_order": 10,
+  "created_at": "2026-09-01T16:50:39.474Z",
+  "updated_at": "2026-09-01T16:50:39.474Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 1018,
+ "fields": {
+  "competition": 406,
+  "title": "Coal Day 2 Field",
+  "description": "",
+  "sort_order": 20,
+  "created_at": "2026-09-01T16:50:39.485Z",
+  "updated_at": "2026-09-01T16:50:39.485Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 1019,
+ "fields": {
+  "competition": 407,
+  "title": "Coal Day 1 Field",
+  "description": "",
+  "sort_order": 10,
+  "created_at": "2026-09-01T16:50:39.500Z",
+  "updated_at": "2026-09-01T16:50:39.500Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 1020,
+ "fields": {
+  "competition": 407,
+  "title": "Coal Day 2 Field",
+  "description": "",
+  "sort_order": 20,
+  "created_at": "2026-09-01T16:50:39.509Z",
+  "updated_at": "2026-09-01T16:50:39.509Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 1021,
+ "fields": {
+  "competition": 407,
+  "title": "Preshift",
+  "description": "",
+  "sort_order": 30,
+  "created_at": "2026-09-01T16:50:39.517Z",
+  "updated_at": "2026-09-01T16:50:39.517Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 1022,
+ "fields": {
+  "competition": 407,
+  "title": "Written Tests",
+  "description": "",
+  "sort_order": 40,
+  "created_at": "2026-09-01T16:50:39.526Z",
+  "updated_at": "2026-09-01T16:50:39.526Z"
  }
 },
 {
@@ -38906,6 +39002,83 @@
   "file": "problems/2025_Florida_Surface_Written_Tests_2025_Florida_Surface_Team_Trainer_Test_Key.pdf",
   "sort_order": 35,
   "uploaded_at": "2026-08-23T22:04:38.557Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2048,
+ "fields": {
+  "problem": 1017,
+  "title": "Field",
+  "file": "problems/2025_Fallen_Heroes_Coal_Day_1_Field_2025_Fallen_Heroes_Day_1_Competition.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-09-01T16:50:39.482Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2049,
+ "fields": {
+  "problem": 1018,
+  "title": "Field",
+  "file": "problems/2025_Fallen_Heroes_Coal_Day_2_Field_2025_Fallen_Heroes_Day_2_Competition.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-09-01T16:50:39.491Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2050,
+ "fields": {
+  "problem": 1019,
+  "title": "Field",
+  "file": "problems/2026_Fallen_Heroes_Coal_Day_1_Field_2026_Fallen_Heroes_Day_1_Competition.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-09-01T16:50:39.505Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2051,
+ "fields": {
+  "problem": 1020,
+  "title": "Field",
+  "file": "problems/2026_Fallen_Heroes_Coal_Day_2_Field_2026_Fallen_Heroes_Day_2_Competition.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-09-01T16:50:39.515Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2052,
+ "fields": {
+  "problem": 1021,
+  "title": "Problem",
+  "file": "problems/2026_Fallen_Heroes_Preshift_2026_Fallen_Heroes_Pre_Shift_Problem.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-09-01T16:50:39.523Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2053,
+ "fields": {
+  "problem": 1022,
+  "title": "Pre-Shift Written Test",
+  "file": "problems/2026_Fallen_Heroes_Written_Tests_2026_Fallen_Heroes_Pre_Shift_Written_Test.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-09-01T16:50:39.532Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2054,
+ "fields": {
+  "problem": 1022,
+  "title": "Pre-Shift Written Test Key",
+  "file": "problems/2026_Fallen_Heroes_Written_Tests_2026_Fallen_Heroes_Pre_Shift_Written_Test_Key.pdf",
+  "sort_order": 15,
+  "uploaded_at": "2026-09-01T16:50:39.537Z"
  }
 },
 {
