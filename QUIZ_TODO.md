@@ -8,8 +8,21 @@ Auto-generated. **292 quizzes are already live** on the site. This tracks the re
 
 ## 1. No parsable answer key yet (blank papers or scanned keys pending OCR)
 
-These written tests either have no answer key in the archived PDF (answers were on a separate answer sheet that was not saved), or carry the key only as a scanned image that still needs OCR. **59 tests across 36 competitions.**
+These written tests either have no answer key in the archived PDF (answers were on a separate answer sheet that was not saved), or carry the key only as a scanned image that still needs OCR. **61 tests across 37 competitions.**
 
+
+### 2026
+
+- **2026 Kentucky Mining Institute Mine Rescue Contest**
+  - [ ] Day 1 Written Test
+  - [ ] Day 2 Written Test
+
+  > No printed key on either paper. The scan does carry a partial
+  > green-pen key: 14 of the 20 questions have an ink mark on one
+  > choice (detectable as green-minus-red > 25 in the page image), and
+  > all 14 agree with the MSHA manual page each question cites.
+  > Unmarked: Day 1 Q4, Q6, Q7, Q10 and Day 2 Q2, Q7. Held back
+  > pending a real key rather than deriving those six.
 
 ### 2024
 

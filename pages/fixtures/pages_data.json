@@ -38434,23 +38434,12 @@
 },
 {
  "model": "pages.problemdocument",
- "pk": 1900,
- "fields": {
-  "problem": 921,
-  "title": "Written Exams",
-  "file": "problems/2026_KMI_Written_Tests_Kmi_Written_Exams.pdf",
-  "sort_order": 10,
-  "uploaded_at": "2026-08-14T00:01:36.374Z"
- }
-},
-{
- "model": "pages.problemdocument",
  "pk": 1901,
  "fields": {
   "problem": 921,
   "title": "Pro Air Written Test",
   "file": "problems/2026_KMI_Written_Tests_KMI_26_Pro_Air_Written.pdf",
-  "sort_order": 20,
+  "sort_order": 30,
   "uploaded_at": "2026-08-14T00:01:36.386Z"
  }
 },
@@ -38461,7 +38450,7 @@
   "problem": 921,
   "title": "First Aid Written Test",
   "file": "problems/2026_KMI_Written_Tests_2026_KMI_First_Aid_Test.pdf",
-  "sort_order": 30,
+  "sort_order": 40,
   "uploaded_at": "2026-08-14T00:01:36.397Z"
  }
 },
@@ -38472,7 +38461,7 @@
   "problem": 921,
   "title": "First Aid Written Test Answer Key",
   "file": "problems/2026_KMI_Written_Tests_2026_KMI_First_Aid_Test_Answer_Key_2.pdf",
-  "sort_order": 40,
+  "sort_order": 50,
   "uploaded_at": "2026-08-14T00:01:36.408Z"
  }
 },
@@ -39079,6 +39068,28 @@
   "file": "problems/2026_Fallen_Heroes_Written_Tests_2026_Fallen_Heroes_Pre_Shift_Written_Test_Key.pdf",
   "sort_order": 15,
   "uploaded_at": "2026-09-01T16:50:39.537Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2055,
+ "fields": {
+  "problem": 921,
+  "title": "Day 1 Written Test",
+  "file": "problems/2026_KMI_Written_Tests_26_Kmi_Day_1_Written.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-09-04T20:52:20.120Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2056,
+ "fields": {
+  "problem": 921,
+  "title": "Day 2 Written Test",
+  "file": "problems/2026_KMI_Written_Tests_26_KMi_Day_2_Written.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-09-04T20:52:20.155Z"
  }
 },
 {
