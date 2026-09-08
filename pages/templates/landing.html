@@ -23,16 +23,11 @@
         max-width: 1180px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: minmax(0, 1fr);
+        grid-template-columns: minmax(0, 720px);
         padding: 84px 40px 78px;
     }
 
-    .hero-copy {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        max-width: 720px;
-    }
+    .hero-copy { display: flex; flex-direction: column; justify-content: center; }
 
     .hero h1 {
         font-family: var(--font-display);
@@ -46,56 +41,12 @@
     }
 
     .hero p.lead {
-        margin: 0 0 34px;
+        margin: 0;
         font-size: 18px;
         line-height: 1.6;
         color: #c2c6cc;
         max-width: 480px;
     }
-
-    .hero-cards {
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 14px;
-        margin-top: 6px;
-    }
-
-    .hero-card {
-        display: block;
-        background: rgba(244, 241, 236, 0.06);
-        border: 1px solid #46515e;
-        border-radius: 12px;
-        padding: 18px 20px;
-        text-decoration: none;
-        color: var(--bg);
-        transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
-    }
-
-    .hero-card:hover { transform: translateY(-2px); border-color: var(--bg); }
-
-    .hero-card h3 {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 10px;
-        font-family: var(--font-display);
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 1.15;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        margin: 0 0 5px;
-    }
-
-    .hero-card h3 .arrow { flex: none; color: var(--red-soft); }
-
-    .hero-card p { margin: 0; font-size: 13px; line-height: 1.5; color: #9aa3ad; }
-
-    .hero-card.red { background: var(--red); border-color: var(--red); }
-    .hero-card.red:hover { background: var(--red-dark); border-color: var(--red-dark); }
-    .hero-card.red p { color: #fadfdc; }
-    .hero-card.red h3 .arrow { color: #fff; }
 
     /* About band */
     .about-band { background: var(--ink); color: var(--bg); }
@@ -194,7 +145,6 @@
     }
 
     @media (max-width: 900px) {
-        .hero-cards { grid-template-columns: 1fr; }
         .explore-grid { grid-template-columns: 1fr; }
     }
 
@@ -202,7 +152,6 @@
         .hero h1 { font-size: 38px; }
         .hero-inner { padding: 60px 20px 54px; }
         .about-inner, .explore-band { padding-left: 20px; padding-right: 20px; }
-        .hero p.lead { margin-bottom: 28px; }
         .explore-card { padding: 30px 26px; }
     }
 {% endblock %}
@@ -221,20 +170,6 @@
         <div class="hero-copy">
             <h1>A resource for mine rescue professionals worldwide</h1>
             <p class="lead">Historic competition problems, training resources, and a live calendar for mine rescue teams across the U.S.</p>
-        </div>
-        <div class="hero-cards">
-            <a class="hero-card red" href="{% url 'past_problems' %}">
-                <h3>Past Problems <span class="arrow">&rarr;</span></h3>
-                <p>Contest problems, maps, and answer keys.</p>
-            </a>
-            <a class="hero-card" href="{% url 'training_resources' %}">
-                <h3>Training Resources <span class="arrow">&rarr;</span></h3>
-                <p>Guides, rules, scorecards, and quizzes.</p>
-            </a>
-            <a class="hero-card" href="{% url 'calendar' %}">
-                <h3>Calendar <span class="arrow">&rarr;</span></h3>
-                <p>Contests coming up this season.</p>
-            </a>
         </div>
     </div>
 </section>
