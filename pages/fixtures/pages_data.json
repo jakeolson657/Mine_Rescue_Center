@@ -39714,6 +39714,66 @@
  }
 },
 {
+ "model": "pages.benchingresource",
+ "pk": 8,
+ "fields": {
+  "apparatus": 2,
+  "title": "Drägersorb 400 — Safety Data Sheet",
+  "description": "Safety data sheet for Drägersorb 400 CO₂ absorbent.",
+  "is_sds": true,
+  "file": "training/benching/draegersorb-400-sds.pdf",
+  "source_url": "",
+  "link_label": "Source",
+  "sort_order": 30,
+  "updated_at": "2026-09-08T16:32:44.537Z"
+ }
+},
+{
+ "model": "pages.benchingresource",
+ "pk": 9,
+ "fields": {
+  "apparatus": 2,
+  "title": "Dow Corning 111 (Molykote 111) — Safety Data Sheet",
+  "description": "Safety data sheet for Dow Corning 111 valve lubricant and sealant (now branded Molykote 111).",
+  "is_sds": true,
+  "file": "training/benching/dow-corning-111-molykote-sds.pdf",
+  "source_url": "",
+  "link_label": "",
+  "sort_order": 40,
+  "updated_at": "2026-09-08T16:32:44.550Z"
+ }
+},
+{
+ "model": "pages.benchingresource",
+ "pk": 10,
+ "fields": {
+  "apparatus": 2,
+  "title": "Anti-Fog Spray — Safety Data Sheet",
+  "description": "Safety data sheet for the anti-fog spray used when benching.",
+  "is_sds": true,
+  "file": "training/benching/anti-fog-spray-sds.pdf",
+  "source_url": "",
+  "link_label": "",
+  "sort_order": 50,
+  "updated_at": "2026-09-08T16:32:44.553Z"
+ }
+},
+{
+ "model": "pages.benchingresource",
+ "pk": 11,
+ "fields": {
+  "apparatus": 2,
+  "title": "Neutral Disinfectant Cleaner — Safety Data Sheet",
+  "description": "Safety data sheet for the neutral disinfectant cleaner used when benching.",
+  "is_sds": true,
+  "file": "training/benching/neutral-disinfectant-cleaner-sds.pdf",
+  "source_url": "",
+  "link_label": "",
+  "sort_order": 60,
+  "updated_at": "2026-09-08T16:33:03.684Z"
+ }
+},
+{
  "model": "pages.quiz",
  "pk": 5231,
  "fields": {

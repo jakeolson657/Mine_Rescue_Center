@@ -548,7 +548,10 @@ class BenchingResource(models.Model):
 
 @receiver(post_delete, sender=BenchingResource)
 def delete_file_on_benching_resource_delete(sender, instance, **kwargs):
-    if instance.file:
+    # One SDS can be listed under several apparatus (the same consumables get
+    # benched with more than one unit), so only drop the file from disk once
+    # no other resource still points at it.
+    if instance.file and not BenchingResource.objects.filter(file=instance.file.name).exists():
         instance.file.delete(save=False)
 
 
