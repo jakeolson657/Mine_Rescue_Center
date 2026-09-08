@@ -55,13 +55,10 @@
     .about-band { background: var(--ink); color: var(--bg); }
 
     .about-inner {
-        max-width: 1180px;
+        max-width: 760px;
         margin: 0 auto;
-        display: grid;
-        grid-template-columns: 0.95fr 1.05fr;
-        gap: 50px;
         padding: 84px 40px;
-        align-items: center;
+        text-align: center;
     }
 
     .about-inner .eyebrow { color: var(--red-soft); }
@@ -78,77 +75,75 @@
 
     .about-inner p { margin: 0 0 16px; font-size: 16px; line-height: 1.65; color: #c2c6cc; }
 
-    .pillar-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    /* Explore cards */
+    .explore-band { max-width: 1180px; margin: 0 auto; padding: 80px 40px; }
 
-    .pillar {
-        background: #313b46;
-        border: 1px solid #3c4651;
-        border-radius: 12px;
-        padding: 22px;
-    }
+    .explore-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 
-    .pillar h3 {
-        font-family: var(--font-display);
-        font-weight: 600;
-        font-size: 17px;
-        text-transform: uppercase;
-        letter-spacing: 0.02em;
-        margin-bottom: 6px;
-    }
-
-    .pillar p { margin: 0; font-size: 13.5px; line-height: 1.55; color: #9aa3ad; }
-
-    /* CTA */
-    .cta-band { max-width: 1180px; margin: 0 auto; padding: 80px 40px; }
-
-    .cta-box {
-        position: relative;
-        overflow: hidden;
-        background: var(--red);
-        border-radius: 20px;
-        padding: 60px 50px;
+    .explore-card {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 30px;
-        flex-wrap: wrap;
+        flex-direction: column;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 36px 32px;
+        text-decoration: none;
+        color: var(--ink);
+        transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
     }
 
-    .cta-box h2 {
+    .explore-card:hover {
+        transform: translateY(-3px);
+        border-color: var(--ink);
+        box-shadow: 0 18px 34px -22px rgba(43, 52, 64, 0.7);
+    }
+
+    .explore-card h3 {
         font-family: var(--font-display);
         font-weight: 600;
-        font-size: 36px;
-        line-height: 1.06;
+        font-size: 26px;
+        line-height: 1.1;
         letter-spacing: 0.01em;
-        margin: 0 0 12px;
         text-transform: uppercase;
+        margin: 0 0 12px;
+    }
+
+    .explore-card p { margin: 0 0 26px; font-size: 14.5px; line-height: 1.6; color: var(--steel); }
+
+    .explore-card .go {
+        margin-top: auto;
+        font-family: var(--font-display);
+        font-weight: 500;
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--red);
+    }
+
+    .explore-card.red {
+        background: var(--red);
+        border-color: var(--red);
         color: #fff;
     }
 
-    .cta-box p { margin: 0; font-size: 16px; line-height: 1.6; color: #fadfdc; max-width: 440px; }
+    .explore-card.red p { color: #fadfdc; }
+    .explore-card.red .go { color: #fff; }
 
-    .cta-box .btn {
-        position: relative;
-        background: var(--bg);
-        color: var(--ink);
-        font-weight: 600;
-        font-size: 15px;
-        padding: 16px 32px;
-        border-radius: 9px;
-        white-space: nowrap;
+    .explore-card.red:hover {
+        background: var(--red-dark);
+        border-color: var(--red-dark);
+        box-shadow: 0 18px 34px -20px rgba(192, 54, 44, 0.9);
     }
 
-    .cta-box .btn:hover { background: #fff; }
-
     @media (max-width: 900px) {
-        .about-inner { grid-template-columns: 1fr; gap: 32px; }
+        .explore-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 600px) {
         .hero h1 { font-size: 38px; }
         .hero-inner { padding: 60px 20px 54px; }
-        .about-inner, .cta-band { padding-left: 20px; padding-right: 20px; }
-        .cta-box { padding: 40px 28px; }
+        .about-inner, .explore-band { padding-left: 20px; padding-right: 20px; }
+        .explore-card { padding: 30px 26px; }
     }
 {% endblock %}
 
@@ -183,35 +178,27 @@
             <p>Mine Rescue Center is a free resource hub for mine rescue teams across the United States. The site features a searchable archive of past competition problems, training resources, and a competition calendar to help teams stay prepared and informed.</p>
             <p>Whether you're a responder, trainer, or organizer, Mine Rescue Center is built for you. Have feedback or a feature request? We'd love to hear from you.</p>
         </div>
-        <div class="pillar-grid">
-            <div class="pillar">
-                <h3>Preserved</h3>
-                <p>Archives recovered and re-hosted so no problem is lost again.</p>
-            </div>
-            <div class="pillar">
-                <h3>Maintained</h3>
-                <p>Updated every season with new contests and posted problems.</p>
-            </div>
-            <div class="pillar">
-                <h3>Free</h3>
-                <p>No paywall, no login. Open to every team, everywhere.</p>
-            </div>
-            <div class="pillar">
-                <h3>Aligned</h3>
-                <p>Organized to MSHA districts and contest standards.</p>
-            </div>
-        </div>
     </div>
 </section>
 
-<!-- CTA -->
-<section class="cta-band">
-    <div class="cta-box">
-        <div style="position:relative;">
-            <h2>Find your next contest</h2>
-            <p>Browse the full season calendar and download problems to start training today.</p>
-        </div>
-        <a href="{% url 'calendar' %}" class="btn">Open the Calendar →</a>
+<!-- EXPLORE -->
+<section class="explore-band">
+    <div class="explore-grid">
+        <a class="explore-card red" href="{% url 'past_problems' %}">
+            <h3>Past Problems</h3>
+            <p>Search the archive of contest problems, statements, maps, and answer keys by year and district.</p>
+            <span class="go">Browse Problems &rarr;</span>
+        </a>
+        <a class="explore-card" href="{% url 'training_resources' %}">
+            <h3>Training Resources</h3>
+            <p>Instruction guides, contest rules, scorecards, and written-test practice quizzes in one place.</p>
+            <span class="go">Open Training Resources &rarr;</span>
+        </a>
+        <a class="explore-card" href="{% url 'calendar' %}">
+            <h3>Calendar</h3>
+            <p>See what's coming up this season and add contests straight to your own calendar.</p>
+            <span class="go">Open the Calendar &rarr;</span>
+        </a>
     </div>
 </section>
 {% endblock %}
