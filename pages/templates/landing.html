@@ -48,30 +48,6 @@
         max-width: 480px;
     }
 
-    /* About band */
-    .about-band { background: var(--ink); color: var(--bg); }
-
-    .about-inner {
-        max-width: 760px;
-        margin: 0 auto;
-        padding: 84px 40px;
-        text-align: center;
-    }
-
-    .about-inner .eyebrow { color: var(--red-soft); }
-
-    .about-inner h2 {
-        font-family: var(--font-display);
-        font-weight: 600;
-        font-size: 38px;
-        line-height: 1.08;
-        letter-spacing: 0.01em;
-        margin: 16px 0 20px;
-        text-transform: uppercase;
-    }
-
-    .about-inner p { margin: 0 0 16px; font-size: 16px; line-height: 1.65; color: #c2c6cc; }
-
     /* Explore cards */
     .explore-band { max-width: 1180px; margin: 0 auto; padding: 80px 40px; }
 
@@ -144,6 +120,30 @@
         box-shadow: 0 18px 34px -20px rgba(192, 54, 44, 0.9);
     }
 
+    /* About band */
+    .about-band { background: var(--ink); color: var(--bg); }
+
+    .about-inner {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 84px 40px;
+        text-align: center;
+    }
+
+    .about-inner .eyebrow { color: var(--red-soft); }
+
+    .about-inner h2 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 1.08;
+        letter-spacing: 0.01em;
+        margin: 16px 0 20px;
+        text-transform: uppercase;
+    }
+
+    .about-inner p { margin: 0 0 16px; font-size: 16px; line-height: 1.65; color: #c2c6cc; }
+
     @media (max-width: 900px) {
         .explore-grid { grid-template-columns: 1fr; }
     }
@@ -174,18 +174,6 @@
     </div>
 </section>
 
-<!-- ABOUT / MISSION -->
-<section class="about-band" id="about">
-    <div class="about-inner">
-        <div>
-            <div class="eyebrow">About Mine Rescue Center</div>
-            <h2>Made by the community, for the community</h2>
-            <p>Mine Rescue Center is a free resource hub for mine rescue teams across the United States. The site features a searchable archive of past competition problems, training resources, and a competition calendar to help teams stay prepared and informed.</p>
-            <p>Whether you're a responder, trainer, or organizer, Mine Rescue Center is built for you. Have feedback or a feature request? We'd love to hear from you.</p>
-        </div>
-    </div>
-</section>
-
 <!-- EXPLORE -->
 <section class="explore-band">
     <div class="explore-head">
@@ -207,6 +195,17 @@
             <p>See what's coming up this season and add contests straight to your own calendar.</p>
             <span class="go">Open the Calendar &rarr;</span>
         </a>
+    </div>
+</section>
+<!-- ABOUT / MISSION -->
+<section class="about-band" id="about">
+    <div class="about-inner">
+        <div>
+            <div class="eyebrow">About Mine Rescue Center</div>
+            <h2>Made by the community, for the community</h2>
+            <p>Mine Rescue Center is a free resource hub for mine rescue teams across the United States. The site features a searchable archive of past competition problems, training resources, and a competition calendar to help teams stay prepared and informed.</p>
+            <p>Whether you're a responder, trainer, or organizer, Mine Rescue Center is built for you. Have feedback or a feature request? We'd love to hear from you.</p>
+        </div>
     </div>
 </section>
 {% endblock %}
