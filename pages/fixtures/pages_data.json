@@ -39699,6 +39699,21 @@
  }
 },
 {
+ "model": "pages.benchingresource",
+ "pk": 7,
+ "fields": {
+  "apparatus": 2,
+  "title": "BG ProAir — Instructions for Use",
+  "description": "Dräger's official instructions for use for the BG ProAir closed-circuit breathing apparatus.",
+  "is_sds": false,
+  "file": "training/benching/bg-proair-instructions-for-use.pdf",
+  "source_url": "",
+  "link_label": "",
+  "sort_order": 10,
+  "updated_at": "2026-09-08T16:07:46.678Z"
+ }
+},
+{
  "model": "pages.quiz",
  "pk": 5231,
  "fields": {
