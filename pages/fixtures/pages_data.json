@@ -18671,7 +18671,7 @@
   "competition": 407,
   "title": "Preshift",
   "description": "",
-  "sort_order": 30,
+  "sort_order": 40,
   "created_at": "2026-09-01T16:50:39.517Z",
   "updated_at": "2026-09-01T16:50:39.517Z"
  }
@@ -18683,7 +18683,7 @@
   "competition": 407,
   "title": "Written Tests",
   "description": "",
-  "sort_order": 40,
+  "sort_order": 50,
   "created_at": "2026-09-01T16:50:39.526Z",
   "updated_at": "2026-09-01T16:50:39.526Z"
  }
@@ -18722,6 +18722,18 @@
   "sort_order": 30,
   "created_at": "2026-09-04T21:12:22.276Z",
   "updated_at": "2026-09-04T21:12:22.276Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 1026,
+ "fields": {
+  "competition": 407,
+  "title": "First Aid",
+  "description": "",
+  "sort_order": 30,
+  "created_at": "2026-09-09T15:28:00.157Z",
+  "updated_at": "2026-09-09T15:28:00.157Z"
  }
 },
 {
@@ -39103,7 +39115,7 @@
   "problem": 1022,
   "title": "Pre-Shift Written Test",
   "file": "problems/2026_Fallen_Heroes_Written_Tests_2026_Fallen_Heroes_Pre_Shift_Written_Test.pdf",
-  "sort_order": 10,
+  "sort_order": 20,
   "uploaded_at": "2026-09-01T16:50:39.532Z"
  }
 },
@@ -39114,7 +39126,7 @@
   "problem": 1022,
   "title": "Pre-Shift Written Test Key",
   "file": "problems/2026_Fallen_Heroes_Written_Tests_2026_Fallen_Heroes_Pre_Shift_Written_Test_Key.pdf",
-  "sort_order": 15,
+  "sort_order": 25,
   "uploaded_at": "2026-09-01T16:50:39.537Z"
  }
 },
@@ -39182,6 +39194,39 @@
   "file": "problems/2026_national_Written_Tests_26_Nationals_Day_2_Written.pdf",
   "sort_order": 20,
   "uploaded_at": "2026-09-04T21:12:22.297Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2061,
+ "fields": {
+  "problem": 1026,
+  "title": "Statement",
+  "file": "problems/2026_Fallen_Heroes_First_Aid_2026_Fallen_Heroes_First_Aid_Statement.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-09-09T15:28:00.179Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2062,
+ "fields": {
+  "problem": 1026,
+  "title": "Problem",
+  "file": "problems/2026_Fallen_Heroes_First_Aid_First_Aid_Problem.pdf",
+  "sort_order": 20,
+  "uploaded_at": "2026-09-09T15:28:00.185Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2063,
+ "fields": {
+  "problem": 1022,
+  "title": "First Aid Written Test",
+  "file": "problems/2026_Fallen_Heroes_Written_Tests_2026_Fallen_Heroes_First_Aid_Written_Test.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-09-09T15:28:00.188Z"
  }
 },
 {
