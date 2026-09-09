@@ -150,6 +150,15 @@ class CategorizeProblemTests(TestCase):
         self.assertEqual(categorize_problem("Bench"), ['bench'])
         self.assertEqual(categorize_problem("Written Exams"), ['written'])
 
+    def test_team_technician_title_variants(self):
+        # The archive files this contest under both word orders.
+        self.assertEqual(categorize_problem("Tech Team"), ['team-technician'])
+        self.assertEqual(categorize_problem("Technician Team"), ['team-technician'])
+        self.assertEqual(categorize_problem("Team Technician"), ['team-technician'])
+        # "Benchman" is the bench contest, not the team technician contest.
+        self.assertEqual(categorize_problem("First Aid & Benchman Day 1"),
+                         ['bench', 'first-aid'])
+
     def test_mine_type_matches_title_or_competition(self):
         self.assertEqual(categorize_problem("2024 Loveland COAL Day 1"), ['coal'])
         self.assertEqual(categorize_problem("2024 Loveland MNM Day 1"), ['mnm'])

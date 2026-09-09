@@ -236,15 +236,17 @@ PROBLEM_CATEGORIES = [
     ('coal', 'Coal'),
     ('mnm', 'MNM'),
     ('bench', 'Bench'),
+    ('team-technician', 'Team Technician'),
     ('first-aid', 'First Aid'),
     ('preshift', 'Preshift'),
     ('written', 'Written Test'),
 ]
 
 # Event-type categories are named in the problem title (e.g. "First Aid",
-# "Preshift", "Bench", "Written Exams").
+# "Preshift", "Bench", "Tech Team", "Written Exams").
 _TITLE_KEYWORDS = {
     'bench': ('bench',),
+    'team-technician': ('tech team', 'technician team', 'team tech'),
     'first-aid': ('first aid', 'first-aid'),
     'preshift': ('preshift', 'pre-shift'),
     'written': ('written',),
