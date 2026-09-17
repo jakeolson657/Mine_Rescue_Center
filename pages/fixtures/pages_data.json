@@ -18737,6 +18737,30 @@
  }
 },
 {
+ "model": "pages.competitionproblem",
+ "pk": 1027,
+ "fields": {
+  "competition": 367,
+  "title": "Coal Day 1 Field",
+  "description": "",
+  "sort_order": 10,
+  "created_at": "2026-09-17T22:13:42.279Z",
+  "updated_at": "2026-09-17T22:13:42.296Z"
+ }
+},
+{
+ "model": "pages.competitionproblem",
+ "pk": 1028,
+ "fields": {
+  "competition": 367,
+  "title": "Coal Day 2 Field",
+  "description": "",
+  "sort_order": 20,
+  "created_at": "2026-09-17T22:13:42.305Z",
+  "updated_at": "2026-09-17T22:13:42.305Z"
+ }
+},
+{
  "model": "pages.problemdocument",
  "pk": 1,
  "fields": {
@@ -39227,6 +39251,28 @@
   "file": "problems/2026_Fallen_Heroes_Written_Tests_2026_Fallen_Heroes_First_Aid_Written_Test.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-09-09T15:28:00.188Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2064,
+ "fields": {
+  "problem": 1027,
+  "title": "Field",
+  "file": "problems/2026_RMMRC_Price_Coal_Day_1_Field_2026_Price_Utah_Day_1_Field.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-09-17T22:13:42.328Z"
+ }
+},
+{
+ "model": "pages.problemdocument",
+ "pk": 2065,
+ "fields": {
+  "problem": 1028,
+  "title": "Field",
+  "file": "problems/2026_RMMRC_Price_Coal_Day_2_Field_2026_Price_Utah_Day_2_Field.pdf",
+  "sort_order": 10,
+  "uploaded_at": "2026-09-17T22:13:42.348Z"
  }
 },
 {
