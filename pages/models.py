@@ -429,10 +429,23 @@ def delete_file_on_first_aid_resource_delete(sender, instance, **kwargs):
 
 
 class RopeRescueResource(models.Model):
-    """A rope rescue training document (guides, rigging references, etc.)."""
+    """A rope rescue training resource (guides, rigging references, books)."""
     title = models.CharField(max_length=255, help_text="e.g. High Angle Rope Rescue Guide")
     description = models.TextField(blank=True, help_text="What this document covers")
-    file = models.FileField(upload_to='training/rope_rescue/')
+    file = models.FileField(
+        upload_to='training/rope_rescue/', blank=True,
+        help_text="The document to preview/download. Leave blank for a link-only "
+                  "resource (e.g. a book sold elsewhere) and set the source link below.",
+    )
+    source_url = models.URLField(
+        blank=True,
+        help_text="External link for this resource, e.g. where to buy a book. "
+                  "Shown as a link alongside (or instead of) the file.",
+    )
+    link_label = models.CharField(
+        max_length=60, blank=True,
+        help_text="Text for the source link, e.g. 'View on Amazon'. Defaults to 'Source'.",
+    )
     sort_order = models.PositiveIntegerField(default=0, help_text="Documents are listed lowest number first")
     updated_at = models.DateTimeField(auto_now=True)
 
