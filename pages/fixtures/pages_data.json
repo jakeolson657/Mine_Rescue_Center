@@ -39453,32 +39453,6 @@
  }
 },
 {
- "model": "pages.roperescueresource",
- "pk": 1,
- "fields": {
-  "title": "Rope Rescue Technician Manual, 6th Edition",
-  "description": "CMC's standard rope rescue textbook (ed. James Frank, 2021): high and low angle systems, twin tension, ladder rescue and rope access, with NFPA 1006 references. Print book, 430 pages.",
-  "file": "",
-  "source_url": "https://www.amazon.com/Rope-Rescue-Technician-Manual-6th/dp/1792354800",
-  "link_label": "View on Amazon",
-  "sort_order": 10,
-  "updated_at": "2026-09-22T00:22:34.050Z"
- }
-},
-{
- "model": "pages.roperescueresource",
- "pk": 2,
- "fields": {
-  "title": "Rope Rescue Technician Manual, 6th Edition (eBook)",
-  "description": "The same CMC manual as a Google Play Books eBook. Read it in a web browser or the Google Play Books app on Android or iOS; it cannot be printed.",
-  "file": "",
-  "source_url": "https://play.google.com/store/books/details/James_A_Frank_Rope_Rescue_Technician_Manual_6th_Ed?id=FgJSEAAAQBAJ",
-  "link_label": "View on Google Play",
-  "sort_order": 20,
-  "updated_at": "2026-09-22T00:36:02.065Z"
- }
-},
-{
  "model": "pages.scorecard",
  "pk": 1,
  "fields": {
