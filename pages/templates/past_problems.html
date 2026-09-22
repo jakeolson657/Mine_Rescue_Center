@@ -369,6 +369,7 @@
     .submit-form input[type="file"]::file-selector-button:hover { background: var(--ink-2); }
 
     .submit-hint { margin: 7px 0 0; font-size: 12.5px; color: var(--muted); }
+    .submit-hint a { color: inherit; text-decoration: underline; }
 
     .submit-errors { color: var(--red); font-size: 13px; margin-top: 6px; }
     .submit-errors ul { list-style: none; }
@@ -549,7 +550,7 @@
             <span class="badge count">Add to the archive</span>
         </summary>
         <div class="submit-body">
-            <p class="submit-intro">Can't find a contest here? Send us the problem files and a few details and we'll index them with the right contest and discipline so every crew can train on them.</p>
+            <p class="submit-intro">Can't find a contest here? Send us the problem files and a few details and we'll index them with the right contest and discipline so every team can train on them.</p>
 
             {% if submitted %}
                 <div class="submit-success">
@@ -603,7 +604,7 @@
                 <div class="submit-field">
                     <label for="{{ form.files.id_for_label }}">Files <span class="opt">(problem PDFs, maps, vent plans, photos…)</span></label>
                     {{ form.files }}
-                    <p class="submit-hint">You can select several files at once. Up to 15 files, 25&nbsp;MB total — for anything larger, email them in.</p>
+                    <p class="submit-hint">You can select several files at once. Up to 15 files, 25&nbsp;MB total — for anything larger, email them in to <a href="mailto:info@minerescuecenter.com">info@minerescuecenter.com</a>.</p>
                     {% if form.files.errors %}<div class="submit-errors">{{ form.files.errors }}</div>{% endif %}
                 </div>
 
