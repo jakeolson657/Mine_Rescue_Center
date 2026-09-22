@@ -8,14 +8,6 @@
 
     .page-head-inner { max-width: 1180px; margin: 0 auto; padding: 54px 40px 46px; }
 
-    .page-head .eyebrow {
-        font-family: var(--font-mono);
-        font-size: 12px;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        color: var(--red-soft);
-        margin-bottom: 14px;
-    }
 
     .page-head h1 {
         font-family: var(--font-display);
@@ -298,7 +290,6 @@
 {% block content %}
 <section class="page-head">
     <div class="page-head-inner">
-        <div class="eyebrow">{{ year }} Season</div>
         <h1>Competition Calendar</h1>
         <p>Mine rescue competitions throughout the year. Browse by month, then open an event for its location, details, results, and posted problem.</p>
         {% if msha_calendar_url %}

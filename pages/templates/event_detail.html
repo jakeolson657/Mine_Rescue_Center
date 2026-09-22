@@ -24,14 +24,6 @@
 
     .back-link:hover { color: var(--bg); }
 
-    .ev-head .eyebrow {
-        font-family: var(--font-mono);
-        font-size: 12px;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        color: var(--red-soft);
-        margin-bottom: 14px;
-    }
 
     .ev-head h1 {
         font-family: var(--font-display);
@@ -140,7 +132,6 @@
 <section class="ev-head">
     <div class="ev-head-inner">
         <a href="{% url 'calendar' %}" class="back-link">← Back to Calendar</a>
-        <div class="eyebrow">Competition Event</div>
         <h1>{{ event.title }}</h1>
         <div class="ev-meta">
             <div class="item">

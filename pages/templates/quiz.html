@@ -21,15 +21,6 @@
     }
     .quiz-back:hover { color: var(--bg); }
 
-    .quiz-head .eyebrow {
-        font-family: var(--font-display);
-        font-weight: 500;
-        font-size: 11px;
-        letter-spacing: 0.22em;
-        text-transform: uppercase;
-        color: var(--red-soft);
-        margin-bottom: 6px;
-    }
 
     .quiz-head h1 {
         font-family: var(--font-display);
@@ -287,7 +278,6 @@
 <section class="quiz-head">
     <div class="quiz-head-inner">
         <a class="quiz-back" href="{% url 'past_problems' %}#comp-{{ quiz.problem.competition.pk }}">&larr; Back to Past Problems</a>
-        <div class="eyebrow">MRC &middot; Take Test</div>
         <h1>{{ quiz.title }}</h1>
         <div class="comp-name">{{ quiz.problem.competition.name }}{% if quiz.problem.competition.year %} &middot; {{ quiz.problem.competition.year }}{% endif %}</div>
     </div>
