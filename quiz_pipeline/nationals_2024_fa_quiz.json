@@ -1,0 +1,126 @@
+{
+  "source_pk": 381,
+  "title": "First Aid Written Test",
+  "questions": [
+    {
+      "text": "____________ ____________ combative patient, the Emergency Medical Responder should obtain ____________ enforcement assistance.",
+      "choices": [
+        {"text": "Before, restraining, law", "is_correct": true},
+        {"text": "After, holding, MSHA", "is_correct": false},
+        {"text": "Ahead, prevent, police", "is_correct": false}
+      ]
+    },
+    {
+      "text": "The ____________ method for ____________ the airway of a patient with possible neck or spinal ____________ is the jaw-thrust maneuver.",
+      "choices": [
+        {"text": "endorsed, closing, wound", "is_correct": false},
+        {"text": "suggested, adjusting, tear", "is_correct": false},
+        {"text": "recommended, opening, injury", "is_correct": true}
+      ]
+    },
+    {
+      "text": "When ____________ for an ____________ patient, tilting his/her head back improves the airway by ____________ his/her tongue from the back of his/her throat.",
+      "choices": [
+        {"text": "caring, unresponsive, lifting", "is_correct": true},
+        {"text": "kindhearted, emotionless, raise", "is_correct": false},
+        {"text": "kind, insensible, hoist", "is_correct": false}
+      ]
+    },
+    {
+      "text": "You have just delivered a ____________ with an automated external defibrillator you should begin ____________ ____________, immediately.",
+      "choices": [
+        {"text": "blow, breast, pressings", "is_correct": false},
+        {"text": "trauma, trunk, hits", "is_correct": false},
+        {"text": "shock, chest, compressions", "is_correct": true}
+      ]
+    },
+    {
+      "text": "The term ____________ is best ____________ as the ability to ____________ changes in a patient's condition over time.",
+      "choices": [
+        {"text": "trending, defined, record", "is_correct": true},
+        {"text": "drift, interpreted, document", "is_correct": false},
+        {"text": "gravitating, explained, account", "is_correct": false}
+      ]
+    },
+    {
+      "text": "A patient who ____________ with normal vital signs and shows no ____________ of life-threatening problems may be described as ____________.",
+      "choices": [
+        {"text": "give, signs, solid", "is_correct": false},
+        {"text": "presents, indications, stable", "is_correct": true},
+        {"text": "dispense, symptoms, firm", "is_correct": false}
+      ]
+    },
+    {
+      "text": "____________ the patient from the cold environment, protecting him or her from further heat loss, and monitoring his or her ____________ signs are all appropriate steps in the management of a patient with ____________.",
+      "choices": [
+        {"text": "Removing, vital, hypothermia", "is_correct": true},
+        {"text": "Separate, essential, frostbite", "is_correct": false},
+        {"text": "withdraw, necessary, exposure", "is_correct": false}
+      ]
+    },
+    {
+      "text": "Blood ____________ from the wound, the color of the blood is ____________ red, and blood loss is often ____________ in a short period of time are typical characteristics of arterial bleeding.",
+      "choices": [
+        {"text": "squirts, dazzling, prolific", "is_correct": false},
+        {"text": "shoots, shining, copious", "is_correct": false},
+        {"text": "spurts, bright, profuse", "is_correct": true}
+      ]
+    },
+    {
+      "text": "The ____________ system was developed to assist in determining those ____________ who will likely benefit from ____________ care.",
+      "choices": [
+        {"text": "classifying, suffers, direct", "is_correct": false},
+        {"text": "triage, victims, immediate", "is_correct": true},
+        {"text": "sorting casualty, prompt", "is_correct": false}
+      ]
+    },
+    {
+      "text": "In the ____________ triage system, patients are categorized based on an assessment of ____________, perfusion, and ____________ status.",
+      "choices": [
+        {"text": "START, respirations, mental", "is_correct": true},
+        {"text": "BEGIN, breathing, rational", "is_correct": false},
+        {"text": "ONSET, inhalation, lunatic", "is_correct": false}
+      ]
+    },
+    {
+      "text": "Whether you are a team ____________ or the Team ____________ there may be times when you need to point out another team member's ____________ or inappropriate actions.",
+      "choices": [
+        {"text": "component, captain, wrong", "is_correct": false},
+        {"text": "element, boss, mistaken", "is_correct": false},
+        {"text": "member, leader, incorrect", "is_correct": true}
+      ]
+    },
+    {
+      "text": "The ____________ action to ____________ closed-loop communication when the Team leader ____________ you a task is to repeat back to the Team Leader that task assigned to you.",
+      "choices": [
+        {"text": "appropriate, demonstrate, assigns", "is_correct": true},
+        {"text": "suitable, reveal, allot", "is_correct": false},
+        {"text": "relevant, signify, allocate", "is_correct": false}
+      ]
+    },
+    {
+      "text": "____________ mask is a handheld device consisting of a face mask with a one-way valve, the ____________ places it over a victim's nose and mouth as a ____________ device when giving rescue breaths during CPR.",
+      "choices": [
+        {"text": "Portable, liberator, impediment", "is_correct": false},
+        {"text": "Small, deliverer, hurdle", "is_correct": false},
+        {"text": "Pocket, rescuer, barrier", "is_correct": true}
+      ]
+    },
+    {
+      "text": "Heart attack is when a ____________ or spasm occurs in a blood vessel and ____________ restricts or cuts off the flow of blood and oxygen to the ____________ muscle.",
+      "choices": [
+        {"text": "obstruction, critically, chest", "is_correct": false},
+        {"text": "blockage, severely, heart", "is_correct": true},
+        {"text": "stoppage, seriously, leg", "is_correct": false}
+      ]
+    },
+    {
+      "text": "Respiratory ____________ is when a life-threatening emergency that occurs when ____________ breathing stops or when breathing is ____________, if untreated, it will lead to cardiac arrest, or it can occur at the same time as cardiac arrest.",
+      "choices": [
+        {"text": "seizing, usual, unproductive", "is_correct": false},
+        {"text": "ending, typical, unsuccessful", "is_correct": false},
+        {"text": "arrest, normal, ineffective", "is_correct": true}
+      ]
+    }
+  ]
+}

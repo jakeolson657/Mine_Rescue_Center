@@ -104,6 +104,8 @@ def past_problems(request):
                 {
                     'title': d.title, 'url': d.file.url, 'kind': d.preview_kind,
                     'quiz_url': reverse('quiz_detail', args=[quiz_by_doc_id[d.pk]]) if d.pk in quiz_by_doc_id else None,
+                    'key_url': d.answer_key.url if d.answer_key else None,
+                    'key_kind': d.answer_key_kind,
                 }
                 for d in problem.documents.all()
             ]

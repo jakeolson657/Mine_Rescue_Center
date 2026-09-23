@@ -316,6 +316,11 @@ class ProblemDocument(models.Model):
     problem = models.ForeignKey(CompetitionProblem, on_delete=models.CASCADE, related_name='documents')
     title = models.CharField(max_length=255, help_text="Document type or name, e.g. Problem, Layout, Vent Plan 1")
     file = models.FileField(upload_to='problems/')
+    answer_key = models.FileField(
+        upload_to='problems/', blank=True,
+        help_text="Answer key for a written test. Shown as a Key button on this "
+                  "document's row instead of as a separate document.",
+    )
     sort_order = models.PositiveIntegerField(default=0, help_text="Documents are listed lowest number first")
     uploaded_at = models.DateTimeField(auto_now_add=True)
 
@@ -324,6 +329,10 @@ class ProblemDocument(models.Model):
 
     def __str__(self):
         return f"{self.problem.title} - {self.title}"
+
+    @property
+    def answer_key_kind(self):
+        return preview_kind_for(self.answer_key.name) if self.answer_key else None
 
     @property
     def filename(self):
@@ -338,6 +347,8 @@ class ProblemDocument(models.Model):
 def delete_file_on_document_delete(sender, instance, **kwargs):
     if instance.file:
         instance.file.delete(save=False)
+    if instance.answer_key:
+        instance.answer_key.delete(save=False)
 
 
 class InstructionGuide(models.Model):

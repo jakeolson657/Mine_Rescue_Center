@@ -789,6 +789,13 @@
                 actions += '<a href="' + esc(doc.quiz_url) + '" class="download-btn quiz-btn">' +
                     '<svg width="13" height="13"><use href="#i-quiz"/></svg>Take Test</a>';
             }
+            if (doc.key_url) {
+                actions += doc.key_kind
+                    ? '<button type="button" class="preview-btn key-btn" data-url="' +
+                        esc(doc.key_url) + '" data-kind="' + esc(doc.key_kind) + '" data-title="' +
+                        esc(doc.title + ' Key') + '">Key</button>'
+                    : '<a href="' + esc(doc.key_url) + '" class="preview-btn key-btn" target="_blank" rel="noopener">Key</a>';
+            }
             if (doc.kind) {
                 actions += '<button type="button" class="preview-btn" data-url="' +
                     esc(doc.url) + '" data-kind="' + esc(doc.kind) + '" data-title="' +

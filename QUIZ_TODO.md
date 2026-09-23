@@ -50,7 +50,7 @@ These written tests either have no answer key in the archived PDF (answers were 
 - **2024 Kentucky Mining Institute Mine Rescue Contest**
   - [ ] First Aid Written Test
 - **2024 National Mine Rescue and First Aid Competition**
-  - [ ] First Aid Written Test
+  - [x] First Aid Written Test
 - **2024 Nevada Underground Mine Rescue Contest**
   - [ ] BG4 Written Test
 - **2024 Southeast Regional Mine Rescue Contest**

@@ -61,7 +61,7 @@ class CompetitionAdmin(admin.ModelAdmin):
 class ProblemDocumentInline(admin.TabularInline):
     model = ProblemDocument
     extra = 1
-    fields = ('sort_order', 'title', 'file')
+    fields = ('sort_order', 'title', 'file', 'answer_key')
     ordering = ('sort_order', 'title')
 
 
