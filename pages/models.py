@@ -164,6 +164,11 @@ class Competition(models.Model):
                   "to event titles and locations; set it here to override.",
     )
     description = models.TextField(blank=True)
+    sort_date = models.DateField(
+        null=True, blank=True,
+        help_text="Only used to order the past-problems list when there is no "
+                  "calendar event (the real date isn't known). Never shown.",
+    )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

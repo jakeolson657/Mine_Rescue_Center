@@ -81,11 +81,15 @@ def past_problems(request):
         .prefetch_related('problems__documents', 'problems__quizzes')
     )
     # Within a year: most recent first, undated competitions last (by name).
+    # A competition without an event can still be placed via its sort_date.
     # Practice-problem collections always sink to the very bottom of the year.
+    def listing_date(c):
+        return c.start_date or c.sort_date
+
     competitions.sort(key=lambda c: (
         'practice' in c.name.lower(),
-        c.start_date is None,
-        -c.start_date.toordinal() if c.start_date else 0,
+        listing_date(c) is None,
+        -listing_date(c).toordinal() if listing_date(c) else 0,
         c.name.lower(),
     ))
 

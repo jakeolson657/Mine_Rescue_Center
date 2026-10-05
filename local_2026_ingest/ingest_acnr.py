@@ -13,10 +13,10 @@ Foresight" (Foresight Energy, an ACNR company), Coal:
 The four .docx files were converted to PDF beside the originals (Word
 filtered-HTML, then headless Edge print) with their content unchanged.
 
-The contest date wasn't supplied. The user asked for it to list as the most
-recent 2026 contest, so it gets a placeholder single-day CalendarEvent on
-2026-09-30 (after Nationals, Aug 24-27). Correct the event in the admin once
-the real date is known.
+The contest date isn't known, so there is no CalendarEvent. The user asked
+for it to list as the most recent 2026 contest, so ``sort_date`` is set to
+2026-09-30 (after Nationals, Aug 24-27); it orders the list but is never shown.
+Link a real calendar event in the admin once the date is known.
 
 Idempotent, same as the other ingests: rows already present are skipped and a
 media file is only copied when missing.
@@ -38,7 +38,7 @@ import django  # noqa: E402
 django.setup()
 from django.conf import settings  # noqa: E402
 from pages.models import (  # noqa: E402
-    CalendarEvent, Competition, CompetitionProblem, ProblemDocument,
+    Competition, CompetitionProblem, ProblemDocument,
 )
 
 MEDIA = settings.MEDIA_ROOT
@@ -46,7 +46,7 @@ SRC_DIR = r"C:\Users\Jacob\Downloads\ACNR company contest"
 NAME = "ACNR Company Mine Rescue Contest"
 YEAR = 2026
 ANCHOR = "ACNR"
-EVENT_DATE = datetime.date(2026, 9, 30)  # placeholder, see docstring
+SORT_DATE = datetime.date(2026, 9, 30)  # ordering only, see docstring
 
 PROBLEMS = [
     ("Coal Day 1 Field", 10),
@@ -77,23 +77,12 @@ def safe_filename(problem_slug, fname):
 
 
 def ingest(do_write):
-    event = CalendarEvent.objects.filter(title=NAME, start_date__year=YEAR).first()
-    if event is None:
-        print(f"+ event {NAME!r} on {EVENT_DATE}")
-        if do_write:
-            event = CalendarEvent.objects.create(
-                title=NAME, start_date=EVENT_DATE, end_date=EVENT_DATE,
-                location="",
-            )
-    else:
-        print(f"= event #{event.pk} {event}")
-
     comp = Competition.objects.filter(name=NAME, year=YEAR).first()
     if comp is None:
         print(f"+ competition {NAME!r} ({YEAR})")
         if do_write:
             comp = Competition.objects.create(
-                name=NAME, year=YEAR, calendar_event=event,
+                name=NAME, year=YEAR, sort_date=SORT_DATE,
             )
     else:
         print(f"= competition #{comp.pk}")
