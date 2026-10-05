@@ -476,13 +476,52 @@
             </span>
         </summary>
         <div class="resource-body">
-            <div class="resource-list">
-                {% for res in rope_rescue_resources %}
-                    {% include "partials/benching_resource_card.html" %}
-                {% empty %}
-                    <p class="no-documents">Rope rescue resources are being added — check back soon.</p>
-                {% endfor %}
-            </div>
+            {% if rope_rescue_resources %}
+                <div class="resource-list">
+                    {% for res in rope_rescue_resources %}
+                        {% include "partials/benching_resource_card.html" %}
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+            <details class="scorecards-drop">
+                <summary>
+                    <span class="chev"><svg width="14" height="14"><use href="#i-chev"/></svg></span>
+                    <span class="scorecards-drop-title">CMC Field Guide App</span>
+                </summary>
+                <div class="scorecards-drop-body">
+                    <div class="resource-list">
+                        <div class="ig-card">
+                            <div class="ig-card-main">
+                                <span class="doc-chip">APP</span>
+                                <div class="ig-card-text">
+                                    <div class="ig-card-title">CMC Field Guide — iOS</div>
+                                </div>
+                            </div>
+                            <div class="document-actions">
+                                <a class="ext-link" href="https://apps.apple.com/us/app/cmc-field-guide/id426955029" target="_blank" rel="noopener">
+                                    <svg width="12" height="12"><use href="#i-ext"/></svg>
+                                    App Store
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ig-card">
+                            <div class="ig-card-main">
+                                <span class="doc-chip">APP</span>
+                                <div class="ig-card-text">
+                                    <div class="ig-card-title">CMC Field Guide — Android</div>
+                                </div>
+                            </div>
+                            <div class="document-actions">
+                                <a class="ext-link" href="https://play.google.com/store/apps/details?id=com.cmc_rescue.rescue_field_guide&amp;feature=search_result" target="_blank" rel="noopener">
+                                    <svg width="12" height="12"><use href="#i-ext"/></svg>
+                                    Google Play
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
         </div>
     </details>
 </div>
