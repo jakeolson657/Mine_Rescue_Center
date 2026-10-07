@@ -4529,6 +4529,21 @@
  }
 },
 {
+ "model": "pages.calendarevent",
+ "pk": 403,
+ "fields": {
+  "title": "ACNR Company Mine Rescue Contest",
+  "start_date": "2026-09-28",
+  "end_date": "2026-10-01",
+  "location": "",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-07T13:26:23.245Z",
+  "updated_at": "2026-10-07T13:26:23.245Z"
+ }
+},
+{
  "model": "pages.competition",
  "pk": 1,
  "fields": {
@@ -9149,11 +9164,11 @@
  "fields": {
   "name": "ACNR Company Mine Rescue Contest",
   "year": 2026,
-  "calendar_event": null,
+  "calendar_event": 403,
   "description": "",
-  "sort_date": "2026-09-30",
+  "sort_date": null,
   "created_at": "2026-10-04T22:56:19.760Z",
-  "updated_at": "2026-10-05T01:18:03.593Z"
+  "updated_at": "2026-10-07T13:26:23.267Z"
  }
 },
 {
