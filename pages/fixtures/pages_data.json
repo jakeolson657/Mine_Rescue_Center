@@ -25640,7 +25640,7 @@
   "problem": 663,
   "title": "First Aid Written Test",
   "file": "problems/2024_KMI_First_Aid_KMI_24_FA_Written_Exam.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2024_KMI_First_Aid_KMI_24_FA_Written_Exam_Key.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-12T04:22:45.342Z"
  }
@@ -47430,6 +47430,17 @@
   "source_document": 381,
   "sort_order": 90,
   "created_at": "2026-09-23T15:09:26.217Z"
+ }
+},
+{
+ "model": "pages.quiz",
+ "pk": 5527,
+ "fields": {
+  "problem": 663,
+  "title": "First Aid Written Test",
+  "source_document": 393,
+  "sort_order": 90,
+  "created_at": "2026-10-08T17:05:55.853Z"
  }
 },
 {
@@ -113518,6 +113529,156 @@
  "fields": {
   "quiz": 5526,
   "text": "Respiratory ____________ is when a life-threatening emergency that occurs when ____________ breathing stops or when breathing is ____________, if untreated, it will lead to cardiac arrest, or it can occur at the same time as cardiac arrest.",
+  "image": "",
+  "sort_order": 14
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266877,
+ "fields": {
+  "quiz": 5527,
+  "text": "When assessing circulation for a ____________ adult patient you should assess the radial pulse.",
+  "image": "",
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266878,
+ "fields": {
+  "quiz": 5527,
+  "text": "The five common vital signs are pulse, respirations, blood pressure, pupils, and ____________.",
+  "image": "",
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266879,
+ "fields": {
+  "quiz": 5527,
+  "text": "Respiratory rate can be assessed by watching and feeling the chest and abdomen ____________ during breathing.",
+  "image": "",
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266880,
+ "fields": {
+  "quiz": 5527,
+  "text": "Carotid and femoral are the two pulse points that are referred to as ____________ pulses.",
+  "image": "",
+  "sort_order": 3
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266881,
+ "fields": {
+  "quiz": 5527,
+  "text": "Skin that is ____________ in color is called cyanotic.",
+  "image": "",
+  "sort_order": 4
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266882,
+ "fields": {
+  "quiz": 5527,
+  "text": "A respiratory rate that is lower than ____________ for an adult should be considered inadequate.",
+  "image": "",
+  "sort_order": 5
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266883,
+ "fields": {
+  "quiz": 5527,
+  "text": "The term trending is best ____________ as the ability to record changes in a patient's condition over time.",
+  "image": "",
+  "sort_order": 6
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266884,
+ "fields": {
+  "quiz": 5527,
+  "text": "A ____________ has been involved in a rollover vehicle collision, in this scenario, the rollover is an example of the mechanism of injury.",
+  "image": "",
+  "sort_order": 7
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266885,
+ "fields": {
+  "quiz": 5527,
+  "text": "The steps of ____________ assessment include forming a general impression, assessing mental status, assessing ABCs, and determining priority for transport.",
+  "image": "",
+  "sort_order": 8
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266886,
+ "fields": {
+  "quiz": 5527,
+  "text": "A patient who presents with normal vital signs and shows no indications of life threatening problems may be described as ____________.",
+  "image": "",
+  "sort_order": 9
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266887,
+ "fields": {
+  "quiz": 5527,
+  "text": "When assessing a trauma patient who has a significant mechanism of injury, the BP-DOC assessment tool is designed to look for ____________ of traumatic injury.",
+  "image": "",
+  "sort_order": 10
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266888,
+ "fields": {
+  "quiz": 5527,
+  "text": "The secondary assessment is designed to find and treat non-life-threatening ____________.",
+  "image": "",
+  "sort_order": 11
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266889,
+ "fields": {
+  "quiz": 5527,
+  "text": "____________, myocardial infarction, and heart failure are all common causes of cardiac compromise.",
+  "image": "",
+  "sort_order": 12
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266890,
+ "fields": {
+  "quiz": 5527,
+  "text": "____________ is a leading cause of sudden cardiac arrest describes the relationship between a heart attack and sudden cardiac arrest.",
+  "image": "",
+  "sort_order": 13
+ }
+},
+{
+ "model": "pages.quizquestion",
+ "pk": 266891,
+ "fields": {
+  "quiz": 5527,
+  "text": "You have arrived on the scene of an unresponsive patient whom you find to be pulseless and apneic, you should begin ____________.",
   "image": "",
   "sort_order": 14
  }
@@ -327320,6 +327481,546 @@
   "text": "arrest, normal, ineffective",
   "is_correct": true,
   "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857794,
+ "fields": {
+  "question": 266877,
+  "text": "unconscious",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857795,
+ "fields": {
+  "question": 266877,
+  "text": "responsive",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857796,
+ "fields": {
+  "question": 266877,
+  "text": "unresponsive",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857797,
+ "fields": {
+  "question": 266878,
+  "text": "skin color",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857798,
+ "fields": {
+  "question": 266878,
+  "text": "skin signs",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857799,
+ "fields": {
+  "question": 266878,
+  "text": "capillary refill",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857800,
+ "fields": {
+  "question": 266879,
+  "text": "rise and fall",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857801,
+ "fields": {
+  "question": 266879,
+  "text": "move",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857802,
+ "fields": {
+  "question": 266879,
+  "text": "extend",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857803,
+ "fields": {
+  "question": 266880,
+  "text": "main",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857804,
+ "fields": {
+  "question": 266880,
+  "text": "central",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857805,
+ "fields": {
+  "question": 266880,
+  "text": "perferd",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857806,
+ "fields": {
+  "question": 266881,
+  "text": "reddish",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857807,
+ "fields": {
+  "question": 266881,
+  "text": "bluish",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857808,
+ "fields": {
+  "question": 266881,
+  "text": "blue",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857809,
+ "fields": {
+  "question": 266882,
+  "text": "10",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857810,
+ "fields": {
+  "question": 266882,
+  "text": "15",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857811,
+ "fields": {
+  "question": 266882,
+  "text": "5",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857812,
+ "fields": {
+  "question": 266883,
+  "text": "regarded",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857813,
+ "fields": {
+  "question": 266883,
+  "text": "known",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857814,
+ "fields": {
+  "question": 266883,
+  "text": "defined",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857815,
+ "fields": {
+  "question": 266884,
+  "text": "victim",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857816,
+ "fields": {
+  "question": 266884,
+  "text": "person",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857817,
+ "fields": {
+  "question": 266884,
+  "text": "patient",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857818,
+ "fields": {
+  "question": 266885,
+  "text": "primary",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857819,
+ "fields": {
+  "question": 266885,
+  "text": "initial",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857820,
+ "fields": {
+  "question": 266885,
+  "text": "overall",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857821,
+ "fields": {
+  "question": 266886,
+  "text": "minor",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857822,
+ "fields": {
+  "question": 266886,
+  "text": "delayed",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857823,
+ "fields": {
+  "question": 266886,
+  "text": "stable",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857824,
+ "fields": {
+  "question": 266887,
+  "text": "symptoms",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857825,
+ "fields": {
+  "question": 266887,
+  "text": "signs",
+  "is_correct": true,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857826,
+ "fields": {
+  "question": 266887,
+  "text": "over all types",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857827,
+ "fields": {
+  "question": 266888,
+  "text": "injuries or conditions",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857828,
+ "fields": {
+  "question": 266888,
+  "text": "injuries and conditions",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857829,
+ "fields": {
+  "question": 266888,
+  "text": "bleeding",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857830,
+ "fields": {
+  "question": 266889,
+  "text": "stroke",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857831,
+ "fields": {
+  "question": 266889,
+  "text": "heart attack",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857832,
+ "fields": {
+  "question": 266889,
+  "text": "angina pectoris",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857833,
+ "fields": {
+  "question": 266890,
+  "text": "stroke",
+  "is_correct": false,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857834,
+ "fields": {
+  "question": 266890,
+  "text": "cardiac arrest",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857835,
+ "fields": {
+  "question": 266890,
+  "text": "heart attack",
+  "is_correct": true,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857836,
+ "fields": {
+  "question": 266891,
+  "text": "chest compressions",
+  "is_correct": true,
+  "sort_order": 0
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857837,
+ "fields": {
+  "question": 266891,
+  "text": "CPR",
+  "is_correct": false,
+  "sort_order": 1
+ }
+},
+{
+ "model": "pages.quizchoice",
+ "pk": 857838,
+ "fields": {
+  "question": 266891,
+  "text": "artificial ventilation",
+  "is_correct": false,
+  "sort_order": 2
+ }
+},
+{
+ "model": "pages.geocodedlocation",
+ "pk": 1,
+ "fields": {
+  "query": "Ina, IL",
+  "latitude": 38.1511606,
+  "longitude": -88.9039554,
+  "created_at": "2026-10-08T15:40:26.195Z"
+ }
+},
+{
+ "model": "pages.geocodedlocation",
+ "pk": 2,
+ "fields": {
+  "query": "Idaho Springs, CO",
+  "latitude": 39.7425969,
+  "longitude": -105.5136365,
+  "created_at": "2026-10-08T15:40:27.744Z"
+ }
+},
+{
+ "model": "pages.geocodedlocation",
+ "pk": 3,
+ "fields": {
+  "query": "Prosperity, PA",
+  "latitude": 40.0470171,
+  "longitude": -80.2947855,
+  "created_at": "2026-10-08T15:40:29.342Z"
+ }
+},
+{
+ "model": "pages.geocodedlocation",
+ "pk": 4,
+ "fields": {
+  "query": "Columbus, OH",
+  "latitude": 39.9622601,
+  "longitude": -83.0007065,
+  "created_at": "2026-10-08T15:40:31.113Z"
+ }
+},
+{
+ "model": "pages.geocodedlocation",
+ "pk": 5,
+ "fields": {
+  "query": "Reno, NV",
+  "latitude": 39.5261788,
+  "longitude": -119.812658,
+  "created_at": "2026-10-08T15:40:32.741Z"
+ }
+},
+{
+ "model": "pages.geocodedlocation",
+ "pk": 6,
+ "fields": {
+  "query": "Taos, NM",
+  "latitude": 36.4072377,
+  "longitude": -105.573284,
+  "created_at": "2026-10-08T15:40:34.139Z"
+ }
+},
+{
+ "model": "pages.geocodedlocation",
+ "pk": 7,
+ "fields": {
+  "query": "Richlands, VA",
+  "latitude": 37.0944752,
+  "longitude": -81.7997182,
+  "created_at": "2026-10-08T15:40:35.740Z"
+ }
+},
+{
+ "model": "pages.geocodedlocation",
+ "pk": 8,
+ "fields": {
+  "query": "Dalton, GA",
+  "latitude": 34.7691867,
+  "longitude": -84.9702475,
+  "created_at": "2026-10-08T15:40:37.347Z"
+ }
+},
+{
+ "model": "pages.geocodedlocation",
+ "pk": 9,
+ "fields": {
+  "query": "Clintwood, VA",
+  "latitude": 37.1501067,
+  "longitude": -82.4559846,
+  "created_at": "2026-10-08T15:40:42.250Z"
  }
 }
 ]
