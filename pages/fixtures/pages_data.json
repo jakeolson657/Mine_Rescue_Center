@@ -4565,6 +4565,1956 @@
 },
 {
  "model": "pages.calendarevent",
+ "pk": 405,
+ "fields": {
+  "title": "Kentucky Coal Academy Preshift Contest",
+  "start_date": "2012-04-11",
+  "end_date": "2012-04-11",
+  "location": "Madisonville, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.043Z",
+  "updated_at": "2026-10-08T15:40:24.043Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 406,
+ "fields": {
+  "title": "Missouri Mine Rescue Contest",
+  "start_date": "2012-10-02",
+  "end_date": "2012-10-04",
+  "location": "Missouri University of Science & Technology, Rolla, Missouri",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.080Z",
+  "updated_at": "2026-10-08T15:40:24.080Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 407,
+ "fields": {
+  "title": "Robert E. Jones Mine Rescue Contest",
+  "start_date": "2012-05-16",
+  "end_date": "2012-05-16",
+  "location": "Rend Lake College, Ina, Illinois",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.087Z",
+  "updated_at": "2026-10-08T15:40:24.087Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 408,
+ "fields": {
+  "title": "Alabama State Mine Rescue Contest",
+  "start_date": "2013-05-14",
+  "end_date": "2013-05-16",
+  "location": "Bevill State Community College, Sumiton, Alabama",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.093Z",
+  "updated_at": "2026-10-08T15:40:24.093Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 409,
+ "fields": {
+  "title": "Central Mine Rescue Contest",
+  "start_date": "2013-05-16",
+  "end_date": "2013-05-18",
+  "location": "Kellogg, Idaho",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.121Z",
+  "updated_at": "2026-10-08T15:40:24.121Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 410,
+ "fields": {
+  "title": "Colorado Coal Association Mine Rescue Contest",
+  "start_date": "2013-07-16",
+  "end_date": "2013-07-18",
+  "location": "Craig, Colorado",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.140Z",
+  "updated_at": "2026-10-08T15:40:24.140Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 411,
+ "fields": {
+  "title": "Colorado School of Mines 2nd Biennial MERD Competition",
+  "start_date": "2013-02-21",
+  "end_date": "2013-02-23",
+  "location": "Edgar Mine, Idaho Springs, Colorado",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.161Z",
+  "updated_at": "2026-10-08T15:40:24.161Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 412,
+ "fields": {
+  "title": "Four Corners Mine Rescue Contest",
+  "start_date": "2013-04-23",
+  "end_date": "2013-04-25",
+  "location": "Farmington, New Mexico",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.180Z",
+  "updated_at": "2026-10-08T15:40:24.180Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 413,
+ "fields": {
+  "title": "Harlan County Safety Day Contest",
+  "start_date": "2013-07-23",
+  "end_date": "2013-07-25",
+  "location": "Southeast KY Community & Technical College, Cumberland, KY",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.197Z",
+  "updated_at": "2026-10-08T15:40:24.197Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 414,
+ "fields": {
+  "title": "Hatfield and McCoy Mine Safety Competition",
+  "start_date": "2013-07-16",
+  "end_date": "2013-07-18",
+  "location": "Pikeville, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.215Z",
+  "updated_at": "2026-10-08T15:40:24.215Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 415,
+ "fields": {
+  "title": "Illinois State Mine Rescue Contest",
+  "start_date": "2013-08-14",
+  "end_date": "2013-08-14",
+  "location": "Williamson County Pavilion, Marion, Illinois",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.233Z",
+  "updated_at": "2026-10-08T15:40:24.233Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 416,
+ "fields": {
+  "title": "Indiana State Mine Rescue Contest",
+  "start_date": "2013-06-05",
+  "end_date": "2013-06-06",
+  "location": "Vincennes, Indiana",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.253Z",
+  "updated_at": "2026-10-08T15:40:24.253Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 417,
+ "fields": {
+  "title": "Kentucky Coal Academy Preshift Contest",
+  "start_date": "2013-09-04",
+  "end_date": "2013-09-04",
+  "location": "Madisonville, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.274Z",
+  "updated_at": "2026-10-08T15:40:24.274Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 418,
+ "fields": {
+  "title": "Kentucky Coal Academy Skills Contest",
+  "start_date": "2013-04-11",
+  "end_date": "2013-04-11",
+  "location": "Madisonville, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.292Z",
+  "updated_at": "2026-10-08T15:40:24.292Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 419,
+ "fields": {
+  "title": "Kentucky OMSL Mine Rescue Contest",
+  "start_date": "2013-04-24",
+  "end_date": "2013-04-25",
+  "location": "Prestonsburg, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.308Z",
+  "updated_at": "2026-10-08T15:40:24.308Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 420,
+ "fields": {
+  "title": "Kentucky River Mine Rescue Contest",
+  "start_date": "2013-06-18",
+  "end_date": "2013-06-20",
+  "location": "Hazard, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.325Z",
+  "updated_at": "2026-10-08T15:40:24.325Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 421,
+ "fields": {
+  "title": "Kentucky State Mine Rescue Contest",
+  "start_date": "2013-08-21",
+  "end_date": "2013-08-23",
+  "location": "Kentucky Mining Institute, Lexington, KY",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.343Z",
+  "updated_at": "2026-10-08T15:40:24.343Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 422,
+ "fields": {
+  "title": "MTTC Pennsylvania Rescue Skills Contest",
+  "start_date": "2013-04-22",
+  "end_date": "2013-04-25",
+  "location": "Mining Technology and Training Center, Prosperity, Pennsylvania",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.362Z",
+  "updated_at": "2026-10-08T15:40:24.362Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 423,
+ "fields": {
+  "title": "Missouri Mine Rescue Contest",
+  "start_date": "2013-09-24",
+  "end_date": "2013-09-26",
+  "location": "Rolla, Missouri",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.378Z",
+  "updated_at": "2026-10-08T15:40:24.378Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 424,
+ "fields": {
+  "title": "NMRA Post 1 Mine Rescue Contest",
+  "start_date": "2013-05-18",
+  "end_date": "2013-05-18",
+  "location": "Bluefield, West Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.394Z",
+  "updated_at": "2026-10-08T15:40:24.394Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 425,
+ "fields": {
+  "title": "NMRA Post 11 Mine Rescue Contest",
+  "start_date": "2013-05-03",
+  "end_date": "2013-05-03",
+  "location": "Madisonville, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.411Z",
+  "updated_at": "2026-10-08T15:40:24.411Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 426,
+ "fields": {
+  "title": "NMRA Post 2 Mine Rescue Contest",
+  "start_date": "2013-05-10",
+  "end_date": "2013-05-10",
+  "location": "Lexington, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.426Z",
+  "updated_at": "2026-10-08T15:40:24.426Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 427,
+ "fields": {
+  "title": "NMRA Post 5 Mine Rescue Contest",
+  "start_date": "2013-08-13",
+  "end_date": "2013-08-15",
+  "location": "Mylan Park, Morgantown, West Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.438Z",
+  "updated_at": "2026-10-08T15:40:24.438Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 428,
+ "fields": {
+  "title": "National Coal Mine Rescue Contest",
+  "start_date": "2013-09-09",
+  "end_date": "2013-09-12",
+  "location": "Columbus, Ohio",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.450Z",
+  "updated_at": "2026-10-08T15:40:24.450Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 429,
+ "fields": {
+  "title": "National M/NM Mine Rescue Contest",
+  "start_date": "2013-07-30",
+  "end_date": "2013-08-01",
+  "location": "Reno, Nevada",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.462Z",
+  "updated_at": "2026-10-08T15:40:24.462Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 430,
+ "fields": {
+  "title": "Nevada Mine Rescue Contest",
+  "start_date": "2013-03-12",
+  "end_date": "2013-03-14",
+  "location": "Winnemucca, Nevada",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.476Z",
+  "updated_at": "2026-10-08T15:40:24.476Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 431,
+ "fields": {
+  "title": "North Central Regional Mine Rescue Contest",
+  "start_date": "2013-04-03",
+  "end_date": "2013-04-04",
+  "location": "Wilmington, Illinois",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.487Z",
+  "updated_at": "2026-10-08T15:40:24.487Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 432,
+ "fields": {
+  "title": "Northeast Regional Mine Rescue Contest",
+  "start_date": "2013-06-16",
+  "end_date": "2013-06-18",
+  "location": "Rochester, New York",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.499Z",
+  "updated_at": "2026-10-08T15:40:24.499Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 433,
+ "fields": {
+  "title": "Ohio Mine Safety Day MERD Contest",
+  "start_date": "2013-06-19",
+  "end_date": "2013-06-19",
+  "location": "Cadiz, Ohio",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.513Z",
+  "updated_at": "2026-10-08T15:40:24.513Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 434,
+ "fields": {
+  "title": "Ohio Valley Mine Rescue Contest NMRA Post 6",
+  "start_date": "2013-06-04",
+  "end_date": "2013-06-06",
+  "location": "Cadiz, Ohio",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.526Z",
+  "updated_at": "2026-10-08T15:40:24.526Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 435,
+ "fields": {
+  "title": "Pennsylvania State Mine Rescue Contest",
+  "start_date": "2013-08-20",
+  "end_date": "2013-08-22",
+  "location": "Carmichaels, Pennsylvania",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.539Z",
+  "updated_at": "2026-10-08T15:40:24.539Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 436,
+ "fields": {
+  "title": "Rocky Mt. Association Mine Rescue Contest",
+  "start_date": "2013-06-04",
+  "end_date": "2013-06-06",
+  "location": "Price, Utah",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.550Z",
+  "updated_at": "2026-10-08T15:40:24.550Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 437,
+ "fields": {
+  "title": "Southeast Regional Mine Rescue Contest",
+  "start_date": "2013-06-18",
+  "end_date": "2013-06-20",
+  "location": "Maysville, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.563Z",
+  "updated_at": "2026-10-08T15:40:24.563Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 438,
+ "fields": {
+  "title": "Southeastern Illinois College Skills Contest",
+  "start_date": "2013-06-11",
+  "end_date": "2013-06-12",
+  "location": "Harrisburg, Illinois",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.575Z",
+  "updated_at": "2026-10-08T15:40:24.575Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 439,
+ "fields": {
+  "title": "Southern Regional Mine Rescue Contest",
+  "start_date": "2013-05-07",
+  "end_date": "2013-05-09",
+  "location": "New Iberia, Louisiana",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.586Z",
+  "updated_at": "2026-10-08T15:40:24.586Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 440,
+ "fields": {
+  "title": "Southern WV Mine Rescue Contest",
+  "start_date": "2013-08-26",
+  "end_date": "2013-08-29",
+  "location": "Beckley, West Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.597Z",
+  "updated_at": "2026-10-08T15:40:24.597Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 441,
+ "fields": {
+  "title": "Southwest Regional Mine Rescue Contest",
+  "start_date": "2013-05-21",
+  "end_date": "2013-05-23",
+  "location": "Taos, New Mexico",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.605Z",
+  "updated_at": "2026-10-08T15:40:24.605Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 442,
+ "fields": {
+  "title": "Tennessee Regional Mine Rescue Contest",
+  "start_date": "2013-05-09",
+  "end_date": "2013-05-09",
+  "location": "Caryville, Tennessee",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.613Z",
+  "updated_at": "2026-10-08T15:40:24.613Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 443,
+ "fields": {
+  "title": "VA Governor's Cup Mine Rescue Contest",
+  "start_date": "2013-06-07",
+  "end_date": "2013-06-07",
+  "location": "Richlands, Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.621Z",
+  "updated_at": "2026-10-08T15:40:24.621Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 444,
+ "fields": {
+  "title": "VA Mining Institute Mine Rescue Contest",
+  "start_date": "2013-08-06",
+  "end_date": "2013-08-08",
+  "location": "Blacksburg, Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.628Z",
+  "updated_at": "2026-10-08T15:40:24.628Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 445,
+ "fields": {
+  "title": "Walter Energy Mine Rescue Contest",
+  "start_date": "2013-04-30",
+  "end_date": "2013-04-30",
+  "location": "Birmingham, Alabama",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.633Z",
+  "updated_at": "2026-10-08T15:40:24.633Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 446,
+ "fields": {
+  "title": "West Virginia Alliance Skills Contest",
+  "start_date": "2013-05-20",
+  "end_date": "2013-05-24",
+  "location": "Beckley, West Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.640Z",
+  "updated_at": "2026-10-08T15:40:24.640Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 447,
+ "fields": {
+  "title": "Western Kentucky Mining Institute Safety Days Mine Rescue Contest",
+  "start_date": "2013-05-22",
+  "end_date": "2013-05-23",
+  "location": "Madisonville, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.644Z",
+  "updated_at": "2026-10-08T15:40:24.644Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 448,
+ "fields": {
+  "title": "Alabama State Mine Rescue Contest",
+  "start_date": "2014-05-20",
+  "end_date": "2014-05-22",
+  "location": "Bevill State Community College, Sumiton, Alabama",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.648Z",
+  "updated_at": "2026-10-08T15:40:24.648Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 449,
+ "fields": {
+  "title": "Central Mine Rescue Contest",
+  "start_date": "2014-05-15",
+  "end_date": "2014-05-17",
+  "location": "Silver Mountain Resort, Kellogg, Idaho",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.671Z",
+  "updated_at": "2026-10-08T15:40:24.671Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 450,
+ "fields": {
+  "title": "Colorado Mine Rescue Association Contest",
+  "start_date": "2014-07-15",
+  "end_date": "2014-07-17",
+  "location": "Delta, Colorado",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.693Z",
+  "updated_at": "2026-10-08T15:40:24.693Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 451,
+ "fields": {
+  "title": "Colorado Mine Rescue Association Four Corners Mine Rescue Contest",
+  "start_date": "2014-04-22",
+  "end_date": "2014-04-24",
+  "location": "Farmington, New Mexico",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.714Z",
+  "updated_at": "2026-10-08T15:40:24.714Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 452,
+ "fields": {
+  "title": "Colorado Mine Rescue Contest",
+  "start_date": "2014-05-20",
+  "end_date": "2014-05-22",
+  "location": "Golden, Colorado",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.732Z",
+  "updated_at": "2026-10-08T15:40:24.732Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 453,
+ "fields": {
+  "title": "Harlan County Safety Days Contest",
+  "start_date": "2014-07-22",
+  "end_date": "2014-07-24",
+  "location": "Cumberland, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.749Z",
+  "updated_at": "2026-10-08T15:40:24.749Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 454,
+ "fields": {
+  "title": "Hatfield & McCoy Mine Safety Contest",
+  "start_date": "2014-07-15",
+  "end_date": "2014-07-17",
+  "location": "Pikeville, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.768Z",
+  "updated_at": "2026-10-08T15:40:24.768Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 455,
+ "fields": {
+  "title": "Illinois State Mine Rescue Contest",
+  "start_date": "2014-09-10",
+  "end_date": "2014-09-10",
+  "location": "Marion, Illinois",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.787Z",
+  "updated_at": "2026-10-08T15:40:24.787Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 456,
+ "fields": {
+  "title": "Indiana State Mine Rescue Contest",
+  "start_date": "2014-06-04",
+  "end_date": "2014-06-05",
+  "location": "Vincennes, Indiana",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.810Z",
+  "updated_at": "2026-10-08T15:40:24.810Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 457,
+ "fields": {
+  "title": "Kentucky Coal Academy Skills Contest",
+  "start_date": "2014-04-10",
+  "end_date": "2014-04-10",
+  "location": "Madisonville, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.829Z",
+  "updated_at": "2026-10-08T15:40:24.829Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 458,
+ "fields": {
+  "title": "Kentucky Mining Institute Mine Rescue Contest",
+  "start_date": "2014-08-20",
+  "end_date": "2014-08-22",
+  "location": "Lexington, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.847Z",
+  "updated_at": "2026-10-08T15:40:24.847Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 459,
+ "fields": {
+  "title": "Kentucky OMSL Mine Rescue Contest",
+  "start_date": "2014-05-07",
+  "end_date": "2014-05-08",
+  "location": "Prestonsburg, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.864Z",
+  "updated_at": "2026-10-08T15:40:24.864Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 460,
+ "fields": {
+  "title": "Kentucky River Mine Rescue Contest",
+  "start_date": "2014-06-17",
+  "end_date": "2014-06-19",
+  "location": "Hazard, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.879Z",
+  "updated_at": "2026-10-08T15:40:24.879Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 461,
+ "fields": {
+  "title": "MTTC Pennsylvania Rescue Skills Contest",
+  "start_date": "2014-04-21",
+  "end_date": "2014-04-25",
+  "location": "Mining Technology and Training Center, Prosperity, Pennsylvania",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.893Z",
+  "updated_at": "2026-10-08T15:40:24.893Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 462,
+ "fields": {
+  "title": "Midwest Regional Mine Rescue Contest",
+  "start_date": "2014-04-15",
+  "end_date": "2014-04-17",
+  "location": "Wilmington, Illinois",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.908Z",
+  "updated_at": "2026-10-08T15:40:24.908Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 463,
+ "fields": {
+  "title": "Missouri Regional Mine Rescue Contest",
+  "start_date": "2014-09-24",
+  "end_date": "2014-09-25",
+  "location": "Rolla, Missouri",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.925Z",
+  "updated_at": "2026-10-08T15:40:24.925Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 464,
+ "fields": {
+  "title": "NMRA Post 11 Mine Rescue Contest",
+  "start_date": "2014-05-02",
+  "end_date": "2014-05-02",
+  "location": "Madisonville, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.940Z",
+  "updated_at": "2026-10-08T15:40:24.940Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 465,
+ "fields": {
+  "title": "NMRA Post 5 Mine Rescue Contest",
+  "start_date": "2014-08-12",
+  "end_date": "2014-08-14",
+  "location": "Morgantown, West Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.954Z",
+  "updated_at": "2026-10-08T15:40:24.954Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 466,
+ "fields": {
+  "title": "National M/NM Mine Rescue Contest",
+  "start_date": "2014-08-04",
+  "end_date": "2014-08-07",
+  "location": "Lexington Convention Center, Lexington, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.965Z",
+  "updated_at": "2026-10-08T15:40:24.965Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 467,
+ "fields": {
+  "title": "Nevada Mine Rescue Contest",
+  "start_date": "2014-03-12",
+  "end_date": "2014-03-13",
+  "location": "Winnemucca, Nevada",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.975Z",
+  "updated_at": "2026-10-08T15:40:24.975Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 468,
+ "fields": {
+  "title": "Northern Regional Mine Rescue Contest",
+  "start_date": "2014-06-17",
+  "end_date": "2014-06-19",
+  "location": "Peek 'n Peak Resort, Clymer, New York",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.984Z",
+  "updated_at": "2026-10-08T15:40:24.984Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 469,
+ "fields": {
+  "title": "Ohio Valley Mine Rescue Contest NMRA Post 6",
+  "start_date": "2014-06-03",
+  "end_date": "2014-06-05",
+  "location": "Moundsville, West Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:24.996Z",
+  "updated_at": "2026-10-08T15:40:24.996Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 470,
+ "fields": {
+  "title": "Pennsylvania State Mine Rescue Contest",
+  "start_date": "2014-08-19",
+  "end_date": "2014-08-21",
+  "location": "Carmichaels, Pennsylvania",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.003Z",
+  "updated_at": "2026-10-08T15:40:25.003Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 471,
+ "fields": {
+  "title": "Robert Earl Jones Mine Rescue Contest",
+  "start_date": "2014-05-14",
+  "end_date": "2014-05-14",
+  "location": "Rend Lake College, Ina, Illinois",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.012Z",
+  "updated_at": "2026-10-08T15:40:25.012Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 472,
+ "fields": {
+  "title": "Rocky Mt. Association Mine Rescue Contest",
+  "start_date": "2014-06-17",
+  "end_date": "2014-06-19",
+  "location": "Price, Utah",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.022Z",
+  "updated_at": "2026-10-08T15:40:25.022Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 473,
+ "fields": {
+  "title": "Southeast Illinois Mine Rescue Skills Contest",
+  "start_date": "2014-06-10",
+  "end_date": "2014-06-11",
+  "location": "Harrisburg, Illinois",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.032Z",
+  "updated_at": "2026-10-08T15:40:25.032Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 474,
+ "fields": {
+  "title": "Southeast Regional Mine Rescue Contest",
+  "start_date": "2014-06-24",
+  "end_date": "2014-06-26",
+  "location": "Dalton, Georgia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.042Z",
+  "updated_at": "2026-10-08T15:40:25.042Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 475,
+ "fields": {
+  "title": "Southern Regional Mine Rescue Contest",
+  "start_date": "2014-05-06",
+  "end_date": "2014-05-08",
+  "location": "New Iberia, Louisiana",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.049Z",
+  "updated_at": "2026-10-08T15:40:25.049Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 476,
+ "fields": {
+  "title": "Southern West Virginia Mine Rescue Contest",
+  "start_date": "2014-08-25",
+  "end_date": "2014-08-28",
+  "location": "Beckley, West Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.058Z",
+  "updated_at": "2026-10-08T15:40:25.058Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 477,
+ "fields": {
+  "title": "Southwest Regional Mine Rescue Contest",
+  "start_date": "2014-04-22",
+  "end_date": "2014-04-24",
+  "location": "Carlsbad, New Mexico",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.065Z",
+  "updated_at": "2026-10-08T15:40:25.065Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 478,
+ "fields": {
+  "title": "Southwestern Wyoming Mutual Aid Mine Rescue Contest",
+  "start_date": "2014-05-10",
+  "end_date": "2014-05-11",
+  "location": "Rock Springs, Wyoming",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.073Z",
+  "updated_at": "2026-10-08T15:40:25.073Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 479,
+ "fields": {
+  "title": "VA Governor's Cup Mine Rescue Contest",
+  "start_date": "2014-05-20",
+  "end_date": "2014-05-22",
+  "location": "Wise, Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.080Z",
+  "updated_at": "2026-10-08T15:40:25.080Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 480,
+ "fields": {
+  "title": "VA Mining Institute Mine Rescue Contest",
+  "start_date": "2014-08-05",
+  "end_date": "2014-08-07",
+  "location": "Blacksburg Municipal Park, Blacksburg, Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.084Z",
+  "updated_at": "2026-10-08T15:40:25.084Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 481,
+ "fields": {
+  "title": "West Virginia Alliance Mine Rescue Skills Contest",
+  "start_date": "2014-05-12",
+  "end_date": "2014-05-16",
+  "location": "Beckley, West Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.089Z",
+  "updated_at": "2026-10-08T15:40:25.089Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 482,
+ "fields": {
+  "title": "Western Kentucky Mining Institute Mine Rescue Contest",
+  "start_date": "2014-05-21",
+  "end_date": "2014-05-22",
+  "location": "Madisonville, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.093Z",
+  "updated_at": "2026-10-08T15:40:25.093Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 483,
+ "fields": {
+  "title": "Alabama State Mine Rescue Contest",
+  "start_date": "2015-05-19",
+  "end_date": "2015-05-21",
+  "location": "Sumiton, Alabama",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.097Z",
+  "updated_at": "2026-10-08T15:40:25.097Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 484,
+ "fields": {
+  "title": "Central Mine Rescue Contest",
+  "start_date": "2015-05-13",
+  "end_date": "2015-05-14",
+  "location": "Fairbanks, Alaska",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.115Z",
+  "updated_at": "2026-10-08T15:40:25.115Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 485,
+ "fields": {
+  "title": "Colorado Mine Rescue Association Contest",
+  "start_date": "2015-07-14",
+  "end_date": "2015-07-16",
+  "location": "Craig, Colorado",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.132Z",
+  "updated_at": "2026-10-08T15:40:25.132Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 486,
+ "fields": {
+  "title": "Colorado Regional Mine Rescue Contest",
+  "start_date": "2015-05-19",
+  "end_date": "2015-05-21",
+  "location": "Golden, Colorado",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.152Z",
+  "updated_at": "2026-10-08T15:40:25.152Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 487,
+ "fields": {
+  "title": "Energy Expo Mine Rescue Contest",
+  "start_date": "2015-10-08",
+  "end_date": "2015-10-08",
+  "location": "Clintwood, Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.172Z",
+  "updated_at": "2026-10-08T15:40:25.172Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 488,
+ "fields": {
+  "title": "Harlan County Safety Days Contest",
+  "start_date": "2015-07-21",
+  "end_date": "2015-07-23",
+  "location": "Cumberland, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.190Z",
+  "updated_at": "2026-10-08T15:40:25.190Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 489,
+ "fields": {
+  "title": "Hatfield & McCoy Mine Safety Competition",
+  "start_date": "2015-07-14",
+  "end_date": "2015-07-16",
+  "location": "Pikeville, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.205Z",
+  "updated_at": "2026-10-08T15:40:25.205Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 490,
+ "fields": {
+  "title": "Illinois State Mine Rescue Contest",
+  "start_date": "2015-08-26",
+  "end_date": "2015-08-26",
+  "location": "Marion, Illinois",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.228Z",
+  "updated_at": "2026-10-08T15:40:25.228Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 491,
+ "fields": {
+  "title": "Indiana State Mine Rescue Contest",
+  "start_date": "2015-06-03",
+  "end_date": "2015-06-04",
+  "location": "Vincennes, Indiana",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.245Z",
+  "updated_at": "2026-10-08T15:40:25.245Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 492,
+ "fields": {
+  "title": "KCA Regional Mine Rescue Skills Contest",
+  "start_date": "2015-04-09",
+  "end_date": "2015-04-09",
+  "location": "Madisonville, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.262Z",
+  "updated_at": "2026-10-08T15:40:25.262Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 493,
+ "fields": {
+  "title": "Kentucky DMS Mine Rescue Contest",
+  "start_date": "2015-04-29",
+  "end_date": "2015-04-30",
+  "location": "Prestonsburg, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.282Z",
+  "updated_at": "2026-10-08T15:40:25.282Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 494,
+ "fields": {
+  "title": "Kentucky Mining Institute Kentucky State Mine Rescue Contest",
+  "start_date": "2015-08-18",
+  "end_date": "2015-08-21",
+  "location": "Lexington, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.296Z",
+  "updated_at": "2026-10-08T15:40:25.296Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 495,
+ "fields": {
+  "title": "Kentucky River Mine Rescue Contest",
+  "start_date": "2015-06-16",
+  "end_date": "2015-06-18",
+  "location": "Hazard, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.314Z",
+  "updated_at": "2026-10-08T15:40:25.314Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 496,
+ "fields": {
+  "title": "MTTC Pennsylvania Skills Contest",
+  "start_date": "2015-04-21",
+  "end_date": "2015-04-25",
+  "location": "Prosperity, Pennsylvania",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.327Z",
+  "updated_at": "2026-10-08T15:40:25.327Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 497,
+ "fields": {
+  "title": "Missouri Mine Rescue Contest",
+  "start_date": "2015-09-28",
+  "end_date": "2015-10-01",
+  "location": "Rolla, Missouri",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.342Z",
+  "updated_at": "2026-10-08T15:40:25.342Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 498,
+ "fields": {
+  "title": "NMRA Post 11 Contest",
+  "start_date": "2015-05-07",
+  "end_date": "2015-05-07",
+  "location": "Madisonville, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.355Z",
+  "updated_at": "2026-10-08T15:40:25.355Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 499,
+ "fields": {
+  "title": "NMRA Post 5 Contest",
+  "start_date": "2015-08-11",
+  "end_date": "2015-08-13",
+  "location": "Morgantown, West Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.367Z",
+  "updated_at": "2026-10-08T15:40:25.367Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 500,
+ "fields": {
+  "title": "NMRA Post 6 Contest",
+  "start_date": "2015-06-02",
+  "end_date": "2015-06-04",
+  "location": "Moundsville, West Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.379Z",
+  "updated_at": "2026-10-08T15:40:25.379Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 501,
+ "fields": {
+  "title": "National Mine Rescue Contest",
+  "start_date": "2015-09-14",
+  "end_date": "2015-09-17",
+  "location": "Lexington, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.391Z",
+  "updated_at": "2026-10-08T15:40:25.391Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 502,
+ "fields": {
+  "title": "Nevada Mine Rescue Contest",
+  "start_date": "2015-03-11",
+  "end_date": "2015-03-12",
+  "location": "Winnemucca, Nevada",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.404Z",
+  "updated_at": "2026-10-08T15:40:25.404Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 503,
+ "fields": {
+  "title": "Northern Regional Mine Rescue Contest",
+  "start_date": "2015-07-29",
+  "end_date": "2015-07-29",
+  "location": "Clymer, New York",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.416Z",
+  "updated_at": "2026-10-08T15:40:25.416Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 504,
+ "fields": {
+  "title": "Pennsylvania State Mine Rescue Contest",
+  "start_date": "2015-08-18",
+  "end_date": "2015-08-21",
+  "location": "Carmichaels, Pennsylvania",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.428Z",
+  "updated_at": "2026-10-08T15:40:25.428Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 505,
+ "fields": {
+  "title": "Rocky Mt. Association Mine Rescue Contest",
+  "start_date": "2015-06-16",
+  "end_date": "2015-06-19",
+  "location": "Price, Utah",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.437Z",
+  "updated_at": "2026-10-08T15:40:25.437Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 506,
+ "fields": {
+  "title": "SIC Mine Rescue Skills Contest",
+  "start_date": "2015-06-09",
+  "end_date": "2015-06-10",
+  "location": "Southeastern Illinois College, Harrisburg, Illinois",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.448Z",
+  "updated_at": "2026-10-08T15:40:25.448Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 507,
+ "fields": {
+  "title": "Southeast Regional Mine Rescue Contest",
+  "start_date": "2015-06-23",
+  "end_date": "2015-06-25",
+  "location": "Maysville, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.459Z",
+  "updated_at": "2026-10-08T15:40:25.459Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 508,
+ "fields": {
+  "title": "Southern Regional Mine Rescue Contest",
+  "start_date": "2015-05-05",
+  "end_date": "2015-05-07",
+  "location": "New Iberia, Louisiana",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.467Z",
+  "updated_at": "2026-10-08T15:40:25.467Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 509,
+ "fields": {
+  "title": "Southern West Virginia Mine Rescue Contest",
+  "start_date": "2015-08-31",
+  "end_date": "2015-09-03",
+  "location": "Beckley, West Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.478Z",
+  "updated_at": "2026-10-08T15:40:25.478Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 510,
+ "fields": {
+  "title": "Southwest Regional Mine Rescue Contest",
+  "start_date": "2015-04-21",
+  "end_date": "2015-04-23",
+  "location": "Ruidoso, New Mexico",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.487Z",
+  "updated_at": "2026-10-08T15:40:25.488Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 511,
+ "fields": {
+  "title": "Tennessee Regional Mine Rescue Contest",
+  "start_date": "2015-05-14",
+  "end_date": "2015-05-14",
+  "location": "Caryville, Tennessee",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.496Z",
+  "updated_at": "2026-10-08T15:40:25.496Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 512,
+ "fields": {
+  "title": "VA Governor's Cup Mine Rescue Contest",
+  "start_date": "2015-06-03",
+  "end_date": "2015-06-04",
+  "location": "Wise, Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.503Z",
+  "updated_at": "2026-10-08T15:40:25.503Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 513,
+ "fields": {
+  "title": "Virginia Mining Institute Contest",
+  "start_date": "2015-08-04",
+  "end_date": "2015-08-06",
+  "location": "Blacksburg, Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.509Z",
+  "updated_at": "2026-10-08T15:40:25.509Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 514,
+ "fields": {
+  "title": "WKMI Mine Rescue Contest",
+  "start_date": "2015-05-20",
+  "end_date": "2015-05-21",
+  "location": "Madisonville, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.527Z",
+  "updated_at": "2026-10-08T15:40:25.527Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 515,
+ "fields": {
+  "title": "Welch Post 1 Mine Rescue Contest",
+  "start_date": "2015-05-30",
+  "end_date": "2015-05-30",
+  "location": "Bluefield, West Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.532Z",
+  "updated_at": "2026-10-08T15:40:25.532Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 516,
+ "fields": {
+  "title": "West Virginia Alliance Mine Rescue Skills",
+  "start_date": "2015-05-18",
+  "end_date": "2015-05-22",
+  "location": "Beckley, West Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.535Z",
+  "updated_at": "2026-10-08T15:40:25.535Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 517,
+ "fields": {
+  "title": "Central Mine Rescue Contest",
+  "start_date": "2016-05-12",
+  "end_date": "2016-05-14",
+  "location": "Kellogg, Idaho",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.540Z",
+  "updated_at": "2026-10-08T15:40:25.540Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 518,
+ "fields": {
+  "title": "Missouri S&T Mine Rescue Contest",
+  "start_date": "2016-10-04",
+  "end_date": "2016-10-06",
+  "location": "Rolla, Missouri",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.558Z",
+  "updated_at": "2026-10-08T15:40:25.558Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 519,
+ "fields": {
+  "title": "NMRA Post 11 Contest",
+  "start_date": "2016-05-11",
+  "end_date": "2016-05-11",
+  "location": "Madisonville, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.575Z",
+  "updated_at": "2026-10-08T15:40:25.575Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 520,
+ "fields": {
+  "title": "National Mine Rescue Contest",
+  "start_date": "2016-07-25",
+  "end_date": "2016-07-28",
+  "location": "Reno-Sparks Convention Center, Reno, Nevada",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.591Z",
+  "updated_at": "2026-10-08T15:40:25.591Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 521,
+ "fields": {
+  "title": "Nevada Mine Rescue Contest",
+  "start_date": "2016-03-14",
+  "end_date": "2016-03-17",
+  "location": "Winnemucca, Nevada",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.606Z",
+  "updated_at": "2026-10-08T15:40:25.606Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 522,
+ "fields": {
+  "title": "Northern Regional Mine Rescue Contest",
+  "start_date": "2016-06-14",
+  "end_date": "2016-06-16",
+  "location": "Clymer, New York",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.620Z",
+  "updated_at": "2026-10-08T15:40:25.620Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 523,
+ "fields": {
+  "title": "SW Wyoming Mutual Aid Contest",
+  "start_date": "2016-06-07",
+  "end_date": "2016-06-09",
+  "location": "Rock Springs, Wyoming",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.634Z",
+  "updated_at": "2026-10-08T15:40:25.634Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 524,
+ "fields": {
+  "title": "Southeast Regional Mine Rescue Contest",
+  "start_date": "2016-06-20",
+  "end_date": "2016-06-24",
+  "location": "Maysville, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.648Z",
+  "updated_at": "2026-10-08T15:40:25.648Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 525,
+ "fields": {
+  "title": "Southwest Regional Mine Rescue Contest",
+  "start_date": "2016-04-05",
+  "end_date": "2016-04-07",
+  "location": "Carlsbad, New Mexico",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.660Z",
+  "updated_at": "2026-10-08T15:40:25.660Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 526,
+ "fields": {
+  "title": "Energy Expo Mine Rescue Contest",
+  "start_date": "2017-10-05",
+  "end_date": "2017-10-05",
+  "location": "Clintwood, Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.671Z",
+  "updated_at": "2026-10-08T15:40:25.671Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 527,
+ "fields": {
+  "title": "National Metal and Nonmetal Mine Rescue Contest",
+  "start_date": "2018-07-23",
+  "end_date": "2018-07-26",
+  "location": "Lexington Convention Center, Lexington, Kentucky",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.684Z",
+  "updated_at": "2026-10-08T15:40:25.684Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 528,
+ "fields": {
+  "title": "Southern Regional Mine Rescue Contest",
+  "start_date": "2018-04-30",
+  "end_date": "2018-05-03",
+  "location": "New Iberia, Louisiana",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.699Z",
+  "updated_at": "2026-10-08T15:40:25.699Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 529,
+ "fields": {
+  "title": "Energy Expo Mine Rescue Contest",
+  "start_date": "2019-10-03",
+  "end_date": "2019-10-03",
+  "location": "Ridgeview School, Clintwood, Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.712Z",
+  "updated_at": "2026-10-08T15:40:25.712Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 530,
+ "fields": {
+  "title": "Southwest Wyoming Mutual Aid Mine Rescue Contest",
+  "start_date": "2021-05-09",
+  "end_date": "2021-05-13",
+  "location": "Rock Springs, Wyoming",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.721Z",
+  "updated_at": "2026-10-08T15:40:25.721Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 531,
+ "fields": {
+  "title": "Virginia Governor's Cup Mine Rescue Contest",
+  "start_date": "2021-06-09",
+  "end_date": "2021-06-09",
+  "location": "University of Virginia, Wise, Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.728Z",
+  "updated_at": "2026-10-08T15:40:25.728Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 532,
+ "fields": {
+  "title": "NMRA Post 7 Overmountain Mine Rescue Contest",
+  "start_date": "2023-06-28",
+  "end_date": "2023-06-29",
+  "location": "Abingdon, Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.735Z",
+  "updated_at": "2026-10-08T15:40:25.735Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 533,
+ "fields": {
+  "title": "Southeast Regional Mine Rescue Contest",
+  "start_date": "2023-03-28",
+  "end_date": "2023-03-29",
+  "location": "Dandridge, Tennessee",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.741Z",
+  "updated_at": "2026-10-08T15:40:25.741Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
+ "pk": 534,
+ "fields": {
+  "title": "Virginia Governor's Cup Mine Rescue Contest",
+  "start_date": "2023-05-31",
+  "end_date": "2023-06-01",
+  "location": "Wise, Virginia",
+  "description": "",
+  "contact_info": "",
+  "resources": [],
+  "created_at": "2026-10-08T15:40:25.748Z",
+  "updated_at": "2026-10-08T15:40:25.748Z"
+ }
+},
+{
+ "model": "pages.calendarevent",
  "pk": 535,
  "fields": {
   "title": "Kansas Regional Mine Rescue Competition",
@@ -4628,7 +6578,7 @@
  "fields": {
   "name": "Virginia Governor's Cup Mine Rescue Contest",
   "year": 2021,
-  "calendar_event": null,
+  "calendar_event": 531,
   "description": "University of Virginia, Wise, Virginia, June 9, 2021",
   "sort_date": null,
   "created_at": "2026-06-12T02:11:38.205Z",
@@ -4641,7 +6591,7 @@
  "fields": {
   "name": "Rocky Mountain Mine Rescue Contest (Craig, Colorado)",
   "year": 2021,
-  "calendar_event": null,
+  "calendar_event": 223,
   "description": "Craig, Colorado, June 14-17, 2021",
   "sort_date": null,
   "created_at": "2026-06-12T02:11:45.762Z",
@@ -4654,7 +6604,7 @@
  "fields": {
   "name": "Virginia Mining Institute Safety Days",
   "year": 2021,
-  "calendar_event": null,
+  "calendar_event": 225,
   "description": "Blacksburg Park and Recreational Community Center, Blacksburg, Virginia, August 3-5, 2021",
   "sort_date": null,
   "created_at": "2026-06-12T02:14:01.149Z",
@@ -4706,7 +6656,7 @@
  "fields": {
   "name": "Southwest Wyoming Mutual Aid Mine Rescue Contest",
   "year": 2021,
-  "calendar_event": null,
+  "calendar_event": 530,
   "description": "Rock Springs, Wyoming, May 9-13, 2021",
   "sort_date": null,
   "created_at": "2026-06-12T02:25:03.478Z",
@@ -4810,7 +6760,7 @@
  "fields": {
   "name": "Harlan County Safety Days Mine Rescue Contest",
   "year": 2022,
-  "calendar_event": null,
+  "calendar_event": 236,
   "description": "Cumberland Campus, SKCTC, Cumberland, Kentucky, July 19-21, 2022",
   "sort_date": null,
   "created_at": "2026-06-12T02:30:36.775Z",
@@ -4966,7 +6916,7 @@
  "fields": {
   "name": "Southeast Regional Mine Rescue Contest",
   "year": 2023,
-  "calendar_event": null,
+  "calendar_event": 533,
   "description": "Dandridge, Tennessee, March 28-29, 2023",
   "sort_date": null,
   "created_at": "2026-06-12T03:10:13.959Z",
@@ -4979,7 +6929,7 @@
  "fields": {
   "name": "Virginia Governor's Cup Mine Rescue Contest",
   "year": 2023,
-  "calendar_event": null,
+  "calendar_event": 534,
   "description": "Wise, Virginia, May 31 - June 1, 2023",
   "sort_date": null,
   "created_at": "2026-06-12T03:17:40.201Z",
@@ -4992,7 +6942,7 @@
  "fields": {
   "name": "Colorado Mine Rescue Contest",
   "year": 2023,
-  "calendar_event": null,
+  "calendar_event": 249,
   "description": "Craig, Colorado, June 12-15, 2023",
   "sort_date": null,
   "created_at": "2026-06-12T03:20:38.209Z",
@@ -5070,7 +7020,7 @@
  "fields": {
   "name": "Kansas Shootout Mine Rescue Contest",
   "year": 2023,
-  "calendar_event": null,
+  "calendar_event": 251,
   "description": "Hutchinson Community College, Hutchinson, Kansas, July 17-20, 2023",
   "sort_date": null,
   "created_at": "2026-06-12T03:42:22.140Z",
@@ -5109,7 +7059,7 @@
  "fields": {
   "name": "NMRA Post 5 Mine Rescue Contest",
   "year": 2023,
-  "calendar_event": null,
+  "calendar_event": 252,
   "description": "Morgantown, West Virginia, July 25-27, 2023",
   "sort_date": null,
   "created_at": "2026-06-12T03:56:59.180Z",
@@ -5135,7 +7085,7 @@
  "fields": {
   "name": "NMRA Post 7 Overmountain Mine Rescue Contest",
   "year": 2023,
-  "calendar_event": null,
+  "calendar_event": 532,
   "description": "Abingdon, Virginia, June 28-29, 2023",
   "sort_date": null,
   "created_at": "2026-06-12T03:59:30.706Z",
@@ -5499,7 +7449,7 @@
  "fields": {
   "name": "Robert E. Jones Mine Rescue Contest",
   "year": 2012,
-  "calendar_event": null,
+  "calendar_event": 407,
   "description": "Rend Lake College, Ina, Illinois, May 16, 2012",
   "sort_date": null,
   "created_at": "2026-06-12T21:14:36.253Z",
@@ -5512,7 +7462,7 @@
  "fields": {
   "name": "Kentucky Coal Academy Preshift Contest",
   "year": 2012,
-  "calendar_event": null,
+  "calendar_event": 405,
   "description": "Madisonville, Kentucky , April 11, 2012",
   "sort_date": null,
   "created_at": "2026-06-12T21:14:54.391Z",
@@ -5746,7 +7696,7 @@
  "fields": {
   "name": "Missouri Mine Rescue Contest",
   "year": 2012,
-  "calendar_event": null,
+  "calendar_event": 406,
   "description": "Missouri University of Science & Technology , Rolla, Missouri, October 2-4, 2012",
   "sort_date": null,
   "created_at": "2026-06-12T21:29:02.853Z",
@@ -5824,7 +7774,7 @@
  "fields": {
   "name": "National Coal Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 428,
   "description": "Columbus, Ohio, September 9-12, 2013 , , , •",
   "sort_date": null,
   "created_at": "2026-06-12T21:32:52.538Z",
@@ -5850,7 +7800,7 @@
  "fields": {
   "name": "NMRA Post 1 Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 424,
   "description": "Bluefield, West Virginia, May 18, 2013",
   "sort_date": null,
   "created_at": "2026-06-12T21:35:51.277Z",
@@ -5863,7 +7813,7 @@
  "fields": {
   "name": "NMRA Post 2 Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 426,
   "description": "Lexington, Kentucky, May 10, 2013",
   "sort_date": null,
   "created_at": "2026-06-12T21:35:53.998Z",
@@ -5876,7 +7826,7 @@
  "fields": {
   "name": "NMRA Post 5 Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 427,
   "description": "Mylan Park, Morgantown, West Virginia, August 13-15, 2013",
   "sort_date": null,
   "created_at": "2026-06-12T21:35:56.300Z",
@@ -5889,7 +7839,7 @@
  "fields": {
   "name": "Ohio Valley Mine Rescue Contest NMRA Post 6",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 434,
   "description": "Cadiz, Ohio, June 4-6, 2013",
   "sort_date": null,
   "created_at": "2026-06-12T21:38:09.883Z",
@@ -5902,7 +7852,7 @@
  "fields": {
   "name": "NMRA Post 11 Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 425,
   "description": "Madisonville, Kentucky, May 3, 2013",
   "sort_date": null,
   "created_at": "2026-06-12T21:38:43.685Z",
@@ -5915,7 +7865,7 @@
  "fields": {
   "name": "Four Corners Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 412,
   "description": "Colorado Mine Rescue Association, Farmington, New Mexico, April 23-25, 2013",
   "sort_date": null,
   "created_at": "2026-06-12T21:38:46.547Z",
@@ -5928,7 +7878,7 @@
  "fields": {
   "name": "Kentucky Coal Academy Skills Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 418,
   "description": "Madisonville, Kentucky, April 11, 2013",
   "sort_date": null,
   "created_at": "2026-06-12T21:39:59.982Z",
@@ -5941,7 +7891,7 @@
  "fields": {
   "name": "West Virginia Alliance Skills Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 446,
   "description": "Beckley, West Virginia, May 20-24, 2013",
   "sort_date": null,
   "created_at": "2026-06-12T21:40:03.675Z",
@@ -5954,7 +7904,7 @@
  "fields": {
   "name": "Indiana State Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 416,
   "description": "Vincennes, Indiana, June 5-6, 2013",
   "sort_date": null,
   "created_at": "2026-06-12T21:41:03.613Z",
@@ -5967,7 +7917,7 @@
  "fields": {
   "name": "Ohio Mine Safety Day MERD Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 433,
   "description": "Cadiz, Ohio, June 19, 2013",
   "sort_date": null,
   "created_at": "2026-06-12T21:41:27.049Z",
@@ -5980,7 +7930,7 @@
  "fields": {
   "name": "Colorado Coal Association Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 410,
   "description": "Craig, Colorado, July 16-18, 2013",
   "sort_date": null,
   "created_at": "2026-06-12T21:42:02.017Z",
@@ -5993,7 +7943,7 @@
  "fields": {
   "name": "Harlan County Safety Day Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 413,
   "description": "Southeast KY Community & Technical College, Cumberland, KY, July 23-25, 2013",
   "sort_date": null,
   "created_at": "2026-06-12T21:42:25.077Z",
@@ -6006,7 +7956,7 @@
  "fields": {
   "name": "Kentucky State Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 421,
   "description": "Kentucky Mining Institute, Lexington, KY, August 21-23, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:06:19.737Z",
@@ -6019,7 +7969,7 @@
  "fields": {
   "name": "VA Mining Institute Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 444,
   "description": "Blacksburg, Virginia, August 6-8, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:07:36.083Z",
@@ -6032,7 +7982,7 @@
  "fields": {
   "name": "MTTC Pennsylvania Rescue Skills Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 422,
   "description": "Mining Technology and Training Center, Prosperity, Pennsylvania, April 22-25, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:11:44.780Z",
@@ -6045,7 +7995,7 @@
  "fields": {
   "name": "Alabama State Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 408,
   "description": "Beville State Community College, Sumiton, Alabama, May 14-16, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:12:19.477Z",
@@ -6058,7 +8008,7 @@
  "fields": {
   "name": "Pennsylvania State Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 435,
   "description": "Carmichaels, Pennsylvania, August 20-22, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:13:11.082Z",
@@ -6071,7 +8021,7 @@
  "fields": {
   "name": "Kentucky OMSL Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 419,
   "description": "Prestonburg, Kentucky, April 24-25, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:13:16.829Z",
@@ -6084,7 +8034,7 @@
  "fields": {
   "name": "Western Kentucky Mining Institute Safety Days Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 447,
   "description": "Madisonville, Kentucky, May 22-23, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:15:17.689Z",
@@ -6110,7 +8060,7 @@
  "fields": {
   "name": "Southeastern Illinois College Skills Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 438,
   "description": "Harrisburg, Illinois, June 11-12, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:18:17.366Z",
@@ -6123,7 +8073,7 @@
  "fields": {
   "name": "Walter Energy Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 445,
   "description": "Birmingham, Alabama, April 30, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:18:26.524Z",
@@ -6136,7 +8086,7 @@
  "fields": {
   "name": "Kentucky River Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 420,
   "description": "Hazard, Kentucky, June 18-20, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:19:26.774Z",
@@ -6149,7 +8099,7 @@
  "fields": {
   "name": "Rocky Mt. Association Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 436,
   "description": "Price, Utah, June 4-6, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:20:12.984Z",
@@ -6162,7 +8112,7 @@
  "fields": {
   "name": "Hatfield and McCoy Mine Safety Competition",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 414,
   "description": "Pikeville, Kentucky, July 16-18, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:23:05.896Z",
@@ -6175,7 +8125,7 @@
  "fields": {
   "name": "VA Governor's Cup Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 443,
   "description": "Richlands, Virginia, June 7, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:32:46.382Z",
@@ -6188,7 +8138,7 @@
  "fields": {
   "name": "Illinois State Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 415,
   "description": "Williamson County Pavilion, Marion, Illinois, August 14, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:33:00.555Z",
@@ -6201,7 +8151,7 @@
  "fields": {
   "name": "Southern WV Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 440,
   "description": "Beckley, West Virginia, August 26-29, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:35:16.606Z",
@@ -6214,7 +8164,7 @@
  "fields": {
   "name": "Kentucky Coal Academy Preshift Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 417,
   "description": "Madisonville, Kentucky, September 4, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:36:04.455Z",
@@ -6227,7 +8177,7 @@
  "fields": {
   "name": "National M/NM Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 429,
   "description": "Reno, Nevada, July 30 - August 1, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:37:10.920Z",
@@ -6240,7 +8190,7 @@
  "fields": {
   "name": "Colorado School of Mines 2nd Biennial MERD Competition",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 411,
   "description": "Edgar Mine, Idaho Springs, Colorado, February 21-23, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:39:37.670Z",
@@ -6253,7 +8203,7 @@
  "fields": {
   "name": "North Central Regional Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 431,
   "description": "Wilmington, Illinois, April 3-4, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:43:44.229Z",
@@ -6266,7 +8216,7 @@
  "fields": {
   "name": "Southeast Regional Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 437,
   "description": "Maysville, Kentucky, June 18-20, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:47:18.206Z",
@@ -6279,7 +8229,7 @@
  "fields": {
   "name": "Northeast Regional Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 432,
   "description": "Rochester, New York, June 16-18, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:49:34.401Z",
@@ -6292,7 +8242,7 @@
  "fields": {
   "name": "Nevada Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 430,
   "description": "Winnemucca, Nevada, March 12-14, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:58:24.002Z",
@@ -6305,7 +8255,7 @@
  "fields": {
   "name": "Southern Regional Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 439,
   "description": "New Iberia, Louisiana, May 7-9, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T00:59:06.997Z",
@@ -6318,7 +8268,7 @@
  "fields": {
   "name": "Southwest Regional Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 441,
   "description": "Taos, New Mexico, May 21-23, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T01:01:08.916Z",
@@ -6331,7 +8281,7 @@
  "fields": {
   "name": "Tennessee Regional Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 442,
   "description": "Caryville, Tennessee, May 9, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T01:04:38.013Z",
@@ -6344,7 +8294,7 @@
  "fields": {
   "name": "Missouri Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 423,
   "description": "Rolla, Missouri, September 24-26, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T01:04:58.997Z",
@@ -6357,7 +8307,7 @@
  "fields": {
   "name": "Central Mine Rescue Contest",
   "year": 2013,
-  "calendar_event": null,
+  "calendar_event": 409,
   "description": "Kellogg, Idaho, May 16-18, 2013",
   "sort_date": null,
   "created_at": "2026-06-13T01:05:15.372Z",
@@ -6383,7 +8333,7 @@
  "fields": {
   "name": "NMRA Post 5 Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 465,
   "description": "Morgantown, West Virginia, August 12-14, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:12:37.294Z",
@@ -6396,7 +8346,7 @@
  "fields": {
   "name": "Ohio Valley Mine Rescue Contest NMRA Post 6",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 469,
   "description": "Moundsville, West Virginia, June 3-5, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:13:03.888Z",
@@ -6409,7 +8359,7 @@
  "fields": {
   "name": "NMRA Post 11 Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 464,
   "description": "Madisonville, Kentucky, May 2, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:21:09.733Z",
@@ -6422,7 +8372,7 @@
  "fields": {
   "name": "Colorado Mine Rescue Association Four Corners Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 451,
   "description": "Farmington, New Mexico, April 22-24, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:21:18.952Z",
@@ -6448,7 +8398,7 @@
  "fields": {
   "name": "Western Kentucky Mining Institute Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 482,
   "description": "Madisonville, Kentucky, May 21-22, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:27:21.134Z",
@@ -6461,7 +8411,7 @@
  "fields": {
   "name": "Kentucky Coal Academy Skills Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 457,
   "description": "Madison, Kentucky, April 10, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:34:19.940Z",
@@ -6474,7 +8424,7 @@
  "fields": {
   "name": "Rocky Mt. Association Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 472,
   "description": "Price, Utah, June 17-19, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:34:31.137Z",
@@ -6487,7 +8437,7 @@
  "fields": {
   "name": "Harlan County Safety Days Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 453,
   "description": "Cumberland, Kentucky, July 22-24, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:35:43.616Z",
@@ -6500,7 +8450,7 @@
  "fields": {
   "name": "Hatfield & McCoy Mine Safety Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 454,
   "description": "Pikeville, Kentucky, July 15-17, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:37:06.185Z",
@@ -6513,7 +8463,7 @@
  "fields": {
   "name": "Pennsylvania State Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 470,
   "description": "Carmichaels, Pennsylvania, August 19-21, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:39:33.273Z",
@@ -6526,7 +8476,7 @@
  "fields": {
   "name": "Illinois State Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 455,
   "description": "Marion, Illinois, September 10, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:44:08.724Z",
@@ -6552,7 +8502,7 @@
  "fields": {
   "name": "MTTC Pennsylvania Rescue Skills Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 461,
   "description": "Mining Technology and Training Center, Prosperity, Pennsylvania, April 21-25, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:48:55.662Z",
@@ -6565,7 +8515,7 @@
  "fields": {
   "name": "VA Mining Institute Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 480,
   "description": "Blacksburg Municipal Park, Blacksburg, Virginia, August 5-7, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:49:03.694Z",
@@ -6578,7 +8528,7 @@
  "fields": {
   "name": "Kentucky OMSL Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 459,
   "description": "Prestonburg, Kentucky, May 7-8, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:50:53.089Z",
@@ -6591,7 +8541,7 @@
  "fields": {
   "name": "Robert Earl Jones Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 471,
   "description": "Rend Lake College, Ina, Illinois, May 14, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:51:08.286Z",
@@ -6604,7 +8554,7 @@
  "fields": {
   "name": "Alabama State Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 448,
   "description": "Bevill State Community College, Sumiton, Alabama, May 20-22, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:53:36.864Z",
@@ -6617,7 +8567,7 @@
  "fields": {
   "name": "VA Governor's Cup Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 479,
   "description": "Wise, Virginia, May 20-22, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:54:28.327Z",
@@ -6630,7 +8580,7 @@
  "fields": {
   "name": "West Virginia Alliance Mine Rescue Skills Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 481,
   "description": "Beckley, West Virginia, May 12-16, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:54:43.093Z",
@@ -6643,7 +8593,7 @@
  "fields": {
   "name": "Indiana State Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 456,
   "description": "Vincennes, Indiana, June 4-5, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:56:54.908Z",
@@ -6656,7 +8606,7 @@
  "fields": {
   "name": "Southeast Illinois Mine Rescue Skills Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 473,
   "description": "Harrisburg, Illinois, June 10-11, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:58:46.808Z",
@@ -6669,7 +8619,7 @@
  "fields": {
   "name": "Kentucky River Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 460,
   "description": "Hazard, Kentucky, June 17-19, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T01:58:53.483Z",
@@ -6682,7 +8632,7 @@
  "fields": {
   "name": "Colorado Mine Rescue Association Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 450,
   "description": "Delta, Colorado, July 15-17, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T02:06:08.371Z",
@@ -6708,7 +8658,7 @@
  "fields": {
   "name": "Kentucky Mining Institute Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 458,
   "description": "Lexington, Kentucky, August 20-22, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T02:07:04.257Z",
@@ -6721,7 +8671,7 @@
  "fields": {
   "name": "Southern West Virginia Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 476,
   "description": "Beckley, West Virginia, August 25-28, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T02:07:23.088Z",
@@ -6747,7 +8697,7 @@
  "fields": {
   "name": "National M/NM Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 466,
   "description": "Lexington Convention Center, Lexington, Kentucky, August 4 7, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T02:07:45.003Z",
@@ -6760,7 +8710,7 @@
  "fields": {
   "name": "Midwest Regional Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 462,
   "description": "Wilmington, Illinois, April 15-17, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T02:09:53.027Z",
@@ -6773,7 +8723,7 @@
  "fields": {
   "name": "Southwestern Wyoming Mutual Aid Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 478,
   "description": "Rock Springs, Wyoming, May 10-11, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T02:12:41.412Z",
@@ -6786,7 +8736,7 @@
  "fields": {
   "name": "Nevada Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 467,
   "description": "Winnemucca, Nevada, March 12-13, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T02:14:05.560Z",
@@ -6799,7 +8749,7 @@
  "fields": {
   "name": "Southeast Regional Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 474,
   "description": "Dalton, Georgia, June 24-26, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T02:14:08.415Z",
@@ -6812,7 +8762,7 @@
  "fields": {
   "name": "Central Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 449,
   "description": "Silver Mountain Resort , Kellogg, Idaho, May 15-17, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T02:16:04.709Z",
@@ -6825,7 +8775,7 @@
  "fields": {
   "name": "Colorado Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 452,
   "description": "Golden, Colorado, May 20-22, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T02:16:06.754Z",
@@ -6838,7 +8788,7 @@
  "fields": {
   "name": "Northern Regional Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 468,
   "description": "Peek 'n Peak Resort, Peek 'n Peak, New York, June 17-19, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T02:21:29.751Z",
@@ -6851,7 +8801,7 @@
  "fields": {
   "name": "Southern Regional Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 475,
   "description": "New Iberia, Louisiana, May 6-8, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T02:22:35.343Z",
@@ -6864,7 +8814,7 @@
  "fields": {
   "name": "Southwest Regional Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 477,
   "description": "Carlsbad, New Mexico, April 22-24, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T02:23:09.599Z",
@@ -6877,7 +8827,7 @@
  "fields": {
   "name": "Missouri Regional Mine Rescue Contest",
   "year": 2014,
-  "calendar_event": null,
+  "calendar_event": 463,
   "description": "Rolla, Missouri, September 24-25, 2014",
   "sort_date": null,
   "created_at": "2026-06-13T02:23:30.821Z",
@@ -6890,7 +8840,7 @@
  "fields": {
   "name": "National Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 501,
   "description": "Lexington, Kentucky, September 14-17, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T02:24:33.143Z",
@@ -6903,7 +8853,7 @@
  "fields": {
   "name": "Welch Post 1 Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 515,
   "description": "Bluefield, West Virginia, May 30, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T02:26:53.484Z",
@@ -6916,7 +8866,7 @@
  "fields": {
   "name": "NMRA Post 5 Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 499,
   "description": "Morgantown, West Virginia, August 11-13, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T02:27:02.611Z",
@@ -6929,7 +8879,7 @@
  "fields": {
   "name": "NMRA Post 6 Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 500,
   "description": "Moundsville, West Virginia, June 2-4, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T02:30:32.245Z",
@@ -6942,7 +8892,7 @@
  "fields": {
   "name": "NMRA Post 11 Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 498,
   "description": "Madisonville, Kentucky, May 7, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T02:38:10.692Z",
@@ -6955,7 +8905,7 @@
  "fields": {
   "name": "Rocky Mt. Association Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 505,
   "description": "Price, Utah, June 16-19, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T02:40:10.183Z",
@@ -6968,7 +8918,7 @@
  "fields": {
   "name": "VA Governor's Cup Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 512,
   "description": "Wise, Virginia, June 3-4, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T02:42:21.230Z",
@@ -6981,7 +8931,7 @@
  "fields": {
   "name": "Harlan County Safety Days Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 488,
   "description": "Cumberland, Kentucky, July 21-23, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T02:42:32.830Z",
@@ -6994,7 +8944,7 @@
  "fields": {
   "name": "Pennsylvania State Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 504,
   "description": "Carmichaels, Pennsylvania, August 18-21, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T02:46:30.425Z",
@@ -7007,7 +8957,7 @@
  "fields": {
   "name": "Illinois State Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 490,
   "description": "Marion, Illinois, August 26, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T02:48:16.651Z",
@@ -7046,7 +8996,7 @@
  "fields": {
   "name": "MTTC Pennsylvania Skills Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 496,
   "description": "Prosperity, Pennsylvania, April 21-25, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T02:50:18.631Z",
@@ -7059,7 +9009,7 @@
  "fields": {
   "name": "Kentucky DMS Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 493,
   "description": "Prestonsburg, Kentucky, April 29-30, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T02:50:28.943Z",
@@ -7072,7 +9022,7 @@
  "fields": {
   "name": "Alabama State Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 483,
   "description": "Sumiton, Alabama, May 19-21, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T02:52:15.213Z",
@@ -7085,7 +9035,7 @@
  "fields": {
   "name": "West Virginia Alliance Mine Rescue Skills",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 516,
   "description": "Beckley, West Virginia, May 18-22, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T02:55:58.920Z",
@@ -7098,7 +9048,7 @@
  "fields": {
   "name": "KCA Regional Mine Rescue Skills Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 492,
   "description": "Madisonville, Kentucky, April 9, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T02:56:45.908Z",
@@ -7111,7 +9061,7 @@
  "fields": {
   "name": "WKMI Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 514,
   "description": "Madisonville, Kentucky, May 20-21, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T02:56:53.884Z",
@@ -7124,7 +9074,7 @@
  "fields": {
   "name": "SIC Mine Rescue Skills Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 506,
   "description": "Southeastern Illinois College, Harrisburg, Illinois, June 9-10, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T02:57:16.461Z",
@@ -7137,7 +9087,7 @@
  "fields": {
   "name": "Kentucky River Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 495,
   "description": "Hazard, Kentucky, June 16-18, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T02:57:36.581Z",
@@ -7150,7 +9100,7 @@
  "fields": {
   "name": "Indiana State Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 491,
   "description": "Vincennes, Indiana, June 3-4, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T02:59:37.256Z",
@@ -7163,7 +9113,7 @@
  "fields": {
   "name": "Hatfield & McCoy Mine Safety Competition",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 489,
   "description": "Pikeville, Kentucky, July 14-16, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T02:59:47.736Z",
@@ -7176,7 +9126,7 @@
  "fields": {
   "name": "Colorado Mine Rescue Association Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 485,
   "description": "Craig, Colorado, July 14-16, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T03:00:00.399Z",
@@ -7189,7 +9139,7 @@
  "fields": {
   "name": "Virginia Mining Institute Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 513,
   "description": "Blacksburg, West Virginia, August 4-6, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T03:00:14.626Z",
@@ -7202,7 +9152,7 @@
  "fields": {
   "name": "Kentucky Mining Institute Kentucky State Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 494,
   "description": "Lexington, Kentucky, August 18-21, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T03:00:39.808Z",
@@ -7215,7 +9165,7 @@
  "fields": {
   "name": "Southern West Virginia Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 509,
   "description": "Beckley, West Virginia, August 31-September 3, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T03:02:50.745Z",
@@ -7241,7 +9191,7 @@
  "fields": {
   "name": "Energy Expo Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 487,
   "description": "Clintwood, Virginia, October 8, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T03:03:02.943Z",
@@ -7254,7 +9204,7 @@
  "fields": {
   "name": "Nevada Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 502,
   "description": "Winnemucca, Nevada, March 11-12, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T03:03:17.642Z",
@@ -7267,7 +9217,7 @@
  "fields": {
   "name": "Southern Regional Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 508,
   "description": "New Iberia, Louisiana, May 5-7, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T03:03:44.139Z",
@@ -7280,7 +9230,7 @@
  "fields": {
   "name": "Colorado Regional Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 486,
   "description": "Golden, Colorado, May 19-21, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T03:04:53.930Z",
@@ -7293,7 +9243,7 @@
  "fields": {
   "name": "Northern Regional Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 503,
   "description": "Clymer, New York, July 29, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T03:05:11.563Z",
@@ -7306,7 +9256,7 @@
  "fields": {
   "name": "Central Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 484,
   "description": "Fairbanks, Alaska, May 13-14, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T03:05:39.059Z",
@@ -7319,7 +9269,7 @@
  "fields": {
   "name": "Southwest Regional Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 510,
   "description": "Ruidoso, New Mexico, April 21-23, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T03:06:03.951Z",
@@ -7332,7 +9282,7 @@
  "fields": {
   "name": "Tennessee Regional Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 511,
   "description": "Caryville, Tennessee, May 14, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T03:06:47.884Z",
@@ -7345,7 +9295,7 @@
  "fields": {
   "name": "Southeast Regional Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 507,
   "description": "Maysville, Kentucky, June 23-25, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T03:07:22.182Z",
@@ -7358,7 +9308,7 @@
  "fields": {
   "name": "Missouri Mine Rescue Contest",
   "year": 2015,
-  "calendar_event": null,
+  "calendar_event": 497,
   "description": "Rolla, Missouri, Sept. 28 Oct. 1, 2015",
   "sort_date": null,
   "created_at": "2026-06-13T03:07:24.653Z",
@@ -7384,7 +9334,7 @@
  "fields": {
   "name": "Kentucky Coal Academy Regional Skills Contest",
   "year": 2016,
-  "calendar_event": null,
+  "calendar_event": 89,
   "description": "Kentucky Coal Academy, , , Madisonville, Kentucky, April 7, 2016",
   "sort_date": null,
   "created_at": "2026-06-13T03:08:31.102Z",
@@ -7423,7 +9373,7 @@
  "fields": {
   "name": "NMRA Post 6 Contest",
   "year": 2016,
-  "calendar_event": null,
+  "calendar_event": 99,
   "description": "Moundsville, West Virginia, June 7-9, 2016",
   "sort_date": null,
   "created_at": "2026-06-13T03:09:32.626Z",
@@ -7436,7 +9386,7 @@
  "fields": {
   "name": "NMRA Post 11 Contest",
   "year": 2016,
-  "calendar_event": null,
+  "calendar_event": 519,
   "description": "Madisonville, Kentucky, May 11, 2016",
   "sort_date": null,
   "created_at": "2026-06-13T03:10:29.061Z",
@@ -7449,7 +9399,7 @@
  "fields": {
   "name": "WKMI Safety Days Mine Rescue Contest",
   "year": 2016,
-  "calendar_event": null,
+  "calendar_event": 95,
   "description": "Madisonville, Kentucky, May 25-26, 2016",
   "sort_date": null,
   "created_at": "2026-06-13T03:10:37.944Z",
@@ -7462,7 +9412,7 @@
  "fields": {
   "name": "Rocky Mt. Association Mine Rescue Contest",
   "year": 2016,
-  "calendar_event": null,
+  "calendar_event": 98,
   "description": "Price, Utah, June 6-9, 2016",
   "sort_date": null,
   "created_at": "2026-06-13T03:10:46.384Z",
@@ -7475,7 +9425,7 @@
  "fields": {
   "name": "Hatfield and McCoy Mine Rescue Contest",
   "year": 2016,
-  "calendar_event": null,
+  "calendar_event": 103,
   "description": "Pikeville, Kentucky, July 12-14, 2016",
   "sort_date": null,
   "created_at": "2026-06-13T03:13:03.919Z",
@@ -7657,7 +9607,7 @@
  "fields": {
   "name": "Pennsylvania State Mine Rescue Contest",
   "year": 2016,
-  "calendar_event": null,
+  "calendar_event": 109,
   "description": "Waynesburg, Pennsylvania, August 24, 2016",
   "sort_date": null,
   "created_at": "2026-06-13T03:20:58.748Z",
@@ -7683,7 +9633,7 @@
  "fields": {
   "name": "VA Mining Institute Mine Rescue Contest",
   "year": 2016,
-  "calendar_event": null,
+  "calendar_event": 106,
   "description": "Blacksburg, Virginia, August 1-5, 2016",
   "sort_date": null,
   "created_at": "2026-06-13T03:22:43.481Z",
@@ -7696,7 +9646,7 @@
  "fields": {
   "name": "National Mine Rescue Contest",
   "year": 2016,
-  "calendar_event": null,
+  "calendar_event": 520,
   "description": "Sponsored by the Nevada Mining Association, Reno-Sparks Convention Center, Reno, Nevada, July 25-28, 2016",
   "sort_date": null,
   "created_at": "2026-06-13T03:22:51.867Z",
@@ -7722,7 +9672,7 @@
  "fields": {
   "name": "Central Mine Rescue Contest",
   "year": 2016,
-  "calendar_event": null,
+  "calendar_event": 517,
   "description": "Kellogg, Idaho, May 12-14, 2016",
   "sort_date": null,
   "created_at": "2026-06-13T03:26:28.036Z",
@@ -7735,7 +9685,7 @@
  "fields": {
   "name": "Missouri S&T; Mine Rescue Contest",
   "year": 2016,
-  "calendar_event": null,
+  "calendar_event": 518,
   "description": "Rolla, Missouri, October 4-6, 2016",
   "sort_date": null,
   "created_at": "2026-06-13T03:27:05.368Z",
@@ -7761,7 +9711,7 @@
  "fields": {
   "name": "SW Wyoming Mutual Aid Contest",
   "year": 2016,
-  "calendar_event": null,
+  "calendar_event": 523,
   "description": "Rock Springs, Wyoming, June 7-9, 2016",
   "sort_date": null,
   "created_at": "2026-06-13T03:29:09.417Z",
@@ -7774,7 +9724,7 @@
  "fields": {
   "name": "Nevada Mine Rescue Contest",
   "year": 2016,
-  "calendar_event": null,
+  "calendar_event": 521,
   "description": "Winnemucca, Nevada, March 14-17, 2016",
   "sort_date": null,
   "created_at": "2026-06-13T03:29:51.190Z",
@@ -7787,7 +9737,7 @@
  "fields": {
   "name": "Northern Regional Mine Rescue Contest",
   "year": 2016,
-  "calendar_event": null,
+  "calendar_event": 522,
   "description": "Clymer, New York, June 14-16, 2016",
   "sort_date": null,
   "created_at": "2026-06-13T03:30:17.354Z",
@@ -7800,7 +9750,7 @@
  "fields": {
   "name": "Southwest Regional Mine Rescue Contest",
   "year": 2016,
-  "calendar_event": null,
+  "calendar_event": 525,
   "description": "Carlsbad, New Mexico, April 5-7, 2016",
   "sort_date": null,
   "created_at": "2026-06-13T03:30:39.466Z",
@@ -7813,7 +9763,7 @@
  "fields": {
   "name": "Southeast Regional Mine Rescue Contest",
   "year": 2016,
-  "calendar_event": null,
+  "calendar_event": 524,
   "description": "Maysville, Kentucky, June 20-24, 2016",
   "sort_date": null,
   "created_at": "2026-06-13T03:30:49.891Z",
@@ -7826,7 +9776,7 @@
  "fields": {
   "name": "National Mine Rescue, First Aid, Bench, and Preshift Contest",
   "year": 2017,
-  "calendar_event": null,
+  "calendar_event": 138,
   "description": "National Mine Academy, Beaver, West Virginia, September 11 14, 2017",
   "sort_date": null,
   "created_at": "2026-06-13T03:32:43.572Z",
@@ -7891,7 +9841,7 @@
  "fields": {
   "name": "WKMI Mine Rescue Contest",
   "year": 2017,
-  "calendar_event": null,
+  "calendar_event": 121,
   "description": "Madisonville, Kentucky, May 24 25, 2017",
   "sort_date": null,
   "created_at": "2026-06-13T03:41:48.186Z",
@@ -7956,7 +9906,7 @@
  "fields": {
   "name": "Kentucky DMS Mine Rescue Contest",
   "year": 2017,
-  "calendar_event": null,
+  "calendar_event": 115,
   "description": "Prestonsburg, Kentucky, April 19-20, 2017",
   "sort_date": null,
   "created_at": "2026-06-13T03:48:02.438Z",
@@ -7982,7 +9932,7 @@
  "fields": {
   "name": "SIC-IECC Skills Contest",
   "year": 2017,
-  "calendar_event": null,
+  "calendar_event": 127,
   "description": "Southeastern Illinois College, Harrisburg, Illinois, June 13-14, 2017",
   "sort_date": null,
   "created_at": "2026-06-13T03:48:25.566Z",
@@ -8034,7 +9984,7 @@
  "fields": {
   "name": "Tennessee Mine Rescue Contest",
   "year": 2017,
-  "calendar_event": null,
+  "calendar_event": 125,
   "description": "Cove Lake, Tennessee, June 6-8, 2017",
   "sort_date": null,
   "created_at": "2026-06-13T03:50:44.489Z",
@@ -8060,7 +10010,7 @@
  "fields": {
   "name": "Colorado Mine Rescue Contest",
   "year": 2017,
-  "calendar_event": null,
+  "calendar_event": 129,
   "description": "Craig, Colorado, July 10 13, 2017",
   "sort_date": null,
   "created_at": "2026-06-13T03:55:16.464Z",
@@ -8086,7 +10036,7 @@
  "fields": {
   "name": "VA Mining Institute Mine Rescue Contest",
   "year": 2017,
-  "calendar_event": null,
+  "calendar_event": 132,
   "description": "Blacksburg, Virginia, August 8-10, 2017",
   "sort_date": null,
   "created_at": "2026-06-13T03:55:43.894Z",
@@ -8125,7 +10075,7 @@
  "fields": {
   "name": "Energy Expo Mine Rescue Contest",
   "year": 2017,
-  "calendar_event": null,
+  "calendar_event": 526,
   "description": "Clinton, Virginia, October 5, 2017",
   "sort_date": null,
   "created_at": "2026-06-13T03:59:05.686Z",
@@ -8216,7 +10166,7 @@
  "fields": {
   "name": "National Mine Rescue Skills Contest",
   "year": 2018,
-  "calendar_event": null,
+  "calendar_event": 170,
   "description": "National Mine Academy, Beaver, West Virginia, September 17-20, 2018",
   "sort_date": null,
   "created_at": "2026-06-13T04:05:24.459Z",
@@ -8281,7 +10231,7 @@
  "fields": {
   "name": "Western Kentucky Safety Days Contest",
   "year": 2018,
-  "calendar_event": null,
+  "calendar_event": 153,
   "description": "Madisonville, Kentucky, May 23-24, 2018",
   "sort_date": null,
   "created_at": "2026-06-13T04:08:36.587Z",
@@ -8320,7 +10270,7 @@
  "fields": {
   "name": "Harlan County Safety Days Mine Rescue Contest",
   "year": 2018,
-  "calendar_event": null,
+  "calendar_event": 161,
   "description": "Cumberland Campus, SKCTC, Cumberland, Kentucky, July 24-26, 2018",
   "sort_date": null,
   "created_at": "2026-06-13T04:10:57.225Z",
@@ -8424,7 +10374,7 @@
  "fields": {
   "name": "Indiana State Mine Rescue Contest",
   "year": 2018,
-  "calendar_event": null,
+  "calendar_event": 155,
   "description": "Vincennes University, Fort Branch, Indiana, June 5-7, 2018",
   "sort_date": null,
   "created_at": "2026-06-13T04:20:11.745Z",
@@ -8437,7 +10387,7 @@
  "fields": {
   "name": "Rocky Mountain Mine Rescue Association Contest",
   "year": 2018,
-  "calendar_event": null,
+  "calendar_event": 158,
   "description": "Price, Utah, June 11-14, 2018",
   "sort_date": null,
   "created_at": "2026-06-13T04:20:17.426Z",
@@ -8476,7 +10426,7 @@
  "fields": {
   "name": "Pennsylvania State Contest",
   "year": 2018,
-  "calendar_event": null,
+  "calendar_event": 167,
   "description": "Waynesburg, Pennsylvania, August 21-22, 2018",
   "sort_date": null,
   "created_at": "2026-06-13T04:23:02.218Z",
@@ -8489,7 +10439,7 @@
  "fields": {
   "name": "Southern West Virginia Mine Rescue Contest",
   "year": 2018,
-  "calendar_event": null,
+  "calendar_event": 168,
   "description": "National Mine Academy, Beaver, West Virginia, August 27-30, 2018",
   "sort_date": null,
   "created_at": "2026-06-13T04:23:41.780Z",
@@ -8528,7 +10478,7 @@
  "fields": {
   "name": "National Metal and Nonmetal Mine Rescue Contest",
   "year": 2018,
-  "calendar_event": null,
+  "calendar_event": 527,
   "description": "Lexington Convention Center, Lexington, Kentucky, July 23-26, 2018",
   "sort_date": null,
   "created_at": "2026-06-13T04:26:00.015Z",
@@ -8541,7 +10491,7 @@
  "fields": {
   "name": "Southern Regional Mine Rescue Contest",
   "year": 2018,
-  "calendar_event": null,
+  "calendar_event": 528,
   "description": "New Iberia, Louisiana, April 30 - May 3, 2018",
   "sort_date": null,
   "created_at": "2026-06-13T04:28:04.944Z",
@@ -8580,7 +10530,7 @@
  "fields": {
   "name": "Western Kentucky Safety Days Mine Rescue Contest",
   "year": 2019,
-  "calendar_event": null,
+  "calendar_event": 184,
   "description": "Kentucky Coal Academy, Madisonville, Kentucky, May 22-23, 2019",
   "sort_date": null,
   "created_at": "2026-06-13T04:31:30.469Z",
@@ -8632,7 +10582,7 @@
  "fields": {
   "name": "Harlan County Safety Days Mine Rescue Contest",
   "year": 2019,
-  "calendar_event": null,
+  "calendar_event": 194,
   "description": "Cumberland Campus, SKCTC, Cumberland, Kentucky, July 23-25, 2019",
   "sort_date": null,
   "created_at": "2026-06-13T04:36:36.087Z",
@@ -8658,7 +10608,7 @@
  "fields": {
   "name": "Kentucky State Mine Rescue Contest",
   "year": 2019,
-  "calendar_event": null,
+  "calendar_event": 197,
   "description": "Kentucky Mining Institute, Lexington Convention Center, Lexington, Kentucky, August 19-22, 2019",
   "sort_date": null,
   "created_at": "2026-06-13T04:37:44.535Z",
@@ -8814,7 +10764,7 @@
  "fields": {
   "name": "Illinois State Mine Rescue Contest",
   "year": 2019,
-  "calendar_event": null,
+  "calendar_event": 200,
   "description": "Marion, Illinois, August 28, 2019",
   "sort_date": null,
   "created_at": "2026-06-13T04:49:17.062Z",
@@ -8827,7 +10777,7 @@
  "fields": {
   "name": "Southern West Virginia Mine Rescue Contest",
   "year": 2019,
-  "calendar_event": null,
+  "calendar_event": 199,
   "description": "National Mine Academy, Beaver, West Virginia, August 26-29, 2019",
   "sort_date": null,
   "created_at": "2026-06-13T04:49:25.241Z",
@@ -8840,7 +10790,7 @@
  "fields": {
   "name": "Energy Expo Mine Rescue Contest",
   "year": 2019,
-  "calendar_event": null,
+  "calendar_event": 529,
   "description": "Ridgeview School, Clintwood, Virginia, October 3, 2019",
   "sort_date": null,
   "created_at": "2026-06-13T04:49:38.589Z",
