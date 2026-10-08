@@ -100,24 +100,59 @@
     .chip:hover { border-color: var(--ink); color: var(--ink); }
     .chip.active { background: var(--red); border-color: var(--red); color: var(--bg); }
 
-    /* The Written Test chip is a dropdown of test subjects. */
+    /* The Written Test chip opens a menu of test subjects. */
+    .chip-menu { position: relative; }
+
     .chip-select {
-        -webkit-appearance: none; appearance: none;
-        box-sizing: border-box;
-        field-sizing: content;  /* as wide as the option shown, not the longest */
         padding-right: 32px;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%235b6470' stroke-width='1.6'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
         background-position: right 13px center;
     }
-    .chip-select:focus { outline: none; box-shadow: 0 0 0 3px rgba(192, 54, 44, 0.12); }
+    .chip-select:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(192, 54, 44, 0.12); }
     .chip-select.active {
         background-color: var(--red);
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23f4f1ec' stroke-width='1.6'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
         background-position: right 13px center;
     }
-    .chip-select option { text-transform: none; color: var(--ink); background: var(--surface); }
+
+    .chip-menu-list {
+        position: absolute;
+        top: calc(100% + 6px);
+        left: 0;
+        z-index: 30;
+        min-width: 100%;
+        max-width: calc(100vw - 32px);
+        background: var(--surface);
+        border: 1px solid var(--line-2);
+        border-radius: 12px;
+        box-shadow: 0 10px 24px -12px rgba(43, 52, 64, 0.35);
+        padding: 6px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        overflow-y: auto;
+    }
+    .chip-menu-list[hidden] { display: none; }
+
+    .chip-menu-option {
+        font-family: var(--font-display);
+        font-weight: 500;
+        font-size: 12.5px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        text-align: left;
+        white-space: nowrap;
+        color: var(--steel);
+        background: transparent;
+        border: none;
+        border-radius: 8px;
+        padding: 9px 12px;
+        cursor: pointer;
+    }
+    .chip-menu-option:hover, .chip-menu-option:focus-visible { outline: none; background: var(--surface-2); color: var(--ink); }
+    .chip-menu-option[aria-selected="true"] { color: var(--red); }
 
     .repo-resultcount { font-family: var(--font-mono); font-size: 12px; color: var(--muted); white-space: nowrap; }
 
@@ -487,37 +522,16 @@
                     <button type="button" class="chip active" data-cat="" aria-pressed="true">All</button>
                     {% for slug, label in categories %}
                         {% if slug == 'written' %}
-                            <select class="chip chip-select" id="repo-test" data-cat="{{ slug }}" aria-label="Filter by written test">
-                                {# The chip's label when off; hidden from the open list. #}
-                                <option value="" hidden>{{ label }}</option>
-                                <option value="all">All Written Tests</option>
-                                {% for test_slug, test_label in written_test_subjects %}
-                                    <option value="{{ test_slug }}">{{ test_label }} Written Test</option>
-                                {% endfor %}
-                            </select>
-                            <script>
-                                // Browsers without field-sizing size a <select> to its
-                                // longest option; fit it to the shown one instead. Runs
-                                // here, before first paint, so the chip never flashes wide.
-                                (function (sel) {
-                                    if (window.CSS && CSS.supports('field-sizing', 'content')) {
-                                        sel.fitWidth = function () {};
-                                        return;
-                                    }
-                                    sel.fitWidth = function () {
-                                        var probe = document.createElement('span');
-                                        probe.className = 'chip';
-                                        probe.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap;padding-right:32px';
-                                        probe.textContent = sel.options[sel.selectedIndex].text;
-                                        sel.parentNode.appendChild(probe);
-                                        sel.style.width = Math.ceil(probe.getBoundingClientRect().width) + 'px';
-                                        probe.remove();
-                                    };
-                                    sel.fitWidth();
-                                    // Webfonts can land after first paint and change the text width.
-                                    if (document.fonts) document.fonts.ready.then(sel.fitWidth);
-                                })(document.getElementById('repo-test'));
-                            </script>
+                            <div class="chip-menu">
+                                <button type="button" class="chip chip-select" id="repo-test" data-cat="{{ slug }}" data-label="{{ label }}"
+                                        aria-haspopup="listbox" aria-expanded="false" aria-controls="repo-test-menu">{{ label }}</button>
+                                <div class="chip-menu-list" id="repo-test-menu" role="listbox" aria-label="Written test" hidden>
+                                    <button type="button" class="chip-menu-option" role="option" data-value="all" aria-selected="false">All Written Tests</button>
+                                    {% for test_slug, test_label in written_test_subjects %}
+                                        <button type="button" class="chip-menu-option" role="option" data-value="{{ test_slug }}" aria-selected="false">{{ test_label }} Written Test</button>
+                                    {% endfor %}
+                                </div>
+                            </div>
                         {% else %}
                             <button type="button" class="chip" data-cat="{{ slug }}" aria-pressed="false">{{ label }}</button>
                         {% endif %}
@@ -694,9 +708,14 @@
         var search = document.getElementById('repo-search');
         if (!search) return;  // nothing to filter (empty archive)
 
-        var chips = Array.prototype.slice.call(document.querySelectorAll('button.chip'));
+        var chips = Array.prototype.slice.call(document.querySelectorAll('button.chip:not(.chip-select)'));
         var allChip = chips.filter(function (c) { return c.dataset.cat === ''; })[0];
-        var testSelect = document.getElementById('repo-test');
+        // The Written Test chip and its menu; testValue is '' (off), 'all',
+        // or one subject slug.
+        var testChip = document.getElementById('repo-test');
+        var testMenu = document.getElementById('repo-test-menu');
+        var testOptions = testMenu ? Array.prototype.slice.call(testMenu.querySelectorAll('.chip-menu-option')) : [];
+        var testValue = '';
         var clearBtn = document.getElementById('repo-clear');
         var resultCount = document.getElementById('repo-resultcount');
         var noResults = document.getElementById('repo-noresults');
@@ -782,7 +801,7 @@
             var words = terms(q);
             var cats = activeCatList();
             // The Written Test chip's dropdown: '' off, 'all', or one subject.
-            var test = activeCats.written && testSelect && testSelect.value !== 'all' ? testSelect.value : '';
+            var test = activeCats.written && testValue !== 'all' ? testValue : '';
             var filtering = q.length > 0 || cats.length > 0;
             var totalProblems = 0, totalComps = 0;
 
@@ -864,10 +883,16 @@
 
         function syncChips() {
             var none = activeCatList().length === 0;
-            if (testSelect) {
-                if (!activeCats.written) testSelect.value = '';
-                testSelect.classList.toggle('active', !!activeCats.written);
-                testSelect.fitWidth();  // see the script beside the select
+            if (testChip) {
+                if (!activeCats.written) testValue = '';
+                var picked = null;
+                testOptions.forEach(function (o) {
+                    var on = o.dataset.value === testValue;
+                    o.setAttribute('aria-selected', on ? 'true' : 'false');
+                    if (on) picked = o;
+                });
+                testChip.textContent = picked ? picked.textContent : testChip.dataset.label;
+                testChip.classList.toggle('active', !!activeCats.written);
             }
             chips.forEach(function (c) {
                 var on = c.dataset.cat === '' ? none : !!activeCats[c.dataset.cat];
@@ -893,13 +918,64 @@
 
         search.addEventListener('input', apply);
 
+        if (testChip) {
+            function openMenu(focusOption) {
+                testMenu.hidden = false;
+                testChip.setAttribute('aria-expanded', 'true');
+                // The toolbar is sticky, so the page can't scroll a long menu
+                // into view on a short screen; scroll inside the menu instead.
+                testMenu.style.maxHeight = Math.max(160, window.innerHeight - testMenu.getBoundingClientRect().top - 12) + 'px';
+                // Keep it on screen when the chip wraps near the right edge.
+                testMenu.style.left = '0px';
+                var overflow = testMenu.getBoundingClientRect().right - (document.documentElement.clientWidth - 16);
+                if (overflow > 0) testMenu.style.left = -overflow + 'px';
+                if (focusOption) {
+                    var sel = testOptions.filter(function (o) { return o.getAttribute('aria-selected') === 'true'; })[0];
+                    (sel || testOptions[0]).focus();
+                }
+            }
+            function closeMenu(refocus) {
+                testMenu.hidden = true;
+                testChip.setAttribute('aria-expanded', 'false');
+                if (refocus) testChip.focus();
+            }
 
-        if (testSelect) {
-            testSelect.addEventListener('change', function () {
-                if (testSelect.value) activeCats.written = true;
-                else delete activeCats.written;
-                syncChips();
-                apply();
+            testChip.addEventListener('click', function () {
+                if (testMenu.hidden) openMenu(false);
+                else closeMenu(false);
+            });
+            testChip.addEventListener('keydown', function (e) {
+                if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    openMenu(true);
+                }
+            });
+            testOptions.forEach(function (o, i) {
+                o.addEventListener('click', function () {
+                    testValue = o.dataset.value;
+                    activeCats.written = true;
+                    closeMenu(true);
+                    syncChips();
+                    apply();
+                });
+                o.addEventListener('keydown', function (e) {
+                    var next = null;
+                    if (e.key === 'ArrowDown') next = testOptions[Math.min(i + 1, testOptions.length - 1)];
+                    else if (e.key === 'ArrowUp') next = testOptions[Math.max(i - 1, 0)];
+                    else if (e.key === 'Home') next = testOptions[0];
+                    else if (e.key === 'End') next = testOptions[testOptions.length - 1];
+                    else if (e.key === 'Tab') closeMenu(false);
+                    if (next) {
+                        e.preventDefault();
+                        next.focus();
+                    }
+                });
+            });
+            testMenu.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') closeMenu(true);
+            });
+            document.addEventListener('click', function (e) {
+                if (!testMenu.hidden && !testChip.parentNode.contains(e.target)) closeMenu(false);
             });
         }
 
