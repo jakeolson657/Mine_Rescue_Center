@@ -282,6 +282,42 @@ def categorize_problem(title, competition_name=''):
     return [slug for slug in _CATEGORY_ORDER if slug in slugs]
 
 
+# Written-test subjects for the past-problems "Written test" dropdown, in
+# display order: (slug, label).
+WRITTEN_TEST_SUBJECTS = [
+    ('field', 'Field'),
+    ('first-aid', 'First Aid'),
+    ('team-trainer', 'Team Trainer'),
+    ('preshift', 'Preshift'),
+    ('bench', 'Bench'),
+    ('technician', 'Technician'),
+]
+
+# Matched against a written-test file's title in this order; the first hit is
+# its subject, so an answer key ("First Aid Written Test Answers") lands with
+# its test. Bench (any apparatus test) comes before technician and field, so
+# "Technician BG4 Written Test" and "BG4 Day 1 Written Test" are bench tests.
+_WRITTEN_TEST_KEYWORDS = [
+    ('first-aid', ('first aid', 'first-aid')),
+    ('team-trainer', ('trainer',)),
+    ('preshift', ('preshift', 'pre-shift')),
+    ('bench', ('bench', 'bg4', 'bg-4', 'drager', 'biopak', 'biomarine',
+               'bio 240', '240r', 'pro air', 'proair')),
+    ('technician', ('technician', 'tech team')),
+    ('field', ('field', 'mine rescue', 'day 1', 'day 2', 'general')),
+]
+
+
+def written_test_subjects(title):
+    """Return the written-test subject slug for a file title, as a list, or
+    [] when the title doesn't say ("Practice Exam No. 1")."""
+    text = (title or '').lower()
+    for slug, keywords in _WRITTEN_TEST_KEYWORDS:
+        if any(k in text for k in keywords):
+            return [slug]
+    return []
+
+
 class CompetitionProblem(models.Model):
     competition = models.ForeignKey(Competition, on_delete=models.CASCADE, related_name='problems')
     title = models.CharField(max_length=200, help_text="e.g. Coal Day 1, Nonmetal Day 2, Bench, First Aid")

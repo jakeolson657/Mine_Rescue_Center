@@ -100,6 +100,26 @@
     .chip:hover { border-color: var(--ink); color: var(--ink); }
     .chip.active { background: var(--red); border-color: var(--red); color: var(--bg); }
 
+    .test-select { display: flex; align-items: center; gap: 10px; }
+
+    .test-select select {
+        font-family: var(--font-display);
+        font-weight: 500;
+        font-size: 12.5px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--steel);
+        background: var(--surface-2);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        padding: 7px 12px;
+        cursor: pointer;
+        max-width: 100%;
+    }
+    .test-select select:hover { border-color: var(--ink); color: var(--ink); }
+    .test-select select:focus { outline: none; border-color: var(--red); box-shadow: 0 0 0 3px rgba(192, 54, 44, 0.12); }
+    .test-select select.active { background: var(--red); border-color: var(--red); color: var(--bg); }
+
     .repo-resultcount { font-family: var(--font-mono); font-size: 12px; color: var(--muted); white-space: nowrap; }
 
     .repo-clear {
@@ -470,6 +490,15 @@
                         <button type="button" class="chip" data-cat="{{ slug }}" aria-pressed="false">{{ label }}</button>
                     {% endfor %}
                 </div>
+                <label class="test-select">
+                    <span class="filter-label">Written test</span>
+                    <select id="repo-test">
+                        <option value="">All tests</option>
+                        {% for slug, label in written_test_subjects %}
+                            <option value="{{ slug }}">{{ label }}</option>
+                        {% endfor %}
+                    </select>
+                </label>
                 <span class="repo-resultcount" id="repo-resultcount" aria-live="polite"></span>
                 <button type="button" class="repo-clear" id="repo-clear" hidden>Clear filters</button>
             </div>
@@ -643,6 +672,7 @@
 
         var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
         var allChip = chips.filter(function (c) { return c.dataset.cat === ''; })[0];
+        var testSelect = document.getElementById('repo-test');
         var clearBtn = document.getElementById('repo-clear');
         var resultCount = document.getElementById('repo-resultcount');
         var noResults = document.getElementById('repo-noresults');
@@ -677,7 +707,8 @@
                                 fileCountEl: fileCount,
                                 cats: (p.dataset.categories || '').split(' ').filter(Boolean),
                                 search: (p.dataset.search || '').toLowerCase(),
-                                files: docs.map(function (d) { return (d.title || '').toLowerCase(); })
+                                files: docs.map(function (d) { return (d.title || '').toLowerCase(); }),
+                                tests: docs.map(function (d) { return d.tests || []; })
                             };
                         })
                     };
@@ -726,7 +757,8 @@
             var q = search.value.trim().toLowerCase();
             var words = terms(q);
             var cats = activeCatList();
-            var filtering = q.length > 0 || cats.length > 0;
+            var test = testSelect ? testSelect.value : '';
+            var filtering = q.length > 0 || cats.length > 0 || !!test;
             var totalProblems = 0, totalComps = 0;
 
             years.forEach(function (y) {
@@ -738,17 +770,21 @@
                         var catOk = cats.length === 0 || p.cats.some(function (x) { return activeCats[x]; });
                         var base = c.search + ' ' + p.search;
                         var matchedFiles = null;  // null = show every file
+                        if (test) {
+                            // A written test picked from the dropdown: only its files.
+                            matchedFiles = [];
+                            p.tests.forEach(function (t, i) {
+                                if (t.indexOf(test) !== -1) matchedFiles.push(i);
+                            });
+                        }
                         var searchOk = !q || compSearchMatch || hasAll(base, words);
                         if (!searchOk) {
                             // The words name specific files ("2026 trainer test"):
                             // show only those files.
-                            matchedFiles = [];
-                            p.files.forEach(function (title, i) {
-                                if (hasAll(base + ' ' + title, words)) matchedFiles.push(i);
-                            });
-                            searchOk = matchedFiles.length > 0;
+                            matchedFiles = (matchedFiles || p.files.map(function (_, i) { return i; }))
+                                .filter(function (i) { return hasAll(base + ' ' + p.files[i], words); });
                         }
-                        var vis = catOk && searchOk;
+                        var vis = catOk && (matchedFiles ? matchedFiles.length > 0 : searchOk);
                         p.el.hidden = !vis;
                         if (vis) visProblems++;
                         showFiles(p, vis ? matchedFiles : null);
@@ -757,7 +793,7 @@
                     var compVisible;
                     if (c.problems.length === 0) {
                         // A contest with no problems yet: only when not narrowing by type.
-                        compVisible = !filtering || (cats.length === 0 && compSearchMatch);
+                        compVisible = !filtering || (cats.length === 0 && !test && compSearchMatch);
                     } else {
                         compVisible = visProblems > 0;
                     }
@@ -826,6 +862,13 @@
 
         search.addEventListener('input', apply);
 
+        if (testSelect) {
+            testSelect.addEventListener('change', function () {
+                testSelect.classList.toggle('active', !!testSelect.value);
+                apply();
+            });
+        }
+
         // Arriving from the calendar's "Search past problems for …" link.
         var initial = new URLSearchParams(window.location.search).get('q');
         if (initial) {
@@ -838,6 +881,10 @@
                 search.value = '';
                 activeCats = {};
                 syncChips();
+                if (testSelect) {
+                    testSelect.value = '';
+                    testSelect.classList.remove('active');
+                }
                 apply();
                 search.focus();
             });

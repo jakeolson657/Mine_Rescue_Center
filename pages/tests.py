@@ -12,6 +12,7 @@ from .calendar_export import (
 from .models import (
     CalendarEvent, Competition, CompetitionProblem, GeocodedLocation,
     SiteConfiguration, PROBLEM_CATEGORIES, categorize_problem,
+    written_test_subjects,
 )
 
 
@@ -335,6 +336,31 @@ class CategorizeProblemTests(TestCase):
 
     def test_multiple_categories_keep_display_order(self):
         self.assertEqual(categorize_problem("Coal Written Exam"), ['coal', 'written'])
+
+
+class WrittenTestSubjectTests(TestCase):
+    def test_answer_keys_land_with_their_test(self):
+        self.assertEqual(written_test_subjects("First Aid Written Test"), ['first-aid'])
+        self.assertEqual(written_test_subjects("First Aid Written Test Answers"), ['first-aid'])
+        self.assertEqual(written_test_subjects("Coal Trainer Written Test"), ['team-trainer'])
+        self.assertEqual(written_test_subjects("Pre-Shift Written Test Key"), ['preshift'])
+
+    def test_field_tests(self):
+        for title in ("Field Written Test", "Day 1 Written Test", "MNM Mine Rescue Written Test"):
+            self.assertEqual(written_test_subjects(title), ['field'], title)
+
+    def test_bench_and_technician_tests(self):
+        self.assertEqual(written_test_subjects("BG4 Day 1 Written Test"), ['bench'])
+        self.assertEqual(written_test_subjects("BioMarine 240R Bench Written Test"), ['bench'])
+        self.assertEqual(written_test_subjects("ProAir Written Test"), ['bench'])
+        self.assertEqual(written_test_subjects("Technician Drager BG4 Written Test"), ['bench'])
+        self.assertEqual(written_test_subjects("Technician Apparatus Biomarine Written Test"), ['bench'])
+        self.assertEqual(written_test_subjects("Technician iBrid MX6 Written Test"), ['technician'])
+        self.assertEqual(written_test_subjects("Tech Team Written Test"), ['technician'])
+
+    def test_unnamed_tests_have_no_subject(self):
+        self.assertEqual(written_test_subjects("Practice Exam No. 1"), [])
+        self.assertEqual(written_test_subjects("Gas Explosive Ranges"), [])
 
 
 class PastProblemsPageTests(TestCase):

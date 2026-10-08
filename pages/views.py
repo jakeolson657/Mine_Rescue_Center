@@ -11,6 +11,7 @@ from calendar import Calendar, month_name, monthrange
 from .models import (
     CalendarEvent, Competition, SiteConfiguration,
     PROBLEM_CATEGORIES, categorize_problem,
+    WRITTEN_TEST_SUBJECTS, written_test_subjects,
     InstructionGuide, CompetitionRuleDocument, Scorecard,
     Quiz, BenchingApparatus, FirstAidResource, RopeRescueResource,
 )
@@ -101,9 +102,9 @@ def past_problems(request):
     for competition in competitions:
         competition.state_name = state_name(competition.location)
         for problem in competition.problems.all():
-            problem.category_csv = ' '.join(
-                categorize_problem(problem.title, competition.name)
-            )
+            categories = categorize_problem(problem.title, competition.name)
+            problem.category_csv = ' '.join(categories)
+            is_written = 'written' in categories
             quiz_by_doc_id = {
                 q.source_document_id: q.pk for q in problem.quizzes.all() if q.source_document_id
             }
@@ -113,6 +114,8 @@ def past_problems(request):
                     'quiz_url': reverse('quiz_detail', args=[quiz_by_doc_id[d.pk]]) if d.pk in quiz_by_doc_id else None,
                     'key_url': d.answer_key.url if d.answer_key else None,
                     'key_kind': d.answer_key_kind,
+                    # Subjects for the "Written test" dropdown filter.
+                    'tests': written_test_subjects(d.title) if is_written else [],
                 }
                 for d in problem.documents.all()
             ]
@@ -130,6 +133,7 @@ def past_problems(request):
     return render(request, 'past_problems.html', {
         'year_groups': year_groups,
         'categories': PROBLEM_CATEGORIES,
+        'written_test_subjects': WRITTEN_TEST_SUBJECTS,
         'form': form,
         'submitted': request.GET.get('submitted') == '1',
         'submit_error': submit_error,
