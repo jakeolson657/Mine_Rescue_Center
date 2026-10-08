@@ -236,6 +236,29 @@ class CalendarSearchTests(TestCase):
         self.assertEqual(self.titles('kmi 2015'), [self.lex_old.pk])
         self.assertEqual(self.titles('2017 kmi'), [])
 
+    def test_file_search_narrows_to_matching_files(self):
+        from django.core.files.base import ContentFile
+        from .models import ProblemDocument
+        comp = Competition.objects.create(name='KMI', year=2019, calendar_event=self.lex)
+        problem = CompetitionProblem.objects.create(competition=comp, title='Written Tests')
+        for title in ('Team Trainer Written Test', 'Field Written Test'):
+            doc = ProblemDocument(problem=problem, title=title)
+            doc.file.save('t.pdf', ContentFile(b'%PDF-'), save=True)
+            self.addCleanup(doc.file.delete, save=False)
+        self.va.resources = [{'label': 'Final Results', 'url': 'https://example.com/r.pdf'}]
+        self.va.save()
+
+        results, _ = search_events('2019 trainer test')
+        self.assertEqual([e.pk for e in results], [self.lex.pk])
+        self.assertEqual([f['label'] for f in results[0].matched_files], ['Team Trainer Written Test'])
+
+        results, _ = search_events('governors results')
+        self.assertEqual([f['label'] for f in results[0].matched_files], ['Final Results'])
+
+        # A contest-level match lists the event without picking out files.
+        results, _ = search_events('2019 kmi')
+        self.assertEqual(results[0].matched_files, [])
+
     def test_plural_matches_singular(self):
         self.assertEqual(self.titles('nationals'), [self.nat.pk])
 

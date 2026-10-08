@@ -2,14 +2,27 @@
 <ul class="cs-list">
     {% for e in search_results %}
     <li class="cs-item">
-        <a class="cs-link" href="{% url 'event_detail' e.id %}">
-            <span class="cs-title">{{ e.title }}</span>
-            <span class="cs-meta">
-                {% if e.upcoming %}<span class="cs-upcoming">Upcoming</span>{% endif %}
-                <span class="cs-date">{{ e.start_date|date:"M j" }}{% if e.end_date != e.start_date %} – {% if e.end_date.month != e.start_date.month or e.end_date.year != e.start_date.year %}{{ e.end_date|date:"M j" }}{% else %}{{ e.end_date|date:"j" }}{% endif %}{% endif %}, {{ e.end_date|date:"Y" }}</span>
-                {% if e.place %}<span class="cs-place">{{ e.place }}</span>{% endif %}
-            </span>
-        </a>
+        <div class="cs-main">
+            <a class="cs-link" href="{% url 'event_detail' e.id %}">
+                <span class="cs-title">{{ e.title }}</span>
+                <span class="cs-meta">
+                    {% if e.upcoming %}<span class="cs-upcoming">Upcoming</span>{% endif %}
+                    <span class="cs-date">{{ e.start_date|date:"M j" }}{% if e.end_date != e.start_date %} – {% if e.end_date.month != e.start_date.month or e.end_date.year != e.start_date.year %}{{ e.end_date|date:"M j" }}{% else %}{{ e.end_date|date:"j" }}{% endif %}{% endif %}, {{ e.end_date|date:"Y" }}</span>
+                    {% if e.place %}<span class="cs-place">{{ e.place }}</span>{% endif %}
+                </span>
+            </a>
+            {% if e.matched_files %}
+            <ul class="cs-files" aria-label="Matching files">
+                {% for f in e.matched_files %}
+                <li><a class="cs-file" href="{{ f.url }}" target="_blank" rel="noopener">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{% if f.context == 'Link' %}<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>{% else %}<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>{% endif %}</svg>
+                    <span class="cs-file-label">{{ f.label }}</span>
+                    {% if f.context != 'Link' %}<span class="cs-file-context">{{ f.context }}</span>{% endif %}
+                </a></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
         {% if not preview %}
         <a class="cs-month" href="{% url 'calendar' %}?year={{ e.start_date.year }}&month={{ e.start_date.month }}">Show in calendar</a>
         {% endif %}
