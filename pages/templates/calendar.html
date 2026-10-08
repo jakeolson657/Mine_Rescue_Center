@@ -277,6 +277,179 @@
         font-size: 13px;
     }
 
+    /* ---------- Locations map ---------- */
+    .cal-map { margin-top: 44px; }
+
+    .cal-map-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 10px 20px;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+    }
+
+    .cal-map-bar h2 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 26px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--ink);
+    }
+
+    .cal-map-legend {
+        display: flex;
+        gap: 18px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: var(--font-display);
+        font-size: 12px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--steel);
+    }
+
+    .cal-map-legend li { display: inline-flex; align-items: center; gap: 7px; }
+    .lg-dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; border: 2px solid var(--surface); box-shadow: 0 0 0 1px rgba(43, 52, 64, 0.25); }
+    .lg-underground { background: var(--red); }
+    .lg-surface { background: var(--steel); }
+    .lg-mixed { background: linear-gradient(90deg, var(--steel) 50%, var(--red) 50%); }
+
+    .cal-map-frame {
+        position: relative;
+        background: var(--surface);
+        border: 1px solid var(--line-2);
+        border-radius: 14px;
+        padding: 18px;
+        box-shadow: 0 1px 2px rgba(43, 52, 64, 0.04);
+    }
+
+    .cal-map-svg { display: block; width: 100%; height: auto; }
+
+    .map-states path {
+        fill: #ece7de;
+        stroke: var(--surface);
+        stroke-width: 1;
+        stroke-linejoin: round;
+    }
+
+    .map-dot { cursor: pointer; outline: none; }
+    .map-dot .md-halo { fill: transparent; }
+    .map-dot .md-core { stroke: var(--surface); stroke-width: 2; }
+    .map-dot .md-ring { fill: none; }
+    .map-dot .md-surface { fill: var(--steel); transition: fill 0.15s; }
+    .map-dot .md-underground { fill: var(--red); transition: fill 0.15s; }
+    .map-dot text {
+        fill: #fff;
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 10px;
+        text-anchor: middle;
+        pointer-events: none;
+    }
+    .map-dot:hover .md-surface,
+    .map-dot.is-open .md-surface { fill: var(--ink); }
+    .map-dot:hover .md-underground,
+    .map-dot.is-open .md-underground { fill: var(--red-dark); }
+    .map-dot:focus-visible .md-halo { fill: none; stroke: var(--red); stroke-width: 2; }
+
+    .cal-map-empty {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--muted);
+        font-family: var(--font-mono);
+        font-size: 13px;
+    }
+
+    .map-pop {
+        position: absolute;
+        z-index: 30;
+        width: 300px;
+        max-height: 320px;
+        overflow-y: auto;
+        padding: 14px 16px;
+        background: var(--surface);
+        border: 1px solid var(--line-2);
+        border-radius: 12px;
+        box-shadow: 0 18px 40px -16px rgba(43, 52, 64, 0.45);
+    }
+
+    .map-pop[hidden] { display: none; }
+
+    .map-pop-close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        display: inline-flex;
+        padding: 5px;
+        background: transparent;
+        border: none;
+        border-radius: 6px;
+        color: var(--steel);
+        cursor: pointer;
+    }
+
+    .map-pop-close:hover { color: var(--red); }
+
+    .mp-place + .mp-place { margin-top: 12px; padding-top: 12px; border-top: 1px solid #efeae1; }
+
+    .mp-label {
+        padding-right: 24px;
+        margin-bottom: 8px;
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 15px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--ink);
+    }
+
+    .mp-approx { font-weight: 400; font-size: 12px; color: var(--muted); text-transform: none; letter-spacing: 0; }
+
+    .mp-place ul { margin: 0; padding: 0; list-style: none; }
+
+    .mp-place li {
+        padding: 6px 8px;
+        margin-bottom: 4px;
+        border-left: 3px solid var(--red);
+        border-radius: 4px;
+        background: var(--red-tint);
+        font-size: 13px;
+        line-height: 1.35;
+    }
+
+    .mp-place li.is-surface { border-left-color: var(--steel); background: var(--surface-3); }
+
+    .mp-kind {
+        margin-left: 6px;
+        font-family: var(--font-display);
+        font-size: 10.5px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--red);
+    }
+
+    .is-surface .mp-kind { color: var(--steel); }
+
+    .mp-place li a { display: block; color: var(--ink); font-weight: 500; text-decoration: none; }
+    .mp-place li a:hover { color: var(--red); }
+
+    .mp-date { font-family: var(--font-mono); font-size: 11.5px; color: var(--muted); }
+
+    .cal-map-note { margin: 12px 2px 0; font-size: 13px; color: var(--muted); }
+    .cal-map-note a { color: var(--steel); }
+
+    @media (max-width: 600px) {
+        .cal-map-frame { padding: 8px; }
+        /* Too narrow to float the card over the map: dock it below instead. */
+        .map-pop { position: static; width: auto; max-height: none; margin-top: 8px; box-shadow: none; }
+    }
+
     @media (max-width: 760px) {
         .page-head-inner { padding: 40px 20px 34px; }
         .page-head h1 { font-size: 34px; }
@@ -367,6 +540,79 @@
     {% if not events %}
         <div class="cal-empty">No events scheduled for this month.</div>
     {% endif %}
+
+    <section class="cal-map" aria-labelledby="cal-map-title">
+        <div class="cal-map-bar">
+            <h2 id="cal-map-title">{{ year }} Competition Locations</h2>
+            {% if map_markers %}
+            <ul class="cal-map-legend">
+                <li><span class="lg-dot lg-underground"></span>Underground</li>
+                <li><span class="lg-dot lg-surface"></span>Surface</li>
+                {% if 'mixed' in map_kinds %}<li><span class="lg-dot lg-mixed"></span>Both</li>{% endif %}
+            </ul>
+            {% endif %}
+        </div>
+
+        <div class="cal-map-frame" id="cal-map">
+            <svg class="cal-map-svg" viewBox="0 0 975 610" role="img"
+                 aria-label="Map of the United States showing {{ year }} mine rescue competition locations">
+                <g class="map-states">{% include 'partials/us_states_paths.svg' %}</g>
+                <g class="map-dots">
+                    {% for m in map_markers %}
+                    <g class="map-dot" data-marker="{{ forloop.counter }}"
+                       tabindex="0" role="button" aria-haspopup="dialog" aria-controls="map-pop"
+                       aria-label="{% for p in m.places %}{{ p.label }}{% if not forloop.last %}, {% endif %}{% endfor %}: {{ m.count }} contest{{ m.count|pluralize }}">
+                        <circle class="md-halo" cx="{{ m.x }}" cy="{{ m.y }}" r="{{ m.halo }}"/>
+                        {% if m.kind == 'mixed' %}
+                        <path class="md-surface" d="{{ m.surface_half }}"/>
+                        <path class="md-underground" d="{{ m.underground_half }}"/>
+                        <circle class="md-core md-ring" cx="{{ m.x }}" cy="{{ m.y }}" r="{{ m.r }}"/>
+                        {% else %}
+                        <circle class="md-core md-{{ m.kind }}" cx="{{ m.x }}" cy="{{ m.y }}" r="{{ m.r }}"/>
+                        {% endif %}
+                        {% if m.count > 1 %}<text x="{{ m.x }}" y="{{ m.y }}" dy="0.35em">{{ m.count }}</text>{% endif %}
+                    </g>
+                    {% endfor %}
+                </g>
+            </svg>
+
+            {% if not map_markers %}
+            <div class="cal-map-empty">No competitions on the calendar for {{ year }} yet.</div>
+            {% endif %}
+
+            <div class="map-pop" id="map-pop" role="dialog" aria-label="Competitions at this location" hidden>
+                <button type="button" class="map-pop-close" aria-label="Close">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+                </button>
+                <div class="map-pop-body" id="map-pop-body"></div>
+            </div>
+        </div>
+
+        {% for m in map_markers %}
+        <template id="map-marker-{{ forloop.counter }}" data-left="{{ m.left }}" data-top="{{ m.top }}">
+            {% for p in m.places %}
+            <div class="mp-place">
+                <div class="mp-label">{{ p.label }}{% if p.approximate %} <span class="mp-approx">(approx.)</span>{% endif %}</div>
+                <ul>
+                    {% for e in p.events %}
+                    <li{% if e.is_surface %} class="is-surface"{% endif %}>
+                        <a href="{% url 'event_detail' e.id %}">{{ e.title }}</a>
+                        <span class="mp-date">{{ e.start_date|date:"M j" }}{% if e.end_date != e.start_date %} – {% if e.end_date.month != e.start_date.month %}{{ e.end_date|date:"M j" }}{% else %}{{ e.end_date|date:"j" }}{% endif %}{% endif %}</span><span class="mp-kind">{% if e.is_surface %}Surface{% else %}Underground{% endif %}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </template>
+        {% endfor %}
+
+        {% if map_unmapped %}
+        <p class="cal-map-note">
+            Not shown on the map (no location listed):
+            {% for e in map_unmapped %}<a href="{% url 'event_detail' e.id %}">{{ e.title }}</a>{% if not forloop.last %}, {% endif %}{% endfor %}.
+        </p>
+        {% endif %}
+    </section>
 </div>
 {% endblock %}
 
@@ -444,6 +690,79 @@
                 close();
                 toggle.focus();
             }
+        });
+    })();
+
+    // Locations map: clicking a dot opens a card listing the contests there.
+    (function () {
+        var frame = document.getElementById('cal-map');
+        if (!frame) { return; }
+
+        var pop = document.getElementById('map-pop');
+        var body = document.getElementById('map-pop-body');
+        var openDot = null;
+
+        function place(tpl) {
+            if (window.matchMedia('(max-width: 600px)').matches) { return; }
+            var fw = frame.clientWidth, fh = frame.clientHeight;
+            var svg = frame.querySelector('svg').getBoundingClientRect();
+            var box = frame.getBoundingClientRect();
+            var x = svg.left - box.left + svg.width * parseFloat(tpl.dataset.left) / 100;
+            var y = svg.top - box.top + svg.height * parseFloat(tpl.dataset.top) / 100;
+            var pw = pop.offsetWidth, ph = pop.offsetHeight, gap = 16;
+            // Prefer the right of the dot; flip left near the right edge.
+            var left = x + gap + pw <= fw ? x + gap : x - gap - pw;
+            var top = Math.min(Math.max(y - ph / 2, 8), fh - ph - 8);
+            pop.style.left = Math.max(8, left) + 'px';
+            pop.style.top = Math.max(8, top) + 'px';
+        }
+
+        function open(dot) {
+            var tpl = document.getElementById('map-marker-' + dot.dataset.marker);
+            if (openDot) { openDot.classList.remove('is-open'); }
+            openDot = dot;
+            dot.classList.add('is-open');
+            body.innerHTML = '';
+            body.appendChild(tpl.content.cloneNode(true));
+            pop.hidden = false;
+            place(tpl);
+        }
+
+        function close() {
+            pop.hidden = true;
+            if (openDot) { openDot.classList.remove('is-open'); }
+            openDot = null;
+        }
+
+        frame.querySelectorAll('.map-dot').forEach(function (dot) {
+            dot.addEventListener('click', function (event) {
+                event.stopPropagation();
+                openDot === dot ? close() : open(dot);
+            });
+            dot.addEventListener('keydown', function (event) {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    openDot === dot ? close() : open(dot);
+                }
+            });
+        });
+
+        pop.addEventListener('click', function (event) { event.stopPropagation(); });
+        pop.querySelector('.map-pop-close').addEventListener('click', function () {
+            var dot = openDot;
+            close();
+            if (dot) { dot.focus(); }
+        });
+        document.addEventListener('click', function () { if (!pop.hidden) { close(); } });
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape' && !pop.hidden) {
+                var dot = openDot;
+                close();
+                if (dot) { dot.focus(); }
+            }
+        });
+        window.addEventListener('resize', function () {
+            if (openDot) { place(document.getElementById('map-marker-' + openDot.dataset.marker)); }
         });
     })();
 </script>

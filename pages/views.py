@@ -15,6 +15,7 @@ from .models import (
     Quiz, BenchingApparatus, FirstAidResource, RopeRescueResource,
 )
 from .forms import FeedbackForm, ProblemSubmissionForm
+from .geo import MAP_HEIGHT, MAP_WIDTH, is_surface, map_markers
 from .calendar_export import (
     build_event_ics, google_calendar_url, outlook_calendar_url,
 )
@@ -226,6 +227,33 @@ class CalendarView(ListView):
                 current += timedelta(days=1)
 
         context['events_by_day'] = events_by_day
+
+        # Map under the calendar: every contest in the shown year, colored by
+        # surface vs. underground.
+        year_events = list(CalendarEvent.objects.filter(
+            start_date__lte=date(year, 12, 31),
+            end_date__gte=date(year, 1, 1),
+        ).order_by('start_date', '-end_date'))
+        for event in year_events:
+            event.is_surface = is_surface(event)
+        markers, unmapped = map_markers(year_events)
+        for marker in markers:
+            kinds = {e.is_surface for p in marker['places'] for e in p['events']}
+            marker['kind'] = ('mixed' if len(kinds) > 1
+                              else 'surface' if True in kinds else 'underground')
+            r = marker['r'] = 6 + 1.5 * min(marker['count'] - 1, 4)
+            marker['halo'] = r + 9  # larger invisible hit area
+            if marker['kind'] == 'mixed':
+                # Split dot: surface on the left half, underground on the right.
+                x, y = marker['x'], marker['y']
+                top, bottom = f"M{x},{y - r:.1f}", f"{x},{y + r:.1f}Z"
+                marker['surface_half'] = f"{top}A{r},{r} 0 0 0 {bottom}"
+                marker['underground_half'] = f"{top}A{r},{r} 0 0 1 {bottom}"
+            marker['left'] = round(marker['x'] / MAP_WIDTH * 100, 2)
+            marker['top'] = round(marker['y'] / MAP_HEIGHT * 100, 2)
+        context['map_markers'] = markers
+        context['map_kinds'] = {m['kind'] for m in markers}
+        context['map_unmapped'] = unmapped
 
         if month == 1:
             context['prev_month'] = 12
