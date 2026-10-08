@@ -5,7 +5,7 @@ from django.test import TestCase
 from django.urls import reverse
 
 from . import geo
-from .search import search_events
+from .search import search_events, state_name
 from .calendar_export import (
     build_event_ics, google_calendar_url, outlook_calendar_url,
 )
@@ -237,6 +237,14 @@ class CalendarSearchTests(TestCase):
     def test_matches_linked_competition_name(self):
         Competition.objects.create(name='Big Blue Classic', year=2021, calendar_event=self.va)
         self.assertEqual(self.titles('big blue'), [self.va.pk])
+
+    def test_state_name_for_past_problems_search(self):
+        self.assertEqual(state_name('Heritage Hall, Lexington, KY 40507'), 'Kentucky')
+        self.assertEqual(state_name('Logan, WV'), 'West Virginia')
+        self.assertEqual(state_name('Somewhere'), '')
+        Competition.objects.create(name='KMI', year=2019, calendar_event=self.lex)
+        response = self.client.get(reverse('past_problems'))
+        self.assertContains(response, 'Lexington, KY 40507 Kentucky')
 
     def test_suggest_endpoint_and_full_results(self):
         response = self.client.get(reverse('calendar_search'), {'q': 'lexington'})

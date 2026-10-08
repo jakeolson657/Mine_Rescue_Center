@@ -16,7 +16,7 @@ from .models import (
 )
 from .forms import FeedbackForm, ProblemSubmissionForm
 from .geo import MAP_HEIGHT, MAP_WIDTH, is_surface, map_markers
-from .search import search_events
+from .search import search_events, state_name
 from .calendar_export import (
     build_event_ics, google_calendar_url, outlook_calendar_url,
 )
@@ -99,6 +99,7 @@ def past_problems(request):
     # and bundle its documents as data. The document rows are rendered on the
     # client when a problem is opened, so the full archive page stays light.
     for competition in competitions:
+        competition.state_name = state_name(competition.location)
         for problem in competition.problems.all():
             problem.category_csv = ' '.join(
                 categorize_problem(problem.title, competition.name)

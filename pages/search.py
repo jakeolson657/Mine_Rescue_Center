@@ -16,6 +16,14 @@ _ABBR_TO_NAME = {abbr: name for name, abbr in US_STATES.items()}
 _STATE_NAMES = sorted(US_STATES, key=len, reverse=True)
 
 
+def state_name(location):
+    """Spelled-out state for a venue ("Lexington, KY" -> "Kentucky"), or ''.
+    Lets the past-problems search find a contest by its state's name."""
+    label = short_location(location)
+    abbr = label.rsplit(', ', 1)[-1] if ', ' in label else ''
+    return _ABBR_TO_NAME.get(abbr, '').title()
+
+
 def _state_q(name, abbr):
     return (Q(title__icontains=name) | Q(location__icontains=name)
             | Q(location__iregex=rf',\s*{abbr}(\s|$|[0-9])'))

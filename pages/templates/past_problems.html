@@ -485,7 +485,7 @@
                 <div class="year-body">
                     {% for competition in group.competitions %}
                         {% with problems=competition.problems.all %}
-                        <details class="competition" id="comp-{{ competition.pk }}" data-search="{{ competition.name }} {{ competition.year|default:'' }} {{ competition.location }} {{ competition.description }}">
+                        <details class="competition" id="comp-{{ competition.pk }}" data-search="{{ competition.name }} {{ competition.year|default:'' }} {{ competition.location }} {{ competition.state_name }} {{ competition.description }}">
                             <summary>
                                 <span class="chev"><svg width="14" height="14"><use href="#i-chev"/></svg></span>
                                 <span class="competition-name">{{ competition.name }}</span>
@@ -675,8 +675,22 @@
 
         function activeCatList() { return Object.keys(activeCats); }
 
+        // Every word typed must appear somewhere in the contest or problem, in
+        // any order ("kmi lexington" finds "Lexington, KY ... KMI"). A plural
+        // also matches its singular ("nationals" finds "National").
+        function terms(query) {
+            return query.split(/\s+/).filter(Boolean).map(function (word) {
+                return word.length > 4 && word.slice(-1) === 's' ? word.slice(0, -1) : word;
+            });
+        }
+
+        function hasAll(text, words) {
+            return words.every(function (w) { return text.indexOf(w) !== -1; });
+        }
+
         function apply() {
             var q = search.value.trim().toLowerCase();
+            var words = terms(q);
             var cats = activeCatList();
             var filtering = q.length > 0 || cats.length > 0;
             var totalProblems = 0, totalComps = 0;
@@ -684,11 +698,11 @@
             years.forEach(function (y) {
                 var visComps = 0;
                 y.comps.forEach(function (c) {
-                    var compSearchMatch = !q || c.search.indexOf(q) !== -1;
+                    var compSearchMatch = !q || hasAll(c.search, words);
                     var visProblems = 0;
                     c.problems.forEach(function (p) {
                         var catOk = cats.length === 0 || p.cats.some(function (x) { return activeCats[x]; });
-                        var searchOk = !q || compSearchMatch || p.search.indexOf(q) !== -1;
+                        var searchOk = !q || compSearchMatch || hasAll(c.search + ' ' + p.search, words);
                         var vis = catOk && searchOk;
                         p.el.hidden = !vis;
                         if (vis) visProblems++;
