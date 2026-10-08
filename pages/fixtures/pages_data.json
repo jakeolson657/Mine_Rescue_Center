@@ -4564,6 +4564,26 @@
  }
 },
 {
+ "model": "pages.calendarevent",
+ "pk": 535,
+ "fields": {
+  "title": "Kansas Regional Mine Rescue Competition",
+  "start_date": "2027-07-26",
+  "end_date": "2027-07-29",
+  "location": "Hutchinson, Kansas",
+  "description": "Hosted by the Kansas Sunflower Safety Council (Holmes Safety Association). More details to follow.",
+  "contact_info": "Chrystal Dye (785) 221-0018, dyec@hutchcc.edu",
+  "resources": [
+   {
+    "label": "Competition Information",
+    "url": "https://www.holmessafety.org/home/councils/kansas-sunflower-safety-council/2027kansasminerescue/"
+   }
+  ],
+  "created_at": "2026-10-08T15:43:50.951Z",
+  "updated_at": "2026-10-08T15:43:50.951Z"
+ }
+},
+{
  "model": "pages.competition",
  "pk": 1,
  "fields": {
