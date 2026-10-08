@@ -487,7 +487,8 @@
                     {% for slug, label in categories %}
                         {% if slug == 'written' %}
                             <select class="chip chip-select" id="repo-test" data-cat="{{ slug }}" aria-label="Filter by written test">
-                                <option value="">{{ label }}</option>
+                                {# The chip's label when off; hidden from the open list. #}
+                                <option value="" hidden>{{ label }}</option>
                                 <option value="all">All Written Tests</option>
                                 {% for test_slug, test_label in written_test_subjects %}
                                     <option value="{{ test_slug }}">{{ test_label }} Written Test</option>
