@@ -141,6 +141,12 @@
         margin: 16px 0 20px;
         text-transform: uppercase;
         text-wrap: balance;
+        /* Wider than the 760px column, and shrinking with the viewport, so
+           each clause fits on one line and the heading reads as two. */
+        width: min(1060px, calc(100vw - 80px));
+        margin-left: 50%;
+        transform: translateX(-50%);
+        font-size: clamp(26px, calc((100vw - 96px) / 27), 38px);
     }
 
     /* Keep each clause together so the break falls after the comma. */
