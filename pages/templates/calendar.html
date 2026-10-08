@@ -670,6 +670,7 @@
     .mp-date { font-family: var(--font-mono); font-size: 11.5px; color: var(--muted); }
 
     .cal-map-note { margin: 12px 2px 0; font-size: 13px; color: var(--muted); }
+    .cal-map-sub { margin: 4px 0 0; font-size: 14px; color: var(--muted); }
 
     @media (max-width: 600px) {
         .cal-map-frame { padding: 8px; }
@@ -793,7 +794,10 @@
 
     <section class="cal-map" aria-labelledby="cal-map-title">
         <div class="cal-map-bar">
-            <h2 id="cal-map-title">{{ year }} Competition Locations</h2>
+            <div>
+                <h2 id="cal-map-title">{{ year }} Competition Locations</h2>
+                <p class="cal-map-sub">Based on the year selected above.</p>
+            </div>
             {% if map_markers %}
             <ul class="cal-map-legend">
                 <li><span class="lg-dot lg-underground"></span>Underground</li>
