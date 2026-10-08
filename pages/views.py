@@ -16,6 +16,7 @@ from .models import (
 )
 from .forms import FeedbackForm, ProblemSubmissionForm
 from .geo import MAP_HEIGHT, MAP_WIDTH, is_surface, map_markers
+from .search import search_events
 from .calendar_export import (
     build_event_ics, google_calendar_url, outlook_calendar_url,
 )
@@ -200,6 +201,11 @@ class CalendarView(ListView):
 
         context['msha_calendar_url'] = SiteConfiguration.load().msha_calendar_url
 
+        query = self.request.GET.get('q', '').strip()
+        context['search_query'] = query
+        if query:
+            context['search_results'], context['search_total'] = search_events(query)
+
         cal = Calendar(firstweekday=6).monthdayscalendar(year, month)
         context['calendar'] = cal
 
@@ -296,6 +302,21 @@ class EventDetailView(DetailView):
             (c for c in competitions if c.problems.all()), None
         )
         return context
+
+
+# Live results under the calendar search box (same list a full search shows).
+SEARCH_PREVIEW_LIMIT = 8
+
+
+def calendar_search(request):
+    query = request.GET.get('q', '').strip()
+    results, total = search_events(query, limit=SEARCH_PREVIEW_LIMIT) if query else ([], 0)
+    return render(request, 'partials/calendar_search_results.html', {
+        'search_query': query,
+        'search_results': results,
+        'search_total': total,
+        'preview': True,
+    })
 
 
 def event_ics(request, pk):

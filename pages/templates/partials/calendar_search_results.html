@@ -1,0 +1,24 @@
+{% if search_results %}
+<ul class="cs-list">
+    {% for e in search_results %}
+    <li class="cs-item">
+        <a class="cs-link" href="{% url 'event_detail' e.id %}">
+            <span class="cs-title">{{ e.title }}</span>
+            <span class="cs-meta">
+                {% if e.upcoming %}<span class="cs-upcoming">Upcoming</span>{% endif %}
+                <span class="cs-date">{{ e.start_date|date:"M j" }}{% if e.end_date != e.start_date %} – {% if e.end_date.month != e.start_date.month or e.end_date.year != e.start_date.year %}{{ e.end_date|date:"M j" }}{% else %}{{ e.end_date|date:"j" }}{% endif %}{% endif %}, {{ e.end_date|date:"Y" }}</span>
+                {% if e.place %}<span class="cs-place">{{ e.place }}</span>{% endif %}
+            </span>
+        </a>
+        {% if not preview %}
+        <a class="cs-month" href="{% url 'calendar' %}?year={{ e.start_date.year }}&month={{ e.start_date.month }}">Show in calendar</a>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% if preview and search_total > search_results|length %}
+<a class="cs-all" href="{% url 'calendar' %}?q={{ search_query|urlencode }}">See all {{ search_total }} results</a>
+{% endif %}
+{% elif search_query %}
+<p class="cs-none">No competitions match “{{ search_query }}”. Try a contest name, city, or state.</p>
+{% endif %}

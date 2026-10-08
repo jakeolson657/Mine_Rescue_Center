@@ -5,6 +5,7 @@ from django.test import TestCase
 from django.urls import reverse
 
 from . import geo
+from .search import search_events
 from .calendar_export import (
     build_event_ics, google_calendar_url, outlook_calendar_url,
 )
@@ -198,6 +199,53 @@ class CalendarMapTests(TestCase):
         self.assertContains(response, 'md-core md-surface')
         self.assertContains(response, 'md-core md-underground')
         self.assertContains(response, 'Competitions without a location are left off the map')
+
+
+class CalendarSearchTests(TestCase):
+    def setUp(self):
+        def make(title, location, year):
+            return CalendarEvent.objects.create(
+                title=title, location=location,
+                start_date=date(year, 6, 1), end_date=date(year, 6, 2))
+        self.lex = make('KMI Mine Rescue Contest', 'Heritage Hall, Lexington, KY 40507', 2019)
+        self.lex_old = make('KMI Mine Rescue Contest', 'Lexington, KY', 2015)
+        self.nat = make('National Mine Rescue Contest', 'Sevierville, TN', 2018)
+        self.wv = make('Fallen Heroes Contest', 'Logan, WV', 2020)
+        self.va = make('Governors Cup', 'Abingdon, VA', 2021)
+
+    def titles(self, query):
+        return [e.pk for e in search_events(query)[0]]
+
+    def test_matches_name_and_city(self):
+        self.assertEqual(self.titles('kmi'), [self.lex.pk, self.lex_old.pk])  # newest first
+        self.assertEqual(self.titles('sevierville'), [self.nat.pk])
+        self.assertEqual(self.titles('fallen logan'), [self.wv.pk])
+
+    def test_state_name_matches_abbreviation(self):
+        self.assertEqual(set(self.titles('Kentucky')), {self.lex.pk, self.lex_old.pk})
+        self.assertEqual(self.titles('west virginia'), [self.wv.pk])
+        self.assertEqual(self.titles('virginia'), [self.va.pk])
+        self.assertEqual(self.titles('WV'), [self.wv.pk])
+
+    def test_lowercase_short_words_are_not_states(self):
+        # "in" must not turn into Indiana.
+        self.assertEqual(set(self.titles('contest in lexington')), {self.lex.pk, self.lex_old.pk})
+
+    def test_plural_matches_singular(self):
+        self.assertEqual(self.titles('nationals'), [self.nat.pk])
+
+    def test_matches_linked_competition_name(self):
+        Competition.objects.create(name='Big Blue Classic', year=2021, calendar_event=self.va)
+        self.assertEqual(self.titles('big blue'), [self.va.pk])
+
+    def test_suggest_endpoint_and_full_results(self):
+        response = self.client.get(reverse('calendar_search'), {'q': 'lexington'})
+        self.assertContains(response, 'KMI Mine Rescue Contest', count=2)
+        response = self.client.get(reverse('calendar_search'), {'q': 'nothing-here'})
+        self.assertContains(response, 'No competitions match')
+        response = self.client.get(reverse('calendar'), {'q': 'logan'})
+        self.assertContains(response, '1 result for')
+        self.assertContains(response, 'Fallen Heroes Contest')
 
 
 class CategorizeProblemTests(TestCase):

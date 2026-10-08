@@ -42,6 +42,189 @@
     .msha-link:hover { border-color: var(--red-soft); color: #fff; background: rgba(192, 54, 44, 0.14); }
     .msha-link .ic { color: var(--red-soft); flex: none; }
 
+    /* ---------- Search ---------- */
+    .sr-only {
+        position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+        overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+
+    .cal-search {
+        position: relative;
+        display: flex;
+        align-items: center;
+        max-width: 560px;
+        margin-top: 24px;
+        background: var(--surface);
+        border: 1.5px solid transparent;
+        border-radius: 9px;
+        transition: border-color 0.15s;
+    }
+
+    .cal-search:focus-within { border-color: var(--red-soft); }
+
+    .cal-search .cs-icon { flex: none; margin-left: 14px; color: var(--steel); }
+
+    .cal-search input[type="search"] {
+        flex: 1;
+        min-width: 0;
+        padding: 13px 12px;
+        background: transparent;
+        border: none;
+        outline: none;
+        font: inherit;
+        font-size: 15px;
+        color: var(--ink);
+    }
+
+    .cs-submit {
+        flex: none;
+        margin: 5px;
+        padding: 9px 16px;
+        background: var(--red);
+        border: none;
+        border-radius: 6px;
+        font-family: var(--font-display);
+        font-weight: 500;
+        font-size: 12.5px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--bg);
+        cursor: pointer;
+        transition: background-color 0.15s;
+    }
+
+    .cs-submit:hover { background: var(--red-dark); }
+
+    .cs-suggest {
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 0;
+        right: 0;
+        z-index: 50;
+        max-height: 420px;
+        overflow-y: auto;
+        padding: 6px;
+        background: var(--surface);
+        border: 1px solid var(--line-2);
+        border-radius: 12px;
+        box-shadow: 0 18px 40px -16px rgba(43, 52, 64, 0.45);
+    }
+
+    .cs-suggest[hidden] { display: none; }
+
+    .cs-list { margin: 0; padding: 0; list-style: none; }
+
+    .cs-item { display: flex; align-items: center; gap: 12px; border-radius: 8px; }
+
+    .cs-link {
+        flex: 1;
+        min-width: 0;
+        display: block;
+        padding: 9px 12px;
+        border-radius: 8px;
+        color: var(--ink);
+        text-decoration: none;
+        outline: none;
+    }
+
+    .cs-link:hover, .cs-link:focus-visible { background: var(--red-tint); }
+    .cs-link:hover .cs-title, .cs-link:focus-visible .cs-title { color: var(--red); }
+
+    .cs-title { display: block; font-weight: 500; font-size: 14.5px; line-height: 1.35; }
+
+    .cs-meta {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 4px 12px;
+        margin-top: 3px;
+        font-family: var(--font-mono);
+        font-size: 12px;
+        color: var(--muted);
+    }
+
+    .cs-upcoming {
+        padding: 1px 7px;
+        border-radius: 4px;
+        background: var(--red);
+        font-family: var(--font-display);
+        font-size: 10.5px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--bg);
+    }
+
+    .cs-all, .cs-none {
+        display: block;
+        margin: 4px 0 0;
+        padding: 10px 12px;
+        border-top: 1px solid #efeae1;
+        font-size: 13px;
+        color: var(--muted);
+    }
+
+    .cs-all {
+        font-family: var(--font-display);
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--steel);
+        text-decoration: none;
+    }
+
+    .cs-all:hover, .cs-all:focus-visible { color: var(--red); }
+    .cs-suggest .cs-none { margin: 0; border-top: none; }
+
+    .cs-results {
+        margin-bottom: 40px;
+        padding: 20px 22px;
+        background: var(--surface);
+        border: 1px solid var(--line-2);
+        border-radius: 14px;
+    }
+
+    .cs-results-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px 16px;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .cs-results-bar h2 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 22px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--ink);
+    }
+
+    .cs-clear, .cs-month {
+        flex: none;
+        font-family: var(--font-display);
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--steel);
+        text-decoration: none;
+    }
+
+    .cs-clear:hover, .cs-month:hover { color: var(--red); }
+    .cs-month { padding-right: 12px; }
+    .cs-results .cs-item + .cs-item { border-top: 1px solid #efeae1; }
+    .cs-results .cs-list { max-height: 480px; overflow-y: auto; }
+    .cs-results .cs-none { border-top: none; padding: 4px 0; }
+
+    @media (max-width: 600px) {
+        .cs-submit { display: none; }
+        .cs-item { flex-direction: column; align-items: stretch; gap: 0; }
+        .cs-month { padding: 0 12px 10px; }
+    }
+
     .cal-wrap { max-width: 1180px; margin: 0 auto; padding: 36px 40px 80px; }
 
     .cal-bar {
@@ -464,6 +647,19 @@
     <div class="page-head-inner">
         <h1>Competition Calendar</h1>
         <p>Mine rescue competitions throughout the year. Browse by month, then open an event for its location, details, results, and posted problem.</p>
+        <form class="cal-search" id="cal-search" role="search" method="get" action="{% url 'calendar' %}"
+              data-suggest-url="{% url 'calendar_search' %}">
+            <label class="sr-only" for="cal-search-input">Search competitions</label>
+            <svg class="cs-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+            <input type="search" name="q" id="cal-search-input" value="{{ search_query }}"
+                   placeholder="Search by competition name, city, or state"
+                   autocomplete="off" role="combobox" aria-expanded="false"
+                   aria-controls="cal-search-suggest" aria-autocomplete="list">
+            <input type="hidden" name="year" value="{{ year }}">
+            <input type="hidden" name="month" value="{{ month }}">
+            <button type="submit" class="cs-submit">Search</button>
+            <div class="cs-suggest" id="cal-search-suggest" hidden></div>
+        </form>
         {% if msha_calendar_url %}
         <a class="msha-link" href="{{ msha_calendar_url }}" target="_blank" rel="noopener">
             <svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
@@ -474,6 +670,16 @@
 </section>
 
 <div class="cal-wrap">
+    {% if search_query %}
+    <section class="cs-results" aria-labelledby="cs-results-title">
+        <div class="cs-results-bar">
+            <h2 id="cs-results-title">{{ search_total }} result{{ search_total|pluralize }} for “{{ search_query }}”</h2>
+            <a class="cs-clear" href="?year={{ year }}&month={{ month }}">Clear search</a>
+        </div>
+        {% include 'partials/calendar_search_results.html' %}
+    </section>
+    {% endif %}
+
     <div class="cal-bar">
         <div class="cal-picker" id="cal-picker"
              data-year="{{ year }}" data-month="{{ month }}"
@@ -684,6 +890,83 @@
                 close();
                 toggle.focus();
             }
+        });
+    })();
+
+    // Search: live suggestions under the box; Enter runs the full search.
+    (function () {
+        var form = document.getElementById('cal-search');
+        if (!form) { return; }
+
+        var input = document.getElementById('cal-search-input');
+        var suggest = document.getElementById('cal-search-suggest');
+        var timer = null;
+        var lastQuery = null;
+        var request = 0;
+
+        function options() { return suggest.querySelectorAll('.cs-link, .cs-all'); }
+
+        function show() {
+            suggest.hidden = false;
+            input.setAttribute('aria-expanded', 'true');
+        }
+
+        function hide() {
+            suggest.hidden = true;
+            input.setAttribute('aria-expanded', 'false');
+        }
+
+        function load() {
+            var query = input.value.trim();
+            if (query.length < 2) { lastQuery = null; hide(); return; }
+            if (query === lastQuery) { show(); return; }
+            var id = ++request;
+            fetch(form.dataset.suggestUrl + '?q=' + encodeURIComponent(query))
+                .then(function (response) { return response.text(); })
+                .then(function (html) {
+                    if (id !== request) { return; }  // a newer search is on its way
+                    lastQuery = query;
+                    suggest.innerHTML = html;
+                    document.activeElement === input || suggest.contains(document.activeElement) ? show() : hide();
+                })
+                .catch(function () { hide(); });
+        }
+
+        input.addEventListener('input', function () {
+            clearTimeout(timer);
+            timer = setTimeout(load, 180);
+        });
+
+        input.addEventListener('focus', function () {
+            if (input.value.trim().length >= 2) { load(); }
+        });
+
+        // Arrow keys move through the suggestions; Escape closes them.
+        form.addEventListener('keydown', function (event) {
+            var items = Array.prototype.slice.call(options());
+            var index = items.indexOf(document.activeElement);
+            if (event.key === 'ArrowDown' && !suggest.hidden && items.length) {
+                event.preventDefault();
+                items[Math.min(index + 1, items.length - 1)].focus();
+            } else if (event.key === 'ArrowUp' && index !== -1) {
+                event.preventDefault();
+                index === 0 ? input.focus() : items[index - 1].focus();
+            } else if (event.key === 'Escape' && !suggest.hidden) {
+                hide();
+                input.focus();
+            }
+        });
+
+        form.addEventListener('submit', function (event) {
+            if (!input.value.trim()) { event.preventDefault(); }
+        });
+
+        document.addEventListener('click', function (event) {
+            if (!form.contains(event.target)) { hide(); }
+        });
+
+        form.addEventListener('focusout', function (event) {
+            if (!form.contains(event.relatedTarget)) { hide(); }
         });
     })();
 
