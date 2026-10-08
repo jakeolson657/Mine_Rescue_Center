@@ -100,25 +100,22 @@
     .chip:hover { border-color: var(--ink); color: var(--ink); }
     .chip.active { background: var(--red); border-color: var(--red); color: var(--bg); }
 
-    .test-select { display: flex; align-items: center; gap: 10px; }
-
-    .test-select select {
-        font-family: var(--font-display);
-        font-weight: 500;
-        font-size: 12.5px;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: var(--steel);
-        background: var(--surface-2);
-        border: 1px solid var(--line);
-        border-radius: 20px;
-        padding: 7px 12px;
-        cursor: pointer;
-        max-width: 100%;
+    /* The Written Test chip is a dropdown of test subjects. */
+    .chip-select {
+        -webkit-appearance: none; appearance: none;
+        padding-right: 32px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%235b6470' stroke-width='1.6'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 13px center;
     }
-    .test-select select:hover { border-color: var(--ink); color: var(--ink); }
-    .test-select select:focus { outline: none; border-color: var(--red); box-shadow: 0 0 0 3px rgba(192, 54, 44, 0.12); }
-    .test-select select.active { background: var(--red); border-color: var(--red); color: var(--bg); }
+    .chip-select:focus { outline: none; box-shadow: 0 0 0 3px rgba(192, 54, 44, 0.12); }
+    .chip-select.active {
+        background-color: var(--red);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23f4f1ec' stroke-width='1.6'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 13px center;
+    }
+    .chip-select option { text-transform: none; color: var(--ink); background: var(--surface); }
 
     .repo-resultcount { font-family: var(--font-mono); font-size: 12px; color: var(--muted); white-space: nowrap; }
 
@@ -487,18 +484,19 @@
                 <div class="filter-chips" role="group" aria-label="Filter by problem type">
                     <button type="button" class="chip active" data-cat="" aria-pressed="true">All</button>
                     {% for slug, label in categories %}
-                        <button type="button" class="chip" data-cat="{{ slug }}" aria-pressed="false">{{ label }}</button>
+                        {% if slug == 'written' %}
+                            <select class="chip chip-select" id="repo-test" data-cat="{{ slug }}" aria-label="Filter by written test">
+                                <option value="">{{ label }}</option>
+                                <option value="all">All Written Tests</option>
+                                {% for test_slug, test_label in written_test_subjects %}
+                                    <option value="{{ test_slug }}">{{ test_label }} Written Test</option>
+                                {% endfor %}
+                            </select>
+                        {% else %}
+                            <button type="button" class="chip" data-cat="{{ slug }}" aria-pressed="false">{{ label }}</button>
+                        {% endif %}
                     {% endfor %}
                 </div>
-                <label class="test-select">
-                    <span class="filter-label">Written test</span>
-                    <select id="repo-test">
-                        <option value="">All tests</option>
-                        {% for slug, label in written_test_subjects %}
-                            <option value="{{ slug }}">{{ label }}</option>
-                        {% endfor %}
-                    </select>
-                </label>
                 <span class="repo-resultcount" id="repo-resultcount" aria-live="polite"></span>
                 <button type="button" class="repo-clear" id="repo-clear" hidden>Clear filters</button>
             </div>
@@ -670,7 +668,7 @@
         var search = document.getElementById('repo-search');
         if (!search) return;  // nothing to filter (empty archive)
 
-        var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+        var chips = Array.prototype.slice.call(document.querySelectorAll('button.chip'));
         var allChip = chips.filter(function (c) { return c.dataset.cat === ''; })[0];
         var testSelect = document.getElementById('repo-test');
         var clearBtn = document.getElementById('repo-clear');
@@ -757,8 +755,9 @@
             var q = search.value.trim().toLowerCase();
             var words = terms(q);
             var cats = activeCatList();
-            var test = testSelect ? testSelect.value : '';
-            var filtering = q.length > 0 || cats.length > 0 || !!test;
+            // The Written Test chip's dropdown: '' off, 'all', or one subject.
+            var test = activeCats.written && testSelect && testSelect.value !== 'all' ? testSelect.value : '';
+            var filtering = q.length > 0 || cats.length > 0;
             var totalProblems = 0, totalComps = 0;
 
             years.forEach(function (y) {
@@ -767,10 +766,11 @@
                     var compSearchMatch = !q || hasAll(c.search, words);
                     var visProblems = 0;
                     c.problems.forEach(function (p) {
-                        var catOk = cats.length === 0 || p.cats.some(function (x) { return activeCats[x]; });
+                        var otherCatOk = p.cats.some(function (x) { return x !== 'written' && activeCats[x]; });
+                        var catOk = cats.length === 0 || otherCatOk || (activeCats.written && p.cats.indexOf('written') !== -1);
                         var base = c.search + ' ' + p.search;
                         var matchedFiles = null;  // null = show every file
-                        if (test) {
+                        if (test && !otherCatOk) {
                             // A written test picked from the dropdown: only its files.
                             matchedFiles = [];
                             p.tests.forEach(function (t, i) {
@@ -793,7 +793,7 @@
                     var compVisible;
                     if (c.problems.length === 0) {
                         // A contest with no problems yet: only when not narrowing by type.
-                        compVisible = !filtering || (cats.length === 0 && !test && compSearchMatch);
+                        compVisible = !filtering || (cats.length === 0 && compSearchMatch);
                     } else {
                         compVisible = visProblems > 0;
                     }
@@ -838,6 +838,10 @@
 
         function syncChips() {
             var none = activeCatList().length === 0;
+            if (testSelect) {
+                if (!activeCats.written) testSelect.value = '';
+                testSelect.classList.toggle('active', !!activeCats.written);
+            }
             chips.forEach(function (c) {
                 var on = c.dataset.cat === '' ? none : !!activeCats[c.dataset.cat];
                 c.classList.toggle('active', on);
@@ -864,7 +868,9 @@
 
         if (testSelect) {
             testSelect.addEventListener('change', function () {
-                testSelect.classList.toggle('active', !!testSelect.value);
+                if (testSelect.value) activeCats.written = true;
+                else delete activeCats.written;
+                syncChips();
                 apply();
             });
         }
@@ -881,10 +887,6 @@
                 search.value = '';
                 activeCats = {};
                 syncChips();
-                if (testSelect) {
-                    testSelect.value = '';
-                    testSelect.classList.remove('active');
-                }
                 apply();
                 search.focus();
             });
