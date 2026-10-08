@@ -1,13 +1,15 @@
 from datetime import date, datetime, timezone
+from unittest import mock
 
 from django.test import TestCase
 from django.urls import reverse
 
+from . import geo
 from .calendar_export import (
     build_event_ics, google_calendar_url, outlook_calendar_url,
 )
 from .models import (
-    CalendarEvent, Competition, CompetitionProblem,
+    CalendarEvent, Competition, CompetitionProblem, GeocodedLocation,
     SiteConfiguration, PROBLEM_CATEGORIES, categorize_problem,
 )
 
@@ -140,6 +142,62 @@ class CalendarPageTests(TestCase):
         self.assertContains(response, 'calendar.google.com')
         self.assertContains(response, 'outlook.live.com')
         self.assertContains(response, reverse('event_ics', args=[event.pk]))
+
+
+class CalendarMapTests(TestCase):
+    def _event(self, location, title='Test Contest'):
+        return CalendarEvent.objects.create(
+            title=title, start_date=date(2026, 9, 1), end_date=date(2026, 9, 2),
+            location=location,
+        )
+
+    def _markers(self):
+        return geo.map_markers(CalendarEvent.objects.all())
+
+    def test_known_city_is_placed_exactly(self):
+        self._event('Some Hall, 1 Main St, Morgantown, WV 26501')
+        markers, unmapped = self._markers()
+        self.assertEqual(unmapped, [])
+        self.assertEqual(markers[0]['places'][0]['label'], 'Morgantown, WV')
+        self.assertFalse(markers[0]['places'][0]['approximate'])
+
+    def test_blank_location_is_left_off(self):
+        self._event('')
+        markers, unmapped = self._markers()
+        self.assertEqual(markers, [])
+        self.assertEqual(len(unmapped), 1)
+
+    def test_unknown_city_uses_lookup_then_state_center(self):
+        self._event('Civic Center, Newtown, WV')
+        place = self._markers()[0][0]['places'][0]
+        self.assertTrue(place['approximate'])
+        GeocodedLocation.objects.create(query='Newtown, WV', latitude=38.0, longitude=-81.0)
+        place = self._markers()[0][0]['places'][0]
+        self.assertFalse(place['approximate'])
+
+    def test_saving_event_looks_up_new_city(self):
+        with mock.patch.object(geo, '_nominatim', return_value=(38.1, -81.2)) as lookup:
+            with self.captureOnCommitCallbacks(execute=True):
+                self._event('Civic Center, Newtown, WV')
+            with self.captureOnCommitCallbacks(execute=True):
+                self._event('Rec Center, Morgantown, WV')   # in the built-in table
+        lookup.assert_called_once_with('Newtown, WV')
+        self.assertTrue(GeocodedLocation.objects.filter(query='Newtown, WV').exists())
+
+    def test_failed_lookup_does_not_break_save(self):
+        with mock.patch.object(geo, '_nominatim', side_effect=OSError('offline')):
+            with self.captureOnCommitCallbacks(execute=True):
+                event = self._event('Civic Center, Newtown, WV')
+        self.assertTrue(CalendarEvent.objects.filter(pk=event.pk).exists())
+        self.assertFalse(GeocodedLocation.objects.exists())
+
+    def test_surface_and_underground_colors(self):
+        self._event('Elko, NV', title='Nevada Surface Mine Rescue Contest')
+        self._event('Price, UT', title='Western Regional Mine Rescue Contest')
+        response = self.client.get(reverse('calendar'), {'year': 2026, 'month': 9})
+        self.assertContains(response, 'md-core md-surface')
+        self.assertContains(response, 'md-core md-underground')
+        self.assertContains(response, 'Competitions without a location are left off the map')
 
 
 class CategorizeProblemTests(TestCase):

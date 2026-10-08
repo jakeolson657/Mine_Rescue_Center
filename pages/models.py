@@ -2,7 +2,7 @@ import os
 import re
 
 from django.core.exceptions import ValidationError
-from django.db import models
+from django.db import models, transaction
 from django.db.models.signals import post_delete, post_save
 from django.dispatch import receiver
 
@@ -657,3 +657,32 @@ def link_competitions_on_event_save(sender, instance, **kwargs):
         if match:
             competition.calendar_event = match
             competition.save(update_fields=['calendar_event'])
+
+
+class GeocodedLocation(models.Model):
+    """Coordinates looked up for a contest city that isn't in the map's
+    built-in table (pages/geo.py CITY_COORDS). Filled automatically when a
+    calendar event is saved; see ``geo.geocode_location``."""
+    query = models.CharField(max_length=255, unique=True,
+                             help_text='"City, ST" (or the full venue when it has no city/state)')
+    latitude = models.FloatField()
+    longitude = models.FloatField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['query']
+
+    def __str__(self):
+        return self.query
+
+
+@receiver(post_save, sender=CalendarEvent)
+def geocode_location_on_event_save(sender, instance, raw=False, **kwargs):
+    """Look up a new event's city for the calendar map once the save commits.
+    Skipped for fixture loads (``raw``); the network call never blocks or
+    breaks the save if it fails."""
+    if raw:
+        return
+    from .geo import geocode_location
+    location = instance.location
+    transaction.on_commit(lambda: geocode_location(location))

@@ -3,7 +3,7 @@ from .models import (
     CalendarEvent, Competition, CompetitionProblem, ProblemDocument,
     SiteConfiguration, InstructionGuide, CompetitionRuleDocument, Scorecard,
     Quiz, QuizQuestion, QuizChoice, BenchingApparatus, BenchingResource,
-    FirstAidResource, RopeRescueResource,
+    FirstAidResource, RopeRescueResource, GeocodedLocation,
 )
 
 admin.site.site_header = "Mine Rescue Center Administration"
@@ -27,6 +27,15 @@ class CalendarEventAdmin(admin.ModelAdmin):
     list_filter = ('start_date',)
     search_fields = ('title', 'location')
     ordering = ('-start_date',)
+
+
+
+@admin.register(GeocodedLocation)
+class GeocodedLocationAdmin(admin.ModelAdmin):
+    # Map coordinates looked up automatically for new contest cities; edit a
+    # row to correct a bad match, or delete it to have it looked up again.
+    list_display = ('query', 'latitude', 'longitude', 'created_at')
+    search_fields = ('query',)
 
 
 class CompetitionProblemInline(admin.TabularInline):

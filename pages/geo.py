@@ -1,19 +1,33 @@
 """Place calendar events on the U.S. map shown under the Competition Calendar.
 
-Event locations are free-text venue strings, so instead of geocoding at runtime
-we keep a small table of the cities contests are held in. ``short_location``
-already reduces a venue to "City, ST"; that key looks up a latitude/longitude
-here. A city missing from the table falls back to its state's center (flagged
-``approximate``) so a new contest still shows up until its city is added.
+Event locations are free-text venue strings. ``short_location`` reduces a
+venue to "City, ST", which is looked up, in order, in:
+
+1. ``CITY_COORDS`` below, the cities contests have been held in;
+2. ``GeocodedLocation`` rows, filled automatically from OpenStreetMap
+   (Nominatim) whenever a calendar event is saved with a new city, and by
+   ``manage.py geocode_locations``;
+3. the state's center (flagged ``approximate``), so a contest still shows
+   while a lookup is pending or has failed.
+
+Events with no location at all are left off the map.
 
 Points are projected with the same Albers USA (lower 48) projection the state
 outlines in ``templates/partials/us_states_paths.svg`` were drawn with
 (us-atlas ``states-albers-10m``: d3.geoAlbersUsa, scale 1300, translate
 [487.5, 305], in a 975 x 610 viewBox).
 """
+import json
+import logging
 import math
+import threading
+import time
+import urllib.parse
+import urllib.request
 
-from .models import short_location
+from .models import GeocodedLocation, short_location
+
+logger = logging.getLogger(__name__)
 
 MAP_WIDTH = 975
 MAP_HEIGHT = 610
@@ -142,15 +156,90 @@ def is_surface(event):
     return 'surface' in event.title.lower()
 
 
-def locate(location):
-    """Venue string -> (label, (lat, lng), approximate) or None."""
-    label = short_location(location)
+def _geocoded():
+    return {q: (lat, lng) for q, lat, lng in
+            GeocodedLocation.objects.values_list('query', 'latitude', 'longitude')}
+
+
+def locate(location, geocoded=None):
+    """Venue string -> (label, (lat, lng), approximate) or None.
+
+    ``geocoded`` is a preloaded {query: (lat, lng)} of GeocodedLocation rows
+    (loaded here when not given)."""
+    label = short_location(location).strip()
+    if not label:
+        return None
     if label in CITY_COORDS:
         return label, CITY_COORDS[label], False
+    if geocoded is None:
+        geocoded = _geocoded()
+    if label in geocoded:
+        return label, geocoded[label], False
     state = label.rsplit(', ', 1)[-1] if ', ' in label else ''
     if state in STATE_CENTERS:
         return label, STATE_CENTERS[state], True
     return None
+
+
+# --- Automatic lookup of new cities ----------------------------------------
+NOMINATIM_URL = 'https://nominatim.openstreetmap.org/search'
+USER_AGENT = 'MineRescueCenter/1.0 (+https://minerescuecenter.com)'
+# The map only draws the lower 48; ignore matches outside it.
+_LOWER48 = {'lat': (24.0, 49.6), 'lng': (-125.0, -66.5)}
+_lookup_lock = threading.Lock()
+_last_lookup = 0.0
+
+
+def _nominatim(query):
+    """Return (lat, lng) for ``query`` or None. Rate-limited to one request a
+    second, as Nominatim's usage policy requires."""
+    global _last_lookup
+    params = urllib.parse.urlencode({
+        'q': query, 'format': 'json', 'limit': 1, 'countrycodes': 'us',
+    })
+    request = urllib.request.Request(f'{NOMINATIM_URL}?{params}',
+                                     headers={'User-Agent': USER_AGENT})
+    with _lookup_lock:
+        wait = _last_lookup + 1.1 - time.monotonic()
+        if wait > 0:
+            time.sleep(wait)
+        try:
+            with urllib.request.urlopen(request, timeout=6) as response:
+                results = json.load(response)
+        finally:
+            _last_lookup = time.monotonic()
+    if not results:
+        return None
+    lat, lng = float(results[0]['lat']), float(results[0]['lon'])
+    if not (_LOWER48['lat'][0] <= lat <= _LOWER48['lat'][1]
+            and _LOWER48['lng'][0] <= lng <= _LOWER48['lng'][1]):
+        return None
+    return lat, lng
+
+
+def geocode_location(location):
+    """Make sure ``location`` can be placed exactly on the map, looking its
+    city up online if it's new. Returns the GeocodedLocation created, or None
+    when nothing was needed or the lookup failed (it's retried on the next
+    save, or by ``manage.py geocode_locations``). Never raises."""
+    label = short_location(location).strip()
+    if not label or label in CITY_COORDS:
+        return None
+    if GeocodedLocation.objects.filter(query=label).exists():
+        return None
+    try:
+        coords = _nominatim(label)
+        if coords is None and label != location.strip():
+            coords = _nominatim(location.strip())  # try the full venue
+    except Exception:
+        logger.warning('Geocoding %r failed', label, exc_info=True)
+        return None
+    if coords is None:
+        logger.info('No map location found for %r', label)
+        return None
+    place, _ = GeocodedLocation.objects.get_or_create(
+        query=label, defaults={'latitude': coords[0], 'longitude': coords[1]})
+    return place
 
 
 # Dots closer than this (in viewBox units) merge into one marker so nearby
@@ -167,8 +256,9 @@ def map_markers(events):
     couldn't be placed."""
     places = {}
     unmapped = []
+    geocoded = _geocoded()
     for event in events:
-        found = locate(event.location)
+        found = locate(event.location, geocoded)
         if not found:
             unmapped.append(event)
             continue

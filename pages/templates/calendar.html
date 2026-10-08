@@ -442,7 +442,6 @@
     .mp-date { font-family: var(--font-mono); font-size: 11.5px; color: var(--muted); }
 
     .cal-map-note { margin: 12px 2px 0; font-size: 13px; color: var(--muted); }
-    .cal-map-note a { color: var(--steel); }
 
     @media (max-width: 600px) {
         .cal-map-frame { padding: 8px; }
@@ -606,12 +605,7 @@
         </template>
         {% endfor %}
 
-        {% if map_unmapped %}
-        <p class="cal-map-note">
-            Not shown on the map (no location listed):
-            {% for e in map_unmapped %}<a href="{% url 'event_detail' e.id %}">{{ e.title }}</a>{% if not forloop.last %}, {% endif %}{% endfor %}.
-        </p>
-        {% endif %}
+        <p class="cal-map-note">* Competitions without a location are left off the map.</p>
     </section>
 </div>
 {% endblock %}

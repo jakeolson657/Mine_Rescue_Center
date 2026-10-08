@@ -236,7 +236,7 @@ class CalendarView(ListView):
         ).order_by('start_date', '-end_date'))
         for event in year_events:
             event.is_surface = is_surface(event)
-        markers, unmapped = map_markers(year_events)
+        markers, _ = map_markers(year_events)
         for marker in markers:
             kinds = {e.is_surface for p in marker['places'] for e in p['events']}
             marker['kind'] = ('mixed' if len(kinds) > 1
@@ -253,7 +253,6 @@ class CalendarView(ListView):
             marker['top'] = round(marker['y'] / MAP_HEIGHT * 100, 2)
         context['map_markers'] = markers
         context['map_kinds'] = {m['kind'] for m in markers}
-        context['map_unmapped'] = unmapped
 
         if month == 1:
             context['prev_month'] = 12
