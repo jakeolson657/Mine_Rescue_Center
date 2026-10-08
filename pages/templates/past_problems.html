@@ -122,7 +122,7 @@
     .repo-noresults strong { color: var(--ink); }
 
     /* Hidden by the client-side filter */
-    .year-group[hidden], .competition[hidden], .problem[hidden] { display: none; }
+    .year-group[hidden], .competition[hidden], .problem[hidden], .document-item[hidden] { display: none; }
 
     /* Year group */
     .year-group {
@@ -500,11 +500,11 @@
                             <div class="competition-body">
                                 {% for problem in problems %}
                                     {% with documents=problem.documents.all %}
-                                    <details class="problem" data-categories="{{ problem.category_csv }}" data-search="{{ problem.title }} {{ problem.description }}{% for doc in documents %} {{ doc.title }}{% endfor %}">
+                                    <details class="problem" data-categories="{{ problem.category_csv }}" data-search="{{ problem.title }} {{ problem.description }}">
                                         <summary>
                                             <span class="chev"><svg width="13" height="13"><use href="#i-chev"/></svg></span>
                                             <span class="problem-title">{{ problem.title }}</span>
-                                            <span class="badge count">{{ documents|length }} file{{ documents|length|pluralize }}</span>
+                                            <span class="badge count js-file-count">{{ documents|length }} file{{ documents|length|pluralize }}</span>
                                         </summary>
                                         <div class="problem-body">
                                             {% if problem.description %}
@@ -666,10 +666,18 @@
                         countEl: compCount,
                         search: (c.dataset.search || '').toLowerCase(),
                         problems: Array.prototype.slice.call(c.querySelectorAll('.problem')).map(function (p) {
+                            var list = p.querySelector('.documents-list');
+                            var docs = [];
+                            try { docs = JSON.parse(document.getElementById(list.dataset.docs).textContent); } catch (e) { docs = []; }
+                            var fileCount = p.querySelector('.js-file-count');
+                            if (fileCount) fileCount.dataset.orig = fileCount.textContent;
                             return {
                                 el: p,
+                                list: list,
+                                fileCountEl: fileCount,
                                 cats: (p.dataset.categories || '').split(' ').filter(Boolean),
-                                search: (p.dataset.search || '').toLowerCase()
+                                search: (p.dataset.search || '').toLowerCase(),
+                                files: docs.map(function (d) { return (d.title || '').toLowerCase(); })
                             };
                         })
                     };
@@ -678,6 +686,28 @@
         });
 
         function activeCatList() { return Object.keys(activeCats); }
+
+        // Limit a problem's file rows to ``matched`` (indexes), or show them all
+        // when null. Rows not built yet pick this up from data-match.
+        function showFiles(p, matched) {
+            p.list.dataset.match = matched ? matched.join(',') : '';
+            Array.prototype.forEach.call(p.list.querySelectorAll('.document-item'), function (item, i) {
+                item.hidden = !!matched && matched.indexOf(i) === -1;
+            });
+            if (p.fileCountEl) {
+                p.fileCountEl.textContent = matched
+                    ? matched.length + '/' + p.files.length + ' file' + (p.files.length === 1 ? '' : 's')
+                    : p.fileCountEl.dataset.orig;
+            }
+            // Open problems whose files were picked out; close them again after.
+            if (matched) {
+                p.el.open = true;
+                p.openedBySearch = true;
+            } else if (p.openedBySearch) {
+                p.el.open = false;
+                p.openedBySearch = false;
+            }
+        }
 
         // Every word typed must appear somewhere in the contest or problem, in
         // any order ("kmi lexington" finds "Lexington, KY ... KMI"). A plural
@@ -706,10 +736,22 @@
                     var visProblems = 0;
                     c.problems.forEach(function (p) {
                         var catOk = cats.length === 0 || p.cats.some(function (x) { return activeCats[x]; });
-                        var searchOk = !q || compSearchMatch || hasAll(c.search + ' ' + p.search, words);
+                        var base = c.search + ' ' + p.search;
+                        var matchedFiles = null;  // null = show every file
+                        var searchOk = !q || compSearchMatch || hasAll(base, words);
+                        if (!searchOk) {
+                            // The words name specific files ("2026 trainer test"):
+                            // show only those files.
+                            matchedFiles = [];
+                            p.files.forEach(function (title, i) {
+                                if (hasAll(base + ' ' + title, words)) matchedFiles.push(i);
+                            });
+                            searchOk = matchedFiles.length > 0;
+                        }
                         var vis = catOk && searchOk;
                         p.el.hidden = !vis;
                         if (vis) visProblems++;
+                        showFiles(p, vis ? matchedFiles : null);
                     });
 
                     var compVisible;
@@ -839,10 +881,13 @@
                 list.innerHTML = '<p class="no-documents">No documents attached yet.</p>';
             } else {
                 var frag = document.createDocumentFragment();
-                docs.forEach(function (doc) {
+                // Files the search narrowed this problem to (see showFiles).
+                var match = list.dataset.match ? list.dataset.match.split(',') : null;
+                docs.forEach(function (doc, i) {
                     var item = document.createElement('div');
                     item.className = 'document-item';
                     item.innerHTML = rowHtml(doc);
+                    item.hidden = !!match && match.indexOf(String(i)) === -1;
                     frag.appendChild(item);
                 });
                 list.appendChild(frag);
