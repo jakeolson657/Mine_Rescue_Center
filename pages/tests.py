@@ -231,6 +231,11 @@ class CalendarSearchTests(TestCase):
         # "in" must not turn into Indiana.
         self.assertEqual(set(self.titles('contest in lexington')), {self.lex.pk, self.lex_old.pk})
 
+    def test_year_matches_event_year(self):
+        self.assertEqual(self.titles('2019 kmi'), [self.lex.pk])
+        self.assertEqual(self.titles('kmi 2015'), [self.lex_old.pk])
+        self.assertEqual(self.titles('2017 kmi'), [])
+
     def test_plural_matches_singular(self):
         self.assertEqual(self.titles('nationals'), [self.nat.pk])
 

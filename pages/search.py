@@ -40,6 +40,12 @@ def _query_filters(query):
             text = re.sub(pattern, ' ', text, flags=re.IGNORECASE)
     words = text.split()
     for word in words:
+        # "2026 harlan": a year matches events held that year.
+        if re.fullmatch(r'(19|20)\d\d', word):
+            year = int(word)
+            filters.append(Q(start_date__year=year) | Q(end_date__year=year)
+                           | Q(competitions__year=year))
+            continue
         # "WV" (or a lone "wv") is a state; a lowercase "in" or "or" in a
         # longer search is just a word.
         if word.upper() in _ABBR_TO_NAME and (word.isupper() or len(words) == 1):

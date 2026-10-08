@@ -531,6 +531,7 @@
         <div class="repo-noresults" id="repo-noresults" hidden>
             <strong>No problems match your search.</strong><br>
             Try a different term or clear the filters. If a contest is missing, you can <a href="#contribute">submit it below</a>.
+            <span id="repo-calendar-hint" hidden><br>Contests with no posted problems are on the calendar: <a id="repo-calendar-link" href="{% url 'calendar' %}">search the calendar for “<span></span>”</a>.</span>
         </div>
     {% else %}
         <div class="repo-empty">
@@ -645,6 +646,9 @@
         var clearBtn = document.getElementById('repo-clear');
         var resultCount = document.getElementById('repo-resultcount');
         var noResults = document.getElementById('repo-noresults');
+        var calendarHint = document.getElementById('repo-calendar-hint');
+        var calendarLink = document.getElementById('repo-calendar-link');
+        if (calendarLink) calendarLink.dataset.base = calendarLink.getAttribute('href');
         var activeCats = {};  // slug -> true
 
         // Index the DOM once so each keystroke just toggles visibility.
@@ -739,6 +743,12 @@
             });
 
             if (noResults) noResults.hidden = !(filtering && totalComps === 0);
+            if (calendarHint) {
+                // Offer the calendar search when the archive has nothing.
+                calendarHint.hidden = !(q && totalComps === 0);
+                calendarLink.href = calendarLink.dataset.base + '?q=' + encodeURIComponent(search.value.trim());
+                calendarLink.querySelector('span').textContent = search.value.trim();
+            }
             if (resultCount) {
                 resultCount.textContent = filtering
                     ? totalProblems + ' problem' + (totalProblems === 1 ? '' : 's') +
