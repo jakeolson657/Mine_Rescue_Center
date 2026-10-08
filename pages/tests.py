@@ -192,6 +192,16 @@ class CalendarMapTests(TestCase):
         self.assertTrue(CalendarEvent.objects.filter(pk=event.pk).exists())
         self.assertFalse(GeocodedLocation.objects.exists())
 
+    def test_fixture_load_does_not_auto_link_competitions(self):
+        from django.db.models.signals import post_save
+        comp = Competition.objects.create(name='Test Contest', year=2026)
+        event = CalendarEvent(title='Test Contest', location='Elko, NV',
+                              start_date=date(2026, 9, 1), end_date=date(2026, 9, 2))
+        CalendarEvent.objects.bulk_create([event])
+        post_save.send(sender=CalendarEvent, instance=event, created=True, raw=True)
+        comp.refresh_from_db()
+        self.assertIsNone(comp.calendar_event_id)
+
     def test_surface_and_underground_colors(self):
         self._event('Elko, NV', title='Nevada Surface Mine Rescue Contest')
         self._event('Price, UT', title='Western Regional Mine Rescue Contest')

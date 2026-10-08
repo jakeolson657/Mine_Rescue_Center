@@ -646,9 +646,12 @@ class QuizChoice(models.Model):
 
 
 @receiver(post_save, sender=CalendarEvent)
-def link_competitions_on_event_save(sender, instance, **kwargs):
+def link_competitions_on_event_save(sender, instance, raw=False, **kwargs):
     """When calendar history is added, link any competition from that year that
-    doesn't have a calendar entry yet and now matches one."""
+    doesn't have a calendar entry yet and now matches one. Skipped for fixture
+    loads (``raw``), which carry their competitions' links themselves."""
+    if raw:
+        return
     unlinked = Competition.objects.filter(
         calendar_event__isnull=True, year=instance.start_date.year
     )
