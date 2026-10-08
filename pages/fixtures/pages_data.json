@@ -4544,6 +4544,30 @@
  }
 },
 {
+ "model": "pages.calendarevent",
+ "pk": 404,
+ "fields": {
+  "title": "Southeast Regional Mine Rescue Competition",
+  "start_date": "2027-03-01",
+  "end_date": "2027-03-04",
+  "location": "Sevierville Convention Center, 202 Gists Creek Rd., Sevierville, TN 37876",
+  "description": "Hosted by the Tennessee Mine Rescue Association.",
+  "contact_info": "",
+  "resources": [
+   {
+    "label": "Competition Information",
+    "url": "https://www.holmessafety.org/2027-southeast-regional-mine-rescue-competition/"
+   },
+   {
+    "label": "MSHA Contest Page",
+    "url": "https://www.msha.gov/training/training/mine-rescue-training/mine-rescue-contests/2027-enforcement-mine-rescue-contest"
+   }
+  ],
+  "created_at": "2026-10-08T15:23:25.636Z",
+  "updated_at": "2026-10-08T15:23:25.636Z"
+ }
+},
+{
  "model": "pages.competition",
  "pk": 1,
  "fields": {
