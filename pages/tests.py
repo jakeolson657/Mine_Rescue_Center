@@ -163,6 +163,17 @@ class CalendarMapTests(TestCase):
         self.assertEqual(markers[0]['places'][0]['label'], 'Morgantown, WV')
         self.assertFalse(markers[0]['places'][0]['approximate'])
 
+    def test_alaska_and_hawaii_use_the_insets(self):
+        # The insets sit in the bottom-left corner of the 975 x 610 map.
+        for lat, lng in ((64.838, -147.716), (21.307, -157.858)):
+            x, y = geo.project(lat, lng)
+            self.assertLess(x, 350)
+            self.assertGreater(y, 480)
+        self._event('Civic Center, Fairbanks, Alaska')
+        markers, unmapped = self._markers()
+        self.assertEqual(unmapped, [])
+        self.assertFalse(markers[0]['places'][0]['approximate'])
+
     def test_blank_location_is_left_off(self):
         self._event('')
         markers, unmapped = self._markers()

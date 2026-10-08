@@ -12,10 +12,11 @@ venue to "City, ST", which is looked up, in order, in:
 
 Events with no location at all are left off the map.
 
-Points are projected with the same Albers USA (lower 48) projection the state
-outlines in ``templates/partials/us_states_paths.svg`` were drawn with
-(us-atlas ``states-albers-10m``: d3.geoAlbersUsa, scale 1300, translate
-[487.5, 305], in a 975 x 610 viewBox).
+Points are projected with the same Albers USA projection the state outlines
+in ``templates/partials/us_states_paths.svg`` were drawn with (us-atlas
+``states-albers-10m``: d3.geoAlbersUsa, scale 1300, translate [487.5, 305], in
+a 975 x 610 viewBox), including its Alaska and Hawaii insets in the bottom
+left.
 """
 import json
 import logging
@@ -54,6 +55,7 @@ CITY_COORDS = {
     'Delta, CO': (38.742, -108.069),
     'Elko, NV': (40.832, -115.763),
     'Farmington, MO': (37.781, -90.422),
+    'Fairbanks, AK': (64.838, -147.716),
     'Farmington, NM': (36.728, -108.219),
     'Fort Branch, IN': (38.251, -87.581),
     'Franklin, TN': (35.925, -86.869),
@@ -99,8 +101,9 @@ CITY_COORDS = {
     'Wise, VA': (36.976, -82.576),
 }
 
-# Rough geographic centers of the lower 48, for cities not in CITY_COORDS.
+# Rough geographic centers of each state, for cities not in CITY_COORDS.
 STATE_CENTERS = {
+    'AK': (64.2, -149.5), 'HI': (20.8, -156.3),
     'AL': (32.8, -86.8), 'AZ': (34.3, -111.7), 'AR': (34.9, -92.4),
     'CA': (37.2, -119.5), 'CO': (39.0, -105.5), 'CT': (41.6, -72.7),
     'DE': (39.0, -75.5), 'FL': (28.6, -82.4), 'GA': (32.7, -83.4),
@@ -119,34 +122,65 @@ STATE_CENTERS = {
     'WV': (38.6, -80.6), 'WI': (44.6, -89.9), 'WY': (43.0, -107.6),
 }
 
-# --- Albers USA (lower 48), matching d3.geoAlbersUsa().scale(1300) ---------
+# --- Albers USA, matching d3.geoAlbersUsa().scale(1300) --------------------
 _SCALE = 1300
 _TRANSLATE = (487.5, 305)
-_ROTATE_LON = 96          # d3.geoAlbers rotate([96, 0])
-_CENTER = (-0.6, 38.7)    # d3.geoAlbers center, in rotated coordinates
-_PARALLELS = (29.5, 45.5)
-
-_s0 = math.sin(math.radians(_PARALLELS[0]))
-_N = (_s0 + math.sin(math.radians(_PARALLELS[1]))) / 2
-_C = 1 + _s0 * (2 * _N - _s0)
-_R0 = math.sqrt(_C) / _N
 
 
-def _conic_equal_area(lam, phi):
-    r = math.sqrt(_C - 2 * _N * math.sin(phi)) / _N
-    lam *= _N
-    return r * math.sin(lam), _R0 - r * math.cos(lam)
+class _ConicEqualArea:
+    """One of d3.geoAlbersUsa's three conic equal-area projections."""
+
+    def __init__(self, rotate_lon, center, parallels, scale, translate):
+        s0 = math.sin(math.radians(parallels[0]))
+        self.n = (s0 + math.sin(math.radians(parallels[1]))) / 2
+        self.c = 1 + s0 * (2 * self.n - s0)
+        self.r0 = math.sqrt(self.c) / self.n
+        self.rotate_lon = rotate_lon
+        self.scale = scale
+        self.translate = translate
+        # The center is given in rotated coordinates (d3's projection.center).
+        self.cx, self.cy = self._raw(math.radians(center[0]), math.radians(center[1]))
+
+    def _raw(self, lam, phi):
+        r = math.sqrt(self.c - 2 * self.n * math.sin(phi)) / self.n
+        lam *= self.n
+        return r * math.sin(lam), self.r0 - r * math.cos(lam)
+
+    def __call__(self, lat, lng):
+        lam = math.radians(((lng + self.rotate_lon + 180) % 360) - 180)
+        x, y = self._raw(lam, math.radians(lat))
+        return (self.translate[0] + self.scale * (x - self.cx),
+                self.translate[1] - self.scale * (y - self.cy))
 
 
-_CX, _CY = _conic_equal_area(math.radians(_CENTER[0]), math.radians(_CENTER[1]))
+_tx, _ty = _TRANSLATE
+_LOWER48_PROJ = _ConicEqualArea(96, (-0.6, 38.7), (29.5, 45.5), _SCALE, _TRANSLATE)
+# The insets: Alaska shrunk to 35% and both moved under the southwest.
+_ALASKA_PROJ = _ConicEqualArea(154, (-2, 58.5), (55, 65), _SCALE * 0.35,
+                               (_tx - 0.307 * _SCALE, _ty + 0.201 * _SCALE))
+_HAWAII_PROJ = _ConicEqualArea(157, (-3, 19.9), (8, 18), _SCALE,
+                               (_tx - 0.205 * _SCALE, _ty + 0.212 * _SCALE))
+
+
+def _region(lat, lng):
+    """Which part of the map a point is drawn in, or None if it's off-map."""
+    if 24.0 <= lat <= 49.6 and -125.0 <= lng <= -66.5:
+        return 'lower48'
+    if 51.0 <= lat <= 72.0 and (-180.0 <= lng <= -129.0 or lng >= 172.0):
+        return 'alaska'
+    if 18.5 <= lat <= 22.5 and -161.0 <= lng <= -154.5:
+        return 'hawaii'
+    return None
 
 
 def project(lat, lng):
     """Latitude/longitude -> (x, y) in the 975 x 610 map viewBox."""
-    lam = math.radians(((lng + _ROTATE_LON + 180) % 360) - 180)
-    x, y = _conic_equal_area(lam, math.radians(lat))
-    return (_TRANSLATE[0] + _SCALE * (x - _CX),
-            _TRANSLATE[1] - _SCALE * (y - _CY))
+    region = _region(lat, lng)
+    if region == 'alaska':
+        return _ALASKA_PROJ(lat, lng)
+    if region == 'hawaii':
+        return _HAWAII_PROJ(lat, lng)
+    return _LOWER48_PROJ(lat, lng)
 
 
 def is_surface(event):
@@ -184,8 +218,6 @@ def locate(location, geocoded=None):
 # --- Automatic lookup of new cities ----------------------------------------
 NOMINATIM_URL = 'https://nominatim.openstreetmap.org/search'
 USER_AGENT = 'MineRescueCenter/1.0 (+https://minerescuecenter.com)'
-# The map only draws the lower 48; ignore matches outside it.
-_LOWER48 = {'lat': (24.0, 49.6), 'lng': (-125.0, -66.5)}
 _lookup_lock = threading.Lock()
 _last_lookup = 0.0
 
@@ -211,8 +243,7 @@ def _nominatim(query):
     if not results:
         return None
     lat, lng = float(results[0]['lat']), float(results[0]['lon'])
-    if not (_LOWER48['lat'][0] <= lat <= _LOWER48['lat'][1]
-            and _LOWER48['lng'][0] <= lng <= _LOWER48['lng'][1]):
+    if _region(lat, lng) is None:  # somewhere the map doesn't draw
         return None
     return lat, lng
 
