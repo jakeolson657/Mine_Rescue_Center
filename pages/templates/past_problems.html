@@ -826,6 +826,13 @@
 
         search.addEventListener('input', apply);
 
+        // Arriving from the calendar's "Search past problems for …" link.
+        var initial = new URLSearchParams(window.location.search).get('q');
+        if (initial) {
+            search.value = initial;
+            apply();
+        }
+
         if (clearBtn) {
             clearBtn.addEventListener('click', function () {
                 search.value = '';

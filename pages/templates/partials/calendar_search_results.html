@@ -33,5 +33,11 @@
 <a class="cs-all" href="{% url 'calendar' %}?q={{ search_query|urlencode }}">See all {{ search_total }} results</a>
 {% endif %}
 {% elif search_query %}
-<p class="cs-none">No competitions match “{{ search_query }}”. Try a contest name, city, or state.</p>
+<p class="cs-none">No calendar events match “{{ search_query }}”.</p>
+{# Older contests often have posted problems but no calendar event. #}
+<a class="cs-archive" href="{% url 'past_problems' %}?q={{ search_query|urlencode }}">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+    <span>Search past problems for “{{ search_query }}”</span>
+    <svg class="cs-archive-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+</a>
 {% endif %}

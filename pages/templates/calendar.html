@@ -199,6 +199,28 @@
     .cs-all:hover, .cs-all:focus-visible { color: var(--red); }
     .cs-suggest .cs-none { margin: 0; border-top: none; }
 
+    .cs-archive {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 2px 4px 4px;
+        padding: 11px 12px;
+        border-radius: 8px;
+        background: var(--red-tint);
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--red);
+        text-decoration: none;
+        outline: none;
+        transition: background-color 0.15s;
+    }
+
+    .cs-archive svg { flex: none; }
+    .cs-archive .cs-archive-arrow { margin-left: auto; transition: transform 0.15s; }
+    .cs-archive:hover, .cs-archive:focus-visible { background: #f6dcd9; }
+    .cs-archive:hover .cs-archive-arrow, .cs-archive:focus-visible .cs-archive-arrow { transform: translateX(3px); }
+    .cs-results .cs-archive { margin: 4px 0 0; max-width: 560px; }
+
     .cs-results {
         margin-bottom: 40px;
         padding: 20px 22px;
@@ -927,7 +949,7 @@
         var lastQuery = null;
         var request = 0;
 
-        function options() { return suggest.querySelectorAll('.cs-link, .cs-file, .cs-all'); }
+        function options() { return suggest.querySelectorAll('.cs-link, .cs-file, .cs-all, .cs-archive'); }
 
         function show() {
             suggest.hidden = false;
