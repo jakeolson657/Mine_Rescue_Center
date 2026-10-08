@@ -9,7 +9,7 @@
     {"text": "Respiratory rate can be assessed by watching and feeling the chest and abdomen ____________ during breathing.",
      "choices": [{"text": "rise and fall", "is_correct": false}, {"text": "move", "is_correct": true}, {"text": "extend", "is_correct": false}]},
     {"text": "Carotid and femoral are the two pulse points that are referred to as ____________ pulses.",
-     "choices": [{"text": "main", "is_correct": false}, {"text": "central", "is_correct": true}, {"text": "perferd", "is_correct": false}]},
+     "choices": [{"text": "main", "is_correct": false}, {"text": "central", "is_correct": true}, {"text": "preferred", "is_correct": false}]},
     {"text": "Skin that is ____________ in color is called cyanotic.",
      "choices": [{"text": "reddish", "is_correct": false}, {"text": "bluish", "is_correct": true}, {"text": "blue", "is_correct": false}]},
     {"text": "A respiratory rate that is lower than ____________ for an adult should be considered inadequate.",
