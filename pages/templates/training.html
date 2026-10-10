@@ -367,6 +367,13 @@
                     <div class="document-item">
                         <span class="document-title"><span class="doc-chip">PDF</span>{{ doc.title }}</span>
                         <div class="document-actions">
+                            {% if doc.companion_file %}
+                                {% if doc.companion_kind %}
+                                    <button type="button" class="preview-btn key-btn" data-url="{{ doc.companion_file.url }}" data-kind="{{ doc.companion_kind }}" data-title="{{ doc.title }} — {{ doc.companion_label|default:'Form' }}">{{ doc.companion_label|default:"Form" }}</button>
+                                {% else %}
+                                    <a href="{{ doc.companion_file.url }}" class="preview-btn key-btn" target="_blank" rel="noopener">{{ doc.companion_label|default:"Form" }}</a>
+                                {% endif %}
+                            {% endif %}
                             {% if doc.preview_kind %}
                                 <button type="button" class="preview-btn" data-url="{{ doc.file.url }}" data-kind="{{ doc.preview_kind }}" data-title="{{ doc.title }}">Preview</button>
                             {% endif %}

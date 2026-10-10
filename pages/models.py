@@ -427,6 +427,15 @@ class CompetitionRuleDocument(models.Model):
     or supporting document (Q&A, preshift record report, etc.)."""
     title = models.CharField(max_length=255, help_text="e.g. Section I: Coal Mine Rescue Rules")
     file = models.FileField(upload_to='training/rules/')
+    companion_file = models.FileField(
+        upload_to='training/rules/', blank=True,
+        help_text="A form that goes with these rules, e.g. the blank preshift record "
+                  "report. Shown as a button on this row instead of as its own document.",
+    )
+    companion_label = models.CharField(
+        max_length=40, blank=True,
+        help_text="Button text for the companion file, e.g. Blank Report",
+    )
     sort_order = models.PositiveIntegerField(default=0, help_text="Documents are listed lowest number first")
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -444,11 +453,20 @@ class CompetitionRuleDocument(models.Model):
     def preview_kind(self):
         return preview_kind_for(self.file.name)
 
+    @property
+    def companion_kind(self):
+        return preview_kind_for(self.companion_file.name) if self.companion_file else None
+
 
 @receiver(post_delete, sender=CompetitionRuleDocument)
 def delete_file_on_rule_document_delete(sender, instance, **kwargs):
-    if instance.file:
-        instance.file.delete(save=False)
+    # A file can move between rows (a standalone document becoming another
+    # row's companion), so only drop it once no row still points at it.
+    for f in (instance.file, instance.companion_file):
+        if f and not CompetitionRuleDocument.objects.filter(
+            models.Q(file=f.name) | models.Q(companion_file=f.name)
+        ).exists():
+            f.delete(save=False)
 
 
 class PastRuleDocument(models.Model):

@@ -41998,18 +41998,10 @@
  "fields": {
   "title": "Section VII: Preshift Rules",
   "file": "training/rules/section-7-preshift-rules.pdf",
+  "companion_file": "training/rules/preshift-record-report-blank.pdf",
+  "companion_label": "Blank Report",
   "sort_order": 8,
   "updated_at": "2026-07-12T04:32:03.558Z"
- }
-},
-{
- "model": "pages.competitionruledocument",
- "pk": 9,
- "fields": {
-  "title": "Preshift Record Report (Blank)",
-  "file": "training/rules/preshift-record-report-blank.pdf",
-  "sort_order": 9,
-  "updated_at": "2026-07-12T04:32:03.561Z"
  }
 },
 {
