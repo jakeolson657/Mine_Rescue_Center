@@ -66,6 +66,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'pages.middleware.RevalidateHtmlMiddleware',
 ]
 
 # Django's default X-Frame-Options is DENY; SAMEORIGIN lets the past-problems

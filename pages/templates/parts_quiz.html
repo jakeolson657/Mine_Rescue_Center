@@ -24,6 +24,11 @@
     }
 {% endblock %}
 
+{% block extra_head %}
+    {# Every question shows this diagram; start fetching it before the quiz script runs. #}
+    <link rel="preload" as="image" href="{{ quiz_data.image }}">
+{% endblock %}
+
 {% block content %}
 <section class="quiz-head">
     <div class="quiz-head-inner">
