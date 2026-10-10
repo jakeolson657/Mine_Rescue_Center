@@ -132,6 +132,14 @@
 
     .about-inner .eyebrow { color: var(--red-soft); margin-bottom: 20px; font-size: 18px; }
 
+    .about-inner a.eyebrow-link {
+        display: inline-block;
+        color: var(--red-soft);
+        text-decoration: none;
+    }
+
+    .about-inner a.eyebrow-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+
     .about-inner p { margin: 0 0 16px; font-size: 16px; line-height: 1.65; color: #c2c6cc; }
 
     .about-inner a {
@@ -202,7 +210,7 @@
 <section class="about-band" id="about">
     <div class="about-inner">
         <div>
-            <div class="eyebrow">About Mine Rescue Center</div>
+            <a class="eyebrow eyebrow-link" href="{% url 'about' %}">About Mine Rescue Center</a>
             <p>Mine Rescue Center is a free resource hub for mine rescue teams across the United States. The site features a searchable archive of past contest problems, training resources, and a contest calendar to help teams stay prepared and informed.</p>
             <p>Whether you're a responder, trainer, or organizer, Mine Rescue Center is built for you. <a href="{% url 'feedback' %}">Have feedback or a feature request?</a> We'd love to hear from you.</p>
         </div>
