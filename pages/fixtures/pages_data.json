@@ -6530,7 +6530,7 @@
    }
   ],
   "created_at": "2026-10-08T15:43:50.951Z",
-  "updated_at": "2026-10-08T15:43:50.951Z"
+  "updated_at": "2026-10-08T15:46:36.256Z"
  }
 },
 {
@@ -21956,21 +21956,9 @@
   "problem": 8,
   "title": "BioPak 240R Written Test",
   "file": "problems/2024_Loveland_Bench_2024_Colorado_BIO_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2024_Loveland_Bench_2024_Colorado_BIO_Key_Test.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-11T22:12:51.768Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 69,
- "fields": {
-  "problem": 8,
-  "title": "BioPak 240R Written Test Answers",
-  "file": "problems/2024_Loveland_Bench_2024_Colorado_BIO_Key_Test.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-11T22:12:51.774Z"
  }
 },
 {
@@ -22004,21 +21992,9 @@
   "problem": 8,
   "title": "Field Written Test",
   "file": "problems/2024_Loveland_Preshift_RMMRC_PRESHIFT_2024_Written_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2024_Loveland_Preshift_RMMRC_PRESHIFT_2024_Written_Test_Answers.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-11T22:12:51.801Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 73,
- "fields": {
-  "problem": 8,
-  "title": "Field Written Test Answers",
-  "file": "problems/2024_Loveland_Preshift_RMMRC_PRESHIFT_2024_Written_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-11T22:12:51.807Z"
  }
 },
 {
@@ -22244,21 +22220,9 @@
   "problem": 716,
   "title": "Day 1 Written Test",
   "file": "problems/2021_Craig_Mine_Rescue_2021_Craig_MR_written_test_DAY_1.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2021_Craig_Mine_Rescue_2021_Craig_MR_written_test_DAY_1_KEY.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-12T02:13:46.034Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 93,
- "fields": {
-  "problem": 716,
-  "title": "Day 1 Written Test Answers",
-  "file": "problems/2021_Craig_Mine_Rescue_2021_Craig_MR_written_test_DAY_1_KEY.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-12T02:13:49.674Z"
  }
 },
 {
@@ -22268,21 +22232,9 @@
   "problem": 716,
   "title": "Day 2 Written Test",
   "file": "problems/2021_Craig_Mine_Rescue_2021_Craig_MR_written_test_DAY_2.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2021_Craig_Mine_Rescue_2021_Craig_MR_written_test_DAY_2_KEY.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-12T02:13:56.147Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 95,
- "fields": {
-  "problem": 716,
-  "title": "Day 2 Written Test Answers",
-  "file": "problems/2021_Craig_Mine_Rescue_2021_Craig_MR_written_test_DAY_2_KEY.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-12T02:13:57.940Z"
  }
 },
 {
@@ -22292,21 +22244,9 @@
   "problem": 716,
   "title": "Tech Team Written Test",
   "file": "problems/2021_Craig_Tech_Team_Craig_CO_Tech_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2021_Craig_Tech_Team_Craig_CO_Tech_Test_Key.pdf",
   "sort_order": 50,
   "uploaded_at": "2026-06-12T02:13:59.695Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 97,
- "fields": {
-  "problem": 716,
-  "title": "Tech Team Written Test Answers",
-  "file": "problems/2021_Craig_Tech_Team_Craig_CO_Tech_Test_Key.pdf",
-  "answer_key": "",
-  "sort_order": 60,
-  "uploaded_at": "2026-06-12T02:14:01.141Z"
  }
 },
 {
@@ -22436,21 +22376,9 @@
   "problem": 18,
   "title": "Day 1 Written Test",
   "file": "problems/2021_RMMRC_Price_Mine_Rescue_Written_Exams_2021_Price_MR_written_test_DAY_1.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2021_RMMRC_Price_Mine_Rescue_Written_Exams_2021_Price_MR_written_test_DAY_1_KEY.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-12T02:18:23.649Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 109,
- "fields": {
-  "problem": 18,
-  "title": "Day 1 Written Test Answers",
-  "file": "problems/2021_RMMRC_Price_Mine_Rescue_Written_Exams_2021_Price_MR_written_test_DAY_1_KEY.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-12T02:18:30.528Z"
  }
 },
 {
@@ -22460,21 +22388,9 @@
   "problem": 18,
   "title": "Day 2 Written Test",
   "file": "problems/2021_RMMRC_Price_Mine_Rescue_Written_Exams_2021_Price_MR_written_test_DAY_2.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2021_RMMRC_Price_Mine_Rescue_Written_Exams_2021_Price_MR_written_test_DAY_2_KEY.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-12T02:18:35.160Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 111,
- "fields": {
-  "problem": 18,
-  "title": "Day 2 Written Test Answers",
-  "file": "problems/2021_RMMRC_Price_Mine_Rescue_Written_Exams_2021_Price_MR_written_test_DAY_2_KEY.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-12T02:18:37.439Z"
  }
 },
 {
@@ -22748,21 +22664,9 @@
   "problem": 26,
   "title": "Test No. 1",
   "file": "problems/2021_practice_Practice_Written_Exams_Test_1_05102021.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2021_practice_Practice_Written_Exams_Test_1_05102021_withanswers.pdf",
   "sort_order": 50,
   "uploaded_at": "2026-06-12T02:24:00.734Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 135,
- "fields": {
-  "problem": 26,
-  "title": "With Answers",
-  "file": "problems/2021_practice_Practice_Written_Exams_Test_1_05102021_withanswers.pdf",
-  "answer_key": "",
-  "sort_order": 60,
-  "uploaded_at": "2026-06-12T02:24:03.320Z"
  }
 },
 {
@@ -22772,7 +22676,7 @@
   "problem": 26,
   "title": "Test No. 2",
   "file": "problems/2021_practice_Practice_Written_Exams_Test_2_05102021.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2021_practice_Practice_Written_Exams_Test_2_05102021_withanswers.pdf",
   "sort_order": 70,
   "uploaded_at": "2026-06-12T02:24:06.354Z"
  }
@@ -22784,21 +22688,9 @@
   "problem": 26,
   "title": "Test No. 1 (2)",
   "file": "problems/2021_practice_Practice_Written_Exams_Problem1writtenexam_June72021.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2021_practice_Practice_Written_Exams_Problem1writtenexam_June72021_withanswers.pdf",
   "sort_order": 90,
   "uploaded_at": "2026-06-12T02:24:47.632Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 138,
- "fields": {
-  "problem": 26,
-  "title": "With Answers (3)",
-  "file": "problems/2021_practice_Practice_Written_Exams_Problem1writtenexam_June72021_withanswers.pdf",
-  "answer_key": "",
-  "sort_order": 100,
-  "uploaded_at": "2026-06-12T02:24:49.682Z"
  }
 },
 {
@@ -22808,21 +22700,9 @@
   "problem": 26,
   "title": "Test No. 2 (2)",
   "file": "problems/2021_practice_Practice_Written_Exams_Problem2writtenexam_June72021.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2021_practice_Practice_Written_Exams_Problem2writtenexam_June72021_withanswers.pdf",
   "sort_order": 110,
   "uploaded_at": "2026-06-12T02:24:51.013Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 140,
- "fields": {
-  "problem": 26,
-  "title": "With Answers (4)",
-  "file": "problems/2021_practice_Practice_Written_Exams_Problem2writtenexam_June72021_withanswers.pdf",
-  "answer_key": "",
-  "sort_order": 120,
-  "uploaded_at": "2026-06-12T02:24:53.746Z"
  }
 },
 {
@@ -22832,21 +22712,9 @@
   "problem": 26,
   "title": "Test No. 3",
   "file": "problems/2021_practice_Practice_Written_Exams_Problem3writtenexam_June72021.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2021_practice_Practice_Written_Exams_Problem3writtenexam_June72021with_answers.pdf",
   "sort_order": 130,
   "uploaded_at": "2026-06-12T02:24:59.012Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 142,
- "fields": {
-  "problem": 26,
-  "title": "With Answers (5)",
-  "file": "problems/2021_practice_Practice_Written_Exams_Problem3writtenexam_June72021with_answers.pdf",
-  "answer_key": "",
-  "sort_order": 140,
-  "uploaded_at": "2026-06-12T02:25:00.981Z"
  }
 },
 {
@@ -22892,33 +22760,9 @@
   "problem": 719,
   "title": "Day 1 Written Test",
   "file": "problems/2021_SW_Wyoming_Mine_Rescue_SWWMA_Written_Test_MR_day_1.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2021_SW_Wyoming_Mine_Rescue_SWWMA_MR_ANSWERS_DAY_1.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-12T02:25:12.585Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 147,
- "fields": {
-  "problem": 719,
-  "title": "Day 1 Written Test Answers",
-  "file": "problems/2021_SW_Wyoming_Mine_Rescue_SWWMA_MR_ANSWERS_DAY_1.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-12T02:25:15.004Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 148,
- "fields": {
-  "problem": 719,
-  "title": "Day 2 Written Test Answers",
-  "file": "problems/2021_SW_Wyoming_Mine_Rescue_SWWMA_M_R_ANSWERS_DAY_2.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-12T02:25:50.500Z"
  }
 },
 {
@@ -23072,21 +22916,9 @@
   "problem": 32,
   "title": "First Aid Written Test",
   "file": "problems/2022_southeast_Written_Exams_SERMRC_Written_Test_First_Aid.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2022_southeast_Written_Exams_SERMRC_Written_Test_First_Aid_Key.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-12T02:28:21.500Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 162,
- "fields": {
-  "problem": 32,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2022_southeast_Written_Exams_SERMRC_Written_Test_First_Aid_Key.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-12T02:28:23.852Z"
  }
 },
 {
@@ -23096,33 +22928,9 @@
   "problem": 32,
   "title": "Coal Mine Rescue Written Test",
   "file": "problems/2022_southeast_Written_Exams_2022_SERMRC_Test_Coal.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2022_southeast_Written_Exams_2022_SERMRC_Test_Coal_Key.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-12T02:28:25.578Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 164,
- "fields": {
-  "problem": 32,
-  "title": "Coal Mine Rescue Written Test Answers",
-  "file": "problems/2022_southeast_Written_Exams_2022_SERMRC_Test_Coal_Key.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-12T02:28:27.638Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 165,
- "fields": {
-  "problem": 32,
-  "title": "MNM Mine Rescue Written Test Answers",
-  "file": "problems/2022_southeast_Written_Exams_2022_SERMRC_Test_Metal_key.pdf",
-  "answer_key": "",
-  "sort_order": 60,
-  "uploaded_at": "2026-06-12T02:29:05.935Z"
  }
 },
 {
@@ -23132,21 +22940,9 @@
   "problem": 32,
   "title": "Coal Trainer Written Test",
   "file": "problems/2022_southeast_Written_Exams_2022_SERMRC_Test_Trainer_Coal.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2022_southeast_Written_Exams_2022_SERMRC_Test_Trainer_Coal_key.pdf",
   "sort_order": 70,
   "uploaded_at": "2026-06-12T02:29:11.632Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 167,
- "fields": {
-  "problem": 32,
-  "title": "Coal Trainer Written Test Answers",
-  "file": "problems/2022_southeast_Written_Exams_2022_SERMRC_Test_Trainer_Coal_key.pdf",
-  "answer_key": "",
-  "sort_order": 80,
-  "uploaded_at": "2026-06-12T02:29:13.099Z"
  }
 },
 {
@@ -23156,21 +22952,9 @@
   "problem": 32,
   "title": "MNM Trainer Written Test",
   "file": "problems/2022_southeast_Written_Exams_2022_SERMRC_Test_Trainer_MNM.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2022_southeast_Written_Exams_2022_SERMRC_Test_Trainer_MNM_key.pdf",
   "sort_order": 90,
   "uploaded_at": "2026-06-12T02:29:15.798Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 169,
- "fields": {
-  "problem": 32,
-  "title": "MNM Trainer Written Test Answers",
-  "file": "problems/2022_southeast_Written_Exams_2022_SERMRC_Test_Trainer_MNM_key.pdf",
-  "answer_key": "",
-  "sort_order": 100,
-  "uploaded_at": "2026-06-12T02:29:19.083Z"
  }
 },
 {
@@ -23228,21 +23012,9 @@
   "problem": 705,
   "title": "Written Test",
   "file": "problems/2022_VA_Gov_Cup_Mine_Rescue_GC2022written_questions.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2022_VA_Gov_Cup_Mine_Rescue_GC2022written_Answers.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-12T02:29:43.151Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 175,
- "fields": {
-  "problem": 705,
-  "title": "Written Test Answers",
-  "file": "problems/2022_VA_Gov_Cup_Mine_Rescue_GC2022written_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-12T02:29:49.311Z"
  }
 },
 {
@@ -23300,21 +23072,9 @@
   "problem": 690,
   "title": "Day 1 Written Test",
   "file": "problems/2022_Colorado_Mine_Rescue_2022_Craig_Day_1_mine_rescue_written_test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2022_Colorado_Mine_Rescue_2022_Craig_Day_1_mine_rescue_written_test_KEY.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-12T02:30:18.711Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 181,
- "fields": {
-  "problem": 690,
-  "title": "Day 1 Written Test Answers",
-  "file": "problems/2022_Colorado_Mine_Rescue_2022_Craig_Day_1_mine_rescue_written_test_KEY.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-12T02:30:31.836Z"
  }
 },
 {
@@ -23432,7 +23192,7 @@
   "problem": 38,
   "title": "Day 1 Written Test",
   "file": "problems/2022_Heroes_Written_Examinations_Fallen_Heroes_Day_One_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2022_Heroes_Written_Examinations_Fallen_Heroes_Day_One_Test_Key.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-12T02:36:52.378Z"
  }
@@ -23444,21 +23204,9 @@
   "problem": 38,
   "title": "Day 2 Written Test",
   "file": "problems/2022_Heroes_Written_Examinations_Fallen_Heroes_Day_Two_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2022_Heroes_Written_Examinations_Fallen_Heroes_Day_Two_Test_Key.pdf",
   "sort_order": 20,
   "uploaded_at": "2026-06-12T02:36:54.970Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 193,
- "fields": {
-  "problem": 38,
-  "title": "Written Test Answers (Both Days)",
-  "file": "problems/2022_Heroes_Written_Examinations_Fallen_Heroes_TEST_KEY_FOR_BOTH_DAYS.pdf",
-  "answer_key": "",
-  "sort_order": 30,
-  "uploaded_at": "2026-06-12T02:37:51.355Z"
  }
 },
 {
@@ -23624,21 +23372,9 @@
   "problem": 713,
   "title": "First Aid Written Test",
   "file": "problems/2022_Loveland_First_Aid_Problem_Exam_2022_Loveland_First_Aid_Quiz.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2022_Loveland_First_Aid_Problem_Exam_2022_Loveland_First_Aid_Answer_key.pdf",
   "sort_order": 90,
   "uploaded_at": "2026-06-12T02:43:34.835Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 208,
- "fields": {
-  "problem": 713,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2022_Loveland_First_Aid_Problem_Exam_2022_Loveland_First_Aid_Answer_key.pdf",
-  "answer_key": "",
-  "sort_order": 100,
-  "uploaded_at": "2026-06-12T02:43:40.120Z"
  }
 },
 {
@@ -23732,21 +23468,9 @@
   "problem": 713,
   "title": "Coal Day 1 Written Test",
   "file": "problems/2022_Loveland_Day_1_2022_Loveland_COAL_Day_1_mine_rescue_written_test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2022_Loveland_Day_1_2022_Loveland_COAL_Day_1_mine_rescue_written_test_KEY.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-12T02:46:45.946Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 217,
- "fields": {
-  "problem": 713,
-  "title": "Coal Day 1 Written Test Answers",
-  "file": "problems/2022_Loveland_Day_1_2022_Loveland_COAL_Day_1_mine_rescue_written_test_KEY.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-12T02:46:54.187Z"
  }
 },
 {
@@ -23828,21 +23552,9 @@
   "problem": 713,
   "title": "Coal Day 2 Written Test",
   "file": "problems/2022_Loveland_Day_2_2022_Loveland_COAL_Day_2_mine_rescue_written_test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2022_Loveland_Day_2_2022_Loveland_COAL_Day_2_mine_rescue_written_test_KEY.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-12T02:50:09.722Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 225,
- "fields": {
-  "problem": 713,
-  "title": "Coal Day 2 Written Test Answers",
-  "file": "problems/2022_Loveland_Day_2_2022_Loveland_COAL_Day_2_mine_rescue_written_test_KEY.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-12T02:50:21.450Z"
  }
 },
 {
@@ -23936,21 +23648,9 @@
   "problem": 713,
   "title": "MNM Day 1 Written Test",
   "file": "problems/2022_Loveland_Day_1_2022_Loveland_MNM_Day_1_Written_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2022_Loveland_Day_1_2022_Loveland_MNM_Day_1_Written_Test_KEY.pdf",
   "sort_order": 50,
   "uploaded_at": "2026-06-12T02:53:46.759Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 234,
- "fields": {
-  "problem": 713,
-  "title": "MNM Day 1 Written Test Answers",
-  "file": "problems/2022_Loveland_Day_1_2022_Loveland_MNM_Day_1_Written_Test_KEY.pdf",
-  "answer_key": "",
-  "sort_order": 60,
-  "uploaded_at": "2026-06-12T02:54:01.799Z"
  }
 },
 {
@@ -24044,21 +23744,9 @@
   "problem": 713,
   "title": "MNM Day 2 Written Test",
   "file": "problems/2022_Loveland_Day_2_2022_Loveland_MNM_Day_2_Written_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2022_Loveland_Day_2_2022_Loveland_MNM_Day_2_Written_Test_KEY.pdf",
   "sort_order": 70,
   "uploaded_at": "2026-06-12T03:00:37.551Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 243,
- "fields": {
-  "problem": 713,
-  "title": "MNM Day 2 Written Test Answers",
-  "file": "problems/2022_Loveland_Day_2_2022_Loveland_MNM_Day_2_Written_Test_KEY.pdf",
-  "answer_key": "",
-  "sort_order": 80,
-  "uploaded_at": "2026-06-12T03:00:46.245Z"
  }
 },
 {
@@ -24128,21 +23816,9 @@
   "problem": 704,
   "title": "Day 1 Written Test",
   "file": "problems/2022_RMMRC_Mine_Rescue_2022_Price_Day_1_mine_rescue_written_test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2022_RMMRC_Mine_Rescue_2022_Price_Day_1_mine_rescue_written_test_KEY.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-12T03:07:16.769Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 250,
- "fields": {
-  "problem": 704,
-  "title": "Day 1 Written Test Answers",
-  "file": "problems/2022_RMMRC_Mine_Rescue_2022_Price_Day_1_mine_rescue_written_test_KEY.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-12T03:07:25.663Z"
  }
 },
 {
@@ -24152,21 +23828,9 @@
   "problem": 704,
   "title": "Day 2 Written Test",
   "file": "problems/2022_RMMRC_Mine_Rescue_2022_Price_Day_2_mine_rescue_written_test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2022_RMMRC_Mine_Rescue_2022_Price_Day_2_mine_rescue_written_test_KEY.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-12T03:07:33.549Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 252,
- "fields": {
-  "problem": 704,
-  "title": "Day 2 Written Test Answers",
-  "file": "problems/2022_RMMRC_Mine_Rescue_2022_Price_Day_2_mine_rescue_written_test_KEY.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-12T03:07:44.225Z"
  }
 },
 {
@@ -24548,21 +24212,9 @@
   "problem": 64,
   "title": "Mine Rescue Day 1 Written Test",
   "file": "problems/2023_loveland_co_Mine_Rescue_2023_Loveland_Day_1_mine_rescue_written_test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2023_loveland_co_Mine_Rescue_2023_Loveland_Day_1_mine_rescue_written_test_KEY.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-12T03:27:56.172Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 285,
- "fields": {
-  "problem": 64,
-  "title": "Mine Rescue Day 1 Written Test Answers",
-  "file": "problems/2023_loveland_co_Mine_Rescue_2023_Loveland_Day_1_mine_rescue_written_test_KEY.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-12T03:28:02.339Z"
  }
 },
 {
@@ -24584,21 +24236,9 @@
   "problem": 64,
   "title": "First Aid Written Test",
   "file": "problems/2023_loveland_co_First_Aid_LOVELAND_2023_FIRST_AID_QUESTIONS.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2023_loveland_co_First_Aid_LOVELAND_2023_FIRST_AID_QUESTIONS_and_ANSWERS.pdf",
   "sort_order": 40,
   "uploaded_at": "2026-06-12T03:28:18.389Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 288,
- "fields": {
-  "problem": 64,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2023_loveland_co_First_Aid_LOVELAND_2023_FIRST_AID_QUESTIONS_and_ANSWERS.pdf",
-  "answer_key": "",
-  "sort_order": 50,
-  "uploaded_at": "2026-06-12T03:28:24.619Z"
  }
 },
 {
@@ -24608,21 +24248,9 @@
   "problem": 64,
   "title": "Tech Team Written Test",
   "file": "problems/2023_loveland_co_Tech_Team_LOVELAND_TEAM_TECH_2023_QUESTIONS.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2023_loveland_co_Tech_Team_LOVELAND_TEAM_TECH_2023_ANSWERS.pdf",
   "sort_order": 60,
   "uploaded_at": "2026-06-12T03:28:30.159Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 290,
- "fields": {
-  "problem": 64,
-  "title": "Tech Team Written Test Answers",
-  "file": "problems/2023_loveland_co_Tech_Team_LOVELAND_TEAM_TECH_2023_ANSWERS.pdf",
-  "answer_key": "",
-  "sort_order": 70,
-  "uploaded_at": "2026-06-12T03:28:37.695Z"
  }
 },
 {
@@ -24663,24 +24291,12 @@
 },
 {
  "model": "pages.problemdocument",
- "pk": 294,
- "fields": {
-  "problem": 26,
-  "title": "With Answers (2)",
-  "file": "problems/2021_practice_Practice_Written_Exams_Test_2_05102021_withanswers.pdf",
-  "answer_key": "",
-  "sort_order": 80,
-  "uploaded_at": "2026-06-12T03:31:04.845Z"
- }
-},
-{
- "model": "pages.problemdocument",
  "pk": 295,
  "fields": {
   "problem": 719,
   "title": "Day 2 Written Test",
   "file": "problems/2021_SW_Wyoming_Mine_Rescue_SWWMA_Written_Test_MR_day_2.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2021_SW_Wyoming_Mine_Rescue_SWWMA_M_R_ANSWERS_DAY_2.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-12T03:31:27.954Z"
  }
@@ -24692,7 +24308,7 @@
   "problem": 32,
   "title": "MNM Mine Rescue Written Test",
   "file": "problems/2022_southeast_Written_Exams_2022_SERMRC_Test_Metal.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2022_southeast_Written_Exams_2022_SERMRC_Test_Metal_key.pdf",
   "sort_order": 50,
   "uploaded_at": "2026-06-12T03:31:36.468Z"
  }
@@ -24788,7 +24404,7 @@
   "problem": 687,
   "title": "Day 1 Written Test",
   "file": "problems/2023_WVSIA_Mine_Rescue_2023_WV_State_IA_Day_1_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2023_WVSIA_Mine_Rescue_2023_WV_State_IA_Day_1_Test_Answers.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-12T03:35:23.415Z"
  }
@@ -24807,38 +24423,14 @@
 },
 {
  "model": "pages.problemdocument",
- "pk": 306,
- "fields": {
-  "problem": 687,
-  "title": "Day 1 Written Test Answers",
-  "file": "problems/2023_WVSIA_Mine_Rescue_2023_WV_State_IA_Day_1_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-12T03:37:05.432Z"
- }
-},
-{
- "model": "pages.problemdocument",
  "pk": 307,
  "fields": {
   "problem": 687,
   "title": "Day 2 Written Test",
   "file": "problems/2023_WVSIA_Mine_Rescue_2023_WV_State_IA_Day_2_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2023_WVSIA_Mine_Rescue_2023_WV_State_IA_Day_2_Test_Answers.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-12T03:37:14.714Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 309,
- "fields": {
-  "problem": 687,
-  "title": "Day 2 Written Test Answers",
-  "file": "problems/2023_WVSIA_Mine_Rescue_2023_WV_State_IA_Day_2_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-12T03:42:22.114Z"
  }
 },
 {
@@ -24908,7 +24500,7 @@
   "problem": 674,
   "title": "Mine Rescue Written Test",
   "file": "problems/2023_kansas_Mine_Rescue_2023_Kansas_Mine_Rescue_Written_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2023_kansas_Mine_Rescue_2023_Kansas_Mine_Rescue_Written_Test_Answers.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-12T03:45:20.010Z"
  }
@@ -24927,38 +24519,14 @@
 },
 {
  "model": "pages.problemdocument",
- "pk": 321,
- "fields": {
-  "problem": 674,
-  "title": "Mine Rescue Written Test Answers",
-  "file": "problems/2023_kansas_Mine_Rescue_2023_Kansas_Mine_Rescue_Written_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-12T03:46:45.306Z"
- }
-},
-{
- "model": "pages.problemdocument",
  "pk": 322,
  "fields": {
   "problem": 674,
   "title": "BG4 Written Test",
   "file": "problems/2023_kansas_Bench_2023_Kansas_BG_4_Written_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2023_kansas_Bench_2023_Kansas_BG_4_Written_Test_Answers.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-12T03:46:55.209Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 323,
- "fields": {
-  "problem": 674,
-  "title": "BG4 Written Test Answers",
-  "file": "problems/2023_kansas_Bench_2023_Kansas_BG_4_Written_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-12T03:47:03.106Z"
  }
 },
 {
@@ -24968,21 +24536,9 @@
   "problem": 674,
   "title": "Bio 240R Written Test",
   "file": "problems/2023_kansas_Bench_2023_Kansas_Bio_240R_Written_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2023_kansas_Bench_2023_Kansas_Bio_240R_Written_Test_Answers.pdf",
   "sort_order": 50,
   "uploaded_at": "2026-06-12T03:49:01.336Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 327,
- "fields": {
-  "problem": 674,
-  "title": "Bio 240R Written Test Answers",
-  "file": "problems/2023_kansas_Bench_2023_Kansas_Bio_240R_Written_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 60,
-  "uploaded_at": "2026-06-12T03:49:19.017Z"
  }
 },
 {
@@ -24992,21 +24548,9 @@
   "problem": 674,
   "title": "First Aid Written Test",
   "file": "problems/2023_kansas_First_Aid_2023_Kansas_First_Aid_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2023_kansas_First_Aid_2023_Kansas_First_Aid_Test_Answers.pdf",
   "sort_order": 70,
   "uploaded_at": "2026-06-12T03:49:33.178Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 329,
- "fields": {
-  "problem": 674,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2023_kansas_First_Aid_2023_Kansas_First_Aid_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 80,
-  "uploaded_at": "2026-06-12T03:49:42.231Z"
  }
 },
 {
@@ -25016,21 +24560,9 @@
   "problem": 674,
   "title": "Tech Team Written Test",
   "file": "problems/2023_kansas_Tech_Team_2023_Kansas_Technician_Team_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2023_kansas_Tech_Team_2023_Kansas_Technician_Team_Test_Answers.pdf",
   "sort_order": 90,
   "uploaded_at": "2026-06-12T03:54:30.017Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 331,
- "fields": {
-  "problem": 674,
-  "title": "Tech Team Written Test Answers",
-  "file": "problems/2023_kansas_Tech_Team_2023_Kansas_Technician_Team_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 100,
-  "uploaded_at": "2026-06-12T03:54:40.123Z"
  }
 },
 {
@@ -25352,21 +24884,9 @@
   "problem": 677,
   "title": "Mine Rescue Written Test",
   "file": "problems/2023_missouri_Mine_Rescue_2023_Rolla_Mine_Rescue_Written_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2023_missouri_Mine_Rescue_2023_Rolla_Mine_Rescue_Written_Test_Answer_Key.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-12T04:07:26.339Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 366,
- "fields": {
-  "problem": 677,
-  "title": "Mine Rescue Written Test Answers",
-  "file": "problems/2023_missouri_Mine_Rescue_2023_Rolla_Mine_Rescue_Written_Test_Answer_Key.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-12T04:07:33.515Z"
  }
 },
 {
@@ -25376,21 +24896,9 @@
   "problem": 677,
   "title": "First Aid Written Test",
   "file": "problems/2023_missouri_First_Aid_2023_Rolla_First_Aid_Written_Exam.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2023_missouri_First_Aid_2023_Rolla_First_Aid_Written_Exam_Answers_Key.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-12T04:07:45.941Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 368,
- "fields": {
-  "problem": 677,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2023_missouri_First_Aid_2023_Rolla_First_Aid_Written_Exam_Answers_Key.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-12T04:07:55.600Z"
  }
 },
 {
@@ -25400,21 +24908,9 @@
   "problem": 677,
   "title": "BioPak Written Test",
   "file": "problems/2023_missouri_Bench_2023_Rolla_240R_Bench_Written_Test_Revised.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2023_missouri_Bench_2023_Rolla_240R_Bench_Written_Key_Revised.pdf",
   "sort_order": 50,
   "uploaded_at": "2026-06-12T04:10:31.292Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 371,
- "fields": {
-  "problem": 677,
-  "title": "BioPak Written Test Answers",
-  "file": "problems/2023_missouri_Bench_2023_Rolla_240R_Bench_Written_Key_Revised.pdf",
-  "answer_key": "",
-  "sort_order": 60,
-  "uploaded_at": "2026-06-12T04:10:40.347Z"
  }
 },
 {
@@ -25424,21 +24920,9 @@
   "problem": 677,
   "title": "Drager Written Test",
   "file": "problems/2023_missouri_Bench_2023_Rolla_BG4_Written_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2023_missouri_Bench_2023_Rolla_BG4_Written_Test_Answers.pdf",
   "sort_order": 70,
   "uploaded_at": "2026-06-12T04:10:46.928Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 373,
- "fields": {
-  "problem": 677,
-  "title": "Drager Written Test Answers",
-  "file": "problems/2023_missouri_Bench_2023_Rolla_BG4_Written_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 80,
-  "uploaded_at": "2026-06-12T04:10:53.629Z"
  }
 },
 {
@@ -25448,21 +24932,9 @@
   "problem": 677,
   "title": "Tech Team Written Test",
   "file": "problems/2023_missouri_Tech_Team_2023_Rolla_Tech_Team_Written_Exam.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2023_missouri_Tech_Team_2023_Rolla_Tech_Team_Answer_Key.pdf",
   "sort_order": 90,
   "uploaded_at": "2026-06-12T04:11:36.975Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 376,
- "fields": {
-  "problem": 677,
-  "title": "Tech Team Written Test Answers",
-  "file": "problems/2023_missouri_Tech_Team_2023_Rolla_Tech_Team_Answer_Key.pdf",
-  "answer_key": "",
-  "sort_order": 100,
-  "uploaded_at": "2026-06-12T04:11:52.466Z"
  }
 },
 {
@@ -25580,21 +25052,9 @@
   "problem": 656,
   "title": "Technician Written Test",
   "file": "problems/2024_Nevada_Tech_Team_2024_NV_MR_Contest_Technician_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2024_Nevada_Tech_Team_2024_NV_MR_Contest_Technician_Test_Key.pdf",
   "sort_order": 40,
   "uploaded_at": "2026-06-12T04:20:27.203Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 389,
- "fields": {
-  "problem": 656,
-  "title": "Technician Written Test Answers",
-  "file": "problems/2024_Nevada_Tech_Team_2024_NV_MR_Contest_Technician_Test_Key.pdf",
-  "answer_key": "",
-  "sort_order": 50,
-  "uploaded_at": "2026-06-12T04:22:13.107Z"
  }
 },
 {
@@ -26168,33 +25628,9 @@
   "problem": 108,
   "title": "First Aid Written Test",
   "file": "problems/2024_Craig_First_Aid_Contest_First_Aid_test_questions_for_Craig_2024.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2024_Craig_First_Aid_Contest_FIRST_AID_ANSWERS_FOR_CRAIG_2024.pdf",
   "sort_order": 50,
   "uploaded_at": "2026-06-12T04:42:45.550Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 453,
- "fields": {
-  "problem": 108,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2024_Craig_First_Aid_Contest_FIRST_AID_ANSWERS_FOR_CRAIG_2024.pdf",
-  "answer_key": "",
-  "sort_order": 60,
-  "uploaded_at": "2026-06-12T04:42:45.805Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 454,
- "fields": {
-  "problem": 108,
-  "title": "1 Mine Rescue Written Test - Key",
-  "file": "problems/2024_Craig_Written_Exams_2024_Craig_Day_1_mine_rescue_written_test_KEY.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-12T04:42:55.088Z"
  }
 },
 {
@@ -26204,21 +25640,9 @@
   "problem": 108,
   "title": "1 Mine Rescue Written Test",
   "file": "problems/2024_Craig_Written_Exams_2024_Craig_Day_1_mine_rescue_written_test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2024_Craig_Written_Exams_2024_Craig_Day_1_mine_rescue_written_test_KEY.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-12T04:43:02.382Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 458,
- "fields": {
-  "problem": 108,
-  "title": "2 Mine Rescue Written Test - Key",
-  "file": "problems/2024_Craig_Written_Exams_2024_Craig_Day_2_mine_rescue_written_test_KEY.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-12T04:43:07.726Z"
  }
 },
 {
@@ -26228,7 +25652,7 @@
   "problem": 108,
   "title": "2 Mine Rescue Written Test",
   "file": "problems/2024_Craig_Written_Exams_2024_Craig_Day_2_mine_rescue_written_test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2024_Craig_Written_Exams_2024_Craig_Day_2_mine_rescue_written_test_KEY.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-12T04:43:14.456Z"
  }
@@ -27236,7 +26660,7 @@
   "problem": 889,
   "title": "Written Test",
   "file": "problems/2012_preshift_Preshift_2012_KCA_Written_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2012_preshift_Preshift_2012_KCA_Written_examination_answers.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-12T21:15:11.708Z"
  }
@@ -27800,21 +27224,9 @@
   "problem": 897,
   "title": "Technician Written Test",
   "file": "problems/2012_new_iberia_Technician_Team_New_Iberia_BG4_Team_Tech_questions.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2012_new_iberia_Technician_Team_New_Iberia_BG4_Team_Tech_answers.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-12T21:28:29.203Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 619,
- "fields": {
-  "problem": 897,
-  "title": "Technician Written Test Answers",
-  "file": "problems/2012_new_iberia_Technician_Team_New_Iberia_BG4_Team_Tech_answers.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-12T21:28:32.479Z"
  }
 },
 {
@@ -27860,21 +27272,9 @@
   "problem": 898,
   "title": "Field Written Test",
   "file": "problems/2012_northeast_Mine_Rescue_2012_Field_Competition_wexam.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2012_northeast_Mine_Rescue_2012_Field_Competition_wexam_Answers.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-12T21:28:50.069Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 624,
- "fields": {
-  "problem": 898,
-  "title": "Field Written Test Answers",
-  "file": "problems/2012_northeast_Mine_Rescue_2012_Field_Competition_wexam_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-12T21:28:51.775Z"
  }
 },
 {
@@ -27884,21 +27284,9 @@
   "problem": 898,
   "title": "First Aid Written Test",
   "file": "problems/2012_northeast_First_Aid_2012_First_Aid_wexam.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2012_northeast_First_Aid_2012_First_Aid_wexam_Answers.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-12T21:28:53.886Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 626,
- "fields": {
-  "problem": 898,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2012_northeast_First_Aid_2012_First_Aid_wexam_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-12T21:28:55.745Z"
  }
 },
 {
@@ -27908,21 +27296,9 @@
   "problem": 898,
   "title": "Technician Written Test",
   "file": "problems/2012_northeast_Technician_Team_2012_Tech_Team_wexam.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2012_northeast_Technician_Team_2012_Tech_Team_wexam_Answers.pdf",
   "sort_order": 50,
   "uploaded_at": "2026-06-12T21:28:58.154Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 628,
- "fields": {
-  "problem": 898,
-  "title": "Technician Written Test Answers",
-  "file": "problems/2012_northeast_Technician_Team_2012_Tech_Team_wexam_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 60,
-  "uploaded_at": "2026-06-12T21:28:59.712Z"
  }
 },
 {
@@ -27932,21 +27308,9 @@
   "problem": 898,
   "title": "Team Trainer Written Test",
   "file": "problems/2012_northeast_Team_Trainer_2012_Team_Trainer_Competition_wexam.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2012_northeast_Team_Trainer_2012_Team_Trainer_Competition_wexam_Answers.pdf",
   "sort_order": 70,
   "uploaded_at": "2026-06-12T21:29:01.314Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 630,
- "fields": {
-  "problem": 898,
-  "title": "Team Trainer Written Test Answers",
-  "file": "problems/2012_northeast_Team_Trainer_2012_Team_Trainer_Competition_wexam_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 80,
-  "uploaded_at": "2026-06-12T21:29:02.825Z"
  }
 },
 {
@@ -28076,21 +27440,9 @@
   "problem": 899,
   "title": "Field Written Test",
   "file": "problems/2012_southwest_Mine_Rescue_Questions_field_test_2012_Carlsbad.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2012_southwest_Mine_Rescue_Answer_field_test_2012_Carlsbad.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-12T21:30:14.067Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 642,
- "fields": {
-  "problem": 899,
-  "title": "Field Written Test Answers",
-  "file": "problems/2012_southwest_Mine_Rescue_Answer_field_test_2012_Carlsbad.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-12T21:30:15.520Z"
  }
 },
 {
@@ -28100,21 +27452,9 @@
   "problem": 899,
   "title": "Technician Written Test",
   "file": "problems/2012_southwest_Technician_Team_Questions_BG4_tech_test_2012_Carlsbad.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2012_southwest_Technician_Team_Answers_BG4_tech_test_2012_Carlsbad.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-12T21:30:39.582Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 644,
- "fields": {
-  "problem": 899,
-  "title": "Technician Written Test Answers",
-  "file": "problems/2012_southwest_Technician_Team_Answers_BG4_tech_test_2012_Carlsbad.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-12T21:30:41.216Z"
  }
 },
 {
@@ -28196,21 +27536,9 @@
   "problem": 900,
   "title": "First Aid Written Test",
   "file": "problems/2012_north_central_First_Aid_2012_NC_Regional_Mine_Rescue_Contest_First_aid_Written_test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2012_north_central_First_Aid_2012_NC_Regional_Mine_Rescue_Contest_First_aid_Answer_Sheet.pdf",
   "sort_order": 50,
   "uploaded_at": "2026-06-12T21:31:36.121Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 652,
- "fields": {
-  "problem": 900,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2012_north_central_First_Aid_2012_NC_Regional_Mine_Rescue_Contest_First_aid_Answer_Sheet.pdf",
-  "answer_key": "",
-  "sort_order": 60,
-  "uploaded_at": "2026-06-12T21:31:37.599Z"
  }
 },
 {
@@ -28316,21 +27644,9 @@
   "problem": 902,
   "title": "Field Written Test",
   "file": "problems/2012_maysville_Mine_Rescue_2012_Maysville_team_test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2012_maysville_Mine_Rescue_2012_Maysville_team_test_answer_key.pdf",
   "sort_order": 20,
   "uploaded_at": "2026-06-12T21:32:39.098Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 662,
- "fields": {
-  "problem": 902,
-  "title": "Field Written Test Answers",
-  "file": "problems/2012_maysville_Mine_Rescue_2012_Maysville_team_test_answer_key.pdf",
-  "answer_key": "",
-  "sort_order": 30,
-  "uploaded_at": "2026-06-12T21:32:41.897Z"
  }
 },
 {
@@ -28340,21 +27656,9 @@
   "problem": 902,
   "title": "Team Trainer Written Test",
   "file": "problems/2012_maysville_Team_Trainer_2012_maysville_trainer_test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2012_maysville_Team_Trainer_2012_maysville_trainer_Answer_Key.pdf",
   "sort_order": 40,
   "uploaded_at": "2026-06-12T21:32:43.451Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 664,
- "fields": {
-  "problem": 902,
-  "title": "Team Trainer Written Test Answers",
-  "file": "problems/2012_maysville_Team_Trainer_2012_maysville_trainer_Answer_Key.pdf",
-  "answer_key": "",
-  "sort_order": 50,
-  "uploaded_at": "2026-06-12T21:32:46.246Z"
  }
 },
 {
@@ -29171,18 +28475,6 @@
   "answer_key": "",
   "sort_order": 20,
   "uploaded_at": "2026-06-13T00:04:03.381Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 735,
- "fields": {
-  "problem": 889,
-  "title": "Written Test Answers",
-  "file": "problems/2012_preshift_Preshift_2012_KCA_Written_examination_answers.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-13T00:04:16.362Z"
  }
 },
 {
@@ -30104,21 +29396,9 @@
   "problem": 879,
   "title": "Field Written Test",
   "file": "problems/2013_national_Mine_Rescue_2012_RENO_Field_wexam.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2013_national_Mine_Rescue_2012_RENO_Field_wexam_Answers.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-13T00:37:41.650Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 814,
- "fields": {
-  "problem": 879,
-  "title": "Field Written Test Answers",
-  "file": "problems/2013_national_Mine_Rescue_2012_RENO_Field_wexam_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-13T00:37:49.223Z"
  }
 },
 {
@@ -30164,21 +29444,9 @@
   "problem": 879,
   "title": "First Aid Written Test",
   "file": "problems/2013_national_First_Aid_2012_RENO_First_Aid_wexam.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2013_national_First_Aid_2012_RENO_First_Aid_wexam_Answers.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-13T00:38:19.116Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 819,
- "fields": {
-  "problem": 879,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2013_national_First_Aid_2012_RENO_First_Aid_wexam_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-13T00:38:25.368Z"
  }
 },
 {
@@ -30200,21 +29468,9 @@
   "problem": 879,
   "title": "Team Trainer Written Test",
   "file": "problems/2013_national_Team_Trainer_2012_RENO_Team_Trainer_wexam.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2013_national_Team_Trainer_2012_RENO_Team_Trainer_Answers.pdf",
   "sort_order": 60,
   "uploaded_at": "2026-06-13T00:38:42.872Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 822,
- "fields": {
-  "problem": 879,
-  "title": "Team Trainer Written Test Answers",
-  "file": "problems/2013_national_Team_Trainer_2012_RENO_Team_Trainer_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 70,
-  "uploaded_at": "2026-06-13T00:38:49.043Z"
  }
 },
 {
@@ -30224,21 +29480,9 @@
   "problem": 879,
   "title": "Technician BioPak 240S Written Test",
   "file": "problems/2013_national_Technician_Team_2012_RENO_BioPak_240S_wexam.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2013_national_Technician_Team_2012_RENO_BioPak_240S_Answers.pdf",
   "sort_order": 80,
   "uploaded_at": "2026-06-13T00:38:56.623Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 824,
- "fields": {
-  "problem": 879,
-  "title": "Technician BioPak 240S Written Test Answers",
-  "file": "problems/2013_national_Technician_Team_2012_RENO_BioPak_240S_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 90,
-  "uploaded_at": "2026-06-13T00:39:03.197Z"
  }
 },
 {
@@ -30248,21 +29492,9 @@
   "problem": 879,
   "title": "Technician BioPak 240R Written Test",
   "file": "problems/2013_national_Technician_Team_2012_RENO_BioPak_240R_wexam.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2013_national_Technician_Team_2012_RENO_BioPak_240R_Answers.pdf",
   "sort_order": 100,
   "uploaded_at": "2026-06-13T00:39:12.028Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 826,
- "fields": {
-  "problem": 879,
-  "title": "Technician BioPak 240R Written Test Answers",
-  "file": "problems/2013_national_Technician_Team_2012_RENO_BioPak_240R_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 110,
-  "uploaded_at": "2026-06-13T00:39:20.241Z"
  }
 },
 {
@@ -30272,21 +29504,9 @@
   "problem": 879,
   "title": "Technician Drager BG4 Written Test",
   "file": "problems/2013_national_Technician_Team_2012_RENO_Drager_BG4_wexam.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2013_national_Technician_Team_2012_RENO_Drager_BG4_Answers.pdf",
   "sort_order": 120,
   "uploaded_at": "2026-06-13T00:39:29.244Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 828,
- "fields": {
-  "problem": 879,
-  "title": "Technician Drager BG4 Written Test Answers",
-  "file": "problems/2013_national_Technician_Team_2012_RENO_Drager_BG4_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 130,
-  "uploaded_at": "2026-06-13T00:39:37.664Z"
  }
 },
 {
@@ -30332,21 +29552,9 @@
   "problem": 880,
   "title": "Field Written Test",
   "file": "problems/2013_csm_Mine_Rescue_Mine_Rescue_Exam.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2013_csm_Mine_Rescue_Mine_Rescue_Exam_Key.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-13T00:40:18.761Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 833,
- "fields": {
-  "problem": 880,
-  "title": "Field Written Test Answers",
-  "file": "problems/2013_csm_Mine_Rescue_Mine_Rescue_Exam_Key.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-13T00:41:04.040Z"
  }
 },
 {
@@ -30380,21 +29588,9 @@
   "problem": 880,
   "title": "First Aid Written Test",
   "file": "problems/2013_csm_First_Aid_First_Aid_Exam.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2013_csm_First_Aid_First_Aid_Exam_Key.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-13T00:43:21.877Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 837,
- "fields": {
-  "problem": 880,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2013_csm_First_Aid_First_Aid_Exam_Key.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-13T00:43:34.755Z"
  }
 },
 {
@@ -30428,21 +29624,9 @@
   "problem": 881,
   "title": "Field Written Test",
   "file": "problems/2013_north_central_Mine_Rescue_Team_written_test_2013_North_Central.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2013_north_central_Mine_Rescue_Answers_team_test_2013_North_Central.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-13T00:45:43.447Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 841,
- "fields": {
-  "problem": 881,
-  "title": "Field Written Test Answers",
-  "file": "problems/2013_north_central_Mine_Rescue_Answers_team_test_2013_North_Central.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-13T00:45:51.492Z"
  }
 },
 {
@@ -30452,21 +29636,9 @@
   "problem": 881,
   "title": "Team Trainer Written Test",
   "file": "problems/2013_north_central_Team_Trainer_Team_trainer_written_test_2013_North_Central.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2013_north_central_Team_Trainer_Answers_trainer_test_2013_North_Central.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-13T00:45:59.555Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 843,
- "fields": {
-  "problem": 881,
-  "title": "Team Trainer Written Test Answers",
-  "file": "problems/2013_north_central_Team_Trainer_Answers_trainer_test_2013_North_Central.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-13T00:46:08.179Z"
  }
 },
 {
@@ -30608,21 +29780,9 @@
   "problem": 882,
   "title": "Field Written Test",
   "file": "problems/2013_northeast_Mine_Rescue_2013_Northern_MRC_Written_Exam_Field.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2013_northeast_Mine_Rescue_2013_Northern_MRC_Written_Exam_Field_Answer_Key.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-13T00:55:34.230Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 856,
- "fields": {
-  "problem": 882,
-  "title": "Field Written Test Answers",
-  "file": "problems/2013_northeast_Mine_Rescue_2013_Northern_MRC_Written_Exam_Field_Answer_Key.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-13T00:55:41.023Z"
  }
 },
 {
@@ -30632,21 +29792,9 @@
   "problem": 882,
   "title": "First Aid Written Test",
   "file": "problems/2013_northeast_First_Aid_2013_Northern_MRC_Written_Exam_First_Aid.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2013_northeast_First_Aid_2013_Northern_MRC_Written_Exam_First_Aid_Answer_Key.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-13T00:55:49.471Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 858,
- "fields": {
-  "problem": 882,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2013_northeast_First_Aid_2013_Northern_MRC_Written_Exam_First_Aid_Answer_Key.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-13T00:55:58.815Z"
  }
 },
 {
@@ -30656,21 +29804,9 @@
   "problem": 882,
   "title": "Technician Written Test",
   "file": "problems/2013_northeast_Technician_Team_2013_Northern_MRC_Written_Exam_Tech_Team.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2013_northeast_Technician_Team_2013_Northern_MRC_Written_Exam_Tech_Team_Answer_Key.pdf",
   "sort_order": 50,
   "uploaded_at": "2026-06-13T00:56:06.310Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 860,
- "fields": {
-  "problem": 882,
-  "title": "Technician Written Test Answers",
-  "file": "problems/2013_northeast_Technician_Team_2013_Northern_MRC_Written_Exam_Tech_Team_Answer_Key.pdf",
-  "answer_key": "",
-  "sort_order": 60,
-  "uploaded_at": "2026-06-13T00:56:14.832Z"
  }
 },
 {
@@ -30680,21 +29816,9 @@
   "problem": 882,
   "title": "Team Trainer Written Test",
   "file": "problems/2013_northeast_Team_Trainer_2013_Northern_MRC_Written_Exam_Team_Trainer.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2013_northeast_Team_Trainer_2013_Northern_MRC_Written_Exam_Team_Trainer_Answer_Key.pdf",
   "sort_order": 70,
   "uploaded_at": "2026-06-13T00:58:16.508Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 862,
- "fields": {
-  "problem": 882,
-  "title": "Team Trainer Written Test Answers",
-  "file": "problems/2013_northeast_Team_Trainer_2013_Northern_MRC_Written_Exam_Team_Trainer_Answer_Key.pdf",
-  "answer_key": "",
-  "sort_order": 80,
-  "uploaded_at": "2026-06-13T00:58:23.975Z"
  }
 },
 {
@@ -30812,21 +29936,9 @@
   "problem": 884,
   "title": "Field Written Test",
   "file": "problems/2013_southern_Mine_Rescue_2013_Southern_Regional_Written_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2013_southern_Mine_Rescue_2013_Southern_Regional_Written_Test_Answers.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-13T00:59:57.498Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 873,
- "fields": {
-  "problem": 884,
-  "title": "Field Written Test Answers",
-  "file": "problems/2013_southern_Mine_Rescue_2013_Southern_Regional_Written_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-13T01:00:08.722Z"
  }
 },
 {
@@ -30848,21 +29960,9 @@
   "problem": 884,
   "title": "Technician Gas MX6 Written Test",
   "file": "problems/2013_southern_Technician_Team_Gas_2013_New_Iberia_Gasman_Bench_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2013_southern_Technician_Team_Gas_2013_New_Iberia_Gasman_Bench_Test_Answers.pdf",
   "sort_order": 40,
   "uploaded_at": "2026-06-13T01:00:26.257Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 876,
- "fields": {
-  "problem": 884,
-  "title": "Technician Gas MX6 Written Test Answers",
-  "file": "problems/2013_southern_Technician_Team_Gas_2013_New_Iberia_Gasman_Bench_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 50,
-  "uploaded_at": "2026-06-13T01:00:34.654Z"
  }
 },
 {
@@ -30896,21 +29996,9 @@
   "problem": 884,
   "title": "Technician Apparatus Biomarine Written Test",
   "file": "problems/2013_southern_Technician_Team_Apparatus_2013_New_Iberia_Bio_Bench_Written_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2013_southern_Technician_Team_Apparatus_2013_New_Iberia_Bio_Bench_TEST_ANSWERS.pdf",
   "sort_order": 80,
   "uploaded_at": "2026-06-13T01:01:02.489Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 880,
- "fields": {
-  "problem": 884,
-  "title": "Technician Apparatus Biomarine Written Test Answers",
-  "file": "problems/2013_southern_Technician_Team_Apparatus_2013_New_Iberia_Bio_Bench_TEST_ANSWERS.pdf",
-  "answer_key": "",
-  "sort_order": 90,
-  "uploaded_at": "2026-06-13T01:01:08.906Z"
  }
 },
 {
@@ -30980,21 +30068,9 @@
   "problem": 885,
   "title": "Field Written Test",
   "file": "problems/2013_southwest_Mine_Rescue_2013_SWR_Field_Competition_wexam.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2013_southwest_Mine_Rescue_2013_SWR_Field_Competition_answers.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-13T01:03:41.321Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 887,
- "fields": {
-  "problem": 885,
-  "title": "Field Written Test Answers",
-  "file": "problems/2013_southwest_Mine_Rescue_2013_SWR_Field_Competition_answers.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-13T01:03:50.399Z"
  }
 },
 {
@@ -31004,21 +30080,9 @@
   "problem": 885,
   "title": "First Aid Written Test",
   "file": "problems/2013_southwest_First_Aid_2013_SWR_First_Aid_Written_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2013_southwest_First_Aid_2013_SWR_First_Aid_Written_Test_Answers.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-13T01:03:58.207Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 889,
- "fields": {
-  "problem": 885,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2013_southwest_First_Aid_2013_SWR_First_Aid_Written_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-13T01:04:06.976Z"
  }
 },
 {
@@ -31052,21 +30116,9 @@
   "problem": 885,
   "title": "Team Trainer Written Test",
   "file": "problems/2013_southwest_Team_Trainer_2013_SWR_Trainer_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2013_southwest_Team_Trainer_2013_SWR_Trainer_Test_Answers.pdf",
   "sort_order": 60,
   "uploaded_at": "2026-06-13T01:04:31.036Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 893,
- "fields": {
-  "problem": 885,
-  "title": "Team Trainer Written Test Answers",
-  "file": "problems/2013_southwest_Team_Trainer_2013_SWR_Trainer_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 70,
-  "uploaded_at": "2026-06-13T01:04:37.985Z"
  }
 },
 {
@@ -31736,21 +30788,9 @@
   "problem": 843,
   "title": "First Aid Written Test",
   "file": "problems/2014_penna_First_Aid_2014_PA_first_aid_written_exam_questions.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_penna_First_Aid_2014_PA_first_aid_written_exam_answers.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-13T01:44:00.477Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 955,
- "fields": {
-  "problem": 843,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2014_penna_First_Aid_2014_PA_first_aid_written_exam_answers.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-13T01:44:08.699Z"
  }
 },
 {
@@ -32043,38 +31083,14 @@
 },
 {
  "model": "pages.problemdocument",
- "pk": 983,
- "fields": {
-  "problem": 847,
-  "title": "Day 1 Written Test Answers",
-  "file": "problems/2014_alabama_Mine_Rescue_2014_Alabama_Day_1_MR_answer.pdf",
-  "answer_key": "",
-  "sort_order": 15,
-  "uploaded_at": "2026-06-13T01:54:04.548Z"
- }
-},
-{
- "model": "pages.problemdocument",
  "pk": 984,
  "fields": {
   "problem": 847,
   "title": "Day 2 Written Test",
   "file": "problems/2014_alabama_Mine_Rescue_2014_Alabama_Day_2_MR_questions.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_alabama_Mine_Rescue_2014_Alabama_Day_2_MR_answer.pdf",
   "sort_order": 20,
   "uploaded_at": "2026-06-13T01:54:06.699Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 985,
- "fields": {
-  "problem": 847,
-  "title": "Day 2 Written Test Answers",
-  "file": "problems/2014_alabama_Mine_Rescue_2014_Alabama_Day_2_MR_answer.pdf",
-  "answer_key": "",
-  "sort_order": 30,
-  "uploaded_at": "2026-06-13T01:54:08.560Z"
  }
 },
 {
@@ -32372,21 +31388,9 @@
   "problem": 850,
   "title": "Written Test",
   "file": "problems/2014_kca_preshift_Preshift_2014_KCA_Preshift_Test_Questions.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_kca_preshift_Preshift_2014_KCA_Preshift_Test_Answers.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-13T02:06:47.430Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1011,
- "fields": {
-  "problem": 850,
-  "title": "Written Test Answers",
-  "file": "problems/2014_kca_preshift_Preshift_2014_KCA_Preshift_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-13T02:07:04.231Z"
  }
 },
 {
@@ -32492,21 +31496,9 @@
   "problem": 854,
   "title": "Field Written Test",
   "file": "problems/2014_national_Mine_Rescue_2014_National_Field_Exam.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_national_Mine_Rescue_2014_National_Field_Answers.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-13T02:09:34.598Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1021,
- "fields": {
-  "problem": 854,
-  "title": "Field Written Test Answers",
-  "file": "problems/2014_national_Mine_Rescue_2014_National_Field_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-13T02:09:37.950Z"
  }
 },
 {
@@ -32516,21 +31508,9 @@
   "problem": 854,
   "title": "First Aid Written Test",
   "file": "problems/2014_national_First_Aid_2014_National_First_Aid_exam.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_national_First_Aid_2014_National_First_Aid_Answers_and_Rationales.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-13T02:09:42.605Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1023,
- "fields": {
-  "problem": 854,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2014_national_First_Aid_2014_National_First_Aid_Answers_and_Rationales.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-13T02:09:45.083Z"
  }
 },
 {
@@ -32540,21 +31520,9 @@
   "problem": 854,
   "title": "Team Trainer Written Test",
   "file": "problems/2014_national_Team_Trainer_2014_National_Team_Trainer_wexam.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_national_Team_Trainer_2014_National_Team_Trainer_Answers.pdf",
   "sort_order": 50,
   "uploaded_at": "2026-06-13T02:09:50.508Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1025,
- "fields": {
-  "problem": 854,
-  "title": "Team Trainer Written Test Answers",
-  "file": "problems/2014_national_Team_Trainer_2014_National_Team_Trainer_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 60,
-  "uploaded_at": "2026-06-13T02:09:53.018Z"
  }
 },
 {
@@ -32576,21 +31544,9 @@
   "problem": 855,
   "title": "Field Written Test",
   "file": "problems/2014_midwest_Mine_Rescue_2014_NC_Field_Competition_test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_midwest_Mine_Rescue_2014_NC_Mine_Rescue_answer_sheet.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-13T02:11:36.235Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1028,
- "fields": {
-  "problem": 855,
-  "title": "Field Written Test Answers",
-  "file": "problems/2014_midwest_Mine_Rescue_2014_NC_Mine_Rescue_answer_sheet.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-13T02:11:39.594Z"
  }
 },
 {
@@ -32600,21 +31556,9 @@
   "problem": 855,
   "title": "First Aid Written Test",
   "file": "problems/2014_midwest_First_Aid_2014_NC_Regional_Mine_Rescue_Contest_First_aid_Written_test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_midwest_First_Aid_2014_NC_Regional_First_aid_Test_References.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-13T02:11:41.425Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1030,
- "fields": {
-  "problem": 855,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2014_midwest_First_Aid_2014_NC_Regional_First_aid_Test_References.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-13T02:11:43.630Z"
  }
 },
 {
@@ -32624,21 +31568,9 @@
   "problem": 855,
   "title": "Technician BioPak 240R Written Test",
   "file": "problems/2014_midwest_Technician_Team_Technician_Team_Exam_Biomarine_240R_2014_NC.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_midwest_Technician_Team_Test_Answer_Sheet_Biopak_240R_2014_NC.pdf",
   "sort_order": 50,
   "uploaded_at": "2026-06-13T02:11:45.468Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1032,
- "fields": {
-  "problem": 855,
-  "title": "Technician BioPak 240R Written Test Answers",
-  "file": "problems/2014_midwest_Technician_Team_Test_Answer_Sheet_Biopak_240R_2014_NC.pdf",
-  "answer_key": "",
-  "sort_order": 60,
-  "uploaded_at": "2026-06-13T02:11:48.658Z"
  }
 },
 {
@@ -32648,21 +31580,9 @@
   "problem": 855,
   "title": "Technician BioPak 240S Written Test",
   "file": "problems/2014_midwest_Technician_Team_Technician_Team_Exam_Biomarine_240S_2014_NC.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_midwest_Technician_Team_Test_Answer_Sheet_Biopak_240S_2014_NC.pdf",
   "sort_order": 70,
   "uploaded_at": "2026-06-13T02:11:50.474Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1034,
- "fields": {
-  "problem": 855,
-  "title": "Technician BioPak 240S Written Test Answers",
-  "file": "problems/2014_midwest_Technician_Team_Test_Answer_Sheet_Biopak_240S_2014_NC.pdf",
-  "answer_key": "",
-  "sort_order": 80,
-  "uploaded_at": "2026-06-13T02:11:52.545Z"
  }
 },
 {
@@ -32672,21 +31592,9 @@
   "problem": 855,
   "title": "Technician Drager BG4 Written Test",
   "file": "problems/2014_midwest_Technician_Team_Technician_Team_Exam_Drager_BG4_2014_NC.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_midwest_Technician_Team_Test_Answer_Sheet_Drager_BG4_2014_NC.pdf",
   "sort_order": 90,
   "uploaded_at": "2026-06-13T02:11:55.076Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1036,
- "fields": {
-  "problem": 855,
-  "title": "Technician Drager BG4 Written Test Answers",
-  "file": "problems/2014_midwest_Technician_Team_Test_Answer_Sheet_Drager_BG4_2014_NC.pdf",
-  "answer_key": "",
-  "sort_order": 100,
-  "uploaded_at": "2026-06-13T02:11:58.570Z"
  }
 },
 {
@@ -32696,7 +31604,7 @@
   "problem": 855,
   "title": "Technician Drager BG4 PSS+ Written Test",
   "file": "problems/2014_midwest_Technician_Team_Technician_Team_Exam_Drager_BG4_PSS_2014_NC.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_midwest_Technician_Team_Test_Answer_Sheet_Drager_BG4_PSS_2014_NC.pdf",
   "sort_order": 110,
   "uploaded_at": "2026-06-13T02:12:00.425Z"
  }
@@ -32720,33 +31628,9 @@
   "problem": 856,
   "title": "Field Written Test",
   "file": "problems/2014_wyoming_Mine_Rescue_2014_Green_River_Mine_Rescue_test_questions.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_wyoming_Mine_Rescue_2014_Green_River_Mine_Rescue_Answers.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-13T02:12:46.507Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1042,
- "fields": {
-  "problem": 856,
-  "title": "Field Written Test Answers",
-  "file": "problems/2014_wyoming_Mine_Rescue_2014_Green_River_Mine_Rescue_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-13T02:12:49.053Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1043,
- "fields": {
-  "problem": 856,
-  "title": "Field Written Test Answer Sheet",
-  "file": "problems/2014_wyoming_Mine_Rescue_2014_Green_River_Mine_Rescue_Answer_Sheet.pdf",
-  "answer_key": "",
-  "sort_order": 30,
-  "uploaded_at": "2026-06-13T02:12:51.533Z"
  }
 },
 {
@@ -32756,33 +31640,9 @@
   "problem": 856,
   "title": "First Aid Written Test",
   "file": "problems/2014_wyoming_First_Aid_2014_Wyoming_First_Aid_Test_questions.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_wyoming_First_Aid_2014_Wyoming_First_Aid_Answers.pdf",
   "sort_order": 40,
   "uploaded_at": "2026-06-13T02:12:53.580Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1045,
- "fields": {
-  "problem": 856,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2014_wyoming_First_Aid_2014_Wyoming_First_Aid_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 50,
-  "uploaded_at": "2026-06-13T02:12:55.295Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1046,
- "fields": {
-  "problem": 856,
-  "title": "First Aid Written Test Answer Sheet",
-  "file": "problems/2014_wyoming_First_Aid_2014_Wyoming_First_Aid_Test_answer_sheet.pdf",
-  "answer_key": "",
-  "sort_order": 60,
-  "uploaded_at": "2026-06-13T02:13:02.183Z"
  }
 },
 {
@@ -32792,57 +31652,9 @@
   "problem": 856,
   "title": "Technician BG4 Written Test",
   "file": "problems/2014_wyoming_Technician_Team_2014_Wyoming_1_Technician_BG4_Team_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_wyoming_Technician_Team_2014_Wyoming_1_Technician_BG4_Test_Answers.pdf",
   "sort_order": 70,
   "uploaded_at": "2026-06-13T02:13:10.726Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1048,
- "fields": {
-  "problem": 856,
-  "title": "Technician BG4 Written Test Answers",
-  "file": "problems/2014_wyoming_Technician_Team_2014_Wyoming_1_Technician_BG4_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 80,
-  "uploaded_at": "2026-06-13T02:13:13.331Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1049,
- "fields": {
-  "problem": 856,
-  "title": "Technician BG4 Written Test Answer Sheet",
-  "file": "problems/2014_wyoming_Technician_Team_2014_Wyoming_1_Technician_BG4_Test_answer_sheet.pdf",
-  "answer_key": "",
-  "sort_order": 90,
-  "uploaded_at": "2026-06-13T02:13:16.570Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1050,
- "fields": {
-  "problem": 856,
-  "title": "Technician iBrid MX6 Written Test Answers",
-  "file": "problems/2014_wyoming_Technician_Team_2014_Wyoming_2_Technician_MX6_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 110,
-  "uploaded_at": "2026-06-13T02:13:50.470Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1051,
- "fields": {
-  "problem": 856,
-  "title": "Technician iBrid MX6 Written Test Answer Sheet",
-  "file": "problems/2014_wyoming_Technician_Team_2014_Wyoming_2_Technician_MX6_Test_answer_sheet.pdf",
-  "answer_key": "",
-  "sort_order": 120,
-  "uploaded_at": "2026-06-13T02:13:53.454Z"
  }
 },
 {
@@ -32852,33 +31664,9 @@
   "problem": 856,
   "title": "Technician BioPak Written Test",
   "file": "problems/2014_wyoming_Technician_Team_2014_Wyoming_3_Technician_Bio_Questions_Without_Answers.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_wyoming_Technician_Team_2014_Wyoming_3_Technician_Bio_Test_Answers.pdf",
   "sort_order": 130,
   "uploaded_at": "2026-06-13T02:13:55.838Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1053,
- "fields": {
-  "problem": 856,
-  "title": "Technician BioPak Written Test Answers",
-  "file": "problems/2014_wyoming_Technician_Team_2014_Wyoming_3_Technician_Bio_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 140,
-  "uploaded_at": "2026-06-13T02:13:57.601Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1054,
- "fields": {
-  "problem": 856,
-  "title": "Technician BioPak Written Test Answer Sheet",
-  "file": "problems/2014_wyoming_Technician_Team_2014_Wyoming_3_Technician_Bio_Test_answer_sheet.pdf",
-  "answer_key": "",
-  "sort_order": 150,
-  "uploaded_at": "2026-06-13T02:13:59.502Z"
  }
 },
 {
@@ -32888,33 +31676,9 @@
   "problem": 856,
   "title": "Team Trainer Written Test",
   "file": "problems/2014_wyoming_Team_Trainer_2014_Green_River_Team_Trainer.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_wyoming_Team_Trainer_2014_Green_River_Team_Trainer_Answers.pdf",
   "sort_order": 160,
   "uploaded_at": "2026-06-13T02:14:01.579Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1056,
- "fields": {
-  "problem": 856,
-  "title": "Team Trainer Written Test Answers",
-  "file": "problems/2014_wyoming_Team_Trainer_2014_Green_River_Team_Trainer_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 170,
-  "uploaded_at": "2026-06-13T02:14:03.760Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1057,
- "fields": {
-  "problem": 856,
-  "title": "Team Trainer Written Test Answer Sheet",
-  "file": "problems/2014_wyoming_Team_Trainer_2014_Green_River_Team_Trainer_Answer_Sheet.pdf",
-  "answer_key": "",
-  "sort_order": 180,
-  "uploaded_at": "2026-06-13T02:14:05.531Z"
  }
 },
 {
@@ -32960,7 +31724,7 @@
   "problem": 857,
   "title": "Field Written Test",
   "file": "problems/2014_southeast_Mine_Rescue_GA_Field_Written_Test_2014.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_southeast_Mine_Rescue_GA_Field_Written_Test_ANSWERS_2014.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-13T02:14:17.690Z"
  }
@@ -32996,33 +31760,9 @@
   "problem": 857,
   "title": "First Aid Written Test",
   "file": "problems/2014_southeast_First_Aid_2014_SE_First_Aid_Test_questions.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_southeast_First_Aid_2014_SE_First_Aid_Test_answers.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-13T02:15:07.437Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1065,
- "fields": {
-  "problem": 857,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2014_southeast_First_Aid_2014_SE_First_Aid_Test_answers.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-13T02:15:09.166Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1066,
- "fields": {
-  "problem": 857,
-  "title": "First Aid Written Test Answer Sheet",
-  "file": "problems/2014_southeast_First_Aid_First_Aid_test_answer_sheet_2014_SE.pdf",
-  "answer_key": "",
-  "sort_order": 50,
-  "uploaded_at": "2026-06-13T02:15:13.260Z"
  }
 },
 {
@@ -33044,21 +31784,9 @@
   "problem": 857,
   "title": "Technician Drager BG4 Written Test",
   "file": "problems/2014_southeast_Technician_Team_BG4_2014_Dalton_GA.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_southeast_Technician_Team_Test_Answers_page_Module_BG4.pdf",
   "sort_order": 60,
   "uploaded_at": "2026-06-13T02:15:17.778Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1069,
- "fields": {
-  "problem": 857,
-  "title": "Technician Drager BG4 Written Test Answers",
-  "file": "problems/2014_southeast_Technician_Team_Test_Answers_page_Module_BG4.pdf",
-  "answer_key": "",
-  "sort_order": 70,
-  "uploaded_at": "2026-06-13T02:15:19.444Z"
  }
 },
 {
@@ -33068,21 +31796,9 @@
   "problem": 857,
   "title": "Technician BioPak 240 Written Test",
   "file": "problems/2014_southeast_Technician_Team_BioPak_2014_Dalton_GA.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_southeast_Technician_Team_Test_Answers_page_Module_BioPak.pdf",
   "sort_order": 80,
   "uploaded_at": "2026-06-13T02:15:21.759Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1071,
- "fields": {
-  "problem": 857,
-  "title": "Technician BioPak 240 Written Test Answers",
-  "file": "problems/2014_southeast_Technician_Team_Test_Answers_page_Module_BioPak.pdf",
-  "answer_key": "",
-  "sort_order": 90,
-  "uploaded_at": "2026-06-13T02:15:23.535Z"
  }
 },
 {
@@ -33092,7 +31808,7 @@
   "problem": 857,
   "title": "Technician iBrid MX6 Written Test",
   "file": "problems/2014_southeast_Technician_Team_MX6_2014_Dalton_GA.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_southeast_Technician_Team_Test_Answers_page_Module_MX6.pdf",
   "sort_order": 100,
   "uploaded_at": "2026-06-13T02:15:25.954Z"
  }
@@ -33104,21 +31820,9 @@
   "problem": 857,
   "title": "Team Trainer Written Test",
   "file": "problems/2014_southeast_Team_Trainer_Trainer_Dalton_2014.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_southeast_Team_Trainer_Test_Answers_Trainer_Dalton_2014.pdf",
   "sort_order": 120,
   "uploaded_at": "2026-06-13T02:16:02.930Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1074,
- "fields": {
-  "problem": 857,
-  "title": "Team Trainer Written Test Answers",
-  "file": "problems/2014_southeast_Team_Trainer_Test_Answers_Trainer_Dalton_2014.pdf",
-  "answer_key": "",
-  "sort_order": 130,
-  "uploaded_at": "2026-06-13T02:16:04.680Z"
  }
 },
 {
@@ -33152,21 +31856,9 @@
   "problem": 858,
   "title": "Field Written Test",
   "file": "problems/2014_colorado_Mine_Rescue_2014_Denver_Mine_Rescue.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_colorado_Mine_Rescue_2014_Denver_Mine_Rescue_Answers.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-13T02:17:46.376Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1078,
- "fields": {
-  "problem": 858,
-  "title": "Field Written Test Answers",
-  "file": "problems/2014_colorado_Mine_Rescue_2014_Denver_Mine_Rescue_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-13T02:19:53.721Z"
  }
 },
 {
@@ -33248,33 +31940,9 @@
   "problem": 858,
   "title": "First Aid Written Test",
   "file": "problems/2014_colorado_First_Aid_2014_Colorado_Mine_Rescue_First_Aid_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_colorado_First_Aid_2014_Colorado_First_Aid_Answers.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-13T02:20:20.294Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1086,
- "fields": {
-  "problem": 858,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2014_colorado_First_Aid_2014_Colorado_First_Aid_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-13T02:20:21.919Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1087,
- "fields": {
-  "problem": 858,
-  "title": "First Aid Written Test Answer Sheet",
-  "file": "problems/2014_colorado_First_Aid_2014_Colorado_First_Aid_Test_answer_sheet.pdf",
-  "answer_key": "",
-  "sort_order": 50,
-  "uploaded_at": "2026-06-13T02:20:23.867Z"
  }
 },
 {
@@ -33284,57 +31952,9 @@
   "problem": 858,
   "title": "Technician Drager BG4 Written Test",
   "file": "problems/2014_colorado_Technician_Team_Colorado_1_Technician_BG4_Team_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_colorado_Technician_Team_Colorado_1_Technician_BG4_Test_Answers.pdf",
   "sort_order": 60,
   "uploaded_at": "2026-06-13T02:20:25.821Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1089,
- "fields": {
-  "problem": 858,
-  "title": "Technician Drager BG4 Written Test Answers",
-  "file": "problems/2014_colorado_Technician_Team_Colorado_1_Technician_BG4_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 70,
-  "uploaded_at": "2026-06-13T02:20:27.887Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1090,
- "fields": {
-  "problem": 858,
-  "title": "Technician Drager BG4 Written Test Answer Sheet",
-  "file": "problems/2014_colorado_Technician_Team_Colorado_1_Technician_BG4_Test_answer_sheet.pdf",
-  "answer_key": "",
-  "sort_order": 80,
-  "uploaded_at": "2026-06-13T02:20:29.963Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1091,
- "fields": {
-  "problem": 858,
-  "title": "Technician Ventis MX4 Written Test Answers",
-  "file": "problems/2014_colorado_Technician_Team_Colorado_2_Technician_MX4_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 100,
-  "uploaded_at": "2026-06-13T02:21:10.576Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1092,
- "fields": {
-  "problem": 858,
-  "title": "Technician Ventis MX4 Written Test Answer Sheet",
-  "file": "problems/2014_colorado_Technician_Team_Colorado_2_Technician_MX4_Test_answer_sheet.pdf",
-  "answer_key": "",
-  "sort_order": 110,
-  "uploaded_at": "2026-06-13T02:21:12.239Z"
  }
 },
 {
@@ -33344,33 +31964,9 @@
   "problem": 858,
   "title": "Technician iBrid MX6 Written Test",
   "file": "problems/2014_colorado_Technician_Team_Colorado_3_Technician_MX6_Team_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_colorado_Technician_Team_Colorado_3_Technician_MX6_Test_Answers.pdf",
   "sort_order": 120,
   "uploaded_at": "2026-06-13T02:21:22.763Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1094,
- "fields": {
-  "problem": 858,
-  "title": "Technician iBrid MX6 Written Test Answers",
-  "file": "problems/2014_colorado_Technician_Team_Colorado_3_Technician_MX6_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 130,
-  "uploaded_at": "2026-06-13T02:21:24.753Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1095,
- "fields": {
-  "problem": 858,
-  "title": "Technician iBrid MX6 Written Test Answer Sheet",
-  "file": "problems/2014_colorado_Technician_Team_Colorado_3_Technician_MX6_Test_answer_sheet.pdf",
-  "answer_key": "",
-  "sort_order": 140,
-  "uploaded_at": "2026-06-13T02:21:26.666Z"
  }
 },
 {
@@ -33380,21 +31976,9 @@
   "problem": 858,
   "title": "Team Trainer Written Test",
   "file": "problems/2014_colorado_Team_Trainer_Denver_Team_Trainer.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_colorado_Team_Trainer_Denver_Team_Trainer_Answers.pdf",
   "sort_order": 150,
   "uploaded_at": "2026-06-13T02:21:28.155Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1097,
- "fields": {
-  "problem": 858,
-  "title": "Team Trainer Written Test Answers",
-  "file": "problems/2014_colorado_Team_Trainer_Denver_Team_Trainer_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 160,
-  "uploaded_at": "2026-06-13T02:21:29.740Z"
  }
 },
 {
@@ -33608,21 +32192,9 @@
   "problem": 861,
   "title": "First Aid Written Test",
   "file": "problems/2014_southwest_First_Aid_2014_Mine_SW_Mine_Rescue_NA_FA_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_southwest_First_Aid_2014_Mine_SW_Mine_Rescue_FA_Test.pdf",
   "sort_order": 20,
   "uploaded_at": "2026-06-13T02:23:26.409Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1116,
- "fields": {
-  "problem": 861,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2014_southwest_First_Aid_2014_Mine_SW_Mine_Rescue_FA_Test.pdf",
-  "answer_key": "",
-  "sort_order": 30,
-  "uploaded_at": "2026-06-13T02:23:28.091Z"
  }
 },
 {
@@ -35012,21 +33584,9 @@
   "problem": 831,
   "title": "First Aid Written Test",
   "file": "problems/2015_southern_First_Aid_2015_New_Iberia_WRITTEN_FIRST_AID_TEST.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2015_southern_First_Aid_2015_New_Iberia_WRITTEN_FIRST_AID_TEST_Answer_Key.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-13T03:04:45.082Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1234,
- "fields": {
-  "problem": 831,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2015_southern_First_Aid_2015_New_Iberia_WRITTEN_FIRST_AID_TEST_Answer_Key.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-13T03:04:47.117Z"
  }
 },
 {
@@ -35072,21 +33632,9 @@
   "problem": 832,
   "title": "Mine Rescue Written Test",
   "file": "problems/2015_colorado_Mine_Rescue_Denver_2015_Mine_Rescue_test_tps.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2015_colorado_Mine_Rescue_Denver_2015_Mine_Rescue_test_answer_key_tps.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-13T03:05:09.377Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1239,
- "fields": {
-  "problem": 832,
-  "title": "Mine Rescue Written Test Answers",
-  "file": "problems/2015_colorado_Mine_Rescue_Denver_2015_Mine_Rescue_test_answer_key_tps.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-13T03:05:11.547Z"
  }
 },
 {
@@ -35396,21 +33944,9 @@
   "problem": 837,
   "title": "First Aid Written Test",
   "file": "problems/2015_rolla_First_Aid_2015_Rolla_First_Aid_Test_Questions.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2015_rolla_First_Aid_2015_Rolla_First_Aid_Test_Answers.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-13T03:08:19.699Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1266,
- "fields": {
-  "problem": 837,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2015_rolla_First_Aid_2015_Rolla_First_Aid_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-13T03:08:21.493Z"
  }
 },
 {
@@ -36464,21 +35000,9 @@
   "problem": 804,
   "title": "Field Written Test",
   "file": "problems/2016_central_Mine_Rescue_2016_Central_Field_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2016_central_Mine_Rescue_2016_Central_Field_answers.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-13T03:26:40.929Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1356,
- "fields": {
-  "problem": 804,
-  "title": "Field Written Test Answers",
-  "file": "problems/2016_central_Mine_Rescue_2016_Central_Field_answers.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-13T03:26:44.167Z"
  }
 },
 {
@@ -36488,21 +35012,9 @@
   "problem": 804,
   "title": "Team Trainer Written Test",
   "file": "problems/2016_central_Team_Trainer_2016_Central_Trainer_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2016_central_Team_Trainer_2016_Central_Trainer_answers.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-13T03:26:52.945Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1358,
- "fields": {
-  "problem": 804,
-  "title": "Team Trainer Written Test Answers",
-  "file": "problems/2016_central_Team_Trainer_2016_Central_Trainer_answers.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-13T03:26:59.879Z"
  }
 },
 {
@@ -36512,21 +35024,9 @@
   "problem": 804,
   "title": "Technician BG4 Written Test",
   "file": "problems/2016_central_Technician_Team_2016_Central_BG4_Tech_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2016_central_Technician_Team_2016_Central_BG4_Tech_answers.pdf",
   "sort_order": 50,
   "uploaded_at": "2026-06-13T03:27:03.552Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1360,
- "fields": {
-  "problem": 804,
-  "title": "Technician BG4 Written Test Answers",
-  "file": "problems/2016_central_Technician_Team_2016_Central_BG4_Tech_answers.pdf",
-  "answer_key": "",
-  "sort_order": 60,
-  "uploaded_at": "2026-06-13T03:27:05.353Z"
  }
 },
 {
@@ -36740,21 +35240,9 @@
   "problem": 807,
   "title": "Field Written Test",
   "file": "problems/2016_caryville_Mine_Rescue_2016_Caryville_MR_Written_Test_Questions.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2016_caryville_Mine_Rescue_2016_Caryville_MR_Written_Test_Answers.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-06-13T03:28:36.199Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1379,
- "fields": {
-  "problem": 807,
-  "title": "Field Written Test Answers",
-  "file": "problems/2016_caryville_Mine_Rescue_2016_Caryville_MR_Written_Test_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-13T03:28:38.023Z"
  }
 },
 {
@@ -36776,21 +35264,9 @@
   "problem": 807,
   "title": "First Aid Written Test",
   "file": "problems/2016_caryville_First_Aid_2016_Caryville_FA_Test_Questions.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2016_caryville_First_Aid_2016_Caryville_FA_Answers_Key.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-06-13T03:28:48.872Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1382,
- "fields": {
-  "problem": 807,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2016_caryville_First_Aid_2016_Caryville_FA_Answers_Key.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-06-13T03:29:06.206Z"
  }
 },
 {
@@ -36848,21 +35324,9 @@
   "problem": 808,
   "title": "First Aid Written Test",
   "file": "problems/2016_wyoming_First_Aid_Rock_Springs_Wyoming_Mine_Rescue_First_Aid_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2016_wyoming_First_Aid_Rock_Springs_Wyoming_First_Aid_Answers_Reference.pdf",
   "sort_order": 20,
   "uploaded_at": "2026-06-13T03:29:32.097Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1388,
- "fields": {
-  "problem": 808,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2016_wyoming_First_Aid_Rock_Springs_Wyoming_First_Aid_Answers_Reference.pdf",
-  "answer_key": "",
-  "sort_order": 30,
-  "uploaded_at": "2026-06-13T03:29:40.876Z"
  }
 },
 {
@@ -36884,21 +35348,9 @@
   "problem": 808,
   "title": "Technician BG4 Written Test",
   "file": "problems/2016_wyoming_Technician_Team_Rock_Springs_Wyoming_Mine_Rescue_TT_BG4_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2016_wyoming_Technician_Team_Rock_Springs_Wyoming_TT_BG4_Answers_reference.pdf",
   "sort_order": 50,
   "uploaded_at": "2026-06-13T03:29:47.266Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1391,
- "fields": {
-  "problem": 808,
-  "title": "Technician BG4 Written Test Answers",
-  "file": "problems/2016_wyoming_Technician_Team_Rock_Springs_Wyoming_TT_BG4_Answers_reference.pdf",
-  "answer_key": "",
-  "sort_order": 60,
-  "uploaded_at": "2026-06-13T03:29:49.171Z"
  }
 },
 {
@@ -37052,21 +35504,9 @@
   "problem": 811,
   "title": "Team Trainer Written Test",
   "file": "problems/2016_southeast_Team_Trainer_MAYSVILLE_Trainer_Test_2016.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2016_southeast_Team_Trainer_MAYSVILLE_Trainer_Test_ANSWERS_2016.pdf",
   "sort_order": 20,
   "uploaded_at": "2026-06-13T03:32:35.297Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1405,
- "fields": {
-  "problem": 811,
-  "title": "Team Trainer Written Test Answers",
-  "file": "problems/2016_southeast_Team_Trainer_MAYSVILLE_Trainer_Test_ANSWERS_2016.pdf",
-  "answer_key": "",
-  "sort_order": 30,
-  "uploaded_at": "2026-06-13T03:32:37.833Z"
  }
 },
 {
@@ -39776,21 +38216,9 @@
   "problem": 743,
   "title": "BG4 Written Test",
   "file": "problems/2019_gov_cup_Bench_2019_GC_BG4Written.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2019_gov_cup_Bench_2019_GovernorsCupWritten_AnswerKey.pdf",
   "sort_order": 20,
   "uploaded_at": "2026-06-13T04:42:31.148Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1632,
- "fields": {
-  "problem": 743,
-  "title": "BG4 Written Test Answers",
-  "file": "problems/2019_gov_cup_Bench_2019_GovernorsCupWritten_AnswerKey.pdf",
-  "answer_key": "",
-  "sort_order": 30,
-  "uploaded_at": "2026-06-13T04:42:32.829Z"
  }
 },
 {
@@ -40935,50 +39363,14 @@
 },
 {
  "model": "pages.problemdocument",
- "pk": 1730,
- "fields": {
-  "problem": 855,
-  "title": "Technician Drager BG4 PSS+ Written Test Answers",
-  "file": "problems/2014_midwest_Technician_Team_Test_Answer_Sheet_Drager_BG4_PSS_2014_NC.pdf",
-  "answer_key": "",
-  "sort_order": 120,
-  "uploaded_at": "2026-06-13T15:56:41.476Z"
- }
-},
-{
- "model": "pages.problemdocument",
  "pk": 1731,
  "fields": {
   "problem": 856,
   "title": "Technician iBrid MX6 Written Test",
   "file": "problems/2014_wyoming_Technician_Team_2014_Wyoming_2_Technician_MX6_Team_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_wyoming_Technician_Team_2014_Wyoming_2_Technician_MX6_Test_Answers.pdf",
   "sort_order": 100,
   "uploaded_at": "2026-06-13T15:56:45.584Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1732,
- "fields": {
-  "problem": 857,
-  "title": "Field Written Test Answers",
-  "file": "problems/2014_southeast_Mine_Rescue_GA_Field_Written_Test_ANSWERS_2014.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-06-13T15:56:47.474Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1733,
- "fields": {
-  "problem": 857,
-  "title": "Technician iBrid MX6 Written Test Answers",
-  "file": "problems/2014_southeast_Technician_Team_Test_Answers_page_Module_MX6.pdf",
-  "answer_key": "",
-  "sort_order": 110,
-  "uploaded_at": "2026-06-13T15:56:49.701Z"
  }
 },
 {
@@ -40988,7 +39380,7 @@
   "problem": 858,
   "title": "Technician Ventis MX4 Written Test",
   "file": "problems/2014_colorado_Technician_Team_Colorado_2_Technician_MX4_Team_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_colorado_Technician_Team_Colorado_2_Technician_MX4_Test_Answers.pdf",
   "sort_order": 90,
   "uploaded_at": "2026-06-13T15:56:52.764Z"
  }
@@ -41564,20 +39956,8 @@
   "problem": 655,
   "title": "BioPak 240R Written Test",
   "file": "problems/2026_Post6_Written_Tests_240R_and_Parts.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2026_Post6_Written_Tests_240R_and_Parts_Answers.pdf",
   "sort_order": 10,
-  "uploaded_at": "2026-06-29T02:54:19.104Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1788,
- "fields": {
-  "problem": 655,
-  "title": "BioPak 240R Written Test Answers",
-  "file": "problems/2026_Post6_Written_Tests_240R_and_Parts_Answers.pdf",
-  "answer_key": "",
-  "sort_order": 20,
   "uploaded_at": "2026-06-29T02:54:19.104Z"
  }
 },
@@ -41660,7 +40040,7 @@
   "problem": 847,
   "title": "Day 1 Written Test",
   "file": "problems/2014_alabama_Mine_Rescue_2014_Alabama_Day_1_MR_questions.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2014_alabama_Mine_Rescue_2014_Alabama_Day_1_MR_answer.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-07-16T21:08:01.825Z"
  }
@@ -41768,21 +40148,9 @@
   "problem": 913,
   "title": "Coal Day 1 Written Test",
   "file": "problems/2026_SERegional_Written_Tests_Coal_Day_1.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2026_SERegional_Written_Tests_Coal_Day_1_Key.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-08-10T20:44:00.140Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1822,
- "fields": {
-  "problem": 913,
-  "title": "Coal Day 1 Written Test Answers",
-  "file": "problems/2026_SERegional_Written_Tests_Coal_Day_1_Key.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-08-10T20:44:00.149Z"
  }
 },
 {
@@ -41792,21 +40160,9 @@
   "problem": 913,
   "title": "Coal Day 2 Written Test",
   "file": "problems/2026_SERegional_Written_Tests_Coal_Day_2.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2026_SERegional_Written_Tests_Coal_Day_2_Key.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-08-10T20:44:00.160Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1824,
- "fields": {
-  "problem": 913,
-  "title": "Coal Day 2 Written Test Answers",
-  "file": "problems/2026_SERegional_Written_Tests_Coal_Day_2_Key.pdf",
-  "answer_key": "",
-  "sort_order": 40,
-  "uploaded_at": "2026-08-10T20:44:00.170Z"
  }
 },
 {
@@ -41816,21 +40172,9 @@
   "problem": 913,
   "title": "Metal Field Written Test",
   "file": "problems/2026_SERegional_Written_Tests_Metal_Field_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2026_SERegional_Written_Tests_Metal_Field_Test_Key.pdf",
   "sort_order": 50,
   "uploaded_at": "2026-08-10T20:44:00.181Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1826,
- "fields": {
-  "problem": 913,
-  "title": "Metal Field Written Test Answers",
-  "file": "problems/2026_SERegional_Written_Tests_Metal_Field_Test_Key.pdf",
-  "answer_key": "",
-  "sort_order": 60,
-  "uploaded_at": "2026-08-10T20:44:00.191Z"
  }
 },
 {
@@ -41840,21 +40184,9 @@
   "problem": 913,
   "title": "First Aid Written Test",
   "file": "problems/2026_SERegional_Written_Tests_FA_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2026_SERegional_Written_Tests_FA_Test_Key.pdf",
   "sort_order": 70,
   "uploaded_at": "2026-08-10T20:44:00.201Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1828,
- "fields": {
-  "problem": 913,
-  "title": "First Aid Written Test Answers",
-  "file": "problems/2026_SERegional_Written_Tests_FA_Test_Key.pdf",
-  "answer_key": "",
-  "sort_order": 80,
-  "uploaded_at": "2026-08-10T20:44:00.210Z"
  }
 },
 {
@@ -42728,21 +41060,9 @@
   "problem": 921,
   "title": "First Aid Written Test",
   "file": "problems/2026_KMI_Written_Tests_2026_KMI_First_Aid_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2026_KMI_Written_Tests_2026_KMI_First_Aid_Test_Answer_Key_2.pdf",
   "sort_order": 40,
   "uploaded_at": "2026-08-14T00:01:36.397Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 1903,
- "fields": {
-  "problem": 921,
-  "title": "First Aid Written Test Answer Key",
-  "file": "problems/2026_KMI_Written_Tests_2026_KMI_First_Aid_Test_Answer_Key_2.pdf",
-  "answer_key": "",
-  "sort_order": 50,
-  "uploaded_at": "2026-08-14T00:01:36.408Z"
  }
 },
 {
@@ -42992,21 +41312,9 @@
   "problem": 1006,
   "title": "First Aid Written Test",
   "file": "problems/2026_WKMI_Written_Tests_2026_WKMI_First_Aid_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2026_WKMI_Written_Tests_2026_WKMI_First_Aid_Test_Answer_Key.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-08-15T22:57:59.726Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 2021,
- "fields": {
-  "problem": 1006,
-  "title": "First Aid Written Test Answer Key",
-  "file": "problems/2026_WKMI_Written_Tests_2026_WKMI_First_Aid_Test_Answer_Key.pdf",
-  "answer_key": "",
-  "sort_order": 20,
-  "uploaded_at": "2026-08-15T22:57:59.728Z"
  }
 },
 {
@@ -43160,7 +41468,7 @@
   "problem": 1014,
   "title": "Day 1 Written Test",
   "file": "problems/2026_Northern_Written_Tests_2026_Northern_Regional_Day_1_Written_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2026_Northern_Written_Tests_2026_Northern_Regional_Day_1_Written_Test_Key.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-08-17T23:04:15.752Z"
  }
@@ -43172,7 +41480,7 @@
   "problem": 1014,
   "title": "Day 2 Written Test",
   "file": "problems/2026_Northern_Written_Tests_2026_Northern_Regional_Day_2_Written_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2026_Northern_Written_Tests_2026_Northern_Regional_Day_2_Written_Test_Key.pdf",
   "sort_order": 20,
   "uploaded_at": "2026-08-17T23:04:15.762Z"
  }
@@ -43227,50 +41535,14 @@
 },
 {
  "model": "pages.problemdocument",
- "pk": 2040,
- "fields": {
-  "problem": 1014,
-  "title": "Day 1 Written Test Key",
-  "file": "problems/2026_Northern_Written_Tests_2026_Northern_Regional_Day_1_Written_Test_Key.pdf",
-  "answer_key": "",
-  "sort_order": 15,
-  "uploaded_at": "2026-08-22T14:39:32.226Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 2041,
- "fields": {
-  "problem": 1014,
-  "title": "Day 2 Written Test Key",
-  "file": "problems/2026_Northern_Written_Tests_2026_Northern_Regional_Day_2_Written_Test_Key.pdf",
-  "answer_key": "",
-  "sort_order": 25,
-  "uploaded_at": "2026-08-22T14:39:32.235Z"
- }
-},
-{
- "model": "pages.problemdocument",
  "pk": 2042,
  "fields": {
   "problem": 1016,
   "title": "Regional Field Competition Test",
   "file": "problems/2025_Florida_Surface_Written_Tests_2025_Florida_Surface_Regional_Field_Competition_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2025_Florida_Surface_Written_Tests_2025_Florida_Surface_Regional_Field_Competition_Test_Key.pdf",
   "sort_order": 10,
   "uploaded_at": "2026-08-23T22:04:38.508Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 2043,
- "fields": {
-  "problem": 1016,
-  "title": "Regional Field Competition Test Key",
-  "file": "problems/2025_Florida_Surface_Written_Tests_2025_Florida_Surface_Regional_Field_Competition_Test_Key.pdf",
-  "answer_key": "",
-  "sort_order": 15,
-  "uploaded_at": "2026-08-23T22:04:38.519Z"
  }
 },
 {
@@ -43280,21 +41552,9 @@
   "problem": 1016,
   "title": "First Aid Written Test",
   "file": "problems/2025_Florida_Surface_Written_Tests_2025_Florida_Surface_First_Aid_Written_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2025_Florida_Surface_Written_Tests_2025_Florida_Surface_First_Aid_Written_Test_Key.pdf",
   "sort_order": 20,
   "uploaded_at": "2026-08-23T22:04:38.529Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 2045,
- "fields": {
-  "problem": 1016,
-  "title": "First Aid Written Test Key",
-  "file": "problems/2025_Florida_Surface_Written_Tests_2025_Florida_Surface_First_Aid_Written_Test_Key.pdf",
-  "answer_key": "",
-  "sort_order": 25,
-  "uploaded_at": "2026-08-23T22:04:38.538Z"
  }
 },
 {
@@ -43304,21 +41564,9 @@
   "problem": 1016,
   "title": "Team Trainer Test",
   "file": "problems/2025_Florida_Surface_Written_Tests_2025_Florida_Surface_Team_Trainer_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2025_Florida_Surface_Written_Tests_2025_Florida_Surface_Team_Trainer_Test_Key.pdf",
   "sort_order": 30,
   "uploaded_at": "2026-08-23T22:04:38.547Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 2047,
- "fields": {
-  "problem": 1016,
-  "title": "Team Trainer Test Key",
-  "file": "problems/2025_Florida_Surface_Written_Tests_2025_Florida_Surface_Team_Trainer_Test_Key.pdf",
-  "answer_key": "",
-  "sort_order": 35,
-  "uploaded_at": "2026-08-23T22:04:38.557Z"
  }
 },
 {
@@ -43388,21 +41636,9 @@
   "problem": 1022,
   "title": "Pre-Shift Written Test",
   "file": "problems/2026_Fallen_Heroes_Written_Tests_2026_Fallen_Heroes_Pre_Shift_Written_Test.pdf",
-  "answer_key": "",
+  "answer_key": "problems/2026_Fallen_Heroes_Written_Tests_2026_Fallen_Heroes_Pre_Shift_Written_Test_Key.pdf",
   "sort_order": 20,
   "uploaded_at": "2026-09-01T16:50:39.532Z"
- }
-},
-{
- "model": "pages.problemdocument",
- "pk": 2054,
- "fields": {
-  "problem": 1022,
-  "title": "Pre-Shift Written Test Key",
-  "file": "problems/2026_Fallen_Heroes_Written_Tests_2026_Fallen_Heroes_Pre_Shift_Written_Test_Key.pdf",
-  "answer_key": "",
-  "sort_order": 25,
-  "uploaded_at": "2026-09-01T16:50:39.537Z"
  }
 },
 {
