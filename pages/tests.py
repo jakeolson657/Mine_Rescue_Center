@@ -220,7 +220,7 @@ class CalendarMapTests(TestCase):
         response = self.client.get(reverse('calendar'), {'year': 2026, 'month': 9})
         self.assertContains(response, 'md-core md-surface')
         self.assertContains(response, 'md-core md-underground')
-        self.assertContains(response, 'Competitions without a location are left off the map')
+        self.assertContains(response, 'Contests without a location are left off the map')
 
 
 class CalendarSearchTests(TestCase):
