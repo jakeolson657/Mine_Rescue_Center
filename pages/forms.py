@@ -67,7 +67,7 @@ class ProblemSubmissionForm(forms.Form):
 
     competition_name = forms.CharField(
         max_length=200,
-        widget=forms.TextInput(attrs={'placeholder': 'e.g. Loveland, Colorado'}),
+        widget=forms.TextInput(attrs={'placeholder': 'e.g. Colorado Regional Mine Rescue Contest'}),
     )
     year = forms.IntegerField(
         required=False, min_value=1900, max_value=2100,
@@ -75,7 +75,7 @@ class ProblemSubmissionForm(forms.Form):
     )
     location = forms.CharField(
         max_length=255, required=False,
-        widget=forms.TextInput(attrs={'placeholder': 'City, State'}),
+        widget=forms.TextInput(attrs={'placeholder': 'e.g. Loveland, Colorado'}),
     )
     context = forms.CharField(
         max_length=5000,

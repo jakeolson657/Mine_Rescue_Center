@@ -154,7 +154,7 @@ def short_location(full):
 
 
 class Competition(models.Model):
-    name = models.CharField(max_length=200, help_text="e.g. Loveland, Colorado")
+    name = models.CharField(max_length=200, help_text="e.g. Colorado Regional Mine Rescue Contest")
     year = models.PositiveIntegerField(null=True, blank=True)
     calendar_event = models.ForeignKey(
         CalendarEvent, null=True, blank=True, on_delete=models.SET_NULL,
