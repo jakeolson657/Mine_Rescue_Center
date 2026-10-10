@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ assembly.title }} - {{ unit.name }} Parts ID - Mine Rescue Center{% endblock %}
+
+{% block extra_css %}
+    {% include 'partials/quiz_styles.html' %}
+
+    /* The diagram is the question here, so give it room: beside the choices
+       on wide screens, stacked above them on phones. */
+    .quiz-head-inner, .quiz-wrap { max-width: 1080px; }
+    .quiz-figure img { max-height: max(300px, calc(100vh - 330px)); }
+
+    @media (min-width: 820px) {
+        .quiz-qblock {
+            display: grid;
+            grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+            grid-template-areas: "question question" "figure choices";
+            column-gap: 22px;
+            align-items: center;
+        }
+        .quiz-question { grid-area: question; margin-bottom: 14px; }
+        .quiz-figure { grid-area: figure; margin: 0; }
+        .quiz-choices { grid-area: choices; }
+    }
+{% endblock %}
+
+{% block content %}
+<section class="quiz-head">
+    <div class="quiz-head-inner">
+        <a class="quiz-back" href="{{ back_url }}">&larr; Back to Training Resources</a>
+        <h1>{{ assembly.title }}</h1>
+        <div class="comp-name">{{ unit.name }} &middot; Identification of Parts &middot; {{ assembly.parts|length }} parts</div>
+    </div>
+</section>
+
+<div class="quiz-wrap">
+    <div class="quiz-card">
+        {{ quiz_data|json_script:"quiz-data" }}
+        {% include 'partials/quiz_panels.html' with quiz_data=assembly.parts back_label='Back to Training Resources' figure_link=True %}
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Each attempt asks for every numbered part in rules order. The right
+    // answer is always that part's name; the wrong ones are up to three other
+    // names drawn at random from the same assembly.
+    window.quizBuildQuestions = function (data) {
+        function key(name) { return name.toLowerCase().replace(/\s+/g, ' ').trim(); }
+
+        function shuffle(list) {
+            for (var i = list.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var tmp = list[i]; list[i] = list[j]; list[j] = tmp;
+            }
+            return list;
+        }
+
+        return data.parts.map(function (part) {
+            // Unique names only: an assembly can list the same name under two
+            // numbers (e.g. two O-Rings), and that must never be a "wrong" answer.
+            var seen = {};
+            seen[key(part.name)] = true;
+            var others = [];
+            data.parts.forEach(function (p) {
+                if (!seen[key(p.name)]) {
+                    seen[key(p.name)] = true;
+                    others.push(p.name);
+                }
+            });
+
+            var names = shuffle([part.name].concat(shuffle(others).slice(0, 3)));
+            var several = /[-,]/.test(part.number);
+            return {
+                text: 'What is the name of ' + (several ? 'parts ' : 'part number ') + part.number + '?',
+                image: data.image,
+                choices: names.map(function (name) {
+                    return { text: name, is_correct: name === part.name };
+                }),
+            };
+        });
+    };
+</script>
+{% include 'partials/quiz_engine.html' %}
+{% endblock %}

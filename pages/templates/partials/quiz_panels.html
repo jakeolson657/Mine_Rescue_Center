@@ -1,0 +1,44 @@
+{% comment %}
+Question + results panels driven by partials/quiz_engine.html. Expects
+back_url / back_label for the results page's way out. With figure_link, the
+diagram opens full size in a new tab when clicked.
+{% endcomment %}
+<div class="quiz-panel active" id="quiz-panel-question">
+    <div class="quiz-progress-row">
+        <span id="quiz-progress-label">Question 1 of {{ quiz_data|length }}</span>
+        <span id="quiz-progress-count"></span>
+    </div>
+    <div class="quiz-progress-track"><div class="quiz-progress-fill" id="quiz-progress-fill"></div></div>
+
+    <div class="quiz-qblock" id="quiz-qblock">
+        <div class="quiz-question" id="quiz-question-text"></div>
+        <div class="quiz-figure" id="quiz-figure" hidden>{% if figure_link %}<a id="quiz-figure-link" target="_blank" rel="noopener" title="Open full size">{% endif %}<img id="quiz-figure-img" alt="Question diagram">{% if figure_link %}</a>{% endif %}</div>
+        <div class="quiz-choices" id="quiz-choices"></div>
+    </div>
+
+    <div class="quiz-nav">
+        <button type="button" class="quiz-nav-btn prev" id="quiz-prev-btn">&larr; Previous</button>
+        <button type="button" class="quiz-nav-btn next" id="quiz-next-btn">Next &rarr;</button>
+    </div>
+
+    <div class="quiz-jumplist" id="quiz-jumplist"></div>
+</div>
+
+<div class="quiz-panel" id="quiz-panel-results">
+    <div class="quiz-results-score">
+        <div class="quiz-score-ring" id="quiz-score-ring">
+            <div class="quiz-score-ring-inner">
+                <span class="pct" id="quiz-score-pct"></span>
+                <span class="frac" id="quiz-score-frac"></span>
+            </div>
+        </div>
+        <div class="quiz-results-headline" id="quiz-results-headline"></div>
+    </div>
+
+    <div class="quiz-review" id="quiz-review"></div>
+
+    <div class="quiz-results-actions">
+        <button type="button" class="btn btn-red" id="quiz-retake-btn">Retake Quiz</button>
+        <a class="quiz-nav-btn prev" style="text-decoration:none;display:inline-flex;align-items:center;" href="{{ back_url }}">{{ back_label }}</a>
+    </div>
+</div>

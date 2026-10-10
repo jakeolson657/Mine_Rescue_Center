@@ -1,0 +1,195 @@
+<script>
+    (function () {
+        var dataEl = document.getElementById('quiz-data');
+        if (!dataEl) return;
+        var source = JSON.parse(dataEl.textContent);
+        // A page can define window.quizBuildQuestions(source) to turn its data
+        // into fresh questions on every attempt (parts practice re-draws its
+        // wrong answers); otherwise the data already is the question list.
+        var build = window.quizBuildQuestions || function (d) { return d; };
+        var questions = build(source);
+
+        var current = 0;
+        var picked = new Array(questions.length).fill(null);  // choice index per question
+        var finished = false;
+
+        var questionPanel = document.getElementById('quiz-panel-question');
+        var resultsPanel = document.getElementById('quiz-panel-results');
+        var progressLabel = document.getElementById('quiz-progress-label');
+        var progressCount = document.getElementById('quiz-progress-count');
+        var progressFill = document.getElementById('quiz-progress-fill');
+        var questionText = document.getElementById('quiz-question-text');
+        var figureEl = document.getElementById('quiz-figure');
+        var figureImg = document.getElementById('quiz-figure-img');
+        var figureLink = document.getElementById('quiz-figure-link');
+        var choicesEl = document.getElementById('quiz-choices');
+        var prevBtn = document.getElementById('quiz-prev-btn');
+        var nextBtn = document.getElementById('quiz-next-btn');
+        var jumplist = document.getElementById('quiz-jumplist');
+        var retakeBtn = document.getElementById('quiz-retake-btn');
+
+        var LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
+
+        function answeredCount() {
+            return picked.filter(function (p) { return p !== null; }).length;
+        }
+
+        function renderJumplist() {
+            jumplist.innerHTML = '';
+            questions.forEach(function (q, i) {
+                var btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'quiz-jump' + (i === current ? ' current' : '') + (picked[i] !== null ? ' answered' : '');
+                btn.textContent = i + 1;
+                btn.addEventListener('click', function () { goTo(i); });
+                jumplist.appendChild(btn);
+            });
+        }
+
+        function renderQuestion() {
+            var q = questions[current];
+            progressLabel.textContent = 'Question ' + (current + 1) + ' of ' + questions.length;
+            progressCount.textContent = answeredCount() + ' answered';
+            progressFill.style.width = (((current + 1) / questions.length) * 100) + '%';
+            questionText.textContent = q.text;
+
+            if (q.image) {
+                figureImg.src = q.image;
+                if (figureLink) figureLink.href = q.image;
+                figureEl.hidden = false;
+            } else {
+                figureImg.removeAttribute('src');
+                figureEl.hidden = true;
+            }
+
+            choicesEl.innerHTML = '';
+            q.choices.forEach(function (choice, i) {
+                var btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'quiz-choice' + (picked[current] === i ? ' selected' : '');
+                btn.innerHTML = '<span class="letter">' + (LETTERS[i] || i + 1) + '</span><span></span>';
+                btn.querySelector('span:last-child').textContent = choice.text;
+                btn.addEventListener('click', function () {
+                    picked[current] = i;
+                    renderQuestion();
+                });
+                choicesEl.appendChild(btn);
+            });
+
+            prevBtn.disabled = current === 0;
+            nextBtn.textContent = current === questions.length - 1 ? 'Finish →' : 'Next →';
+            renderJumplist();
+        }
+
+        function goTo(i) {
+            // Swap in place — the question block is a fixed height, so nothing
+            // below moves and the question stays put on screen. No scrolling.
+            current = i;
+            renderQuestion();
+        }
+
+        // Reserve the height of the tallest question so the block never grows or
+        // shrinks between questions. Re-run on resize since wrapping changes.
+        var qblock = document.getElementById('quiz-qblock');
+        // Reserve a floor equal to the tallest TEXT-only question, so those don't
+        // jump as you move between them. Questions with a diagram are naturally
+        // taller and simply grow past the floor (an image appearing is expected
+        // to add height), which keeps them from pushing the whole quiz off-screen.
+        function reserveQBlockHeight() {
+            var saved = current;
+            qblock.style.minHeight = '';
+            var max = 0;
+            for (var i = 0; i < questions.length; i++) {
+                if (questions[i].image) continue;
+                current = i;
+                renderQuestion();
+                if (qblock.offsetHeight > max) max = qblock.offsetHeight;
+            }
+            current = saved;
+            qblock.style.minHeight = max + 'px';
+            renderQuestion();
+        }
+
+        function showResults() {
+            finished = true;
+            var correctCount = 0;
+            questions.forEach(function (q, i) {
+                if (picked[i] !== null && q.choices[picked[i]].is_correct) correctCount++;
+            });
+            var pct = Math.round((correctCount / questions.length) * 100);
+
+            document.getElementById('quiz-score-ring').style.setProperty('--pct', pct);
+            document.getElementById('quiz-score-pct').textContent = pct + '%';
+            document.getElementById('quiz-score-frac').textContent = correctCount + ' / ' + questions.length;
+
+            var headline = document.getElementById('quiz-results-headline');
+            if (pct === 100) headline.textContent = 'Perfect score!';
+            else if (pct >= 80) headline.textContent = 'Nice work.';
+            else if (pct >= 60) headline.textContent = 'Solid — a few to review.';
+            else headline.textContent = 'Worth another look before test day.';
+
+            var review = document.getElementById('quiz-review');
+            review.innerHTML = '';
+            questions.forEach(function (q, i) {
+                var yourIdx = picked[i];
+                var correctIdx = q.choices.findIndex(function (c) { return c.is_correct; });
+                var isCorrect = yourIdx !== null && yourIdx === correctIdx;
+
+                var item = document.createElement('div');
+                item.className = 'quiz-review-item ' + (isCorrect ? 'correct' : 'wrong');
+
+                var html = '<div class="quiz-review-q">' + (i + 1) + '. ' + esc(q.text) + '</div>';
+                if (yourIdx === null) {
+                    html += '<div class="quiz-review-row your-wrong"><span class="tag">Your answer</span><span class="val">Skipped</span></div>';
+                } else {
+                    html += '<div class="quiz-review-row ' + (isCorrect ? 'your-right' : 'your-wrong') + '">' +
+                        '<span class="tag">Your answer</span><span class="val">' + esc(q.choices[yourIdx].text) + '</span></div>';
+                }
+                if (!isCorrect) {
+                    html += '<div class="quiz-review-row correct-answer"><span class="tag">Correct</span><span class="val">' + esc(q.choices[correctIdx].text) + '</span></div>';
+                }
+                item.innerHTML = html;
+                review.appendChild(item);
+            });
+
+            questionPanel.classList.remove('active');
+            resultsPanel.classList.add('active');
+            resultsPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function esc(s) {
+            return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        }
+
+        prevBtn.addEventListener('click', function () {
+            if (current > 0) goTo(current - 1);
+        });
+
+        nextBtn.addEventListener('click', function () {
+            if (current < questions.length - 1) {
+                goTo(current + 1);
+            } else {
+                showResults();
+            }
+        });
+
+        retakeBtn.addEventListener('click', function () {
+            current = 0;
+            questions = build(source);
+            picked = new Array(questions.length).fill(null);
+            finished = false;
+            resultsPanel.classList.remove('active');
+            questionPanel.classList.add('active');
+            renderQuestion();
+            questionPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+
+        var resizeTimer;
+        window.addEventListener('resize', function () {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(reserveQBlockHeight, 150);
+        });
+
+        reserveQBlockHeight();
+    })();
+</script>

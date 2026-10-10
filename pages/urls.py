@@ -8,6 +8,7 @@ urlpatterns = [
     path('problems/', views.past_problems, name='past_problems'),
     path('problems/quiz/<int:pk>/', views.quiz_detail, name='quiz_detail'),
     path('training/', views.training_resources, name='training_resources'),
+    path('training/parts/<slug:unit_slug>/<slug:assembly_slug>/', views.parts_practice, name='parts_practice'),
     path('about/', views.about, name='about'),
     path('feedback/', views.feedback, name='feedback'),
     path('calendar/', views.CalendarView.as_view(), name='calendar'),

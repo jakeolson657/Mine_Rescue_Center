@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.http import HttpResponse
+from django.templatetags.static import static
+from django.http import Http404, HttpResponse
 from django.urls import reverse
 from django.conf import settings
 from django.core.mail import EmailMessage
@@ -16,6 +17,7 @@ from .models import (
     Quiz, BenchingApparatus, FirstAidResource, RopeRescueResource,
 )
 from .forms import FeedbackForm, ProblemSubmissionForm
+from .parts import find_assembly, unit_for_apparatus
 from .geo import MAP_HEIGHT, MAP_WIDTH, is_surface, map_markers
 from .search import search_events, state_name
 from .calendar_export import (
@@ -155,6 +157,22 @@ def quiz_detail(request, pk):
     return render(request, 'quiz.html', {
         'quiz': quiz,
         'quiz_data': quiz_data,
+        'back_url': reverse('past_problems') + f'#comp-{quiz.problem.competition.pk}',
+    })
+
+
+def parts_practice(request, unit_slug, assembly_slug):
+    unit, assembly = find_assembly(unit_slug, assembly_slug)
+    if assembly is None:
+        raise Http404('No such parts assembly')
+    return render(request, 'parts_quiz.html', {
+        'unit': unit,
+        'assembly': assembly,
+        'quiz_data': {
+            'image': static(assembly['image']),
+            'parts': assembly['parts'],
+        },
+        'back_url': reverse('training_resources') + f"#parts-{unit['slug']}",
     })
 
 
@@ -167,6 +185,7 @@ def training_resources(request):
     for unit in benching_apparatus:
         unit.manual_resources = [r for r in unit.resources.all() if not r.is_sds]
         unit.sds_resources = [r for r in unit.resources.all() if r.is_sds]
+        unit.parts = unit_for_apparatus(unit.name)
 
     return render(request, 'training.html', {
         'instruction_guides': InstructionGuide.objects.all(),

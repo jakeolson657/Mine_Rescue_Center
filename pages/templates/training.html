@@ -216,6 +216,47 @@
     .scorecards-drop-body { padding: 4px 18px 18px; }
     .scorecards-drop-note { font-size: 13px; line-height: 1.6; color: var(--steel); margin-bottom: 14px; }
 
+    /* Linked to from the parts practice pages; clear the sticky header. */
+    #benching, [id^="parts-"] { scroll-margin-top: 84px; }
+
+    /* Identification of Parts: one practice tile per assembly */
+    .parts-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 10px;
+    }
+
+    .parts-tile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        background: var(--surface);
+        border: 1px solid var(--line-2);
+        border-left: 4px solid var(--red);
+        border-radius: 10px;
+        padding: 12px 14px;
+        text-decoration: none;
+        color: var(--ink);
+        transition: border-color 0.15s, background-color 0.15s;
+    }
+
+    .parts-tile:hover { border-color: var(--ink); border-left-color: var(--red); }
+
+    .parts-tile-title {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 14.5px;
+        line-height: 1.3;
+    }
+
+    .parts-tile-count {
+        flex-shrink: 0;
+        font-family: var(--font-mono);
+        font-size: 11.5px;
+        color: var(--muted);
+    }
+
     @media (max-width: 680px) {
         .train-head-inner { padding: 36px 20px 32px; }
         .train-title h1 { font-size: 32px; }
@@ -398,7 +439,7 @@
         </div>
     </details>
 
-    <details class="resource-section">
+    <details class="resource-section" id="benching">
         <summary>
             <span class="chev"><svg width="15" height="15"><use href="#i-chev"/></svg></span>
             <span class="resource-head-text">
@@ -427,6 +468,26 @@
                                 {% endif %}
                             {% endfor %}
                         </div>
+
+                        {% if unit.parts %}
+                            <details class="scorecards-drop" id="parts-{{ unit.parts.slug }}">
+                                <summary>
+                                    <span class="chev"><svg width="14" height="14"><use href="#i-chev"/></svg></span>
+                                    <span class="scorecards-drop-title">Identification of Parts</span>
+                                </summary>
+                                <div class="scorecards-drop-body">
+                                    <p class="scorecards-drop-note">Practice naming every numbered part on each assembly diagram from the contest rules' Identification of Parts section. The wrong answers are drawn at random from the assembly's other parts, so every attempt is different.</p>
+                                    <div class="parts-grid">
+                                        {% for assembly in unit.parts.assemblies %}
+                                            <a class="parts-tile" href="{% url 'parts_practice' unit.parts.slug assembly.slug %}">
+                                                <span class="parts-tile-title">{{ assembly.title }}</span>
+                                                <span class="parts-tile-count">{{ assembly.parts|length }} parts</span>
+                                            </a>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </details>
+                        {% endif %}
 
                         {% if unit.sds_resources %}
                             <details class="scorecards-drop">
@@ -527,4 +588,23 @@
 </div>
 
 {% include 'partials/preview_modal.html' %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Links back from a practice page (#parts-bg4, #benching) reopen the
+    // dropdowns that hold their target and bring it into view.
+    (function () {
+        var target = location.hash && document.getElementById(location.hash.slice(1));
+        if (!target) return;
+        for (var el = target; el; el = el.parentElement) {
+            if (el.tagName === 'DETAILS') el.open = true;
+        }
+        // After layout settles; instant, since the page's smooth scrolling
+        // gets cut short on load.
+        window.addEventListener('load', function () {
+            target.scrollIntoView({ block: 'start', behavior: 'instant' });
+        });
+    })();
+</script>
 {% endblock %}

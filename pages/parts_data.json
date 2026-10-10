@@ -1,0 +1,1801 @@
+[
+  {
+    "slug": "biopak-240r",
+    "name": "BioPak 240R",
+    "match": [
+      "biopak"
+    ],
+    "rules_file": "section-4-bio-240r-bench-rules.pdf",
+    "assemblies": [
+      {
+        "slug": "biopak-240-revolution-complete",
+        "title": "BioPak 240 Revolution Complete",
+        "page": 21,
+        "image": "pages/parts/biopak-240r-biopak-240-revolution-complete.png",
+        "parts": [
+          {
+            "number": "2",
+            "name": "Upper Housing Assembly"
+          },
+          {
+            "number": "3",
+            "name": "Coolant Lid"
+          },
+          {
+            "number": "4",
+            "name": "Ice Canister"
+          },
+          {
+            "number": "5",
+            "name": "Breathing Hose"
+          },
+          {
+            "number": "12",
+            "name": "O2 Cylinder"
+          },
+          {
+            "number": "13",
+            "name": "Lower Housing Assembly"
+          },
+          {
+            "number": "14",
+            "name": "Harness Assembly"
+          },
+          {
+            "number": "15",
+            "name": "Ice Canister Freeze Form"
+          },
+          {
+            "number": "19",
+            "name": "Facemask Storage Plug"
+          },
+          {
+            "number": "21",
+            "name": "PCM Heat Exchanger"
+          },
+          {
+            "number": "22",
+            "name": "Moisture Absorbent Pad Set"
+          }
+        ]
+      },
+      {
+        "slug": "lower-housing-assembly",
+        "title": "Lower Housing Assembly",
+        "page": 22,
+        "image": "pages/parts/biopak-240r-lower-housing-assembly.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Lower Housing Shell"
+          },
+          {
+            "number": "2",
+            "name": "Diaphragm Springs"
+          },
+          {
+            "number": "3",
+            "name": "External Oxygen Knob"
+          },
+          {
+            "number": "7",
+            "name": "Vent Spacer"
+          },
+          {
+            "number": "12",
+            "name": "Latch Foam Pad"
+          },
+          {
+            "number": "16",
+            "name": "Oxygen Cylinder Hold-Down Strap"
+          },
+          {
+            "number": "18",
+            "name": "Carrying Handle"
+          }
+        ]
+      },
+      {
+        "slug": "pneumatic-assembly",
+        "title": "Pneumatic Assembly",
+        "page": 23,
+        "image": "pages/parts/biopak-240r-pneumatic-assembly.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Bypass Feed Tube"
+          },
+          {
+            "number": "2",
+            "name": "Bypass Return Tube"
+          },
+          {
+            "number": "3",
+            "name": "Oxygen Feed Tube"
+          },
+          {
+            "number": "6",
+            "name": "Bypass Valve Push Button"
+          },
+          {
+            "number": "7",
+            "name": "Bypass Valve"
+          },
+          {
+            "number": "9",
+            "name": "Oxygen Regulator Assembly"
+          },
+          {
+            "number": "10",
+            "name": "Remote Gauge Shut Off Assembly"
+          },
+          {
+            "number": "11",
+            "name": "Remote Gauge Assembly"
+          },
+          {
+            "number": "12",
+            "name": "Remote Gauge Feed Tube Assembly"
+          }
+        ]
+      },
+      {
+        "slug": "manifold-assembly",
+        "title": "Manifold Assembly",
+        "page": 24,
+        "image": "pages/parts/biopak-240r-manifold-assembly.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Manifold Block w/Pressure Switch"
+          },
+          {
+            "number": "2",
+            "name": "Constant Add Flow Restrictor Assembly"
+          },
+          {
+            "number": "3",
+            "name": "Swivel Elbow Fitting"
+          }
+        ]
+      },
+      {
+        "slug": "center-section-assembly",
+        "title": "Center Section Assembly",
+        "page": 25,
+        "image": "pages/parts/biopak-240r-center-section-assembly.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Lid O-Ring"
+          },
+          {
+            "number": "2",
+            "name": "Demand Feed Tube"
+          },
+          {
+            "number": "4",
+            "name": "Center Section Body Assembly"
+          },
+          {
+            "number": "6",
+            "name": "Constant Add Fitting"
+          },
+          {
+            "number": "9",
+            "name": "Demand Add Fitting"
+          },
+          {
+            "number": "11",
+            "name": "Demand Valve Gasket"
+          },
+          {
+            "number": "12",
+            "name": "Demand Valve Assembly"
+          },
+          {
+            "number": "14",
+            "name": "Flexible Diaphragm"
+          },
+          {
+            "number": "15",
+            "name": "Diaphragm Clamp"
+          }
+        ]
+      },
+      {
+        "slug": "center-section-lid-assembly",
+        "title": "Center Section Lid Assembly",
+        "page": 26,
+        "image": "pages/parts/biopak-240r-center-section-lid-assembly.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Coolant Lid"
+          },
+          {
+            "number": "2",
+            "name": "Center Section Lid"
+          },
+          {
+            "number": "3",
+            "name": "Flow Baffle"
+          },
+          {
+            "number": "4",
+            "name": "Self-Tapping Screws"
+          }
+        ]
+      },
+      {
+        "slug": "diaphragm-assembly",
+        "title": "Diaphragm Assembly",
+        "page": 27,
+        "image": "pages/parts/biopak-240r-diaphragm-assembly.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Flexible Diaphragm"
+          },
+          {
+            "number": "2",
+            "name": "Vent Cap"
+          },
+          {
+            "number": "3",
+            "name": "Vent Body O-Ring"
+          },
+          {
+            "number": "4",
+            "name": "Vent Body"
+          },
+          {
+            "number": "5",
+            "name": "Vent Seat O-Ring"
+          },
+          {
+            "number": "6",
+            "name": "Vent Valve Spring"
+          },
+          {
+            "number": "7",
+            "name": "Vent Valve Seat"
+          }
+        ]
+      },
+      {
+        "slug": "breathing-hose",
+        "title": "Breathing Hose",
+        "page": 28,
+        "image": "pages/parts/biopak-240r-breathing-hose.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Breathing Hose"
+          },
+          {
+            "number": "2",
+            "name": "Worm Gear Hose Clamp"
+          },
+          {
+            "number": "3",
+            "name": "Stepless Ear Clamp"
+          }
+        ]
+      },
+      {
+        "slug": "ice-canister-freeze-form",
+        "title": "Ice Canister Freeze Form",
+        "page": 29,
+        "image": "pages/parts/biopak-240r-ice-canister-freeze-form.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Base Assembly"
+          },
+          {
+            "number": "2",
+            "name": "Freeze Tube"
+          },
+          {
+            "number": "3",
+            "name": "Top Plate"
+          },
+          {
+            "number": "4",
+            "name": "Wing Nut"
+          }
+        ]
+      },
+      {
+        "slug": "oxygen-cylinder-assembly",
+        "title": "Oxygen Cylinder Assembly",
+        "page": 30,
+        "image": "pages/parts/biopak-240r-oxygen-cylinder-assembly.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Green Cylinder"
+          },
+          {
+            "number": "2",
+            "name": "Exterior O-Ring"
+          },
+          {
+            "number": "3",
+            "name": "Valve Collar"
+          },
+          {
+            "number": "4",
+            "name": "Interior O-Ring"
+          },
+          {
+            "number": "5",
+            "name": "Valve Assembly"
+          }
+        ]
+      },
+      {
+        "slug": "rms-monitoring-system",
+        "title": "RMS Monitoring System",
+        "page": 31,
+        "image": "pages/parts/biopak-240r-rms-monitoring-system.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Battery Door"
+          },
+          {
+            "number": "2",
+            "name": "Battery Door Gasket"
+          },
+          {
+            "number": "3",
+            "name": "Battery Door Warning Label"
+          },
+          {
+            "number": "5",
+            "name": "9Vdc Battery"
+          }
+        ]
+      },
+      {
+        "slug": "biomarine-pro-pp-mask",
+        "title": "Biomarine Pro PP Mask",
+        "page": 32,
+        "image": "pages/parts/biopak-240r-biomarine-pro-pp-mask.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Front Cover & Screws"
+          },
+          {
+            "number": "2",
+            "name": "Front Cover Screw"
+          },
+          {
+            "number": "3",
+            "name": "Speech Channel Body"
+          },
+          {
+            "number": "4",
+            "name": "Speech Diaphragm"
+          },
+          {
+            "number": "5",
+            "name": "Speech Diaphragm O-Ring"
+          },
+          {
+            "number": "6",
+            "name": "Outer Mask Assembly"
+          },
+          {
+            "number": "7",
+            "name": "Visor"
+          },
+          {
+            "number": "8",
+            "name": "Visor Frame & Screws"
+          },
+          {
+            "number": "9",
+            "name": "Inner Mask & Ring"
+          },
+          {
+            "number": "10",
+            "name": "Inner Mask Retaining Ring"
+          },
+          {
+            "number": "11",
+            "name": "Valve Frame"
+          },
+          {
+            "number": "12",
+            "name": "Valve Flap"
+          },
+          {
+            "number": "13",
+            "name": "Web Head-Harness"
+          },
+          {
+            "number": "14",
+            "name": "Buckle & Roller"
+          },
+          {
+            "number": "15",
+            "name": "Neck Strap Assembly"
+          },
+          {
+            "number": "16",
+            "name": "Neck Strap Mounting Clip"
+          },
+          {
+            "number": "17",
+            "name": "Spectacle Frame"
+          }
+        ]
+      },
+      {
+        "slug": "tool-kit",
+        "title": "Tool Kit",
+        "page": 33,
+        "image": "pages/parts/biopak-240r-tool-kit.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Case Assembly"
+          },
+          {
+            "number": "3",
+            "name": "Flow Test Fixture"
+          },
+          {
+            "number": "4",
+            "name": "Test Key"
+          },
+          {
+            "number": "6",
+            "name": "Vent Valve Wrench"
+          },
+          {
+            "number": "7",
+            "name": "Center Section Pneumatic Plug"
+          },
+          {
+            "number": "9",
+            "name": "Combination Pick Tool"
+          },
+          {
+            "number": "13",
+            "name": "1/4 - Inch Hex Driver"
+          },
+          {
+            "number": "20",
+            "name": "Leak Detection Fluid"
+          },
+          {
+            "number": "22",
+            "name": "3/8 – Inch OD Rubber Tubing"
+          },
+          {
+            "number": "26",
+            "name": "Leak Check Adapter Fitting"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "bg4",
+    "name": "BG4",
+    "match": [
+      "bg4",
+      "bg 4"
+    ],
+    "rules_file": "section-5-bg-4-bench-rules.pdf",
+    "assemblies": [
+      {
+        "slug": "bg-4",
+        "title": "BG-4",
+        "page": 22,
+        "image": "pages/parts/bg4-bg-4.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Carrying Housing"
+          },
+          {
+            "number": "2",
+            "name": "Cover Shell, complete"
+          },
+          {
+            "number": "3",
+            "name": "Shoulder Pad Assembly"
+          },
+          {
+            "number": "5",
+            "name": "Cooler"
+          },
+          {
+            "number": "6",
+            "name": "Relief valve, Complete"
+          },
+          {
+            "number": "7",
+            "name": "Minimum Valve"
+          },
+          {
+            "number": "8",
+            "name": "Drain Valve"
+          },
+          {
+            "number": "9",
+            "name": "Sentinel"
+          },
+          {
+            "number": "10",
+            "name": "Switch Box"
+          },
+          {
+            "number": "11",
+            "name": "Pressure Sensor"
+          },
+          {
+            "number": "12",
+            "name": "Breathing Bag"
+          },
+          {
+            "number": "15",
+            "name": "Lever, Complete"
+          },
+          {
+            "number": "16",
+            "name": "Factory/refillable cartridge"
+          },
+          {
+            "number": "17",
+            "name": "Pressure Reducer BG4"
+          },
+          {
+            "number": "19",
+            "name": "Oxygen Cylinder"
+          },
+          {
+            "number": "21",
+            "name": "Distribution Hose"
+          },
+          {
+            "number": "22",
+            "name": "FPS 7000 Mask"
+          }
+        ]
+      },
+      {
+        "slug": "cover",
+        "title": "Cover",
+        "page": 23,
+        "image": "pages/parts/bg4-cover.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Cover Shell"
+          },
+          {
+            "number": "2",
+            "name": "Hinge"
+          },
+          {
+            "number": "3",
+            "name": "Grip Cap"
+          },
+          {
+            "number": "4",
+            "name": "Button"
+          }
+        ]
+      },
+      {
+        "slug": "harness-assembly",
+        "title": "Harness Assembly",
+        "page": 24,
+        "image": "pages/parts/bg4-harness-assembly.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Shoulder Pad Assembly"
+          },
+          {
+            "number": "2",
+            "name": "Shoulder Adjusting Strap"
+          },
+          {
+            "number": "3",
+            "name": "Hose Clip"
+          },
+          {
+            "number": "4",
+            "name": "Hose Strap Harness"
+          },
+          {
+            "number": "5",
+            "name": "Adjusting Belt Assembly"
+          },
+          {
+            "number": "6",
+            "name": "Waist belt"
+          },
+          {
+            "number": "7",
+            "name": "Belt Assembly"
+          },
+          {
+            "number": "8",
+            "name": "Buckle"
+          }
+        ]
+      },
+      {
+        "slug": "breathing-hose-assembly",
+        "title": "Breathing Hose Assembly",
+        "page": 25,
+        "image": "pages/parts/bg4-breathing-hose-assembly.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Coupling"
+          },
+          {
+            "number": "2",
+            "name": "Inhalation Valve Seat"
+          },
+          {
+            "number": "3",
+            "name": "Exhalation Valve Seat"
+          },
+          {
+            "number": "4",
+            "name": "Valve Disc"
+          },
+          {
+            "number": "5",
+            "name": "Corrugated Hose"
+          },
+          {
+            "number": "6",
+            "name": "Bayonet Ring"
+          },
+          {
+            "number": "7",
+            "name": "Anti-Crush rings"
+          },
+          {
+            "number": "8",
+            "name": "Toroidal Sealing Ring"
+          },
+          {
+            "number": "9",
+            "name": "Sealing Cap"
+          }
+        ]
+      },
+      {
+        "slug": "cooling-canister",
+        "title": "Cooling Canister",
+        "page": 26,
+        "image": "pages/parts/bg4-cooling-canister.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Cooler"
+          },
+          {
+            "number": "2",
+            "name": "O-Ring, Cooler"
+          },
+          {
+            "number": "3",
+            "name": "Cover"
+          },
+          {
+            "number": "4",
+            "name": "Angle Connector"
+          },
+          {
+            "number": "5",
+            "name": "Reaction Ring"
+          }
+        ]
+      },
+      {
+        "slug": "drain-relief-minimum-valve-assembly",
+        "title": "Drain/Relief/Minimum Valve Assembly",
+        "page": 27,
+        "image": "pages/parts/bg4-drain-relief-minimum-valve-assembly.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Valve Disc"
+          },
+          {
+            "number": "2",
+            "name": "Crater Housing"
+          },
+          {
+            "number": "3",
+            "name": "Valve Disc"
+          },
+          {
+            "number": "4",
+            "name": "Spring"
+          },
+          {
+            "number": "5",
+            "name": "O-Ring"
+          },
+          {
+            "number": "6",
+            "name": "Cap"
+          },
+          {
+            "number": "11",
+            "name": "Reaction Ring"
+          },
+          {
+            "number": "12",
+            "name": "Coupling"
+          },
+          {
+            "number": "13",
+            "name": "O-Ring"
+          },
+          {
+            "number": "14-16, 3-4",
+            "name": "Drainage Valve"
+          },
+          {
+            "number": "14",
+            "name": "Cap, Drain Valve"
+          },
+          {
+            "number": "15-16",
+            "name": "Drain Valve & Filter"
+          },
+          {
+            "number": "17-24",
+            "name": "Minimum Valve"
+          },
+          {
+            "number": "17",
+            "name": "Crater"
+          },
+          {
+            "number": "18",
+            "name": "Washer"
+          },
+          {
+            "number": "19-20",
+            "name": "Rocker Arm"
+          },
+          {
+            "number": "21",
+            "name": "Spring"
+          },
+          {
+            "number": "24",
+            "name": "Angle Connector"
+          },
+          {
+            "number": "25",
+            "name": "Holding Clamp"
+          }
+        ]
+      },
+      {
+        "slug": "sentinel",
+        "title": "Sentinel",
+        "page": 28,
+        "image": "pages/parts/bg4-sentinel.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Sentinel"
+          },
+          {
+            "number": "2",
+            "name": "Switch Box"
+          },
+          {
+            "number": "3",
+            "name": "Angle Connector"
+          },
+          {
+            "number": "7",
+            "name": "Pressure Sensor"
+          },
+          {
+            "number": "8",
+            "name": "Copper Ring"
+          },
+          {
+            "number": "9",
+            "name": "9-volt battery"
+          },
+          {
+            "number": "13",
+            "name": "Tally Key"
+          }
+        ]
+      },
+      {
+        "slug": "refillable-cartridge",
+        "title": "Refillable Cartridge",
+        "page": 29,
+        "image": "pages/parts/bg4-refillable-cartridge.png",
+        "parts": [
+          {
+            "number": "1-8",
+            "name": "Refillable Cartridge"
+          },
+          {
+            "number": "2",
+            "name": "Lid"
+          },
+          {
+            "number": "3",
+            "name": "Seal, Refillable Cartridge"
+          },
+          {
+            "number": "4",
+            "name": "Strap with Tension Spring Hook"
+          },
+          {
+            "number": "5",
+            "name": "Refillable Scrubber Screen"
+          },
+          {
+            "number": "6",
+            "name": "Filter Mats"
+          },
+          {
+            "number": "8",
+            "name": "NIOSH Approval Label"
+          }
+        ]
+      },
+      {
+        "slug": "fps-7000-mask",
+        "title": "FPS 7000 Mask",
+        "page": 30,
+        "image": "pages/parts/bg4-fps-7000-mask.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Mask Body FPS 7000"
+          },
+          {
+            "number": "2",
+            "name": "Upper Visor Frame"
+          },
+          {
+            "number": "3",
+            "name": "Visor"
+          },
+          {
+            "number": "4",
+            "name": "Lower Visor Frame"
+          },
+          {
+            "number": "7",
+            "name": "Clamp"
+          },
+          {
+            "number": "8",
+            "name": "Connector Piece"
+          },
+          {
+            "number": "9",
+            "name": "Cover"
+          },
+          {
+            "number": "11",
+            "name": "Turning Knob"
+          },
+          {
+            "number": "12",
+            "name": "Disc"
+          },
+          {
+            "number": "13",
+            "name": "Inner Mask"
+          },
+          {
+            "number": "14",
+            "name": "Button"
+          },
+          {
+            "number": "15A",
+            "name": "Head Strap"
+          },
+          {
+            "number": "15B",
+            "name": "Hairnet"
+          },
+          {
+            "number": "16",
+            "name": "Sliding Buckle"
+          },
+          {
+            "number": "17",
+            "name": "Double Button"
+          },
+          {
+            "number": "18",
+            "name": "Neck Strap"
+          }
+        ]
+      },
+      {
+        "slug": "oxygen-cylinder",
+        "title": "Oxygen Cylinder",
+        "page": 31,
+        "image": "pages/parts/bg4-oxygen-cylinder.png",
+        "parts": [
+          {
+            "number": "3",
+            "name": "Valve Housing"
+          },
+          {
+            "number": "10",
+            "name": "Hand-wheel"
+          },
+          {
+            "number": "13",
+            "name": "Safety Ring"
+          },
+          {
+            "number": "16",
+            "name": "Sealing Ring"
+          },
+          {
+            "number": "17",
+            "name": "Manometer"
+          },
+          {
+            "number": "18",
+            "name": "Lock Washer"
+          },
+          {
+            "number": "19",
+            "name": "Lock Nut"
+          },
+          {
+            "number": "20",
+            "name": "Bursting Disc"
+          },
+          {
+            "number": "21",
+            "name": "Oxygen Cylinder"
+          },
+          {
+            "number": "22",
+            "name": "Label"
+          }
+        ]
+      },
+      {
+        "slug": "test-kit",
+        "title": "Test Kit",
+        "page": 32,
+        "image": "pages/parts/bg4-test-kit.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Plug For Breathing Bag"
+          },
+          {
+            "number": "2",
+            "name": "Nozzle For Breathing Bag"
+          },
+          {
+            "number": "3",
+            "name": "Sealing Plug (Corrugated Hose)"
+          },
+          {
+            "number": "4",
+            "name": "Test Socket for Corrugated Hose"
+          },
+          {
+            "number": "5",
+            "name": "Sealing Cap for Corrugated Hose"
+          },
+          {
+            "number": "6",
+            "name": "Sealing Cap"
+          },
+          {
+            "number": "7",
+            "name": "Testing Plug"
+          },
+          {
+            "number": "8",
+            "name": "Test Cap for Corrugated Hose"
+          },
+          {
+            "number": "9",
+            "name": "Test Connection for Control Valve"
+          },
+          {
+            "number": "11",
+            "name": "Sealing Plug for Mask"
+          },
+          {
+            "number": "12",
+            "name": "Test Adaptor"
+          },
+          {
+            "number": "13",
+            "name": "Sealing Plug for Plug in Conn."
+          },
+          {
+            "number": "14",
+            "name": "Test Hose/Metering Control"
+          },
+          {
+            "number": "19",
+            "name": "Sealing Ring Lifters"
+          },
+          {
+            "number": "22",
+            "name": "Spanner"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "bg-proair",
+    "name": "BG ProAir",
+    "match": [
+      "proair"
+    ],
+    "rules_file": "section-6-bg-proair-oxygen-dosage-bench-rules.pdf",
+    "assemblies": [
+      {
+        "slug": "refill-absorber",
+        "title": "Refill Absorber",
+        "page": 23,
+        "image": "pages/parts/bg-proair-refill-absorber.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Refill Absorber Lid"
+          },
+          {
+            "number": "2",
+            "name": "Cooler/Absorber Lock"
+          },
+          {
+            "number": "3",
+            "name": "Retaining Washer"
+          },
+          {
+            "number": "4",
+            "name": "Cylinder Pin"
+          },
+          {
+            "number": "5",
+            "name": "Snap-Fit Cooler, Absorber"
+          },
+          {
+            "number": "6",
+            "name": "Sealing"
+          },
+          {
+            "number": "7",
+            "name": "Frame"
+          },
+          {
+            "number": "8",
+            "name": "Top Sieve"
+          },
+          {
+            "number": "9",
+            "name": "Filter Pad"
+          },
+          {
+            "number": "10",
+            "name": "Bottom Sieve"
+          },
+          {
+            "number": "11-13",
+            "name": "Refill Absorber Housing"
+          },
+          {
+            "number": "12",
+            "name": "Type Label"
+          },
+          {
+            "number": "13",
+            "name": "Absorber RFID"
+          }
+        ]
+      },
+      {
+        "slug": "ice-cooler-complete",
+        "title": "Ice Cooler, Complete",
+        "page": 24,
+        "image": "pages/parts/bg-proair-ice-cooler-complete.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Snap-Fit"
+          },
+          {
+            "number": "2",
+            "name": "Ice Cooler Lid"
+          },
+          {
+            "number": "3",
+            "name": "Ice Cooler Cartridge"
+          }
+        ]
+      },
+      {
+        "slug": "breathing-connection",
+        "title": "Breathing Connection",
+        "page": 25,
+        "image": "pages/parts/bg-proair-breathing-connection.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Valve Disc"
+          },
+          {
+            "number": "2",
+            "name": "Directional Valve Housing"
+          },
+          {
+            "number": "3",
+            "name": "Connector Piece"
+          },
+          {
+            "number": "4",
+            "name": "O-Ring"
+          },
+          {
+            "number": "5",
+            "name": "Bayonet Ring"
+          },
+          {
+            "number": "6",
+            "name": "Breathing Hose"
+          },
+          {
+            "number": "7",
+            "name": "Sealing Cap"
+          },
+          {
+            "number": "8",
+            "name": "Split Ring"
+          }
+        ]
+      },
+      {
+        "slug": "breathing-bag",
+        "title": "Breathing Bag",
+        "page": 26,
+        "image": "pages/parts/bg-proair-breathing-bag.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Breathing Bag"
+          },
+          {
+            "number": "2",
+            "name": "Breathing Bag Lock"
+          },
+          {
+            "number": "3",
+            "name": "Relief Valve"
+          },
+          {
+            "number": "4",
+            "name": "Relief Valve Disc"
+          },
+          {
+            "number": "5",
+            "name": "Relief Valve Seal"
+          },
+          {
+            "number": "6",
+            "name": "Valve Disc"
+          },
+          {
+            "number": "7",
+            "name": "Spring"
+          },
+          {
+            "number": "8",
+            "name": "Valve Cap"
+          },
+          {
+            "number": "9",
+            "name": "Drain Valve"
+          },
+          {
+            "number": "10",
+            "name": "Drain Valve Cap"
+          },
+          {
+            "number": "11",
+            "name": "Connector Seal"
+          }
+        ]
+      },
+      {
+        "slug": "cylinder-holder",
+        "title": "Cylinder Holder",
+        "page": 27,
+        "image": "pages/parts/bg-proair-cylinder-holder.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Cylinder Strap"
+          },
+          {
+            "number": "2",
+            "name": "Flat Head Screw"
+          }
+        ]
+      },
+      {
+        "slug": "spring-bridge",
+        "title": "Spring Bridge",
+        "page": 28,
+        "image": "pages/parts/bg-proair-spring-bridge.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Pressure Plate"
+          },
+          {
+            "number": "2",
+            "name": "Breathing Bag Spring"
+          },
+          {
+            "number": "3",
+            "name": "Pressure Relief Valve Limit Stop"
+          },
+          {
+            "number": "4",
+            "name": "Wire Bow"
+          },
+          {
+            "number": "5",
+            "name": "Snap-In Hook, Left"
+          },
+          {
+            "number": "6",
+            "name": "Snap-In Hook, Right"
+          },
+          {
+            "number": "7",
+            "name": "Assembly Clip"
+          },
+          {
+            "number": "8",
+            "name": "Spring Bridge"
+          },
+          {
+            "number": "9",
+            "name": "Locking Lever"
+          }
+        ]
+      },
+      {
+        "slug": "waist-belt",
+        "title": "Waist Belt",
+        "page": 29,
+        "image": "pages/parts/bg-proair-waist-belt.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Buckle"
+          },
+          {
+            "number": "2",
+            "name": "Flat Head Screw"
+          },
+          {
+            "number": "3",
+            "name": "Splint"
+          }
+        ]
+      },
+      {
+        "slug": "shoulder-harness",
+        "title": "Shoulder Harness",
+        "page": 30,
+        "image": "pages/parts/bg-proair-shoulder-harness.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Chest Strap"
+          },
+          {
+            "number": "2",
+            "name": "Webbing With Loop Head"
+          },
+          {
+            "number": "3",
+            "name": "Harness Anchor"
+          },
+          {
+            "number": "4",
+            "name": "Hose Loop (100 mm)"
+          },
+          {
+            "number": "5",
+            "name": "Hose Loop (210 mm)"
+          },
+          {
+            "number": "1-5",
+            "name": "Shoulder Harness, Comfort"
+          }
+        ]
+      },
+      {
+        "slug": "electronics",
+        "title": "Electronics",
+        "page": 31,
+        "image": "pages/parts/bg-proair-electronics.png",
+        "parts": [
+          {
+            "number": "1-4",
+            "name": "Electronics Assembly"
+          },
+          {
+            "number": "2-3",
+            "name": "Battery Carrier, Complete"
+          },
+          {
+            "number": "3",
+            "name": "O-Ring"
+          },
+          {
+            "number": "4",
+            "name": "Ventilation Diaphragm"
+          }
+        ]
+      },
+      {
+        "slug": "housing-upper-shell",
+        "title": "Housing – Upper Shell",
+        "page": 32,
+        "image": "pages/parts/bg-proair-housing-upper-shell.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Lock"
+          },
+          {
+            "number": "2",
+            "name": "Flat Head Screw"
+          },
+          {
+            "number": "3",
+            "name": "Buddy Light Window"
+          },
+          {
+            "number": "4",
+            "name": "Hinge Top"
+          },
+          {
+            "number": "1-4",
+            "name": "Upper Shell Compl."
+          }
+        ]
+      },
+      {
+        "slug": "minimum-valve",
+        "title": "Minimum Valve",
+        "page": 33,
+        "image": "pages/parts/bg-proair-minimum-valve.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Dust Cover"
+          },
+          {
+            "number": "2",
+            "name": "Valve Lever"
+          },
+          {
+            "number": "3",
+            "name": "Valve Lever Cover"
+          },
+          {
+            "number": "1-3",
+            "name": "Minimum Valve, Compl."
+          }
+        ]
+      },
+      {
+        "slug": "pressure-reducer",
+        "title": "Pressure Reducer",
+        "page": 34,
+        "image": "pages/parts/bg-proair-pressure-reducer.png",
+        "parts": [
+          {
+            "number": "4",
+            "name": "Pressure Reducer, CGA 540"
+          },
+          {
+            "number": "5",
+            "name": "PSP 5 Pressure Sensor"
+          },
+          {
+            "number": "6",
+            "name": "Screw"
+          },
+          {
+            "number": "7",
+            "name": "O-Ring"
+          },
+          {
+            "number": "8",
+            "name": "Clamp"
+          },
+          {
+            "number": "9",
+            "name": "Bracket"
+          },
+          {
+            "number": "10",
+            "name": "Sealing Ring"
+          },
+          {
+            "number": "11",
+            "name": "Angle Connection"
+          },
+          {
+            "number": "12",
+            "name": "Hand Wheel"
+          },
+          {
+            "number": "13",
+            "name": "O-Ring"
+          },
+          {
+            "number": "14",
+            "name": "Sinter Filter"
+          }
+        ]
+      },
+      {
+        "slug": "pneumatics",
+        "title": "Pneumatics",
+        "page": 35,
+        "image": "pages/parts/bg-proair-pneumatics.png",
+        "parts": [
+          {
+            "number": "2",
+            "name": "Pre-Flush"
+          },
+          {
+            "number": "3",
+            "name": "Bypass"
+          }
+        ]
+      },
+      {
+        "slug": "tubes-air-lines",
+        "title": "Tubes/Air Lines",
+        "page": 36,
+        "image": "pages/parts/bg-proair-tubes-air-lines.png",
+        "parts": [
+          {
+            "number": "1-1.3",
+            "name": "Tube Assembly, Preflush"
+          },
+          {
+            "number": "1.1",
+            "name": "Spare Part Tube, Black"
+          },
+          {
+            "number": "1.2",
+            "name": "L-Push-In Connector, 1-Sided"
+          },
+          {
+            "number": "1.3",
+            "name": "T-Push-In Connector, 1-Sided"
+          },
+          {
+            "number": "2-2.1",
+            "name": "Tube, Bypass"
+          },
+          {
+            "number": "2.1",
+            "name": "Spare Part Tube, Red"
+          },
+          {
+            "number": "3-3.4",
+            "name": "Tube Assembly, Absorber"
+          },
+          {
+            "number": "3.1",
+            "name": "L-Push-In Connector"
+          },
+          {
+            "number": "3.2",
+            "name": "Spare Part Tube, Black"
+          },
+          {
+            "number": "3.3",
+            "name": "Y-Push-In Connector"
+          },
+          {
+            "number": "3.4",
+            "name": "Spare Part Tube, Blue"
+          },
+          {
+            "number": "4-4.3",
+            "name": "Tube Assembly, MP"
+          },
+          {
+            "number": "4.1",
+            "name": "L-Push-In Connector"
+          },
+          {
+            "number": "4.2",
+            "name": "T-Push-In connector"
+          },
+          {
+            "number": "5-5.1",
+            "name": "Tube, E-Box"
+          },
+          {
+            "number": "5.1",
+            "name": "Spare Part Tube, Blue"
+          }
+        ]
+      },
+      {
+        "slug": "connect-ecu-electronic-control-unit",
+        "title": "Connect ECU (Electronic Control Unit)",
+        "page": 37,
+        "image": "pages/parts/bg-proair-connect-ecu-electronic-control-unit.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "ECU Connect Aftersales"
+          },
+          {
+            "number": "2",
+            "name": "Connect UI Module Rubber Cover"
+          },
+          {
+            "number": "3",
+            "name": "Sacrificial Screen Display"
+          },
+          {
+            "number": "4",
+            "name": "Tally Key"
+          },
+          {
+            "number": "4a",
+            "name": "Split Ring"
+          },
+          {
+            "number": "5",
+            "name": "Sacrificial Screen LED"
+          }
+        ]
+      },
+      {
+        "slug": "fps-7000-mask",
+        "title": "FPS 7000 Mask",
+        "page": 38,
+        "image": "pages/parts/bg-proair-fps-7000-mask.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Mask Body FPS 7000"
+          },
+          {
+            "number": "2",
+            "name": "Upper Visor Frame"
+          },
+          {
+            "number": "3",
+            "name": "Visor"
+          },
+          {
+            "number": "4",
+            "name": "Lower Visor Frame"
+          },
+          {
+            "number": "7",
+            "name": "Clamp"
+          },
+          {
+            "number": "8",
+            "name": "Connector Piece"
+          },
+          {
+            "number": "9",
+            "name": "Cover"
+          },
+          {
+            "number": "11",
+            "name": "Turning Knob"
+          },
+          {
+            "number": "12",
+            "name": "Disc"
+          },
+          {
+            "number": "13",
+            "name": "Inner Mask"
+          },
+          {
+            "number": "14",
+            "name": "Button"
+          },
+          {
+            "number": "15A",
+            "name": "Head Strap"
+          },
+          {
+            "number": "15B",
+            "name": "Hairnet"
+          },
+          {
+            "number": "16",
+            "name": "Sliding Buckle"
+          },
+          {
+            "number": "17",
+            "name": "Double Button"
+          },
+          {
+            "number": "18",
+            "name": "Neck Strap"
+          }
+        ]
+      },
+      {
+        "slug": "oxygen-cylinder",
+        "title": "Oxygen Cylinder",
+        "page": 39,
+        "image": "pages/parts/bg-proair-oxygen-cylinder.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Cylinder, O2 2/200 DOT"
+          },
+          {
+            "number": "2",
+            "name": "Cylinder Valve"
+          },
+          {
+            "number": "3",
+            "name": "O-Ring"
+          },
+          {
+            "number": "4",
+            "name": "Approval Label, Cylinder"
+          },
+          {
+            "number": "5",
+            "name": "Transparent Over Label"
+          }
+        ]
+      },
+      {
+        "slug": "test-kit",
+        "title": "Test Kit",
+        "page": 40,
+        "image": "pages/parts/bg-proair-test-kit.png",
+        "parts": [
+          {
+            "number": "1",
+            "name": "Case, BG ProAir Test Set"
+          },
+          {
+            "number": "2",
+            "name": "Adapter RZ 7000"
+          },
+          {
+            "number": "3",
+            "name": "Plug, Male Coupling"
+          },
+          {
+            "number": "4",
+            "name": "Blind Plug"
+          },
+          {
+            "number": "5",
+            "name": "O-Ring Removal Tool"
+          },
+          {
+            "number": "6",
+            "name": "Adapter, Quick Coupling"
+          },
+          {
+            "number": "7",
+            "name": "Breathing Hose Sealing Plug"
+          },
+          {
+            "number": "8",
+            "name": "Breathing Bag Lock Plug"
+          },
+          {
+            "number": "9",
+            "name": "Test Connection, Breathing Hose"
+          },
+          {
+            "number": "10",
+            "name": "Test Adapter, Hose Connection"
+          },
+          {
+            "number": "11",
+            "name": "Plug c/a Breathing Bag Side"
+          },
+          {
+            "number": "12",
+            "name": "Torque TORX Blade T10"
+          },
+          {
+            "number": "13",
+            "name": "Torque TORX Blade T20"
+          },
+          {
+            "number": "14",
+            "name": "Torque TORX Blade T25"
+          },
+          {
+            "number": "15",
+            "name": "Torque Change Blade 6Kt 2.5"
+          },
+          {
+            "number": "16",
+            "name": "Torque Screwdriver"
+          },
+          {
+            "number": "17",
+            "name": "Torque Screwdriver 0.8 – 5.0 Nm"
+          },
+          {
+            "number": "18",
+            "name": "Face Spanner"
+          },
+          {
+            "number": "19",
+            "name": "Test Hose"
+          },
+          {
+            "number": "20",
+            "name": "Bypass Adapter"
+          },
+          {
+            "number": "21",
+            "name": "Breathing Bag Adapter"
+          },
+          {
+            "number": "22",
+            "name": "Breathing Bag Plug"
+          },
+          {
+            "number": "23",
+            "name": "Plug"
+          },
+          {
+            "number": "24",
+            "name": "Drain Valve Plug"
+          }
+        ]
+      }
+    ]
+  }
+]
