@@ -130,27 +130,7 @@
         text-align: center;
     }
 
-    .about-inner .eyebrow { color: var(--red-soft); }
-
-    .about-inner h2 {
-        font-family: var(--font-display);
-        font-weight: 600;
-        font-size: 38px;
-        line-height: 1.08;
-        letter-spacing: 0.01em;
-        margin: 16px 0 20px;
-        text-transform: uppercase;
-        text-wrap: balance;
-        /* Wider than the 760px column, and shrinking with the viewport, so
-           each clause fits on one line and the heading reads as two. */
-        width: min(1060px, calc(100vw - 80px));
-        margin-left: 50%;
-        transform: translateX(-50%);
-        font-size: clamp(26px, calc((100vw - 96px) / 27), 38px);
-    }
-
-    /* Keep each clause together so the break falls after the comma. */
-    .about-inner h2 span { display: inline-block; }
+    .about-inner .eyebrow { color: var(--red-soft); margin-bottom: 20px; }
 
     .about-inner p { margin: 0 0 16px; font-size: 16px; line-height: 1.65; color: #c2c6cc; }
 
@@ -223,7 +203,6 @@
     <div class="about-inner">
         <div>
             <div class="eyebrow">About Mine Rescue Center</div>
-            <h2><span>Made by the Colorado School of Mines Mine Rescue Team,</span> <span>for the mine rescue community</span></h2>
             <p>Mine Rescue Center is a free resource hub for mine rescue teams across the United States. The site features a searchable archive of past competition problems, training resources, and a competition calendar to help teams stay prepared and informed.</p>
             <p>Whether you're a responder, trainer, or organizer, Mine Rescue Center is built for you. <a href="{% url 'feedback' %}">Have feedback or a feature request?</a> We'd love to hear from you.</p>
         </div>
