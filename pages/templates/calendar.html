@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load calendar_filters %}
 
-{% block title %}Competition Calendar - Mine Rescue Center{% endblock %}
+{% block title %}Contest Calendar - Mine Rescue Center{% endblock %}
 
 {% block extra_css %}
     .page-head { background: var(--ink); color: var(--bg); }
@@ -691,11 +691,11 @@
 {% block content %}
 <section class="page-head">
     <div class="page-head-inner">
-        <h1>Competition Calendar</h1>
-        <p>Mine rescue competitions throughout the year. Browse by month, then open an event for its location, details, results, and posted problem.</p>
+        <h1>Contest Calendar</h1>
+        <p>Mine rescue contests throughout the year. Browse by month, then open an event for its location, details, results, and posted problem.</p>
         <form class="cal-search" id="cal-search" role="search" method="get" action="{% url 'calendar' %}"
               data-suggest-url="{% url 'calendar_search' %}">
-            <label class="sr-only" for="cal-search-input">Search competitions</label>
+            <label class="sr-only" for="cal-search-input">Search contests</label>
             <svg class="cs-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
             <input type="search" name="q" id="cal-search-input" value="{{ search_query }}"
                    placeholder="Search by contest, city, or state…"
@@ -795,7 +795,7 @@
     <section class="cal-map" aria-labelledby="cal-map-title">
         <div class="cal-map-bar">
             <div>
-                <h2 id="cal-map-title">{{ year }} Competition Locations</h2>
+                <h2 id="cal-map-title">{{ year }} Contest Locations</h2>
                 <p class="cal-map-sub">Based on the year selected above.</p>
             </div>
             {% if map_markers %}
@@ -809,7 +809,7 @@
 
         <div class="cal-map-frame" id="cal-map">
             <svg class="cal-map-svg" viewBox="0 0 975 610" role="img"
-                 aria-label="Map of the United States showing {{ year }} mine rescue competition locations">
+                 aria-label="Map of the United States showing {{ year }} mine rescue contest locations">
                 <g class="map-states">{% include 'partials/us_states_paths.svg' %}</g>
                 <g class="map-dots">
                     {% for m in map_markers %}
@@ -831,10 +831,10 @@
             </svg>
 
             {% if not map_markers %}
-            <div class="cal-map-empty">No competitions on the calendar for {{ year }} yet.</div>
+            <div class="cal-map-empty">No contests on the calendar for {{ year }} yet.</div>
             {% endif %}
 
-            <div class="map-pop" id="map-pop" role="dialog" aria-label="Competitions at this location" hidden>
+            <div class="map-pop" id="map-pop" role="dialog" aria-label="Contests at this location" hidden>
                 <button type="button" class="map-pop-close" aria-label="Close">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
                 </button>
@@ -860,7 +860,7 @@
         </template>
         {% endfor %}
 
-        <p class="cal-map-note">* Competitions without a location are left off the map.</p>
+        <p class="cal-map-note">* Contests without a location are left off the map.</p>
     </section>
 </div>
 {% endblock %}

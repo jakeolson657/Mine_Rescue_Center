@@ -62,7 +62,7 @@ def build_event_ics(event, url=None, now=None):
     lines = [
         'BEGIN:VCALENDAR',
         'VERSION:2.0',
-        'PRODID:-//Mine Rescue Center//Competition Calendar//EN',
+        'PRODID:-//Mine Rescue Center//Contest Calendar//EN',
         'CALSCALE:GREGORIAN',
         'METHOD:PUBLISH',
         'BEGIN:VEVENT',

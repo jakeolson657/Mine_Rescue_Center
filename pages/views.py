@@ -33,7 +33,7 @@ def _send_problem_submission_email(data):
     email = data.get('email') or ''
     files = data.get('files') or []
     body = "\n".join([
-        f"Competition: {data['competition_name']}",
+        f"Contest:     {data['competition_name']}",
         f"Year:        {data.get('year') or '(not provided)'}",
         f"Location:    {data.get('location') or '(not provided)'}",
         f"Submitted by: {data.get('name') or '(not provided)'}",

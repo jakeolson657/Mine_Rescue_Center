@@ -1,4 +1,4 @@
-"""Place calendar events on the U.S. map shown under the Competition Calendar.
+"""Place calendar events on the U.S. map shown under the Contest Calendar.
 
 Event locations are free-text venue strings. ``short_location`` reduces a
 venue to "City, ST", which is looked up, in order, in:

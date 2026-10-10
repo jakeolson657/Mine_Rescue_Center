@@ -501,13 +501,13 @@
                 <h1>Problem Archive</h1>
             </div>
         </div>
-        <p>Past mine rescue competition problems, indexed by year, contest, and discipline.</p>
+        <p>Past mine rescue contest problems, indexed by year, contest, and discipline.</p>
     </div>
 </section>
 
 <div class="repo-wrap">
     <div class="intro-note">
-        Click a <strong>year</strong> to see its competitions, a <strong>competition</strong> to see its problems, and a <strong>problem</strong> to see its files. Use <strong>Preview</strong> to view a document in your browser before downloading it. Use <strong>Take Test</strong> to take a written test in your browser and get scored when you finish.
+        Click a <strong>year</strong> to see its contests, a <strong>contest</strong> to see its problems, and a <strong>problem</strong> to see its files. Use <strong>Preview</strong> to view a document in your browser before downloading it. Use <strong>Take Test</strong> to take a written test in your browser and get scored when you finish.
     </div>
 
     {% if year_groups %}
@@ -547,7 +547,7 @@
                 <summary>
                     <span class="chev"><svg width="15" height="15"><use href="#i-chev"/></svg></span>
                     <span class="year-label">{{ group.year|default:"Year unknown" }}</span>
-                    <span class="badge count js-year-count">{{ group.competitions|length }} competition{{ group.competitions|length|pluralize }}</span>
+                    <span class="badge count js-year-count">{{ group.competitions|length }} contest{{ group.competitions|length|pluralize }}</span>
                 </summary>
                 <div class="year-body">
                     {% for competition in group.competitions %}
@@ -613,7 +613,7 @@
             <span class="chev"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg></span>
             <span class="submit-head">
                 <span class="submit-eyebrow">Contribute</span>
-                <span class="submit-title">Submit a competition's problems</span>
+                <span class="submit-title">Submit a contest's problems</span>
             </span>
             <span class="badge count">Add to the archive</span>
         </summary>
@@ -647,7 +647,7 @@
 
                 <div class="submit-row3">
                     <div class="submit-field">
-                        <label for="{{ form.competition_name.id_for_label }}">Competition / contest</label>
+                        <label for="{{ form.competition_name.id_for_label }}">Contest</label>
                         {{ form.competition_name }}
                         {% if form.competition_name.errors %}<div class="submit-errors">{{ form.competition_name.errors }}</div>{% endif %}
                     </div>
