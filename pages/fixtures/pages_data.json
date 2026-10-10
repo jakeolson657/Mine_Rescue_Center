@@ -41928,7 +41928,7 @@
  "fields": {
   "title": "Rules Questions & Answers",
   "file": "training/rules/2026-rules-questions-and-answers.pdf",
-  "sort_order": 1,
+  "sort_order": 11,
   "updated_at": "2026-07-12T04:32:03.522Z"
  }
 },
@@ -42020,6 +42020,842 @@
   "file": "training/rules/section-8-technician-team-rules.pdf",
   "sort_order": 10,
   "updated_at": "2026-07-12T04:32:03.567Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 1,
+ "fields": {
+  "year": 2025,
+  "title": "Section I: Coal Mine Rescue Rules",
+  "file": "training/rules/past/2025-coal-mine-rescue-rules.pdf",
+  "sort_order": 10,
+  "updated_at": "2026-10-10T04:43:09.657Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 2,
+ "fields": {
+  "year": 2025,
+  "title": "Section II: Metal and Nonmetal Mine Rescue Rules",
+  "file": "training/rules/past/2025-mnm-mine-rescue-rules.pdf",
+  "sort_order": 20,
+  "updated_at": "2026-10-10T04:43:09.664Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 3,
+ "fields": {
+  "year": 2025,
+  "title": "Section III: First Aid Rules",
+  "file": "training/rules/past/2025-first-aid-rules.pdf",
+  "sort_order": 30,
+  "updated_at": "2026-10-10T04:43:09.669Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 4,
+ "fields": {
+  "year": 2025,
+  "title": "Section IV: Bench Rules – BioPak 240R",
+  "file": "training/rules/past/2025-biopak-240r-bench-rules.pdf",
+  "sort_order": 40,
+  "updated_at": "2026-10-10T04:43:09.673Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 5,
+ "fields": {
+  "year": 2025,
+  "title": "Section V: Bench Rules – BG-4",
+  "file": "training/rules/past/2025-bg-4-bench-rules.pdf",
+  "sort_order": 50,
+  "updated_at": "2026-10-10T04:43:09.678Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 6,
+ "fields": {
+  "year": 2025,
+  "title": "Section VI: Bench Rules – BG ProAir Oxygen Dosage",
+  "file": "training/rules/past/2025-bg-proair-bench-rules.pdf",
+  "sort_order": 60,
+  "updated_at": "2026-10-10T04:43:09.683Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 7,
+ "fields": {
+  "year": 2025,
+  "title": "Section VII: Preshift Rules",
+  "file": "training/rules/past/2025-preshift-rules.pdf",
+  "sort_order": 70,
+  "updated_at": "2026-10-10T04:43:09.688Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 8,
+ "fields": {
+  "year": 2025,
+  "title": "Section VIII: Technician Team Rules",
+  "file": "training/rules/past/2025-technician-team-rules.pdf",
+  "sort_order": 80,
+  "updated_at": "2026-10-10T04:43:09.694Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 9,
+ "fields": {
+  "year": 2025,
+  "title": "Rules Questions & Answers",
+  "file": "training/rules/past/2025-rules-questions-and-answers.pdf",
+  "sort_order": 90,
+  "updated_at": "2026-10-10T04:43:09.699Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 10,
+ "fields": {
+  "year": 2024,
+  "title": "Coal Mine Rescue Rules (revised 02/27/2024)",
+  "file": "training/rules/past/2024-coal-mine-rescue-rules.pdf",
+  "sort_order": 10,
+  "updated_at": "2026-10-10T04:43:09.704Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 11,
+ "fields": {
+  "year": 2024,
+  "title": "Metal and Nonmetal Mine Rescue Rules",
+  "file": "training/rules/past/2024-mnm-mine-rescue-rules.pdf",
+  "sort_order": 20,
+  "updated_at": "2026-10-10T04:43:09.709Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 12,
+ "fields": {
+  "year": 2024,
+  "title": "First Aid Rules",
+  "file": "training/rules/past/2024-first-aid-rules.pdf",
+  "sort_order": 30,
+  "updated_at": "2026-10-10T04:43:09.715Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 13,
+ "fields": {
+  "year": 2024,
+  "title": "Bench Rules – BioPak 240R",
+  "file": "training/rules/past/2024-biopak-240r-bench-rules.pdf",
+  "sort_order": 40,
+  "updated_at": "2026-10-10T04:43:09.721Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 14,
+ "fields": {
+  "year": 2024,
+  "title": "Bench Rules – BG-4",
+  "file": "training/rules/past/2024-bg-4-bench-rules.pdf",
+  "sort_order": 50,
+  "updated_at": "2026-10-10T04:43:09.726Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 15,
+ "fields": {
+  "year": 2024,
+  "title": "Preshift Rules",
+  "file": "training/rules/past/2024-preshift-rules.pdf",
+  "sort_order": 70,
+  "updated_at": "2026-10-10T04:43:09.730Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 16,
+ "fields": {
+  "year": 2024,
+  "title": "Technician Team Rules",
+  "file": "training/rules/past/2024-technician-team-rules.pdf",
+  "sort_order": 80,
+  "updated_at": "2026-10-10T04:43:09.734Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 17,
+ "fields": {
+  "year": 2023,
+  "title": "Coal Mine Rescue Rules",
+  "file": "training/rules/past/2023-coal-mine-rescue-rules.pdf",
+  "sort_order": 10,
+  "updated_at": "2026-10-10T04:43:09.739Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 18,
+ "fields": {
+  "year": 2023,
+  "title": "Metal and Nonmetal Mine Rescue Rules (2023–2024)",
+  "file": "training/rules/past/2023-mnm-mine-rescue-rules.pdf",
+  "sort_order": 20,
+  "updated_at": "2026-10-10T04:43:09.743Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 19,
+ "fields": {
+  "year": 2023,
+  "title": "First Aid Rules (revised 4/4/2023)",
+  "file": "training/rules/past/2023-first-aid-rules.pdf",
+  "sort_order": 30,
+  "updated_at": "2026-10-10T04:43:09.747Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 20,
+ "fields": {
+  "year": 2023,
+  "title": "Bench Rules – BioPak 240R",
+  "file": "training/rules/past/2023-biopak-240r-bench-rules.pdf",
+  "sort_order": 40,
+  "updated_at": "2026-10-10T04:43:09.752Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 21,
+ "fields": {
+  "year": 2023,
+  "title": "Bench Rules – BG-4",
+  "file": "training/rules/past/2023-bg-4-bench-rules.pdf",
+  "sort_order": 50,
+  "updated_at": "2026-10-10T04:43:09.757Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 22,
+ "fields": {
+  "year": 2023,
+  "title": "Technician Team Rules",
+  "file": "training/rules/past/2023-technician-team-rules.pdf",
+  "sort_order": 80,
+  "updated_at": "2026-10-10T04:43:09.762Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 23,
+ "fields": {
+  "year": 2023,
+  "title": "Technician Team Questions & Answers",
+  "file": "training/rules/past/2023-technician-team-questions-and-answers.pdf",
+  "sort_order": 90,
+  "updated_at": "2026-10-10T04:43:09.764Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 24,
+ "fields": {
+  "year": 2022,
+  "title": "Coal Mine Rescue Rules",
+  "file": "training/rules/past/2022-coal-mine-rescue-rules.pdf",
+  "sort_order": 10,
+  "updated_at": "2026-10-10T04:43:09.770Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 25,
+ "fields": {
+  "year": 2022,
+  "title": "Metal and Nonmetal Mine Rescue Rules",
+  "file": "training/rules/past/2022-mnm-mine-rescue-rules.pdf",
+  "sort_order": 20,
+  "updated_at": "2026-10-10T04:43:09.775Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 26,
+ "fields": {
+  "year": 2022,
+  "title": "First Aid Rules",
+  "file": "training/rules/past/2022-first-aid-rules.pdf",
+  "sort_order": 30,
+  "updated_at": "2026-10-10T04:43:09.780Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 27,
+ "fields": {
+  "year": 2022,
+  "title": "Bench Rules – BioPak 240R",
+  "file": "training/rules/past/2022-biopak-240r-bench-rules.pdf",
+  "sort_order": 40,
+  "updated_at": "2026-10-10T04:43:09.786Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 28,
+ "fields": {
+  "year": 2022,
+  "title": "Bench Rules – BG-4",
+  "file": "training/rules/past/2022-bg-4-bench-rules.pdf",
+  "sort_order": 50,
+  "updated_at": "2026-10-10T04:43:09.792Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 29,
+ "fields": {
+  "year": 2022,
+  "title": "Technician Team Rules",
+  "file": "training/rules/past/2022-technician-team-rules.pdf",
+  "sort_order": 80,
+  "updated_at": "2026-10-10T04:43:09.797Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 30,
+ "fields": {
+  "year": 2022,
+  "title": "Bench Questions & Answers",
+  "file": "training/rules/past/2022-bench-questions-and-answers.pdf",
+  "sort_order": 90,
+  "updated_at": "2026-10-10T04:43:09.800Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 31,
+ "fields": {
+  "year": 2022,
+  "title": "First Aid Questions & Answers",
+  "file": "training/rules/past/2022-first-aid-questions-and-answers.pdf",
+  "sort_order": 91,
+  "updated_at": "2026-10-10T04:43:09.805Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 32,
+ "fields": {
+  "year": 2022,
+  "title": "Technician Team Questions & Answers",
+  "file": "training/rules/past/2022-technician-team-questions-and-answers.pdf",
+  "sort_order": 92,
+  "updated_at": "2026-10-10T04:43:09.808Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 33,
+ "fields": {
+  "year": 2021,
+  "title": "Mine Rescue Rules",
+  "file": "training/rules/past/2021-mine-rescue-rules.pdf",
+  "sort_order": 10,
+  "updated_at": "2026-10-10T04:43:09.814Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 34,
+ "fields": {
+  "year": 2021,
+  "title": "First Aid Rules",
+  "file": "training/rules/past/2021-first-aid-rules.pdf",
+  "sort_order": 30,
+  "updated_at": "2026-10-10T04:43:09.819Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 35,
+ "fields": {
+  "year": 2021,
+  "title": "Bench Rules – BioPak 240R",
+  "file": "training/rules/past/2021-biopak-240r-bench-rules.pdf",
+  "sort_order": 40,
+  "updated_at": "2026-10-10T04:43:09.825Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 36,
+ "fields": {
+  "year": 2021,
+  "title": "Bench Rules – BG-4",
+  "file": "training/rules/past/2021-bg-4-bench-rules.pdf",
+  "sort_order": 50,
+  "updated_at": "2026-10-10T04:43:09.832Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 37,
+ "fields": {
+  "year": 2021,
+  "title": "Technician Team Rules",
+  "file": "training/rules/past/2021-technician-team-rules.pdf",
+  "sort_order": 80,
+  "updated_at": "2026-10-10T04:43:09.836Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 38,
+ "fields": {
+  "year": 2021,
+  "title": "Mine Rescue Team Skills Rules",
+  "file": "training/rules/past/2021-mine-rescue-team-skills-rules.pdf",
+  "sort_order": 85,
+  "updated_at": "2026-10-10T04:43:09.840Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 39,
+ "fields": {
+  "year": 2021,
+  "title": "Rules Questions & Answers",
+  "file": "training/rules/past/2021-rules-questions-and-answers.pdf",
+  "sort_order": 90,
+  "updated_at": "2026-10-10T04:43:09.846Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 40,
+ "fields": {
+  "year": 2020,
+  "title": "Mine Rescue Rules",
+  "file": "training/rules/past/2020-mine-rescue-rules.pdf",
+  "sort_order": 10,
+  "updated_at": "2026-10-10T04:43:09.851Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 41,
+ "fields": {
+  "year": 2020,
+  "title": "First Aid Rules",
+  "file": "training/rules/past/2020-first-aid-rules.pdf",
+  "sort_order": 30,
+  "updated_at": "2026-10-10T04:43:09.855Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 42,
+ "fields": {
+  "year": 2020,
+  "title": "Bench Rules – BioPak 240R",
+  "file": "training/rules/past/2020-biopak-240r-bench-rules.pdf",
+  "sort_order": 40,
+  "updated_at": "2026-10-10T04:43:09.860Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 43,
+ "fields": {
+  "year": 2020,
+  "title": "Bench Rules – BG-4",
+  "file": "training/rules/past/2020-bg-4-bench-rules.pdf",
+  "sort_order": 50,
+  "updated_at": "2026-10-10T04:43:09.866Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 44,
+ "fields": {
+  "year": 2020,
+  "title": "Preshift Rules",
+  "file": "training/rules/past/2020-preshift-rules.pdf",
+  "sort_order": 70,
+  "updated_at": "2026-10-10T04:43:09.871Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 45,
+ "fields": {
+  "year": 2020,
+  "title": "Mine Rescue Skills Rules",
+  "file": "training/rules/past/2020-mine-rescue-skills-rules.pdf",
+  "sort_order": 85,
+  "updated_at": "2026-10-10T04:43:09.874Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 46,
+ "fields": {
+  "year": 2020,
+  "title": "Rules Questions & Answers (with drawings)",
+  "file": "training/rules/past/2020-rules-questions-and-answers.pdf",
+  "sort_order": 90,
+  "updated_at": "2026-10-10T04:43:09.881Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 47,
+ "fields": {
+  "year": 2019,
+  "title": "Mine Rescue Rules",
+  "file": "training/rules/past/2019-mine-rescue-rules.pdf",
+  "sort_order": 10,
+  "updated_at": "2026-10-10T04:43:09.885Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 48,
+ "fields": {
+  "year": 2019,
+  "title": "Metal and Nonmetal Mine Rescue Rules (2019–2020)",
+  "file": "training/rules/past/2019-mnm-mine-rescue-rules.pdf",
+  "sort_order": 20,
+  "updated_at": "2026-10-10T04:43:09.891Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 49,
+ "fields": {
+  "year": 2019,
+  "title": "First Aid Rules",
+  "file": "training/rules/past/2019-first-aid-rules.pdf",
+  "sort_order": 30,
+  "updated_at": "2026-10-10T04:43:09.895Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 50,
+ "fields": {
+  "year": 2019,
+  "title": "Bench Rules – BioPak 240R",
+  "file": "training/rules/past/2019-biopak-240r-bench-rules.pdf",
+  "sort_order": 40,
+  "updated_at": "2026-10-10T04:43:09.902Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 51,
+ "fields": {
+  "year": 2019,
+  "title": "Bench Rules – BG-4",
+  "file": "training/rules/past/2019-bg-4-bench-rules.pdf",
+  "sort_order": 50,
+  "updated_at": "2026-10-10T04:43:09.906Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 52,
+ "fields": {
+  "year": 2019,
+  "title": "Preshift Rules",
+  "file": "training/rules/past/2019-preshift-rules.pdf",
+  "sort_order": 70,
+  "updated_at": "2026-10-10T04:43:09.911Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 53,
+ "fields": {
+  "year": 2019,
+  "title": "Mine Rescue Skills Rules",
+  "file": "training/rules/past/2019-mine-rescue-skills-rules.pdf",
+  "sort_order": 85,
+  "updated_at": "2026-10-10T04:43:09.916Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 54,
+ "fields": {
+  "year": 2019,
+  "title": "Rules Questions & Answers",
+  "file": "training/rules/past/2019-rules-questions-and-answers.pdf",
+  "sort_order": 90,
+  "updated_at": "2026-10-10T04:43:09.921Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 55,
+ "fields": {
+  "year": 2018,
+  "title": "Mine Rescue Rules",
+  "file": "training/rules/past/2018-mine-rescue-rules.pdf",
+  "sort_order": 10,
+  "updated_at": "2026-10-10T04:43:09.925Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 56,
+ "fields": {
+  "year": 2018,
+  "title": "First Aid Rules (revised 04/18/2018)",
+  "file": "training/rules/past/2018-first-aid-rules.pdf",
+  "sort_order": 30,
+  "updated_at": "2026-10-10T04:43:09.930Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 57,
+ "fields": {
+  "year": 2018,
+  "title": "Bench Rules – BioPak 240R",
+  "file": "training/rules/past/2018-biopak-240r-bench-rules.pdf",
+  "sort_order": 40,
+  "updated_at": "2026-10-10T04:43:09.934Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 58,
+ "fields": {
+  "year": 2018,
+  "title": "Bench Rules – BG-4",
+  "file": "training/rules/past/2018-bg-4-bench-rules.pdf",
+  "sort_order": 50,
+  "updated_at": "2026-10-10T04:43:09.940Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 59,
+ "fields": {
+  "year": 2018,
+  "title": "Preshift Rules",
+  "file": "training/rules/past/2018-preshift-rules.pdf",
+  "sort_order": 70,
+  "updated_at": "2026-10-10T04:43:09.945Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 60,
+ "fields": {
+  "year": 2018,
+  "title": "Rules Questions & Answers (with drawings)",
+  "file": "training/rules/past/2018-rules-questions-and-answers.pdf",
+  "sort_order": 90,
+  "updated_at": "2026-10-10T04:43:09.951Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 61,
+ "fields": {
+  "year": 2017,
+  "title": "Mine Rescue Rules",
+  "file": "training/rules/past/2017-mine-rescue-rules.pdf",
+  "sort_order": 10,
+  "updated_at": "2026-10-10T04:43:09.956Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 62,
+ "fields": {
+  "year": 2017,
+  "title": "Metal and Nonmetal Mine Rescue Rules (2017–2018)",
+  "file": "training/rules/past/2017-mnm-mine-rescue-rules.pdf",
+  "sort_order": 20,
+  "updated_at": "2026-10-10T04:43:09.961Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 63,
+ "fields": {
+  "year": 2017,
+  "title": "First Aid Rules",
+  "file": "training/rules/past/2017-first-aid-rules.pdf",
+  "sort_order": 30,
+  "updated_at": "2026-10-10T04:43:09.966Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 64,
+ "fields": {
+  "year": 2017,
+  "title": "Bench Rules – BG-4",
+  "file": "training/rules/past/2017-bg-4-bench-rules.pdf",
+  "sort_order": 50,
+  "updated_at": "2026-10-10T04:43:09.971Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 65,
+ "fields": {
+  "year": 2017,
+  "title": "Preshift Rules",
+  "file": "training/rules/past/2017-preshift-rules.pdf",
+  "sort_order": 70,
+  "updated_at": "2026-10-10T04:43:09.975Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 66,
+ "fields": {
+  "year": 2017,
+  "title": "National Mine Rescue Skills Rules (2016–2017)",
+  "file": "training/rules/past/2017-mine-rescue-skills-rules.pdf",
+  "sort_order": 85,
+  "updated_at": "2026-10-10T04:43:09.980Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 67,
+ "fields": {
+  "year": 2017,
+  "title": "Mine Rescue Questions & Answers",
+  "file": "training/rules/past/2017-rules-questions-and-answers.pdf",
+  "sort_order": 90,
+  "updated_at": "2026-10-10T04:43:09.984Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 68,
+ "fields": {
+  "year": 2016,
+  "title": "Mine Rescue Rules (2015–2016)",
+  "file": "training/rules/past/2016-mine-rescue-rules.pdf",
+  "sort_order": 10,
+  "updated_at": "2026-10-10T04:43:09.990Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 69,
+ "fields": {
+  "year": 2016,
+  "title": "Metal and Nonmetal Mine Rescue Rules",
+  "file": "training/rules/past/2016-mnm-mine-rescue-rules.pdf",
+  "sort_order": 20,
+  "updated_at": "2026-10-10T04:43:09.995Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 70,
+ "fields": {
+  "year": 2016,
+  "title": "First Aid Rules",
+  "file": "training/rules/past/2016-first-aid-rules.pdf",
+  "sort_order": 30,
+  "updated_at": "2026-10-10T04:43:09.999Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 71,
+ "fields": {
+  "year": 2016,
+  "title": "Bench Rules – BioPak 240R (2015–2016)",
+  "file": "training/rules/past/2016-biopak-240r-bench-rules.pdf",
+  "sort_order": 40,
+  "updated_at": "2026-10-10T04:43:10.005Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 72,
+ "fields": {
+  "year": 2016,
+  "title": "Bench Rules – BG-4 (2015–2016)",
+  "file": "training/rules/past/2016-bg-4-bench-rules.pdf",
+  "sort_order": 50,
+  "updated_at": "2026-10-10T04:43:10.011Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 73,
+ "fields": {
+  "year": 2016,
+  "title": "Preshift Rules (2015–2016)",
+  "file": "training/rules/past/2016-preshift-rules.pdf",
+  "sort_order": 70,
+  "updated_at": "2026-10-10T04:43:10.016Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 74,
+ "fields": {
+  "year": 2016,
+  "title": "Mine Rescue Questions & Answers",
+  "file": "training/rules/past/2016-rules-questions-and-answers.pdf",
+  "sort_order": 90,
+  "updated_at": "2026-10-10T04:43:10.020Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 75,
+ "fields": {
+  "year": 2016,
+  "title": "Mine Rescue Questions & Answers – Drawings",
+  "file": "training/rules/past/2016-rules-questions-and-answers-drawings.pdf",
+  "sort_order": 91,
+  "updated_at": "2026-10-10T04:43:10.023Z"
+ }
+},
+{
+ "model": "pages.pastruledocument",
+ "pk": 76,
+ "fields": {
+  "year": 2016,
+  "title": "Skills Questions & Answers",
+  "file": "training/rules/past/2016-skills-questions-and-answers.pdf",
+  "sort_order": 92,
+  "updated_at": "2026-10-10T04:43:10.027Z"
  }
 },
 {

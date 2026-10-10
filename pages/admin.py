@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import (
     CalendarEvent, Competition, CompetitionProblem, ProblemDocument,
-    SiteConfiguration, InstructionGuide, CompetitionRuleDocument, Scorecard,
+    SiteConfiguration, InstructionGuide, CompetitionRuleDocument, PastRuleDocument, Scorecard,
     Quiz, QuizQuestion, QuizChoice, BenchingApparatus, BenchingResource,
     FirstAidResource, RopeRescueResource, GeocodedLocation,
 )
@@ -127,6 +127,14 @@ class CompetitionRuleDocumentAdmin(admin.ModelAdmin):
     list_display = ('title', 'sort_order', 'updated_at')
     search_fields = ('title',)
     ordering = ('sort_order', 'title')
+
+
+@admin.register(PastRuleDocument)
+class PastRuleDocumentAdmin(admin.ModelAdmin):
+    list_display = ('title', 'year', 'sort_order', 'updated_at')
+    list_filter = ('year',)
+    search_fields = ('title',)
+    ordering = ('-year', 'sort_order', 'title')
 
 
 @admin.register(FirstAidResource)

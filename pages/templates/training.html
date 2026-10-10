@@ -216,6 +216,12 @@
     .scorecards-drop-body { padding: 4px 18px 18px; }
     .scorecards-drop-note { font-size: 13px; line-height: 1.6; color: var(--steel); margin-bottom: 14px; }
 
+    /* Previous years' rules: one compact dropdown per year */
+    .scorecards-drop.year-drop { margin-top: 8px; background: var(--surface); }
+    .scorecards-drop.year-drop:first-of-type { margin-top: 0; }
+    .year-drop > summary { padding: 12px 16px; }
+    .year-drop-count { flex-shrink: 0; font-family: var(--font-mono); font-size: 11.5px; color: var(--muted); }
+
     /* Linked to from the parts practice pages; clear the sticky header. */
     #benching, [id^="parts-"] { scroll-margin-top: 84px; }
 
@@ -407,6 +413,45 @@
                     </div>
                 </div>
             </details>
+
+            {% if past_rule_documents %}
+                <details class="scorecards-drop">
+                    <summary>
+                        <span class="chev"><svg width="14" height="14"><use href="#i-chev"/></svg></span>
+                        <span class="scorecards-drop-title">Previous Years' Rules</span>
+                    </summary>
+                    <div class="scorecards-drop-body">
+                        <p class="scorecards-drop-note">Earlier editions of the contest rules, recovered from MSHA's past rules pages. Many are redline copies that mark what changed from the year before.</p>
+                        {% regroup past_rule_documents by year as rule_years %}
+                        {% for group in rule_years %}
+                            <details class="scorecards-drop year-drop">
+                                <summary>
+                                    <span class="chev"><svg width="14" height="14"><use href="#i-chev"/></svg></span>
+                                    <span class="scorecards-drop-title">{{ group.grouper }} Rules</span>
+                                    <span class="year-drop-count">{{ group.list|length }} doc{{ group.list|length|pluralize }}</span>
+                                </summary>
+                                <div class="scorecards-drop-body">
+                                    <div class="documents-list">
+                                        {% for doc in group.list %}
+                                            <div class="document-item">
+                                                <span class="document-title"><span class="doc-chip">PDF</span>{{ doc.title }}</span>
+                                                <div class="document-actions">
+                                                    {% if doc.preview_kind %}
+                                                        <button type="button" class="preview-btn" data-url="{{ doc.file.url }}" data-kind="{{ doc.preview_kind }}" data-title="{{ doc.year }} {{ doc.title }}">Preview</button>
+                                                    {% endif %}
+                                                    <a href="{{ doc.file.url }}" class="download-btn" download>
+                                                        <svg width="13" height="13"><use href="#i-dl"/></svg>Download
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </details>
+                        {% endfor %}
+                    </div>
+                </details>
+            {% endif %}
         </div>
     </details>
 

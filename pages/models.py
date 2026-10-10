@@ -451,6 +451,33 @@ def delete_file_on_rule_document_delete(sender, instance, **kwargs):
         instance.file.delete(save=False)
 
 
+class PastRuleDocument(models.Model):
+    """A rules document from an earlier contest year, archived from MSHA's
+    old rules pages. Listed on the training page grouped by year."""
+    year = models.PositiveSmallIntegerField(help_text="Contest year the rules were issued for")
+    title = models.CharField(max_length=255, help_text="e.g. Coal Mine Rescue Rules")
+    file = models.FileField(upload_to='training/rules/past/')
+    sort_order = models.PositiveIntegerField(default=0, help_text="Within a year, documents are listed lowest number first")
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['-year', 'sort_order', 'title']
+
+    def __str__(self):
+        return f"{self.year} {self.title}"
+
+    @property
+    def preview_kind(self):
+        return preview_kind_for(self.file.name)
+
+
+@receiver(post_delete, sender=PastRuleDocument)
+def delete_file_on_past_rule_document_delete(sender, instance, **kwargs):
+    # Same guard as BenchingResource: only drop the file once no row uses it.
+    if instance.file and not PastRuleDocument.objects.filter(file=instance.file.name).exists():
+        instance.file.delete(save=False)
+
+
 class FirstAidResource(models.Model):
     """A first aid training document (guides, protocols, references)."""
     title = models.CharField(max_length=255, help_text="e.g. First Aid Field Reference")

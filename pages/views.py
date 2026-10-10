@@ -13,7 +13,7 @@ from .models import (
     CalendarEvent, Competition, SiteConfiguration,
     PROBLEM_CATEGORIES, categorize_problem,
     WRITTEN_TEST_SUBJECTS, written_test_subjects,
-    InstructionGuide, CompetitionRuleDocument, Scorecard,
+    InstructionGuide, CompetitionRuleDocument, PastRuleDocument, Scorecard,
     Quiz, BenchingApparatus, FirstAidResource, RopeRescueResource,
 )
 from .forms import FeedbackForm, ProblemSubmissionForm
@@ -191,6 +191,7 @@ def training_resources(request):
         'instruction_guides': InstructionGuide.objects.all(),
         'rule_documents': CompetitionRuleDocument.objects.all(),
         'scorecards': Scorecard.objects.all(),
+        'past_rule_documents': PastRuleDocument.objects.all(),
         'first_aid_resources': FirstAidResource.objects.all(),
         'rope_rescue_resources': RopeRescueResource.objects.all(),
         'benching_apparatus': benching_apparatus,
