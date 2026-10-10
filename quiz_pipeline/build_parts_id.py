@@ -131,6 +131,15 @@ def parse_table(words):
     return [p for p in out if p[1]], header_top
 
 
+def table_top(page, header_top):
+    """Top edge of the parts table: its ruled top border, which sits a few
+    points above the header text, so the diagram crop doesn't catch it."""
+    borders = [d['rect'].y0 for d in page.get_drawings()
+               if d['rect'].width > 100 and d['rect'].height < 3
+               and header_top - 40 < d['rect'].y0 < header_top + 18]
+    return min([header_top] + borders)
+
+
 def iop_page_range(doc):
     """0-based page indexes of the Identification of Parts section, from the
     index page's 'Identification of Parts ... N' / 'Judge's Checklist ... M'."""
@@ -169,9 +178,10 @@ def main():
             parts = [(n, NAME_OVERRIDES.get((slug, pi + 1, n), nm)) for n, nm in parts]
 
             band = fitz.Rect(page.rect.x0 + 20, (title_bottom or 60) + 4,
-                             page.rect.x1 - 20, header_top - 4)
+                             page.rect.x1 - 20, table_top(page, header_top) - 1)
             box = _content_bbox(page, band) or band
-            box = fitz.Rect(box.x0 - 6, box.y0 - 6, box.x1 + 6, box.y1 + 6) & page.rect
+            # Pad the ink a little, but never back down into the table.
+            box = fitz.Rect(box.x0 - 6, box.y0 - 6, box.x1 + 6, min(box.y1 + 6, band.y1)) & page.rect
             a_slug = slugify(title)
             img_name = f'{slug}-{a_slug}.png'
             pix = page.get_pixmap(clip=box, dpi=170, colorspace=fitz.csGRAY)
