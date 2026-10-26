@@ -3,6 +3,7 @@ from django.templatetags.static import static
 from django.http import Http404, HttpResponse
 from django.urls import reverse
 from django.conf import settings
+from django.db.models import Count
 from django.core.mail import EmailMessage
 from django.utils.text import slugify
 from django.views.generic import ListView, DetailView
@@ -17,6 +18,7 @@ from .models import (
     Quiz, BenchingApparatus, FirstAidResource, RopeRescueResource,
 )
 from .forms import FeedbackForm, ProblemSubmissionForm
+from forum.models import Status, Thread
 from .parts import find_assembly, unit_for_apparatus
 from .geo import MAP_HEIGHT, MAP_WIDTH, is_surface, map_markers
 from .search import search_events, state_name
@@ -122,6 +124,15 @@ def past_problems(request):
                 for d in problem.documents.all()
             ]
             problem.docs_script_id = f'docs-{problem.pk}'
+
+    # Forum threads per problem, for each problem's Discuss button.
+    discussion_counts = dict(
+        Thread.objects.filter(status=Status.VISIBLE, problem__isnull=False)
+        .values_list('problem').annotate(n=Count('pk')).order_by()
+    )
+    for competition in competitions:
+        for problem in competition.problems.all():
+            problem.discussion_count = discussion_counts.get(problem.pk, 0)
 
     by_year = {}
     for competition in competitions:

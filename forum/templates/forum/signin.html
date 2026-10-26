@@ -1,0 +1,39 @@
+{% extends 'forum/base.html' %}
+
+{% block page_title %}Sign in - Forum{% endblock %}
+
+{% block crumbs %}<span class="sep">/</span><span>Sign in</span>{% endblock %}
+
+{% block head %}
+<span class="eyebrow">Sign in</span>
+<h1>Sign in to the forum</h1>
+<p class="lede">No password needed — we'll email you a link that signs you in. New here? The same link creates your account.</p>
+{% endblock %}
+
+{% block body %}
+<div class="fm-card" style="max-width:560px">
+    {% if sent_to %}
+        <h2 class="fm-section-title">Check your email</h2>
+        <p style="margin-bottom:14px">We sent a sign-in link to <strong>{{ sent_to }}</strong>. It works once and expires in 30 minutes.</p>
+        <p class="fm-help">Not there after a minute? Check your spam folder, or send it again below.</p>
+        <hr style="border:none;border-top:1px solid var(--line);margin:20px 0">
+    {% endif %}
+    {% if error %}
+        <div class="fm-msg error" style="margin-bottom:18px">Sorry — we couldn't send the email just now. Please try again in a few minutes.</div>
+    {% endif %}
+    <form class="fm-form" method="post" action="{% url 'forum:signin' %}" novalidate>
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ next }}">
+        <div class="hp" aria-hidden="true">{{ form.website }}</div>
+        <div class="fm-field">
+            <label for="{{ form.email.id_for_label }}">Email</label>
+            {{ form.email }}
+            {% if form.email.errors %}<div class="fm-errors">{{ form.email.errors }}</div>{% endif %}
+        </div>
+        <div class="fm-actions">
+            <button type="submit" class="btn btn-red">Email me a link</button>
+            <span class="note">Your email is never shown on the forum.</span>
+        </div>
+    </form>
+</div>
+{% endblock %}

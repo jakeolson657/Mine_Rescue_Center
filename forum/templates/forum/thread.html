@@ -1,0 +1,124 @@
+{% extends 'forum/base.html' %}
+
+{% block page_title %}{{ thread.title }} - Forum{% endblock %}
+
+{% block crumbs %}<span class="sep">/</span><a href="{{ category.get_absolute_url }}">{{ category.name }}</a>{% endblock %}
+
+{% block head %}
+<span class="eyebrow">{{ category.name }}</span>
+<h1>{{ thread.title }}</h1>
+<div class="fm-row-meta" style="color:#9aa3ad">
+    {% if thread.pinned %}<span class="tag dark" style="border-color:#4d5763">Pinned</span>{% endif %}
+    {% if thread.locked %}<span class="tag">Locked</span>{% endif %}
+    {% if answer %}<span class="tag green">Answered</span>{% endif %}
+    {% if thread.status == 'pending' %}<span class="tag gold">Awaiting approval</span>{% elif thread.status == 'hidden' %}<span class="tag">Hidden</span>{% endif %}
+    <span>{{ thread.reply_count }} repl{{ thread.reply_count|pluralize:"y,ies" }} · started {{ thread.created_at|timesince }} ago</span>
+    {% if user.is_authenticated and thread.status == 'visible' %}
+        <form method="post" action="{% url 'forum:follow' thread.pk %}" style="display:inline">
+            {% csrf_token %}
+            <button type="submit" class="fm-link-btn" style="color:#c2c6cc">{% if following %}Unfollow{% else %}Follow{% endif %}</button>
+        </form>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block body %}
+{% with linked=thread.linked %}
+    {% if linked %}
+        <div class="fm-linked">
+            <span class="what"><span class="kind">{{ linked.0 }}</span>{{ linked.1 }}</span>
+            <a class="preview-btn open" href="{{ linked.2 }}">Open</a>
+        </div>
+    {% endif %}
+{% endwith %}
+
+{% if answer %}
+    <div class="fm-answer-callout">
+        ✓ This question has an accepted answer from {{ answer.author.forum_profile.display_name|default:"a former member" }}.
+        <a href="#post-{{ answer.pk }}">Jump to it</a>
+    </div>
+{% endif %}
+
+{% for post in posts %}
+    <article class="fm-post{% if post.status == 'pending' %} pending{% elif post.status == 'hidden' %} hidden-post{% endif %}{% if post.is_answer %} answer{% endif %}" id="post-{{ post.pk }}">
+        <div class="fm-author">
+            {% with prof=post.author.forum_profile %}
+                <div class="name">{{ prof.display_name|default:"Former member" }}</div>
+                {% if prof.meta_line %}<div class="meta">{{ prof.meta_line }}</div>{% endif %}
+                {% if post.author.is_staff %}<span class="tag red">Moderator</span>{% elif prof.role %}<span class="tag">{{ prof.get_role_display }}</span>{% endif %}
+            {% endwith %}
+        </div>
+        <div class="fm-post-main">
+            <div class="fm-post-top">
+                <a href="#post-{{ post.pk }}"><time class="local-time" datetime="{{ post.created_at|date:'c' }}">{{ post.created_at|date:"M j, Y · g:i A" }} UTC</time></a>
+                {% if post.edited_at %}<span>· edited</span>{% endif %}
+                {% if post.is_answer %}<span class="tag green">Accepted answer</span>{% endif %}
+                {% if post.status == 'pending' %}<span class="tag gold">Awaiting approval — only you{% if user.is_staff %} and moderators{% endif %} can see this</span>{% endif %}
+                {% if post.status == 'hidden' %}<span class="tag">Hidden</span>{% endif %}
+            </div>
+            <div class="fm-body">{{ post.body|urlizetrunc:60|linebreaks }}</div>
+
+            {% if user.is_authenticated %}
+                <div class="fm-post-actions">
+                    {% if post.author_id == user.pk or user.is_staff %}
+                        {% if post.status != 'hidden' %}<a class="fm-link-btn" href="{% url 'forum:edit_post' post.pk %}">Edit</a>{% endif %}
+                    {% endif %}
+                    {% if can_mark_answer and post.pk != opening_pk and post.status == 'visible' %}
+                        <form method="post" action="{% url 'forum:mark_answer' post.pk %}">
+                            {% csrf_token %}
+                            <button type="submit" class="fm-link-btn good">{% if post.is_answer %}Unmark answer{% else %}Mark as answer{% endif %}</button>
+                        </form>
+                    {% endif %}
+                    {% if post.author_id != user.pk and post.status == 'visible' %}
+                        <details class="fm-report">
+                            <summary class="fm-link-btn">Report</summary>
+                            <form method="post" action="{% url 'forum:report_post' post.pk %}">
+                                {% csrf_token %}
+                                {{ report_form.reason }}
+                                <button type="submit" class="preview-btn">Send</button>
+                            </form>
+                        </details>
+                    {% endif %}
+                    {% if user.is_staff %}
+                        {% if post.status != 'visible' %}
+                            <form method="post" action="{% url 'forum:moderate' post.pk %}">{% csrf_token %}<input type="hidden" name="action" value="approve"><button type="submit" class="fm-link-btn good">Approve</button></form>
+                        {% endif %}
+                        {% if post.status != 'hidden' %}
+                            <form method="post" action="{% url 'forum:moderate' post.pk %}">{% csrf_token %}<input type="hidden" name="action" value="hide"><button type="submit" class="fm-link-btn bad">Hide</button></form>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            {% endif %}
+        </div>
+    </article>
+{% endfor %}
+
+<h2 class="fm-section-title" id="reply">Reply</h2>
+{% if thread.status != 'visible' %}
+    <div class="fm-signin-cta"><span>Replies open once this thread is approved.</span></div>
+{% elif thread.locked and not user.is_staff %}
+    <div class="fm-signin-cta"><span>This thread is locked and isn't taking new replies.</span></div>
+{% elif not user.is_authenticated %}
+    <div class="fm-signin-cta">
+        <span>Sign in with your email to join the discussion — no password needed.</span>
+        <a class="btn btn-red" href="{% url 'forum:signin' %}?next={{ thread.get_absolute_url|urlencode }}%23reply">Sign in to reply</a>
+    </div>
+{% else %}
+    <div class="fm-card">
+        <form class="fm-form" method="post" action="{% url 'forum:reply' thread.pk %}#reply" novalidate>
+            {% csrf_token %}
+            <div class="hp" aria-hidden="true">{{ reply_form.website }}</div>
+            <div class="fm-field">
+                {{ reply_form.body }}
+                {% if reply_form.body.errors %}<div class="fm-errors">{{ reply_form.body.errors }}</div>{% endif %}
+                {% if reply_form.non_field_errors %}<div class="fm-errors">{{ reply_form.non_field_errors }}</div>{% endif %}
+                <div class="fm-help">Plain text — links are made clickable and blank lines start a new paragraph.</div>
+            </div>
+            <div class="fm-actions">
+                <button type="submit" class="btn btn-red">Post reply</button>
+                {% if not user.forum_profile.posts_freely %}<span class="note">Your first posts are checked by a moderator before they appear.</span>{% endif %}
+            </div>
+        </form>
+    </div>
+{% endif %}
+{% endblock %}

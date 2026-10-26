@@ -1,0 +1,23 @@
+{% extends 'forum/base.html' %}
+
+{% block page_title %}Discussion: {{ link_title }} - Forum{% endblock %}
+
+{% block crumbs %}<span class="sep">/</span><span>Discussion</span>{% endblock %}
+
+{% block head %}
+<div class="fm-head-row">
+    <div>
+        <span class="eyebrow">Discussion</span>
+        <h1>{{ link_title }}</h1>
+        <p class="lede">Every forum thread about this {% if kind == 'rule' %}rules document{% elif kind == 'quiz' %}written test{% else %}{{ kind }}{% endif %}.</p>
+    </div>
+    {% if not not_held_yet %}<a class="btn btn-red" href="{{ new_url }}">Start a discussion</a>{% endif %}
+</div>
+{% endblock %}
+
+{% block body %}
+{% if not_held_yet %}
+    <div class="fm-msg info" style="margin-bottom:18px">Discussion opens once this contest has been held, so problems can't leak early.</div>
+{% endif %}
+{% include 'forum/_thread_rows.html' with threads=threads show_category=True empty_text="No one has started a discussion about this yet." %}
+{% endblock %}

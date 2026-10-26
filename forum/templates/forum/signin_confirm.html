@@ -1,0 +1,26 @@
+{% extends 'forum/base.html' %}
+
+{% block page_title %}Sign in - Forum{% endblock %}
+
+{% block crumbs %}<span class="sep">/</span><span>Sign in</span>{% endblock %}
+
+{% block head %}
+<span class="eyebrow">Sign in</span>
+<h1>{% if expired %}Link expired{% else %}Finish signing in{% endif %}</h1>
+{% endblock %}
+
+{% block body %}
+<div class="fm-card" style="max-width:560px">
+    {% if expired %}
+        <p style="margin-bottom:18px">This sign-in link has expired or was already used. Links work once and last 30 minutes.</p>
+        <a class="btn btn-red" href="{% url 'forum:signin' %}">Send a new link</a>
+    {% else %}
+        <p style="margin-bottom:18px">Signing in as <strong>{{ email }}</strong>.</p>
+        <form method="post" action="{% url 'forum:signin_confirm' %}">
+            {% csrf_token %}
+            <input type="hidden" name="t" value="{{ token }}">
+            <button type="submit" class="btn btn-red">Sign in</button>
+        </form>
+    {% endif %}
+</div>
+{% endblock %}

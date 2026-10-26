@@ -1,0 +1,22 @@
+{% extends 'forum/base.html' %}
+
+{% block page_title %}Search - Forum{% endblock %}
+
+{% block crumbs %}<span class="sep">/</span><span>Search</span>{% endblock %}
+
+{% block head %}
+<span class="eyebrow">Search</span>
+<h1>{% if q %}Results for “{{ q }}”{% else %}Search the forum{% endif %}</h1>
+<form class="fm-search" method="get" action="{% url 'forum:search' %}" role="search">
+    <input type="search" name="q" value="{{ q }}" placeholder="Search the forum" aria-label="Search the forum" autofocus>
+    <button type="submit" class="btn btn-red">Search</button>
+</form>
+{% endblock %}
+
+{% block body %}
+{% if q|length >= 2 %}
+    {% include 'forum/_thread_rows.html' with threads=results show_category=True empty_text="No threads match that search." %}
+{% else %}
+    <p class="fm-empty">Type at least two characters to search thread titles and posts.</p>
+{% endif %}
+{% endblock %}

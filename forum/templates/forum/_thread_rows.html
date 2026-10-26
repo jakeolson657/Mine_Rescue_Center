@@ -1,0 +1,26 @@
+{# A list of threads. Expects `threads`; `show_category` adds the category tag. #}
+<div class="fm-list">
+    {% for thread in threads %}
+        <div class="fm-row">
+            <div class="fm-row-main">
+                <a class="fm-row-title" href="{{ thread.get_absolute_url }}">{{ thread.title }}</a>
+                <div class="fm-row-meta">
+                    {% if thread.pinned %}<span class="tag dark">Pinned</span>{% endif %}
+                    {% if thread.status == 'pending' %}<span class="tag gold">Awaiting approval</span>{% elif thread.status == 'hidden' %}<span class="tag">Hidden</span>{% endif %}
+                    {% if thread.has_answer %}<span class="tag green">Answered</span>{% endif %}
+                    {% if thread.locked %}<span class="tag">Locked</span>{% endif %}
+                    {% if show_category %}<a class="tag red" href="{{ thread.category.get_absolute_url }}">{{ thread.category.name }}</a>{% endif %}
+                    {% with linked=thread.linked %}{% if linked %}<span class="tag" title="{{ linked.1 }}">{{ linked.0 }}</span>{% endif %}{% endwith %}
+                    <span>by {{ thread.author.forum_profile.display_name|default:"Former member" }}</span>
+                </div>
+            </div>
+            <div class="fm-row-stats">
+                <strong>{{ thread.reply_count }}</strong>
+                repl{{ thread.reply_count|pluralize:"y,ies" }}<br>
+                {{ thread.last_post_at|timesince }} ago
+            </div>
+        </div>
+    {% empty %}
+        <div class="fm-empty">{{ empty_text|default:"No threads yet." }}</div>
+    {% endfor %}
+</div>

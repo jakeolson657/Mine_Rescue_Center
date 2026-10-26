@@ -12,6 +12,7 @@
         <a class="quiz-back" href="{{ back_url }}">&larr; Back to Past Problems</a>
         <h1>{{ quiz.title }}</h1>
         <div class="comp-name">{{ quiz.problem.competition.name }}{% if quiz.problem.competition.year %} &middot; {{ quiz.problem.competition.year }}{% endif %}</div>
+        <a class="quiz-back" href="{% url 'forum:about' 'quiz' quiz.pk %}" style="margin-top:14px">Discuss this test on the forum &rarr;</a>
     </div>
 </section>
 

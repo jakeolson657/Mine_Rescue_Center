@@ -290,6 +290,7 @@
 
     .problem-body { padding: 2px 18px 16px; }
     .problem-description { color: var(--steel); font-size: 14px; line-height: 1.6; margin-bottom: 14px; }
+    .problem-discuss { display: flex; justify-content: flex-end; margin-top: 10px; }
 
     /* Empty repository state */
     .repo-empty {
@@ -581,6 +582,9 @@
                                             {# Document rows are built on the client when opened (see scripts) — keeps the archive page light. #}
                                             {{ problem.docs_data|json_script:problem.docs_script_id }}
                                             <div class="documents-list" data-docs="{{ problem.docs_script_id }}" data-loaded="0"></div>
+                                            <div class="problem-discuss">
+                                                <a class="preview-btn" href="{% url 'forum:about' 'problem' problem.pk %}">Discuss{% if problem.discussion_count %} · {{ problem.discussion_count }} thread{{ problem.discussion_count|pluralize }}{% endif %}</a>
+                                            </div>
                                         </div>
                                     </details>
                                     {% endwith %}

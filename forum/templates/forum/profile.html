@@ -1,0 +1,56 @@
+{% extends 'forum/base.html' %}
+
+{% block page_title %}Your profile - Forum{% endblock %}
+
+{% block crumbs %}<span class="sep">/</span><span>Profile</span>{% endblock %}
+
+{% block head %}
+<span class="eyebrow">{% if welcome %}Welcome{% else %}Profile{% endif %}</span>
+<h1>{% if welcome %}Set up your profile{% else %}Your profile{% endif %}</h1>
+<p class="lede">{% if welcome %}Choose the name other members will see. The rest is optional but helps people know who they're talking to.{% else %}Signed in as {{ user.email }}. Only your display name and the details below are shown on the forum.{% endif %}</p>
+{% endblock %}
+
+{% block body %}
+<div class="fm-card">
+    <form class="fm-form" method="post" action="{% url 'forum:profile' %}" novalidate>
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ next }}">
+        <div class="row2">
+            <div class="fm-field">
+                <label for="{{ form.display_name.id_for_label }}">Display name</label>
+                {{ form.display_name }}
+                {% if form.display_name.errors %}<div class="fm-errors">{{ form.display_name.errors }}</div>{% endif %}
+            </div>
+            <div class="fm-field">
+                <label for="{{ form.role.id_for_label }}">Role <span class="opt">(optional)</span></label>
+                {{ form.role }}
+            </div>
+            <div class="fm-field">
+                <label for="{{ form.district.id_for_label }}">Coal or MNM <span class="opt">(optional)</span></label>
+                {{ form.district }}
+            </div>
+            <div class="fm-field">
+                <label for="{{ form.state.id_for_label }}">State <span class="opt">(optional)</span></label>
+                {{ form.state }}
+            </div>
+        </div>
+        <div class="fm-field">
+            <label for="{{ form.team.id_for_label }}">Team or company <span class="opt">(optional)</span></label>
+            {{ form.team }}
+        </div>
+        <div class="fm-field">
+            <label class="fm-check" for="{{ form.email_on_reply.id_for_label }}" style="text-transform:none;letter-spacing:0;font-family:var(--font-body);font-size:14.5px;color:var(--ink)">
+                {{ form.email_on_reply }} Email me when someone replies to a thread I follow
+            </label>
+        </div>
+        <div class="fm-actions">
+            <button type="submit" class="btn btn-red">{% if welcome %}Save and continue{% else %}Save profile{% endif %}</button>
+        </div>
+    </form>
+</div>
+
+{% if not welcome %}
+    <h2 class="fm-section-title">Your threads</h2>
+    {% include 'forum/_thread_rows.html' with threads=threads show_category=True empty_text="You haven't started any threads yet." %}
+{% endif %}
+{% endblock %}

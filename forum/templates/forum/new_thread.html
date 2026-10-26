@@ -1,0 +1,52 @@
+{% extends 'forum/base.html' %}
+
+{% block page_title %}Start a thread - Forum{% endblock %}
+
+{% block crumbs %}<span class="sep">/</span><span>New thread</span>{% endblock %}
+
+{% block head %}
+<span class="eyebrow">New thread</span>
+<h1>Start a thread</h1>
+<p class="lede">Ask a question or open a discussion. Give it a clear title so others can find it later.</p>
+{% endblock %}
+
+{% block body %}
+{% if link_obj %}
+    <div class="fm-linked">
+        <span class="what"><span class="kind">About this {{ link_kind }}</span>{{ link_title }}</span>
+        <a class="fm-link-btn" href="{% url 'forum:new_thread' %}">Remove</a>
+    </div>
+{% endif %}
+
+<div class="fm-card">
+    <form class="fm-form" method="post" action="{% url 'forum:new_thread' %}" novalidate>
+        {% csrf_token %}
+        {% if link_obj %}<input type="hidden" name="{{ link_kind }}" value="{{ link_obj.pk }}">{% endif %}
+        <div class="hp" aria-hidden="true">{{ form.website }}</div>
+
+        {% if form.non_field_errors %}<div class="fm-msg error" style="margin-bottom:18px">{{ form.non_field_errors|join:" " }}</div>{% endif %}
+
+        <div class="fm-field">
+            <label for="{{ form.category.id_for_label }}">Category</label>
+            {{ form.category }}
+        </div>
+        <div class="fm-field">
+            <label for="{{ form.title.id_for_label }}">Title</label>
+            {{ form.title }}
+            {% if form.title.errors %}<div class="fm-errors">{{ form.title.errors }}</div>{% endif %}
+        </div>
+        <div class="fm-field">
+            <label for="{{ form.body.id_for_label }}">Message</label>
+            {{ form.body }}
+            {% if form.body.errors %}<div class="fm-errors">{{ form.body.errors }}</div>{% endif %}
+            <div class="fm-help">Plain text — links are made clickable and blank lines start a new paragraph. If you're asking about a rule, quote the rule number.</div>
+        </div>
+        <div class="fm-actions">
+            <button type="submit" class="btn btn-red">Post thread</button>
+            {% if not user.forum_profile.posts_freely %}<span class="note">Your first posts are checked by a moderator before they appear.</span>{% endif %}
+        </div>
+    </form>
+</div>
+
+{% include 'forum/_guidelines.html' %}
+{% endblock %}

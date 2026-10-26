@@ -1,0 +1,28 @@
+{% extends 'forum/base.html' %}
+
+{% block page_title %}{{ category.name }} - Forum{% endblock %}
+
+{% block crumbs %}<span class="sep">/</span><span>{{ category.name }}</span>{% endblock %}
+
+{% block head %}
+<div class="fm-head-row">
+    <div>
+        <span class="eyebrow">Forum category</span>
+        <h1>{{ category.name }}</h1>
+        <p class="lede">{{ category.description }}</p>
+    </div>
+    <a class="btn btn-red" href="{% url 'forum:new_thread' %}?category={{ category.slug }}">Start a thread</a>
+</div>
+{% endblock %}
+
+{% block body %}
+{% include 'forum/_thread_rows.html' with threads=page.object_list empty_text="No threads in this category yet." %}
+
+{% if page.paginator.num_pages > 1 %}
+    <div class="fm-pager">
+        {% if page.has_previous %}<a href="?page={{ page.previous_page_number }}">← Newer</a>{% endif %}
+        <span>Page {{ page.number }} of {{ page.paginator.num_pages }}</span>
+        {% if page.has_next %}<a href="?page={{ page.next_page_number }}">Older →</a>{% endif %}
+    </div>
+{% endif %}
+{% endblock %}

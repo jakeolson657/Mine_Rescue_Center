@@ -1,0 +1,27 @@
+{% extends 'forum/base.html' %}
+
+{% block page_title %}Edit post - Forum{% endblock %}
+
+{% block crumbs %}<span class="sep">/</span><a href="{{ thread.get_absolute_url }}">{{ thread.title|truncatechars:40 }}</a>{% endblock %}
+
+{% block head %}
+<span class="eyebrow">Edit post</span>
+<h1>{{ thread.title }}</h1>
+{% endblock %}
+
+{% block body %}
+<div class="fm-card">
+    <form class="fm-form" method="post" novalidate>
+        {% csrf_token %}
+        <div class="fm-field">
+            <label for="{{ form.body.id_for_label }}">Message</label>
+            {{ form.body }}
+            {% if form.body.errors %}<div class="fm-errors">{{ form.body.errors }}</div>{% endif %}
+        </div>
+        <div class="fm-actions">
+            <button type="submit" class="btn btn-red">Save changes</button>
+            <a class="fm-link-btn" href="{{ post.get_absolute_url }}">Cancel</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

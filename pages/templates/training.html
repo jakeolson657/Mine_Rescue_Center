@@ -346,7 +346,7 @@
         </div>
     </details>
 
-    <details class="resource-section">
+    <details class="resource-section" id="rules">
         <summary>
             <span class="chev"><svg width="15" height="15"><use href="#i-chev"/></svg></span>
             <span class="resource-head-text">
@@ -367,6 +367,7 @@
                     <div class="document-item">
                         <span class="document-title"><span class="doc-chip">PDF</span>{{ doc.title }}</span>
                         <div class="document-actions">
+                            <a href="{% url 'forum:about' 'rule' doc.pk %}" class="preview-btn">Discuss</a>
                             {% if doc.companion_file %}
                                 {% if doc.companion_kind %}
                                     <button type="button" class="preview-btn key-btn" data-url="{{ doc.companion_file.url }}" data-kind="{{ doc.companion_kind }}" data-title="{{ doc.title }} — {{ doc.companion_label|default:'Form' }}">{{ doc.companion_label|default:"Form" }}</button>
