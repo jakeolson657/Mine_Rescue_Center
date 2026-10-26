@@ -32,7 +32,7 @@ class ForumProfile(models.Model):
 
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='forum_profile')
     display_name = models.CharField(max_length=50, blank=True)
-    team = models.CharField(max_length=100, blank=True, help_text="Team or company, e.g. Leer Mine Rescue")
+    team = models.CharField(max_length=100, blank=True, help_text="Team or company the member belongs to")
     state = models.CharField(max_length=30, blank=True, help_text="e.g. WV")
     role = models.CharField(max_length=10, choices=ROLE_CHOICES, blank=True)
     district = models.CharField(max_length=5, choices=DISTRICT_CHOICES, blank=True)
@@ -58,7 +58,7 @@ class ForumProfile(models.Model):
 
     @property
     def meta_line(self):
-        """Short context shown beside a member's name, e.g. 'Coal · WV · Leer'."""
+        """Short context shown beside a member's name, e.g. 'Coal · WV · Example Mine'."""
         parts = [self.get_district_display(), self.state, self.team]
         return ' · '.join(p for p in parts if p)
 

@@ -33,9 +33,9 @@ class ProfileForm(forms.ModelForm):
         model = ForumProfile
         fields = ['display_name', 'role', 'district', 'state', 'team', 'email_on_reply']
         widgets = {
-            'display_name': forms.TextInput(attrs={'placeholder': 'e.g. Rowdy R.'}),
+            'display_name': forms.TextInput(attrs={'placeholder': 'First name and last initial'}),
             'state': forms.TextInput(attrs={'placeholder': 'e.g. WV'}),
-            'team': forms.TextInput(attrs={'placeholder': 'e.g. Leer Mine Rescue'}),
+            'team': forms.TextInput(attrs={'placeholder': 'Your mine or rescue team'}),
         }
         labels = {
             'display_name': 'Display name',

@@ -35,7 +35,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('display_name', models.CharField(blank=True, max_length=50)),
-                ('team', models.CharField(blank=True, help_text='Team or company, e.g. Leer Mine Rescue', max_length=100)),
+                ('team', models.CharField(blank=True, help_text='Team or company the member belongs to', max_length=100)),
                 ('state', models.CharField(blank=True, help_text='e.g. WV', max_length=30)),
                 ('role', models.CharField(blank=True, choices=[('member', 'Team member'), ('trainer', 'Trainer'), ('judge', 'Judge'), ('other', 'Other')], max_length=10)),
                 ('district', models.CharField(blank=True, choices=[('coal', 'Coal'), ('mnm', 'Metal/Nonmetal'), ('both', 'Coal & MNM')], max_length=5)),
