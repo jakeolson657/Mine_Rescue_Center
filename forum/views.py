@@ -16,7 +16,7 @@ from django.views.decorators.http import require_POST
 from pages.models import CalendarEvent, CompetitionProblem, CompetitionRuleDocument, Quiz
 
 from . import notify, signin
-from .forms import EditPostForm, ProfileForm, ReplyForm, ReportForm, SignInForm, ThreadForm
+from .forms import STATE_OPTIONS, EditPostForm, ProfileForm, ReplyForm, ReportForm, SignInForm, ThreadForm
 from .models import AUTO_HIDE_REPORTS, Category, Post, Report, Status, Subscription, Thread, profile_for
 
 # Archive items a thread can be about: URL kind -> (Thread field, model,
@@ -428,5 +428,6 @@ def profile(request):
         'next': next_url,
         'welcome': request.GET.get('welcome') == '1' or not prof.is_complete,
         'threads': threads,
+        'state_options': STATE_OPTIONS,
     })
 

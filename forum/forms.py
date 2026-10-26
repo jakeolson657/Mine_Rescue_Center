@@ -4,11 +4,18 @@ from datetime import timedelta
 from django import forms
 from django.utils import timezone
 
+from pages.models import US_STATES
+
 from .models import Category, ForumProfile, Post, Thread
 
 THREADS_PER_DAY = 5
 POSTS_PER_DAY = 30
 LINK_RE = re.compile(r'https?://|www\.', re.IGNORECASE)
+
+# (name, abbreviation) for the profile form's state suggestions, A-Z.
+STATE_OPTIONS = sorted((name.title(), abbr) for name, abbr in US_STATES.items())
+_STATE_LOOKUP = {**US_STATES, **{abbr.lower(): abbr for abbr in US_STATES.values()}}
+_ABBR_TO_NAME = {abbr: name for name, abbr in STATE_OPTIONS}
 
 
 class HoneypotMixin(forms.Form):
@@ -33,8 +40,12 @@ class ProfileForm(forms.ModelForm):
         model = ForumProfile
         fields = ['display_name', 'role', 'district', 'state', 'team', 'email_on_reply']
         widgets = {
-            'display_name': forms.TextInput(attrs={'placeholder': 'First name and last initial'}),
-            'state': forms.TextInput(attrs={'placeholder': 'e.g. WV'}),
+            'display_name': forms.TextInput(attrs={'placeholder': 'First and last name'}),
+            # The template adds a suggestion list that filters as they type.
+            'state': forms.TextInput(attrs={
+                'placeholder': 'Start typing your state', 'autocomplete': 'off',
+                'role': 'combobox', 'aria-autocomplete': 'list', 'aria-controls': 'state-suggest', 'aria-expanded': 'false',
+            }),
             'team': forms.TextInput(attrs={'placeholder': 'Your mine or rescue team'}),
         }
         labels = {
@@ -47,6 +58,18 @@ class ProfileForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['display_name'].required = True
+        self.fields['state'].required = True
+        self.fields['state'].error_messages['required'] = "Please enter your state."
+        # Stored as the abbreviation; shown spelled out like the suggestions.
+        if not self.is_bound and self.instance.state in _ABBR_TO_NAME:
+            self.initial['state'] = _ABBR_TO_NAME[self.instance.state]
+
+    def clean_state(self):
+        typed = ' '.join(self.cleaned_data['state'].split()).lower()
+        abbr = _STATE_LOOKUP.get(typed)
+        if abbr is None:
+            raise forms.ValidationError("Please pick your state from the list.")
+        return abbr
 
     def clean_display_name(self):
         name = ' '.join(self.cleaned_data['display_name'].split())

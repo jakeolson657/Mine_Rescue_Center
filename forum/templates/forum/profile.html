@@ -7,7 +7,37 @@
 {% block head %}
 <span class="eyebrow">{% if welcome %}Welcome{% else %}Profile{% endif %}</span>
 <h1>{% if welcome %}Set up your profile{% else %}Your profile{% endif %}</h1>
-<p class="lede">{% if welcome %}Choose the name other members will see. The rest is optional but helps people know who they're talking to.{% else %}Signed in as {{ user.email }}. Only your display name and the details below are shown on the forum.{% endif %}</p>
+<p class="lede">{% if welcome %}Choose the name other members will see and your state. The rest is optional but helps people know who they're talking to.{% else %}Signed in as {{ user.email }}. Only your display name and the details below are shown on the forum.{% endif %}</p>
+{% endblock %}
+
+{% block forum_css %}
+    .state-pick { position: relative; }
+    .state-suggest {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: calc(100% + 4px);
+        z-index: 10;
+        list-style: none;
+        background: var(--surface);
+        border: 1px solid #d8d2c8;
+        border-radius: 9px;
+        box-shadow: 0 16px 30px -18px rgba(43, 52, 64, 0.5);
+        padding: 4px;
+        max-height: 260px;
+        overflow-y: auto;
+    }
+    .state-suggest li {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 9px 11px;
+        border-radius: 6px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .state-suggest li .abbr { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+    .state-suggest li.active, .state-suggest li:hover { background: var(--red-tint); color: var(--red-dark); }
 {% endblock %}
 
 {% block body %}
@@ -30,8 +60,13 @@
                 {{ form.district }}
             </div>
             <div class="fm-field">
-                <label for="{{ form.state.id_for_label }}">State <span class="opt">(optional)</span></label>
-                {{ form.state }}
+                <label for="{{ form.state.id_for_label }}">State</label>
+                <div class="state-pick">
+                    {{ form.state }}
+                    <ul class="state-suggest" id="state-suggest" role="listbox" hidden></ul>
+                </div>
+                {{ state_options|json_script:"state-options" }}
+                {% if form.state.errors %}<div class="fm-errors">{{ form.state.errors }}</div>{% endif %}
             </div>
         </div>
         <div class="fm-field">
@@ -53,4 +88,86 @@
     <h2 class="fm-section-title">Your threads</h2>
     {% include 'forum/_thread_rows.html' with threads=threads show_category=True empty_text="You haven't started any threads yet." %}
 {% endif %}
+{% endblock %}
+
+{% block scripts %}
+{{ block.super }}
+<script>
+    // State type-ahead: closest matches first (an exact abbreviation, then
+    // names starting with what's typed, then names containing it).
+    (function () {
+        var input = document.getElementById('{{ form.state.id_for_label }}');
+        var list = document.getElementById('state-suggest');
+        var states = JSON.parse(document.getElementById('state-options').textContent);
+        var shown = [], active = -1;
+
+        function matches(text) {
+            var q = text.trim().toLowerCase();
+            if (!q) return [];
+            var scored = [];
+            states.forEach(function (s) {
+                var name = s[0].toLowerCase(), abbr = s[1].toLowerCase(), rank;
+                if (abbr === q) rank = 0;
+                else if (name.indexOf(q) === 0) rank = 1;
+                else if (name.indexOf(' ' + q) !== -1) rank = 2;
+                else if (name.indexOf(q) !== -1) rank = 3;
+                else return;
+                scored.push([rank, s]);
+            });
+            scored.sort(function (a, b) { return a[0] - b[0] || (a[1][0] < b[1][0] ? -1 : 1); });
+            return scored.slice(0, 8).map(function (r) { return r[1]; });
+        }
+
+        function render() {
+            list.innerHTML = '';
+            shown.forEach(function (s, i) {
+                var li = document.createElement('li');
+                li.setAttribute('role', 'option');
+                li.className = i === active ? 'active' : '';
+                li.innerHTML = '<span></span><span class="abbr"></span>';
+                li.firstChild.textContent = s[0];
+                li.lastChild.textContent = s[1];
+                li.addEventListener('mousedown', function (e) { e.preventDefault(); choose(s); });
+                list.appendChild(li);
+            });
+            list.hidden = shown.length === 0;
+            input.setAttribute('aria-expanded', shown.length ? 'true' : 'false');
+        }
+
+        function choose(s) {
+            input.value = s[0];
+            shown = []; active = -1;
+            render();
+        }
+
+        input.addEventListener('input', function () {
+            shown = matches(input.value);
+            // Already exactly a state's name: nothing left to suggest.
+            if (shown.length === 1 && shown[0][0].toLowerCase() === input.value.trim().toLowerCase()) shown = [];
+            active = shown.length ? 0 : -1;
+            render();
+        });
+
+        input.addEventListener('keydown', function (e) {
+            if (list.hidden) return;
+            if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+                e.preventDefault();
+                active = (active + (e.key === 'ArrowDown' ? 1 : shown.length - 1)) % shown.length;
+                render();
+            } else if ((e.key === 'Enter' || e.key === 'Tab') && active >= 0) {
+                if (e.key === 'Enter') e.preventDefault();
+                choose(shown[active]);
+            } else if (e.key === 'Escape') {
+                shown = []; render();
+            }
+        });
+
+        input.addEventListener('blur', function () {
+            // Leaving the field with a single close match fills it in.
+            var m = matches(input.value);
+            if (m.length && (m.length === 1 || m[0][1].toLowerCase() === input.value.trim().toLowerCase())) input.value = m[0][0];
+            shown = []; render();
+        });
+    })();
+</script>
 {% endblock %}
