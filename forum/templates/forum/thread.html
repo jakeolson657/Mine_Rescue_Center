@@ -5,7 +5,6 @@
 {% block crumbs %}<span class="sep">/</span><a href="{{ category.get_absolute_url }}">{{ category.name }}</a>{% endblock %}
 
 {% block head %}
-<span class="eyebrow">{{ category.name }}</span>
 <h1>{{ thread.title }}</h1>
 <div class="fm-row-meta" style="color:#9aa3ad">
     {% if thread.pinned %}<span class="tag dark" style="border-color:#4d5763">Pinned</span>{% endif %}
