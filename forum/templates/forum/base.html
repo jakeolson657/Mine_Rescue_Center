@@ -343,8 +343,11 @@
     <div class="fm-head-inner">
         <div class="fm-topbar">
             <nav class="fm-crumbs" aria-label="Breadcrumb">
-                <a href="{% url 'forum:index' %}">Forum</a>
-                {% block crumbs %}{% endblock %}
+                {# No trail on the forum home itself - it's where the trail leads. #}
+                {% if request.resolver_match.url_name != 'index' %}
+                    <a href="{% url 'forum:index' %}">Forum</a>
+                    {% block crumbs %}{% endblock %}
+                {% endif %}
             </nav>
             <div class="fm-account">
                 {% if user.is_authenticated %}
