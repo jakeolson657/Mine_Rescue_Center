@@ -185,6 +185,23 @@ class ForumTests(TestCase):
         self.assertTrue(answer.is_answer)
         self.assertContains(self.client.get(thread.get_absolute_url()), 'accepted answer')
 
+    def test_only_the_site_account_moderates(self):
+        self.member('a@example.com', 'Alpha', trusted=False)
+        self.start_thread()
+        post = Post.objects.get()
+        admin = self.member('admin@example.com', 'Site Admin')
+        User.objects.filter(pk=admin.pk).update(is_staff=True, is_superuser=True)
+        moderate = reverse('forum:moderate', args=[post.pk])
+        self.assertEqual(self.client.post(moderate, {'action': 'approve'}).status_code, 404)
+        self.assertEqual(self.client.get(reverse('forum:edit_post', args=[post.pk])).status_code, 404)
+
+        mod = self.member('info@minerescuecenter.com', 'Mine Rescue Center')
+        self.assertTrue(mod.forum_profile.is_moderator)
+        self.assertContains(self.client.get(post.thread.get_absolute_url()), '>Approve<')
+        self.client.post(moderate, {'action': 'approve'})
+        post.refresh_from_db()
+        self.assertEqual(post.status, Status.VISIBLE)
+
     def test_pages_render(self):
         self.member()
         self.start_thread()

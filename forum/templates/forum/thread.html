@@ -44,7 +44,7 @@
             {% with prof=post.author.forum_profile %}
                 <div class="name">{{ prof.display_name|default:"Former member" }}</div>
                 {% if prof.meta_line %}<div class="meta">{{ prof.meta_line }}</div>{% endif %}
-                {% if post.author.is_staff %}<span class="tag red">Moderator</span>{% elif prof.role %}<span class="tag">{{ prof.get_role_display }}</span>{% endif %}
+                {% if prof.is_moderator %}<span class="tag red">Moderator</span>{% elif prof.role %}<span class="tag">{{ prof.get_role_display }}</span>{% endif %}
             {% endwith %}
         </div>
         <div class="fm-post-main">
@@ -52,14 +52,14 @@
                 <a href="#post-{{ post.pk }}"><time class="local-time" datetime="{{ post.created_at|date:'c' }}">{{ post.created_at|date:"M j, Y · g:i A" }} UTC</time></a>
                 {% if post.edited_at %}<span>· edited</span>{% endif %}
                 {% if post.is_answer %}<span class="tag green">Accepted answer</span>{% endif %}
-                {% if post.status == 'pending' %}<span class="tag gold">Awaiting approval — only you{% if user.is_staff %} and moderators{% endif %} can see this</span>{% endif %}
+                {% if post.status == 'pending' %}<span class="tag gold">Awaiting approval — only you{% if is_mod %} and moderators{% endif %} can see this</span>{% endif %}
                 {% if post.status == 'hidden' %}<span class="tag">Hidden</span>{% endif %}
             </div>
             <div class="fm-body">{{ post.body|urlizetrunc:60|linebreaks }}</div>
 
             {% if user.is_authenticated %}
                 <div class="fm-post-actions">
-                    {% if post.author_id == user.pk or user.is_staff %}
+                    {% if post.author_id == user.pk or is_mod %}
                         {% if post.status != 'hidden' %}<a class="fm-link-btn" href="{% url 'forum:edit_post' post.pk %}">Edit</a>{% endif %}
                     {% endif %}
                     {% if can_mark_answer and post.pk != opening_pk and post.status == 'visible' %}
@@ -78,7 +78,7 @@
                             </form>
                         </details>
                     {% endif %}
-                    {% if user.is_staff %}
+                    {% if is_mod %}
                         {% if post.status != 'visible' %}
                             <form method="post" action="{% url 'forum:moderate' post.pk %}">{% csrf_token %}<input type="hidden" name="action" value="approve"><button type="submit" class="fm-link-btn good">Approve</button></form>
                         {% endif %}
@@ -95,7 +95,7 @@
 <h2 class="fm-section-title" id="reply">Reply</h2>
 {% if thread.status != 'visible' %}
     <div class="fm-signin-cta"><span>Replies open once this thread is approved.</span></div>
-{% elif thread.locked and not user.is_staff %}
+{% elif thread.locked and not is_mod %}
     <div class="fm-signin-cta"><span>This thread is locked and isn't taking new replies.</span></div>
 {% elif not user.is_authenticated %}
     <div class="fm-signin-cta">

@@ -6,7 +6,7 @@ from django.utils import timezone
 
 from pages.models import US_STATES
 
-from .models import Category, ForumProfile, Post, Thread
+from .models import Category, ForumProfile, Post, Thread, is_moderator
 
 THREADS_PER_DAY = 5
 POSTS_PER_DAY = 30
@@ -108,7 +108,7 @@ class _PostingLimits:
         return body
 
     def check_rate(self, new_thread=False):
-        if self.user.is_staff:
+        if is_moderator(self.user):
             return
         since = timezone.now() - timedelta(days=1)
         if new_thread and Thread.objects.filter(author=self.user, created_at__gte=since).count() >= THREADS_PER_DAY:

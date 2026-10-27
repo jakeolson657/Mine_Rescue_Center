@@ -13,6 +13,15 @@ TRUST_AFTER_APPROVED_POSTS = 2
 # Reports from this many different members hide a post until it is reviewed.
 AUTO_HIDE_REPORTS = 3
 
+# The forum's moderator is the site's own account, not whoever has admin
+# access. Moderators approve, hide, and edit any post and wear the
+# Moderator tag.
+MODERATOR_EMAILS = {'info@minerescuecenter.com'}
+
+
+def is_moderator(user):
+    return bool(user and user.is_authenticated and (user.email or '').lower() in MODERATOR_EMAILS)
+
 
 class ForumProfile(models.Model):
     """Forum identity for a site user. Created the first time someone signs in
@@ -54,7 +63,11 @@ class ForumProfile(models.Model):
 
     @property
     def posts_freely(self):
-        return self.trusted or self.user.is_staff
+        return self.trusted or self.is_moderator
+
+    @property
+    def is_moderator(self):
+        return is_moderator(self.user)
 
     @property
     def meta_line(self):

@@ -17,7 +17,7 @@ from pages.models import CalendarEvent, CompetitionProblem, CompetitionRuleDocum
 
 from . import notify, signin
 from .forms import STATE_OPTIONS, EditPostForm, ProfileForm, ReplyForm, ReportForm, SignInForm, ThreadForm
-from .models import AUTO_HIDE_REPORTS, Category, Post, Report, Status, Subscription, Thread, profile_for
+from .models import AUTO_HIDE_REPORTS, Category, Post, Report, Status, Subscription, Thread, is_moderator, profile_for
 
 # Archive items a thread can be about: URL kind -> (Thread field, model,
 # category slug a new thread defaults to).
@@ -56,9 +56,9 @@ def member_required(view):
 
 def _readable_threads(user):
     """Threads this visitor may open: visible ones, plus their own queued ones
-    (staff see everything)."""
+    (moderators see everything)."""
     qs = Thread.objects.all()
-    if user.is_authenticated and user.is_staff:
+    if is_moderator(user):
         return qs
     if user.is_authenticated:
         return qs.filter(Q(status=Status.VISIBLE) | Q(author=user, status=Status.PENDING))
@@ -139,7 +139,8 @@ def category(request, slug):
 def _render_thread(request, thread, reply_form=None, status=200):
     posts = thread.posts.select_related('author__forum_profile')
     user = request.user
-    if not (user.is_authenticated and user.is_staff):
+    is_mod = is_moderator(user)
+    if not is_mod:
         mine = Q(author=user, status=Status.PENDING) if user.is_authenticated else Q(pk__in=[])
         posts = posts.filter(Q(status=Status.VISIBLE) | mine)
     posts = list(posts)
@@ -151,7 +152,8 @@ def _render_thread(request, thread, reply_form=None, status=200):
         'posts': posts,
         'opening_pk': posts[0].pk if posts else None,
         'answer': next((p for p in posts if p.is_answer and p.status == Status.VISIBLE), None),
-        'can_mark_answer': is_author or (user.is_authenticated and user.is_staff),
+        'can_mark_answer': is_author or is_mod,
+        'is_mod': is_mod,
         'following': following,
         'reply_form': reply_form or ReplyForm(user=user),
         'report_form': ReportForm(),
@@ -241,7 +243,7 @@ def new_thread(request):
 @member_required
 def reply(request, pk):
     thread = get_object_or_404(Thread.objects.select_related('category'), pk=pk, status=Status.VISIBLE)
-    if thread.locked and not request.user.is_staff:
+    if thread.locked and not is_moderator(request.user):
         messages.error(request, "This thread is locked and isn't taking new replies.")
         return redirect(thread)
     form = ReplyForm(request.POST, user=request.user)
@@ -258,7 +260,7 @@ def reply(request, pk):
 @member_required
 def edit_post(request, pk):
     post = get_object_or_404(Post.objects.select_related('thread'), pk=pk)
-    if not (post.author_id == request.user.pk or request.user.is_staff) or post.status == Status.HIDDEN:
+    if not (post.author_id == request.user.pk or is_moderator(request.user)) or post.status == Status.HIDDEN:
         raise Http404
     if request.method == 'POST':
         form = EditPostForm(request.POST, user=request.user)
@@ -289,7 +291,7 @@ def edit_post(request, pk):
 def mark_answer(request, pk):
     post = get_object_or_404(Post.objects.select_related('thread'), pk=pk, status=Status.VISIBLE)
     thread = post.thread
-    if not (thread.author_id == request.user.pk or request.user.is_staff) or post.is_opening:
+    if not (thread.author_id == request.user.pk or is_moderator(request.user)) or post.is_opening:
         raise Http404
     was_answer = post.is_answer
     thread.posts.filter(is_answer=True).update(is_answer=False)
@@ -312,7 +314,7 @@ def report_post(request, pk):
     )
     if created:
         open_reports = post.reports.filter(resolved=False).count()
-        if open_reports >= AUTO_HIDE_REPORTS and not (post.author and post.author.is_staff):
+        if open_reports >= AUTO_HIDE_REPORTS and not is_moderator(post.author):
             post.hide()
         notify.notify_moderator_report(request, report)
     messages.success(request, "Thanks — a moderator will take a look.")
@@ -335,8 +337,8 @@ def toggle_follow(request, pk):
 
 @require_POST
 def moderate(request, pk):
-    """Staff shortcut on the thread page: approve or hide a post."""
-    if not request.user.is_staff:
+    """Moderator shortcut on the thread page: approve or hide a post."""
+    if not is_moderator(request.user):
         raise Http404
     post = get_object_or_404(Post.objects.select_related('thread'), pk=pk)
     action = request.POST.get('action')
