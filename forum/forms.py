@@ -16,6 +16,8 @@ LINK_RE = re.compile(r'https?://|www\.', re.IGNORECASE)
 STATE_OPTIONS = sorted((name.title(), abbr) for name, abbr in US_STATES.items())
 _STATE_LOOKUP = {**US_STATES, **{abbr.lower(): abbr for abbr in US_STATES.values()}}
 _ABBR_TO_NAME = {abbr: name for name, abbr in STATE_OPTIONS}
+# The site's own account isn't from any one state.
+STATE_OPTIONAL_EMAILS = {'info@minerescuecenter.com'}
 
 
 class HoneypotMixin(forms.Form):
@@ -58,6 +60,10 @@ class ProfileForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['display_name'].required = True
+        self.state_optional = self.instance.user.email.lower() in STATE_OPTIONAL_EMAILS
+        if not self.state_optional:
+            self.fields['state'].required = True
+            self.fields['state'].error_messages['required'] = "Please enter your state."
         # Stored as the abbreviation; shown spelled out like the suggestions.
         if not self.is_bound and self.instance.state in _ABBR_TO_NAME:
             self.initial['state'] = _ABBR_TO_NAME[self.instance.state]

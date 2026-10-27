@@ -7,7 +7,7 @@
 {% block head %}
 <span class="eyebrow">{% if welcome %}Welcome{% else %}Profile{% endif %}</span>
 <h1>{% if welcome %}Set up your profile{% else %}Your profile{% endif %}</h1>
-<p class="lede">{% if welcome %}Choose the name other members will see. The rest is optional but helps people know who they're talking to.{% else %}Signed in as {{ user.email }}. Only your display name and the details below are shown on the forum.{% endif %}</p>
+<p class="lede">{% if welcome %}Choose the name other members will see{% if not form.state_optional %} and your state{% endif %}. The rest is optional but helps people know who they're talking to.{% else %}Signed in as {{ user.email }}. Only your display name and the details below are shown on the forum.{% endif %}</p>
 {% endblock %}
 
 {% block forum_css %}
@@ -60,7 +60,7 @@
                 {{ form.district }}
             </div>
             <div class="fm-field">
-                <label for="{{ form.state.id_for_label }}">State <span class="opt">(optional)</span></label>
+                <label for="{{ form.state.id_for_label }}">State{% if form.state_optional %} <span class="opt">(optional)</span>{% endif %}</label>
                 <div class="state-pick">
                     {{ form.state }}
                     <ul class="state-suggest" id="state-suggest" role="listbox" hidden></ul>
