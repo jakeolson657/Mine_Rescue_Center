@@ -54,7 +54,7 @@ class ForumTests(TestCase):
         resp = self.client.post(reverse('forum:signin_confirm'), {'t': unquote(token)})
         self.assertEqual(resp.status_code, 400)
 
-    def test_profile_requires_a_known_state(self):
+    def test_profile_state_is_optional_but_must_be_known(self):
         user = User.objects.create(username='s@example.com', email='s@example.com')
         self.client.force_login(user)
         data = {'display_name': 'Sam Example', 'state': 'Atlantis', 'email_on_reply': 'on'}
@@ -63,6 +63,8 @@ class ForumTests(TestCase):
             self.client.post(reverse('forum:profile'), {**data, 'state': typed})
             self.assertEqual(ForumProfile.objects.get(user=user).state, 'WV')
         self.assertContains(self.client.get(reverse('forum:profile')), 'value="West Virginia"')
+        self.client.post(reverse('forum:profile'), {**data, 'state': ''})
+        self.assertEqual(ForumProfile.objects.get(user=user).state, '')
 
     def test_posting_requires_display_name(self):
         user = User.objects.create(username='b@example.com', email='b@example.com')

@@ -58,14 +58,14 @@ class ProfileForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['display_name'].required = True
-        self.fields['state'].required = True
-        self.fields['state'].error_messages['required'] = "Please enter your state."
         # Stored as the abbreviation; shown spelled out like the suggestions.
         if not self.is_bound and self.instance.state in _ABBR_TO_NAME:
             self.initial['state'] = _ABBR_TO_NAME[self.instance.state]
 
     def clean_state(self):
         typed = ' '.join(self.cleaned_data['state'].split()).lower()
+        if not typed:
+            return ''
         abbr = _STATE_LOOKUP.get(typed)
         if abbr is None:
             raise forms.ValidationError("Please pick your state from the list.")
