@@ -85,6 +85,11 @@
                         {% if post.status != 'hidden' %}
                             <form method="post" action="{% url 'forum:moderate' post.pk %}">{% csrf_token %}<input type="hidden" name="action" value="hide"><button type="submit" class="fm-link-btn bad">Hide</button></form>
                         {% endif %}
+                        <form method="post" action="{% url 'forum:moderate' post.pk %}"
+                              onsubmit="return confirm('{% if post.pk == opening_pk %}Delete this whole thread and all its replies? This can\'t be undone.{% else %}Delete this post? This can\'t be undone.{% endif %}')">
+                            {% csrf_token %}<input type="hidden" name="action" value="delete">
+                            <button type="submit" class="fm-link-btn bad">{% if post.pk == opening_pk %}Delete thread{% else %}Delete{% endif %}</button>
+                        </form>
                     {% endif %}
                 </div>
             {% endif %}

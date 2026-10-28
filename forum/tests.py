@@ -54,6 +54,17 @@ class ForumTests(TestCase):
         resp = self.client.post(reverse('forum:signin_confirm'), {'t': unquote(token)})
         self.assertEqual(resp.status_code, 400)
 
+    def test_remember_device_keeps_session_after_browser_closes(self):
+        from . import signin as signin_mod
+        for remember, browser_close in [('1', False), ('', True)]:
+            self.client.logout()
+            token = signin_mod.make_token('r@example.com', '/forum/')
+            self.client.post(reverse('forum:signin_confirm'), {'t': token, 'remember': remember})
+            self.assertIn('_auth_user_id', self.client.session)
+            self.assertEqual(self.client.session.get_expire_at_browser_close(), browser_close)
+            if remember:
+                self.assertGreater(self.client.session.get_expiry_age(), 300 * 24 * 3600)
+
     def test_profile_requires_a_known_state(self):
         user = User.objects.create(username='s@example.com', email='s@example.com')
         self.client.force_login(user)
@@ -201,6 +212,29 @@ class ForumTests(TestCase):
         self.client.post(moderate, {'action': 'approve'})
         post.refresh_from_db()
         self.assertEqual(post.status, Status.VISIBLE)
+
+    def test_moderator_deletes_posts_and_threads(self):
+        self.member('a@example.com', 'Alpha')
+        self.start_thread()
+        thread = Thread.objects.get()
+        self.client.post(reverse('forum:reply', args=[thread.pk]), {'body': 'A reply'})
+        reply = Post.objects.get(body='A reply')
+        opening = thread.posts.order_by('created_at').first()
+
+        # Members (even the author) can't delete.
+        self.client.post(reverse('forum:moderate', args=[reply.pk]), {'action': 'delete'})
+        self.assertTrue(Post.objects.filter(pk=reply.pk).exists())
+
+        self.member('info@minerescuecenter.com', 'Mine Rescue Center')
+        self.assertContains(self.client.get(thread.get_absolute_url()), 'Delete thread')
+        self.client.post(reverse('forum:moderate', args=[reply.pk]), {'action': 'delete'})
+        self.assertFalse(Post.objects.filter(pk=reply.pk).exists())
+        thread.refresh_from_db()
+        self.assertEqual(thread.reply_count, 0)
+
+        resp = self.client.post(reverse('forum:moderate', args=[opening.pk]), {'action': 'delete'})
+        self.assertEqual(resp.url, self.cat.get_absolute_url())
+        self.assertFalse(Thread.objects.exists())
 
     def test_pages_render(self):
         self.member()

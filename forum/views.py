@@ -28,6 +28,8 @@ LINK_KINDS = {
     'event': ('event', CalendarEvent, 'events'),
 }
 
+REMEMBER_DEVICE_SECONDS = 365 * 24 * 60 * 60
+
 
 # ---------- helpers ----------
 
@@ -337,11 +339,22 @@ def toggle_follow(request, pk):
 
 @require_POST
 def moderate(request, pk):
-    """Moderator shortcut on the thread page: approve or hide a post."""
+    """Moderator shortcut on the thread page: approve, hide or delete a post.
+    Deleting the opening post deletes the whole thread."""
     if not is_moderator(request.user):
         raise Http404
-    post = get_object_or_404(Post.objects.select_related('thread'), pk=pk)
+    post = get_object_or_404(Post.objects.select_related('thread__category'), pk=pk)
     action = request.POST.get('action')
+    if action == 'delete':
+        thread = post.thread
+        if post.is_opening:
+            thread.delete()
+            messages.success(request, "Thread deleted.")
+            return redirect(thread.category)
+        post.delete()
+        thread.refresh_counts()
+        messages.success(request, "Post deleted.")
+        return redirect(thread)
     if action == 'approve':
         if post.approve() and not post.is_opening:
             notify.notify_subscribers(request, post)
@@ -397,6 +410,9 @@ def signin_confirm(request):
     if request.method == 'POST':
         user = signin.get_or_create_user(email)
         login(request, user, backend='django.contrib.auth.backends.ModelBackend')
+        # Remembered devices stay signed in for a year; otherwise the
+        # session ends when the browser closes.
+        request.session.set_expiry(REMEMBER_DEVICE_SECONDS if request.POST.get('remember') else 0)
         next_url = _safe_next(request, next_url)
         if not profile_for(user).is_complete:
             return redirect(reverse('forum:profile') + '?' + urlencode({'next': next_url, 'welcome': 1}))

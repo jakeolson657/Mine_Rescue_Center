@@ -19,6 +19,9 @@
         <form method="post" action="{% url 'forum:signin_confirm' %}">
             {% csrf_token %}
             <input type="hidden" name="t" value="{{ token }}">
+            <label class="fm-check" style="margin-bottom:18px">
+                <input type="checkbox" name="remember" value="1"> Remember me on this device
+            </label>
             <button type="submit" class="btn btn-red">Sign in</button>
         </form>
     {% endif %}
