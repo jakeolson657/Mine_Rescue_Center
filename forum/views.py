@@ -356,8 +356,7 @@ def moderate(request, pk):
         messages.success(request, "Post deleted.")
         return redirect(thread)
     if action == 'approve':
-        if post.approve() and not post.is_opening:
-            notify.notify_subscribers(request, post)
+        notify.approve_and_notify(request, post)
         post.reports.update(resolved=True)
     elif action == 'hide':
         post.hide()

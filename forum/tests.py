@@ -213,6 +213,44 @@ class ForumTests(TestCase):
         post.refresh_from_db()
         self.assertEqual(post.status, Status.VISIBLE)
 
+    def test_author_is_emailed_about_approvals_until_trusted(self):
+        user = self.member('a@example.com', 'Alpha', trusted=False)
+        self.start_thread()
+        thread = Thread.objects.get()
+        first = thread.posts.get()
+        mod = self.member('info@minerescuecenter.com', 'Mine Rescue Center')
+
+        def approve(post):
+            mail.outbox.clear()
+            self.client.force_login(mod)
+            self.client.post(reverse('forum:moderate', args=[post.pk]), {'action': 'approve'})
+            return [m for m in mail.outbox if m.subject == 'Your forum post was approved']
+
+        sent = approve(first)
+        self.assertEqual(len(sent), 1)
+        self.assertEqual(sent[0].to, ['a@example.com'])
+        self.assertIn(first.get_absolute_url(), sent[0].body)
+        self.assertNotIn('right away', sent[0].body)
+
+        # The approval that earns trust says so.
+        self.client.force_login(user)
+        self.client.post(reverse('forum:reply', args=[thread.pk]), {'body': 'Second post'})
+        sent = approve(Post.objects.get(body='Second post'))
+        self.assertEqual(len(sent), 1)
+        self.assertIn('right away', sent[0].body)
+
+        # Now trusted: new posts go straight up with no approval email.
+        mail.outbox.clear()
+        self.client.force_login(user)
+        self.client.post(reverse('forum:reply', args=[thread.pk]), {'body': 'Third post'})
+        third = Post.objects.get(body='Third post')
+        self.assertEqual(third.status, Status.VISIBLE)
+        self.assertEqual(mail.outbox, [])
+
+        # Restoring a hidden post isn't an approval either.
+        third.hide()
+        self.assertEqual(approve(third), [])
+
     def test_moderator_deletes_posts_and_threads(self):
         self.member('a@example.com', 'Alpha')
         self.start_thread()

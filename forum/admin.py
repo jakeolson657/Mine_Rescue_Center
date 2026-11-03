@@ -46,10 +46,8 @@ class ThreadAdmin(admin.ModelAdmin):
 def _approve(modeladmin, request, queryset):
     n = 0
     for post in queryset.select_related('thread', 'author'):
-        if post.approve():
+        if notify.approve_and_notify(request, post):
             n += 1
-            if not post.is_opening:
-                notify.notify_subscribers(request, post)
     Report.objects.filter(post__in=queryset).update(resolved=True)
     messages.success(request, f'Approved {n} post(s).')
 

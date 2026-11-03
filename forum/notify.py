@@ -6,7 +6,7 @@ from django.conf import settings
 from django.core.mail import send_mail
 from django.urls import reverse
 
-from .models import Status, Subscription
+from .models import ForumProfile, Status, Subscription
 
 log = logging.getLogger(__name__)
 
@@ -55,6 +55,33 @@ def notify_moderator_report(request, report):
         f"Reports: {request.build_absolute_uri(reverse('admin:forum_report_changelist'))}\n"
     )
     _send('Forum post reported', body, [settings.FEEDBACK_TO_EMAIL])
+
+
+def approve_and_notify(request, post):
+    """Publish a post and send the emails that go with it. Returns True when
+    the post was newly published."""
+    was_queued = post.status == Status.PENDING
+    if not post.approve():
+        return False
+    if was_queued:
+        notify_author_approved(request, post)
+    if not post.is_opening:
+        notify_subscribers(request, post)
+    return True
+
+
+def notify_author_approved(request, post):
+    """Tell a member on probation their queued post is up. Trusted members
+    never hear this: their posts skip the queue."""
+    if not post.author or not post.author.email:
+        return
+    body = (
+        f"A moderator approved your post in “{post.thread.title}”, and it's "
+        f"now on the forum:\n\n{request.build_absolute_uri(post.get_absolute_url())}\n"
+    )
+    if ForumProfile.objects.filter(user=post.author, trusted=True).exists():
+        body += "\nFrom now on your posts will appear right away, without waiting for approval.\n"
+    _send('Your forum post was approved', body, [post.author.email])
 
 
 def notify_subscribers(request, post):
