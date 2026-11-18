@@ -1,23 +1,48 @@
 {% extends 'forum/base.html' %}
 
 {% block forum_css %}
-    .fm-map {
-        background: var(--surface);
-        border: 1px solid var(--line-2);
-        border-radius: 12px;
-        padding: 18px;
+    .fm-teams {
+        display: grid;
+        grid-template-columns: minmax(210px, 1fr) minmax(0, 2.5fr);
+        align-items: center;
+        gap: 28px;
+        margin-top: 38px;
+        padding: 30px 26px 30px 32px;
+        background: var(--ink);
+        border-radius: 14px;
+        color: var(--bg);
     }
-    .fm-map svg { display: block; width: 100%; height: auto; }
-    .fm-map-states path {
-        fill: #ece7de;
-        stroke: var(--surface);
+    .fm-teams-kicker {
+        font-family: var(--font-mono);
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--red-soft);
+    }
+    .fm-teams h2 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 1.12;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        margin: 8px 0 12px;
+    }
+    .fm-teams p { font-size: 14.5px; line-height: 1.6; color: #c2c6cc; margin-bottom: 20px; }
+    .fm-teams .btn-red { display: inline-block; padding: 11px 18px; }
+    .fm-teams-map { display: block; width: 100%; height: auto; }
+    .fm-teams-map path {
+        fill: #414d5b;
+        stroke: var(--ink);
         stroke-width: 1;
         stroke-linejoin: round;
+        transition: fill 0.15s;
     }
-    .fm-map-note { margin-top: 10px; font-size: 13.5px; color: var(--muted); }
+    .fm-teams-map path:hover { fill: #5a6878; }
 
-    @media (max-width: 700px) {
-        .fm-map { padding: 8px; }
+    @media (max-width: 760px) {
+        .fm-teams { grid-template-columns: 1fr; gap: 20px; padding: 24px 18px; }
+        .fm-teams h2 { font-size: 25px; }
     }
 {% endblock %}
 
@@ -50,14 +75,16 @@
 <h2 class="fm-section-title">Recent activity</h2>
 {% include 'forum/_thread_rows.html' with threads=recent show_category=True empty_text="No threads yet — be the first to start one." %}
 
-<section id="teams" aria-labelledby="fm-teams-title">
-    <h2 class="fm-section-title" id="fm-teams-title">Teams across the U.S.</h2>
-    <div class="fm-map">
-        <svg viewBox="0 0 975 610" role="img" aria-label="Map of the United States. No mine rescue teams have been added yet.">
-            <g class="fm-map-states">{% include 'partials/us_states_paths.svg' %}</g>
-        </svg>
+<section class="fm-teams" id="teams" aria-labelledby="fm-teams-title">
+    <div>
+        <span class="fm-teams-kicker">Coming soon</span>
+        <h2 id="fm-teams-title">Teams across the U.S.</h2>
+        <p>We're building a national map of mine rescue teams. Tell us about yours and we'll add it.</p>
+        <a class="btn btn-red" href="{% url 'feedback' %}">Add your team</a>
     </div>
-    <p class="fm-map-note">Team locations are coming soon.</p>
+    <svg class="fm-teams-map" viewBox="0 0 975 610" role="img" aria-label="Map of the United States. No mine rescue teams have been added yet.">
+        {% include 'partials/us_states_paths.svg' %}
+    </svg>
 </section>
 
 {% include 'forum/_guidelines.html' %}
