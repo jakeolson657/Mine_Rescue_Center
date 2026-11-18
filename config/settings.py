@@ -57,6 +57,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'pages.middleware.WwwRedirectMiddleware',
     'django.middleware.security.SecurityMiddleware',
     # WhiteNoise serves static files (incl. the admin's CSS/JS) in production
     # without needing a separate web server for them.
