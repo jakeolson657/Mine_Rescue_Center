@@ -84,6 +84,36 @@ def notify_author_approved(request, post):
     _send('Your forum post was approved', body, [post.author.email])
 
 
+def notify_moderator_team(request, listing):
+    admin_url = request.build_absolute_uri(
+        reverse('admin:forum_teamlisting_changelist') + '?status__exact=pending'
+    )
+    body = (
+        f"{listing.member.forum_profile} asked to put a team on the community map:\n\n"
+        f"Team: {listing.name}\n"
+        f"Team type: {listing.get_team_type_display()}\n"
+        f"Company or college: {listing.company or 'None'}\n"
+        f"Location: {listing.location}\n"
+        f"Sector: {listing.get_sector_display()}\n"
+        f"Team email: {listing.contact_email or 'Not given'}\n"
+        f"Team phone: {listing.contact_phone or 'Not given'}\n\n"
+        f"Review the queue: {admin_url}\n"
+    )
+    _send('Team map listing awaiting approval', body, [settings.FEEDBACK_TO_EMAIL])
+
+
+def approve_team_and_notify(request, listing):
+    """Publish a team on the map and tell the member who listed it. Returns
+    True when the listing was newly published."""
+    if not listing.approve():
+        return False
+    if listing.member.email:
+        url = request.build_absolute_uri(reverse('forum:index') + '#teams')
+        body = f"{listing.name} is now on the Mine Rescue Center community map:\n\n{url}\n"
+        _send('Your team is on the map', body, [listing.member.email])
+    return True
+
+
 def notify_subscribers(request, post):
     """Email everyone following the thread, except the post's author."""
     subs = (

@@ -13,11 +13,16 @@ from django.utils import timezone
 from django.utils.http import url_has_allowed_host_and_scheme
 from django.views.decorators.http import require_POST
 
+from pages.geo import map_markers
 from pages.models import CalendarEvent, CompetitionProblem, CompetitionRuleDocument, Quiz
 
 from . import notify, signin
-from .forms import STATE_OPTIONS, EditPostForm, ProfileForm, ReplyForm, ReportForm, SignInForm, ThreadForm
-from .models import AUTO_HIDE_REPORTS, Category, Post, Report, Status, Subscription, Thread, is_moderator, profile_for
+from .forms import (
+    STATE_OPTIONS, EditPostForm, ProfileForm, ReplyForm, ReportForm, SignInForm, TeamListingForm, ThreadForm,
+)
+from .models import (
+    AUTO_HIDE_REPORTS, Category, Post, Report, Status, Subscription, TeamListing, Thread, is_moderator, profile_for,
+)
 
 # Archive items a thread can be about: URL kind -> (Thread field, model,
 # category slug a new thread defaults to).
@@ -119,6 +124,23 @@ def _publish(request, post, new_thread=False):
         )
 
 
+def _team_map():
+    """(map pins, list rows) for the approved teams. Each row names the pin
+    it belongs to, so clicking a pin can narrow the list."""
+    markers, _ = map_markers(TeamListing.objects.filter(status=Status.VISIBLE))
+    rows = []
+    for number, marker in enumerate(markers, 1):
+        marker['number'] = number
+        marker['label'] = ', '.join(place['label'] for place in marker['places'])
+        teams = [team for place in marker['places'] for team in place['events']]
+        types = {team.team_type for team in teams}
+        # Teams of different types sharing a pin get their own color.
+        marker['kind'] = types.pop() if len(types) == 1 else 'mixed'
+        rows.extend({'team': team, 'marker': number} for team in teams)
+    rows.sort(key=lambda row: (row['team'].state, row['team'].city.lower(), row['team'].name.lower()))
+    return markers, rows
+
+
 # ---------- browsing ----------
 
 def index(request):
@@ -128,7 +150,16 @@ def index(request):
         last_activity=Max('threads__last_post_at', filter=visible),
     ).order_by('sort_order', 'name')
     recent = _thread_list(Thread.objects.filter(status=Status.VISIBLE)).order_by('-last_post_at')[:10]
-    return render(request, 'forum/index.html', {'categories': categories, 'recent': recent})
+    team_markers, team_rows = _team_map()
+    return render(request, 'forum/index.html', {
+        'categories': categories,
+        'recent': recent,
+        'team_markers': team_markers,
+        'team_rows': team_rows,
+        'team_types': TeamListing.TEAM_TYPE_CHOICES,
+        'has_mixed_pin': any(marker['kind'] == 'mixed' for marker in team_markers),
+        'has_listing': request.user.is_authenticated and TeamListing.objects.filter(member=request.user).exists(),
+    })
 
 
 def category(request, slug):
@@ -446,5 +477,46 @@ def profile(request):
         'welcome': request.GET.get('welcome') == '1' or not prof.is_complete,
         'threads': threads,
         'state_options': STATE_OPTIONS,
+        'has_listing': TeamListing.objects.filter(member=request.user).exists(),
     })
+
+
+# ---------- team map ----------
+
+@member_required
+def team_listing(request):
+    """A member adds, updates, or checks on their team's place on the map."""
+    listing = TeamListing.objects.filter(member=request.user).first()
+    declined = listing is not None and listing.status == Status.HIDDEN
+    if request.method == 'POST' and not declined:
+        was_pending = listing is not None and listing.status == Status.PENDING
+        form = TeamListingForm(request.POST, instance=listing)
+        if form.is_valid():
+            if listing is not None and not set(form.changed_data) - {'consent'}:
+                messages.info(request, "Nothing changed.")
+                return redirect('forum:team_listing')
+            saved = form.save(commit=False)
+            saved.member = request.user
+            # Every change is reviewed, so an approved listing can't be
+            # swapped for something else.
+            saved.status = Status.PENDING
+            saved.save()
+            if not was_pending:
+                notify.notify_moderator_team(request, saved)
+            messages.success(request, "Thanks! Your team will appear on the map once a moderator approves it.")
+            return redirect('forum:team_listing')
+    elif listing is not None:
+        form = TeamListingForm(instance=listing)
+    else:
+        profile = request.forum_profile
+        form = TeamListingForm(initial={'name': profile.team, 'state': profile.state, 'sector': profile.district})
+    return render(request, 'forum/team_listing.html', {'form': form, 'listing': listing, 'declined': declined})
+
+
+@require_POST
+@member_required
+def remove_team_listing(request):
+    TeamListing.objects.filter(member=request.user).delete()
+    messages.success(request, "Your team has been removed from the map.")
+    return redirect(reverse('forum:index') + '#teams')
 

@@ -39,6 +39,40 @@
         transition: fill 0.15s;
     }
     .fm-teams-map path:hover { fill: #5a6878; }
+    .fm-pin { cursor: pointer; outline: none; }
+    .fm-pin .halo { fill: transparent; }
+    .fm-teams { --pin-professional: #f0655a; --pin-collegiate: #f2b632; --pin-volunteer: #4cc38a; --pin-mixed: #f4f1ec; }
+    .fm-pin .core { stroke: var(--ink); stroke-width: 2; }
+    .fm-pin.professional .core { fill: var(--pin-professional); }
+    .fm-pin.collegiate .core { fill: var(--pin-collegiate); }
+    .fm-pin.volunteer .core { fill: var(--pin-volunteer); }
+    .fm-pin.mixed .core { fill: var(--pin-mixed); }
+    .fm-pin text { fill: #1f262f; font-family: var(--font-display); font-size: 14px; font-weight: 600; text-anchor: middle; pointer-events: none; }
+    .fm-pin:hover .halo, .fm-pin:focus-visible .halo, .fm-pin.active .halo { fill: rgba(244, 241, 236, 0.28); }
+    .fm-pin:focus-visible .core, .fm-pin.active .core { stroke: var(--bg); stroke-width: 3; }
+
+    .fm-team-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; list-style: none; margin-bottom: 14px; font-size: 13px; color: #c2c6cc; }
+    .fm-team-legend li { display: inline-flex; align-items: center; gap: 7px; }
+    .fm-team-legend .dot { width: 11px; height: 11px; border-radius: 50%; }
+    .fm-team-legend .dot.professional { background: var(--pin-professional); }
+    .fm-team-legend .dot.collegiate { background: var(--pin-collegiate); }
+    .fm-team-legend .dot.volunteer { background: var(--pin-volunteer); }
+    .fm-team-legend .dot.mixed { background: var(--pin-mixed); }
+
+    .fm-team-directory { grid-column: 1 / -1; border-top: 1px solid #414d5b; padding-top: 16px; }
+    .fm-team-directory-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+    .fm-team-directory h3 { font-family: var(--font-display); font-weight: 500; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #c2c6cc; }
+    .fm-team-clear { background: none; border: none; color: var(--red-soft); font: inherit; font-size: 13px; cursor: pointer; }
+    .fm-team-list { list-style: none; max-height: 248px; overflow-y: auto; }
+    .fm-team-list li { display: flex; align-items: baseline; justify-content: space-between; gap: 4px 16px; flex-wrap: wrap; padding: 9px 0; border-bottom: 1px solid #36404c; font-size: 14px; color: #c2c6cc; }
+    .fm-team-list li:last-child { border-bottom: none; }
+    .fm-team-list li[hidden] { display: none; }
+    .fm-team-list strong { color: var(--bg); font-weight: 600; overflow-wrap: anywhere; }
+    .fm-team-where { text-align: right; }
+    .fm-team-contact { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 2px 16px; font-size: 13px; }
+    .fm-team-contact a { color: var(--red-soft); overflow-wrap: anywhere; }
+    .fm-teams p.fm-team-fineprint { margin: 12px 0 0; font-size: 12px; line-height: 1.5; color: #9aa3ad; }
+    .fm-team-fineprint a { color: var(--red-soft); }
 
     @media (max-width: 760px) {
         .fm-teams { grid-template-columns: 1fr; gap: 20px; padding: 24px 18px; }
@@ -77,15 +111,84 @@
 
 <section class="fm-teams" id="teams" aria-labelledby="fm-teams-title">
     <div>
-        <span class="fm-teams-kicker">Coming soon</span>
+        <span class="fm-teams-kicker">{% if team_rows %}{{ team_rows|length }} team{{ team_rows|length|pluralize }} on the map{% else %}Be the first{% endif %}</span>
         <h2 id="fm-teams-title">Teams across the U.S.</h2>
-        <p>We're building a national map of mine rescue teams. Tell us about yours and we'll add it.</p>
-        <a class="btn btn-red" href="{% url 'feedback' %}">Add your team</a>
+        <p>Put your team on the map so others in mine rescue can find you. Teams are added by their own members.</p>
+        <a class="btn btn-red" href="{% url 'forum:team_listing' %}">{% if has_listing %}Manage your team{% else %}Add your team{% endif %}</a>
     </div>
-    <svg class="fm-teams-map" viewBox="0 0 975 610" role="img" aria-label="Map of the United States. No mine rescue teams have been added yet.">
+    <svg class="fm-teams-map" viewBox="0 0 975 610" role="group" aria-label="Map of the United States{% if team_rows %} showing mine rescue teams{% else %}. No teams have been added yet{% endif %}.">
         {% include 'partials/us_states_paths.svg' %}
+        {% for m in team_markers %}
+        <g class="fm-pin {{ m.kind }}" data-marker="{{ m.number }}" tabindex="0" role="button" aria-pressed="false"
+           aria-label="{{ m.label }}: {{ m.count }} team{{ m.count|pluralize }}">
+            <title>{{ m.label }}: {{ m.count }} team{{ m.count|pluralize }}</title>
+            <circle class="halo" cx="{{ m.x }}" cy="{{ m.y }}" r="22"/>
+            <circle class="core" cx="{{ m.x }}" cy="{{ m.y }}" r="{% if m.count > 1 %}13{% else %}9{% endif %}"/>
+            {% if m.count > 1 %}<text x="{{ m.x }}" y="{{ m.y }}" dy="0.35em">{{ m.count }}</text>{% endif %}
+        </g>
+        {% endfor %}
     </svg>
+    {% if team_rows %}
+    <div class="fm-team-directory">
+        <ul class="fm-team-legend" aria-label="Map colors">
+            {% for value, label in team_types %}<li><span class="dot {{ value }}"></span>{{ label }}</li>{% endfor %}
+            {% if has_mixed_pin %}<li><span class="dot mixed"></span>Multiple types</li>{% endif %}
+        </ul>
+        <div class="fm-team-directory-bar">
+            <h3>Teams</h3>
+            <button type="button" class="fm-team-clear" id="fm-team-clear" hidden>Show all teams</button>
+        </div>
+        <ul class="fm-team-list" id="fm-team-list">
+            {% for row in team_rows %}
+            <li data-marker="{{ row.marker }}">
+                <span><strong>{{ row.team.name }}</strong>{% if row.team.company %} · {{ row.team.company }}{% endif %}</span>
+                <span class="fm-team-where">{{ row.team.get_team_type_display }} · {{ row.team.get_sector_display }} · {{ row.team.location }}</span>
+                {% if user.is_authenticated and row.team.contact_email or user.is_authenticated and row.team.contact_phone %}
+                <span class="fm-team-contact">
+                    {% if row.team.contact_email %}<a href="mailto:{{ row.team.contact_email }}">{{ row.team.contact_email }}</a>{% endif %}
+                    {% if row.team.contact_phone %}<a href="{{ row.team.phone_link }}">{{ row.team.contact_phone }}</a>{% endif %}
+                </span>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        <p class="fm-team-fineprint">Team contact details are only visible to signed-in members.{% if not user.is_authenticated %} <a href="{% url 'forum:signin' %}?next={% url 'forum:index' %}%23teams">Sign in</a> to see them.{% endif %}</p>
+    </div>
+    {% endif %}
 </section>
 
 {% include 'forum/_guidelines.html' %}
+{% endblock %}
+
+{% block scripts %}
+{{ block.super }}
+{% if team_rows %}
+<script>
+    // Clicking a map pin narrows the team list to that spot.
+    (function () {
+        var pins = document.querySelectorAll('.fm-pin');
+        var rows = document.querySelectorAll('#fm-team-list li');
+        var clear = document.getElementById('fm-team-clear');
+
+        function show(marker) {
+            pins.forEach(function (pin) {
+                var on = pin.dataset.marker === marker;
+                pin.classList.toggle('active', on);
+                pin.setAttribute('aria-pressed', on ? 'true' : 'false');
+            });
+            rows.forEach(function (row) { row.hidden = Boolean(marker) && row.dataset.marker !== marker; });
+            clear.hidden = !marker;
+        }
+
+        pins.forEach(function (pin) {
+            function toggle() { show(pin.classList.contains('active') ? '' : pin.dataset.marker); }
+            pin.addEventListener('click', toggle);
+            pin.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+            });
+        });
+        clear.addEventListener('click', function () { show(''); });
+    })();
+</script>
+{% endif %}
 {% endblock %}

@@ -22,4 +22,6 @@ urlpatterns = [
     path('signin/confirm/', views.signin_confirm, name='signin_confirm'),
     path('signout/', views.signout, name='signout'),
     path('profile/', views.profile, name='profile'),
+    path('teams/yours/', views.team_listing, name='team_listing'),
+    path('teams/yours/remove/', views.remove_team_listing, name='remove_team_listing'),
 ]

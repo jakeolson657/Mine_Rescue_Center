@@ -2,7 +2,7 @@ from django.contrib import admin, messages
 from django.utils.html import format_html
 
 from . import notify
-from .models import Category, ForumProfile, Post, Report, Status, Thread
+from .models import Category, ForumProfile, Post, Report, Status, TeamListing, Thread
 
 
 @admin.register(Category)
@@ -76,6 +76,28 @@ class PostAdmin(admin.ModelAdmin):
 
     def view(self, obj):
         return format_html('<a href="{}" target="_blank">View</a>', obj.get_absolute_url())
+
+
+@admin.register(TeamListing)
+class TeamListingAdmin(admin.ModelAdmin):
+    list_display = ['name', 'company', 'team_type', 'location', 'sector', 'contact_email', 'contact_phone', 'status', 'member', 'created_at']
+    list_filter = ['status', 'team_type', 'sector', 'state']
+    search_fields = ['name', 'company', 'city', 'contact_email', 'member__email']
+    raw_id_fields = ['member']
+    # Status changes go through the actions, so approval emails are sent.
+    readonly_fields = ['status', 'created_at', 'updated_at']
+    actions = ['approve_listings', 'hide_listings']
+
+    @admin.action(description='Approve selected teams (show on the map)')
+    def approve_listings(self, request, queryset):
+        n = sum(1 for listing in queryset.select_related('member') if notify.approve_team_and_notify(request, listing))
+        messages.success(request, f'Approved {n} team(s).')
+
+    @admin.action(description='Hide selected teams from the map')
+    def hide_listings(self, request, queryset):
+        for listing in queryset:
+            listing.hide()
+        messages.success(request, f'Hid {queryset.count()} team(s).')
 
 
 @admin.register(Report)

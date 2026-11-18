@@ -1,5 +1,7 @@
 from django.conf import settings
-from django.db import models
+from django.db import models, transaction
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 from django.urls import reverse
 from django.utils import timezone
 from django.utils.text import slugify
@@ -232,3 +234,69 @@ class Subscription(models.Model):
 
     class Meta:
         constraints = [models.UniqueConstraint(fields=['user', 'thread'], name='one_subscription_per_thread')]
+
+
+class TeamListing(models.Model):
+    """A team a member chose to put on the community map. Nothing appears
+    publicly until a moderator approves it, and only the team's details are
+    shown: never the member who listed it."""
+
+    TEAM_TYPE_CHOICES = [
+        ('professional', 'Professional'),
+        ('collegiate', 'Collegiate'),
+        ('volunteer', 'Volunteer'),
+    ]
+
+    member = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='team_listing')
+    name = models.CharField('team name', max_length=100)
+    company = models.CharField(
+        'company or college', max_length=100, blank=True,
+        help_text="A company for professional teams, a college for collegiate teams, and blank for volunteer teams.",
+    )
+    team_type = models.CharField('team type', max_length=12, choices=TEAM_TYPE_CHOICES)
+    city = models.CharField('town or city', max_length=80)
+    state = models.CharField(max_length=2)
+    sector = models.CharField(max_length=5, choices=ForumProfile.DISTRICT_CHOICES)
+    contact_email = models.EmailField('team email', blank=True)
+    contact_phone = models.CharField('team phone', max_length=20, blank=True)
+    status = models.CharField(max_length=10, choices=Status.choices, default=Status.PENDING)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['state', 'city', 'name']
+
+    def __str__(self):
+        return f'{self.name} ({self.location})'
+
+    @property
+    def location(self):
+        return f'{self.city}, {self.state}'
+
+    @property
+    def phone_link(self):
+        digits = ''.join(ch for ch in self.contact_phone if ch.isdigit())
+        return f'tel:+1{digits}' if digits else ''
+
+    def approve(self):
+        """Publish the listing. Returns True when it was newly published."""
+        if self.status == Status.VISIBLE:
+            return False
+        self.status = Status.VISIBLE
+        self.save(update_fields=['status', 'updated_at'])
+        return True
+
+    def hide(self):
+        self.status = Status.HIDDEN
+        self.save(update_fields=['status', 'updated_at'])
+
+
+@receiver(post_save, sender=TeamListing)
+def geocode_team_on_approval(sender, instance, raw=False, **kwargs):
+    """Look up an approved team's town for its map pin once the save commits.
+    Until that finishes the pin sits at the state's center."""
+    if raw or instance.status != Status.VISIBLE:
+        return
+    from pages.geo import geocode_location
+    location = instance.location
+    transaction.on_commit(lambda: geocode_location(location))

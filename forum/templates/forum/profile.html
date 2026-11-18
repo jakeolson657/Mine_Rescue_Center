@@ -85,6 +85,12 @@
 </div>
 
 {% if not welcome %}
+    <h2 class="fm-section-title">Team map</h2>
+    <div class="fm-signin-cta">
+        <span>{% if has_listing %}Update your team's details or remove it from the map.{% else %}Choose whether to put your team on the community map.{% endif %}</span>
+        <a class="btn btn-red" href="{% url 'forum:team_listing' %}">{% if has_listing %}Manage your team{% else %}Add your team{% endif %}</a>
+    </div>
+
     <h2 class="fm-section-title">Your threads</h2>
     {% include 'forum/_thread_rows.html' with threads=threads show_category=True empty_text="You haven't started any threads yet." %}
 {% endif %}

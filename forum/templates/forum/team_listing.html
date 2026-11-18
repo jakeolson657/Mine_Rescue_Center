@@ -1,0 +1,130 @@
+{% extends 'forum/base.html' %}
+
+{% block page_title %}Your team on the map - Forum{% endblock %}
+
+{% block crumbs %}<span class="sep">/</span><span>Team map</span>{% endblock %}
+
+{% block head %}
+<h1>{% if listing %}Your team on the map{% else %}Add your team to the map{% endif %}</h1>
+<p class="lede">Help others in mine rescue find your team. The map shows the team details below, but never your forum name or sign-in email.</p>
+{% endblock %}
+
+{% block forum_css %}
+    .fm-team-status { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; font-size: 14.5px; color: var(--steel); }
+    .fm-team-remove { margin-top: 18px; }
+{% endblock %}
+
+{% block body %}
+<div class="fm-card">
+    {% if listing %}
+    <div class="fm-team-status">
+        {% if listing.status == 'visible' %}
+            <span class="tag green">On the map</span>
+            <span>Any change you save will be reviewed before it appears.</span>
+        {% elif listing.status == 'pending' %}
+            <span class="tag gold">Awaiting approval</span>
+            <span>A moderator will review your team soon.</span>
+        {% else %}
+            <span class="tag red">Not approved</span>
+            <span>Contact <a href="mailto:info@minerescuecenter.com">info@minerescuecenter.com</a> with any questions.</span>
+        {% endif %}
+    </div>
+    {% endif %}
+
+    {% if not declined %}
+    <form class="fm-form" method="post" novalidate>
+        {% csrf_token %}
+        <div class="row2">
+            <div class="fm-field">
+                <label for="{{ form.name.id_for_label }}">Team name</label>
+                {{ form.name }}
+                {% if form.name.errors %}<div class="fm-errors">{{ form.name.errors }}</div>{% endif %}
+            </div>
+            <div class="fm-field">
+                <label for="{{ form.team_type.id_for_label }}">Team type</label>
+                {{ form.team_type }}
+                {% if form.team_type.errors %}<div class="fm-errors">{{ form.team_type.errors }}</div>{% endif %}
+            </div>
+            <div class="fm-field" id="company-field">
+                <label for="{{ form.company.id_for_label }}" id="company-label">Company or college</label>
+                {{ form.company }}
+                {% if form.company.errors %}<div class="fm-errors">{{ form.company.errors }}</div>{% endif %}
+            </div>
+            <div class="fm-field">
+                <label for="{{ form.sector.id_for_label }}">Coal or MNM</label>
+                {{ form.sector }}
+                {% if form.sector.errors %}<div class="fm-errors">{{ form.sector.errors }}</div>{% endif %}
+            </div>
+            <div class="fm-field">
+                <label for="{{ form.city.id_for_label }}">Town or city</label>
+                {{ form.city }}
+                {% if form.city.errors %}<div class="fm-errors">{{ form.city.errors }}</div>{% endif %}
+            </div>
+            <div class="fm-field">
+                <label for="{{ form.state.id_for_label }}">State</label>
+                {{ form.state }}
+                {% if form.state.errors %}<div class="fm-errors">{{ form.state.errors }}</div>{% endif %}
+            </div>
+            <div class="fm-field">
+                <label for="{{ form.contact_email.id_for_label }}">Team email <span class="opt">(optional)</span></label>
+                {{ form.contact_email }}
+                {% if form.contact_email.errors %}<div class="fm-errors">{{ form.contact_email.errors }}</div>{% endif %}
+            </div>
+            <div class="fm-field">
+                <label for="{{ form.contact_phone.id_for_label }}">Team phone <span class="opt">(optional)</span></label>
+                {{ form.contact_phone }}
+                {% if form.contact_phone.errors %}<div class="fm-errors">{{ form.contact_phone.errors }}</div>{% endif %}
+            </div>
+        </div>
+        <p class="fm-help" style="margin:-6px 0 18px">Team email and phone are only visible to signed-in members. Use a shared team contact if you can.</p>
+        <div class="fm-field">
+            <label class="fm-check" for="{{ form.consent.id_for_label }}" style="text-transform:none;letter-spacing:0;font-family:var(--font-body);font-size:14.5px;color:var(--ink)">
+                {{ form.consent }} {{ form.consent.label }}
+            </label>
+            {% if form.consent.errors %}<div class="fm-errors">{{ form.consent.errors }}</div>{% endif %}
+        </div>
+        <div class="fm-actions">
+            <button type="submit" class="btn btn-red">{% if listing %}Save changes{% else %}Submit for approval{% endif %}</button>
+            <span class="note">A moderator reviews every team before it appears.</span>
+        </div>
+    </form>
+    {% endif %}
+
+    {% if listing %}
+    <form class="fm-team-remove" method="post" action="{% url 'forum:remove_team_listing' %}">
+        {% csrf_token %}
+        <button type="submit" class="fm-link-btn bad">Remove my team from the map</button>
+    </form>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ block.super }}
+{% if not declined %}
+<script>
+    // The company field asks for what fits the team type, and drops away for
+    // volunteer teams.
+    (function () {
+        var type = document.getElementById('{{ form.team_type.id_for_label }}');
+        var field = document.getElementById('company-field');
+        var label = document.getElementById('company-label');
+        var input = document.getElementById('{{ form.company.id_for_label }}');
+        var wording = {
+            professional: ['Company', 'Your mine or company'],
+            collegiate: ['College', 'Your college or university']
+        };
+
+        function update() {
+            var words = wording[type.value] || ['Company or college', 'Your company or college'];
+            label.textContent = words[0];
+            input.placeholder = words[1];
+            field.hidden = type.value === 'volunteer';
+        }
+
+        type.addEventListener('change', update);
+        update();
+    })();
+</script>
+{% endif %}
+{% endblock %}

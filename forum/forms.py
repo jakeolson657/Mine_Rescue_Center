@@ -4,13 +4,17 @@ from datetime import timedelta
 from django import forms
 from django.utils import timezone
 
+from pages.geo import STATE_CENTERS
 from pages.models import US_STATES
 
-from .models import Category, ForumProfile, Post, Thread, is_moderator
+from .models import Category, ForumProfile, Post, Status, TeamListing, Thread, is_moderator
 
 THREADS_PER_DAY = 5
 POSTS_PER_DAY = 30
 LINK_RE = re.compile(r'https?://|www\.', re.IGNORECASE)
+# What each team type must name in the listing's company field.
+TEAM_ORGANIZATION = {'professional': 'company', 'collegiate': 'college'}
+CITY_RE = re.compile(r"^[^\W\d_][^\W\d_ .'’-]*(?:[ .'’-]+[^\W\d_]+)*\.?$")
 
 # (name, abbreviation) for the profile form's state suggestions, A-Z.
 STATE_OPTIONS = sorted((name.title(), abbr) for name, abbr in US_STATES.items())
@@ -85,6 +89,81 @@ class ProfileForm(forms.ModelForm):
         if taken.exists():
             raise forms.ValidationError("Someone already uses that name. Try adding an initial.")
         return name
+
+
+class TeamListingForm(forms.ModelForm):
+    state = forms.ChoiceField(choices=[('', 'Choose a state')] + [
+        (abbr, name) for name, abbr in STATE_OPTIONS if abbr in STATE_CENTERS
+    ])
+    consent = forms.BooleanField(
+        label="I'm part of this team. It's okay to show these team details on the public map and share the team's contact information with signed-in members.",
+        error_messages={'required': "Please confirm before adding your team to the map."},
+    )
+
+    class Meta:
+        model = TeamListing
+        fields = ['name', 'team_type', 'company', 'sector', 'city', 'state', 'contact_email', 'contact_phone']
+        widgets = {
+            'name': forms.TextInput(attrs={'placeholder': 'e.g. Blue Team'}),
+            'company': forms.TextInput(attrs={'placeholder': 'Your company or college'}),
+            'city': forms.TextInput(attrs={'placeholder': 'Where your team is based'}),
+            'contact_email': forms.EmailInput(attrs={'placeholder': 'team@example.com'}),
+            'contact_phone': forms.TextInput(attrs={'placeholder': '(304) 555-0100', 'inputmode': 'tel'}),
+        }
+        error_messages = {
+            'team_type': {'required': "Please choose a team type."},
+            'contact_email': {'invalid': "Please enter a valid email address."},
+        }
+
+    def _clean_text(self, field):
+        value = ' '.join(self.cleaned_data[field].split())
+        if LINK_RE.search(value):
+            raise forms.ValidationError("Please leave out links.")
+        return value
+
+    def clean_name(self):
+        name = self._clean_text('name')
+        if len(name) < 2:
+            raise forms.ValidationError("Please enter your team's name.")
+        return name
+
+    def clean_company(self):
+        return self._clean_text('company')
+
+    def clean_contact_phone(self):
+        typed = self.cleaned_data['contact_phone'].strip()
+        if not typed:
+            return ''
+        digits = re.sub(r'\D', '', typed)
+        if len(digits) == 11 and digits[0] == '1':
+            digits = digits[1:]
+        if len(digits) != 10:
+            raise forms.ValidationError("Please enter a 10-digit phone number.")
+        return f'({digits[:3]}) {digits[3:6]}-{digits[6:]}'
+
+    def clean_city(self):
+        city = self._clean_text('city')
+        if not CITY_RE.match(city):
+            raise forms.ValidationError("Please enter just the town or city name.")
+        return city
+
+    def clean(self):
+        cleaned = super().clean()
+        team_type = cleaned.get('team_type')
+        if team_type == 'volunteer':
+            # The field is hidden for volunteer teams, so ignore anything left in it.
+            self.errors.pop('company', None)
+            cleaned['company'] = ''
+        elif team_type in TEAM_ORGANIZATION and 'company' not in self.errors and len(cleaned.get('company', '')) < 2:
+            self.add_error('company', f"Please enter your team's {TEAM_ORGANIZATION[team_type]}.")
+        name, state = cleaned.get('name'), cleaned.get('state')
+        if name and state:
+            taken = TeamListing.objects.filter(
+                name__iexact=name, state=state, status__in=[Status.PENDING, Status.VISIBLE],
+            ).exclude(pk=self.instance.pk)
+            if taken.exists():
+                self.add_error('name', "That team is already listed in this state.")
+        return cleaned
 
 
 class _PostingLimits:
