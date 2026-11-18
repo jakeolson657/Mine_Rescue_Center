@@ -119,6 +119,13 @@ class TeamMapTests(TestCase):
         self.client.post(URL, {**VALID, 'city': 'Hilo', 'state': 'HI'})
         self.assertFalse(TeamListing.objects.exists())
 
+    def test_recent_activity_button_sits_between_categories_and_the_map(self):
+        html = self.index().content.decode()
+        button = html.index('href="#recent-activity"')
+        self.assertLess(html.index('class="fm-cats"'), button)
+        self.assertLess(button, html.index('id="teams"'))
+        self.assertLess(html.index('id="teams"'), html.index('id="recent-activity"'))
+
     def test_heading_comes_before_the_team_count(self):
         html = self.index().content.decode()
         self.assertLess(html.index('id="fm-teams-title"'), html.index('class="fm-teams-kicker"'))
