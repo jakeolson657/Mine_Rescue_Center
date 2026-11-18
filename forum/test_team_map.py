@@ -110,10 +110,21 @@ class TeamMapTests(TestCase):
         self.assertLess(pins['Fairbanks, AK']['x'], pins['Elko, NV']['x'])
         self.assertContains(response, 'viewBox="0 0 975 910"')
         self.assertContains(response, 'class="fm-neighbor"', count=2)
-        self.assertContains(response, '<path data-state=', count=51)
+        self.assertContains(response, '<path data-state=', count=50)
+        self.assertNotContains(response, 'data-state="Hawaii"')
+
+    def test_hawaii_cannot_be_chosen_for_a_team(self):
+        self.member()
+        self.assertNotContains(self.client.get(URL), 'value="HI"')
+        self.client.post(URL, {**VALID, 'city': 'Hilo', 'state': 'HI'})
+        self.assertFalse(TeamListing.objects.exists())
+
+    def test_heading_comes_before_the_team_count(self):
+        html = self.index().content.decode()
+        self.assertLess(html.index('id="fm-teams-title"'), html.index('class="fm-teams-kicker"'))
 
     def test_every_pin_fits_inside_the_map(self):
-        for lat, lng in [(71.3, -156.8), (21.3, -157.9), (24.6, -81.8), (44.9, -67.0), (48.4, -124.7)]:
+        for lat, lng in [(71.3, -156.8), (24.6, -81.8), (44.9, -67.0), (48.4, -124.7)]:
             x, y = project_north_america(lat, lng)
             self.assertTrue(0 <= x <= NORTH_AMERICA_WIDTH and 0 <= y <= NORTH_AMERICA_HEIGHT, (lat, lng, x, y))
 

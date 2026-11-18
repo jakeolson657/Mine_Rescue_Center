@@ -13,6 +13,8 @@
         color: var(--bg);
     }
     .fm-teams-kicker {
+        display: block;
+        margin-bottom: 12px;
         font-family: var(--font-mono);
         font-size: 11px;
         letter-spacing: 0.14em;
@@ -26,7 +28,8 @@
         line-height: 1.12;
         letter-spacing: 0.01em;
         text-transform: uppercase;
-        margin: 8px 0 12px;
+        white-space: nowrap;
+        margin: 0 0 8px;
     }
     .fm-teams p { font-size: 14.5px; line-height: 1.6; color: #c2c6cc; margin-bottom: 20px; }
     .fm-teams .btn-red { display: inline-block; padding: 11px 18px; }
@@ -93,9 +96,10 @@
     .fm-teams p.fm-team-fineprint { margin: 12px 0 0; font-size: 12px; line-height: 1.5; color: #9aa3ad; }
     .fm-team-fineprint a { color: var(--red-soft); }
 
-    @media (max-width: 760px) {
+    /* Stacks before the one-line heading would run into Alaska. */
+    @media (max-width: 960px) {
         .fm-teams { grid-template-columns: 1fr; gap: 20px; padding: 24px 18px; }
-        .fm-teams h2 { font-size: 25px; }
+        .fm-teams h2 { font-size: 24px; }
         .fm-map-bar { position: static; margin-bottom: 10px; }
     }
 {% endblock %}
@@ -131,8 +135,8 @@
 
 <section class="fm-teams" id="teams" aria-labelledby="fm-teams-title">
     <div>
-        <span class="fm-teams-kicker">{% if team_rows %}{{ team_rows|length }} team{{ team_rows|length|pluralize }} on the map{% else %}Be the first{% endif %}</span>
         <h2 id="fm-teams-title">Teams across the U.S.</h2>
+        <span class="fm-teams-kicker">{% if team_rows %}{{ team_rows|length }} team{{ team_rows|length|pluralize }} on the map{% else %}Be the first{% endif %}</span>
         <p>Put your team on the map so others in mine rescue can find you. Teams are added by their own members. Click a state to see its teams up close.</p>
         <a class="btn btn-red" href="{% url 'forum:team_listing' %}">{% if has_listing %}Manage your team{% else %}Add your team{% endif %}</a>
     </div>

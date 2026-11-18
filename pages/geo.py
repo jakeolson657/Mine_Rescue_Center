@@ -184,21 +184,13 @@ def project(lat, lng):
 
 
 # --- North America, for the community team map -----------------------------
-# Alaska sits in its true place here. Hawaii stays a small inset in the Pacific,
-# because its true position would stretch the map for very little land. The
-# outlines in forum/templates/forum/_north_america_paths.svg use these numbers.
+# Alaska sits in its true place here. Hawaii is left off because it has no mine
+# rescue teams. The outlines in forum/templates/forum/_north_america_paths.svg
+# use these numbers.
 NORTH_AMERICA_WIDTH = 975
 NORTH_AMERICA_HEIGHT = 910
 _NORTH_AMERICA_SCALE = 920
-_NORTH_AMERICA_PROJ = _ConicEqualArea(96, (0, 40), (20, 60), _NORTH_AMERICA_SCALE, (607.2, 644))
-_NORTH_AMERICA_HAWAII_PROJ = _ConicEqualArea(157, (0, 20.7), (8, 18), _NORTH_AMERICA_SCALE, (150, 775))
-
-
-def project_north_america(lat, lng):
-    """Latitude/longitude -> (x, y) on the community team map."""
-    if _region(lat, lng) == 'hawaii':
-        return _NORTH_AMERICA_HAWAII_PROJ(lat, lng)
-    return _NORTH_AMERICA_PROJ(lat, lng)
+project_north_america = _ConicEqualArea(96, (0, 40), (20, 60), _NORTH_AMERICA_SCALE, (607.2, 644))
 
 
 def is_surface(event):

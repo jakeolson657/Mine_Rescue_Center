@@ -93,7 +93,8 @@ class ProfileForm(forms.ModelForm):
 
 class TeamListingForm(forms.ModelForm):
     state = forms.ChoiceField(choices=[('', 'Choose a state')] + [
-        (abbr, name) for name, abbr in STATE_OPTIONS if abbr in STATE_CENTERS
+        # Hawaii has no mine rescue teams and isn't drawn on the team map.
+        (abbr, name) for name, abbr in STATE_OPTIONS if abbr in STATE_CENTERS and abbr != 'HI'
     ])
     consent = forms.BooleanField(
         label="I'm part of this team. It's okay to show these team details on the public map and share the team's contact information with signed-in members.",
