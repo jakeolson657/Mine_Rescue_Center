@@ -47,6 +47,7 @@
         transition: fill 0.15s, opacity 0.3s;
     }
     .fm-teams-map path:hover { fill: #5a6878; }
+    .fm-teams-map path.fm-neighbor { fill: #36414e; cursor: default; pointer-events: none; }
     .fm-teams-map.is-zoomed path { opacity: 0; pointer-events: none; }
     .fm-teams-map.is-zoomed path.is-selected { opacity: 1; pointer-events: auto; cursor: default; fill: #414d5b; }
     .fm-teams-map.is-zoomed .fm-national-pins { display: none; }
@@ -140,8 +141,8 @@
             <button type="button" class="fm-map-back" id="fm-map-back">&larr; All states</button>
             <span class="fm-map-status" id="fm-map-status" role="status"></span>
         </div>
-        <svg class="fm-teams-map" id="fm-teams-map" viewBox="0 0 975 610" role="group" aria-label="Map of the United States{% if team_rows %} showing mine rescue teams{% else %}. No teams have been added yet{% endif %}.">
-            {% include 'partials/us_states_paths.svg' %}
+        <svg class="fm-teams-map" id="fm-teams-map" viewBox="0 0 {{ team_map_width }} {{ team_map_height }}" role="group" aria-label="Map of North America{% if team_rows %} showing mine rescue teams{% else %}. No teams have been added yet{% endif %}.">
+            {% include 'forum/_north_america_paths.svg' %}
             <g class="fm-national-pins">
                 {% for m in team_markers %}
                 <g class="fm-pin {{ m.kind }}" data-marker="{{ m.number }}" data-state="{{ m.state }}" tabindex="0" role="button"
@@ -219,7 +220,7 @@
         var heading = document.getElementById('fm-team-heading');
         var none = document.getElementById('fm-team-none');
         var calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        var WIDTH = 975, HEIGHT = 610, MAX_ZOOM = 14;
+        var WIDTH = map.viewBox.baseVal.width, HEIGHT = map.viewBox.baseVal.height, MAX_ZOOM = 14;
         var view = [0, 0, WIDTH, HEIGHT];
         var openState = '', openTown = '', openedFrom = null, openPins = [], openBox = null, frame = 0;
 

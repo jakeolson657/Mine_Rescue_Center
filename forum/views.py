@@ -16,7 +16,7 @@ from django.utils import timezone
 from django.utils.http import url_has_allowed_host_and_scheme
 from django.views.decorators.http import require_POST
 
-from pages.geo import map_markers
+from pages.geo import NORTH_AMERICA_HEIGHT, NORTH_AMERICA_WIDTH, map_markers, project_north_america
 from pages.models import CalendarEvent, CompetitionProblem, CompetitionRuleDocument, Quiz
 
 from . import notify, signin
@@ -188,7 +188,9 @@ def _team_map():
     Each town gets its own national pin unless pins would crowd each other.
     Opening a state swaps those for one pin per town, and each list row names
     its town and state so the list can narrow to match."""
-    markers, _ = map_markers(TeamListing.objects.filter(status=Status.VISIBLE), cluster_radius=0)
+    markers, _ = map_markers(
+        TeamListing.objects.filter(status=Status.VISIBLE), cluster_radius=0, projection=project_north_america,
+    )
     markers = _combine_crowded_pins(markers)
     towns, rows = [], []
     for number, marker in enumerate(markers, 1):
@@ -231,6 +233,8 @@ def index(request):
         'recent': recent,
         'team_markers': team_markers,
         'team_towns': team_towns,
+        'team_map_width': NORTH_AMERICA_WIDTH,
+        'team_map_height': NORTH_AMERICA_HEIGHT,
         'team_rows': team_rows,
         'team_types': TeamListing.TEAM_TYPE_CHOICES,
         'has_mixed_pin': any(marker['kind'] == 'mixed' for marker in team_markers),

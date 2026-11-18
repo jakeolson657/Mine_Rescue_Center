@@ -6,6 +6,8 @@ from django.test import RequestFactory, TestCase, override_settings
 from django.urls import reverse
 from django.utils import timezone
 
+from pages.geo import NORTH_AMERICA_HEIGHT, NORTH_AMERICA_WIDTH, project_north_america
+
 from . import notify
 from .models import ForumProfile, Status, TeamListing
 from .views import _combine_crowded_pins
@@ -94,10 +96,26 @@ class TeamMapTests(TestCase):
 
     def test_towns_with_room_keep_their_own_pins_on_the_full_map(self):
         self.listing(self.member())
-        self.listing(self.member('b@example.com', 'Beta Member'), name='Logan Black', city='Logan')
-        self.listing(self.member('c@example.com', 'Gamma Member'), name='Bluefield Gold', city='Bluefield')
+        self.listing(self.member('b@example.com', 'Beta Member'), name='Morgantown Black', city='Morgantown')
+        self.listing(self.member('c@example.com', 'Gamma Member'), name='Elko Gold', city='Elko', state='NV')
         labels = {m['label'] for m in self.index().context['team_markers']}
-        self.assertEqual(labels, {'Beckley, WV', 'Logan, WV', 'Bluefield, WV'})
+        self.assertEqual(labels, {'Beckley, WV', 'Morgantown, WV', 'Elko, NV'})
+
+    def test_map_shows_north_america_with_alaska_in_its_true_place(self):
+        self.listing(self.member(), name='Fairbanks Gold', city='Fairbanks', state='AK')
+        self.listing(self.member('b@example.com', 'Beta Member'), name='Elko Green', city='Elko', state='NV')
+        response = self.index()
+        pins = {m['label']: m for m in response.context['team_markers']}
+        self.assertLess(pins['Fairbanks, AK']['y'], pins['Elko, NV']['y'])
+        self.assertLess(pins['Fairbanks, AK']['x'], pins['Elko, NV']['x'])
+        self.assertContains(response, 'viewBox="0 0 975 910"')
+        self.assertContains(response, 'class="fm-neighbor"', count=2)
+        self.assertContains(response, '<path data-state=', count=51)
+
+    def test_every_pin_fits_inside_the_map(self):
+        for lat, lng in [(71.3, -156.8), (21.3, -157.9), (24.6, -81.8), (44.9, -67.0), (48.4, -124.7)]:
+            x, y = project_north_america(lat, lng)
+            self.assertTrue(0 <= x <= NORTH_AMERICA_WIDTH and 0 <= y <= NORTH_AMERICA_HEIGHT, (lat, lng, x, y))
 
     def test_teams_in_one_town_show_their_count_on_a_larger_pin(self):
         self.listing(self.member())
