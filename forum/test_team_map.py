@@ -39,6 +39,14 @@ class TeamMapTests(TestCase):
         response = self.client.get(URL)
         self.assertTrue(response.url.startswith(reverse('forum:signin')))
 
+    def test_signed_in_account_without_a_display_name_goes_straight_to_the_form(self):
+        user = User.objects.create(username='new@example.com', email='new@example.com')
+        self.client.force_login(user)
+        self.assertContains(self.client.get(URL), 'Add your team to the map')
+        self.client.post(URL, VALID)
+        self.assertEqual(TeamListing.objects.get().member, user)
+        self.assertEqual(len(mail.outbox), 1)
+
     def test_form_starts_from_the_members_profile(self):
         self.member(team='Raleigh Blue', state='WV', district='coal')
         response = self.client.get(URL)

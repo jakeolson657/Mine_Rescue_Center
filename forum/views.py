@@ -44,14 +44,13 @@ def _safe_next(request, url, default=None):
     return default or reverse('forum:index')
 
 
-def member_required(view):
-    """Signed in, with a display name set, and not banned."""
+def _account_gate(view, needs_display_name):
     @wraps(view)
     def wrapped(request, *args, **kwargs):
         if not request.user.is_authenticated:
             return redirect(reverse('forum:signin') + '?' + urlencode({'next': request.get_full_path()}))
         profile = profile_for(request.user)
-        if not profile.is_complete:
+        if needs_display_name and not profile.is_complete:
             return redirect(reverse('forum:profile') + '?' + urlencode({'next': request.get_full_path()}))
         if profile.banned:
             messages.error(request, "Your account can't post on the forum. Contact info@minerescuecenter.com if you think this is a mistake.")
@@ -59,6 +58,16 @@ def member_required(view):
         request.forum_profile = profile
         return view(request, *args, **kwargs)
     return wrapped
+
+
+def member_required(view):
+    """Signed in, with a display name set, and not banned."""
+    return _account_gate(view, needs_display_name=True)
+
+
+def account_required(view):
+    """Signed in and not banned. For pages that never show the member's name."""
+    return _account_gate(view, needs_display_name=False)
 
 
 def _readable_threads(user):
@@ -483,7 +492,7 @@ def profile(request):
 
 # ---------- team map ----------
 
-@member_required
+@account_required
 def team_listing(request):
     """A member adds, updates, or checks on their team's place on the map."""
     listing = TeamListing.objects.filter(member=request.user).first()
@@ -514,7 +523,7 @@ def team_listing(request):
 
 
 @require_POST
-@member_required
+@account_required
 def remove_team_listing(request):
     TeamListing.objects.filter(member=request.user).delete()
     messages.success(request, "Your team has been removed from the map.")
