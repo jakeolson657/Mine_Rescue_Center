@@ -278,13 +278,13 @@ def geocode_location(location):
 CLUSTER_RADIUS = 11
 
 
-def map_markers(events):
+def map_markers(events, cluster_radius=CLUSTER_RADIUS):
     """Group events into clickable map markers.
 
     Returns ``(markers, unmapped)``. Each marker is a dict with ``x``, ``y``,
     ``count`` and ``places`` (``[{'label', 'approximate', 'events'}]``), where
     events keep the order given. ``unmapped`` lists events whose location
-    couldn't be placed."""
+    couldn't be placed. Places within ``cluster_radius`` share a marker."""
     places = {}
     unmapped = []
     geocoded = _geocoded()
@@ -306,7 +306,7 @@ def map_markers(events):
     markers = []
     for place in places.values():
         for marker in markers:
-            if math.hypot(marker['x'] - place['x'], marker['y'] - place['y']) <= CLUSTER_RADIUS:
+            if math.hypot(marker['x'] - place['x'], marker['y'] - place['y']) <= cluster_radius:
                 marker['places'].append(place)
                 break
         else:

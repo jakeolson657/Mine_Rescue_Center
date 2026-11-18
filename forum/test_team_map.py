@@ -8,6 +8,7 @@ from django.utils import timezone
 
 from . import notify
 from .models import ForumProfile, Status, TeamListing
+from .views import _combine_crowded_pins
 
 User = get_user_model()
 URL = reverse('forum:team_listing')
@@ -90,6 +91,72 @@ class TeamMapTests(TestCase):
         self.assertEqual(len(response.context['team_markers']), 1)
         self.assertEqual(response.context['team_markers'][0]['count'], 2)
         self.assertEqual(len(response.context['team_rows']), 2)
+
+    def test_towns_with_room_keep_their_own_pins_on_the_full_map(self):
+        self.listing(self.member())
+        self.listing(self.member('b@example.com', 'Beta Member'), name='Logan Black', city='Logan')
+        self.listing(self.member('c@example.com', 'Gamma Member'), name='Bluefield Gold', city='Bluefield')
+        labels = {m['label'] for m in self.index().context['team_markers']}
+        self.assertEqual(labels, {'Beckley, WV', 'Logan, WV', 'Bluefield, WV'})
+
+    def test_teams_in_one_town_show_their_count_on_a_larger_pin(self):
+        self.listing(self.member())
+        self.listing(self.member('b@example.com', 'Beta Member'), name='Raleigh Red')
+        self.listing(self.member('c@example.com', 'Gamma Member'), name='Elko Green', city='Elko', state='NV')
+        pins = {m['label']: (m['count'], m['radius']) for m in self.index().context['team_markers']}
+        self.assertEqual(pins, {'Beckley, WV': (2, 10), 'Elko, NV': (1, 6)})
+
+    def test_a_combined_pin_keeps_every_town_and_sits_between_them(self):
+        self.listing(self.member())
+        self.listing(self.member('b@example.com', 'Beta Member'), name='Beaver Red', city='Beaver')
+        response = self.index()
+        marker = response.context['team_markers'][0]
+        xs = sorted(t['x'] for t in response.context['team_towns'])
+        self.assertEqual({p['label'] for p in marker['places']}, {'Beckley, WV', 'Beaver, WV'})
+        self.assertTrue(xs[0] <= marker['x'] <= xs[1])
+
+    def test_combining_does_not_depend_on_the_order_teams_were_added(self):
+        def pin(x, label):
+            return {'x': x, 'y': 100.0, 'count': 1, 'places': [{'label': label}]}
+
+        forward = _combine_crowded_pins([pin(100.0, 'A'), pin(107.0, 'B'), pin(130.0, 'C')])
+        backward = _combine_crowded_pins([pin(130.0, 'C'), pin(107.0, 'B'), pin(100.0, 'A')])
+        self.assertEqual(sorted(p['x'] for p in forward), sorted(p['x'] for p in backward))
+        self.assertEqual(sorted(p['x'] for p in forward), [103.5, 130.0])
+
+    def test_teams_sharing_a_pin_get_their_own_town_pins_in_the_state_view(self):
+        self.listing(self.member())
+        self.listing(self.member('b@example.com', 'Beta Member'), name='Beaver Red', city='Beaver', team_type='volunteer')
+        response = self.index()
+        towns = {t['label']: t for t in response.context['team_towns']}
+        self.assertEqual(set(towns), {'Beckley, WV', 'Beaver, WV'})
+        self.assertEqual(towns['Beaver, WV']['kind'], 'volunteer')
+        self.assertEqual(towns['Beaver, WV']['state'], 'West Virginia')
+        self.assertNotEqual(towns['Beckley, WV']['x'], towns['Beaver, WV']['x'])
+        self.assertContains(response, '>Beaver</text>')
+
+    def test_teams_in_one_town_share_a_town_pin(self):
+        self.listing(self.member())
+        self.listing(self.member('b@example.com', 'Beta Member'), name='Raleigh Red')
+        towns = self.index().context['team_towns']
+        self.assertEqual([(t['label'], t['count']) for t in towns], [('Beckley, WV', 2)])
+
+    def test_list_rows_name_their_town_and_state(self):
+        self.listing(self.member())
+        row = self.index().context['team_rows'][0]
+        self.assertEqual((row['town'], row['state']), (1, 'West Virginia'))
+
+    def test_pin_across_a_border_opens_the_state_with_the_most_teams(self):
+        self.listing(self.member(), city='Bluefield')
+        self.listing(self.member('b@example.com', 'Beta Member'), name='Bluefield Red', city='Bluefield')
+        self.listing(self.member('c@example.com', 'Gamma Member'), name='Cedar Gold', city='Cedar Bluff', state='VA')
+        marker = self.index().context['team_markers'][0]
+        self.assertEqual((marker['count'], marker['state']), (3, 'West Virginia'))
+
+    def test_state_zoom_is_available_before_any_team_is_listed(self):
+        response = self.index()
+        self.assertContains(response, 'id="fm-map-back"')
+        self.assertContains(response, 'openStateView')
 
     def test_editing_an_approved_team_sends_it_back_for_review(self):
         self.listing(self.member())

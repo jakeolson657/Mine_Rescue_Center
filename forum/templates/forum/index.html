@@ -30,15 +30,31 @@
     }
     .fm-teams p { font-size: 14.5px; line-height: 1.6; color: #c2c6cc; margin-bottom: 20px; }
     .fm-teams .btn-red { display: inline-block; padding: 11px 18px; }
+    .fm-map-stage { position: relative; min-width: 0; }
+    .fm-map-bar { position: absolute; top: 0; left: 0; right: 0; z-index: 1; display: flex; align-items: center; flex-wrap: wrap; gap: 6px 14px; }
+    .fm-map-bar[hidden] { display: none; }
+    .fm-map-back { padding: 7px 12px; background: var(--bg); border: none; border-radius: 6px; color: var(--ink); font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; }
+    .fm-map-status { font-size: 14px; color: var(--bg); }
+    .fm-map-status strong { font-family: var(--font-display); font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase; }
     .fm-teams-map { display: block; width: 100%; height: auto; }
     .fm-teams-map path {
         fill: #414d5b;
         stroke: var(--ink);
         stroke-width: 1;
         stroke-linejoin: round;
-        transition: fill 0.15s;
+        vector-effect: non-scaling-stroke;
+        cursor: pointer;
+        transition: fill 0.15s, opacity 0.3s;
     }
     .fm-teams-map path:hover { fill: #5a6878; }
+    .fm-teams-map.is-zoomed path { opacity: 0; pointer-events: none; }
+    .fm-teams-map.is-zoomed path.is-selected { opacity: 1; pointer-events: auto; cursor: default; fill: #414d5b; }
+    .fm-teams-map.is-zoomed .fm-national-pins { display: none; }
+    .fm-national-pins .fm-pin .core { stroke-width: 1.5; }
+    .fm-national-pins .fm-pin text { font-size: 12px; }
+    .fm-town { display: none; opacity: 0; transition: opacity 0.2s; }
+    .fm-town.is-open { display: inline; }
+    .fm-town.is-arrived { opacity: 1; }
     .fm-pin { cursor: pointer; outline: none; }
     .fm-pin .halo { fill: transparent; }
     .fm-teams { --pin-professional: #f0655a; --pin-collegiate: #f2b632; --pin-volunteer: #4cc38a; --pin-mixed: #f4f1ec; }
@@ -48,6 +64,7 @@
     .fm-pin.volunteer .core { fill: var(--pin-volunteer); }
     .fm-pin.mixed .core { fill: var(--pin-mixed); }
     .fm-pin text { fill: #1f262f; font-family: var(--font-display); font-size: 14px; font-weight: 600; text-anchor: middle; pointer-events: none; }
+    .fm-pin text.fm-town-name { fill: var(--bg); font-family: inherit; font-size: 14px; font-weight: 500; paint-order: stroke; stroke: var(--ink); stroke-width: 4px; stroke-linejoin: round; }
     .fm-pin:hover .halo, .fm-pin:focus-visible .halo, .fm-pin.active .halo { fill: rgba(244, 241, 236, 0.28); }
     .fm-pin:focus-visible .core, .fm-pin.active .core { stroke: var(--bg); stroke-width: 3; }
 
@@ -63,6 +80,7 @@
     .fm-team-directory-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
     .fm-team-directory h3 { font-family: var(--font-display); font-weight: 500; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #c2c6cc; }
     .fm-team-clear { background: none; border: none; color: var(--red-soft); font: inherit; font-size: 13px; cursor: pointer; }
+    .fm-teams p.fm-team-none { margin: 8px 0 0; font-size: 14px; }
     .fm-team-list { list-style: none; max-height: 248px; overflow-y: auto; }
     .fm-team-list li { display: flex; align-items: baseline; justify-content: space-between; gap: 4px 16px; flex-wrap: wrap; padding: 9px 0; border-bottom: 1px solid #36404c; font-size: 14px; color: #c2c6cc; }
     .fm-team-list li:last-child { border-bottom: none; }
@@ -77,6 +95,7 @@
     @media (max-width: 760px) {
         .fm-teams { grid-template-columns: 1fr; gap: 20px; padding: 24px 18px; }
         .fm-teams h2 { font-size: 25px; }
+        .fm-map-bar { position: static; margin-bottom: 10px; }
     }
 {% endblock %}
 
@@ -113,21 +132,42 @@
     <div>
         <span class="fm-teams-kicker">{% if team_rows %}{{ team_rows|length }} team{{ team_rows|length|pluralize }} on the map{% else %}Be the first{% endif %}</span>
         <h2 id="fm-teams-title">Teams across the U.S.</h2>
-        <p>Put your team on the map so others in mine rescue can find you. Teams are added by their own members.</p>
+        <p>Put your team on the map so others in mine rescue can find you. Teams are added by their own members. Click a state to see its teams up close.</p>
         <a class="btn btn-red" href="{% url 'forum:team_listing' %}">{% if has_listing %}Manage your team{% else %}Add your team{% endif %}</a>
     </div>
-    <svg class="fm-teams-map" viewBox="0 0 975 610" role="group" aria-label="Map of the United States{% if team_rows %} showing mine rescue teams{% else %}. No teams have been added yet{% endif %}.">
-        {% include 'partials/us_states_paths.svg' %}
-        {% for m in team_markers %}
-        <g class="fm-pin {{ m.kind }}" data-marker="{{ m.number }}" tabindex="0" role="button" aria-pressed="false"
-           aria-label="{{ m.label }}: {{ m.count }} team{{ m.count|pluralize }}">
-            <title>{{ m.label }}: {{ m.count }} team{{ m.count|pluralize }}</title>
-            <circle class="halo" cx="{{ m.x }}" cy="{{ m.y }}" r="22"/>
-            <circle class="core" cx="{{ m.x }}" cy="{{ m.y }}" r="{% if m.count > 1 %}13{% else %}9{% endif %}"/>
-            {% if m.count > 1 %}<text x="{{ m.x }}" y="{{ m.y }}" dy="0.35em">{{ m.count }}</text>{% endif %}
-        </g>
-        {% endfor %}
-    </svg>
+    <div class="fm-map-stage">
+        <div class="fm-map-bar" id="fm-map-bar" hidden>
+            <button type="button" class="fm-map-back" id="fm-map-back">&larr; All states</button>
+            <span class="fm-map-status" id="fm-map-status" role="status"></span>
+        </div>
+        <svg class="fm-teams-map" id="fm-teams-map" viewBox="0 0 975 610" role="group" aria-label="Map of the United States{% if team_rows %} showing mine rescue teams{% else %}. No teams have been added yet{% endif %}.">
+            {% include 'partials/us_states_paths.svg' %}
+            <g class="fm-national-pins">
+                {% for m in team_markers %}
+                <g class="fm-pin {{ m.kind }}" data-marker="{{ m.number }}" data-state="{{ m.state }}" tabindex="0" role="button"
+                   aria-label="{{ m.label }}: {{ m.count }} team{{ m.count|pluralize }}. Open {{ m.state }}.">
+                    <title>{{ m.label }}: {{ m.count }} team{{ m.count|pluralize }}</title>
+                    <circle class="halo" cx="{{ m.x }}" cy="{{ m.y }}" r="{{ m.radius|add:4 }}"/>
+                    <circle class="core" cx="{{ m.x }}" cy="{{ m.y }}" r="{{ m.radius }}"/>
+                    {% if m.count > 1 %}<text x="{{ m.x }}" y="{{ m.y }}" dy="0.35em">{{ m.count }}</text>{% endif %}
+                </g>
+                {% endfor %}
+            </g>
+            <g class="fm-town-pins">
+                {% for t in team_towns %}
+                <g class="fm-pin fm-town {{ t.kind }}" data-town="{{ t.number }}" data-state="{{ t.state }}" data-x="{{ t.x }}" data-y="{{ t.y }}"
+                   data-radius="{% if t.count > 1 %}13{% else %}9{% endif %}" tabindex="0" role="button" aria-pressed="false"
+                   aria-label="{{ t.label }}: {{ t.count }} team{{ t.count|pluralize }}">
+                    <title>{{ t.label }}: {{ t.count }} team{{ t.count|pluralize }}</title>
+                    <circle class="halo" r="22"/>
+                    <circle class="core" r="{% if t.count > 1 %}13{% else %}9{% endif %}"/>
+                    {% if t.count > 1 %}<text dy="0.35em">{{ t.count }}</text>{% endif %}
+                    <text class="fm-town-name" y="{% if t.count > 1 %}31{% else %}27{% endif %}">{{ t.name }}</text>
+                </g>
+                {% endfor %}
+            </g>
+        </svg>
+    </div>
     {% if team_rows %}
     <div class="fm-team-directory">
         <ul class="fm-team-legend" aria-label="Map colors">
@@ -135,12 +175,12 @@
             {% if has_mixed_pin %}<li><span class="dot mixed"></span>Multiple types</li>{% endif %}
         </ul>
         <div class="fm-team-directory-bar">
-            <h3>Teams</h3>
+            <h3 id="fm-team-heading">Teams</h3>
             <button type="button" class="fm-team-clear" id="fm-team-clear" hidden>Show all teams</button>
         </div>
         <ul class="fm-team-list" id="fm-team-list">
             {% for row in team_rows %}
-            <li data-marker="{{ row.marker }}">
+            <li data-town="{{ row.town }}" data-state="{{ row.state }}">
                 <span><strong>{{ row.team.name }}</strong>{% if row.team.company %} · {{ row.team.company }}{% endif %}</span>
                 <span class="fm-team-where">{{ row.team.get_team_type_display }} · {{ row.team.get_sector_display }} · {{ row.team.location }}</span>
                 {% if user.is_authenticated and row.team.contact_email or user.is_authenticated and row.team.contact_phone %}
@@ -152,6 +192,7 @@
             </li>
             {% endfor %}
         </ul>
+        <p class="fm-team-none" id="fm-team-none" hidden></p>
         <p class="fm-team-fineprint">Team contact details are only visible to signed-in members.{% if not user.is_authenticated %} <a href="{% url 'forum:signin' %}?next={% url 'forum:index' %}%23teams">Sign in</a> to see them.{% endif %}</p>
     </div>
     {% endif %}
@@ -162,33 +203,195 @@
 
 {% block scripts %}
 {{ block.super }}
-{% if team_rows %}
 <script>
-    // Clicking a map pin narrows the team list to that spot.
+    // Clicking a state (or a pin on it) zooms in to just that state, where every
+    // town gets its own pin. Clicking a town then narrows the team list to it.
     (function () {
-        var pins = document.querySelectorAll('.fm-pin');
+        var map = document.getElementById('fm-teams-map');
+        var states = map.querySelectorAll('path[data-state]');
+        var nationalPins = map.querySelectorAll('.fm-national-pins .fm-pin');
+        var townPins = map.querySelectorAll('.fm-town');
         var rows = document.querySelectorAll('#fm-team-list li');
+        var bar = document.getElementById('fm-map-bar');
+        var back = document.getElementById('fm-map-back');
+        var status = document.getElementById('fm-map-status');
         var clear = document.getElementById('fm-team-clear');
+        var heading = document.getElementById('fm-team-heading');
+        var none = document.getElementById('fm-team-none');
+        var calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var WIDTH = 975, HEIGHT = 610, MAX_ZOOM = 14;
+        var view = [0, 0, WIDTH, HEIGHT];
+        var openState = '', openTown = '', openedFrom = null, openPins = [], openBox = null, frame = 0;
 
-        function show(marker) {
-            pins.forEach(function (pin) {
-                var on = pin.dataset.marker === marker;
+        function setView(box) {
+            view = box;
+            map.setAttribute('viewBox', box.join(' '));
+        }
+
+        function moveTo(box, done) {
+            cancelAnimationFrame(frame);
+            if (calm) { setView(box); done(); return; }
+            var from = view, started = performance.now();
+            frame = requestAnimationFrame(function step(now) {
+                var t = Math.max(Math.min((now - started) / 380, 1), 0);
+                var eased = t * (2 - t);
+                setView(from.map(function (value, i) { return value + (box[i] - value) * eased; }));
+                if (t < 1) { frame = requestAnimationFrame(step); } else { done(); }
+            });
+        }
+
+        // The part of the map that frames a state, leaving room for the bar on top.
+        function frameFor(path) {
+            var b = path.getBBox();
+            var pad = Math.max(b.width, b.height) * 0.08;
+            var barRoom = getComputedStyle(bar).position === 'absolute' ? b.height * 0.16 : 0;
+            var top = b.y - pad - barRoom, bottom = b.y + b.height + pad * 1.5;
+            var width = b.width + pad * 2, height = bottom - top;
+            var scale = Math.max(width / WIDTH, height / HEIGHT, 1 / MAX_ZOOM);
+            var w = WIDTH * scale, h = HEIGHT * scale;
+            return [b.x + b.width / 2 - w / 2, (top + bottom) / 2 - h / 2, w, h];
+        }
+
+        // Pins keep their size on screen, and ones that would still touch are
+        // nudged apart so each town can be clicked.
+        function placeTowns() {
+            var pins = openPins;
+            var unit = openBox[2] / map.getBoundingClientRect().width;
+            var spots = pins.map(function (pin) {
+                return { x: +pin.dataset.x, y: +pin.dataset.y, r: +pin.dataset.radius * unit };
+            });
+            for (var pass = 0; pass < 40; pass++) {
+                spots.forEach(function (a, i) {
+                    spots.slice(i + 1).forEach(function (b, j) {
+                        var dx = b.x - a.x, dy = b.y - a.y, gap = Math.hypot(dx, dy);
+                        var need = a.r + b.r + 8 * unit;
+                        if (gap >= need) { return; }
+                        var push = (need - gap) / 2;
+                        if (!gap) { dx = Math.cos(i + j + 1); dy = Math.sin(i + j + 1); gap = 1; }
+                        a.x -= dx / gap * push; a.y -= dy / gap * push;
+                        b.x += dx / gap * push; b.y += dy / gap * push;
+                    });
+                });
+            }
+            pins.forEach(function (pin, i) {
+                pin.setAttribute('transform', 'translate(' + spots[i].x + ' ' + spots[i].y + ') scale(' + unit + ')');
+            });
+        }
+
+        // Each town's name goes under its pin, or above it if that spot is taken.
+        // A name with no room is left to the pin's tooltip and the team list.
+        function tidyNames(pins) {
+            var taken = pins.map(function (pin) { return pin.querySelector('.core').getBoundingClientRect(); });
+            pins.slice().sort(function (a, b) { return b.dataset.radius - a.dataset.radius; }).forEach(function (pin) {
+                var name = pin.querySelector('.fm-town-name');
+                var radius = +pin.dataset.radius;
+                name.style.display = '';
+                var placed = [radius + 18, -radius - 9].some(function (y) {
+                    name.setAttribute('y', y);
+                    var r = name.getBoundingClientRect();
+                    var clash = taken.some(function (t) {
+                        return r.left < t.right && r.right > t.left && r.top < t.bottom && r.bottom > t.top;
+                    });
+                    if (!clash) { taken.push(r); }
+                    return !clash;
+                });
+                if (!placed) { name.style.display = 'none'; }
+            });
+        }
+
+        function updateList() {
+            var shown = 0;
+            rows.forEach(function (row) {
+                row.hidden = Boolean(openState && row.dataset.state !== openState) ||
+                             Boolean(openTown && row.dataset.town !== openTown);
+                if (!row.hidden) { shown++; }
+            });
+            townPins.forEach(function (pin) {
+                var on = pin.dataset.town === openTown;
                 pin.classList.toggle('active', on);
                 pin.setAttribute('aria-pressed', on ? 'true' : 'false');
             });
-            rows.forEach(function (row) { row.hidden = Boolean(marker) && row.dataset.marker !== marker; });
-            clear.hidden = !marker;
+            if (!heading) { return; }
+            heading.textContent = openState ? openState + ' teams' : 'Teams';
+            clear.textContent = 'Show all ' + openState + ' teams';
+            clear.hidden = !openTown;
+            none.hidden = shown > 0;
+            none.textContent = shown ? '' : 'No teams from ' + openState + ' are on the map yet.';
         }
 
-        pins.forEach(function (pin) {
-            function toggle() { show(pin.classList.contains('active') ? '' : pin.dataset.marker); }
-            pin.addEventListener('click', toggle);
-            pin.addEventListener('keydown', function (e) {
-                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+        function teamCount(state) {
+            return Array.prototype.filter.call(rows, function (row) { return row.dataset.state === state; }).length;
+        }
+
+        function openStateView(path, fromPin) {
+            var state = path.dataset.state;
+            var box = frameFor(path);
+            var pins = Array.prototype.filter.call(townPins, function (pin) { return pin.dataset.state === state; });
+            openState = state; openTown = ''; openedFrom = fromPin || null; openPins = pins; openBox = box;
+            states.forEach(function (p) { p.classList.toggle('is-selected', p === path); });
+            map.classList.add('is-zoomed');
+            pins.forEach(function (pin) { pin.classList.add('is-open'); });
+
+            var count = teamCount(state);
+            status.textContent = '';
+            status.appendChild(document.createElement('strong')).textContent = state;
+            status.appendChild(document.createTextNode(' \u00b7 ' + (count ? count + (count === 1 ? ' team' : ' teams') : 'No teams yet')));
+            bar.hidden = false;
+            placeTowns();
+            updateList();
+            back.focus({ preventScroll: true });
+            moveTo(box, function () {
+                tidyNames(pins);
+                pins.forEach(function (pin) { pin.classList.add('is-arrived'); });
+            });
+        }
+
+        function closeStateView() {
+            var returnTo = openedFrom;
+            openState = ''; openTown = ''; openedFrom = null;
+            townPins.forEach(function (pin) { pin.classList.remove('is-open', 'is-arrived'); });
+            states.forEach(function (p) { p.classList.remove('is-selected'); });
+            map.classList.remove('is-zoomed');
+            bar.hidden = true;
+            updateList();
+            moveTo([0, 0, WIDTH, HEIGHT], function () {});
+            if (returnTo) { returnTo.focus({ preventScroll: true }); }
+        }
+
+        function pressable(element, action) {
+            element.addEventListener('click', action);
+            element.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); action(); }
+            });
+        }
+
+        states.forEach(function (path) {
+            path.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'title')).textContent = path.dataset.state;
+            path.addEventListener('click', function () {
+                if (openState) { openTown = ''; updateList(); } else { openStateView(path); }
             });
         });
-        clear.addEventListener('click', function () { show(''); });
+        nationalPins.forEach(function (pin) {
+            pressable(pin, function () {
+                var path = Array.prototype.find.call(states, function (p) { return p.dataset.state === pin.dataset.state; });
+                if (path) { openStateView(path, pin); }
+            });
+        });
+        townPins.forEach(function (pin) {
+            pressable(pin, function () {
+                openTown = openTown === pin.dataset.town ? '' : pin.dataset.town;
+                updateList();
+            });
+        });
+        back.addEventListener('click', closeStateView);
+        map.addEventListener('click', function (e) { if (openState && e.target === map) { closeStateView(); } });
+        document.getElementById('teams').addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && openState) { closeStateView(); }
+        });
+        window.addEventListener('resize', function () {
+            if (openState) { placeTowns(); tidyNames(openPins); }
+        });
+        if (clear) { clear.addEventListener('click', function () { openTown = ''; updateList(); }); }
     })();
 </script>
-{% endif %}
 {% endblock %}

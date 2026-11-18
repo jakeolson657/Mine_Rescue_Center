@@ -1,4 +1,7 @@
+import math
+from collections import Counter
 from functools import wraps
+from itertools import combinations
 from urllib.parse import urlencode
 
 from django.contrib import messages
@@ -34,6 +37,13 @@ LINK_KINDS = {
 }
 
 REMEMBER_DEVICE_SECONDS = 365 * 24 * 60 * 60
+STATE_NAMES = {abbr: name for name, abbr in STATE_OPTIONS}
+
+# Team map pin sizes, in map units. Pins combine when they're closer than this
+# share of the distance at which their edges would just touch.
+TEAM_PIN_RADIUS = 6
+SHARED_TEAM_PIN_RADIUS = 10
+TEAM_PIN_CROWDED = 0.9
 
 
 def old_address_redirect(request, rest=''):
@@ -140,21 +150,70 @@ def _publish(request, post, new_thread=False):
         )
 
 
+def _team_kind(teams):
+    """A pin's color: the team type, or 'mixed' when it holds several types."""
+    types = {team.team_type for team in teams}
+    return types.pop() if len(types) == 1 else 'mixed'
+
+
+def _team_pin_radius(count):
+    return SHARED_TEAM_PIN_RADIUS if count > 1 else TEAM_PIN_RADIUS
+
+
+def _combine_crowded_pins(pins):
+    """Merge the closest overlapping pins, one pair at a time, until none are
+    crowded. A combined pin sits between its teams and is larger, so it can
+    crowd its neighbors in turn."""
+    while True:
+        crowded = [
+            (math.dist((a['x'], a['y']), (b['x'], b['y'])), i, j)
+            for (i, a), (j, b) in combinations(enumerate(pins), 2)
+            if math.dist((a['x'], a['y']), (b['x'], b['y']))
+            < TEAM_PIN_CROWDED * (_team_pin_radius(a['count']) + _team_pin_radius(b['count']))
+        ]
+        if not crowded:
+            return pins
+        _, i, j = min(crowded)
+        keep, absorbed = pins[i], pins.pop(j)
+        count = keep['count'] + absorbed['count']
+        keep['x'] = round((keep['x'] * keep['count'] + absorbed['x'] * absorbed['count']) / count, 1)
+        keep['y'] = round((keep['y'] * keep['count'] + absorbed['y'] * absorbed['count']) / count, 1)
+        keep['count'] = count
+        keep['places'] += absorbed['places']
+
+
 def _team_map():
-    """(map pins, list rows) for the approved teams. Each row names the pin
-    it belongs to, so clicking a pin can narrow the list."""
-    markers, _ = map_markers(TeamListing.objects.filter(status=Status.VISIBLE))
-    rows = []
+    """(national pins, town pins, list rows) for the approved teams.
+
+    Each town gets its own national pin unless pins would crowd each other.
+    Opening a state swaps those for one pin per town, and each list row names
+    its town and state so the list can narrow to match."""
+    markers, _ = map_markers(TeamListing.objects.filter(status=Status.VISIBLE), cluster_radius=0)
+    markers = _combine_crowded_pins(markers)
+    towns, rows = [], []
     for number, marker in enumerate(markers, 1):
-        marker['number'] = number
-        marker['label'] = ', '.join(place['label'] for place in marker['places'])
         teams = [team for place in marker['places'] for team in place['events']]
-        types = {team.team_type for team in teams}
-        # Teams of different types sharing a pin get their own color.
-        marker['kind'] = types.pop() if len(types) == 1 else 'mixed'
-        rows.extend({'team': team, 'marker': number} for team in teams)
+        marker['number'] = number
+        marker['radius'] = _team_pin_radius(marker['count'])
+        marker['label'] = ', '.join(place['label'] for place in marker['places'])
+        marker['kind'] = _team_kind(teams)
+        # A pin can straddle a border, so it opens the state most of its teams are in.
+        marker['state'] = STATE_NAMES.get(Counter(team.state for team in teams).most_common(1)[0][0], '')
+        for place in marker['places']:
+            town = {
+                'number': len(towns) + 1,
+                'label': place['label'],
+                'name': place['label'].rsplit(', ', 1)[0],
+                'x': round(place['x'], 1),
+                'y': round(place['y'], 1),
+                'count': len(place['events']),
+                'kind': _team_kind(place['events']),
+                'state': STATE_NAMES.get(place['events'][0].state, ''),
+            }
+            towns.append(town)
+            rows.extend({'team': team, 'town': town['number'], 'state': town['state']} for team in place['events'])
     rows.sort(key=lambda row: (row['team'].state, row['team'].city.lower(), row['team'].name.lower()))
-    return markers, rows
+    return markers, towns, rows
 
 
 # ---------- browsing ----------
@@ -166,11 +225,12 @@ def index(request):
         last_activity=Max('threads__last_post_at', filter=visible),
     ).order_by('sort_order', 'name')
     recent = _thread_list(Thread.objects.filter(status=Status.VISIBLE)).order_by('-last_post_at')[:10]
-    team_markers, team_rows = _team_map()
+    team_markers, team_towns, team_rows = _team_map()
     return render(request, 'forum/index.html', {
         'categories': categories,
         'recent': recent,
         'team_markers': team_markers,
+        'team_towns': team_towns,
         'team_rows': team_rows,
         'team_types': TeamListing.TEAM_TYPE_CHOICES,
         'has_mixed_pin': any(marker['kind'] == 'mixed' for marker in team_markers),
