@@ -1,5 +1,26 @@
 {% extends 'forum/base.html' %}
 
+{% block forum_css %}
+    .fm-map {
+        background: var(--surface);
+        border: 1px solid var(--line-2);
+        border-radius: 12px;
+        padding: 18px;
+    }
+    .fm-map svg { display: block; width: 100%; height: auto; }
+    .fm-map-states path {
+        fill: #ece7de;
+        stroke: var(--surface);
+        stroke-width: 1;
+        stroke-linejoin: round;
+    }
+    .fm-map-note { margin-top: 10px; font-size: 13.5px; color: var(--muted); }
+
+    @media (max-width: 700px) {
+        .fm-map { padding: 8px; }
+    }
+{% endblock %}
+
 {% block head %}
 <div class="fm-head-row">
     <div>
@@ -28,6 +49,16 @@
 
 <h2 class="fm-section-title">Recent activity</h2>
 {% include 'forum/_thread_rows.html' with threads=recent show_category=True empty_text="No threads yet — be the first to start one." %}
+
+<section id="teams" aria-labelledby="fm-teams-title">
+    <h2 class="fm-section-title" id="fm-teams-title">Teams across the U.S.</h2>
+    <div class="fm-map">
+        <svg viewBox="0 0 975 610" role="img" aria-label="Map of the United States. No mine rescue teams have been added yet.">
+            <g class="fm-map-states">{% include 'partials/us_states_paths.svg' %}</g>
+        </svg>
+    </div>
+    <p class="fm-map-note">Team locations are coming soon.</p>
+</section>
 
 {% include 'forum/_guidelines.html' %}
 {% endblock %}
