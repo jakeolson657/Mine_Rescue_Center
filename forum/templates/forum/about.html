@@ -1,6 +1,6 @@
 {% extends 'forum/base.html' %}
 
-{% block page_title %}Discussion: {{ link_title }} - Forum{% endblock %}
+{% block page_title %}Discussion: {{ link_title }} - Community{% endblock %}
 
 {% block crumbs %}<span class="sep">/</span><span>Discussion</span>{% endblock %}
 
@@ -9,7 +9,7 @@
     <div>
         <span class="eyebrow">Discussion</span>
         <h1>{{ link_title }}</h1>
-        <p class="lede">Every forum thread about this {% if kind == 'rule' %}rules document{% elif kind == 'quiz' %}written test{% else %}{{ kind }}{% endif %}.</p>
+        <p class="lede">Every community discussion about this {% if kind == 'rule' %}rules document{% elif kind == 'quiz' %}written test{% else %}{{ kind }}{% endif %}.</p>
     </div>
     {% if not not_held_yet %}<a class="btn btn-red" href="{{ new_url }}">Start a discussion</a>{% endif %}
 </div>

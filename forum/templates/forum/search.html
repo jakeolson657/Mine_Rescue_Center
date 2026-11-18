@@ -1,14 +1,14 @@
 {% extends 'forum/base.html' %}
 
-{% block page_title %}Search - Forum{% endblock %}
+{% block page_title %}Search - Community{% endblock %}
 
 {% block crumbs %}<span class="sep">/</span><span>Search</span>{% endblock %}
 
 {% block head %}
 <span class="eyebrow">Search</span>
-<h1>{% if q %}Results for “{{ q }}”{% else %}Search the forum{% endif %}</h1>
+<h1>{% if q %}Results for “{{ q }}”{% else %}Search the community{% endif %}</h1>
 <form class="fm-search" method="get" action="{% url 'forum:search' %}" role="search">
-    <input type="search" name="q" value="{{ q }}" placeholder="Search the forum" aria-label="Search the forum" autofocus>
+    <input type="search" name="q" value="{{ q }}" placeholder="Search the community" aria-label="Search the community" autofocus>
     <button type="submit" class="btn btn-red">Search</button>
 </form>
 {% endblock %}

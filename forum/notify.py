@@ -24,7 +24,7 @@ def send_signin_link(email, url):
     """Unlike the other emails this one must succeed, so the caller can tell
     the visitor when it didn't."""
     body = (
-        "Use this link to sign in to the Mine Rescue Center forum:\n\n"
+        "Use this link to sign in to the Mine Rescue Center community:\n\n"
         f"{url}\n\n"
         "The link works once and expires in 30 minutes. If you didn't ask to "
         "sign in, you can ignore this email.\n"
@@ -41,7 +41,7 @@ def notify_moderator_pending(request, post):
         f"“{post.thread.title}”:\n\n{post.body[:1500]}\n\n"
         f"Review the queue: {admin_url}\n"
     )
-    _send('Forum post awaiting approval', body, [settings.FEEDBACK_TO_EMAIL])
+    _send('Community post awaiting approval', body, [settings.FEEDBACK_TO_EMAIL])
 
 
 def notify_moderator_report(request, report):
@@ -54,7 +54,7 @@ def notify_moderator_report(request, report):
         f"View it: {request.build_absolute_uri(post.get_absolute_url())}\n"
         f"Reports: {request.build_absolute_uri(reverse('admin:forum_report_changelist'))}\n"
     )
-    _send('Forum post reported', body, [settings.FEEDBACK_TO_EMAIL])
+    _send('Community post reported', body, [settings.FEEDBACK_TO_EMAIL])
 
 
 def approve_and_notify(request, post):
@@ -77,11 +77,11 @@ def notify_author_approved(request, post):
         return
     body = (
         f"A moderator approved your post in “{post.thread.title}”, and it's "
-        f"now on the forum:\n\n{request.build_absolute_uri(post.get_absolute_url())}\n"
+        f"now in the community:\n\n{request.build_absolute_uri(post.get_absolute_url())}\n"
     )
     if ForumProfile.objects.filter(user=post.author, trusted=True).exists():
         body += "\nFrom now on your posts will appear right away, without waiting for approval.\n"
-    _send('Your forum post was approved', body, [post.author.email])
+    _send('Your community post was approved', body, [post.author.email])
 
 
 def notify_moderator_team(request, listing):

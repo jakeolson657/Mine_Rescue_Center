@@ -6,7 +6,7 @@ from django.contrib.auth import login, logout
 from django.core.cache import cache
 from django.core.paginator import Paginator
 from django.db.models import Count, Max, Q
-from django.http import Http404
+from django.http import Http404, HttpResponsePermanentRedirect
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.utils import timezone
@@ -36,6 +36,13 @@ LINK_KINDS = {
 REMEMBER_DEVICE_SECONDS = 365 * 24 * 60 * 60
 
 
+def old_address_redirect(request, rest=''):
+    """Forward a /forum/... link to the same page under /community/, keeping
+    its query string. Forms submitted from a page left open keep their data."""
+    new_url = reverse('forum:index') + request.get_full_path().removeprefix('/forum/')
+    return HttpResponsePermanentRedirect(new_url, preserve_request=request.method not in ('GET', 'HEAD'))
+
+
 # ---------- helpers ----------
 
 def _safe_next(request, url, default=None):
@@ -53,7 +60,7 @@ def _account_gate(view, needs_display_name):
         if needs_display_name and not profile.is_complete:
             return redirect(reverse('forum:profile') + '?' + urlencode({'next': request.get_full_path()}))
         if profile.banned:
-            messages.error(request, "Your account can't post on the forum. Contact info@minerescuecenter.com if you think this is a mistake.")
+            messages.error(request, "Your account can't post in the community. Contact info@minerescuecenter.com if you think this is a mistake.")
             return redirect('forum:index')
         request.forum_profile = profile
         return view(request, *args, **kwargs)

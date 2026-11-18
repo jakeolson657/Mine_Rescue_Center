@@ -224,7 +224,7 @@ class ForumTests(TestCase):
             mail.outbox.clear()
             self.client.force_login(mod)
             self.client.post(reverse('forum:moderate', args=[post.pk]), {'action': 'approve'})
-            return [m for m in mail.outbox if m.subject == 'Your forum post was approved']
+            return [m for m in mail.outbox if m.subject == 'Your community post was approved']
 
         sent = approve(first)
         self.assertEqual(len(sent), 1)

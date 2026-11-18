@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}{% block page_title %}Forum{% endblock %} - Mine Rescue Center{% endblock %}
+{% block title %}{% block page_title %}Community{% endblock %} - Mine Rescue Center{% endblock %}
 
 {% block extra_css %}
     .fm-head { background: var(--ink); color: var(--bg); }
@@ -345,7 +345,7 @@
             <nav class="fm-crumbs" aria-label="Breadcrumb">
                 {# No trail on the forum home itself - it's where the trail leads. #}
                 {% if request.resolver_match.url_name != 'index' %}
-                    <a href="{% url 'forum:index' %}">Forum</a>
+                    <a href="{% url 'forum:index' %}">Community</a>
                     {% block crumbs %}{% endblock %}
                 {% endif %}
             </nav>

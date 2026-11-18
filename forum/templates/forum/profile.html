@@ -1,13 +1,13 @@
 {% extends 'forum/base.html' %}
 
-{% block page_title %}Your profile - Forum{% endblock %}
+{% block page_title %}Your profile - Community{% endblock %}
 
 {% block crumbs %}<span class="sep">/</span><span>Profile</span>{% endblock %}
 
 {% block head %}
 <span class="eyebrow">{% if welcome %}Welcome{% else %}Profile{% endif %}</span>
 <h1>{% if welcome %}Set up your profile{% else %}Your profile{% endif %}</h1>
-<p class="lede">{% if welcome %}Choose the name other members will see{% if not form.state_optional %} and your state{% endif %}. The rest is optional but helps people know who they're talking to.{% else %}Signed in as {{ user.email }}. Only your display name and the details below are shown on the forum.{% endif %}</p>
+<p class="lede">{% if welcome %}Choose the name other members will see{% if not form.state_optional %} and your state{% endif %}. The rest is optional but helps people know who they're talking to.{% else %}Signed in as {{ user.email }}. Only your display name and the details below are shown in the community.{% endif %}</p>
 {% endblock %}
 
 {% block forum_css %}

@@ -19,9 +19,14 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
+from forum.views import old_address_redirect
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('forum/', include('forum.urls')),
+    path('community/', include('forum.urls')),
+    # The community used to live at /forum/; keep old links working.
+    path('forum/', old_address_redirect),
+    path('forum/<path:rest>', old_address_redirect),
     path('', include('pages.urls')),
 ]
 
