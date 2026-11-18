@@ -96,6 +96,10 @@
     .fm-teams p.fm-team-fineprint { margin: 12px 0 0; font-size: 12px; line-height: 1.5; color: #9aa3ad; }
     .fm-team-fineprint a { color: var(--red-soft); }
 
+    /* Beside the map, the intro runs as wide as the heading above it. */
+    @media (min-width: 961px) {
+        .fm-teams p.fm-teams-intro { width: 275px; }
+    }
     /* Stacks before the one-line heading would run into Alaska. */
     @media (max-width: 960px) {
         .fm-teams { grid-template-columns: 1fr; gap: 20px; padding: 24px 18px; }
@@ -137,7 +141,7 @@
     <div>
         <h2 id="fm-teams-title">Teams across the U.S.</h2>
         <span class="fm-teams-kicker">{% if team_rows %}{{ team_rows|length }} team{{ team_rows|length|pluralize }} on the map{% else %}Be the first{% endif %}</span>
-        <p>Put your team on the map so others in mine rescue can find you. Teams are added by their own members. Click a state to see its teams up close.</p>
+        <p class="fm-teams-intro">Put your team on the map so others in mine rescue can find you. Teams are added by their own members. Click a state to see its teams up close.</p>
         <a class="btn btn-red" href="{% url 'forum:team_listing' %}">{% if has_listing %}Manage your team{% else %}Add your team{% endif %}</a>
     </div>
     <div class="fm-map-stage">
