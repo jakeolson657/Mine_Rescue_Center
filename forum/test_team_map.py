@@ -9,7 +9,7 @@ from django.utils import timezone
 from pages.geo import NORTH_AMERICA_HEIGHT, NORTH_AMERICA_WIDTH, project_north_america
 
 from . import notify
-from .models import ForumProfile, Status, TeamListing
+from .models import Category, ForumProfile, Status, TeamListing, Thread
 from .views import _combine_crowded_pins
 
 User = get_user_model()
@@ -121,10 +121,34 @@ class TeamMapTests(TestCase):
 
     def test_recent_activity_button_sits_between_categories_and_the_map(self):
         html = self.index().content.decode()
-        button = html.index('href="#recent-activity"')
+        button = html.index(f'href="{reverse("forum:recent")}"')
         self.assertLess(html.index('class="fm-cats"'), button)
         self.assertLess(button, html.index('id="teams"'))
-        self.assertLess(html.index('id="teams"'), html.index('id="recent-activity"'))
+
+    def test_recent_activity_has_its_own_page(self):
+        user = self.member()
+        category = Category.objects.create(name='Rules', slug='rules-test')
+        now = timezone.now()
+        Thread.objects.create(category=category, author=user, title='Older visible thread', last_post_at=now - timedelta(days=1))
+        Thread.objects.create(category=category, author=user, title='Newest visible thread', last_post_at=now)
+        Thread.objects.create(category=category, author=user, title='Waiting for a moderator', status=Status.PENDING, last_post_at=now)
+
+        self.assertNotContains(self.index(), 'Newest visible thread')
+        response = self.client.get(reverse('forum:recent'))
+        self.assertEqual(
+            [thread.title for thread in response.context['page'].object_list],
+            ['Newest visible thread', 'Older visible thread'],
+        )
+        self.assertNotContains(response, 'Waiting for a moderator')
+
+    def test_recent_activity_page_lists_25_threads_at_a_time(self):
+        user = self.member()
+        category = Category.objects.create(name='Rules', slug='rules-test')
+        for number in range(26):
+            Thread.objects.create(category=category, author=user, title=f'Thread {number}', last_post_at=timezone.now())
+        response = self.client.get(reverse('forum:recent'))
+        self.assertEqual(len(response.context['page'].object_list), 25)
+        self.assertContains(response, 'Page 1 of 2')
 
     def test_heading_comes_before_the_team_count(self):
         html = self.index().content.decode()

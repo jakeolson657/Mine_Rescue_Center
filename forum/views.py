@@ -226,11 +226,9 @@ def index(request):
         thread_count=Count('threads', filter=visible),
         last_activity=Max('threads__last_post_at', filter=visible),
     ).order_by('sort_order', 'name')
-    recent = _thread_list(Thread.objects.filter(status=Status.VISIBLE)).order_by('-last_post_at')[:10]
     team_markers, team_towns, team_rows = _team_map()
     return render(request, 'forum/index.html', {
         'categories': categories,
-        'recent': recent,
         'team_markers': team_markers,
         'team_towns': team_towns,
         'team_map_width': NORTH_AMERICA_WIDTH,
@@ -240,6 +238,12 @@ def index(request):
         'has_mixed_pin': any(marker['kind'] == 'mixed' for marker in team_markers),
         'has_listing': request.user.is_authenticated and TeamListing.objects.filter(member=request.user).exists(),
     })
+
+
+def recent(request):
+    threads = _thread_list(Thread.objects.filter(status=Status.VISIBLE)).order_by('-last_post_at')
+    page = Paginator(threads, 25).get_page(request.GET.get('page'))
+    return render(request, 'forum/recent.html', {'page': page})
 
 
 def category(request, slug):

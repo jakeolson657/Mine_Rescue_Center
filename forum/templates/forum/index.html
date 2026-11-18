@@ -1,8 +1,19 @@
 {% extends 'forum/base.html' %}
 
 {% block forum_css %}
-    .fm-recent-jump { display: flex; justify-content: center; gap: 8px; margin-top: 12px; }
-    #recent-activity { scroll-margin-top: 90px; }
+    .fm-recent-link {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 12px;
+        padding: 14px 20px;
+        background: var(--surface);
+        border: 1px solid var(--line-2);
+        border-radius: 12px;
+        color: var(--ink);
+        transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .fm-recent-link:hover { border-color: #cfc8bc; box-shadow: 0 6px 18px -12px rgba(43, 52, 64, 0.35); }
     .fm-teams {
         display: grid;
         grid-template-columns: minmax(210px, 1fr) minmax(0, 2.5fr);
@@ -135,7 +146,7 @@
         </a>
     {% endfor %}
 </div>
-<a class="btn btn-dark fm-recent-jump" href="#recent-activity">Recent activity <span aria-hidden="true">&darr;</span></a>
+<a class="btn fm-recent-link" href="{% url 'forum:recent' %}">Recent activity <span aria-hidden="true">&rarr;</span></a>
 
 <section class="fm-teams" id="teams" aria-labelledby="fm-teams-title">
     <div>
@@ -206,9 +217,6 @@
     </div>
     {% endif %}
 </section>
-
-<h2 class="fm-section-title" id="recent-activity">Recent activity</h2>
-{% include 'forum/_thread_rows.html' with threads=recent show_category=True empty_text="No threads yet — be the first to start one." %}
 
 {% include 'forum/_guidelines.html' %}
 {% endblock %}

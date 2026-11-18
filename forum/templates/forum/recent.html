@@ -1,0 +1,27 @@
+{% extends 'forum/base.html' %}
+
+{% block page_title %}Recent activity - Community{% endblock %}
+
+{% block crumbs %}<span class="sep">/</span><span>Recent activity</span>{% endblock %}
+
+{% block head %}
+<div class="fm-head-row">
+    <div>
+        <h1>Recent activity</h1>
+        <p class="lede">The latest conversations from across the community.</p>
+    </div>
+    <a class="btn btn-red" href="{% url 'forum:new_thread' %}">Start a thread</a>
+</div>
+{% endblock %}
+
+{% block body %}
+{% include 'forum/_thread_rows.html' with threads=page.object_list show_category=True empty_text="No threads yet — be the first to start one." %}
+
+{% if page.paginator.num_pages > 1 %}
+    <div class="fm-pager">
+        {% if page.has_previous %}<a href="?page={{ page.previous_page_number }}">← Newer</a>{% endif %}
+        <span>Page {{ page.number }} of {{ page.paginator.num_pages }}</span>
+        {% if page.has_next %}<a href="?page={{ page.next_page_number }}">Older →</a>{% endif %}
+    </div>
+{% endif %}
+{% endblock %}

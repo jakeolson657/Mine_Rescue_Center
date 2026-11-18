@@ -6,6 +6,7 @@ app_name = 'forum'
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('recent/', views.recent, name='recent'),
     path('search/', views.search, name='search'),
     path('new/', views.new_thread, name='new_thread'),
     path('about/<str:kind>/<int:pk>/', views.about, name='about'),
